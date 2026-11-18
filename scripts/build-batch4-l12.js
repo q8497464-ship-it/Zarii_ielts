@@ -1,0 +1,625 @@
+import fs from 'fs';
+import path from 'path';
+
+const listeningTest12 = {
+  id: "list-test-12",
+  title: "Listening Practice Test 12",
+  difficulty: "medium",
+  timeLimitMinutes: 40,
+  sections: [
+    {
+      sectionNumber: 1,
+      title: "Community Sports Pavilion Tennis Court Membership",
+      contextDescription: "Priya (Indian English speaker) enquiring with Sports Pavilion Manager Liam (Australian English speaker) about joining the local tennis and squash club.",
+      audioScript: [
+        { "speaker": "Liam (Australian)", "text": "Good morning! Westside Community Sports Pavilion. Liam speaking." },
+        { "speaker": "Priya (Indian English)", "text": "Hello Liam! My name is Priya Sharma. I recently moved to the area and would love to register for an annual tennis club membership." },
+        { "speaker": "Liam (Australian)", "text": "No worries, Priya! We have both outdoor floodlit synthetic grass courts and indoor squash courts. Let me take down your contact details." },
+        { "speaker": "Priya (Indian English)", "text": "Certainly. My first name is Priya, P-R-I-Y-A, and surname Sharma, S-H-A-R-M-A." },
+        { "speaker": "Liam (Australian)", "text": "Thank you, Priya. And your home address?" },
+        { "speaker": "Priya (Indian English)", "text": "I reside at sixty-three Acacia Crescent, Perth, postcode six zero零eight—that is six zero zero eight." },
+        { "speaker": "Liam (Australian)", "text": "Six zero zero eight. And a contact mobile number?" },
+        { "speaker": "Priya (Indian English)", "text": "It is zero four nine nine, eight seven six five four three." },
+        { "speaker": "Liam (Australian)", "text": "Got it. Now regarding our membership packages, our Individual Full Adult pass is fifty-five dollars per month, or five hundred and fifty dollars if paid annually upfront, which gives you two months free." },
+        { "speaker": "Priya (Indian English)", "text": "I will take the annual upfront payment for five hundred and fifty dollars. Does that fee include nighttime floodlight tokens?" },
+        { "speaker": "Liam (Australian)", "text": "Yes, annual members receive fifty complimentary digital lighting tokens loaded onto their electronic access card. Additional tokens can be topped up via our mobile app for two dollars per hour." },
+        { "speaker": "Priya (Indian English)", "text": "That is very convenient. What footwear regulations apply to the synthetic grass courts?" },
+        { "speaker": "Liam (Australian)", "text": "All players must wear non-marking rubber court shoes with flat herringbone tread; running shoes with aggressive black cleat soles are strictly banned to prevent tearing the artificial turf fibers." },
+        { "speaker": "Priya (Indian English)", "text": "Understood. When does the beginner-intermediate social doubles round-robin meet?" },
+        { "speaker": "Liam (Australian)", "text": "Every Thursday evening at seven PM. You can simply turn up and our club coach organizes matched pairs." },
+        { "speaker": "Priya (Indian English)", "text": "Thursday at seven PM. Thank you so much, Liam! I will pop in tomorrow to pay and collect my access card." }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 1–10.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "l12-q1",
+              questionNumber: 1,
+              type: "sentence_completion",
+              topic: "customer enquiry",
+              estimatedBand: 5.5,
+              prompt: "Applicant surname: ____",
+              correctAnswer: "Sharma",
+              explanation: "Priya spells her surname: S-H-A-R-M-A.",
+              evidence: "surname Sharma, S-H-A-R-M-A."
+            },
+            {
+              id: "l12-q2",
+              questionNumber: 2,
+              type: "sentence_completion",
+              topic: "address",
+              estimatedBand: 5.5,
+              prompt: "Address: 63 ____ Crescent, Perth.",
+              correctAnswer: "Acacia",
+              explanation: "Priya states: sixty-three Acacia Crescent.",
+              evidence: "sixty-three Acacia Crescent, Perth"
+            },
+            {
+              id: "l12-q3",
+              questionNumber: 3,
+              type: "sentence_completion",
+              topic: "postcode",
+              estimatedBand: 6.0,
+              prompt: "Postcode: ____",
+              correctAnswer: ["6008", "six zero zero eight"],
+              explanation: "Priya confirms: six zero zero eight.",
+              evidence: "postcode six zero zero eight."
+            },
+            {
+              id: "l12-q4",
+              questionNumber: 4,
+              type: "sentence_completion",
+              topic: "telephone",
+              estimatedBand: 5.5,
+              prompt: "Mobile telephone: 0499 ____",
+              correctAnswer: "876543",
+              explanation: "Priya states: zero four nine nine, eight seven six five four three.",
+              evidence: "zero four nine nine, eight seven six five four three."
+            },
+            {
+              id: "l12-q5",
+              questionNumber: 5,
+              type: "sentence_completion",
+              topic: "finance",
+              estimatedBand: 6.0,
+              prompt: "Upfront annual membership price: $____",
+              correctAnswer: ["550", "five hundred and fifty"],
+              explanation: "Liam states five hundred and fifty dollars if paid annually.",
+              evidence: "five hundred and fifty dollars if paid annually upfront"
+            },
+            {
+              id: "l12-q6",
+              questionNumber: 6,
+              type: "sentence_completion",
+              topic: "facilities",
+              estimatedBand: 6.0,
+              prompt: "Members receive ____ free digital lighting tokens per year.",
+              correctAnswer: ["50", "fifty"],
+              explanation: "Liam confirms fifty complimentary digital lighting tokens.",
+              evidence: "receive fifty complimentary digital lighting tokens"
+            },
+            {
+              id: "l12-q7",
+              questionNumber: 7,
+              type: "sentence_completion",
+              topic: "sports gear",
+              estimatedBand: 6.5,
+              prompt: "Court shoes must feature a flat ____ tread pattern.",
+              correctAnswer: "herringbone",
+              explanation: "Liam specifies flat herringbone tread.",
+              evidence: "rubber court shoes with flat herringbone tread"
+            },
+            {
+              id: "l12-q8",
+              questionNumber: 8,
+              type: "sentence_completion",
+              topic: "sports rules",
+              estimatedBand: 6.5,
+              prompt: "Footwear with black ____ soles is prohibited.",
+              correctAnswer: "cleat",
+              explanation: "Liam states shoes with aggressive black cleat soles are banned.",
+              evidence: "aggressive black cleat soles are strictly banned to prevent tearing"
+            },
+            {
+              id: "l12-q9",
+              questionNumber: 9,
+              type: "sentence_completion",
+              topic: "schedule",
+              estimatedBand: 6.0,
+              prompt: "Social doubles night takes place every ____ evening.",
+              correctAnswer: "Thursday",
+              explanation: "Liam notes every Thursday evening at seven PM.",
+              evidence: "Every Thursday evening at seven PM."
+            },
+            {
+              id: "l12-q10",
+              questionNumber: 10,
+              type: "sentence_completion",
+              topic: "time",
+              estimatedBand: 5.5,
+              prompt: "Round-robin session starting time: ____ PM.",
+              correctAnswer: ["7", "seven", "7:00"],
+              explanation: "Liam states starting time is seven PM.",
+              evidence: "at seven PM. You can simply turn up"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      sectionNumber: 2,
+      title: "Guided Audio Tour of the Historic Port Docks and Maritime Museum",
+      contextDescription: "Captain Roberts (British RP speaker) narrating a walking audio tour of the historic Royal Albert Maritime Docks and dry dock basin.",
+      audioScript: [
+        { "speaker": "Captain Roberts (British)", "text": "Welcome to the Royal Albert Maritime Heritage Quays. I am Captain David Roberts. Constructed in 1846 during the height of the Industrial Revolution, these enclosed brick and granite wet docks once handled over forty percent of the British Empire's international maritime trade, receiving spice clippers from the East Indies and timber schooners from the Baltic." },
+        { "speaker": "Captain Roberts (British)", "text": "Today, our restored twenty-hectare historic basin serves as a living open-air maritime museum. As you follow the dockside cobblestone perimeter, refer to the numbered stations on your visitor map. We begin at the Dockmaster's Watchtower on the southern quay. Directly ahead to the northwest at location A is the 1854 Hydraulic Pumping Station. Here, two massive coal-fired steam engines pumped high-pressure hydraulic fluid through miles of cast-iron pipes to operate forty-eight dockside cargo cranes and open thirty-ton lock gates in less than two minutes." },
+        { "speaker": "Captain Roberts (British)", "text": "Proceeding northward along the inner quay, location B marks the Graving Dry Dock. In this hollowed granite basin, water was pumped out to expose ship keels for hull caulking and copper plating. Inside rests the fully rigged three-masted tea clipper SS Falcon, launched in 1872." },
+        { "speaker": "Captain Roberts (British)", "text": "Continuing past the dry dock to location C on the eastern basin wall is the Victorian Spiceries & Bonded Warehouse. The heavy iron fire shutters and unmortared air vents were designed to keep precious cargoes of cinnamon, nutmeg, and vanilla cool and rodent-free." },
+        { "speaker": "Captain Roberts (British)", "text": "Finally, at the far northeastern tip of the pier, marked as location D, is our Traditional Rigging & Sailmaking Loft. Master craftsmen demonstrate the ancient art of hand-splicing wire rope and stitching heavy flax canvas sails using traditional bone fids and palm thimbles." },
+        { "speaker": "Captain Roberts (British)", "text": "Please mind the deep water edge along the quayside, as historic granite coping stones lack safety guardrails to maintain historic authenticity. Enjoy your maritime voyage back into Victorian history!" }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Choose the correct letter, A, B, or C. Write your answers in boxes 11–16.",
+          questionType: "multiple_choice_single",
+          questions: [
+            {
+              id: "l12-q11",
+              questionNumber: 11,
+              type: "multiple_choice_single",
+              topic: "history",
+              estimatedBand: 6.0,
+              prompt: "The Royal Albert wet docks were originally constructed in",
+              options: [
+                "A) 1750.",
+                "B) 1846.",
+                "C) 1912."
+              ],
+              correctAnswer: "B",
+              explanation: "Captain Roberts notes docks were constructed in 1846.",
+              evidence: "Constructed in 1846 during the height of the Industrial Revolution"
+            },
+            {
+              id: "l12-q12",
+              questionNumber: 12,
+              type: "multiple_choice_single",
+              topic: "trade",
+              estimatedBand: 6.5,
+              prompt: "At their peak, the docks handled what percentage of British maritime trade?",
+              options: [
+                "A) Over 40%.",
+                "B) Approximately 25%.",
+                "C) Nearly 75%."
+              ],
+              correctAnswer: "A",
+              explanation: "Captain Roberts states docks handled over forty percent of trade.",
+              evidence: "once handled over forty percent of the British Empire's international maritime trade"
+            },
+            {
+              id: "l12-q13",
+              questionNumber: 13,
+              type: "multiple_choice_single",
+              topic: "engineering",
+              estimatedBand: 7.0,
+              prompt: "Hydraulic pressure was used to operate",
+              options: [
+                "A) streetlamps and clock towers.",
+                "B) cargo cranes and thirty-ton lock gates.",
+                "C) steam locomotives."
+              ],
+              correctAnswer: "B",
+              explanation: "Captain Roberts states hydraulic fluid operated forty-eight cranes and lock gates.",
+              evidence: "operate forty-eight dockside cargo cranes and open thirty-ton lock gates in less than two minutes."
+            },
+            {
+              id: "l12-q14",
+              questionNumber: 14,
+              type: "multiple_choice_single",
+              topic: "ships",
+              estimatedBand: 6.5,
+              prompt: "The historic ship preserved in the dry dock is the",
+              options: [
+                "A) SS Falcon.",
+                "B) HMS Victory.",
+                "C) Cutty Sark."
+              ],
+              correctAnswer: "A",
+              explanation: "Captain Roberts identifies the SS Falcon, launched in 1872.",
+              evidence: "Inside rests the fully rigged three-masted tea clipper SS Falcon, launched in 1872."
+            },
+            {
+              id: "l12-q15",
+              questionNumber: 15,
+              type: "multiple_choice_single",
+              topic: "architecture",
+              estimatedBand: 7.0,
+              prompt: "The Victorian warehouse preserved spices by using unmortared air vents and",
+              options: [
+                "A) ice blocks shipped from Norway.",
+                "B) heavy iron fire shutters.",
+                "C) subterranean water channels."
+              ],
+              correctAnswer: "B",
+              explanation: "Captain Roberts mentions heavy iron fire shutters and unmortared air vents.",
+              evidence: "heavy iron fire shutters and unmortared air vents were designed to keep precious cargoes"
+            },
+            {
+              id: "l12-q16",
+              questionNumber: 16,
+              type: "multiple_choice_single",
+              topic: "safety",
+              estimatedBand: 6.0,
+              prompt: "Why are there no safety guardrails along the quayside?",
+              options: [
+                "A) To save municipal construction costs.",
+                "B) To preserve authentic historic appearance.",
+                "C) To allow ships to dock anywhere."
+              ],
+              correctAnswer: "B",
+              explanation: "Captain Roberts explains stones lack guardrails to maintain historic authenticity.",
+              evidence: "historic granite coping stones lack safety guardrails to maintain historic authenticity."
+            }
+          ]
+        },
+        {
+          groupInstruction: "Label the map below. Write the correct letter, A–D, next to Questions 17–20.",
+          questionType: "diagram_label_completion",
+          questions: [
+            {
+              id: "l12-q17",
+              questionNumber: 17,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 6.5,
+              prompt: "1854 Hydraulic Pumping Station: Location ____",
+              correctAnswer: "A",
+              explanation: "Captain Roberts indicates location A to the northwest as the Pumping Station.",
+              evidence: "Directly ahead to the northwest at location A is the 1854 Hydraulic Pumping Station."
+            },
+            {
+              id: "l12-q18",
+              questionNumber: 18,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 6.5,
+              prompt: "Graving Dry Dock: Location ____",
+              correctAnswer: "B",
+              explanation: "Captain Roberts indicates location B along the inner quay as the Graving Dry Dock.",
+              evidence: "Proceeding northward along the inner quay, location B marks the Graving Dry Dock."
+            },
+            {
+              id: "l12-q19",
+              questionNumber: 19,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 7.0,
+              prompt: "Victorian Spiceries & Bonded Warehouse: Location ____",
+              correctAnswer: "C",
+              explanation: "Captain Roberts indicates location C on the eastern basin wall as the Warehouse.",
+              evidence: "past the dry dock to location C on the eastern basin wall is the Victorian Spiceries & Bonded Warehouse."
+            },
+            {
+              id: "l12-q20",
+              questionNumber: 20,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 6.5,
+              prompt: "Traditional Rigging & Sailmaking Loft: Location ____",
+              correctAnswer: "D",
+              explanation: "Captain Roberts indicates location D at the northeastern tip of the pier.",
+              evidence: "northeastern tip of the pier, marked as location D, is our Traditional Rigging & Sailmaking Loft."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      sectionNumber: 3,
+      title: "Postgraduate Project Tutorial on Ocean Thermal Energy Conversion (OTEC)",
+      contextDescription: "Renewable energy professor Dr. Samuel Wright (North American English) discussing thermodynamics with graduate researchers Deepak (Indian English) and Chloe (Australian English).",
+      audioScript: [
+        { "speaker": "Dr. Wright (North American)", "text": "Good afternoon Deepak, Chloe. Let us examine your engineering design proposal on Ocean Thermal Energy Conversion—or OTEC. Tropical oceans represent Earth's largest natural solar collector, and your thermodynamic modeling on deep-sea water exchange is very promising." },
+        { "speaker": "Chloe (Australian)", "text": "Thanks, Dr. Wright. Our project models a closed-cycle OTEC pilot plant situated in Hawaii. The system exploits the natural thermal gradient between warm tropical surface seawater at twenty-five degrees Celsius and cold deep water at four degrees Celsius, pumped from a depth of one thousand meters." },
+        { "speaker": "Deepak (Indian English)", "text": "Because the temperature delta is only twenty-one degrees Celsius, water cannot boil directly. Instead, we circulate ammonia as the working fluid, which has a boiling point of minus thirty-three degrees Celsius at standard atmospheric pressure. Warm surface water vaporizes the liquid ammonia into high-pressure vapor, spinning an electrical turbine generator." },
+        { "speaker": "Dr. Wright (North American)", "text": "The thermodynamics are sound, but Carnot cycle efficiency is notoriously low—usually only three to four percent. What makes OTEC economically viable despite that low thermal efficiency?" },
+        { "speaker": "Chloe (Australian)", "text": "The key economic differentiator is baseload reliability. Unlike intermittent wind and solar photovoltaics, OTEC operates twenty-four hours a day, three hundred and sixty-five days a year, with a capacity factor exceeding ninety percent." },
+        { "speaker": "Deepak (Indian English)", "text": "Furthermore, OTEC produces high-value coproducts. The deep ocean water pumped to the surface is pathogen-free and saturated with dissolved nitrates and phosphates. After exiting the condenser, the cold nutrient-rich effluent can be channeled into onshore aquaculture ponds for spirulina algae farming and deep-sea salmon breeding." },
+        { "speaker": "Dr. Wright (North American)", "text": "Outstanding integration of circular engineering principles. For Tuesday's seminar, how will you divide your presentation?" },
+        { "speaker": "Chloe (Australian)", "text": "I will deliver the thermodynamic turbine cycle calculations and parasitic pumping load modeling." },
+        { "speaker": "Deepak (Indian English)", "text": "And I will present the deep-water intake pipe structural design and the commercial aquaculture economics." }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Choose the correct letter, A, B, or C. Write your answers in boxes 21–26.",
+          questionType: "multiple_choice_single",
+          questions: [
+            {
+              id: "l12-q21",
+              questionNumber: 21,
+              type: "multiple_choice_single",
+              topic: "energy",
+              estimatedBand: 7.0,
+              prompt: "The students' proposed OTEC pilot plant is located in",
+              options: [
+                "A) Iceland.",
+                "B) Hawaii.",
+                "C) Scotland."
+              ],
+              correctAnswer: "B",
+              explanation: "Chloe states the project models a pilot plant situated in Hawaii.",
+              evidence: "models a closed-cycle OTEC pilot plant situated in Hawaii."
+            },
+            {
+              id: "l12-q22",
+              questionNumber: 22,
+              type: "multiple_choice_single",
+              topic: "thermodynamics",
+              estimatedBand: 7.0,
+              prompt: "Cold seawater is pumped from what depth beneath the ocean surface?",
+              options: [
+                "A) 200 meters.",
+                "B) 500 meters.",
+                "C) 1,000 meters."
+              ],
+              correctAnswer: "C",
+              explanation: "Chloe states cold water is pumped from a depth of one thousand meters.",
+              evidence: "pumped from a depth of one thousand meters."
+            },
+            {
+              id: "l12-q23",
+              questionNumber: 23,
+              type: "multiple_choice_single",
+              topic: "chemistry",
+              estimatedBand: 7.5,
+              prompt: "What substance is utilized as the working fluid inside the closed turbine loop?",
+              options: [
+                "A) Pure ethanol.",
+                "B) Liquid ammonia.",
+                "C) Synthetic freon gas."
+              ],
+              correctAnswer: "B",
+              explanation: "Deepak explains they circulate ammonia as the working fluid.",
+              evidence: "we circulate ammonia as the working fluid, which has a boiling point of minus thirty-three"
+            },
+            {
+              id: "l12-q24",
+              questionNumber: 24,
+              type: "multiple_choice_single",
+              topic: "physics",
+              estimatedBand: 7.5,
+              prompt: "The Carnot thermal conversion efficiency of OTEC systems is typically",
+              options: [
+                "A) 3 to 4%.",
+                "B) 15 to 20%.",
+                "C) 45 to 50%."
+              ],
+              correctAnswer: "A",
+              explanation: "Dr. Wright mentions Carnot efficiency is notoriously low—usually only three to four percent.",
+              evidence: "Carnot cycle efficiency is notoriously low—usually only three to four percent."
+            },
+            {
+              id: "l12-q25",
+              questionNumber: 25,
+              type: "multiple_choice_single",
+              topic: "energy",
+              estimatedBand: 7.0,
+              prompt: "The main operational advantage of OTEC over wind and solar power is its",
+              options: [
+                "A) zero construction cost.",
+                "B) continuous 24/7 baseload reliability.",
+                "C) lack of any moving parts."
+              ],
+              correctAnswer: "B",
+              explanation: "Chloe states OTEC operates twenty-four hours a day, 365 days a year with over 90% capacity factor.",
+              evidence: "key economic differentiator is baseload reliability. Unlike intermittent wind and solar photovoltaics, OTEC operates twenty-four hours a day"
+            },
+            {
+              id: "l12-q26",
+              questionNumber: 26,
+              type: "multiple_choice_single",
+              topic: "aquaculture",
+              estimatedBand: 7.5,
+              prompt: "Deep ocean effluent is valuable for aquaculture because it is cold and rich in",
+              options: [
+                "A) toxic heavy metals.",
+                "B) nitrates and phosphates.",
+                "C) plastic microfibers."
+              ],
+              correctAnswer: "B",
+              explanation: "Deepak notes deep water is pathogen-free and saturated with dissolved nitrates and phosphates.",
+              evidence: "saturated with dissolved nitrates and phosphates. After exiting the condenser, the cold nutrient-rich effluent can be channeled"
+            }
+          ]
+        },
+        {
+          groupInstruction: "Which student is responsible for each presentation component? Write the correct letter, A or B, in boxes 27–30.\nA: Chloe\nB: Deepak",
+          questionType: "matching",
+          questions: [
+            {
+              id: "l12-q27",
+              questionNumber: 27,
+              type: "matching",
+              topic: "presentation",
+              estimatedBand: 7.0,
+              prompt: "Explaining the 21-degree temperature gradient between surface and deep water.",
+              correctAnswer: "A",
+              explanation: "Chloe presents the temperature delta and depths.",
+              evidence: "Chloe: The system exploits the natural thermal gradient between warm tropical surface seawater at twenty-five degrees Celsius and cold deep water"
+            },
+            {
+              id: "l12-q28",
+              questionNumber: 28,
+              type: "matching",
+              topic: "presentation",
+              estimatedBand: 7.5,
+              prompt: "Describing the phase transition of liquid ammonia into high-pressure vapor.",
+              correctAnswer: "B",
+              explanation: "Deepak explains circulating ammonia and boiling point dynamics.",
+              evidence: "Deepak: Warm surface water vaporizes the liquid ammonia into high-pressure vapor, spinning an electrical turbine generator."
+            },
+            {
+              id: "l12-q29",
+              questionNumber: 29,
+              type: "matching",
+              topic: "presentation",
+              estimatedBand: 7.5,
+              prompt: "Calculating parasitic pumping loads and turbine electrical output.",
+              correctAnswer: "A",
+              explanation: "Chloe confirms she will deliver thermodynamic turbine cycle calculations and pumping load modeling.",
+              evidence: "Chloe: I will deliver the thermodynamic turbine cycle calculations and parasitic pumping load modeling."
+            },
+            {
+              id: "l12-q30",
+              questionNumber: 30,
+              type: "matching",
+              topic: "presentation",
+              estimatedBand: 7.5,
+              prompt: "Presenting the structural engineering of deep-water intake pipes and aquaculture economics.",
+              correctAnswer: "B",
+              explanation: "Deepak confirms he will present intake pipe design and commercial aquaculture.",
+              evidence: "Deepak: And I will present the deep-water intake pipe structural design and the commercial aquaculture economics."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      sectionNumber: 4,
+      title: "Academic Lecture: The Archaeology of Neolithic Monumental Architecture at Göbekli Tepe",
+      contextDescription: "Dr. Julian Finch (British English speaker) delivering a university archaeology lecture on monumental megaliths, hunter-gatherer complexity, and social transformation in southeastern Anatolia.",
+      audioScript: [
+        { "speaker": "Dr. Finch (British)", "text": "Good afternoon, students. For nearly a century, mainstream archaeological dogma maintained that monumental stone architecture was an exclusive accomplishment of sedentary agrarian civilizations. Under the traditional Vere Gordon Childe paradigm, the sequence was clear: first, humans invented agriculture; farming yielded permanent food surpluses; surpluses enabled labor specialization and permanent villages; and only then could societies mobilize the collective labor needed to quarry, sculpt, and erect massive stone monuments. However, the discovery of Göbekli Tepe in southeastern Turkey has turned that foundational paradigm entirely upside down." },
+        { "speaker": "Dr. Finch (British)", "text": "First excavated in 1995 by German archaeologist Dr. Klaus Schmidt, Göbekli Tepe sits atop a limestone ridge near the modern city of Şanlıurfa. Carbon-14 radiocarbon dating of organic matrix collagen establishes that the monumental megalithic enclosures date to approximately nine thousand five hundred BCE—roughly eleven thousand five hundred years ago. This predates Stonehenge by more than six millennia and precedes the construction of the Great Pyramid of Giza by seven thousand years. Crucially, comprehensive botanical and zooarchaeological analysis proves that the builders of Göbekli Tepe were not sedentary farmers; they were nomadic hunter-gatherers living thousands of years before the domestication of wheat, sheep, or cattle." },
+        { "speaker": "Dr. Finch (British)", "text": "The architecture itself is breathtaking. The site consists of over twenty circular enclosures, each containing concentric rings of massive T-shaped limestone pillars measuring up to five point five meters in height and weighing between ten and twenty tonnes. These monolithic pillars were quarried from neighboring bedrock using only flint chisels and wooden wedges. Remarkably, the pillars are carved in high relief with intricate bas-relief animal iconography: snarling lions, leaping foxes, wild boars, scorpions, vultures, and headless human figures." },
+        { "speaker": "Dr. Finch (British)", "text": "Dr. Schmidt hypothesized that the T-shaped pillars represent stylized anthropomorphic beings: the horizontal crossbeam represents a human head seen in profile, while long human arms and hands carved in relief on the vertical shaft wrap around a belt cinched with an animal loincloth. Göbekli Tepe was not a residential village; archaeologists have discovered no domestic hearths, storage silos, or residential houses. Rather, it served as a regional monumental sanctuary—a prehistoric pilgrimage cathedral. This revelation suggests that religious ritual and monumental myth-making did not follow agriculture; rather, the social imperative to gather hundreds of workers to erect temples forced hunter-gatherers to domesticate wild einkorn wheat in order to feed the construction labor force." }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 31–40.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "l12-q31",
+              questionNumber: 31,
+              type: "sentence_completion",
+              topic: "archaeology",
+              estimatedBand: 7.0,
+              prompt: "Göbekli Tepe was first excavated in the year ____ by Dr. Klaus Schmidt.",
+              correctAnswer: "1995",
+              explanation: "Dr. Finch states first excavated in 1995 by Dr. Klaus Schmidt.",
+              evidence: "First excavated in 1995 by German archaeologist Dr. Klaus Schmidt"
+            },
+            {
+              id: "l12-q32",
+              questionNumber: 32,
+              type: "sentence_completion",
+              topic: "geography",
+              estimatedBand: 7.0,
+              prompt: "The archaeological site is situated in southeastern ____.",
+              correctAnswer: "Turkey",
+              explanation: "Dr. Finch notes Göbekli Tepe in southeastern Turkey.",
+              evidence: "discovery of Göbekli Tepe in southeastern Turkey has turned that foundational paradigm entirely upside down."
+            },
+            {
+              id: "l12-q33",
+              questionNumber: 33,
+              type: "sentence_completion",
+              topic: "chronology",
+              estimatedBand: 7.5,
+              prompt: "Radiocarbon dating places the enclosures at around ____ BCE.",
+              correctAnswer: ["9500", "9,500"],
+              explanation: "Dr. Finch notes dates to approximately nine thousand five hundred BCE.",
+              evidence: "date to approximately nine thousand five hundred BCE"
+            },
+            {
+              id: "l12-q34",
+              questionNumber: 34,
+              type: "sentence_completion",
+              topic: "history",
+              estimatedBand: 7.5,
+              prompt: "The site predates the construction of Stonehenge by over ____ millennia.",
+              correctAnswer: ["6", "six"],
+              explanation: "Dr. Finch states predates Stonehenge by more than six millennia.",
+              evidence: "predates Stonehenge by more than six millennia"
+            },
+            {
+              id: "l12-q35",
+              questionNumber: 35,
+              type: "sentence_completion",
+              topic: "anthropology",
+              estimatedBand: 7.0,
+              prompt: "The builders of the monumental site were nomadic hunter-____.",
+              correctAnswer: "gatherers",
+              explanation: "Dr. Finch states builders were nomadic hunter-gatherers.",
+              evidence: "builders of Göbekli Tepe were not sedentary farmers; they were nomadic hunter-gatherers"
+            },
+            {
+              id: "l12-q36",
+              questionNumber: 36,
+              type: "sentence_completion",
+              topic: "architecture",
+              estimatedBand: 7.5,
+              prompt: "The circular enclosures contain large ____-shaped stone pillars.",
+              correctAnswer: "T",
+              explanation: "Dr. Finch notes concentric rings of massive T-shaped limestone pillars.",
+              evidence: "concentric rings of massive T-shaped limestone pillars measuring up to five point five meters"
+            },
+            {
+              id: "l12-q37",
+              questionNumber: 37,
+              type: "sentence_completion",
+              topic: "dimensions",
+              estimatedBand: 7.0,
+              prompt: "The largest pillars weigh up to ____ tonnes.",
+              correctAnswer: ["20", "twenty"],
+              explanation: "Dr. Finch states weighing between ten and twenty tonnes.",
+              evidence: "measuring up to five point five meters in height and weighing between ten and twenty tonnes."
+            },
+            {
+              id: "l12-q38",
+              questionNumber: 38,
+              type: "sentence_completion",
+              topic: "tools",
+              estimatedBand: 7.5,
+              prompt: "Pillars were quarried out of bedrock using wooden wedges and ____ chisels.",
+              correctAnswer: "flint",
+              explanation: "Dr. Finch notes using only flint chisels and wooden wedges.",
+              evidence: "quarried from neighboring bedrock using only flint chisels and wooden wedges."
+            },
+            {
+              id: "l12-q39",
+              questionNumber: 39,
+              type: "sentence_completion",
+              topic: "art",
+              estimatedBand: 7.5,
+              prompt: "Schmidt believed the horizontal stone bar symbolized a human ____.",
+              correctAnswer: "head",
+              explanation: "Dr. Finch states the horizontal crossbeam represents a human head seen in profile.",
+              evidence: "the horizontal crossbeam represents a human head seen in profile"
+            },
+            {
+              id: "l12-q40",
+              questionNumber: 40,
+              type: "sentence_completion",
+              topic: "agriculture",
+              estimatedBand: 8.0,
+              prompt: "Feeding temple builders may have sparked the domestication of wild ____ wheat.",
+              correctAnswer: "einkorn",
+              explanation: "Dr. Finch notes forced hunter-gatherers to domesticate wild einkorn wheat.",
+              evidence: "forced hunter-gatherers to domesticate wild einkorn wheat in order to feed the construction labor force."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync(
+  path.resolve('./content/listening/listening-test-12.json'),
+  JSON.stringify(listeningTest12, null, 2),
+  'utf8'
+);
+console.log('✓ Created listening-test-12.json');

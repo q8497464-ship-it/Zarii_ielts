@@ -1,0 +1,100 @@
+{
+  "id": "read-acad-01",
+  "title": "Academic Reading Practice Test 1",
+  "testType": "academic",
+  "difficulty": "standard",
+  "timeLimitMinutes": 60,
+  "passages": [
+    {
+      "passageNumber": 1,
+      "title": "The Engineering Feats of Roman Aqueducts",
+      "subtitle": "How gravity-fed engineering transformed ancient urban sanitation and public health",
+      "text": "The Roman aqueduct system remains one of the crowning triumphs of ancient hydraulic engineering. Across the expanse of the empire, from the hills of central Italy to the arid valleys of Iberia and North Africa, Roman surveyors designed sophisticated channels that moved millions of gallons of freshwater daily over distances exceeding fifty kilometers. What made these conduits extraordinary was not merely their scale, but their sole reliance on gravitational flow.\n\nRoman engineers (libratores) utilized surveying instruments such as the chorobates—a twenty-foot wooden beam fitted with plumb lines and a water channel—to calculate minuscule gradients, frequently maintaining a descent of less than one meter per kilometer. The majority of the aqueduct infrastructure ran subterraneanly, shielding the water from solar evaporation, biological contaminants, and enemy sabotage. Above-ground arches, so iconic in modern imagination, were deployed only when valleys or low-lying plains precluded tunneling.",
+      "wordCount": 850,
+      "questionGroups": [
+        {
+          "groupInstruction": "Do the following statements agree with the information given in Reading Passage 1? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+          "questionType": "true_false_not_given",
+          "questions": [
+            {
+              "id": "q1",
+              "questionNumber": 1,
+              "prompt": "Roman aqueducts relied primarily on mechanical water pumps powered by draft animals.",
+              "correctAnswer": "FALSE",
+              "explanation": "The text states that conduits had a 'sole reliance on gravitational flow', which directly contradicts the use of mechanical pumps."
+            },
+            {
+              "id": "q2",
+              "questionNumber": 2,
+              "prompt": "The chorobates was primarily constructed of solid bronze.",
+              "correctAnswer": "NOT GIVEN",
+              "explanation": "The text describes the chorobates as 'a twenty-foot wooden beam fitted with plumb lines', making no mention of solid bronze construction."
+            },
+            {
+              "id": "q3",
+              "questionNumber": 3,
+              "prompt": "Most parts of Roman aqueducts were constructed beneath the surface of the ground.",
+              "correctAnswer": "TRUE",
+              "explanation": "The text confirms: 'The majority of the aqueduct infrastructure ran subterraneanly'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "passageNumber": 2,
+      "title": "Bioluminescence: Nature's Living Light",
+      "subtitle": "The biochemical mechanisms and evolutionary functions of cold light in marine organisms",
+      "text": "In the abyssal zones of the world's oceans, sunlight is entirely extinguished below depths of two hundred meters. In this perpetual gloom, bioluminescence—the emission of visible light by a living organism through a chemical reaction—serves as the primary medium of communication, predation, and evasion.",
+      "wordCount": 920,
+      "questionGroups": [
+        {
+          "groupInstruction": "Choose the correct letter, A, B, C or D.",
+          "questionType": "multiple_choice_single",
+          "questions": [
+            {
+              "id": "q4",
+              "questionNumber": 4,
+              "prompt": "At what ocean depth does sunlight cease to penetrate?",
+              "options": [
+                "Below 200 meters",
+                "Above 50 meters",
+                "Exactly at 1000 meters",
+                "At 500 meters"
+              ],
+              "correctAnswer": "A",
+              "explanation": "The passage states that sunlight is completely extinguished below depths of two hundred meters."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "passageNumber": 3,
+      "title": "The Evolution of Urban Microclimates",
+      "subtitle": "Mitigating the Urban Heat Island effect through reflective architecture and urban greening",
+      "text": "Urban areas routinely exhibit substantially higher atmospheric and surface temperatures than their surrounding rural hinterlands—a phenomenon universally documented as the Urban Heat Island (UHI) effect. Impervious concrete surfaces and dark asphalt absorb incident solar radiation during daylight hours and re-radiate thermal energy throughout the night.",
+      "wordCount": 980,
+      "questionGroups": [
+        {
+          "groupInstruction": "Complete the summary below using NO MORE THAN TWO WORDS from the passage for each answer.",
+          "questionType": "summary_completion",
+          "questions": [
+            {
+              "id": "q5",
+              "questionNumber": 5,
+              "prompt": "The temperature disparity between cities and countryside is scientifically termed the ____ effect.",
+              "correctAnswer": "Urban Heat Island",
+              "explanation": "Directly referenced in paragraph 1."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "attribution": {
+    "source": "Open Science & Antiquity Research",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "authorOrTopic": "Roman Hydraulic Engineering & Urban Ecology"
+  }
+}

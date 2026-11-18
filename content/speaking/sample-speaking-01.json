@@ -1,0 +1,39 @@
+{
+  "id": "speak-part2-01",
+  "part": 2,
+  "topic": "Describe a challenging problem you solved using technology",
+  "leadIn": "The examiner will give you a paper and pencil for 1 minute of notes before speaking for 2 minutes.",
+  "cueCard": {
+    "topic": "Describe a difficult problem you managed to resolve using modern technology.",
+    "bulletPoints": [
+      "What the problem was and when it occurred",
+      "Which specific technology or digital tool you employed",
+      "How you utilized it to address the issue",
+      "And explain how you felt once the situation was resolved."
+    ],
+    "prepTimeSeconds": 60,
+    "speakTimeSeconds": 120
+  },
+  "discussionQuestions": [
+    {
+      "question": "Do you believe children are becoming overly dependent on digital devices to solve problems for them?",
+      "followUpPrompts": [
+        "What are the long-term cognitive implications?",
+        "How can schools balance algorithmic tools with critical thinking?"
+      ]
+    },
+    {
+      "question": "In what ways has workplace technology impacted employee stress levels?",
+      "followUpPrompts": [
+        "Is constant connectivity a detriment or an advantage?",
+        "Should governments enforce the 'right to disconnect'?"
+      ]
+    }
+  ],
+  "tips": [
+    "Use your 1 minute preparation time to jot down keywords rather than complete sentences.",
+    "Structure your speech using discourse markers: 'To begin with...', 'What proved particularly challenging was...', 'Ultimately...'",
+    "Aim to speak for the full 2 minutes until the examiner gently halts you."
+  ],
+  "sampleBand9Response": "I would like to recount an incident from two years ago when our university charity committee faced a severe logistical crisis just forty-eight hours before our annual fundraiser..."
+}

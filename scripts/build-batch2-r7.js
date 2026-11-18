@@ -1,0 +1,633 @@
+import fs from 'fs';
+import path from 'path';
+
+const readingTest07 = {
+  id: "acad-reading-07",
+  title: "Academic Reading Practice Test 7",
+  testType: "academic",
+  difficulty: "medium",
+  timeLimitMinutes: 60,
+  passages: [
+    {
+      passageNumber: 1,
+      title: "The Neurobiology of Musical Improvisation",
+      subtitle: "Investigating Real-Time Creativity and Executive Brain Dynamics Under fMRI",
+      text: `Paragraph A
+For centuries, spontaneous artistic creativity was viewed through a romantic lens as an unfathomable, almost mystical flash of inspiration. However, pioneering neuroscientists Dr. Charles Limb and Dr. Allen Braun demystified this creative act by designing an innovative experimental paradigm to study the neural correlates of musical improvisation in real time. Using functional magnetic resonance imaging (fMRI), the researchers placed accomplished jazz pianists inside an MRI scanner equipped with a custom-built, non-magnetic thirty-five-key electronic keyboard. The musicians were instructed to perform two distinct tasks: first, playing a memorized, tightly rehearsed musical sequence, and second, spontaneously improvising a novel jazz melody over an identical harmonic chord progression.
+
+Paragraph B
+The neuroimaging scans revealed a striking, reproducible pattern of neural reorganization during spontaneous improvisation. Most notably, the researchers observed widespread, significant deactivation in the dorsolateral prefrontal cortex (DLPFC). In cognitive psychology, the DLPFC is renowned as the primary seat of executive monitoring, conscious self-censorship, error correction, and top-down cognitive inhibition. Simultaneously, the scans demonstrated pronounced activation in the medial prefrontal cortex (MPFC), a focal hub of the default mode network associated with internal narrative generation, autobiographical self-expression, and uninhibited associative thought.
+
+Paragraph C
+Dr. Limb characterized this distinctive neurological signature—the combination of DLPFC silencing and MPFC surge—as an intentional suspension of internal self-monitoring. To unleash spontaneous musical creativity, the brain must quieten its hyper-critical inner censor. In conventional goal-directed cognitive tasks, the DLPFC maintains strict vigil over mistakes, aborting socially inappropriate or inaccurate impulses. During improvisation, however, this vigilant monitor is temporarily paralyzed, allowing unpredictable melodic leaps and novel harmonic combinations to surface from subconscious associative memory without fear of failure.
+
+Paragraph D
+Subsequent neuroimaging investigations extended this paradigm from instrumental jazz musicians to freestyle hip-hop lyricists. When rappers spontaneously improvised spoken rhyming verses over an unfamiliar backing beat, their brains exhibited the identical dissociation: DLPFC downregulation accompanied by MPFC and language-processing temporal lobe upregulation. Intriguingly, the motor areas executing the performance—such as the motor cortex, supplementary motor area, and Broca's area—remained intensely engaged, proving that improvisation is not chaotic disorganization, but rather highly disciplined motor fluency operating without conscious self-censorship.
+
+Paragraph E
+These neurological findings align closely with the psychological concept of 'flow', famously articulated by Mihaly Csikszentmihalyi. Flow describes an optimal psychological state characterized by total immersion, energized focus, distortion of subjective time, and the disappearance of self-conscious ego. The deactivation of the DLPFC explains why elite improvisers and athletes frequently describe performing on 'autopilot'. When executive cognitive inhibition drops, neural processing shifts to automated subcortical circuits and implicit procedural memory networks, enabling ultra-fast motor decision-making far exceeding the processing velocity of conscious deliberation.`,
+      wordCount: 810,
+      questionGroups: [
+        {
+          groupInstruction: "Do the following statements agree with the information given in Reading Passage 1? In boxes 1–7 on your answer sheet, write:\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+          questionType: "true_false_not_given",
+          questions: [
+            {
+              id: "a7-q1",
+              questionNumber: 1,
+              type: "true_false_not_given",
+              topic: "neuroscience",
+              estimatedBand: 6.5,
+              prompt: "Dr. Limb and Dr. Braun designed a specialized non-magnetic keyboard for use inside an MRI machine.",
+              correctAnswer: "TRUE",
+              explanation: "Paragraph A states researchers used a 'custom-built, non-magnetic thirty-five-key electronic keyboard' in the scanner.",
+              evidence: "equipped with a custom-built, non-magnetic thirty-five-key electronic keyboard."
+            },
+            {
+              id: "a7-q2",
+              questionNumber: 2,
+              type: "true_false_not_given",
+              topic: "neuroscience",
+              estimatedBand: 7.0,
+              prompt: "During improvisation, the dorsolateral prefrontal cortex (DLPFC) becomes significantly more active.",
+              correctAnswer: "FALSE",
+              explanation: "Paragraph B explains researchers observed 'widespread, significant deactivation in the dorsolateral prefrontal cortex (DLPFC).'",
+              evidence: "observed widespread, significant deactivation in the dorsolateral prefrontal cortex (DLPFC)."
+            },
+            {
+              id: "a7-q3",
+              questionNumber: 3,
+              type: "true_false_not_given",
+              topic: "psychology",
+              estimatedBand: 7.0,
+              prompt: "The medial prefrontal cortex (MPFC) is linked to autobiographical self-expression.",
+              correctAnswer: "TRUE",
+              explanation: "Paragraph B notes the MPFC is 'associated with internal narrative generation, autobiographical self-expression'.",
+              evidence: "associated with internal narrative generation, autobiographical self-expression, and uninhibited associative thought."
+            },
+            {
+              id: "a7-q4",
+              questionNumber: 4,
+              type: "true_false_not_given",
+              topic: "neuroscience",
+              estimatedBand: 7.5,
+              prompt: "Freestyle rappers require more years of training than classical pianists to deactivate their DLPFC.",
+              correctAnswer: "NOT GIVEN",
+              explanation: "Paragraph D compares the brain activity of rappers and jazz pianists, but mentions nothing about the years of training required.",
+              evidence: "When rappers spontaneously improvised spoken rhyming verses over an unfamiliar backing beat, their brains exhibited the identical dissociation"
+            },
+            {
+              id: "a7-q5",
+              questionNumber: 5,
+              type: "true_false_not_given",
+              topic: "neuroscience",
+              estimatedBand: 7.0,
+              prompt: "Motor regions of the brain shut down completely while musicians improvise.",
+              correctAnswer: "FALSE",
+              explanation: "Paragraph D states motor areas 'remained intensely engaged, proving that improvisation is not chaotic disorganization'.",
+              evidence: "the motor areas executing the performance—such as the motor cortex, supplementary motor area, and Broca's area—remained intensely engaged"
+            },
+            {
+              id: "a7-q6",
+              questionNumber: 6,
+              type: "true_false_not_given",
+              topic: "psychology",
+              estimatedBand: 6.5,
+              prompt: "Mihaly Csikszentmihalyi first introduced the psychological concept of flow.",
+              correctAnswer: "TRUE",
+              explanation: "Paragraph E refers to the psychological concept of 'flow', famously articulated by Mihaly Csikszentmihalyi.",
+              evidence: "psychological concept of 'flow', famously articulated by Mihaly Csikszentmihalyi."
+            },
+            {
+              id: "a7-q7",
+              questionNumber: 7,
+              type: "true_false_not_given",
+              topic: "cognitive science",
+              estimatedBand: 7.5,
+              prompt: "Conscious deliberation processes motor choices faster than implicit procedural networks.",
+              correctAnswer: "FALSE",
+              explanation: "Paragraph E explains automated subcortical networks enable motor decisions 'far exceeding the processing velocity of conscious deliberation.'",
+              evidence: "enabling ultra-fast motor decision-making far exceeding the processing velocity of conscious deliberation."
+            }
+          ]
+        },
+        {
+          groupInstruction: "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 8–13 on your answer sheet.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "a7-q8",
+              questionNumber: 8,
+              type: "sentence_completion",
+              topic: "music",
+              estimatedBand: 6.5,
+              prompt: "Pianists in the study improvised novel melodies over an unchanging ____ chord progression.",
+              correctAnswer: "harmonic",
+              explanation: "Paragraph A states they improvised over 'an identical harmonic chord progression.'",
+              evidence: "improvising a novel jazz melody over an identical harmonic chord progression."
+            },
+            {
+              id: "a7-q9",
+              questionNumber: 9,
+              type: "sentence_completion",
+              topic: "neuroscience",
+              estimatedBand: 7.5,
+              prompt: "In everyday cognition, the DLPFC performs conscious ____ and error correction.",
+              correctAnswer: "self-censorship",
+              explanation: "Paragraph B describes the DLPFC as responsible for 'executive monitoring, conscious self-censorship, error correction'.",
+              evidence: "primary seat of executive monitoring, conscious self-censorship, error correction, and top-down cognitive inhibition."
+            },
+            {
+              id: "a7-q10",
+              questionNumber: 10,
+              type: "sentence_completion",
+              topic: "psychology",
+              estimatedBand: 7.0,
+              prompt: "To improvise creatively, the brain must silence its internal hyper-critical ____.",
+              correctAnswer: "censor",
+              explanation: "Paragraph C states: 'the brain must quieten its hyper-critical inner censor.'",
+              evidence: "the brain must quieten its hyper-critical inner censor."
+            },
+            {
+              id: "a7-q11",
+              questionNumber: 11,
+              type: "sentence_completion",
+              topic: "linguistics",
+              estimatedBand: 7.5,
+              prompt: "In improvising rappers, brain scans revealed upregulation in the language-processing ____ lobe.",
+              correctAnswer: "temporal",
+              explanation: "Paragraph D identifies 'temporal lobe upregulation.'",
+              evidence: "DLPFC downregulation accompanied by MPFC and language-processing temporal lobe upregulation."
+            },
+            {
+              id: "a7-q12",
+              questionNumber: 12,
+              type: "sentence_completion",
+              topic: "psychology",
+              estimatedBand: 7.0,
+              prompt: "Individuals in a flow state frequently report experiencing the feeling of being on ____.",
+              correctAnswer: "autopilot",
+              explanation: "Paragraph E mentions performers describe 'performing on autopilot'.",
+              evidence: "performers and athletes frequently describe performing on 'autopilot'."
+            },
+            {
+              id: "a7-q13",
+              questionNumber: 13,
+              type: "sentence_completion",
+              topic: "neuroscience",
+              estimatedBand: 8.0,
+              prompt: "Fast improvised actions rely on subcortical networks and implicit ____ memory.",
+              correctAnswer: "procedural",
+              explanation: "Paragraph E highlights 'implicit procedural memory networks'.",
+              evidence: "shifts to automated subcortical circuits and implicit procedural memory networks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      passageNumber: 2,
+      title: "Rewilding the Scottish Highlands: Ecological Trophic Cascades",
+      subtitle: "Restoring Native Biodiversity and Ancient Woodlands Through Species Reintroduction",
+      text: `Paragraph A
+Spanning hundreds of thousands of hectares across northern Scotland, the dramatic glens and windswept peaks of the Highlands are widely romanticized as pristine wilderness. In reality, modern ecological science categorizes the Highlands as a severely degraded ecological desert. Over five centuries of deforestation, intensive sheep farming, and the management of private sporting estates for commercial red deer stalking have stripped the landscape of its ancestral temperate rainforest: the Caledonian pinewood. Today, less than one percent of this ancient woodland survives, fragmented into isolated remnants surrounded by barren heather moorland.
+
+Paragraph B
+The principal engine of ecological stagnation is hyper-abundant red deer (Cervus elaphus). With the historical extermination of native apex carnivores—the Eurasian wolf in the eighteenth century and the Eurasian lynx in the medieval era—the Highlands lost their natural population controls. Deer populations surged to an estimated four hundred thousand animals. Unchecked by predators, roaming deer browse relentlessly upon juvenile Scots pine saplings, rowan, aspen, and oak, preventing any natural woodland regeneration. Without saplings growing to maturity, aged tree canopies die without replacement, locking the landscape in a cycle of vegetative depletion.
+
+Paragraph C
+To break this cycle, conservation coalitions led by organizations like Trees for Life and the Scottish Wildlife Trust are championing rewilding. Rewilding emphasizes restoring self-sustaining ecological processes through trophic cascades—a biological phenomenon wherein the presence of apex predators initiates top-down regulatory effects that cascade through multiple trophic levels. By controlling herbivore density and fundamentally altering prey grazing behavior, predators allow suppressed plant communities to recover, which in turn provides habitat for insects, birds, and aquatic species.
+
+Paragraph D
+A compelling pilot demonstration of this dynamic occurred with the recovery of the European pine marten (Martes martes). For decades, the introduced North American grey squirrel had decimated native British red squirrels by transmitting a lethal parapoxvirus while competing for tree nuts. However, as protected pine marten populations expanded in northern Scotland, researchers observed a dramatic resurgence of red squirrels. Because native red squirrels co-evolved with pine martens, they are small and agile enough to feed on high, thin pine branches where heavier pine martens cannot follow. Conversely, the bulkier invasive grey squirrels spend significant time foraging on the forest floor, making them easy prey for the martens.
+
+Paragraph E
+Building upon this success, ecological modeling suggests that reintroducing the Eurasian lynx (Lynx lynx) would revolutionize Highland forest ecology. As specialized ambush predators of woodland deer, lynx avoid open moorland and human habitations, posing zero threat to human safety. Crucially, their impact on deer is behavioral as well as predatory: by creating an 'ecology of fear', lynx compel deer to avoid foraging in deep ravines and dense scrubland. These sheltered micro-habitats quickly regenerate into dense thickets of willow and birch, providing vital cover for rare capercaillie grouse and nesting songbirds.
+
+Paragraph F
+Nevertheless, rewilding proposals encounter fierce opposition from traditional rural stakeholders. The National Farmers' Union of Scotland and hill sheep farming associations argue that predator reintroductions could threaten vulnerable lambing flocks. Furthermore, private sporting estate owners contend that predator-driven reductions in deer numbers could compromise lucrative international hunting syndicates that support rural employment. Resolving these deep socio-economic tensions will require innovative policy instruments, including predator damage compensation funds, community ecotourism dividends, and collaborative landscape-scale catchment management.`,
+      wordCount: 840,
+      questionGroups: [
+        {
+          groupInstruction: "Reading Passage 2 has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F, in boxes 14–20 on your answer sheet.",
+          questionType: "matching_information",
+          questions: [
+            {
+              id: "a7-q14",
+              questionNumber: 14,
+              type: "matching_information",
+              topic: "conservation",
+              estimatedBand: 7.0,
+              prompt: "Financial and employment objections raised by traditional landowners against rewilding.",
+              correctAnswer: "F",
+              explanation: "Paragraph F discusses sporting estate owners worrying about lucrative hunting syndicates and farmer concerns about lambs.",
+              evidence: "sporting estate owners contend that predator-driven reductions in deer numbers could compromise lucrative international hunting syndicates that support rural employment."
+            },
+            {
+              id: "a7-q15",
+              questionNumber: 15,
+              type: "matching_information",
+              topic: "ecology",
+              estimatedBand: 6.5,
+              prompt: "The tiny percentage of original Caledonian pinewood that remains in Scotland today.",
+              correctAnswer: "A",
+              explanation: "Paragraph A states less than one percent of this ancient woodland survives.",
+              evidence: "Today, less than one percent of this ancient woodland survives, fragmented into isolated remnants"
+            },
+            {
+              id: "a7-q16",
+              questionNumber: 16,
+              type: "matching_information",
+              topic: "zoology",
+              estimatedBand: 7.5,
+              prompt: "How evolutionary differences enable red squirrels to evade pine marten predation.",
+              correctAnswer: "D",
+              explanation: "Paragraph D explains red squirrels are smaller and agile on high, thin branches where pine martens cannot follow.",
+              evidence: "Because native red squirrels co-evolved with pine martens, they are small and agile enough to feed on high, thin pine branches where heavier pine martens cannot follow."
+            },
+            {
+              id: "a7-q17",
+              questionNumber: 17,
+              type: "matching_information",
+              topic: "ecology",
+              estimatedBand: 7.0,
+              prompt: "The mechanism through which apex predators change prey behavior without hunting them all.",
+              correctAnswer: "E",
+              explanation: "Paragraph E highlights the 'ecology of fear' that compels deer to avoid ravines.",
+              evidence: "by creating an 'ecology of fear', lynx compel deer to avoid foraging in deep ravines and dense scrubland."
+            },
+            {
+              id: "a7-q18",
+              questionNumber: 18,
+              type: "matching_information",
+              topic: "forestry",
+              estimatedBand: 6.5,
+              prompt: "How intensive deer browsing stops native forests from naturally renewing themselves.",
+              correctAnswer: "B",
+              explanation: "Paragraph B describes deer browsing relentlessly on saplings, preventing natural regeneration.",
+              evidence: "roaming deer browse relentlessly upon juvenile Scots pine saplings, rowan, aspen, and oak, preventing any natural woodland regeneration."
+            },
+            {
+              id: "a7-q19",
+              questionNumber: 19,
+              type: "matching_information",
+              topic: "biology",
+              estimatedBand: 7.5,
+              prompt: "A formal scientific definition of the concept of trophic cascades.",
+              correctAnswer: "C",
+              explanation: "Paragraph C defines trophic cascades as top-down regulatory effects starting from apex predators.",
+              evidence: "trophic cascades—a biological phenomenon wherein the presence of apex predators initiates top-down regulatory effects that cascade through multiple trophic levels."
+            },
+            {
+              id: "a7-q20",
+              questionNumber: 20,
+              type: "matching_information",
+              topic: "history",
+              estimatedBand: 7.0,
+              prompt: "The historical eras during which wolves and lynx disappeared from Scotland.",
+              correctAnswer: "B",
+              explanation: "Paragraph B notes the Eurasian wolf in the eighteenth century and the Eurasian lynx in the medieval era.",
+              evidence: "the Eurasian wolf in the eighteenth century and the Eurasian lynx in the medieval era"
+            }
+          ]
+        },
+        {
+          groupInstruction: "Complete the summary below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 21–26 on your answer sheet.",
+          questionType: "summary_completion",
+          questions: [
+            {
+              id: "a7-q21",
+              questionNumber: 21,
+              type: "summary_completion",
+              topic: "ecology",
+              estimatedBand: 6.5,
+              prompt: "In the absence of natural predators, red deer numbers have reached around ____ animals.",
+              correctAnswer: ["400,000", "four hundred thousand"],
+              explanation: "Paragraph B states populations surged to an estimated four hundred thousand animals.",
+              evidence: "Deer populations surged to an estimated four hundred thousand animals."
+            },
+            {
+              id: "a7-q22",
+              questionNumber: 22,
+              type: "summary_completion",
+              topic: "zoology",
+              estimatedBand: 7.5,
+              prompt: "Grey squirrels harm native red squirrels by spreading a fatal ____.",
+              correctAnswer: "parapoxvirus",
+              explanation: "Paragraph D mentions transmitting a lethal parapoxvirus.",
+              evidence: "decimated native British red squirrels by transmitting a lethal parapoxvirus"
+            },
+            {
+              id: "a7-q23",
+              questionNumber: 23,
+              type: "summary_completion",
+              topic: "zoology",
+              estimatedBand: 7.0,
+              prompt: "Grey squirrels are more susceptible to pine martens because they spend time foraging on the forest ____.",
+              correctAnswer: "floor",
+              explanation: "Paragraph D states grey squirrels spend significant time foraging on the forest floor.",
+              evidence: "invasive grey squirrels spend significant time foraging on the forest floor, making them easy prey"
+            },
+            {
+              id: "a7-q24",
+              questionNumber: 24,
+              type: "summary_completion",
+              topic: "zoology",
+              estimatedBand: 7.5,
+              prompt: "Eurasian lynx are specialized ____ predators that hunt forest deer.",
+              correctAnswer: "ambush",
+              explanation: "Paragraph E refers to lynx as 'specialized ambush predators'.",
+              evidence: "As specialized ambush predators of woodland deer, lynx avoid open moorland"
+            },
+            {
+              id: "a7-q25",
+              questionNumber: 25,
+              type: "summary_completion",
+              topic: "ecology",
+              estimatedBand: 7.5,
+              prompt: "Regenerating thickets provide vital nesting habitat for the endangered ____ grouse.",
+              correctAnswer: "capercaillie",
+              explanation: "Paragraph E mentions vital cover for rare capercaillie grouse.",
+              evidence: "providing vital cover for rare capercaillie grouse and nesting songbirds."
+            },
+            {
+              id: "a7-q26",
+              questionNumber: 26,
+              type: "summary_completion",
+              topic: "policy",
+              estimatedBand: 8.0,
+              prompt: "Socio-economic tensions could be eased through predator damage ____ funds.",
+              correctAnswer: "compensation",
+              explanation: "Paragraph F highlights 'predator damage compensation funds'.",
+              evidence: "including predator damage compensation funds, community ecotourism dividends"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      passageNumber: 3,
+      title: "Paleoclimatology and Speleothem Isotope Geochemistry",
+      subtitle: "Reconstructing Millennial Monsoon Dynamics from Cave Calcite Deposits",
+      text: `Paragraph A
+To predict the trajectory of anthropogenic climate change with quantitative rigor, climatologists require high-resolution historical baseline data that extends far beyond the brief two-century span of instrumental meteorological records. While polar ice cores extracted from Antarctica and Greenland provide magnificent polar atmospheric records dating back hundreds of millennia, they cannot capture regional terrestrial precipitation regimes across lower-latitude continental landmasses. To fill this critical empirical void, paleoclimatologists have turned to speleothems—secondary mineral cave formations, predominantly stalagmites—as ultra-precise terrestrial archives of Earth's climate history.
+
+Paragraph B
+Stalagmites form through a continuous, elegant hydrogeochemical deposition cycle. Atmospheric precipitation absorbs carbon dioxide (CO2) from ambient air and decomposing soil organic matter as it percolates down through overlying karst bedrock. This dissolved carbon dioxide forms weak carbonic acid, which dissolves the surrounding calcium carbonate limestone bedrock into soluble calcium and bicarbonate ions. When this dripwater eventually emerges from the ceiling of a cave chamber, the lower partial pressure of carbon dioxide in the cave air triggers rapid degassing of CO2 from the droplet. To re-establish chemical equilibrium, calcium carbonate precipitates out of solution, depositing microscopic crystalline calcite or aragonite layers onto the growing stalagmite tip.
+
+Paragraph C
+The primary proxy for reconstructing past rainfall dynamics is the stable oxygen isotope ratio, denoted as delta-O-18 (δ18O). Naturally occurring oxygen exists primarily as two stable isotopes: the common light isotope oxygen-16 (16O, accounting for over 99.7 percent of atoms) and the rare heavy isotope oxygen-18 (18O). During atmospheric evaporation from equatorial ocean basins, water molecules containing the lighter 16O evaporate preferentially due to their lower vapor pressure. As moist maritime air masses travel inland and undergo progressive cooling and condensation, raindrops enriched in heavy 18O fall out first—a thermodynamic fractionation phenomenon known as Rayleigh distillation.
+
+Paragraph D
+In regions dominated by tropical and subtropical monsoons, such as the Asian monsoon domain across southern China and India, this fractionation produces a pronounced 'amount effect'. During intense summer monsoon seasons characterized by vigorous convective atmospheric circulation, torrential rainfall continually depletes moisture clouds of heavy 18O. Consequently, the precipitation that eventually reaches cave dripwater and is locked into stalagmite calcite crystals exhibits depleted (more negative) δ18O values. Conversely, prolonged periods of weakened monsoon circulation and continental drought result in enriched (less negative) δ18O signatures, providing an indelible signature of past precipitation abundance.
+
+Paragraph E
+Crucially, stalagmites can be dated with extraordinary geochronological precision using uranium-thorium (U-Th) thermal ionization mass spectrometry. Naturally occurring trace uranium dissolved in rainwater is co-precipitated into stalagmite calcite lattices. Because thorium is completely insoluble in water, fresh calcite contains zero thorium upon formation. Over time, uranium-234 radioactively decays into thorium-230 at a mathematically constant half-life. By measuring the precise ratio of thorium-230 to uranium-234 using modern mass spectrometers, geochemists can date speleothem layers back six hundred thousand years with an absolute chronological error margin of less than one percent.
+
+Paragraph F
+Speleothem records from Chinese caves such as Hulu Cave and Dongge Cave have revealed that Asian monsoon intensity is fundamentally paced by cyclical variations in Earth's orbital geometry—specifically the twenty-three-thousand-year cycle of axial precession. Furthermore, these cave archives proved that lower-latitude monsoon systems responded rapidly to abrupt millennial-scale cooling events in the North Atlantic, such as Heinrich events and Younger Dryas cold reversals. When catastrophic melting icebergs flooded the North Atlantic with buoyant freshwater, disrupting the Atlantic Meridional Overturning Circulation (AMOC), the Asian monsoon collapsed into severe multi-decadal mega-droughts within less than a single human generation, demonstrating the hyper-connected nature of global planetary climate.`,
+      wordCount: 880,
+      questionGroups: [
+        {
+          groupInstruction: "Choose the correct letter, A, B, C, or D. Write the correct letter in boxes 27–32 on your answer sheet.",
+          questionType: "multiple_choice_single",
+          questions: [
+            {
+              id: "a7-q27",
+              questionNumber: 27,
+              type: "multiple_choice_single",
+              topic: "geology",
+              estimatedBand: 7.0,
+              prompt: "Polar ice cores are insufficient for lower-latitude climate reconstruction because",
+              options: [
+                "A) they melt during transport to laboratories.",
+                "B) they only record atmospheric conditions in polar regions.",
+                "C) ice cannot be dated older than fifty years.",
+                "D) polar ice contains no chemical isotopes."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph A states ice cores cannot capture regional terrestrial precipitation regimes across lower-latitude continental landmasses.",
+              evidence: "they cannot capture regional terrestrial precipitation regimes across lower-latitude continental landmasses."
+            },
+            {
+              id: "a7-q28",
+              questionNumber: 28,
+              type: "multiple_choice_single",
+              topic: "chemistry",
+              estimatedBand: 7.5,
+              prompt: "Calcite precipitates on a stalagmite when cave dripwater",
+              options: [
+                "A) freezes due to winter temperatures.",
+                "B) releases carbon dioxide into the cave atmosphere.",
+                "C) reacts with sulfuric acid from bat guano.",
+                "D) evaporates completely under sunlight."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph B explains lower partial pressure of CO2 triggers degassing of CO2 from the droplet, causing calcium carbonate to precipitate.",
+              evidence: "triggers rapid degassing of CO2 from the droplet. To re-establish chemical equilibrium, calcium carbonate precipitates out of solution"
+            },
+            {
+              id: "a7-q29",
+              questionNumber: 29,
+              type: "multiple_choice_single",
+              topic: "physics",
+              estimatedBand: 8.0,
+              prompt: "Rayleigh distillation causes raindrops falling early in an air mass trajectory to",
+              options: [
+                "A) contain a higher proportion of the heavy oxygen-18 isotope.",
+                "B) evaporate before reaching the ground.",
+                "C) possess zero oxygen molecules.",
+                "D) freeze into hail stones."
+              ],
+              correctAnswer: "A",
+              explanation: "Paragraph C notes that as moist air undergoes cooling, raindrops enriched in heavy 18O fall out first.",
+              evidence: "raindrops enriched in heavy 18O fall out first—a thermodynamic fractionation phenomenon known as Rayleigh distillation."
+            },
+            {
+              id: "a7-q30",
+              questionNumber: 30,
+              type: "multiple_choice_single",
+              topic: "geochemistry",
+              estimatedBand: 7.5,
+              prompt: "During periods of intense summer monsoon rains, stalagmite calcite exhibits",
+              options: [
+                "A) a higher amount of toxic thorium.",
+                "B) depleted (more negative) delta-O-18 values.",
+                "C) enriched (positive) delta-O-18 values.",
+                "D) complete dissolution of crystalline layers."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph D states precipitation that reaches dripwater exhibits depleted (more negative) delta-O-18 values.",
+              evidence: "exhibits depleted (more negative) δ18O values. Conversely, prolonged periods of weakened monsoon circulation... result in enriched (less negative) δ18O signatures"
+            },
+            {
+              id: "a7-q31",
+              questionNumber: 31,
+              type: "multiple_choice_single",
+              topic: "geochronology",
+              estimatedBand: 8.0,
+              prompt: "Uranium-thorium dating works accurately on stalagmites because fresh calcite contains",
+              options: [
+                "A) equal parts uranium and thorium.",
+                "B) zero thorium when initially formed.",
+                "C) only thorium-230 and no uranium.",
+                "D) radioactive lead isotopes."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph E explains thorium is insoluble in water, so fresh calcite contains zero thorium upon formation.",
+              evidence: "Because thorium is completely insoluble in water, fresh calcite contains zero thorium upon formation."
+            },
+            {
+              id: "a7-q32",
+              questionNumber: 32,
+              type: "multiple_choice_single",
+              topic: "climatology",
+              estimatedBand: 8.5,
+              prompt: "Hulu Cave records demonstrated that melting ice in the North Atlantic led to",
+              options: [
+                "A) severe drought in the Asian monsoon region within a generation.",
+                "B) higher global sea levels with no impact on Asia.",
+                "C) the immediate extinction of cave bats.",
+                "D) an increase in Chinese monsoon rainfall."
+              ],
+              correctAnswer: "A",
+              explanation: "Paragraph F explains freshwater disruption caused the Asian monsoon to collapse into severe mega-droughts within less than a generation.",
+              evidence: "the Asian monsoon collapsed into severe multi-decadal mega-droughts within less than a single human generation"
+            }
+          ]
+        },
+        {
+          groupInstruction: "Look at the following scientific concepts (Questions 33–36) and the mechanisms below. Match each concept with the correct mechanism, A–D. Write the correct letter in boxes 33–36.",
+          questionType: "matching_features",
+          questions: [
+            {
+              id: "a7-q33",
+              questionNumber: 33,
+              type: "matching_features",
+              topic: "climatology",
+              estimatedBand: 7.5,
+              prompt: "Rayleigh distillation",
+              options: [
+                "A) Progressive thermodynamic loss of heavier isotopes during cloud transport.",
+                "B) Degassing of carbon dioxide causing mineral crystallization.",
+                "C) Radioactive decay of an unstable parent element into an insoluble daughter isotope.",
+                "D) 23,000-year cyclical shifts in Earth's orbital tilt and orientation."
+              ],
+              correctAnswer: "A",
+              explanation: "Paragraph C explains Rayleigh distillation as the progressive loss of heavier 18O as moist air travels inland.",
+              evidence: "raindrops enriched in heavy 18O fall out first—a thermodynamic fractionation phenomenon known as Rayleigh distillation."
+            },
+            {
+              id: "a7-q34",
+              questionNumber: 34,
+              type: "matching_features",
+              topic: "geochemistry",
+              estimatedBand: 7.0,
+              prompt: "Degassing precipitation",
+              options: [
+                "A) Progressive thermodynamic loss of heavier isotopes during cloud transport.",
+                "B) Degassing of carbon dioxide causing mineral crystallization.",
+                "C) Radioactive decay of an unstable parent element into an insoluble daughter isotope.",
+                "D) 23,000-year cyclical shifts in Earth's orbital tilt and orientation."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph B explains that when carbon dioxide degasses from dripwater, calcium carbonate precipitates out.",
+              evidence: "triggers rapid degassing of CO2 from the droplet. To re-establish chemical equilibrium, calcium carbonate precipitates out of solution"
+            },
+            {
+              id: "a7-q35",
+              questionNumber: 35,
+              type: "matching_features",
+              topic: "geochronology",
+              estimatedBand: 8.0,
+              prompt: "U-Th geochronology",
+              options: [
+                "A) Progressive thermodynamic loss of heavier isotopes during cloud transport.",
+                "B) Degassing of carbon dioxide causing mineral crystallization.",
+                "C) Radioactive decay of an unstable parent element into an insoluble daughter isotope.",
+                "D) 23,000-year cyclical shifts in Earth's orbital tilt and orientation."
+              ],
+              correctAnswer: "C",
+              explanation: "Paragraph E details uranium-234 radioactively decaying into thorium-230.",
+              evidence: "uranium-234 radioactively decays into thorium-230 at a mathematically constant half-life."
+            },
+            {
+              id: "a7-q36",
+              questionNumber: 36,
+              type: "matching_features",
+              topic: "astronomy",
+              estimatedBand: 7.5,
+              prompt: "Axial precession",
+              options: [
+                "A) Progressive thermodynamic loss of heavier isotopes during cloud transport.",
+                "B) Degassing of carbon dioxide causing mineral crystallization.",
+                "C) Radioactive decay of an unstable parent element into an insoluble daughter isotope.",
+                "D) 23,000-year cyclical shifts in Earth's orbital tilt and orientation."
+              ],
+              correctAnswer: "D",
+              explanation: "Paragraph F mentions the twenty-three-thousand-year cycle of axial precession pacing monsoon intensity.",
+              evidence: "twenty-three-thousand-year cycle of axial precession."
+            }
+          ]
+        },
+        {
+          groupInstruction: "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 37–40 on your answer sheet.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "a7-q37",
+              questionNumber: 37,
+              type: "sentence_completion",
+              topic: "geology",
+              estimatedBand: 7.0,
+              prompt: "Stalagmites are secondary mineral cave deposits formed predominantly of crystalline ____.",
+              correctAnswer: "calcite",
+              explanation: "Paragraph B states layers deposit as microscopic crystalline calcite or aragonite.",
+              evidence: "depositing microscopic crystalline calcite or aragonite layers onto the growing stalagmite tip."
+            },
+            {
+              id: "a7-q38",
+              questionNumber: 38,
+              type: "sentence_completion",
+              topic: "geochemistry",
+              estimatedBand: 7.5,
+              prompt: "The monsoon isotope pattern of depleted delta-O-18 values is known as the ____ effect.",
+              correctAnswer: "amount",
+              explanation: "Paragraph D states: 'this fractionation produces a pronounced amount effect.'",
+              evidence: "this fractionation produces a pronounced 'amount effect'."
+            },
+            {
+              id: "a7-q39",
+              questionNumber: 39,
+              type: "sentence_completion",
+              topic: "physics",
+              estimatedBand: 8.0,
+              prompt: "Modern laboratories measure isotope concentrations using thermal ionization ____ spectrometry.",
+              correctAnswer: "mass",
+              explanation: "Paragraph E specifies 'thermal ionization mass spectrometry.'",
+              evidence: "uranium-thorium (U-Th) thermal ionization mass spectrometry."
+            },
+            {
+              id: "a7-q40",
+              questionNumber: 40,
+              type: "sentence_completion",
+              topic: "oceanography",
+              estimatedBand: 8.5,
+              prompt: "Atlantic freshwater surges disrupted the ocean conveyor current known abbreviated as the ____.",
+              correctAnswer: "AMOC",
+              explanation: "Paragraph F refers to the Atlantic Meridional Overturning Circulation (AMOC).",
+              evidence: "disrupting the Atlantic Meridional Overturning Circulation (AMOC)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync(
+  path.resolve('./content/reading/academic-test-07.json'),
+  JSON.stringify(readingTest07, null, 2),
+  'utf8'
+);
+console.log('✓ Created academic-test-07.json');

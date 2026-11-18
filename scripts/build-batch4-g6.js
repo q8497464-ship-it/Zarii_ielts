@@ -1,0 +1,587 @@
+import fs from 'fs';
+import path from 'path';
+
+const generalTest06 = {
+  id: "gen-reading-06",
+  title: "General Training Reading Practice Test 6",
+  testType: "general",
+  difficulty: "medium",
+  timeLimitMinutes: 60,
+  passages: [
+    {
+      passageNumber: 1,
+      title: "Community Adult Evening Courses & Public Swimming Pool Etiquette",
+      subtitle: "Continuing adult education policies and municipal leisure regulations",
+      text: `Section 1A: Riverside Adult Community College Enrolment Policy
+Riverside Adult Community College offers over eighty evening and weekend enrichment courses, ranging from conversational conversational languages and computer programming to digital photography and pottery. Enrolment for the autumn term opens on Monday, August the twelfth, and can be completed via the college website or in person at the Registry Desk in Hall A. Early-bird applicants who register at least three weeks prior to course commencement receive a ten percent tuition reduction. Senior citizens aged sixty-five and over, as well as registered jobseekers, qualify for a twenty-five percent concessionary fee upon providing proof of eligibility.
+
+Should an enrolled student need to withdraw from a course, refund requests must be submitted in writing to the Registrar at least seven working days before the scheduled first class. Such cancellations will receive a full refund less a fifteen-pound administrative processing fee. Withdrawals submitted fewer than seven days prior to course start, or after classes have commenced, are non-refundable except in cases of certified medical incapacity. Courses that fail to achieve the minimum viable enrolment threshold of eight participants will be canceled five days before the start date; affected students will receive an immediate one hundred percent refund or the option to transfer without charge to an alternate course.
+
+Section 1B: Oasis Municipal Leisure Centre Pool Guidelines
+The Oasis Leisure Centre operates a twenty-five-meter heated indoor swimming pool alongside a family leisure lagoon. To preserve immaculate water hygiene and ensure swimmer safety, all patrons must observe pool regulations. Outdoor footwear is strictly prohibited beyond the locker room boundary; swimmers must proceed barefoot or wear clean rubber pool sandals. All swimmers must shower thoroughly with soap in the communal shower bays before entering the water to remove cosmetics, deodorants, and body oils that react negatively with pool sanitizing chloramines.
+
+During designated lane swimming hours, the main pool is divided into three pace lanes: Slow, Medium, and Fast. Swimmers must observe the directional arrows posted at the end of each lane, swimming in a clockwise circuit in the odd-numbered lanes and counter-clockwise in even-numbered lanes to avoid mid-lane collisions. Slower swimmers should allow faster swimmers to overtake at turning walls; stopping or congregating in the center of the lane is strictly forbidden. Children under eight years old must be directly supervised in the water at all times by a responsible adult aged sixteen or over, with a maximum supervision ratio of two children per adult.`,
+      wordCount: 440,
+      questionGroups: [
+        {
+          groupInstruction: "Do the following statements agree with the information given in Section 1A? In boxes 1–7 on your answer sheet, write:\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+          questionType: "true_false_not_given",
+          questions: [
+            {
+              id: "g6-q1",
+              questionNumber: 1,
+              type: "true_false_not_given",
+              topic: "education",
+              estimatedBand: 5.5,
+              prompt: "Early-bird applicants save 10% if they enroll at least three weeks before classes start.",
+              correctAnswer: "TRUE",
+              explanation: "Section 1A states early-bird applicants registering three weeks prior receive a ten percent reduction.",
+              evidence: "register at least three weeks prior to course commencement receive a ten percent tuition reduction."
+            },
+            {
+              id: "g6-q2",
+              questionNumber: 2,
+              type: "true_false_not_given",
+              topic: "education",
+              estimatedBand: 6.0,
+              prompt: "Jobseekers are eligible for a twenty-five percent discount on course fees.",
+              correctAnswer: "TRUE",
+              explanation: "Section 1A notes senior citizens and registered jobseekers qualify for a twenty-five percent concession.",
+              evidence: "registered jobseekers, qualify for a twenty-five percent concessionary fee"
+            },
+            {
+              id: "g6-q3",
+              questionNumber: 3,
+              type: "true_false_not_given",
+              topic: "refunds",
+              estimatedBand: 6.0,
+              prompt: "A student who cancels five days before classes begin can still receive a partial refund.",
+              correctAnswer: "FALSE",
+              explanation: "Section 1A states withdrawals fewer than seven days prior are non-refundable except for medical reasons.",
+              evidence: "Withdrawals submitted fewer than seven days prior to course start, or after classes have commenced, are non-refundable"
+            },
+            {
+              id: "g6-q4",
+              questionNumber: 4,
+              type: "true_false_not_given",
+              topic: "course policies",
+              estimatedBand: 6.5,
+              prompt: "The college will cancel a course if fewer than eight students enroll.",
+              correctAnswer: "TRUE",
+              explanation: "Section 1A states courses failing to achieve the minimum threshold of eight participants will be canceled.",
+              evidence: "fail to achieve the minimum viable enrolment threshold of eight participants will be canceled"
+            },
+            {
+              id: "g6-q5",
+              questionNumber: 5,
+              type: "true_false_not_given",
+              topic: "leisure",
+              estimatedBand: 5.5,
+              prompt: "Swimmers are allowed to wear clean outdoor running shoes on the pool deck.",
+              correctAnswer: "FALSE",
+              explanation: "Section 1B states outdoor footwear is strictly prohibited beyond the locker room boundary.",
+              evidence: "Outdoor footwear is strictly prohibited beyond the locker room boundary"
+            },
+            {
+              id: "g6-q6",
+              questionNumber: 6,
+              type: "true_false_not_given",
+              topic: "hygiene",
+              estimatedBand: 6.0,
+              prompt: "Showering before swimming prevents cosmetics from reacting with pool chemicals.",
+              correctAnswer: "TRUE",
+              explanation: "Section 1B notes showering removes cosmetics and oils that react with chloramines.",
+              evidence: "remove cosmetics, deodorants, and body oils that react negatively with pool sanitizing chloramines."
+            },
+            {
+              id: "g6-q7",
+              questionNumber: 7,
+              type: "true_false_not_given",
+              topic: "rules",
+              estimatedBand: 6.5,
+              prompt: "An adult may supervise three children under eight in the leisure lagoon.",
+              correctAnswer: "FALSE",
+              explanation: "Section 1B specifies a maximum supervision ratio of two children per adult.",
+              evidence: "maximum supervision ratio of two children per adult."
+            }
+          ]
+        },
+        {
+          groupInstruction: "Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 8–14 on your answer sheet.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "g6-q8",
+              questionNumber: 8,
+              type: "sentence_completion",
+              topic: "dates",
+              estimatedBand: 5.5,
+              prompt: "Autumn term registration opens on Monday, August the ____.",
+              correctAnswer: ["12th", "12", "twelfth"],
+              explanation: "Section 1A states enrolment opens on Monday, August the twelfth.",
+              evidence: "opens on Monday, August the twelfth"
+            },
+            {
+              id: "g6-q9",
+              questionNumber: 9,
+              type: "sentence_completion",
+              topic: "fees",
+              estimatedBand: 6.0,
+              prompt: "Standard course cancellations incur a £____ administrative fee.",
+              correctAnswer: ["15", "fifteen"],
+              explanation: "Section 1A mentions less a fifteen-pound administrative processing fee.",
+              evidence: "full refund less a fifteen-pound administrative processing fee."
+            },
+            {
+              id: "g6-q10",
+              questionNumber: 10,
+              type: "sentence_completion",
+              topic: "refunds",
+              estimatedBand: 6.5,
+              prompt: "Late withdrawals are only refunded in cases of certified medical ____.",
+              correctAnswer: "incapacity",
+              explanation: "Section 1A notes except in cases of certified medical incapacity.",
+              evidence: "except in cases of certified medical incapacity."
+            },
+            {
+              id: "g6-q11",
+              questionNumber: 11,
+              type: "sentence_completion",
+              topic: "hygiene",
+              estimatedBand: 6.0,
+              prompt: "Swimmers should wash using ____ in the shower bays before swimming.",
+              correctAnswer: "soap",
+              explanation: "Section 1B states swimmers must shower thoroughly with soap.",
+              evidence: "shower thoroughly with soap in the communal shower bays"
+            },
+            {
+              id: "g6-q12",
+              questionNumber: 12,
+              type: "sentence_completion",
+              topic: "rules",
+              estimatedBand: 6.5,
+              prompt: "In odd-numbered lanes, swimmers move in a ____ direction.",
+              correctAnswer: "clockwise",
+              explanation: "Section 1B states swimming in a clockwise circuit in the odd-numbered lanes.",
+              evidence: "swimming in a clockwise circuit in the odd-numbered lanes"
+            },
+            {
+              id: "g6-q13",
+              questionNumber: 13,
+              type: "sentence_completion",
+              topic: "swimming etiquette",
+              estimatedBand: 6.0,
+              prompt: "Faster swimmers should overtake others at the turning ____.",
+              correctAnswer: "walls",
+              explanation: "Section 1B states allow faster swimmers to overtake at turning walls.",
+              evidence: "allow faster swimmers to overtake at turning walls"
+            },
+            {
+              id: "g6-q14",
+              questionNumber: 14,
+              type: "sentence_completion",
+              topic: "safety",
+              estimatedBand: 6.5,
+              prompt: "Adult supervisors must be aged ____ or over.",
+              correctAnswer: ["16", "sixteen"],
+              explanation: "Section 1B specifies a responsible adult aged sixteen or over.",
+              evidence: "responsible adult aged sixteen or over"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      passageNumber: 2,
+      title: "Corporate Data Protection (GDPR) and Staff Grievance Procedures",
+      subtitle: "Regulatory information security standards and formal workplace dispute handling",
+      text: `Section 2A: Employee Cybersecurity and Data Protection Protocols
+Under the General Data Protection Regulation (GDPR) and the Data Protection Act 2018, all personnel at Sterling Financial must uphold stringent standards when processing Personally Identifiable Information (PII). Client records—including full legal names, banking coordinates, credit ratings, and home addresses—must be stored exclusively within encrypted enterprise cloud databases. Storing unencrypted client records on local hard drives, portable USB flash drives, or personal mobile phones is a gross breach of corporate policy that may result in summary dismissal for gross misconduct.
+
+All staff must lock computer display terminals (Windows key + L) whenever stepping away from desks. Company email passwords must contain at least twelve characters, integrating uppercase letters, numbers, and symbols, and must be rotated every ninety days. Multi-factor authentication (MFA) is compulsory for accessing corporate networks remotely. In the event that an employee misplaces a company laptop or detects an unauthorized data breach, they must notify the Data Protection Officer (DPO) within two hours via the urgent internal security hotline.
+
+Section 2B: Formal Employee Grievance and Dispute Resolution Procedure
+Sterling Financial is committed to maintaining an equitable working environment free from harassment, discrimination, and unfair treatment. When an employee feels aggrieved by a colleague or supervisor, they are encouraged to attempt informal resolution first by discussing the matter with their immediate line manager. However, if informal avenues prove ineffective or inappropriate, the employee may invoke the Formal Grievance Procedure by lodging a written Statement of Grievance with the Human Resources Director.
+
+Upon receiving the written statement, Human Resources will appoint an independent senior manager to conduct a formal investigation. A formal grievance hearing will be convened within ten working days of receipt. The employee has the statutory legal right to be accompanied to the hearing by either an accredited trade union representative or a workplace colleague. Following the hearing, the investigating officer will deliver a written decision within five working days. If the employee is dissatisfied with the outcome, they have the right to lodge a formal appeal within seven working days, which will be heard by an Appeals Committee comprising an Executive Director and an independent external mediator.`,
+      wordCount: 420,
+      questionGroups: [
+        {
+          groupInstruction: "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 15–21 on your answer sheet.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "g6-q15",
+              questionNumber: 15,
+              type: "sentence_completion",
+              topic: "data privacy",
+              estimatedBand: 6.0,
+              prompt: "Company email passwords must have a minimum length of ____ characters.",
+              correctAnswer: ["12", "twelve"],
+              explanation: "Section 2A states passwords must contain at least twelve characters.",
+              evidence: "passwords must contain at least twelve characters"
+            },
+            {
+              id: "g6-q16",
+              questionNumber: 16,
+              type: "sentence_completion",
+              topic: "security",
+              estimatedBand: 6.0,
+              prompt: "Passwords must be changed every ____ days.",
+              correctAnswer: ["90", "ninety"],
+              explanation: "Section 2A specifies rotated every ninety days.",
+              evidence: "must be rotated every ninety days."
+            },
+            {
+              id: "g6-q17",
+              questionNumber: 17,
+              type: "sentence_completion",
+              topic: "security",
+              estimatedBand: 6.5,
+              prompt: "Suspected data breaches must be reported to the DPO within ____ hours.",
+              correctAnswer: ["2", "two"],
+              explanation: "Section 2A states notify the Data Protection Officer within two hours.",
+              evidence: "notify the Data Protection Officer (DPO) within two hours"
+            },
+            {
+              id: "g6-q18",
+              questionNumber: 18,
+              type: "sentence_completion",
+              topic: "hr",
+              estimatedBand: 6.0,
+              prompt: "To begin a formal complaint, an employee submits a Statement of ____.",
+              correctAnswer: "Grievance",
+              explanation: "Section 2B mentions lodging a written Statement of Grievance.",
+              evidence: "lodging a written Statement of Grievance with the Human Resources Director."
+            },
+            {
+              id: "g6-q19",
+              questionNumber: 19,
+              type: "sentence_completion",
+              topic: "hearings",
+              estimatedBand: 6.5,
+              prompt: "A formal hearing is scheduled within ____ working days of receipt.",
+              correctAnswer: ["10", "ten"],
+              explanation: "Section 2B states hearing convened within ten working days.",
+              evidence: "formal grievance hearing will be convened within ten working days of receipt."
+            },
+            {
+              id: "g6-q20",
+              questionNumber: 20,
+              type: "sentence_completion",
+              topic: "rights",
+              estimatedBand: 6.5,
+              prompt: "Staff may be accompanied by a colleague or a trade ____ representative.",
+              correctAnswer: "union",
+              explanation: "Section 2B states accompanied by an accredited trade union representative.",
+              evidence: "accompanied to the hearing by either an accredited trade union representative or a workplace colleague."
+            },
+            {
+              id: "g6-q21",
+              questionNumber: 21,
+              type: "sentence_completion",
+              topic: "appeals",
+              estimatedBand: 6.0,
+              prompt: "Grievance appeals must be submitted within ____ working days.",
+              correctAnswer: ["7", "seven"],
+              explanation: "Section 2B notes right to lodge a formal appeal within seven working days.",
+              evidence: "right to lodge a formal appeal within seven working days"
+            }
+          ]
+        },
+        {
+          groupInstruction: "Do the following statements agree with the information given in Section 2A and 2B? In boxes 22–27 on your answer sheet, write:\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+          questionType: "true_false_not_given",
+          questions: [
+            {
+              id: "g6-q22",
+              questionNumber: 22,
+              type: "true_false_not_given",
+              topic: "security",
+              estimatedBand: 6.0,
+              prompt: "Employees can save client banking details on personal USB sticks if working from home.",
+              correctAnswer: "FALSE",
+              explanation: "Section 2A states storing client records on USB drives or personal phones may result in summary dismissal.",
+              evidence: "portable USB flash drives, or personal mobile phones is a gross breach of corporate policy that may result in summary dismissal"
+            },
+            {
+              id: "g6-q23",
+              questionNumber: 23,
+              type: "true_false_not_given",
+              topic: "cybersecurity",
+              estimatedBand: 6.0,
+              prompt: "Remote network access requires multi-factor authentication.",
+              correctAnswer: "TRUE",
+              explanation: "Section 2A confirms multi-factor authentication is compulsory for accessing corporate networks remotely.",
+              evidence: "Multi-factor authentication (MFA) is compulsory for accessing corporate networks remotely."
+            },
+            {
+              id: "g6-q24",
+              questionNumber: 24,
+              type: "true_false_not_given",
+              topic: "management",
+              estimatedBand: 6.5,
+              prompt: "The company pays financial compensation if a data breach exposes customer names.",
+              correctAnswer: "NOT GIVEN",
+              explanation: "Section 2A outlines reporting procedures for breaches, but does not state whether the company pays compensation to customers.",
+              evidence: "In the event that an employee misplaces a company laptop or detects an unauthorized data breach, they must notify the Data Protection Officer"
+            },
+            {
+              id: "g6-q25",
+              questionNumber: 25,
+              type: "true_false_not_given",
+              topic: "disputes",
+              estimatedBand: 6.0,
+              prompt: "Employees must first try to resolve disputes informally with their line manager.",
+              correctAnswer: "TRUE",
+              explanation: "Section 2B states employees are encouraged to attempt informal resolution first by discussing with line managers.",
+              evidence: "encouraged to attempt informal resolution first by discussing the matter with their immediate line manager."
+            },
+            {
+              id: "g6-q26",
+              questionNumber: 26,
+              type: "true_false_not_given",
+              topic: "hearings",
+              estimatedBand: 6.5,
+              prompt: "The written decision from the grievance hearing is issued within five working days.",
+              correctAnswer: "TRUE",
+              explanation: "Section 2B confirms the investigating officer will deliver a written decision within five working days.",
+              evidence: "investigating officer will deliver a written decision within five working days."
+            },
+            {
+              id: "g6-q27",
+              questionNumber: 27,
+              type: "true_false_not_given",
+              topic: "legal",
+              estimatedBand: 7.0,
+              prompt: "Employees who appeal an outcome can choose their own private external mediator.",
+              correctAnswer: "NOT GIVEN",
+              explanation: "Section 2B states the Appeals Committee includes an independent external mediator, but does not state the employee chooses this person.",
+              evidence: "Appeals Committee comprising an Executive Director and an independent external mediator."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      passageNumber: 3,
+      title: "The Rediscovery and Modern Uses of Hemp Fiber in Sustainable Architecture",
+      subtitle: "How ancient natural composite materials are decarbonizing commercial construction",
+      text: `Paragraph A
+As the modern construction industry confronts mounting pressure to decarbonize its supply chains, civil engineers and sustainable architects are turning their attention to an ancient crop: industrial hemp (Cannabis sativa L.). Conventional construction materials—principally Portland cement, fired clay bricks, and petroleum-based polymer insulations—are responsible for nearly forty percent of global energy-related carbon emissions. In contrast, industrial hemp is an exceptionally fast-growing annual plant that sequesters atmospheric carbon dioxide through photosynthesis with extraordinary efficiency, capturing up to fifteen tonnes of carbon per hectare in just four months of cultivation.
+
+Paragraph B
+The primary structural and insulating building material derived from hemp is 'hempcrete'—a bio-composite formulation made by blending the chopped woody core of the hemp stalk (termed the hurd or shiv) with a formulated lime binder and water. Unlike dense, structural concrete, which cures into an inflexible, impermeable rock, hempcrete is a lightweight, vapor-permeable composite. It is typically tamped into timber framework formwork or installed as prefabricated modular wall blocks to create monolithic building envelopes.
+
+Paragraph C
+Hempcrete's thermodynamic performance stems from its unique porous microstructure. Traditional synthetic insulations, such as expanded polystyrene and mineral wool, function merely as passive thermal resistors (R-value). Hempcrete, however, combines moderate insulation with significant thermal mass and exceptional hygroscopic capacity. The microscopic pores in the woody shiv absorb airborne moisture when indoor relative humidity rises and release it when the air dries out. During this moisture exchange, the latent heat of water condensation and evaporation buffers indoor temperatures, dramatically curtailing heating and cooling electricity demand.
+
+Paragraph D
+Furthermore, hempcrete structures offer extraordinary fire resistance and biological durability. The lime binder undergoes continuous carbonation, drawing carbon dioxide out of ambient air over decades to chemically transition back into hard limestone. This mineralization process renders the composite non-flammable—achieving superior Class A fire ratings without toxic chemical retardants. Moreover, the high alkalinity of the lime matrix creates a hostile environment for mold, fungal rot, termites, and rodent infestation, ensuring that buildings endure for centuries without toxic preservative treatments.
+
+Paragraph E
+Despite these compelling advantages, commercial adoption of hempcrete faced decades of regulatory resistance. In many Western nations throughout the twentieth century, strict narcotics prohibition laws conflated non-psychoactive industrial hemp with recreational marijuana, effectively criminalizing commercial farming. However, legislative reforms—such as the 2018 United States Farm Bill and revised European Union agricultural directives—have legalized industrial hemp containing less than zero point three percent tetrahydrocannabinol (THC). As automated decortication processing factories emerge to separate raw hemp stalks into high-tensile outer bast fibers and inner woody hurds, hemp is poised to transition from a niche eco-curiosity into a cornerstone of regenerative, carbon-negative architecture.`,
+      wordCount: 540,
+      questionGroups: [
+        {
+          groupInstruction: "Choose the correct letter, A, B, C, or D. Write the correct letter in boxes 28–33 on your answer sheet.",
+          questionType: "multiple_choice_single",
+          questions: [
+            {
+              id: "g6-q28",
+              questionNumber: 28,
+              type: "multiple_choice_single",
+              topic: "environment",
+              estimatedBand: 6.0,
+              prompt: "Conventional building materials are responsible for approximately what proportion of global carbon emissions?",
+              options: [
+                "A) 10%.",
+                "B) 25%.",
+                "C) 40%.",
+                "D) 70%."
+              ],
+              correctAnswer: "C",
+              explanation: "Paragraph A states conventional materials are responsible for nearly forty percent of global carbon emissions.",
+              evidence: "responsible for nearly forty percent of global energy-related carbon emissions."
+            },
+            {
+              id: "g6-q29",
+              questionNumber: 29,
+              type: "multiple_choice_single",
+              topic: "agriculture",
+              estimatedBand: 6.5,
+              prompt: "How much carbon can one hectare of industrial hemp capture in four months?",
+              options: [
+                "A) 5 tonnes.",
+                "B) 15 tonnes.",
+                "C) 30 tonnes.",
+                "D) 50 tonnes."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph A notes capturing up to fifteen tonnes of carbon per hectare in four months.",
+              evidence: "capturing up to fifteen tonnes of carbon per hectare in just four months of cultivation."
+            },
+            {
+              id: "g6-q30",
+              questionNumber: 30,
+              type: "multiple_choice_single",
+              topic: "materials",
+              estimatedBand: 7.0,
+              prompt: "Hempcrete is manufactured by combining the inner woody core of hemp with",
+              options: [
+                "A) asphalt bitumen.",
+                "B) a formulated lime binder and water.",
+                "C) liquid petroleum plastic.",
+                "D) pulverized coal ash."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph B states blending the woody core with a formulated lime binder and water.",
+              evidence: "blending the chopped woody core of the hemp stalk (termed the hurd or shiv) with a formulated lime binder and water."
+            },
+            {
+              id: "g6-q31",
+              questionNumber: 31,
+              type: "multiple_choice_single",
+              topic: "physics",
+              estimatedBand: 7.0,
+              prompt: "Hempcrete moderates indoor room temperatures because its porous structure",
+              options: [
+                "A) generates internal friction.",
+                "B) absorbs and releases moisture, exploiting latent heat.",
+                "C) converts sound waves into warm light.",
+                "D) reflects all solar rays."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph C explains moisture exchange and the latent heat of condensation and evaporation buffer indoor temperatures.",
+              evidence: "During this moisture exchange, the latent heat of water condensation and evaporation buffers indoor temperatures"
+            },
+            {
+              id: "g6-q32",
+              questionNumber: 32,
+              type: "multiple_choice_single",
+              topic: "safety",
+              estimatedBand: 6.5,
+              prompt: "Hempcrete achieves high fire safety ratings without chemical additives because the lime binder",
+              options: [
+                "A) stays permanently damp.",
+                "B) slowly mineralizes back into non-flammable limestone.",
+                "C) contains asbestos minerals.",
+                "D) melts at room temperature."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph D notes lime binder undergoes carbonation to chemically transition back into hard limestone.",
+              evidence: "chemically transition back into hard limestone. This mineralization process renders the composite non-flammable"
+            },
+            {
+              id: "g6-q33",
+              questionNumber: 33,
+              type: "multiple_choice_single",
+              topic: "regulations",
+              estimatedBand: 7.0,
+              prompt: "Industrial hemp was legalized under modern agricultural reforms provided THC content is below",
+              options: [
+                "A) 0.1%.",
+                "B) 0.3%.",
+                "C) 1.0%.",
+                "D) 5.0%."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph E specifies legalizing hemp containing less than zero point three percent THC.",
+              evidence: "legalized industrial hemp containing less than zero point three percent tetrahydrocannabinol (THC)."
+            }
+          ]
+        },
+        {
+          groupInstruction: "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 34–40 on your answer sheet.",
+          questionType: "summary_completion",
+          questions: [
+            {
+              id: "g6-q34",
+              questionNumber: 34,
+              type: "summary_completion",
+              topic: "botany",
+              estimatedBand: 6.5,
+              prompt: "The inner woody core of the hemp stem is known technically as the shiv or ____.",
+              correctAnswer: "hurd",
+              explanation: "Paragraph B refers to the woody core as the hurd or shiv.",
+              evidence: "woody core of the hemp stalk (termed the hurd or shiv)"
+            },
+            {
+              id: "g6-q35",
+              questionNumber: 35,
+              type: "summary_completion",
+              topic: "construction",
+              estimatedBand: 7.0,
+              prompt: "Hempcrete walls can be tamped into framework or erected using modular ____.",
+              correctAnswer: "blocks",
+              explanation: "Paragraph B mentions prefabricated modular wall blocks.",
+              evidence: "installed as prefabricated modular wall blocks to create monolithic building envelopes."
+            },
+            {
+              id: "g6-q36",
+              questionNumber: 36,
+              type: "summary_completion",
+              topic: "physics",
+              estimatedBand: 7.0,
+              prompt: "Hempcrete regulates indoor humidity through its high ____ capacity.",
+              correctAnswer: "hygroscopic",
+              explanation: "Paragraph C notes significant thermal mass and exceptional hygroscopic capacity.",
+              evidence: "significant thermal mass and exceptional hygroscopic capacity."
+            },
+            {
+              id: "g6-q37",
+              questionNumber: 37,
+              type: "summary_completion",
+              topic: "chemistry",
+              estimatedBand: 7.5,
+              prompt: "The lime binder slowly absorbs carbon dioxide through a process called ____.",
+              correctAnswer: "carbonation",
+              explanation: "Paragraph D states the lime binder undergoes continuous carbonation.",
+              evidence: "The lime binder undergoes continuous carbonation"
+            },
+            {
+              id: "g6-q38",
+              questionNumber: 38,
+              type: "summary_completion",
+              topic: "biology",
+              estimatedBand: 7.0,
+              prompt: "The natural ____ of the lime prevents mold growth and insect infestation.",
+              correctAnswer: "alkalinity",
+              explanation: "Paragraph D explains high alkalinity creates a hostile environment for mold and pests.",
+              evidence: "the high alkalinity of the lime matrix creates a hostile environment for mold"
+            },
+            {
+              id: "g6-q39",
+              questionNumber: 39,
+              type: "summary_completion",
+              topic: "law",
+              estimatedBand: 6.5,
+              prompt: "In the United States, commercial hemp cultivation was revived by the 2018 ____ Bill.",
+              correctAnswer: "Farm",
+              explanation: "Paragraph E refers to the 2018 United States Farm Bill.",
+              evidence: "such as the 2018 United States Farm Bill and revised European Union"
+            },
+            {
+              id: "g6-q40",
+              questionNumber: 40,
+              type: "summary_completion",
+              topic: "technology",
+              estimatedBand: 7.5,
+              prompt: "Processing plants utilize automated ____ machinery to separate hemp fibers.",
+              correctAnswer: "decortication",
+              explanation: "Paragraph E mentions automated decortication processing factories.",
+              evidence: "automated decortication processing factories emerge to separate raw hemp stalks"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync(
+  path.resolve('./content/reading/general-test-06.json'),
+  JSON.stringify(generalTest06, null, 2),
+  'utf8'
+);
+console.log('✓ Created general-test-06.json');

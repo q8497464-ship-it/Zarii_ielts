@@ -1,0 +1,278 @@
+[
+  {
+    "category": "task1_academic_intro",
+    "categoryTitle": "Task 1 Academic: Introductions & Paraphrasing",
+    "description": "Phrases to introduce what the visual data illustrates without copying the prompt.",
+    "phrases": [
+      {
+        "phrase": "The line graph delineates the proportion of...",
+        "function": "Paraphrasing line charts",
+        "example": "The line graph delineates the proportion of renewable energy consumption across three European nations between 2010 and 2025."
+      },
+      {
+        "phrase": "The bar chart provides a comparative breakdown of...",
+        "function": "Paraphrasing bar charts",
+        "example": "The bar chart provides a comparative breakdown of global expenditure on primary education across five continents."
+      },
+      {
+        "phrase": "The pie charts illustrate the percentage distribution of...",
+        "function": "Paraphrasing pie charts",
+        "example": "The pie charts illustrate the percentage distribution of household waste disposal methods over a ten-year timeframe."
+      },
+      {
+        "phrase": "The table enumerates the volume of...",
+        "function": "Paraphrasing tabular data",
+        "example": "The table enumerates the volume of international tourist arrivals and their corresponding fiscal expenditures."
+      },
+      {
+        "phrase": "The diagram illustrates the sequential stages involved in...",
+        "function": "Paraphrasing engineering & natural processes",
+        "example": "The diagram illustrates the sequential stages involved in the desalination of seawater for municipal consumption."
+      },
+      {
+        "phrase": "The pair of maps illustrates the infrastructural transformations undergone by...",
+        "function": "Paraphrasing chronological map changes",
+        "example": "The pair of maps illustrates the infrastructural transformations undergone by a coastal village following port expansion."
+      }
+    ]
+  },
+  {
+    "category": "task1_academic_trends",
+    "categoryTitle": "Task 1 Academic: Describing Trends & Fluctuations",
+    "description": "Dynamic verbs and collocations to describe upward, downward, and volatile trajectories.",
+    "phrases": [
+      {
+        "phrase": "experienced a meteoric surge, culminating at...",
+        "function": "Rapid dramatic increase",
+        "example": "Solar energy adoption experienced a meteoric surge, culminating at 12.5 gigawatts by 2024."
+      },
+      {
+        "phrase": "witnessed a steady upward trajectory throughout the surveyed timeframe",
+        "function": "Consistent gradual rise",
+        "example": "Electric vehicle sales witnessed a steady upward trajectory throughout the surveyed timeframe."
+      },
+      {
+        "phrase": "plummeted precipitously before bottoming out at...",
+        "function": "Sharp decline and low plateau",
+        "example": "Coal production plummeted precipitously before bottoming out at barely two million metric tons."
+      },
+      {
+        "phrase": "exhibited mild fluctuations, oscillating between... and...",
+        "function": "Volatile but bounded changes",
+        "example": "Wholesale wheat prices exhibited mild fluctuations, oscillating between $180 and $210 per ton."
+      },
+      {
+        "phrase": "plateaued and remained largely static for the remainder of the period",
+        "function": "Reaching an invariant level",
+        "example": "Desktop computer sales plateaued and remained largely static for the remainder of the period."
+      },
+      {
+        "phrase": "doubled fourfold, eclipsing previous historic records",
+        "function": "Multiplied exponential growth",
+        "example": "Passenger traffic doubled fourfold, eclipsing previous historic records established in the 1990s."
+      }
+    ]
+  },
+  {
+    "category": "task1_academic_comparisons",
+    "categoryTitle": "Task 1 Academic: Comparative Analysis & Data Extremes",
+    "description": "Formulas to make precise mathematical and proportional comparisons between categories.",
+    "phrases": [
+      {
+        "phrase": "outstripped its nearest competitor by a substantial margin of...",
+        "function": "Leading by a large difference",
+        "example": "China outstripped its nearest competitor by a substantial margin of over 5 million electric vehicles."
+      },
+      {
+        "phrase": "accounted for the lion's share of total expenditure, standing at...",
+        "function": "Dominant majority portion",
+        "example": "Housing accommodation accounted for the lion's share of total expenditure, standing at roughly 42%."
+      },
+      {
+        "phrase": "constituted a negligible fraction, registering a modest...",
+        "function": "Very small percentage",
+        "example": "Geothermal power constituted a negligible fraction, registering a modest 0.4% of total energy output."
+      },
+      {
+        "phrase": "in stark contrast to..., which registered a mere...",
+        "function": "Highlighting dramatic divergence",
+        "example": "Urban smartphone penetration stood at 89%, in stark contrast to rural areas, which registered a mere 28%."
+      },
+      {
+        "phrase": "was roughly three times higher than that of...",
+        "function": "Multiples comparison",
+        "example": "The proportion of graduate degree holders in city A was roughly three times higher than that of city B."
+      },
+      {
+        "phrase": "stood at virtually identical levels, hovering around...",
+        "function": "Equivalent levels",
+        "example": "Enrollment rates in biology and chemistry stood at virtually identical levels, hovering around 15,000 students."
+      }
+    ]
+  },
+  {
+    "category": "task1_general_letters",
+    "categoryTitle": "Task 1 General Training: Letter Openings & Sign-Offs",
+    "description": "Formulas for formal, semi-formal, and informal IELTS letters.",
+    "phrases": [
+      {
+        "phrase": "I am writing to formally lodge a complaint regarding...",
+        "function": "Formal letter: Complaint",
+        "example": "I am writing to formally lodge a complaint regarding the unacceptable delay in repairing the heating system in apartment 4B."
+      },
+      {
+        "phrase": "I am writing to express my sincere gratitude for the exceptional service provided by...",
+        "function": "Formal letter: Appreciation",
+        "example": "I am writing to express my sincere gratitude for the exceptional service provided by your conference support staff."
+      },
+      {
+        "phrase": "I am writing to inquire about the possibility of...",
+        "function": "Formal letter: Inquiry",
+        "example": "I am writing to inquire about the possibility of rescheduling my professional accreditation examination."
+      },
+      {
+        "phrase": "I hope you are doing well! I'm writing to see if you'd like to join me for...",
+        "function": "Informal letter: Invitation to a friend",
+        "example": "I hope you are doing well! I'm writing to see if you'd like to join me for a weekend hiking trip in the highlands."
+      },
+      {
+        "phrase": "I am writing to bring an urgent matter to your immediate attention regarding...",
+        "function": "Semi-formal letter: Notice to landlord or manager",
+        "example": "I am writing to bring an urgent matter to your immediate attention regarding persistent water leaks in the stairwell."
+      },
+      {
+        "phrase": "Yours sincerely, / Yours faithfully, / Warm regards,",
+        "function": "Standard sign-offs",
+        "example": "Use 'Yours faithfully' when recipient name is unknown (Dear Sir/Madam); use 'Yours sincerely' when name is known (Dear Mr. Davis)."
+      }
+    ]
+  },
+  {
+    "category": "task2_intro_thesis",
+    "categoryTitle": "Task 2 Essay: Introduction & Clear Thesis",
+    "description": "Phrases to present the contemporary background debate and state an unambiguous position.",
+    "phrases": [
+      {
+        "phrase": "Whether... or... has become a subject of considerable controversy in modern discourse.",
+        "function": "Framing the debate",
+        "example": "Whether artificial intelligence will replace classroom teachers has become a subject of considerable controversy in modern discourse."
+      },
+      {
+        "phrase": "While some contend that..., I firmly adhere to the view that...",
+        "function": "Direct thesis statement",
+        "example": "While some contend that higher education should be purely vocational, I firmly adhere to the view that liberal arts foster critical societal reasoning."
+      },
+      {
+        "phrase": "This essay will critically examine both perspectives before articulating a balanced conclusion.",
+        "function": "Roadmap for discussion essays",
+        "example": "This essay will critically examine both perspectives before articulating a balanced, evidence-based conclusion."
+      },
+      {
+        "phrase": "In contemporary society, an increasing number of individuals argue that...",
+        "function": "Modern background opening",
+        "example": "In contemporary society, an increasing number of individuals argue that personal lifestyle changes alone cannot combat climate change."
+      },
+      {
+        "phrase": "There is a compelling justification for the assertion that...",
+        "function": "Strong thesis framing",
+        "example": "There is a compelling justification for the assertion that mandatory physical fitness in schools combats the childhood obesity epidemic."
+      }
+    ]
+  },
+  {
+    "category": "task2_opposing_views",
+    "categoryTitle": "Task 2 Essay: Presenting Opposing Perspectives Neutrally",
+    "description": "Academic structures to acknowledge counter-arguments without sounding dismissive.",
+    "phrases": [
+      {
+        "phrase": "Proponents of this standpoint maintain that...",
+        "function": "Presenting one side",
+        "example": "Proponents of this standpoint maintain that space exploration drives technological spin-offs that benefit terrestrial medicine."
+      },
+      {
+        "phrase": "Advocates argue, with some justification, that...",
+        "function": "Partial concession",
+        "example": "Advocates argue, with some justification, that heavy vehicle congestion charges discourage discretionary car trips in city centers."
+      },
+      {
+        "phrase": "On the other hand, skeptics question the viability of this approach, contending that...",
+        "function": "Introducing counter-argument",
+        "example": "On the other hand, skeptics question the viability of this approach, contending that punitive carbon taxes disproportionately burden low-income families."
+      },
+      {
+        "phrase": "It is widely acknowledged that..., yet this premise fails to account for...",
+        "function": "Rebuttal structure",
+        "example": "It is widely acknowledged that remote work saves commuting time, yet this premise fails to account for the erosion of team cohesion."
+      },
+      {
+        "phrase": "A commonly cited counter-argument is that...",
+        "function": "Neutral counter-view",
+        "example": "A commonly cited counter-argument is that historical monuments demand astronomical maintenance budgets that drain municipal reserves."
+      }
+    ]
+  },
+  {
+    "category": "task2_evidence_examples",
+    "categoryTitle": "Task 2 Essay: Providing Examples & Empirical Evidence",
+    "description": "Formulas to integrate realistic illustrations without sounding informal or anecdotal.",
+    "phrases": [
+      {
+        "phrase": "A prime illustration of this phenomenon can be observed in...",
+        "function": "Introducing a case study",
+        "example": "A prime illustration of this phenomenon can be observed in Scandinavian penal institutions, where vocational training drastically reduces recidivism."
+      },
+      {
+        "phrase": "Empirical studies conducted by... corroborate the view that...",
+        "function": "Citing academic research",
+        "example": "Empirical studies conducted by pediatric researchers corroborate the view that excessive early screen exposure impairs linguistic acquisition."
+      },
+      {
+        "phrase": "To substantiate this claim, one need look no further than...",
+        "function": "Persuasive evidence marker",
+        "example": "To substantiate this claim, one need look no further than Singapore's integrated multimodal public transport network."
+      },
+      {
+        "phrase": "For instance, statistical data from municipal surveys reveals that...",
+        "function": "Data illustration",
+        "example": "For instance, statistical data from municipal surveys reveals that introducing protected bicycle lanes boosted active commuting by 45%."
+      },
+      {
+        "phrase": "A notable historical precedent is...",
+        "function": "Historical evidence",
+        "example": "A notable historical precedent is the global eradication of smallpox through coordinated international public health vaccination campaigns."
+      }
+    ]
+  },
+  {
+    "category": "task2_hedging_conclusions",
+    "categoryTitle": "Task 2 Essay: Academic Hedging & Forceful Conclusions",
+    "description": "Cautious academic hedging and memorable synthesizing conclusion formulas.",
+    "phrases": [
+      {
+        "phrase": "It is arguably plausible that...; nonetheless,...",
+        "function": "Academic hedging",
+        "example": "It is arguably plausible that automation reduces manual entry-level roles; nonetheless, it generates sophisticated engineering demands."
+      },
+      {
+        "phrase": "In the final analysis, while... offers undeniable advantages, it is ultimately...",
+        "function": "Nuanced conclusion",
+        "example": "In the final analysis, while vocational proficiency offers undeniable quick employment, it is ultimately university education that fosters visionary leaders."
+      },
+      {
+        "phrase": "To recapitulate, although both arguments possess merit, the weight of evidence suggests that...",
+        "function": "Synthesizing conclusion",
+        "example": "To recapitulate, although both arguments possess merit, the weight of evidence suggests that centralized state legislation is indispensable for carbon neutrality."
+      },
+      {
+        "phrase": "Unless decisive multilateral measures are enacted promptly, the repercussions will likely...",
+        "function": "Final warning / call to action",
+        "example": "Unless decisive multilateral measures are enacted promptly, the repercussions for global biodiversity will prove irreversible."
+      },
+      {
+        "phrase": "Taking all factors into consideration, a pragmatic compromise involves...",
+        "function": "Proposing a hybrid solution",
+        "example": "Taking all factors into consideration, a pragmatic compromise involves integrating practical corporate internships into theoretical academic degree programs."
+      }
+    ]
+  }
+]

@@ -1,0 +1,678 @@
+{
+  "id": "list-test-02",
+  "title": "Listening Practice Test 2",
+  "difficulty": "standard",
+  "timeLimitMinutes": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Community Bicycle Cooperative Repair & Rental",
+      "contextDescription": "A customer, Sarah Jenkins, booking a bicycle tune-up and weekend hire at the GreenSpoke Bike Co-op.",
+      "audioScript": [
+        {
+          "speaker": "Mechanic",
+          "text": "Welcome to GreenSpoke Cooperative! How's your bicycle running today?"
+        },
+        {
+          "speaker": "Sarah",
+          "text": "Hello! I commute daily on my hybrid commuter bike, but recently the rear gear shifting has been slipping, especially on hills. Also, the rear brake feels quite spongy."
+        },
+        {
+          "speaker": "Mechanic",
+          "text": "Alright, let me inspect it. Ah yes, your derailleur cable has stretched, and the rear brake pads are worn down to the metal indicators. We can replace both cables and install new ceramic compound pads."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "That sounds great. What's the total estimate for parts and labor?"
+        },
+        {
+          "speaker": "Mechanic",
+          "text": "The full safety overhaul comes to forty-five pounds for parts plus twenty pounds labor, so sixty-five pounds total."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "Perfect. When will it be ready for collection?"
+        },
+        {
+          "speaker": "Mechanic",
+          "text": "We can have it ready tomorrow by four thirty in the afternoon. Let me take down your contact details. What is your full name?"
+        },
+        {
+          "speaker": "Sarah",
+          "text": "It's Sarah Jenkins, that's J-E-N-K-I-N-S, and my phone number is zero seven seven zero zero, nine zero zero four five two."
+        },
+        {
+          "speaker": "Mechanic",
+          "text": "Got it. Now, you mentioned on the phone that you also wanted to rent a touring e-bike for your sister visiting this weekend?"
+        },
+        {
+          "speaker": "Sarah",
+          "text": "Yes, exactly! From Saturday morning to Sunday evening."
+        },
+        {
+          "speaker": "Mechanic",
+          "text": "No problem. Our e-bike rental includes a high-capacity lithium battery with a range of eighty kilometers, an approved safety helmet, and a heavy-duty steel U-lock. Just ensure that the battery is recharged only using the supplied fifty-watt adapter."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "Understood. And what time must the rental bike be returned on Sunday?"
+        },
+        {
+          "speaker": "Mechanic",
+          "text": "Our shop closes at six in the evening on Sundays, but you can drop the bike into our automated electronic storage shed anytime until eight thirty PM using the PIN code seven four one zero."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "Seven four one zero. That's super convenient. Thank you so much!"
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 1–10.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "l2-q1",
+              "questionNumber": 1,
+              "prompt": "Customer's bicycle style: hybrid ____ bike.",
+              "correctAnswer": "commuter",
+              "explanation": "Sarah states: 'commute daily on my hybrid commuter bike'.",
+              "evidence": "I commute daily on my hybrid commuter bike"
+            },
+            {
+              "id": "l2-q2",
+              "questionNumber": 2,
+              "prompt": "Parts needing renewal: gear cables and ceramic compound ____.",
+              "correctAnswer": [
+                "brake pads",
+                "pads"
+              ],
+              "explanation": "Mechanic states: 'replace both cables and install new ceramic compound pads.'",
+              "evidence": "replace both cables and install new ceramic compound pads."
+            },
+            {
+              "id": "l2-q3",
+              "questionNumber": 3,
+              "prompt": "Total quoted price including parts and labor: £____",
+              "correctAnswer": [
+                "65",
+                "sixty-five",
+                "65 pounds"
+              ],
+              "explanation": "Mechanic explains: 'so sixty-five pounds total.'",
+              "evidence": "forty-five pounds for parts plus twenty pounds labor, so sixty-five pounds total."
+            },
+            {
+              "id": "l2-q4",
+              "questionNumber": 4,
+              "prompt": "Collection pickup time tomorrow: ____ PM.",
+              "correctAnswer": [
+                "4:30",
+                "4.30",
+                "four thirty"
+              ],
+              "explanation": "Mechanic states: 'ready tomorrow by four thirty in the afternoon.'",
+              "evidence": "ready tomorrow by four thirty in the afternoon."
+            },
+            {
+              "id": "l2-q5",
+              "questionNumber": 5,
+              "prompt": "Customer's surname: ____.",
+              "correctAnswer": "Jenkins",
+              "explanation": "Sarah spells J-E-N-K-I-N-S.",
+              "evidence": "It's Sarah Jenkins, that's J-E-N-K-I-N-S"
+            },
+            {
+              "id": "l2-q6",
+              "questionNumber": 6,
+              "prompt": "Rental e-bike maximum distance battery range: ____ kilometers.",
+              "correctAnswer": [
+                "80",
+                "eighty"
+              ],
+              "explanation": "Mechanic mentions: 'with a range of eighty kilometers'.",
+              "evidence": "with a range of eighty kilometers, an approved safety helmet"
+            },
+            {
+              "id": "l2-q7",
+              "questionNumber": 7,
+              "prompt": "Type of bicycle lock supplied: steel ____.",
+              "correctAnswer": [
+                "U-lock",
+                "u lock"
+              ],
+              "explanation": "Mechanic specifies: 'and a heavy-duty steel U-lock.'",
+              "evidence": "and a heavy-duty steel U-lock."
+            },
+            {
+              "id": "l2-q8",
+              "questionNumber": 8,
+              "prompt": "Charger rating to be used exclusively: ____ watts.",
+              "correctAnswer": [
+                "50",
+                "fifty"
+              ],
+              "explanation": "Mechanic emphasizes: 'using the supplied fifty-watt adapter.'",
+              "evidence": "using the supplied fifty-watt adapter."
+            },
+            {
+              "id": "l2-q9",
+              "questionNumber": 9,
+              "prompt": "Latest evening time for electronic storage shed return on Sunday: ____ PM.",
+              "correctAnswer": [
+                "8:30",
+                "8.30",
+                "eight thirty"
+              ],
+              "explanation": "Mechanic says: 'automated electronic storage shed anytime until eight thirty PM'.",
+              "evidence": "drop the bike into our automated electronic storage shed anytime until eight thirty PM"
+            },
+            {
+              "id": "l2-q10",
+              "questionNumber": 10,
+              "prompt": "Four-digit shed entry PIN code: ____.",
+              "correctAnswer": "7410",
+              "explanation": "Mechanic states: 'PIN code seven four one zero.'",
+              "evidence": "PIN code seven four one zero."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Kingfisher Marshes Wetland Sanctuary Orientation",
+      "contextDescription": "A guided orientation by park warden Douglas Evans describing trails and observation hides at the wetland nature reserve.",
+      "audioScript": [
+        {
+          "speaker": "Warden",
+          "text": "Good morning and welcome to the Kingfisher Marshes Wetland Sanctuary. Spread across four hundred hectares of tidal salt marsh and reed beds, this protected reserve hosts over two hundred migratory waterfowl species."
+        },
+        {
+          "speaker": "Warden",
+          "text": "Please take a look at the orientation map in front of you. We are gathered here at the Visitor Center and Car Park at the bottom of the map."
+        },
+        {
+          "speaker": "Warden",
+          "text": "Directly leading north from the center is our elevated wooden boardwalk. As you proceed along the main boardwalk, take the first right fork leading into the willow trees. Nestled at the end of this short spur, marked as Location A, is the Dragonfly Observation Platform, where water lilies bloom throughout summer."
+        },
+        {
+          "speaker": "Warden",
+          "text": "Returning to the main boardwalk and continuing north over the tidal sluice bridge, you will see a large wooden hide on your left overlooking the tidal lagoon. This is Location B, our Heron Watching Hide, fitted with specialized tinted glass windows."
+        },
+        {
+          "speaker": "Warden",
+          "text": "Further north, where the trail crosses into the deep reed bed zone, you'll encounter a three-story timber tower marked as Location C. That is the Otter Lookout Tower, offering prime vantage points at dawn and dusk."
+        },
+        {
+          "speaker": "Warden",
+          "text": "If you follow the eastern branch of the boardwalk loop around the freshwater lagoon, marked at Location D on the eastern shoreline, you'll find the Pond Dipping Shelter, where educational groups study aquatic macroinvertebrates."
+        },
+        {
+          "speaker": "Warden",
+          "text": "Finally, at the northernmost boundary of the reserve adjacent to the tidal sea wall, marked as Location E, sits the Coastal Wader Blind, designed for viewing rare curlews and godwits."
+        },
+        {
+          "speaker": "Warden",
+          "text": "A brief reminder: because noise carries easily across open water, mobile phones must be silenced. Please remain on marked timber paths to avoid disturbing ground-nesting lapwings."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Label the map below. Choose the correct letter, A–E, and write the answers in boxes 11–15 on your answer sheet.",
+          "questionType": "diagram_label_completion",
+          "diagramSvg": "<svg viewBox='0 0 500 320' xmlns='http://www.w3.org/2000/svg' class='w-full max-w-lg mx-auto bg-slate-50 dark:bg-slate-900 rounded-xl p-2 border border-slate-200 dark:border-slate-700'><rect width='500' height='320' fill='#f0fdf4' rx='10'/><path d='M 250 300 L 250 80' stroke='#14b8a6' stroke-width='16' stroke-linecap='round'/><path d='M 250 240 L 370 200' stroke='#14b8a6' stroke-width='12' stroke-linecap='round'/><path d='M 250 150 L 120 150' stroke='#14b8a6' stroke-width='12' stroke-linecap='round'/><path d='M 250 110 L 380 110' stroke='#14b8a6' stroke-width='12' stroke-linecap='round'/><circle cx='250' cy='300' r='14' fill='#0f766e'/><text x='210' y='318' font-size='11' font-weight='bold' fill='#0f766e'>Visitor Center</text><rect x='370' y='180' width='55' height='40' rx='6' fill='#0d9488'/><text x='392' y='206' font-size='16' font-weight='bold' fill='white'>A</text><rect x='70' y='130' width='55' height='40' rx='6' fill='#0d9488'/><text x='92' y='156' font-size='16' font-weight='bold' fill='white'>B</text><circle cx='250' cy='70' r='24' fill='#0d9488'/><text x='244' y='76' font-size='16' font-weight='bold' fill='white'>C</text><rect x='380' y='90' width='55' height='40' rx='6' fill='#0d9488'/><text x='402' y='116' font-size='16' font-weight='bold' fill='white'>D</text><polygon points='220,20 280,20 250,5' fill='#0d9488'/><text x='244' y='35' font-size='16' font-weight='bold' fill='white'>E</text></svg>",
+          "questions": [
+            {
+              "id": "l2-q11",
+              "questionNumber": 11,
+              "prompt": "Dragonfly Observation Platform",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Warden states: 'first right fork leading into the willow trees... marked as Location A, is the Dragonfly Observation Platform'.",
+              "evidence": "marked as Location A, is the Dragonfly Observation Platform, where water lilies bloom"
+            },
+            {
+              "id": "l2-q12",
+              "questionNumber": 12,
+              "prompt": "Heron Watching Hide",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Warden points out: 'large wooden hide on your left overlooking the tidal lagoon. This is Location B, our Heron Watching Hide'.",
+              "evidence": "This is Location B, our Heron Watching Hide, fitted with specialized tinted glass windows."
+            },
+            {
+              "id": "l2-q13",
+              "questionNumber": 13,
+              "prompt": "Otter Lookout Tower",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Warden states: 'three-story timber tower marked as Location C. That is the Otter Lookout Tower'.",
+              "evidence": "three-story timber tower marked as Location C. That is the Otter Lookout Tower"
+            },
+            {
+              "id": "l2-q14",
+              "questionNumber": 14,
+              "prompt": "Pond Dipping Shelter",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "correctAnswer": "D",
+              "explanation": "Warden notes: 'marked at Location D on the eastern shoreline, you'll find the Pond Dipping Shelter'.",
+              "evidence": "marked at Location D on the eastern shoreline, you'll find the Pond Dipping Shelter"
+            },
+            {
+              "id": "l2-q15",
+              "questionNumber": 15,
+              "prompt": "Coastal Wader Blind",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "correctAnswer": "E",
+              "explanation": "Warden specifies: 'at the northernmost boundary of the reserve adjacent to the tidal sea wall, marked as Location E, sits the Coastal Wader Blind'.",
+              "evidence": "marked as Location E, sits the Coastal Wader Blind, designed for viewing rare curlews"
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Choose the correct letter, A, B, or C. Write your answers in boxes 16–20 on your answer sheet.",
+          "questionType": "multiple_choice_single",
+          "questions": [
+            {
+              "id": "l2-q16",
+              "questionNumber": 16,
+              "prompt": "How large is the Kingfisher Marshes Wetland Sanctuary?",
+              "options": [
+                "150 hectares",
+                "650 hectares",
+                "400 hectares"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Warden says: 'Spread across four hundred hectares of tidal salt marsh'.",
+              "evidence": "Spread across four hundred hectares of tidal salt marsh"
+            },
+            {
+              "id": "l2-q17",
+              "questionNumber": 17,
+              "prompt": "Approximately how many migratory waterfowl species visit the reserve?",
+              "options": [
+                "Over 200",
+                "Over 50",
+                "Over 100"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Warden mentions: 'hosts over two hundred migratory waterfowl species.'",
+              "evidence": "hosts over two hundred migratory waterfowl species."
+            },
+            {
+              "id": "l2-q18",
+              "questionNumber": 18,
+              "prompt": "What special architectural feature does the Heron Watching Hide have?",
+              "options": [
+                "Solar heated floors",
+                "Tinted glass viewing windows",
+                "Soundproof acoustic walls"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Warden specifies: 'fitted with specialized tinted glass windows.'",
+              "evidence": "fitted with specialized tinted glass windows."
+            },
+            {
+              "id": "l2-q19",
+              "questionNumber": 19,
+              "prompt": "What aquatic organisms are studied at the Pond Dipping Shelter?",
+              "options": [
+                "Freshwater salmon",
+                "Deep sea sponges",
+                "Aquatic macroinvertebrates"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Warden states: 'educational groups study aquatic macroinvertebrates.'",
+              "evidence": "educational groups study aquatic macroinvertebrates."
+            },
+            {
+              "id": "l2-q20",
+              "questionNumber": 20,
+              "prompt": "Why are visitors requested to stay strictly on the timber walkways?",
+              "options": [
+                "To prevent damaging ground-nesting bird nests",
+                "To avoid snakes in the grass",
+                "To prevent damaging expensive irrigation pipes"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Warden advises: 'Please remain on marked timber paths to avoid disturbing ground-nesting lapwings.'",
+              "evidence": "Please remain on marked timber paths to avoid disturbing ground-nesting lapwings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Academic Consultation on Enhanced Geothermal Energy Systems",
+      "contextDescription": "Two master's engineering students, Liam and Maya, discussing their research dissertation on deep geothermal wells with Professor Vance.",
+      "audioScript": [
+        {
+          "speaker": "Professor",
+          "text": "Come in, Liam, Maya. Let's examine your preliminary technical feasibility model for Enhanced Geothermal Systems (EGS)."
+        },
+        {
+          "speaker": "Liam",
+          "text": "Thank you, Professor Vance. Our simulation compares traditional hydrothermal power with supercritical EGS wells drilled into hot dry crystalline granite at five kilometers depth."
+        },
+        {
+          "speaker": "Maya",
+          "text": "We discovered that while conventional hydrothermal systems require naturally occurring underground water and permeable fault lines, EGS injects high-pressure fluid to create artificial micro-fractures in impermeable rock."
+        },
+        {
+          "speaker": "Professor",
+          "text": "Crucial distinction. What heat exchange fluid did you select for the subsurface thermodynamic cycle?"
+        },
+        {
+          "speaker": "Liam",
+          "text": "Initially, we modeled pressurized water, but our updated simulation utilizes supercritical carbon dioxide instead. Because supercritical CO2 has lower viscosity and higher thermal expansion than water, it requires twenty-five percent less pumping power."
+        },
+        {
+          "speaker": "Maya",
+          "text": "Plus, a portion of the circulating carbon dioxide becomes permanently sequestered in calcium silicate minerals deep within the subsurface basalt formations."
+        },
+        {
+          "speaker": "Professor",
+          "text": "That's a compelling dual-benefit: zero-carbon baseload electricity alongside permanent carbon sequestration. However, did you evaluate induced seismicity?"
+        },
+        {
+          "speaker": "Liam",
+          "text": "Yes, induced micro-earthquakes are the foremost societal concern. In our risk mitigation chapter, we propose deploying continuous fiber-optic acoustic sensors along borehole casings to monitor hydraulic pressure spikes in real time."
+        },
+        {
+          "speaker": "Professor",
+          "text": "Good. Remember to submit your completed methodology chapter by the thirtieth of June."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Choose the correct letter, A, B, or C. Write your answers in boxes 21–25 on your answer sheet.",
+          "questionType": "multiple_choice_single",
+          "questions": [
+            {
+              "id": "l2-q21",
+              "questionNumber": 21,
+              "prompt": "To what depth are the simulated geothermal wells drilled?",
+              "options": [
+                "Two kilometers",
+                "Five kilometers",
+                "Ten kilometers"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Liam specifies: 'drilled into hot dry crystalline granite at five kilometers depth.'",
+              "evidence": "drilled into hot dry crystalline granite at five kilometers depth."
+            },
+            {
+              "id": "l2-q22",
+              "questionNumber": 22,
+              "prompt": "How does Enhanced Geothermal Systems (EGS) create permeability in dense rock?",
+              "options": [
+                "By detonating underground explosives",
+                "By melting rock with lasers",
+                "By injecting high-pressure fluid to produce micro-fractures"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Maya notes: 'EGS injects high-pressure fluid to create artificial micro-fractures in impermeable rock.'",
+              "evidence": "EGS injects high-pressure fluid to create artificial micro-fractures in impermeable rock."
+            },
+            {
+              "id": "l2-q23",
+              "questionNumber": 23,
+              "prompt": "What advantage does supercritical carbon dioxide have over water as a working fluid?",
+              "options": [
+                "It requires 25% less pumping power due to lower viscosity.",
+                "It is entirely free of financial cost.",
+                "It prevents any corrosion in steel pipes."
+              ],
+              "correctAnswer": "A",
+              "explanation": "Liam states: 'lower viscosity and higher thermal expansion than water, it requires twenty-five percent less pumping power.'",
+              "evidence": "requires twenty-five percent less pumping power."
+            },
+            {
+              "id": "l2-q24",
+              "questionNumber": 24,
+              "prompt": "What secondary environmental benefit does using CO2 provide?",
+              "options": [
+                "Purifying local groundwater reservoirs",
+                "Permanent mineral sequestration of carbon underground",
+                "Generating agricultural fertilizer"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Maya notes: 'becomes permanently sequestered in calcium silicate minerals deep within the subsurface basalt formations.'",
+              "evidence": "becomes permanently sequestered in calcium silicate minerals deep within the subsurface basalt formations."
+            },
+            {
+              "id": "l2-q25",
+              "questionNumber": 25,
+              "prompt": "What technology is proposed to monitor induced micro-seismicity?",
+              "options": [
+                "Drone thermal surveillance",
+                "Satellite radar imaging",
+                "Fiber-optic acoustic sensors along boreholes"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Liam mentions: 'deploying continuous fiber-optic acoustic sensors along borehole casings'.",
+              "evidence": "deploying continuous fiber-optic acoustic sensors along borehole casings"
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 26–30 on your answer sheet.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "l2-q26",
+              "questionNumber": 26,
+              "prompt": "The geological rock type targeted for deep drilling is crystalline ____.",
+              "correctAnswer": "granite",
+              "explanation": "Liam says: 'drilled into hot dry crystalline granite'.",
+              "evidence": "drilled into hot dry crystalline granite at five kilometers depth."
+            },
+            {
+              "id": "l2-q27",
+              "questionNumber": 27,
+              "prompt": "CO2 reacts and traps carbon inside calcium ____ minerals.",
+              "correctAnswer": "silicate",
+              "explanation": "Maya mentions: 'calcium silicate minerals deep within the subsurface'.",
+              "evidence": "calcium silicate minerals deep within the subsurface basalt formations."
+            },
+            {
+              "id": "l2-q28",
+              "questionNumber": 28,
+              "prompt": "The primary public and societal concern regarding EGS is induced ____.",
+              "correctAnswer": [
+                "seismicity",
+                "micro-earthquakes"
+              ],
+              "explanation": "Professor asks about: 'induced seismicity', and Liam refers to 'induced micro-earthquakes'.",
+              "evidence": "induced micro-earthquakes are the foremost societal concern."
+            },
+            {
+              "id": "l2-q29",
+              "questionNumber": 29,
+              "prompt": "Sensors monitor unexpected subsurface spikes in hydraulic ____.",
+              "correctAnswer": "pressure",
+              "explanation": "Liam states: 'monitor hydraulic pressure spikes in real time.'",
+              "evidence": "monitor hydraulic pressure spikes in real time."
+            },
+            {
+              "id": "l2-q30",
+              "questionNumber": 30,
+              "prompt": "Formal deadline for the methodology chapter submission: the thirtieth of ____.",
+              "correctAnswer": "June",
+              "explanation": "Professor reminds: 'submit your completed methodology chapter by the thirtieth of June.'",
+              "evidence": "submit your completed methodology chapter by the thirtieth of June."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "University Lecture: Acoustic Ecology and Ancient Whistled Languages",
+      "contextDescription": "A lecture delivered by an anthropologist on the origins, phonetic structure, and survival of whistled languages in mountainous environments.",
+      "audioScript": [
+        {
+          "speaker": "Lecturer",
+          "text": "Good afternoon, students. Today we examine an extraordinary manifestation of human bioacoustics: whistled languages, known scientifically as silbo or whistled speech."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "Whistled speech is not an artificial code like Morse; rather, it is a phonetically complete acoustic translation of spoken language. Over seventy populations globally, from the island of La Gomera in the Canaries to the rugged Pyrenees and the Anatolian mountains of Turkey, have developed whistled versions of their native tongues."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "The primary driver of whistled speech is topography. In deeply incised mountainous valleys and dense subtropical forest canopies, normal spoken vowel formats scatter and absorb within two hundred meters. A human whistle, however, generates a concentrated sinusoidal sound wave between one and four kilohertz, which cuts through ambient background noise and carries across distances exceeding five kilometers."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "Phonetically, whistled speech mimics the pitch frequency contours and formant transitions of spoken dialects. For tonal languages like Mazatec in Mexico, whistling replicates pitch contours directly. For non-tonal languages like Spanish or Turkish, whistled frequencies mimic vowel formants, while sudden silences or abrupt frequency glides simulate consonant occlusions."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "Neuroimaging studies conducted at the University of Zurich reveal a captivating phenomenon: when native whistlers listen to whistled sentences, their brains activate both the left temporal lobe, which handles linguistic grammar, and the right hemisphere, which normally processes musical melodies. In contrast, monolingual non-whistling listeners process the sounds purely as meaningless music in the right hemisphere."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "Regrettably, modern telecommunications and mobile phones have triggered a steep decline in traditional whistled communication over recent decades. Today, cultural preservation initiatives in schools have revived Silbo Gomero, ensuring that younger generations sustain this remarkable acoustic heritage."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Complete the lecture notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 31–40 on your answer sheet.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "l2-q31",
+              "questionNumber": 31,
+              "prompt": "Over ____ communities worldwide have developed forms of whistled speech.",
+              "correctAnswer": [
+                "70",
+                "seventy"
+              ],
+              "explanation": "Lecturer states: 'Over seventy populations globally'.",
+              "evidence": "Over seventy populations globally, from the island of La Gomera"
+            },
+            {
+              "id": "l2-q32",
+              "questionNumber": 32,
+              "prompt": "The primary geographical factor driving the creation of whistled languages is ____.",
+              "correctAnswer": "topography",
+              "explanation": "Lecturer says: 'The primary driver of whistled speech is topography.'",
+              "evidence": "The primary driver of whistled speech is topography."
+            },
+            {
+              "id": "l2-q33",
+              "questionNumber": 33,
+              "prompt": "Ordinary human spoken vowels degrade and dissipate within ____ meters in valleys.",
+              "correctAnswer": [
+                "200",
+                "two hundred"
+              ],
+              "explanation": "Lecturer notes: 'scatter and absorb within two hundred meters.'",
+              "evidence": "normal spoken vowel formats scatter and absorb within two hundred meters."
+            },
+            {
+              "id": "l2-q34",
+              "questionNumber": 34,
+              "prompt": "Whistled sound waves can travel over distances greater than ____ kilometers.",
+              "correctAnswer": [
+                "5",
+                "five"
+              ],
+              "explanation": "Lecturer states: 'carries across distances exceeding five kilometers.'",
+              "evidence": "carries across distances exceeding five kilometers."
+            },
+            {
+              "id": "l2-q35",
+              "questionNumber": 35,
+              "prompt": "Whistles generate a pure acoustic wave described geometrically as a ____ wave.",
+              "correctAnswer": "sinusoidal",
+              "explanation": "Lecturer says: 'generates a concentrated sinusoidal sound wave'.",
+              "evidence": "generates a concentrated sinusoidal sound wave between one and four kilohertz"
+            },
+            {
+              "id": "l2-q36",
+              "questionNumber": 36,
+              "prompt": "In tonal languages, whistling directly imitates the spoken ____ contours.",
+              "correctAnswer": "pitch",
+              "explanation": "Lecturer notes: 'replicates pitch contours directly.'",
+              "evidence": "whistling replicates pitch contours directly."
+            },
+            {
+              "id": "l2-q37",
+              "questionNumber": 37,
+              "prompt": "In non-tonal dialects, brief pauses in the sound represent consonant ____.",
+              "correctAnswer": [
+                "occlusions",
+                "stops"
+              ],
+              "explanation": "Lecturer explains: 'sudden silences or abrupt frequency glides simulate consonant occlusions.'",
+              "evidence": "sudden silences or abrupt frequency glides simulate consonant occlusions."
+            },
+            {
+              "id": "l2-q38",
+              "questionNumber": 38,
+              "prompt": "Neuroscientists at the University of ____ studied the brain scans of native whistlers.",
+              "correctAnswer": "Zurich",
+              "explanation": "Lecturer cites: 'Neuroimaging studies conducted at the University of Zurich'.",
+              "evidence": "Neuroimaging studies conducted at the University of Zurich reveal a captivating phenomenon"
+            },
+            {
+              "id": "l2-q39",
+              "questionNumber": 39,
+              "prompt": "In whistlers' brains, language grammar is processed simultaneously in the left ____ lobe.",
+              "correctAnswer": "temporal",
+              "explanation": "Lecturer states: 'left temporal lobe, which handles linguistic grammar'.",
+              "evidence": "both the left temporal lobe, which handles linguistic grammar, and the right hemisphere"
+            },
+            {
+              "id": "l2-q40",
+              "questionNumber": 40,
+              "prompt": "The whistled language taught in Canary Island schools today is called Silbo ____.",
+              "correctAnswer": "Gomero",
+              "explanation": "Lecturer concludes: 'initiatives in schools have revived Silbo Gomero'.",
+              "evidence": "cultural preservation initiatives in schools have revived Silbo Gomero"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "attribution": {
+    "source": "Zarii Open Audio Linguistics Lab",
+    "license": "CC BY-SA 4.0",
+    "notes": "Original multi-speaker listening audio scripts designed for IELTS listening assessment."
+  }
+}

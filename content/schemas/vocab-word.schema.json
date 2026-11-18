@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ZariiVocabWord",
+  "type": "object",
+  "required": ["id", "word", "phonetic", "partOfSpeech", "definition", "academicBandTarget", "collocations", "ieltsTopic", "exampleSentences", "synonyms", "academicWordList"],
+  "properties": {
+    "id": { "type": "string" },
+    "word": { "type": "string" },
+    "phonetic": { "type": "string" },
+    "partOfSpeech": { "type": "string" },
+    "definition": { "type": "string" },
+    "academicBandTarget": { "type": "number" },
+    "collocations": { "type": "array", "items": { "type": "string" } },
+    "ieltsTopic": {
+      "type": "string",
+      "enum": [
+        "environment",
+        "technology",
+        "education",
+        "health",
+        "society",
+        "art",
+        "economy",
+        "science"
+      ]
+    },
+    "exampleSentences": { "type": "array", "items": { "type": "string" } },
+    "synonyms": { "type": "array", "items": { "type": "string" } },
+    "antonyms": { "type": "array", "items": { "type": "string" } },
+    "academicWordList": { "type": "boolean" }
+  }
+}

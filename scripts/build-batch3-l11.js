@@ -1,0 +1,626 @@
+import fs from 'fs';
+import path from 'path';
+
+const listeningTest11 = {
+  id: "list-test-11",
+  title: "Listening Practice Test 11",
+  difficulty: "hard",
+  timeLimitMinutes: 40,
+  sections: [
+    {
+      sectionNumber: 1,
+      title: "Alpine Hiking Club Guided Expedition Booking",
+      contextDescription: "Rajesh (Indian English speaker) enquiring with Lead Mountaineering Guide Thomas (Scottish / British English speaker) about registering for a guided winter traverse in the Cairngorm Mountains.",
+      audioScript: [
+        { "speaker": "Thomas (Scottish/British)", "text": "Good morning! Cairngorm Alpine Mountaineering Club. Thomas speaking." },
+        { "speaker": "Rajesh (Indian English)", "text": "Good morning, Thomas! My name is Rajesh Patel. I am looking to book a place on your five-day winter alpine ridge traverse next month." },
+        { "speaker": "Thomas (Scottish/British)", "text": "Grand, Rajesh! The Cairngorms in winter are spectacular, but they demand serious preparation. Let me take down your contact and experience details." },
+        { "speaker": "Rajesh (Indian English)", "text": "Certainly. My first name is Rajesh, R-A-J-E-S-H, and my surname is Patel, P-A-T-E-L." },
+        { "speaker": "Thomas (Scottish/British)", "text": "Thank you, Rajesh. And your contact mobile number?" },
+        { "speaker": "Rajesh (Indian English)", "text": "It is zero seven nine eight seven, six five four three two zero." },
+        { "speaker": "Thomas (Scottish/British)", "text": "Got it. And what is your residential address?" },
+        { "speaker": "Rajesh (Indian English)", "text": "I live at thirty-one Glenmore Close, Aviemore, postcode P-H-twenty-two, one-Q-R." },
+        { "speaker": "Thomas (Scottish/British)", "text": "P-H-twenty-two, one-Q-R. Now regarding technical mountaineering experience, have you previously completed winter ascents using crampons and a mountaineering ice axe?" },
+        { "speaker": "Rajesh (Indian English)", "text": "Yes, I completed a Scottish Winter Skills Level Two course in Glencoe last January, covering self-arrest and snow shelter construction." },
+        { "speaker": "Thomas (Scottish/British)", "text": "Excellent! That meets our prerequisite. The full expedition fee is five hundred and twenty pounds, which includes shared lodge accommodation and mountain guide instruction." },
+        { "speaker": "Rajesh (Indian English)", "text": "What specialized safety hardware must participants carry?" },
+        { "speaker": "Thomas (Scottish/British)", "text": "Every climber must carry a certified digital avalanche transceiver, a collapsible carbon snow probe, and a metal shovel blade. We provide the transceivers, but you must bring your own B2-rated mountaineering boots compatible with semi-automatic crampons." },
+        { "speaker": "Rajesh (Indian English)", "text": "Understood. When does the expedition assemble?" },
+        { "speaker": "Thomas (Scottish/British)", "text": "Our mandatory gear check and safety briefing begins at eight in the evening on Sunday, January the twelfth, at the Pine Lodge Mountain Base." },
+        { "speaker": "Rajesh (Indian English)", "text": "Sunday, January the twelfth at eight PM. Thank you so much, Thomas. See you in Aviemore!" }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 1–10.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "l11-q1",
+              questionNumber: 1,
+              type: "sentence_completion",
+              topic: "mountaineering",
+              estimatedBand: 5.5,
+              prompt: "Applicant surname: ____",
+              correctAnswer: "Patel",
+              explanation: "Rajesh spells his surname: P-A-T-E-L.",
+              evidence: "surname is Patel, P-A-T-E-L."
+            },
+            {
+              id: "l11-q2",
+              questionNumber: 2,
+              type: "sentence_completion",
+              topic: "contact",
+              estimatedBand: 5.5,
+              prompt: "Contact mobile number: 07987 ____",
+              correctAnswer: "654320",
+              explanation: "Rajesh states: zero seven nine eight seven, six five four three two zero.",
+              evidence: "zero seven nine eight seven, six five four three two zero."
+            },
+            {
+              id: "l11-q3",
+              questionNumber: 3,
+              type: "sentence_completion",
+              topic: "address",
+              estimatedBand: 6.0,
+              prompt: "Address: 31 ____ Close, Aviemore.",
+              correctAnswer: "Glenmore",
+              explanation: "Rajesh states thirty-one Glenmore Close.",
+              evidence: "thirty-one Glenmore Close, Aviemore"
+            },
+            {
+              id: "l11-q4",
+              questionNumber: 4,
+              type: "sentence_completion",
+              topic: "postcode",
+              estimatedBand: 6.0,
+              prompt: "Postcode: ____",
+              correctAnswer: ["PH22 1QR", "PH221QR"],
+              explanation: "Rajesh gives postcode P-H-twenty-two, one-Q-R.",
+              evidence: "postcode P-H-twenty-two, one-Q-R."
+            },
+            {
+              id: "l11-q5",
+              questionNumber: 5,
+              type: "sentence_completion",
+              topic: "qualifications",
+              estimatedBand: 6.5,
+              prompt: "Prerequisite: completed Scottish Winter Skills Level ____.",
+              correctAnswer: ["Two", "2"],
+              explanation: "Rajesh completed a Scottish Winter Skills Level Two course.",
+              evidence: "Scottish Winter Skills Level Two course in Glencoe"
+            },
+            {
+              id: "l11-q6",
+              questionNumber: 6,
+              type: "sentence_completion",
+              topic: "finance",
+              estimatedBand: 6.0,
+              prompt: "Total expedition fee: £____",
+              correctAnswer: ["520", "five hundred and twenty"],
+              explanation: "Thomas states the fee is five hundred and twenty pounds.",
+              evidence: "expedition fee is five hundred and twenty pounds"
+            },
+            {
+              id: "l11-q7",
+              questionNumber: 7,
+              type: "sentence_completion",
+              topic: "safety equipment",
+              estimatedBand: 7.0,
+              prompt: "Supplied safety item: digital ____ transceiver.",
+              correctAnswer: "avalanche",
+              explanation: "Thomas states climbers must carry a certified digital avalanche transceiver.",
+              evidence: "carry a certified digital avalanche transceiver"
+            },
+            {
+              id: "l11-q8",
+              questionNumber: 8,
+              type: "sentence_completion",
+              topic: "gear",
+              estimatedBand: 7.0,
+              prompt: "Participants must bring their own ____-rated boots.",
+              correctAnswer: "B2",
+              explanation: "Thomas notes: 'must bring your own B2-rated mountaineering boots'.",
+              evidence: "bring your own B2-rated mountaineering boots compatible with semi-automatic crampons."
+            },
+            {
+              id: "l11-q9",
+              questionNumber: 9,
+              type: "sentence_completion",
+              topic: "dates",
+              estimatedBand: 6.0,
+              prompt: "Meeting date: Sunday, January ____",
+              correctAnswer: ["12th", "12", "twelfth"],
+              explanation: "Thomas confirms Sunday, January the twelfth.",
+              evidence: "Sunday, January the twelfth, at the Pine Lodge Mountain Base."
+            },
+            {
+              id: "l11-q10",
+              questionNumber: 10,
+              type: "sentence_completion",
+              topic: "time",
+              estimatedBand: 5.5,
+              prompt: "Gear check starts at ____ PM.",
+              correctAnswer: ["8", "eight", "8:00"],
+              explanation: "Thomas specifies eight in the evening.",
+              evidence: "begins at eight in the evening on Sunday"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      sectionNumber: 2,
+      title: "Community Orientation: The Circular Economy E-Waste Recycling Hub",
+      contextDescription: "Facility Operations Manager Hannah (North American English speaker) orienting community volunteers and residents to the Eastside Circular Electronic Recycling and Recovery Depot.",
+      audioScript: [
+        { "speaker": "Hannah (North American)", "text": "Good morning everyone, and welcome to the Eastside Circular Electronics Resource Recovery Hub! My name is Hannah. Across North America and Europe, electronic waste—or e-waste—is the fastest-growing municipal waste stream, expanding three times faster than standard household refuse. Consumer electronics contain toxic heavy metals like lead, cadmium, and mercury, but they also harbor extraordinary concentrations of precious and critical raw materials: gold, silver, copper, palladium, and lithium." },
+        { "speaker": "Hannah (North American)", "text": "In fact, one metric ton of discarded smartphone circuit boards contains forty times more gold than a metric ton of freshly mined gold ore! Our mission here is to divert obsolete technology from incinerators, refurbishing usable devices for low-income school children and disassembling the rest into pure, high-grade commodity streams for domestic smelting." },
+        { "speaker": "Hannah (North American)", "text": "Let me orient you to our facility floor plan. Right now, we are assembled at the Main Drop-Off Bay on the southern entrance. Directly ahead of you to the northwest, location A marks the Battery & Hazardous Chemistry Cell. Here, technicians safely discharge and isolate damaged lithium-ion batteries inside fire-suppressant vermiculite barrels to prevent thermal runaway fires." },
+        { "speaker": "Hannah (North American)", "text": "Moving northeast from the entrance, location B is the Secure Data Destruction Suite. In this locked chamber, decommissioned hard drives and solid-state drives undergo automated physical degaussing followed by hydraulic shredding into two-millimeter particulate chips to guarantee zero data recovery." },
+        { "speaker": "Hannah (North American)", "text": "Location C in the center of the facility is the Diagnostic and Refurbishment Cleanroom. Our trained volunteers test computer motherboards, upgrade RAM, and install lightweight open-source Linux operating systems on donated laptops." },
+        { "speaker": "Hannah (North American)", "text": "Finally, at the far northern wall, location D marks the Automated Circuit Board Disassembly Line. Robotic desoldering arms harvest rare-earth capacitors, microprocessors, and copper heat pipes." },
+        { "speaker": "Hannah (North American)", "text": "A crucial safety protocol for all volunteers today: anti-static wrist straps and steel-toed boots must be worn in the cleanroom, and protective Kevlar gloves are mandatory whenever handling cracked glass screens. Let's begin our tour!" }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Choose the correct letter, A, B, or C. Write your answers in boxes 11–16.",
+          questionType: "multiple_choice_single",
+          questions: [
+            {
+              id: "l11-q11",
+              questionNumber: 11,
+              type: "multiple_choice_single",
+              topic: "e-waste",
+              estimatedBand: 6.5,
+              prompt: "Electronic waste is expanding how much faster than ordinary domestic trash?",
+              options: [
+                "A) Twice as fast.",
+                "B) Three times faster.",
+                "C) Ten times faster."
+              ],
+              correctAnswer: "B",
+              explanation: "Hannah states e-waste is expanding three times faster than standard household refuse.",
+              evidence: "expanding three times faster than standard household refuse."
+            },
+            {
+              id: "l11-q12",
+              questionNumber: 12,
+              type: "multiple_choice_single",
+              topic: "mining",
+              estimatedBand: 7.0,
+              prompt: "One ton of smartphone circuit boards contains how much more gold than mined ore?",
+              options: [
+                "A) 10 times more.",
+                "B) 40 times more.",
+                "C) 100 times more."
+              ],
+              correctAnswer: "B",
+              explanation: "Hannah highlights that circuit boards contain forty times more gold than mined ore.",
+              evidence: "contains forty times more gold than a metric ton of freshly mined gold ore!"
+            },
+            {
+              id: "l11-q13",
+              questionNumber: 13,
+              type: "multiple_choice_single",
+              topic: "safety",
+              estimatedBand: 7.0,
+              prompt: "Lithium batteries are stored inside barrels filled with",
+              options: [
+                "A) salt water.",
+                "B) vermiculite.",
+                "C) shredded paper."
+              ],
+              correctAnswer: "B",
+              explanation: "Hannah notes lithium batteries are stored inside fire-suppressant vermiculite barrels.",
+              evidence: "isolate damaged lithium-ion batteries inside fire-suppressant vermiculite barrels"
+            },
+            {
+              id: "l11-q14",
+              questionNumber: 14,
+              type: "multiple_choice_single",
+              topic: "security",
+              estimatedBand: 7.0,
+              prompt: "To guarantee data security, shredded hard drives are chopped into pieces of",
+              options: [
+                "A) 2 millimeters.",
+                "B) 10 millimeters.",
+                "C) 25 millimeters."
+              ],
+              correctAnswer: "A",
+              explanation: "Hannah explains hydraulic shredding cuts drives into two-millimeter particulate chips.",
+              evidence: "hydraulic shredding into two-millimeter particulate chips to guarantee zero data recovery."
+            },
+            {
+              id: "l11-q15",
+              questionNumber: 15,
+              type: "multiple_choice_single",
+              topic: "technology",
+              estimatedBand: 6.5,
+              prompt: "Refurbished laptops are equipped with which operating system?",
+              options: [
+                "A) Proprietary commercial software.",
+                "B) Open-source Linux.",
+                "C) Cloud-only web browsers."
+              ],
+              correctAnswer: "B",
+              explanation: "Hannah notes volunteers install lightweight open-source Linux operating systems.",
+              evidence: "install lightweight open-source Linux operating systems on donated laptops."
+            },
+            {
+              id: "l11-q16",
+              questionNumber: 16,
+              type: "multiple_choice_single",
+              topic: "safety",
+              estimatedBand: 6.5,
+              prompt: "Volunteers handling cracked screens must wear gloves made of",
+              options: [
+                "A) cotton.",
+                "B) Kevlar.",
+                "C) latex."
+              ],
+              correctAnswer: "B",
+              explanation: "Hannah states protective Kevlar gloves are mandatory.",
+              evidence: "protective Kevlar gloves are mandatory whenever handling cracked glass screens."
+            }
+          ]
+        },
+        {
+          groupInstruction: "Label the map below. Write the correct letter, A–D, next to Questions 17–20.",
+          questionType: "diagram_label_completion",
+          questions: [
+            {
+              id: "l11-q17",
+              questionNumber: 17,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 6.5,
+              prompt: "Battery & Hazardous Chemistry Cell: Location ____",
+              correctAnswer: "A",
+              explanation: "Hannah points northwest to location A as the Battery & Hazardous Chemistry Cell.",
+              evidence: "Directly ahead of you to the northwest, location A marks the Battery & Hazardous Chemistry Cell."
+            },
+            {
+              id: "l11-q18",
+              questionNumber: 18,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 6.5,
+              prompt: "Secure Data Destruction Suite: Location ____",
+              correctAnswer: "B",
+              explanation: "Hannah points northeast to location B as the Secure Data Destruction Suite.",
+              evidence: "Moving northeast from the entrance, location B is the Secure Data Destruction Suite."
+            },
+            {
+              id: "l11-q19",
+              questionNumber: 19,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 7.0,
+              prompt: "Diagnostic and Refurbishment Cleanroom: Location ____",
+              correctAnswer: "C",
+              explanation: "Hannah indicates location C in the center as the Cleanroom.",
+              evidence: "Location C in the center of the facility is the Diagnostic and Refurbishment Cleanroom."
+            },
+            {
+              id: "l11-q20",
+              questionNumber: 20,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 6.5,
+              prompt: "Automated Circuit Board Disassembly Line: Location ____",
+              correctAnswer: "D",
+              explanation: "Hannah indicates location D at the far northern wall.",
+              evidence: "Finally, at the far northern wall, location D marks the Automated Circuit Board Disassembly Line."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      sectionNumber: 3,
+      title: "Postgraduate Seminar: Evaluating Machine Translation Quality and Hallucinations",
+      contextDescription: "Computational linguistics professor Dr. Brooks (British English) reviewing neural machine translation research with students Anya (Indian English) and Marcus (Australian English).",
+      audioScript: [
+        { "speaker": "Dr. Brooks (British)", "text": "Good afternoon Marcus, Anya. Let us review your experimental paper evaluating neural machine translation—or NMT—across low-resource Indo-Aryan and Indigenous Australian languages. Your BLEU score benchmarks are thorough, but I want to scrutinize your analysis of translation hallucinations." },
+        { "speaker": "Marcus (Australian)", "text": "Thanks, Dr. Brooks. In our experiments, we compared traditional statistical machine translation against transformer-based neural models. While transformers achieve remarkably fluent, human-like grammar, they exhibit an alarming vulnerability to catastrophic hallucinations: generating completely fabricated clauses or phantom names when processing rare source vocabulary." },
+        { "speaker": "Anya (Indian English)", "text": "Yes, especially in medical and legal domains. For example, when translating patient clinical notes from Hindi to English, an off-the-shelf neural model translated a rare regional symptom for stomach distress into the English phrase 'advanced pulmonary tuberculosis'—a hallucinated diagnosis that could have fatal real-world clinical consequences." },
+        { "speaker": "Dr. Brooks (British)", "text": "That is an extraordinary finding. Why do transformer models produce hallucinations rather than simply omitting unfamiliar words?" },
+        { "speaker": "Marcus (Australian)", "text": "It stems from how the self-attention mechanism operates. Large language models are trained on auto-regressive next-token prediction, prioritizing fluent linguistic coherence over strict semantic fidelity. When an unknown token appears in low-probability vector space, the decoder hallucinates plausible-sounding words to maximize statistical language likelihood." },
+        { "speaker": "Anya (Indian English)", "text": "To solve this, our proposed architecture integrates a copy-attention mechanism and external multilingual knowledge graphs. If the model's confidence entropy exceeds a threshold of zero point seven, the system flags the phrase for human-in-the-loop verification." },
+        { "speaker": "Dr. Brooks (British)", "text": "Excellent engineering. For next Thursday's department colloquium, how will you divide the speaking slots?" },
+        { "speaker": "Marcus (Australian)", "text": "I will deliver the mathematical overview of self-attention mechanisms and explain why hallucinations occur in high-entropy states." },
+        { "speaker": "Anya (Indian English)", "text": "And I will demonstrate our live benchmarking tool, showcasing real-time error detection on Hindi and Warlpiri medical texts." }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Choose the correct letter, A, B, or C. Write your answers in boxes 21–26.",
+          questionType: "multiple_choice_single",
+          questions: [
+            {
+              id: "l11-q21",
+              questionNumber: 21,
+              type: "multiple_choice_single",
+              topic: "computational linguistics",
+              estimatedBand: 7.5,
+              prompt: "In computational linguistics, a machine translation 'hallucination' refers to",
+              options: [
+                "A) software failing to boot up.",
+                "B) generating fabricated phrases not present in the source text.",
+                "C) translating text too slowly."
+              ],
+              correctAnswer: "B",
+              explanation: "Marcus explains hallucinations as generating completely fabricated clauses or phantom names.",
+              evidence: "generating completely fabricated clauses or phantom names when processing rare source vocabulary."
+            },
+            {
+              id: "l11-q22",
+              questionNumber: 22,
+              type: "multiple_choice_single",
+              topic: "medicine",
+              estimatedBand: 7.5,
+              prompt: "In Anya's Hindi medical example, a mild stomach symptom was mistranslated as",
+              options: [
+                "A) pulmonary tuberculosis.",
+                "B) acute heart attack.",
+                "C) fractured collarbone."
+              ],
+              correctAnswer: "A",
+              explanation: "Anya notes it translated stomach distress into 'advanced pulmonary tuberculosis'.",
+              evidence: "translated a rare regional symptom for stomach distress into the English phrase 'advanced pulmonary tuberculosis'"
+            },
+            {
+              id: "l11-q23",
+              questionNumber: 23,
+              type: "multiple_choice_single",
+              topic: "artificial intelligence",
+              estimatedBand: 8.0,
+              prompt: "Transformer decoders generate hallucinations primarily because they prioritize",
+              options: [
+                "A) processing speed over electrical efficiency.",
+                "B) grammatical fluency and statistical likelihood over factual accuracy.",
+                "C) short words over multi-syllable terms."
+              ],
+              correctAnswer: "B",
+              explanation: "Marcus explains models prioritize fluent linguistic coherence over strict semantic fidelity.",
+              evidence: "prioritizing fluent linguistic coherence over strict semantic fidelity."
+            },
+            {
+              id: "l11-q24",
+              questionNumber: 24,
+              type: "multiple_choice_single",
+              topic: "computer science",
+              estimatedBand: 8.0,
+              prompt: "The students' proposed system flags phrases for human review when confidence entropy exceeds",
+              options: [
+                "A) 0.3.",
+                "B) 0.5.",
+                "C) 0.7."
+              ],
+              correctAnswer: "C",
+              explanation: "Anya states: 'confidence entropy exceeds a threshold of zero point seven'.",
+              evidence: "confidence entropy exceeds a threshold of zero point seven, the system flags the phrase"
+            },
+            {
+              id: "l11-q25",
+              questionNumber: 25,
+              type: "multiple_choice_single",
+              topic: "linguistics",
+              estimatedBand: 7.0,
+              prompt: "Besides Hindi, which other language was included in their benchmark tests?",
+              options: [
+                "A) Warlpiri.",
+                "B) Swahili.",
+                "C) Icelandic."
+              ],
+              correctAnswer: "A",
+              explanation: "Anya mentions showcasing real-time error detection on Hindi and Warlpiri.",
+              evidence: "showcasing real-time error detection on Hindi and Warlpiri medical texts."
+            },
+            {
+              id: "l11-q26",
+              questionNumber: 26,
+              type: "multiple_choice_single",
+              topic: "education",
+              estimatedBand: 6.5,
+              prompt: "When will the students present their findings to the department colloquium?",
+              options: [
+                "A) Next Tuesday.",
+                "B) Next Thursday.",
+                "C) Next Friday."
+              ],
+              correctAnswer: "B",
+              explanation: "Dr. Brooks mentions next Thursday's department colloquium.",
+              evidence: "For next Thursday's department colloquium, how will you divide the speaking slots?"
+            }
+          ]
+        },
+        {
+          groupInstruction: "Which student is responsible for each part of the upcoming presentation? Write the correct letter, A or B, in boxes 27–30.\nA: Marcus\nB: Anya",
+          questionType: "matching",
+          questions: [
+            {
+              id: "l11-q27",
+              questionNumber: 27,
+              type: "matching",
+              topic: "presentation",
+              estimatedBand: 7.5,
+              prompt: "Delivering the mathematical explanation of self-attention mechanisms.",
+              correctAnswer: "A",
+              explanation: "Marcus confirms he will deliver the mathematical overview of self-attention.",
+              evidence: "Marcus: I will deliver the mathematical overview of self-attention mechanisms"
+            },
+            {
+              id: "l11-q28",
+              questionNumber: 28,
+              type: "matching",
+              topic: "presentation",
+              estimatedBand: 7.5,
+              prompt: "Demonstrating the live benchmarking software tool.",
+              correctAnswer: "B",
+              explanation: "Anya confirms she will demonstrate the live benchmarking tool.",
+              evidence: "Anya: And I will demonstrate our live benchmarking tool"
+            },
+            {
+              id: "l11-q29",
+              questionNumber: 29,
+              type: "matching",
+              topic: "presentation",
+              estimatedBand: 8.0,
+              prompt: "Explaining how high-entropy vector spaces trigger token hallucinations.",
+              correctAnswer: "A",
+              explanation: "Marcus explains hallucinations in high-entropy states.",
+              evidence: "Marcus: explain why hallucinations occur in high-entropy states."
+            },
+            {
+              id: "l11-q30",
+              questionNumber: 30,
+              type: "matching",
+              topic: "presentation",
+              estimatedBand: 7.0,
+              prompt: "Presenting medical translation case studies in Hindi and Indigenous languages.",
+              correctAnswer: "B",
+              explanation: "Anya showcases real-time error detection on Hindi and Warlpiri medical texts.",
+              evidence: "Anya: showcasing real-time error detection on Hindi and Warlpiri medical texts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      sectionNumber: 4,
+      title: "Academic Lecture: The Atmospheric Physics of Cirrus Cloud Radiative Forcing",
+      contextDescription: "Professor Evelyn Taylor (North American English speaker) delivering an academic meteorology lecture on upper-troposphere ice crystal dynamics and planetary radiative equilibrium.",
+      audioScript: [
+        { "speaker": "Professor Taylor (North American)", "text": "Good afternoon, class. Today we examine one of the greatest uncertainties in contemporary planetary climate modeling: the dual radiative forcing of cirrus clouds. Floating in the frigid upper troposphere between eight and sixteen kilometers above sea level, cirrus clouds are composed entirely of non-spherical ice crystals. Unlike low-altitude marine stratocumulus clouds—which exert a powerful net cooling effect by reflecting incoming shortwave solar radiation back into space—cirrus clouds exert a complex, competing radiative influence on Earth's energy budget." },
+        { "speaker": "Professor Taylor (North American)", "text": "Cirrus clouds are semi-transparent to incoming solar radiation, possessing low optical depth that allows most shortwave sunlight to penetrate through to the Earth's surface. However, they are exceptionally effective at absorbing outgoing longwave infrared radiation emitted by the warm planet. Because cirrus cloud tops are extremely cold—often minus fifty to minus sixty degrees Celsius—they re-emit longwave radiation into space at a much lower intensity than the warm surface beneath. Consequently, cirrus clouds act as a thermal greenhouse blanket, trapping heat in the troposphere." },
+        { "speaker": "Professor Taylor (North American)", "text": "The critical parameter governing whether a cirrus cloud warms or cools the planet is ice crystal habit and effective particle size. When cirrus clouds form through homogeneous nucleation—where microscopic water droplets freeze spontaneously without foreign nuclei—they produce vast quantities of tiny hexagonal ice crystals under twenty micrometers in diameter, which strongly enhances infrared absorption and net planetary warming." },
+        { "speaker": "Professor Taylor (North American)", "text": "This microphysical mechanism intersects directly with commercial aviation. High-altitude aircraft jet engines emit hot exhaust containing water vapor, soot, and aerosol sulfates. In ice-supersaturated air, these soot particles trigger contrail-induced cirrus clouds. Atmospheric physicists calculate that the net radiative warming caused by aviation-induced cirrus clouds actually exceeds the cumulative climate warming produced by all the carbon dioxide emitted by commercial aircraft engines since the beginning of aviation history." }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 31–40.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "l11-q31",
+              questionNumber: 31,
+              type: "sentence_completion",
+              topic: "meteorology",
+              estimatedBand: 7.0,
+              prompt: "Cirrus clouds form in the upper troposphere between 8 and ____ kilometers above Earth.",
+              correctAnswer: ["16", "sixteen"],
+              explanation: "Professor Taylor states between eight and sixteen kilometers above sea level.",
+              evidence: "upper troposphere between eight and sixteen kilometers above sea level"
+            },
+            {
+              id: "l11-q32",
+              questionNumber: 32,
+              type: "sentence_completion",
+              topic: "physics",
+              estimatedBand: 7.0,
+              prompt: "Cirrus clouds are composed entirely of microscopic ____ crystals.",
+              correctAnswer: "ice",
+              explanation: "Professor Taylor states cirrus clouds are composed entirely of non-spherical ice crystals.",
+              evidence: "cirrus clouds are composed entirely of non-spherical ice crystals."
+            },
+            {
+              id: "l11-q33",
+              questionNumber: 33,
+              type: "sentence_completion",
+              topic: "meteorology",
+              estimatedBand: 7.5,
+              prompt: "Unlike cirrus, low-altitude stratocumulus clouds exert a strong net ____ effect.",
+              correctAnswer: "cooling",
+              explanation: "Professor Taylor contrasts them with low-altitude clouds which exert a powerful net cooling effect.",
+              evidence: "which exert a powerful net cooling effect by reflecting incoming shortwave solar radiation"
+            },
+            {
+              id: "l11-q34",
+              questionNumber: 34,
+              type: "sentence_completion",
+              topic: "radiation",
+              estimatedBand: 7.5,
+              prompt: "Cirrus clouds have low optical depth, allowing ____ sunlight to pass through.",
+              correctAnswer: "shortwave",
+              explanation: "Professor Taylor notes they allow most shortwave sunlight to penetrate.",
+              evidence: "allows most shortwave sunlight to penetrate through to the Earth's surface."
+            },
+            {
+              id: "l11-q35",
+              questionNumber: 35,
+              type: "sentence_completion",
+              topic: "radiation",
+              estimatedBand: 7.5,
+              prompt: "They trap heat by absorbing outgoing longwave ____ radiation from the surface.",
+              correctAnswer: "infrared",
+              explanation: "Professor Taylor notes they absorb outgoing longwave infrared radiation.",
+              evidence: "exceptionally effective at absorbing outgoing longwave infrared radiation emitted by the warm planet."
+            },
+            {
+              id: "l11-q36",
+              questionNumber: 36,
+              type: "sentence_completion",
+              topic: "temperature",
+              estimatedBand: 7.0,
+              prompt: "Cloud tops reach temperatures as low as minus ____ degrees Celsius.",
+              correctAnswer: ["60", "sixty"],
+              explanation: "Professor Taylor mentions minus fifty to minus sixty degrees Celsius.",
+              evidence: "often minus fifty to minus sixty degrees Celsius—they re-emit longwave radiation"
+            },
+            {
+              id: "l11-q37",
+              questionNumber: 37,
+              type: "sentence_completion",
+              topic: "physics",
+              estimatedBand: 8.0,
+              prompt: "Spontaneous freezing without foreign particles is called ____ nucleation.",
+              correctAnswer: "homogeneous",
+              explanation: "Professor Taylor defines homogeneous nucleation.",
+              evidence: "cirrus clouds form through homogeneous nucleation—where microscopic water droplets freeze spontaneously"
+            },
+            {
+              id: "l11-q38",
+              questionNumber: 38,
+              type: "sentence_completion",
+              topic: "optics",
+              estimatedBand: 7.5,
+              prompt: "High warming occurs when ice crystals are smaller than ____ micrometers.",
+              correctAnswer: ["20", "twenty"],
+              explanation: "Professor Taylor states tiny crystals under twenty micrometers enhance warming.",
+              evidence: "tiny hexagonal ice crystals under twenty micrometers in diameter"
+            },
+            {
+              id: "l11-q39",
+              questionNumber: 39,
+              type: "sentence_completion",
+              topic: "aviation",
+              estimatedBand: 7.5,
+              prompt: "Aircraft engines emit water vapor, aerosol sulfates, and ____ particles.",
+              correctAnswer: "soot",
+              explanation: "Professor Taylor lists water vapor, soot, and aerosol sulfates.",
+              evidence: "hot exhaust containing water vapor, soot, and aerosol sulfates."
+            },
+            {
+              id: "l11-q40",
+              questionNumber: 40,
+              type: "sentence_completion",
+              topic: "climate",
+              estimatedBand: 8.0,
+              prompt: "Aviation-induced cirrus clouds produce more warming than all aircraft engine ____ emissions.",
+              correctAnswer: "carbon dioxide",
+              explanation: "Professor Taylor states warming exceeds cumulative carbon dioxide emitted by commercial aircraft.",
+              evidence: "exceeds the cumulative climate warming produced by all the carbon dioxide emitted by commercial aircraft engines"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync(
+  path.resolve('./content/listening/listening-test-11.json'),
+  JSON.stringify(listeningTest11, null, 2),
+  'utf8'
+);
+console.log('✓ Created listening-test-11.json');

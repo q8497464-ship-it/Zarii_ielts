@@ -1,0 +1,48 @@
+{
+  "name": "zarii-ielts",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:calibration": "node scripts/calibrate-writing.js",
+    "validate-content": "node scripts/validate-content.js",
+    "audit-content": "node scripts/audit-content-integrity.js",
+    "audit-mcq": "node scripts/audit-mcq.js",
+    "fix-mcq-positions": "node scripts/fix-mcq-positions.js",
+    "migrate:content": "npx tsx scripts/migrateContent.ts"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "dexie": "^4.0.11",
+    "dexie-react-hooks": "^1.1.7",
+    "dictionary-en": "^4.0.0",
+    "framer-motion": "^14.14.0",
+    "html-to-image": "^1.11.13",
+    "lucide-react": "^1.16.0",
+    "nspell": "^2.1.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "recharts": "^2.13.3",
+    "tailwind-merge": "^2.5.5",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.1",
+    "vitest": "^5.1.0"
+  }
+}

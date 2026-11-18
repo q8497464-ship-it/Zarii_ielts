@@ -1,0 +1,635 @@
+{
+  "id": "list-test-03",
+  "title": "Listening Practice Test 3",
+  "difficulty": "standard",
+  "timeLimitMinutes": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Campervan Rental and Insurance Booking",
+      "contextDescription": "A customer, Marcus Henderson, inquiring about hiring a campervan for a touring vacation across the South Island of New Zealand.",
+      "audioScript": [
+        {
+          "speaker": "Agent",
+          "text": "Kia Ora and good morning! Southern Cross Campervan Rentals, Liam speaking. How can I help you today?"
+        },
+        {
+          "speaker": "Marcus",
+          "text": "Hello there! My wife and I are planning a two-week driving holiday across the South Island next month, and we'd like to reserve a motorhome."
+        },
+        {
+          "speaker": "Agent",
+          "text": "Excellent choice. What dates are you looking at arriving and departing?"
+        },
+        {
+          "speaker": "Marcus",
+          "text": "We touch down in Christchurch on the twelfth of November, and we fly out from Queenstown on the twenty-sixth of November."
+        },
+        {
+          "speaker": "Agent",
+          "text": "Splendid. So that's a fourteen-day one-way hire. For two adults, our most popular model is the Alpine Cruiser. It features a pressurized hot-water shower, a compact gas kitchenette with a two-burner stove, a mini-fridge, and an elevated double bed."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "That sounds ideal. Does the Alpine Cruiser require a specialized commercial driving license?"
+        },
+        {
+          "speaker": "Agent",
+          "text": "No, a standard full domestic automobile driver's license in English is completely valid."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "Terrific. And what is the base rental tariff per day?"
+        },
+        {
+          "speaker": "Agent",
+          "text": "During November, the seasonal rate is one hundred and eighty-five dollars per day. That includes unlimited kilometers and twenty-four-hour roadside assistance."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "What about insurance coverage? Are we liable for accidental windscreen chips or gravel damage?"
+        },
+        {
+          "speaker": "Agent",
+          "text": "The standard complimentary tier carries a excess liability of two thousand dollars. However, we strongly recommend our Platinum Peace-of-Mind waiver for thirty-five dollars extra per day, which reduces your excess to zero and protects against windscreen chips, tyre punctures, and undercarriage gravel damage."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "We definitely want the Platinum waiver; mountain roads can be quite gravelly. Can we also hire GPS navigation and two folding camping chairs?"
+        },
+        {
+          "speaker": "Agent",
+          "text": "Yes, portable satellite GPS is ten dollars total for the entire trip, and camping chairs are five dollars each."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "Wonderful. Let me give you my reservation details."
+        },
+        {
+          "speaker": "Agent",
+          "text": "Certainly. Could I have your full name and contact number?"
+        },
+        {
+          "speaker": "Marcus",
+          "text": "Yes, it's Marcus Henderson, that's H-E-N-D-E-R-S-O-N, and my mobile number is zero two one, five five five, seven eight three zero."
+        },
+        {
+          "speaker": "Agent",
+          "text": "Thank you, Marcus. And your email address for the voucher confirmation?"
+        },
+        {
+          "speaker": "Marcus",
+          "text": "It's m dot henderson at horizon dot nz."
+        },
+        {
+          "speaker": "Agent",
+          "text": "Got it. When you arrive at Christchurch Airport, take the complimentary shuttle bus from Exit Door Four directly to our depot on Memorial Avenue. Our depot closes at six PM, so please arrive before five thirty to complete the digital vehicle orientation."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "Noted. Five thirty PM at Memorial Avenue. Thank you very much, Liam!"
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 1–10.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "l3-q1",
+              "questionNumber": 1,
+              "prompt": "Rental start date: 12th of ____.",
+              "correctAnswer": "November",
+              "explanation": "Marcus states: 'We touch down in Christchurch on the twelfth of November'.",
+              "evidence": "We touch down in Christchurch on the twelfth of November"
+            },
+            {
+              "id": "l3-q2",
+              "questionNumber": 2,
+              "prompt": "Vehicle model chosen: the ____ Cruiser.",
+              "correctAnswer": "Alpine",
+              "explanation": "Liam mentions: 'our most popular model is the Alpine Cruiser.'",
+              "evidence": "For two adults, our most popular model is the Alpine Cruiser."
+            },
+            {
+              "id": "l3-q3",
+              "questionNumber": 3,
+              "prompt": "Kitchenette includes a two-burner stove and a mini-____.",
+              "correctAnswer": "fridge",
+              "explanation": "Liam notes: 'a two-burner stove, a mini-fridge, and an elevated double bed.'",
+              "evidence": "a compact gas kitchenette with a two-burner stove, a mini-fridge"
+            },
+            {
+              "id": "l3-q4",
+              "questionNumber": 4,
+              "prompt": "Daily base hire rate in November: $____ per day.",
+              "correctAnswer": [
+                "185",
+                "one hundred and eighty-five",
+                "185 dollars"
+              ],
+              "explanation": "Liam states: 'the seasonal rate is one hundred and eighty-five dollars per day.'",
+              "evidence": "During November, the seasonal rate is one hundred and eighty-five dollars per day."
+            },
+            {
+              "id": "l3-q5",
+              "questionNumber": 5,
+              "prompt": "Name of insurance package: the ____ Peace-of-Mind waiver.",
+              "correctAnswer": "Platinum",
+              "explanation": "Liam introduces: 'our Platinum Peace-of-Mind waiver'.",
+              "evidence": "However, we strongly recommend our Platinum Peace-of-Mind waiver for thirty-five dollars extra per day"
+            },
+            {
+              "id": "l3-q6",
+              "questionNumber": 6,
+              "prompt": "Optional equipment hired: GPS navigation and two folding camping ____.",
+              "correctAnswer": "chairs",
+              "explanation": "Marcus asks: 'hire GPS navigation and two folding camping chairs?'",
+              "evidence": "Can we also hire GPS navigation and two folding camping chairs?"
+            },
+            {
+              "id": "l3-q7",
+              "questionNumber": 7,
+              "prompt": "Customer's surname: ____.",
+              "correctAnswer": "Henderson",
+              "explanation": "Marcus spells: 'H-E-N-D-E-R-S-O-N'.",
+              "evidence": "Yes, it's Marcus Henderson, that's H-E-N-D-E-R-S-O-N"
+            },
+            {
+              "id": "l3-q8",
+              "questionNumber": 8,
+              "prompt": "Customer's contact phone number: 021 555 ____.",
+              "correctAnswer": "7830",
+              "explanation": "Marcus gives phone number: 'zero two one, five five five, seven eight three zero.'",
+              "evidence": "my mobile number is zero two one, five five five, seven eight three zero."
+            },
+            {
+              "id": "l3-q9",
+              "questionNumber": 9,
+              "prompt": "Airport shuttle departs from Exit Door ____.",
+              "correctAnswer": [
+                "Four",
+                "4",
+                "door 4"
+              ],
+              "explanation": "Liam says: 'take the complimentary shuttle bus from Exit Door Four'.",
+              "evidence": "take the complimentary shuttle bus from Exit Door Four directly to our depot"
+            },
+            {
+              "id": "l3-q10",
+              "questionNumber": 10,
+              "prompt": "Depot address: ____ Avenue.",
+              "correctAnswer": "Memorial",
+              "explanation": "Liam gives the location: 'depot on Memorial Avenue.'",
+              "evidence": "directly to our depot on Memorial Avenue."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Audio Guide to the Riverside Botanic Glasshouses",
+      "contextDescription": "The senior botanist, Dr. David Campbell, providing a welcoming audio introduction for visitors exploring the botanical conservatory gardens.",
+      "audioScript": [
+        {
+          "speaker": "Guide",
+          "text": "A warm welcome to the Riverside Botanic Glasshouses, constructed in 1888 during the Victorian golden age of botany. Our historic cast-iron and glass structure houses over four thousand species of flora from every continent on Earth."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Before you embark on your self-guided walk, let me orient you with our layout. You are currently standing in the Central Palm Atrium, beneath our soaring thirty-meter curved glass dome. In the center of the atrium floor stands our ornamental koi pond, which was originally installed to maintain atmospheric humidity for our nineteenth-century cycad collection."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Directly north of the central atrium, you will find the Tropical Rainforest biome. Here, the temperature is maintained at a constant twenty-eight degrees Celsius, and high-pressure mist nozzles recreate the daily monsoon precipitation of the Amazon river basin. Look up to spot our magnificent climbing strangler figs and epiphytic orchids."
+        },
+        {
+          "speaker": "Guide",
+          "text": "If you head east through the glass vestibule, you enter the Arid Succulent Pavilion. This zone replicates the harsh desert climates of southern Africa and the American Southwest. Notice the remarkable columnar saguaro cacti, which can store up to two metric tons of water inside their pleated stems during rare desert flash floods."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Moving south toward the riverside wing brings you to the Alpine Terraces. Unlike the tropical house, the Alpine pavilion utilizes chilled geothermal pipes running through the soil beds to recreate the sub-zero night conditions essential for fragile Himalayan edelweiss and high-altitude mosses."
+        },
+        {
+          "speaker": "Guide",
+          "text": "Finally, nestled in the western courtyard is our newly opened Insectarium and Pollinator Garden. Here, visitors can witness thousands of free-flying tropical butterflies feeding on flowering nectar corridors. Please note that photography using tripod equipment is prohibited on weekend afternoons due to narrow pathways, but handheld camera devices and smartphones are warmly encouraged. Light refreshments and botanical herbal teas are served at the Orangery Tearoom, located adjacent to the gift shop near the exit."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Choose the correct letter, A, B, or C. Write your answers in boxes 11–15.",
+          "questionType": "multiple_choice",
+          "questions": [
+            {
+              "id": "l3-q11",
+              "questionNumber": 11,
+              "prompt": "When were the Riverside Botanic Glasshouses initially constructed?",
+              "options": [
+                "1888",
+                "1848",
+                "1928"
+              ],
+              "correctAnswer": "A",
+              "explanation": "The guide states the glasshouses were 'constructed in 1888 during the Victorian golden age of botany.'",
+              "evidence": "constructed in 1888 during the Victorian golden age of botany."
+            },
+            {
+              "id": "l3-q12",
+              "questionNumber": 12,
+              "prompt": "Why was the koi pond in the Central Palm Atrium originally introduced?",
+              "options": [
+                "To supply drinking water for local songbirds",
+                "To maintain necessary atmospheric humidity for plants",
+                "To conduct fish breeding experiments"
+              ],
+              "correctAnswer": "B",
+              "explanation": "The guide explains it was installed 'to maintain atmospheric humidity for our nineteenth-century cycad collection.'",
+              "evidence": "which was originally installed to maintain atmospheric humidity for our nineteenth-century cycad collection."
+            },
+            {
+              "id": "l3-q13",
+              "questionNumber": 13,
+              "prompt": "What special climate control system is used in the Alpine Terraces?",
+              "options": [
+                "Industrial air blowers",
+                "Artificial snow generators",
+                "Chilled geothermal pipes inside soil beds"
+              ],
+              "correctAnswer": "C",
+              "explanation": "The guide notes the Alpine pavilion 'utilizes chilled geothermal pipes running through the soil beds'.",
+              "evidence": "utilizes chilled geothermal pipes running through the soil beds to recreate the sub-zero night conditions"
+            },
+            {
+              "id": "l3-q14",
+              "questionNumber": 14,
+              "prompt": "What restriction applies to visitors in the Insectarium?",
+              "options": [
+                "Tripod photography prohibited on weekend afternoons",
+                "No children under six permitted",
+                "Food and bottled water strictly forbidden"
+              ],
+              "correctAnswer": "A",
+              "explanation": "The guide notes: 'photography using tripod equipment is prohibited on weekend afternoons due to narrow pathways'.",
+              "evidence": "Please note that photography using tripod equipment is prohibited on weekend afternoons due to narrow pathways"
+            },
+            {
+              "id": "l3-q15",
+              "questionNumber": 15,
+              "prompt": "Where can visitors find refreshments and herbal tea?",
+              "options": [
+                "Beside the Central Palm koi pond",
+                "At the Orangery Tearoom near the gift shop",
+                "In the Alpine pavilion observation terrace"
+              ],
+              "correctAnswer": "B",
+              "explanation": "The guide specifies: 'at the Orangery Tearoom, located adjacent to the gift shop near the exit.'",
+              "evidence": "at the Orangery Tearoom, located adjacent to the gift shop near the exit."
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Match the glasshouse areas (16–20) with their directional location from the Central Palm Atrium (A–E). Write the correct letter in boxes 16–20.\nA: Directly North\nB: East wing\nC: South wing\nD: West courtyard\nE: Atrium center",
+          "questionType": "matching",
+          "questions": [
+            {
+              "id": "l3-q16",
+              "questionNumber": 16,
+              "prompt": "Ornamental Koi Pond",
+              "correctAnswer": "E",
+              "explanation": "The guide explains: 'In the center of the atrium floor stands our ornamental koi pond'.",
+              "evidence": "In the center of the atrium floor stands our ornamental koi pond"
+            },
+            {
+              "id": "l3-q17",
+              "questionNumber": 17,
+              "prompt": "Tropical Rainforest Biome",
+              "correctAnswer": "A",
+              "explanation": "The guide states: 'Directly north of the central atrium, you will find the Tropical Rainforest biome.'",
+              "evidence": "Directly north of the central atrium, you will find the Tropical Rainforest biome."
+            },
+            {
+              "id": "l3-q18",
+              "questionNumber": 18,
+              "prompt": "Arid Succulent Pavilion",
+              "correctAnswer": "B",
+              "explanation": "The guide notes: 'If you head east through the glass vestibule, you enter the Arid Succulent Pavilion.'",
+              "evidence": "If you head east through the glass vestibule, you enter the Arid Succulent Pavilion."
+            },
+            {
+              "id": "l3-q19",
+              "questionNumber": 19,
+              "prompt": "Alpine Terraces",
+              "correctAnswer": "C",
+              "explanation": "The guide states: 'Moving south toward the riverside wing brings you to the Alpine Terraces.'",
+              "evidence": "Moving south toward the riverside wing brings you to the Alpine Terraces."
+            },
+            {
+              "id": "l3-q20",
+              "questionNumber": 20,
+              "prompt": "Insectarium & Pollinator Garden",
+              "correctAnswer": "D",
+              "explanation": "The guide concludes: 'nestled in the western courtyard is our newly opened Insectarium and Pollinator Garden.'",
+              "evidence": "Finally, nestled in the western courtyard is our newly opened Insectarium and Pollinator Garden."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "University Micro-Hydro Turbine Engineering Project",
+      "contextDescription": "Two engineering undergraduates, Chloe and Liam, discussing their renewable energy project design with their academic supervisor, Professor Evans.",
+      "audioScript": [
+        {
+          "speaker": "Prof Evans",
+          "text": "Good afternoon, Chloe, Liam. How is the design for your remote village micro-hydro generating system progressing?"
+        },
+        {
+          "speaker": "Chloe",
+          "text": "Quite well, Professor. We've finalized our site selection for the mountainous rural community in northern Vietnam. The stream has a vertical head drop of forty-five meters and a minimum flow rate of twenty liters per second during the dry season."
+        },
+        {
+          "speaker": "Liam",
+          "text": "Based on those parameters, we had to choose between a Pelton wheel impulse turbine and a crossflow reaction turbine. We ran computational fluid simulations and concluded that a Pelton wheel is significantly superior for high-head, low-volume flow conditions."
+        },
+        {
+          "speaker": "Prof Evans",
+          "text": "I agree with that thermodynamic assessment. What about sediment and silt management? Mountain streams during the rainy season carry substantial abrasive sand that can rapidly erode turbine runner buckets."
+        },
+        {
+          "speaker": "Chloe",
+          "text": "We designed a two-chamber settling tank upstream. The first chamber decants coarse gravel, while the second chamber decelerates water velocity to allow fine silt particles over zero point two millimeters to settle before entering the penstock pipe."
+        },
+        {
+          "speaker": "Prof Evans",
+          "text": "Very sensible. And what material have you specified for the penstock pipe carrying the pressurized water down the mountain?"
+        },
+        {
+          "speaker": "Liam",
+          "text": "We initially considered welded mild steel, but the transport logistics up steep footpaths are impossible for heavy trucks. So we opted for high-density polyethylene, or HDPE. It's lightweight, flexible, completely immune to chemical corrosion, and comes in coiled rolls that can be carried on pack mules."
+        },
+        {
+          "speaker": "Chloe",
+          "text": "For the runner buckets, we are testing 3D-printed glass-fiber reinforced nylon against recycled cast aluminum. The nylon prototypes are twenty percent lighter and cheaper to manufacture locally using open-source desktop 3D printers."
+        },
+        {
+          "speaker": "Prof Evans",
+          "text": "Excellent community-centered innovation. For your final submission, remember to include an electronic load controller schematic. In isolated off-grid grids, when villagers switch off lights, the excess electrical generation must be dumped into secondary resistive heaters, such as a community water tank, to prevent generator runaway."
+        },
+        {
+          "speaker": "Liam",
+          "text": "Yes, we have integrated a pulse-width modulated ballast circuit into our final CAD model. We'll present the functional prototype at the faculty symposium next Thursday!"
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Choose the correct letter, A, B, or C. Write your answers in boxes 21–25.",
+          "questionType": "multiple_choice",
+          "questions": [
+            {
+              "id": "l3-q21",
+              "questionNumber": 21,
+              "prompt": "What is the vertical head drop of the selected stream site in Vietnam?",
+              "options": [
+                "25 meters",
+                "60 meters",
+                "45 meters"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Chloe states: 'The stream has a vertical head drop of forty-five meters'.",
+              "evidence": "The stream has a vertical head drop of forty-five meters and a minimum flow rate of twenty liters per second"
+            },
+            {
+              "id": "l3-q22",
+              "questionNumber": 22,
+              "prompt": "Why did the students select a Pelton wheel turbine?",
+              "options": [
+                "It performs best in high-head, low-flow conditions",
+                "It is the only turbine permitted by government environmental rules",
+                "It requires no upstream water filtration"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Liam explains: 'a Pelton wheel is significantly superior for high-head, low-volume flow conditions.'",
+              "evidence": "concluded that a Pelton wheel is significantly superior for high-head, low-volume flow conditions."
+            },
+            {
+              "id": "l3-q23",
+              "questionNumber": 23,
+              "prompt": "How does their design manage stream sediment?",
+              "options": [
+                "By using chemical flocculants",
+                "Using a two-chamber upstream settling tank",
+                "By cleaning turbine buckets manually every morning"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Chloe explains: 'We designed a two-chamber settling tank upstream.'",
+              "evidence": "We designed a two-chamber settling tank upstream. The first chamber decants coarse gravel, while the second chamber decelerates water velocity"
+            },
+            {
+              "id": "l3-q24",
+              "questionNumber": 24,
+              "prompt": "Why did the students choose HDPE over steel for the penstock pipe?",
+              "options": [
+                "It can withstand higher steam pressure",
+                "It is transparent so blockages can be seen",
+                "It is lightweight and transportable on pack mules"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Liam notes: 'opted for high-density polyethylene, or HDPE. It's lightweight, flexible... and comes in coiled rolls that can be carried on pack mules.'",
+              "evidence": "opted for high-density polyethylene, or HDPE. It's lightweight, flexible, completely immune to chemical corrosion, and comes in coiled rolls that can be carried on pack mules."
+            },
+            {
+              "id": "l3-q25",
+              "questionNumber": 25,
+              "prompt": "What purpose does the electronic load controller serve?",
+              "options": [
+                "It diverts surplus power into water heaters to prevent generator overspeed",
+                "It shuts down the generator whenever electricity tariffs rise",
+                "It monitors river water temperature"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Professor Evans notes: 'the excess electrical generation must be dumped into secondary resistive heaters, such as a community water tank, to prevent generator runaway.'",
+              "evidence": "the excess electrical generation must be dumped into secondary resistive heaters, such as a community water tank, to prevent generator runaway."
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer. Write your answers in boxes 26–30.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "l3-q26",
+              "questionNumber": 26,
+              "prompt": "The stream has a minimum dry-season flow rate of twenty ____ per second.",
+              "correctAnswer": "liters",
+              "explanation": "Chloe mentions 'twenty liters per second during the dry season.'",
+              "evidence": "minimum flow rate of twenty liters per second during the dry season."
+            },
+            {
+              "id": "l3-q27",
+              "questionNumber": 27,
+              "prompt": "The settling tank removes abrasive sand to prevent the erosion of turbine ____.",
+              "correctAnswer": "runner buckets",
+              "explanation": "Professor Evans notes abrasive sand can 'rapidly erode turbine runner buckets.'",
+              "evidence": "abrasive sand that can rapidly erode turbine runner buckets."
+            },
+            {
+              "id": "l3-q28",
+              "questionNumber": 28,
+              "prompt": "The second tank chamber removes fine silt larger than ____ millimeters.",
+              "correctAnswer": [
+                "0.2",
+                "zero point two"
+              ],
+              "explanation": "Chloe notes particles over 'zero point two millimeters to settle'.",
+              "evidence": "allow fine silt particles over zero point two millimeters to settle"
+            },
+            {
+              "id": "l3-q29",
+              "questionNumber": 29,
+              "prompt": "Runner buckets are tested using glass-fiber reinforced ____.",
+              "correctAnswer": "nylon",
+              "explanation": "Chloe states: 'testing 3D-printed glass-fiber reinforced nylon'.",
+              "evidence": "testing 3D-printed glass-fiber reinforced nylon against recycled cast aluminum."
+            },
+            {
+              "id": "l3-q30",
+              "questionNumber": 30,
+              "prompt": "The functional prototype will be unveiled at the faculty ____ next Thursday.",
+              "correctAnswer": "symposium",
+              "explanation": "Liam concludes: 'present the functional prototype at the faculty symposium next Thursday!'",
+              "evidence": "present the functional prototype at the faculty symposium next Thursday!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Academic Lecture on Marine Bioluminescence and Oceanic Optics",
+      "contextDescription": "Professor Rachel Vance delivering an oceanography lecture on biochemical light production in deep-sea marine organisms.",
+      "audioScript": [
+        {
+          "speaker": "Prof Vance",
+          "text": "Good morning, students. Today we explore one of the most astonishing biological phenomena on our planet: marine bioluminescence. While light production is relatively rare among terrestrial creatures—confined largely to fireflies and certain fungal mycelia—in the open ocean, it is the prevailing optical norm. Marine biologists estimate that over seventy-five percent of all pelagic organisms inhabiting the ocean column between two hundred and one thousand meters depth possess the capacity to generate biochemical light."
+        },
+        {
+          "speaker": "Prof Vance",
+          "text": "At a molecular level, biological light emission is an enzymatic oxidation reaction. The reaction requires two primary components: a light-emitting substrate molecule called luciferin, and an enzyme catalyst known as luciferase. In the presence of dissolved oxygen and cellular energy in the form of ATP, luciferase oxidizes luciferin to form an electronically excited intermediate, oxyluciferin. When this molecule relaxes back to its ground state, it releases a quantum packet of light—a photon. Because virtually zero energy is lost as thermal radiation, bioluminescence is often described by physicists as cold light, achieving ninety-five percent photonic efficiency compared to less than ten percent in incandescent light bulbs."
+        },
+        {
+          "speaker": "Prof Vance",
+          "text": "Why is bioluminescence overwhelmingly blue-green in oceanic environments? The answer lies in ocean water optics. Pure water acts as a selective spectral filter: red, orange, and yellow wavelengths of sunlight are rapidly absorbed within the top fifty meters of the sea surface. Blue-green light, with a wavelength between 470 and 490 nanometers, experiences the least optical attenuation and penetrates deepest through seawater. Consequently, marine organisms have evolved photoreceptor pigments tuned precisely to detect this spectral bandwidth."
+        },
+        {
+          "speaker": "Prof Vance",
+          "text": "Ecologically, deep-sea fauna harness bioluminescence for three primary survival functions: predation, defense, and communication. In terms of predation, deep-sea anglerfish sport a modified dorsal fin spine tipped with a bioluminescent photophore bulb—termed the esca—filled with symbiotic luminous bacteria. Suspended in total darkness above gaping jaws, the glowing lure attracts inquisitive crustaceans and smaller fish directly into striking range."
+        },
+        {
+          "speaker": "Prof Vance",
+          "text": "For defense, many midwater squid and hatchetfish practice counter-illumination camouflage. When swimming in the twilight mesopelagic zone, an animal viewed from below casts a dark silhouette against the faint downwelling sunlight from the surface, making it an easy target for ascending predators. To counteract this vulnerability, hatchetfish possess ventral photophores on their bellies that emit faint blue light matching the precise intensity and color spectrum of the overhead downwelling light, effectively rendering their silhouette completely invisible from beneath."
+        },
+        {
+          "speaker": "Prof Vance",
+          "text": "Beyond marine ecology, the discovery of bioluminescent chemical systems has catalyzed breakthroughs in biomedical research. In the 1960s, marine biochemist Osamu Shimomura isolated green fluorescent protein, or GFP, from the crystal jellyfish Aequorea victoria. Today, cellular biologists routinely fuse the genetic code for GFP to human cancer proteins and viral pathogens. When illuminated under blue ultraviolet light, the tagged proteins glow with radiant green fluorescence, allowing researchers to track live tumor metastasis, gene expression, and viral transmission in real time under high-powered microscopes."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 31–40.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "l3-q31",
+              "questionNumber": 31,
+              "prompt": "Over ____ percent of creatures between 200 and 1,000 meters produce light.",
+              "correctAnswer": [
+                "75",
+                "seventy-five"
+              ],
+              "explanation": "Prof Vance states: 'over seventy-five percent of all pelagic organisms inhabiting the ocean column'.",
+              "evidence": "estimate that over seventy-five percent of all pelagic organisms inhabiting the ocean column"
+            },
+            {
+              "id": "l3-q32",
+              "questionNumber": 32,
+              "prompt": "The biological substrate molecule oxidized during light production is called ____.",
+              "correctAnswer": "luciferin",
+              "explanation": "Prof Vance identifies 'a light-emitting substrate molecule called luciferin'.",
+              "evidence": "a light-emitting substrate molecule called luciferin, and an enzyme catalyst known as luciferase."
+            },
+            {
+              "id": "l3-q33",
+              "questionNumber": 33,
+              "prompt": "Bioluminescence is termed cold light because it achieves ____ percent photonic efficiency.",
+              "correctAnswer": [
+                "95",
+                "ninety-five"
+              ],
+              "explanation": "Prof Vance highlights: 'achieving ninety-five percent photonic efficiency'.",
+              "evidence": "bioluminescence is often described by physicists as cold light, achieving ninety-five percent photonic efficiency"
+            },
+            {
+              "id": "l3-q34",
+              "questionNumber": 34,
+              "prompt": "Blue-green light travels furthest in seawater because it experiences the lowest optical ____.",
+              "correctAnswer": "attenuation",
+              "explanation": "Prof Vance notes blue-green light 'experiences the least optical attenuation and penetrates deepest'.",
+              "evidence": "experiences the least optical attenuation and penetrates deepest through seawater."
+            },
+            {
+              "id": "l3-q35",
+              "questionNumber": 35,
+              "prompt": "The glowing bulb on an anglerfish's dorsal spine is scientifically termed the ____.",
+              "correctAnswer": "esca",
+              "explanation": "Prof Vance refers to 'a bioluminescent photophore bulb—termed the esca'.",
+              "evidence": "a bioluminescent photophore bulb—termed the esca—filled with symbiotic luminous bacteria."
+            },
+            {
+              "id": "l3-q36",
+              "questionNumber": 36,
+              "prompt": "The anglerfish lure is illuminated by symbiotic luminous ____.",
+              "correctAnswer": "bacteria",
+              "explanation": "Prof Vance mentions the esca is 'filled with symbiotic luminous bacteria.'",
+              "evidence": "filled with symbiotic luminous bacteria. Suspended in total darkness"
+            },
+            {
+              "id": "l3-q37",
+              "questionNumber": 37,
+              "prompt": "Hatchetfish avoid predators below by practicing ____ camouflage.",
+              "correctAnswer": "counter-illumination",
+              "explanation": "Prof Vance describes hatchetfish practicing 'counter-illumination camouflage.'",
+              "evidence": "For defense, many midwater squid and hatchetfish practice counter-illumination camouflage."
+            },
+            {
+              "id": "l3-q38",
+              "questionNumber": 38,
+              "prompt": "Light-emitting organs situated on the fish's belly are called ventral ____.",
+              "correctAnswer": "photophores",
+              "explanation": "Prof Vance notes: 'hatchetfish possess ventral photophores on their bellies'.",
+              "evidence": "hatchetfish possess ventral photophores on their bellies that emit faint blue light"
+            },
+            {
+              "id": "l3-q39",
+              "questionNumber": 39,
+              "prompt": "Green fluorescent protein (GFP) was originally isolated from the crystal ____.",
+              "correctAnswer": "jellyfish",
+              "explanation": "Prof Vance notes GFP was isolated 'from the crystal jellyfish Aequorea victoria.'",
+              "evidence": "isolated green fluorescent protein, or GFP, from the crystal jellyfish Aequorea victoria."
+            },
+            {
+              "id": "l3-q40",
+              "questionNumber": 40,
+              "prompt": "GFP allows modern cancer researchers to track live tumor ____ under microscopes.",
+              "correctAnswer": "metastasis",
+              "explanation": "Prof Vance concludes: 'allowing researchers to track live tumor metastasis, gene expression'.",
+              "evidence": "allowing researchers to track live tumor metastasis, gene expression, and viral transmission in real time"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

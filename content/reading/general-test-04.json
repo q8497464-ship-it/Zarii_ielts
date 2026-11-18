@@ -1,0 +1,581 @@
+{
+  "id": "gen-reading-04",
+  "title": "General Training Reading Practice Test 4",
+  "testType": "general",
+  "difficulty": "medium",
+  "timeLimitMinutes": 60,
+  "passages": [
+    {
+      "passageNumber": 1,
+      "title": "Tenancy Deposit Protection Schemes & Community Allotment Rules",
+      "subtitle": "Everyday residential rights and public civic gardening procedures",
+      "text": "Section 1A: Residential Tenancy Deposit Protection (TDP)\nIn England and Wales, landlords who let private residential property under an Assured Shorthold Tenancy (AST) are legally required to place their tenant's security deposit into a government-approved Tenancy Deposit Protection (TDP) scheme within thirty days of receipt. By law, security deposits are capped at a maximum of five weeks' rent for properties where annual rent is below fifty thousand pounds. Within thirty days of receiving the deposit, the landlord must provide the tenant with prescribed statutory information, including the contact details of the deposit scheme administrator, the property address, and the specific procedures for claiming back the deposit at the end of the tenancy.\n\nIf a landlord fails to safeguard the deposit within thirty calendar days or neglects to provide the prescribed information, the tenant has the legal right to apply to the local County Court. The court may order the landlord to repay the entire deposit to the tenant or pay it into a custodial scheme within fourteen days, and may additionally penalize the landlord between one and three times the value of the original deposit. At the conclusion of a tenancy, both parties must agree on any deductions for property damage or unpaid utility bills. If a dispute arises, the free Alternative Dispute Resolution (ADR) service provided by the scheme administrator adjudicates the evidence independently.\n\nSection 1B: Municipal Community Allotment Regulations\nLocal district residents wishing to cultivate fruits and vegetables may apply for a standard ten-pole (approximately two hundred and fifty square meter) allotment plot through the town council website. Applicants must be permanent residents living within the municipal parish boundary. Plots are allocated strictly in chronological order of application via a transparent waiting list. An annual tenancy fee of sixty-five pounds is payable in advance each April, which includes access to shared mains water standpipes and communal tool sheds.\n\nTo retain an allotment tenancy, plot holders must actively cultivate at least seventy-five percent of their plot area by the end of their first twelve months. Leaving ground neglected or overgrown with perennial weeds will result in a formal twenty-eight-day Notice of Rectification. Structures such as timber garden sheds and glass greenhouses are permitted but must not exceed an external footprint of eight by six feet and must be positioned at least one meter away from neighboring plot boundaries. Keeping small livestock, such as up to six hens or domestic rabbits, is permissible provided the animal coops comply with municipal biosecurity hygiene standards; cockerels, however, are strictly prohibited due to noise nuisance bylaws.",
+      "wordCount": 430,
+      "questionGroups": [
+        {
+          "groupInstruction": "Do the following statements agree with the information given in Section 1A? In boxes 1–7 on your answer sheet, write:\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+          "questionType": "true_false_not_given",
+          "questions": [
+            {
+              "id": "g4-q1",
+              "questionNumber": 1,
+              "type": "true_false_not_given",
+              "topic": "housing",
+              "estimatedBand": 5.5,
+              "prompt": "Landlords must register tenancy deposits within thirty days of receiving them.",
+              "correctAnswer": "TRUE",
+              "explanation": "Section 1A states landlords are legally required to protect deposits within thirty days of receipt.",
+              "evidence": "within thirty days of receipt."
+            },
+            {
+              "id": "g4-q2",
+              "questionNumber": 2,
+              "type": "true_false_not_given",
+              "topic": "finance",
+              "estimatedBand": 6,
+              "prompt": "Tenancy deposits for standard properties cannot exceed five weeks' rent.",
+              "correctAnswer": "TRUE",
+              "explanation": "Section 1A specifies deposits are capped at a maximum of five weeks' rent.",
+              "evidence": "capped at a maximum of five weeks' rent for properties where annual rent is below fifty thousand pounds."
+            },
+            {
+              "id": "g4-q3",
+              "questionNumber": 3,
+              "type": "true_false_not_given",
+              "topic": "law",
+              "estimatedBand": 6.5,
+              "prompt": "A county court judge can fine a non-compliant landlord up to ten times the deposit amount.",
+              "correctAnswer": "FALSE",
+              "explanation": "Section 1A states courts may penalize the landlord between one and three times the value of the original deposit.",
+              "evidence": "penalize the landlord between one and three times the value of the original deposit."
+            },
+            {
+              "id": "g4-q4",
+              "questionNumber": 4,
+              "type": "true_false_not_given",
+              "topic": "legal",
+              "estimatedBand": 6,
+              "prompt": "Tenants must pay a legal fee to use the Alternative Dispute Resolution service.",
+              "correctAnswer": "FALSE",
+              "explanation": "Section 1A mentions the 'free Alternative Dispute Resolution (ADR) service'.",
+              "evidence": "If a dispute arises, the free Alternative Dispute Resolution (ADR) service provided by the scheme administrator adjudicates"
+            },
+            {
+              "id": "g4-q5",
+              "questionNumber": 5,
+              "type": "true_false_not_given",
+              "topic": "community",
+              "estimatedBand": 5.5,
+              "prompt": "Anyone living anywhere in the UK may apply for a local parish allotment plot.",
+              "correctAnswer": "FALSE",
+              "explanation": "Section 1B states applicants must be permanent residents living within the municipal parish boundary.",
+              "evidence": "Applicants must be permanent residents living within the municipal parish boundary."
+            },
+            {
+              "id": "g4-q6",
+              "questionNumber": 6,
+              "type": "true_false_not_given",
+              "topic": "agriculture",
+              "estimatedBand": 6,
+              "prompt": "Plot holders must cultivate at least seventy-five percent of their plot within one year.",
+              "correctAnswer": "TRUE",
+              "explanation": "Section 1B confirms plot holders must actively cultivate at least seventy-five percent by the end of their first twelve months.",
+              "evidence": "actively cultivate at least seventy-five percent of their plot area by the end of their first twelve months."
+            },
+            {
+              "id": "g4-q7",
+              "questionNumber": 7,
+              "type": "true_false_not_given",
+              "topic": "animals",
+              "estimatedBand": 6.5,
+              "prompt": "Plot holders are permitted to keep up to two male cockerels.",
+              "correctAnswer": "FALSE",
+              "explanation": "Section 1B states cockerels are strictly prohibited due to noise nuisance bylaws.",
+              "evidence": "cockerels, however, are strictly prohibited due to noise nuisance bylaws."
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 8–14 on your answer sheet.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "g4-q8",
+              "questionNumber": 8,
+              "type": "sentence_completion",
+              "topic": "housing",
+              "estimatedBand": 6,
+              "prompt": "Tenancy deposit rules apply under an Assured ____ Tenancy.",
+              "correctAnswer": "Shorthold",
+              "explanation": "Section 1A refers to an Assured Shorthold Tenancy (AST).",
+              "evidence": "let private residential property under an Assured Shorthold Tenancy (AST)"
+            },
+            {
+              "id": "g4-q9",
+              "questionNumber": 9,
+              "type": "sentence_completion",
+              "topic": "law",
+              "estimatedBand": 6.5,
+              "prompt": "Tenants can submit a formal application to the local ____ Court.",
+              "correctAnswer": "County",
+              "explanation": "Section 1A mentions the local County Court.",
+              "evidence": "apply to the local County Court."
+            },
+            {
+              "id": "g4-q10",
+              "questionNumber": 10,
+              "type": "sentence_completion",
+              "topic": "community",
+              "estimatedBand": 5.5,
+              "prompt": "Standard allotment size is approximately ____ square meters.",
+              "correctAnswer": [
+                "250",
+                "two hundred and fifty"
+              ],
+              "explanation": "Section 1B states approximately two hundred and fifty square meters.",
+              "evidence": "standard ten-pole (approximately two hundred and fifty square meter) allotment plot"
+            },
+            {
+              "id": "g4-q11",
+              "questionNumber": 11,
+              "type": "sentence_completion",
+              "topic": "finance",
+              "estimatedBand": 6,
+              "prompt": "The annual allotment fee is £____, due every April.",
+              "correctAnswer": [
+                "65",
+                "sixty-five"
+              ],
+              "explanation": "Section 1B notes an annual fee of sixty-five pounds.",
+              "evidence": "annual tenancy fee of sixty-five pounds is payable in advance each April"
+            },
+            {
+              "id": "g4-q12",
+              "questionNumber": 12,
+              "type": "sentence_completion",
+              "topic": "regulations",
+              "estimatedBand": 6.5,
+              "prompt": "Neglected plots will be issued a formal ____-day Notice of Rectification.",
+              "correctAnswer": [
+                "28",
+                "twenty-eight"
+              ],
+              "explanation": "Section 1B specifies a formal twenty-eight-day Notice of Rectification.",
+              "evidence": "formal twenty-eight-day Notice of Rectification."
+            },
+            {
+              "id": "g4-q13",
+              "questionNumber": 13,
+              "type": "sentence_completion",
+              "topic": "gardening",
+              "estimatedBand": 6,
+              "prompt": "Greenhouse maximum footprint dimensions cannot exceed 8 by ____ feet.",
+              "correctAnswer": [
+                "6",
+                "six"
+              ],
+              "explanation": "Section 1B states structures must not exceed an external footprint of eight by six feet.",
+              "evidence": "must not exceed an external footprint of eight by six feet"
+            },
+            {
+              "id": "g4-q14",
+              "questionNumber": 14,
+              "type": "sentence_completion",
+              "topic": "agriculture",
+              "estimatedBand": 6.5,
+              "prompt": "Garden structures must be positioned at least ____ meter from the boundary.",
+              "correctAnswer": [
+                "1",
+                "one"
+              ],
+              "explanation": "Section 1B specifies at least one meter away from neighboring plot boundaries.",
+              "evidence": "at least one meter away from neighboring plot boundaries."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "passageNumber": 2,
+      "title": "Corporate Travel & Expense Code and Annual Performance Appraisals",
+      "subtitle": "Internal operating standards and career advancement protocols at Meridian Logistics",
+      "text": "Section 2A: Business Travel and Expense Reimbursement Policy\nMeridian Logistics reimburses staff for legitimate, reasonable expenses incurred in the performance of authorized business travel. All domestic train travel must be booked in standard class; business or first-class rail tickets will not be reimbursed under any circumstances. When business journeys require domestic air travel, flights exceeding four hours in continuous duration may be booked in premium economy with prior approval from a Divisional Director. Personal vehicle usage is compensated at the statutory mileage allowance of forty-five pence per mile for the first ten thousand miles in a tax year, and twenty-five pence per mile thereafter.\n\nHotel accommodation must be booked through the company's designated corporate travel portal. Nightly hotel caps are set at one hundred and forty pounds for London and two hundred and twenty euros for major European capital cities. For business dinners and subsistence, the maximum daily meal allowance is fifty pounds per employee. Alcohol purchases will only be reimbursed if consumed during an authorized client hospitality entertainment event pre-approved in writing by the Chief Financial Officer. All expense claims must be entered into the Concur digital portal with legible VAT itemized receipts attached within thirty calendar days of trip completion.\n\nSection 2B: Annual Performance Appraisal and Promotion Pathways\nEmployee professional progression at Meridian Logistics is managed through our biannual Performance and Development Review (PDR) framework. Formal appraisal interviews take place annually in November, preceded by an interim mid-year progress check in May. The appraisal framework evaluates staff across four core competencies: Technical Excellence, Collaborative Teamwork, Client Focus, and Strategic Initiative. Each competency is graded on a four-point scale: Unsatisfactory (1), Developing (2), Proficient (3), and Role Model (4).\n\nTo be eligible for promotion to Senior Management or to receive a merit-based discretionary bonus, an employee must achieve an overall average score of at least three point five, with no individual competency scoring below Proficient. Staff receiving a grade of Unsatisfactory in any category will be placed on a structured sixty-day Performance Improvement Plan (PIP) supported by targeted internal mentoring. Employees who complete five consecutive years of service with consistent Proficient or Role Model evaluations become eligible to apply for the prestigious Meridian Executive Leadership Fellowship, which sponsors full tuition for an accredited Executive MBA program.",
+      "wordCount": 420,
+      "questionGroups": [
+        {
+          "groupInstruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 15–21 on your answer sheet.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "g4-q15",
+              "questionNumber": 15,
+              "type": "sentence_completion",
+              "topic": "travel",
+              "estimatedBand": 5.5,
+              "prompt": "Train journeys must always be booked in ____ class.",
+              "correctAnswer": "standard",
+              "explanation": "Section 2A states all domestic train travel must be booked in standard class.",
+              "evidence": "train travel must be booked in standard class"
+            },
+            {
+              "id": "g4-q16",
+              "questionNumber": 16,
+              "type": "sentence_completion",
+              "topic": "travel",
+              "estimatedBand": 6,
+              "prompt": "Flights longer than ____ hours may be booked in premium economy.",
+              "correctAnswer": [
+                "4",
+                "four"
+              ],
+              "explanation": "Section 2A specifies flights exceeding four hours in continuous duration.",
+              "evidence": "flights exceeding four hours in continuous duration may be booked in premium economy"
+            },
+            {
+              "id": "g4-q17",
+              "questionNumber": 17,
+              "type": "sentence_completion",
+              "topic": "finance",
+              "estimatedBand": 6,
+              "prompt": "London hotel accommodations are capped at £____ per night.",
+              "correctAnswer": [
+                "140",
+                "one hundred and forty"
+              ],
+              "explanation": "Section 2A states nightly hotel caps are set at one hundred and forty pounds for London.",
+              "evidence": "hotel caps are set at one hundred and forty pounds for London"
+            },
+            {
+              "id": "g4-q18",
+              "questionNumber": 18,
+              "type": "sentence_completion",
+              "topic": "finance",
+              "estimatedBand": 6,
+              "prompt": "The daily maximum subsistence allowance for meals is £____.",
+              "correctAnswer": [
+                "50",
+                "fifty"
+              ],
+              "explanation": "Section 2A states maximum daily meal allowance is fifty pounds per employee.",
+              "evidence": "maximum daily meal allowance is fifty pounds per employee."
+            },
+            {
+              "id": "g4-q19",
+              "questionNumber": 19,
+              "type": "sentence_completion",
+              "topic": "employment",
+              "estimatedBand": 6,
+              "prompt": "Mid-year progress reviews occur annually during the month of ____.",
+              "correctAnswer": "May",
+              "explanation": "Section 2B mentions an interim mid-year progress check in May.",
+              "evidence": "interim mid-year progress check in May."
+            },
+            {
+              "id": "g4-q20",
+              "questionNumber": 20,
+              "type": "sentence_completion",
+              "topic": "career",
+              "estimatedBand": 6.5,
+              "prompt": "Promotion eligibility requires an overall appraisal score of at least ____.",
+              "correctAnswer": [
+                "3.5",
+                "three point five"
+              ],
+              "explanation": "Section 2B notes an overall average score of at least three point five.",
+              "evidence": "achieve an overall average score of at least three point five"
+            },
+            {
+              "id": "g4-q21",
+              "questionNumber": 21,
+              "type": "sentence_completion",
+              "topic": "human resources",
+              "estimatedBand": 6.5,
+              "prompt": "Unsatisfactory evaluations trigger a structured ____-day Performance Improvement Plan.",
+              "correctAnswer": [
+                "60",
+                "sixty"
+              ],
+              "explanation": "Section 2B refers to a structured sixty-day Performance Improvement Plan (PIP).",
+              "evidence": "placed on a structured sixty-day Performance Improvement Plan (PIP)"
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Do the following statements agree with the information given in Section 2A and 2B? In boxes 22–27 on your answer sheet, write:\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+          "questionType": "true_false_not_given",
+          "questions": [
+            {
+              "id": "g4-q22",
+              "questionNumber": 22,
+              "type": "true_false_not_given",
+              "topic": "travel",
+              "estimatedBand": 6,
+              "prompt": "The company pays higher mileage rates after an employee drives over 10,000 miles in a year.",
+              "correctAnswer": "FALSE",
+              "explanation": "Section 2A states 45p for first 10,000 miles and 25p per mile thereafter (which is lower).",
+              "evidence": "forty-five pence per mile for the first ten thousand miles in a tax year, and twenty-five pence per mile thereafter."
+            },
+            {
+              "id": "g4-q23",
+              "questionNumber": 23,
+              "type": "true_false_not_given",
+              "topic": "finance",
+              "estimatedBand": 6.5,
+              "prompt": "Alcohol costs require written approval from the Chief Financial Officer to be reimbursed.",
+              "correctAnswer": "TRUE",
+              "explanation": "Section 2A states alcohol purchases will only be reimbursed if pre-approved in writing by the CFO.",
+              "evidence": "pre-approved in writing by the Chief Financial Officer."
+            },
+            {
+              "id": "g4-q24",
+              "questionNumber": 24,
+              "type": "true_false_not_given",
+              "topic": "accounting",
+              "estimatedBand": 6,
+              "prompt": "Expense claims submitted sixty days after a trip will be automatically rejected.",
+              "correctAnswer": "NOT GIVEN",
+              "explanation": "Section 2A requires claims to be entered within 30 days, but does not explicitly specify automatic rejection at 60 days.",
+              "evidence": "All expense claims must be entered into the Concur digital portal with legible VAT itemized receipts attached within thirty calendar days"
+            },
+            {
+              "id": "g4-q25",
+              "questionNumber": 25,
+              "type": "true_false_not_given",
+              "topic": "human resources",
+              "estimatedBand": 6,
+              "prompt": "Employee appraisals assess staff across four core competencies.",
+              "correctAnswer": "TRUE",
+              "explanation": "Section 2B explicitly states the appraisal evaluates staff across four core competencies.",
+              "evidence": "evaluates staff across four core competencies: Technical Excellence, Collaborative Teamwork, Client Focus, and Strategic Initiative."
+            },
+            {
+              "id": "g4-q26",
+              "questionNumber": 26,
+              "type": "true_false_not_given",
+              "topic": "education",
+              "estimatedBand": 6.5,
+              "prompt": "The Executive Leadership Fellowship pays fifty percent of MBA university tuition.",
+              "correctAnswer": "FALSE",
+              "explanation": "Section 2B states the Fellowship sponsors 'full tuition for an accredited Executive MBA program.'",
+              "evidence": "sponsors full tuition for an accredited Executive MBA program."
+            },
+            {
+              "id": "g4-q27",
+              "questionNumber": 27,
+              "type": "true_false_not_given",
+              "topic": "human resources",
+              "estimatedBand": 6.5,
+              "prompt": "Employees must complete at least five years of service to apply for the Leadership Fellowship.",
+              "correctAnswer": "TRUE",
+              "explanation": "Section 2B confirms employees who complete five consecutive years of service become eligible.",
+              "evidence": "Employees who complete five consecutive years of service with consistent Proficient or Role Model evaluations become eligible"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "passageNumber": 3,
+      "title": "The Global Renaissance of Urban Cycling Infrastructure",
+      "subtitle": "How dedicated protected bike networks are transforming public health and metropolitan economies",
+      "text": "Paragraph A\nThroughout the mid-twentieth century, urban planning dogma across Europe and the Americas was dominated by the automobile. Municipal engineers widened multi-lane boulevards, erected sprawling expressway flyovers, and paved over historic town squares to accommodate private cars. Bicycles were relegated to the margins—viewed as archaic relics of poverty or recreational toys suited only for weekend parks. However, over the past two decades, escalating traffic gridlock, chronic urban air pollution, and the acute climate crisis have catalyzed an unprecedented global cycling renaissance, fundamentally transforming modern urban topology.\n\nParagraph B\nLeading this global transition is Copenhagen, widely celebrated as the premier cycling capital of the world. Today, an astonishing forty-nine percent of all commutes to work or educational institutions in the Danish capital are conducted on bicycles. This mass adoption is neither a cultural accident nor a byproduct of mild topography; it is the direct consequence of intentional civil engineering. Over five decades, municipal planners constructed hundreds of kilometers of the 'Copenhagen-style' cycle track: wide, raised bicycle lanes separated from motor traffic by a physical concrete curb, and separated from pedestrian sidewalks by a second distinct elevation step. By eliminating the mortal fear of being sideswiped by motor vehicles, Copenhagen unlocked cycling for the entire population—including young children and elderly pensioners.\n\nParagraph C\nFurthermore, Copenhagen pioneered the 'Green Wave' intelligent traffic signal system. By synchronizing computerized traffic lights along primary cycling arterial corridors to a constant cycling speed of twenty kilometers per hour, cyclists traveling at a moderate, relaxed pace encounter continuous green lights during peak morning rush hours. In winter months, municipal maintenance fleets clear snow from bicycle highways before plowing roadways for automobiles, ensuring that severe weather does not interrupt daily active commuting.\n\nParagraph D\nCrucially, modern urban research proves that cycling infrastructure is an extraordinary economic catalyst. Skeptical local retailers frequently oppose bicycle lanes, fearing that removing curbside car parking will destroy customer footfall. However, comprehensive empirical merchant surveys in Seville, Paris, and New York City reveal the exact opposite. Cyclists and pedestrians visit neighborhood shops three times more frequently than car drivers and spend up to forty percent more money per month at local businesses. Furthermore, dedicating street space to bicycles dramatically reduces public healthcare expenditures: Danish health ministry data demonstrates that every kilometer cycled saves society roughly one euro in reduced healthcare costs and enhanced worker productivity.\n\nParagraph E\nIn Latin America, the cycling revolution took a unique grassroots path pioneered by Bogotá, Colombia. In 1974, Bogotá instituted the Ciclovía: every Sunday and public holiday, the city closes over one hundred and twenty kilometers of major arterial highways to motorized traffic, opening them exclusively to millions of cyclists, rollerbladers, runners, and street performers. The Ciclovía has become a powerful social equalizer, uniting citizens of diverse socioeconomic backgrounds in shared public health recreation. Inspired by Bogotá's success, cities across the globe—from Tokyo to Toronto—are recognizing that investing in safe, separated cycling networks is the single most cost-effective intervention to create livable, equitable twenty-first-century cities.",
+      "wordCount": 540,
+      "questionGroups": [
+        {
+          "groupInstruction": "Choose the correct letter, A, B, C, or D. Write the correct letter in boxes 28–33 on your answer sheet.",
+          "questionType": "multiple_choice_single",
+          "questions": [
+            {
+              "id": "g4-q28",
+              "questionNumber": 28,
+              "type": "multiple_choice_single",
+              "topic": "urban planning",
+              "estimatedBand": 6,
+              "prompt": "In the mid-twentieth century, city planners predominantly designed streets to prioritize",
+              "options": [
+                "horse-drawn carriages.",
+                "pedestrian shopping arcades.",
+                "private motor cars.",
+                "canal transport."
+              ],
+              "correctAnswer": "C",
+              "explanation": "Paragraph A states planning was dominated by the automobile.",
+              "evidence": "dominated by the automobile. Municipal engineers widened multi-lane boulevards, erected sprawling expressway flyovers... to accommodate private cars."
+            },
+            {
+              "id": "g4-q29",
+              "questionNumber": 29,
+              "type": "multiple_choice_single",
+              "topic": "transport",
+              "estimatedBand": 6,
+              "prompt": "In Copenhagen, what percentage of daily commutes to work and school are made by bike?",
+              "options": [
+                "20%.",
+                "35%.",
+                "75%.",
+                "49%."
+              ],
+              "correctAnswer": "D",
+              "explanation": "Paragraph B states an astonishing forty-nine percent of all commutes are conducted on bicycles.",
+              "evidence": "astonishing forty-nine percent of all commutes to work or educational institutions in the Danish capital are conducted on bicycles."
+            },
+            {
+              "id": "g4-q30",
+              "questionNumber": 30,
+              "type": "multiple_choice_single",
+              "topic": "engineering",
+              "estimatedBand": 6.5,
+              "prompt": "The key architectural feature of 'Copenhagen-style' cycle tracks is",
+              "options": [
+                "physical separation using raised concrete curbs.",
+                "flashing neon road paint.",
+                "placing bicycle lanes underground in subway tunnels.",
+                "charging cyclists an electronic toll."
+              ],
+              "correctAnswer": "A",
+              "explanation": "Paragraph B explains tracks are wide, raised lanes separated from motor traffic by a physical concrete curb.",
+              "evidence": "wide, raised bicycle lanes separated from motor traffic by a physical concrete curb"
+            },
+            {
+              "id": "g4-q31",
+              "questionNumber": 31,
+              "type": "multiple_choice_single",
+              "topic": "technology",
+              "estimatedBand": 7,
+              "prompt": "Copenhagen's 'Green Wave' system synchronizes traffic lights to what cycling speed?",
+              "options": [
+                "12 km/h.",
+                "20 km/h.",
+                "30 km/h.",
+                "40 km/h."
+              ],
+              "correctAnswer": "B",
+              "explanation": "Paragraph C states traffic lights are synchronized to a constant cycling speed of twenty kilometers per hour.",
+              "evidence": "constant cycling speed of twenty kilometers per hour, cyclists traveling at a moderate, relaxed pace encounter continuous green lights"
+            },
+            {
+              "id": "g4-q32",
+              "questionNumber": 32,
+              "type": "multiple_choice_single",
+              "topic": "economics",
+              "estimatedBand": 6.5,
+              "prompt": "Retailer surveys in Paris and New York show that cyclists and pedestrians",
+              "options": [
+                "generate noticeably lower retail revenue than motorists.",
+                "restrict their purchases strictly to basic food items.",
+                "visit stores more frequently and spend up to 40% more monthly.",
+                "repeatedly demand greater availability of parking spaces."
+              ],
+              "correctAnswer": "C",
+              "explanation": "Paragraph D notes cyclists visit shops three times more frequently and spend up to 40% more per month.",
+              "evidence": "visit neighborhood shops three times more frequently than car drivers and spend up to forty percent more money per month"
+            },
+            {
+              "id": "g4-q33",
+              "questionNumber": 33,
+              "type": "multiple_choice_single",
+              "topic": "history",
+              "estimatedBand": 6.5,
+              "prompt": "Bogotá's Ciclovía event was originally inaugurated in",
+              "options": [
+                "1950.",
+                "1999.",
+                "2012.",
+                "1974."
+              ],
+              "correctAnswer": "D",
+              "explanation": "Paragraph E refers to Bogotá instituting the Ciclovía in 1974.",
+              "evidence": "In 1974, Bogotá instituted the Ciclovía"
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 34–40 on your answer sheet.",
+          "questionType": "summary_completion",
+          "questions": [
+            {
+              "id": "g4-q34",
+              "questionNumber": 34,
+              "type": "summary_completion",
+              "topic": "urban planning",
+              "estimatedBand": 6,
+              "prompt": "Protected cycle tracks are separated from pedestrians by a distinct elevation ____.",
+              "correctAnswer": "step",
+              "explanation": "Paragraph B states tracks are separated by a second distinct elevation step.",
+              "evidence": "separated from pedestrian sidewalks by a second distinct elevation step."
+            },
+            {
+              "id": "g4-q35",
+              "questionNumber": 35,
+              "type": "summary_completion",
+              "topic": "technology",
+              "estimatedBand": 6.5,
+              "prompt": "Coordinated traffic signals in Copenhagen are called the Green ____.",
+              "correctAnswer": "Wave",
+              "explanation": "Paragraph C introduces the 'Green Wave' intelligent traffic signal system.",
+              "evidence": "Copenhagen pioneered the 'Green Wave' intelligent traffic signal system."
+            },
+            {
+              "id": "g4-q36",
+              "questionNumber": 36,
+              "type": "summary_completion",
+              "topic": "maintenance",
+              "estimatedBand": 6.5,
+              "prompt": "In winter, maintenance crews remove ____ from cycle paths before highways.",
+              "correctAnswer": "snow",
+              "explanation": "Paragraph C states maintenance fleets clear snow from bicycle highways first.",
+              "evidence": "municipal maintenance fleets clear snow from bicycle highways before plowing roadways"
+            },
+            {
+              "id": "g4-q37",
+              "questionNumber": 37,
+              "type": "summary_completion",
+              "topic": "health",
+              "estimatedBand": 7,
+              "prompt": "Danish statistics indicate each kilometer cycled saves approximately one ____ in health costs.",
+              "correctAnswer": "euro",
+              "explanation": "Paragraph D notes every kilometer cycled saves society roughly one euro.",
+              "evidence": "every kilometer cycled saves society roughly one euro in reduced healthcare costs"
+            },
+            {
+              "id": "g4-q38",
+              "questionNumber": 38,
+              "type": "summary_completion",
+              "topic": "culture",
+              "estimatedBand": 6,
+              "prompt": "In Bogotá, the weekly open-street event is held every ____ and on holidays.",
+              "correctAnswer": "Sunday",
+              "explanation": "Paragraph E states every Sunday and public holiday.",
+              "evidence": "every Sunday and public holiday, the city closes over one hundred and twenty kilometers"
+            },
+            {
+              "id": "g4-q39",
+              "questionNumber": 39,
+              "type": "summary_completion",
+              "topic": "society",
+              "estimatedBand": 7,
+              "prompt": "The Ciclovía program acts as a powerful social ____ across all income groups.",
+              "correctAnswer": "equalizer",
+              "explanation": "Paragraph E notes the Ciclovía has become a powerful social equalizer.",
+              "evidence": "The Ciclovía has become a powerful social equalizer"
+            },
+            {
+              "id": "g4-q40",
+              "questionNumber": 40,
+              "type": "summary_completion",
+              "topic": "urban planning",
+              "estimatedBand": 6.5,
+              "prompt": "During the Ciclovía, more than ____ kilometers of roads are closed to cars.",
+              "correctAnswer": [
+                "120",
+                "one hundred and twenty"
+              ],
+              "explanation": "Paragraph E notes the city closes over one hundred and twenty kilometers.",
+              "evidence": "closes over one hundred and twenty kilometers of major arterial highways"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

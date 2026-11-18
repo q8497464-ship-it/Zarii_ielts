@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ZariiSpeakingCard",
+  "type": "object",
+  "required": ["id", "part", "topic", "tips"],
+  "properties": {
+    "id": { "type": "string" },
+    "part": { "type": "integer", "enum": [1, 2, 3] },
+    "topic": { "type": "string" },
+    "leadIn": { "type": "string" },
+    "questions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "cueCard": {
+      "type": "object",
+      "properties": {
+        "topic": { "type": "string" },
+        "bulletPoints": { "type": "array", "items": { "type": "string" } },
+        "prepTimeSeconds": { "type": "integer", "default": 60 },
+        "speakTimeSeconds": { "type": "integer", "default": 120 }
+      }
+    },
+    "discussionQuestions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question"],
+        "properties": {
+          "question": { "type": "string" },
+          "followUpPrompts": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "tips": { "type": "array", "items": { "type": "string" } },
+    "sampleBand9Response": { "type": "string" }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "list-01",
+  "title": "Listening Practice Test 1",
+  "difficulty": "standard",
+  "timeLimitMinutes": 35,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Community Cycling Club Membership Enquiry",
+      "contextDescription": "A phone conversation between a new resident and a community cycling club administrator.",
+      "audioScript": [
+        {
+          "speaker": "Administrator",
+          "text": "Good morning, West Lake Cycling Club. How can I assist you today?"
+        },
+        {
+          "speaker": "Caller",
+          "text": "Hello! I recently relocated to the district and would like some details regarding weekend group rides and membership fees."
+        },
+        {
+          "speaker": "Administrator",
+          "text": "Wonderful. We organise group excursions every Saturday morning departing at seven thirty from St. Peter's Square."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Complete the notes below. Write NO MORE THAN ONE WORD AND/OR A NUMBER for each answer.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "l-q1",
+              "questionNumber": 1,
+              "prompt": "Saturday morning rides depart at ____ AM.",
+              "correctAnswer": "7:30",
+              "explanation": "The administrator explicitly says: 'departing at seven thirty'."
+            },
+            {
+              "id": "l-q2",
+              "questionNumber": 2,
+              "prompt": "The departure rendezvous is located at St. ____ Square.",
+              "correctAnswer": "Peter's",
+              "explanation": "The audio states 'St. Peter's Square'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Volunteer Guide Briefing at Wildlife Sanctuary",
+      "contextDescription": "A park ranger briefing new volunteer guides at a wetlands nature reserve.",
+      "audioScript": [
+        {
+          "speaker": "Ranger",
+          "text": "Welcome everyone to the Heron Marshes Reserve. Today we will walk through safety protocols and visitor viewing blinds."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Choose the correct letter, A, B or C.",
+          "questionType": "multiple_choice_single",
+          "questions": [
+            {
+              "id": "l-q3",
+              "questionNumber": 3,
+              "prompt": "What is the primary objective of today's volunteer briefing?",
+              "options": [
+                "Fundraising plans",
+                "Feeding the birds",
+                "Safety protocols and viewing blinds"
+              ],
+              "correctAnswer": "C",
+              "explanation": "The ranger says: 'walk through safety protocols and visitor viewing blinds'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Tutor Consultation on Renewable Energy Assignment",
+      "contextDescription": "Two students discussing their engineering seminar presentation with their tutor.",
+      "audioScript": [
+        {
+          "speaker": "Tutor",
+          "text": "How is the case study on tidal power generation progressing, Mark and Elena?"
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Choose two letters from A to E.",
+          "questionType": "multiple_choice_multi",
+          "questions": [
+            {
+              "id": "l-q4",
+              "questionNumber": 4,
+              "prompt": "Which two challenges of tidal power did the students identify?",
+              "options": [
+                "A. High capital cost",
+                "B. Low energy density",
+                "C. Turbine blade fouling",
+                "D. Inconsistent tides",
+                "E. Noise pollution"
+              ],
+              "correctAnswer": [
+                "A",
+                "C"
+              ],
+              "explanation": "Students discuss high initial capital expenditure and blade barnacle fouling."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Academic Lecture: The History of Map Projection",
+      "contextDescription": "A geography lecturer explaining the Mercator projection and modern digital cartography.",
+      "audioScript": [
+        {
+          "speaker": "Lecturer",
+          "text": "In 1569, Flemish cartographer Gerardus Mercator introduced a cylindrical map projection that forever transformed maritime navigation."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "l-q5",
+              "questionNumber": 5,
+              "prompt": "Gerardus Mercator published his iconic navigational projection in the year ____.",
+              "correctAnswer": "1569",
+              "explanation": "Explicitly stated in the opening lecture sentence."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "attribution": {
+    "source": "Zarii Open Educational Audio Scripts",
+    "license": "CC BY-SA 4.0",
+    "notes": "Original test scripts created specifically for Zarii IELTS preparation."
+  }
+}

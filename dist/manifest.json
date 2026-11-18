@@ -1,0 +1,38 @@
+{
+  "name": "Zarii IELTS Preparation",
+  "short_name": "Zarii",
+  "description": "100% Free IELTS Academic & General Training Practice Web App with Offline Access",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "background_color": "#F7FAF8",
+  "theme_color": "#124F40",
+  "orientation": "any",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,626 @@
+import fs from 'fs';
+import path from 'path';
+
+const listeningTest09 = {
+  id: "list-test-09",
+  title: "Listening Practice Test 9",
+  difficulty: "medium",
+  timeLimitMinutes: 40,
+  sections: [
+    {
+      sectionNumber: 1,
+      title: "Community Repair Cafe Volunteer Workshop Registration",
+      contextDescription: "Ananya (Indian English speaker) enquiring with Coordinator Arthur (British English speaker) about registering as a volunteer repair technician at the St. Jude Community Repair Cafe.",
+      audioScript: [
+        { "speaker": "Arthur (British)", "text": "Good afternoon! St. Jude Community Repair Cafe. Arthur speaking." },
+        { "speaker": "Ananya (Indian English)", "text": "Hello Arthur! My name is Ananya Sen. I saw a poster about your monthly repair sessions where neighbors bring in broken household electronics and appliances rather than throwing them into landfills." },
+        { "speaker": "Arthur (British)", "text": "Spot on, Ananya! Our motto is 'Fix it, don't ditch it!' We are always on the hunt for volunteer troubleshooters. Let me take down your registration details." },
+        { "speaker": "Ananya (Indian English)", "text": "Certainly. My first name is Ananya, spelled A-N-A-N-Y-A, and surname Sen, S-E-N." },
+        { "speaker": "Arthur (British)", "text": "Thank you, Ananya. And your home address?" },
+        { "speaker": "Ananya (Indian English)", "text": "I reside at twenty-nine Waverley Road, Bristol, postcode B-S-six, six-H-L." },
+        { "speaker": "Arthur (British)", "text": "B-S-six, six-H-L. And your preferred contact telephone number?" },
+        { "speaker": "Ananya (Indian English)", "text": "It is zero seven seven zero zero, nine zero zero three five nine." },
+        { "speaker": "Arthur (British)", "text": "Grand. Now, what repair skill station would you prefer to anchor? We have small electrical appliances, bicycle mechanics, textile sewing, and wooden furniture." },
+        { "speaker": "Ananya (Indian English)", "text": "I work professionally as a consumer hardware engineer, so I would feel most useful at the small electrical station—fixing kettles, toasters, lamps, and audio speakers." },
+        { "speaker": "Arthur (British)", "text": "Brilliant, we desperately need appliance repairers! For safety reasons, our cafe provides an approved portable appliance tester—a PAT testing multimeter—which every repaired electric item must pass before it leaves the venue." },
+        { "speaker": "Ananya (Indian English)", "text": "Of course, electrical safety is paramount. When is the next community session held?" },
+        { "speaker": "Arthur (British)", "text": "Our sessions run on the second Saturday of each month. The next one is on Saturday, November the ninth. We start set up at nine in the morning and welcome the public between ten and two." },
+        { "speaker": "Ananya (Indian English)", "text": "November the ninth, nine AM. And where is the hall located?" },
+        { "speaker": "Arthur (British)", "text": "At St. Jude Parish Hall, right behind the Green Park Primary School. We have bicycle racks and free volunteer parking in the church forecourt." },
+        { "speaker": "Ananya (Indian English)", "text": "That is so wonderful. I look forward to November the ninth!" }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 1–10.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "l9-q1",
+              questionNumber: 1,
+              type: "sentence_completion",
+              topic: "community",
+              estimatedBand: 5.5,
+              prompt: "Volunteer's surname: ____",
+              correctAnswer: "Sen",
+              explanation: "Ananya spells her surname: S-E-N.",
+              evidence: "surname Sen, S-E-N."
+            },
+            {
+              id: "l9-q2",
+              questionNumber: 2,
+              type: "sentence_completion",
+              topic: "community",
+              estimatedBand: 5.5,
+              prompt: "Address: 29 ____ Road, Bristol.",
+              correctAnswer: "Waverley",
+              explanation: "Ananya states: twenty-nine Waverley Road.",
+              evidence: "twenty-nine Waverley Road, Bristol"
+            },
+            {
+              id: "l9-q3",
+              questionNumber: 3,
+              type: "sentence_completion",
+              topic: "community",
+              estimatedBand: 6.0,
+              prompt: "Postcode: ____",
+              correctAnswer: ["BS6 6HL", "BS66HL"],
+              explanation: "Ananya gives postcode: B-S-six, six-H-L.",
+              evidence: "postcode B-S-six, six-H-L."
+            },
+            {
+              id: "l9-q4",
+              questionNumber: 4,
+              type: "sentence_completion",
+              topic: "community",
+              estimatedBand: 5.5,
+              prompt: "Contact mobile number: 07700 ____",
+              correctAnswer: "900359",
+              explanation: "Ananya gives: zero seven seven zero zero, nine zero zero three five nine.",
+              evidence: "zero seven seven zero zero, nine zero zero three five nine."
+            },
+            {
+              id: "l9-q5",
+              questionNumber: 5,
+              type: "sentence_completion",
+              topic: "technology",
+              estimatedBand: 6.0,
+              prompt: "Preferred station: small ____ appliances.",
+              correctAnswer: "electrical",
+              explanation: "Ananya selects the small electrical station.",
+              evidence: "most useful at the small electrical station"
+            },
+            {
+              id: "l9-q6",
+              questionNumber: 6,
+              type: "sentence_completion",
+              topic: "safety",
+              estimatedBand: 6.5,
+              prompt: "Repaired items must undergo inspection with a portable appliance ____.",
+              correctAnswer: "tester",
+              explanation: "Arthur mentions an approved portable appliance tester—a PAT testing multimeter.",
+              evidence: "approved portable appliance tester—a PAT testing multimeter"
+            },
+            {
+              id: "l9-q7",
+              questionNumber: 7,
+              type: "sentence_completion",
+              topic: "schedule",
+              estimatedBand: 6.0,
+              prompt: "Sessions occur on the ____ Saturday of each month.",
+              correctAnswer: "second",
+              explanation: "Arthur states sessions run on the second Saturday of each month.",
+              evidence: "sessions run on the second Saturday of each month."
+            },
+            {
+              id: "l9-q8",
+              questionNumber: 8,
+              type: "sentence_completion",
+              topic: "dates",
+              estimatedBand: 6.0,
+              prompt: "Next event date: Saturday, November ____",
+              correctAnswer: ["9th", "9", "ninth"],
+              explanation: "Arthur specifies: Saturday, November the ninth.",
+              evidence: "next one is on Saturday, November the ninth."
+            },
+            {
+              id: "l9-q9",
+              questionNumber: 9,
+              type: "sentence_completion",
+              topic: "time",
+              estimatedBand: 5.5,
+              prompt: "Volunteer setup starts at ____ AM.",
+              correctAnswer: ["9", "nine", "9:00"],
+              explanation: "Arthur states: We start set up at nine in the morning.",
+              evidence: "We start set up at nine in the morning"
+            },
+            {
+              id: "l9-q10",
+              questionNumber: 10,
+              type: "sentence_completion",
+              topic: "location",
+              estimatedBand: 6.0,
+              prompt: "Hall is situated directly behind the Green Park Primary ____.",
+              correctAnswer: "School",
+              explanation: "Arthur notes it is behind the Green Park Primary School.",
+              evidence: "right behind the Green Park Primary School."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      sectionNumber: 2,
+      title: "Radio Broadcast: The Great Southern Dark Sky Sanctuary",
+      contextDescription: "Astronomer Liam (Australian English speaker) describing the newly accredited dark sky reserve on a science radio broadcast.",
+      audioScript: [
+        { "speaker": "Liam (Australian)", "text": "Good evening, stargazers! I am delighted to report that the Great Southern Outback Reserve in South Australia has officially received Gold Tier Dark Sky Sanctuary accreditation from the International Dark-Sky Association. Covering over five thousand square kilometers of protected wilderness, it now stands as one of the darkest astronomical observation territories on the planet." },
+        { "speaker": "Liam (Australian)", "text": "In modern urban centers, excessive artificial light pollution—from roadway floodlights, commercial neon billboards, and residential floodlamps—has bleached the nocturnal sky. Over eighty percent of the global human population now lives under light-polluted skies, unable to glimpse the glowing arc of the Milky Way. Light pollution also catastrophically disrupts wildlife, throwing off navigational cues for nocturnal marsupials and disorienting migratory birds." },
+        { "speaker": "Liam (Australian)", "text": "To achieve our sanctuary status, our local rural councils enacted stringent lighting ordinances across all surrounding townships. Public streetlights were replaced with downward-shielded, narrow-spectrum amber LED luminaires that emit zero upward light spill. Furthermore, color temperatures are strictly capped at two thousand two hundred Kelvin, eliminating the high-frequency blue photons that scatter most violently across the atmosphere." },
+        { "speaker": "Liam (Australian)", "text": "For visiting astro-tourists, we have constructed four specialized public viewing zones across the reserve. The most popular is Stargazer Plateau at location A, featuring eight concrete telescope mounting piers and 360-degree horizon visibility. To the west at location B is the Astro-Photography Pods, equipped with vibration-isolated timber platforms and external solar battery recharge outlets." },
+        { "speaker": "Liam (Australian)", "text": "Location C on the southern ridge marks the Solar Astronomy Observatory, which opens during daylight hours with hydrogen-alpha solar telescopes for viewing sunspots and solar flares. Finally, at location D beside the visitor lodge is our Indigenous Starlore Amphitheatre, where Adnyamathanha cultural guides share ancestral constellations and celestial dreamtime stories around an unlit fire pit." },
+        { "speaker": "Liam (Australian)", "text": "When visiting, remember our cardinal rule: only red-filtered flashlights are permitted beyond the car parks to preserve dark adaptation for your night vision. Come experience the cosmos as our ancestors saw it!" }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Choose the correct letter, A, B, or C. Write your answers in boxes 11–16.",
+          questionType: "multiple_choice_single",
+          questions: [
+            {
+              id: "l9-q11",
+              questionNumber: 11,
+              type: "multiple_choice_single",
+              topic: "astronomy",
+              estimatedBand: 6.0,
+              prompt: "The Great Southern Outback Reserve covers an area of over",
+              options: [
+                "A) 2,000 square kilometers.",
+                "B) 5,000 square kilometers.",
+                "C) 10,000 square kilometers."
+              ],
+              correctAnswer: "B",
+              explanation: "Liam states the reserve covers over five thousand square kilometers.",
+              evidence: "Covering over five thousand square kilometers of protected wilderness"
+            },
+            {
+              id: "l9-q12",
+              questionNumber: 12,
+              type: "multiple_choice_single",
+              topic: "environment",
+              estimatedBand: 6.5,
+              prompt: "What proportion of the global population lives under light-polluted night skies?",
+              options: [
+                "A) More than 50%.",
+                "B) Over 80%.",
+                "C) Nearly 95%."
+              ],
+              correctAnswer: "B",
+              explanation: "Liam explains over eighty percent of the global population lives under light-polluted skies.",
+              evidence: "Over eighty percent of the global human population now lives under light-polluted skies"
+            },
+            {
+              id: "l9-q13",
+              questionNumber: 13,
+              type: "multiple_choice_single",
+              topic: "technology",
+              estimatedBand: 7.0,
+              prompt: "Streetlights in surrounding towns were replaced with luminaires emitting",
+              options: [
+                "A) bright white halogen light.",
+                "B) downward-shielded amber LED light.",
+                "C) multi-colored fluorescent light."
+              ],
+              correctAnswer: "B",
+              explanation: "Liam mentions downward-shielded, narrow-spectrum amber LED luminaires.",
+              evidence: "replaced with downward-shielded, narrow-spectrum amber LED luminaires that emit zero upward light spill."
+            },
+            {
+              id: "l9-q14",
+              questionNumber: 14,
+              type: "multiple_choice_single",
+              topic: "physics",
+              estimatedBand: 7.5,
+              prompt: "Color temperatures for town lighting are restricted to a maximum of",
+              options: [
+                "A) 1,500 Kelvin.",
+                "B) 2,200 Kelvin.",
+                "C) 4,000 Kelvin."
+              ],
+              correctAnswer: "B",
+              explanation: "Liam notes color temperatures are strictly capped at two thousand two hundred Kelvin.",
+              evidence: "strictly capped at two thousand two hundred Kelvin, eliminating the high-frequency blue photons"
+            },
+            {
+              id: "l9-q15",
+              questionNumber: 15,
+              type: "multiple_choice_single",
+              topic: "facilities",
+              estimatedBand: 6.5,
+              prompt: "The Solar Astronomy Observatory operates during",
+              options: [
+                "A) daylight hours.",
+                "B) midnight only.",
+                "C) lunar eclipses."
+              ],
+              correctAnswer: "A",
+              explanation: "Liam states the solar observatory opens during daylight hours.",
+              evidence: "which opens during daylight hours with hydrogen-alpha solar telescopes"
+            },
+            {
+              id: "l9-q16",
+              questionNumber: 16,
+              type: "multiple_choice_single",
+              topic: "rules",
+              estimatedBand: 6.0,
+              prompt: "What kind of personal torch is permitted in the viewing areas?",
+              options: [
+                "A) Blue LED torches.",
+                "B) Red-filtered flashlights.",
+                "C) High-powered searchlights."
+              ],
+              correctAnswer: "B",
+              explanation: "Liam explains only red-filtered flashlights are permitted.",
+              evidence: "only red-filtered flashlights are permitted beyond the car parks to preserve dark adaptation"
+            }
+          ]
+        },
+        {
+          groupInstruction: "Label the map below. Write the correct letter, A–D, next to Questions 17–20.",
+          questionType: "diagram_label_completion",
+          questions: [
+            {
+              id: "l9-q17",
+              questionNumber: 17,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 6.5,
+              prompt: "Stargazer Plateau: Location ____",
+              correctAnswer: "A",
+              explanation: "Liam indicates Stargazer Plateau at location A.",
+              evidence: "most popular is Stargazer Plateau at location A, featuring eight concrete telescope mounting piers"
+            },
+            {
+              id: "l9-q18",
+              questionNumber: 18,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 6.5,
+              prompt: "Astro-Photography Pods: Location ____",
+              correctAnswer: "B",
+              explanation: "Liam indicates Astro-Photography Pods to the west at location B.",
+              evidence: "To the west at location B is the Astro-Photography Pods, equipped with vibration-isolated timber platforms"
+            },
+            {
+              id: "l9-q19",
+              questionNumber: 19,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 7.0,
+              prompt: "Solar Astronomy Observatory: Location ____",
+              correctAnswer: "C",
+              explanation: "Liam indicates location C on the southern ridge as the Solar Astronomy Observatory.",
+              evidence: "Location C on the southern ridge marks the Solar Astronomy Observatory"
+            },
+            {
+              id: "l9-q20",
+              questionNumber: 20,
+              type: "diagram_label_completion",
+              topic: "map",
+              estimatedBand: 6.5,
+              prompt: "Indigenous Starlore Amphitheatre: Location ____",
+              correctAnswer: "D",
+              explanation: "Liam indicates location D beside the visitor lodge.",
+              evidence: "Finally, at location D beside the visitor lodge is our Indigenous Starlore Amphitheatre"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      sectionNumber: 3,
+      title: "Undergraduate Project Review: Urban Rain Gardens and Stormwater Bio-retention",
+      contextDescription: "Civil engineering lecturer Dr. Miller (North American English) reviewing a green infrastructure field experiment with students Dev (Indian English) and Rachel (British English).",
+      audioScript: [
+        { "speaker": "Dr. Miller (North American)", "text": "Come in Dev, Rachel. Let's look over your preliminary data on the retrofitted urban rain garden test plot on East Campus. Urban runoff management is a critical civil engineering priority, and your field experiment is generating interesting results." },
+        { "speaker": "Dev (Indian English)", "text": "Thanks, Dr. Miller. Our objective was to evaluate how effectively an engineered bio-retention swale filters heavy metals and petroleum hydrocarbons from highway parking lot runoff during intense storm events." },
+        { "speaker": "Rachel (British)", "text": "We installed an engineered soil filter bed comprised of sixty percent medium silica sand, twenty percent horticultural compost, and twenty percent clay-loam. Beneath that is a thirty-centimeter drainage layer of washed crushed gravel surrounding a perforated PVC underdrain pipe." },
+        { "speaker": "Dr. Miller (North American)", "text": "And what did your water quality assays reveal about pollutant removal efficiency?" },
+        { "speaker": "Dev (Indian English)", "text": "The bio-retention swale demonstrated remarkable performance. Total suspended solids were reduced by eighty-eight percent. More impressively, dissolved zinc and copper—primarily from vehicle brake pad and tire wear—were captured with an efficiency of over eighty-two percent, bound tightly to the organic compost matrix." },
+        { "speaker": "Rachel (British)", "text": "However, we did encounter an unexpected challenge with hydraulic infiltration rates after three consecutive heavy downpours. Fine silt washed down from the neighboring embankment, forming a thin, impermeable crust on top of the mulch layer, which reduced stormwater infiltration velocity by nearly half." },
+        { "speaker": "Dr. Miller (North American)", "text": "That is a classic real-world maintenance vulnerability. How do you propose solving that in your final design?" },
+        { "speaker": "Dev (Indian English)", "text": "We recommend installing a small concrete forebay or gravel settling trench at the inlet. That will capture the heavy silt sediment before runoff enters the vegetative filter zone, making periodic sediment removal quick and inexpensive." },
+        { "speaker": "Dr. Miller (North American)", "text": "Excellent engineering solution. Make sure you incorporate a full lifecycle maintenance cost estimate in your final technical report." }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Choose the correct letter, A, B, or C. Write your answers in boxes 21–26.",
+          questionType: "multiple_choice_single",
+          questions: [
+            {
+              id: "l9-q21",
+              questionNumber: 21,
+              type: "multiple_choice_single",
+              topic: "engineering",
+              estimatedBand: 7.0,
+              prompt: "The students' research aimed to evaluate how rain gardens filter runoff from",
+              options: [
+                "A) residential rooftop gutters.",
+                "B) a highway parking lot.",
+                "C) agricultural fertilizer fields."
+              ],
+              correctAnswer: "B",
+              explanation: "Dev states the goal was to evaluate runoff from 'highway parking lot runoff'.",
+              evidence: "filters heavy metals and petroleum hydrocarbons from highway parking lot runoff"
+            },
+            {
+              id: "l9-q22",
+              questionNumber: 22,
+              type: "multiple_choice_single",
+              topic: "materials",
+              estimatedBand: 7.0,
+              prompt: "What percentage of the engineered soil mix consists of medium silica sand?",
+              options: [
+                "A) 20%.",
+                "B) 50%.",
+                "C) 60%."
+              ],
+              correctAnswer: "C",
+              explanation: "Rachel notes the mix is comprised of sixty percent medium silica sand.",
+              evidence: "comprised of sixty percent medium silica sand, twenty percent horticultural compost"
+            },
+            {
+              id: "l9-q23",
+              questionNumber: 23,
+              type: "multiple_choice_single",
+              topic: "engineering",
+              estimatedBand: 7.5,
+              prompt: "The swale achieved an 88% reduction in",
+              options: [
+                "A) total suspended solids.",
+                "B) dissolved nitrogen.",
+                "C) water temperature."
+              ],
+              correctAnswer: "A",
+              explanation: "Dev states: 'Total suspended solids were reduced by eighty-eight percent.'",
+              evidence: "Total suspended solids were reduced by eighty-eight percent."
+            },
+            {
+              id: "l9-q24",
+              questionNumber: 24,
+              type: "multiple_choice_single",
+              topic: "chemistry",
+              estimatedBand: 7.0,
+              prompt: "Dissolved zinc and copper in the stormwater originated primarily from",
+              options: [
+                "A) underground galvanized pipes.",
+                "B) vehicle brake pads and tire wear.",
+                "C) industrial factory chimneys."
+              ],
+              correctAnswer: "B",
+              explanation: "Dev notes zinc and copper came from vehicle brake pad and tire wear.",
+              evidence: "dissolved zinc and copper—primarily from vehicle brake pad and tire wear—were captured"
+            },
+            {
+              id: "l9-q25",
+              questionNumber: 25,
+              type: "multiple_choice_single",
+              topic: "hydrology",
+              estimatedBand: 7.5,
+              prompt: "Infiltration rates dropped significantly because fine silt created",
+              options: [
+                "A) an impermeable crust on the mulch.",
+                "B) blockages in the perforated PVC pipe.",
+                "C) a toxic chemical reaction."
+              ],
+              correctAnswer: "A",
+              explanation: "Rachel explains silt formed a thin, impermeable crust on top of the mulch layer.",
+              evidence: "forming a thin, impermeable crust on top of the mulch layer, which reduced stormwater infiltration velocity"
+            },
+            {
+              id: "l9-q26",
+              questionNumber: 26,
+              type: "multiple_choice_single",
+              topic: "engineering",
+              estimatedBand: 7.5,
+              prompt: "Dev suggests resolving the silt problem by installing a",
+              options: [
+                "A) motorized vacuum suction pump.",
+                "B) concrete forebay or gravel settling trench.",
+                "C) high-pressure water sprinkler."
+              ],
+              correctAnswer: "B",
+              explanation: "Dev recommends installing a small concrete forebay or gravel settling trench at the inlet.",
+              evidence: "installing a small concrete forebay or gravel settling trench at the inlet."
+            }
+          ]
+        },
+        {
+          groupInstruction: "Which student or lecturer made each recommendation or observation? Write the correct letter, A, B, or C, in boxes 27–30.\nA: Dr. Miller\nB: Dev\nC: Rachel",
+          questionType: "matching",
+          questions: [
+            {
+              id: "l9-q27",
+              questionNumber: 27,
+              type: "matching",
+              topic: "discussion",
+              estimatedBand: 6.5,
+              prompt: "Explaining the proportions of sand, compost, and clay-loam in the filter bed.",
+              correctAnswer: "C",
+              explanation: "Rachel describes the engineered soil filter bed recipe.",
+              evidence: "Rachel: We installed an engineered soil filter bed comprised of sixty percent medium silica sand"
+            },
+            {
+              id: "l9-q28",
+              questionNumber: 28,
+              type: "matching",
+              topic: "discussion",
+              estimatedBand: 7.0,
+              prompt: "Reporting the 82% capture efficiency for dissolved metals.",
+              correctAnswer: "B",
+              explanation: "Dev presents the 82% capture efficiency for zinc and copper.",
+              evidence: "Dev: dissolved zinc and copper... were captured with an efficiency of over eighty-two percent"
+            },
+            {
+              id: "l9-q29",
+              questionNumber: 29,
+              type: "matching",
+              topic: "discussion",
+              estimatedBand: 7.0,
+              prompt: "Describing how fine embankment silt halved infiltration rates.",
+              correctAnswer: "C",
+              explanation: "Rachel details the reduction in stormwater infiltration velocity.",
+              evidence: "Rachel: Fine silt washed down... reduced stormwater infiltration velocity by nearly half."
+            },
+            {
+              id: "l9-q30",
+              questionNumber: 30,
+              type: "matching",
+              topic: "discussion",
+              estimatedBand: 7.5,
+              prompt: "Advising the inclusion of a lifecycle maintenance cost calculation.",
+              correctAnswer: "A",
+              explanation: "Dr. Miller advises incorporating a full lifecycle maintenance cost estimate.",
+              evidence: "Dr. Miller: Make sure you incorporate a full lifecycle maintenance cost estimate in your final technical report."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      sectionNumber: 4,
+      title: "Academic Lecture: The Evolution of Writing Systems from Cuneiform to the Phoenician Alphabet",
+      contextDescription: "Professor Hugh Langford (British English speaker) delivering an academic archaeology lecture on the historical transition from logographic scripts to phonetic alphabets.",
+      audioScript: [
+        { "speaker": "Professor Langford (British)", "text": "Good afternoon, students. Today we trace one of humanity's greatest cognitive and technological achievements: the invention and evolutionary trajectory of writing systems. Prior to writing, human collective memory was restricted to oral transmission, constrained by the mortal lifespan and cognitive limits of individual bards and elders." },
+        { "speaker": "Professor Langford (British)", "text": "The earliest indisputable writing emerged around three thousand two hundred BCE in southern Mesopotamia among the Sumerians. Known as cuneiform—from the Latin cuneus, meaning 'wedge'—this script was inscribed by impressing the beveled edge of a sharpened river reed stylus into damp clay tablets. Initially, cuneiform was not a vehicle for poetry or philosophy; it was a pragmatic bureaucratic accounting technology devised to tally temple grain surpluses, livestock counts, and beer rations." },
+        { "speaker": "Professor Langford (British)", "text": "Early cuneiform and contemporaneous Egyptian hieroglyphics were complex logographic and syllabic systems requiring scribes to memorize upwards of seven hundred distinct graphemic signs. Because literacy demanded a decade of intense scribal apprenticeship, writing remained an elite instrument of administrative control monopolized by high priests and royal bureaucrats." },
+        { "speaker": "Professor Langford (British)", "text": "The democratic democratization of literacy occurred around one thousand eight hundred BCE in the Sinai Peninsula. Semitic turquoise mine laborers, interacting with Egyptian hieroglyphs, devised Proto-Sinaitic: the world's first true phonetic alphabet. Instead of assigning a unique symbol to every word or idea, they applied the acrophonic principle: selecting roughly twenty-two simple pictograms, where each symbol represented only the initial consonant sound of the depicted object. For example, a drawing of an ox head—termed 'alp'—came to represent the consonant sound 'ah'." },
+        { "speaker": "Professor Langford (British)", "text": "This brilliant twenty-two-letter consonantal abjad was refined by the maritime Phoenicians, who traded throughout the Mediterranean basin. By stripping away redundant logograms, the Phoenician alphabet allowed an ordinary merchant to achieve functional literacy in mere weeks rather than decades. Adopted and modified by the ancient Greeks—who added dedicated vowels—and subsequently the Romans, this concise twenty-two-symbol phonetic breakthrough became the direct ancestral template for every modern European alphabet." }
+      ],
+      questionGroups: [
+        {
+          groupInstruction: "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 31–40.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "l9-q31",
+              questionNumber: 31,
+              type: "sentence_completion",
+              topic: "archaeology",
+              estimatedBand: 7.0,
+              prompt: "Cuneiform writing first developed around ____ BCE in southern Mesopotamia.",
+              correctAnswer: "3200",
+              explanation: "Professor Langford states writing emerged around three thousand two hundred BCE.",
+              evidence: "emerged around three thousand two hundred BCE in southern Mesopotamia"
+            },
+            {
+              id: "l9-q32",
+              questionNumber: 32,
+              type: "sentence_completion",
+              topic: "linguistics",
+              estimatedBand: 7.0,
+              prompt: "The word cuneiform originates from a Latin word meaning ____.",
+              correctAnswer: "wedge",
+              explanation: "Professor Langford explains cuneiform is from Latin cuneus, meaning wedge.",
+              evidence: "from the Latin cuneus, meaning 'wedge'"
+            },
+            {
+              id: "l9-q33",
+              questionNumber: 33,
+              type: "sentence_completion",
+              topic: "archaeology",
+              estimatedBand: 6.5,
+              prompt: "Sumerian scribes pressed the edge of a river ____ stylus into damp clay.",
+              correctAnswer: "reed",
+              explanation: "Professor Langford mentions impressing the beveled edge of a sharpened river reed stylus.",
+              evidence: "impressing the beveled edge of a sharpened river reed stylus into damp clay tablets."
+            },
+            {
+              id: "l9-q34",
+              questionNumber: 34,
+              type: "sentence_completion",
+              topic: "history",
+              estimatedBand: 6.5,
+              prompt: "Early writing was primarily invented as a tool for bureaucratic ____.",
+              correctAnswer: "accounting",
+              explanation: "Professor Langford describes it as a pragmatic bureaucratic accounting technology.",
+              evidence: "pragmatic bureaucratic accounting technology devised to tally temple grain surpluses"
+            },
+            {
+              id: "l9-q35",
+              questionNumber: 35,
+              type: "sentence_completion",
+              topic: "linguistics",
+              estimatedBand: 7.5,
+              prompt: "Ancient scribes had to memorize more than ____ distinct symbols.",
+              correctAnswer: ["700", "seven hundred"],
+              explanation: "Professor Langford notes memorizing upwards of seven hundred distinct graphemic signs.",
+              evidence: "memorize upwards of seven hundred distinct graphemic signs."
+            },
+            {
+              id: "l9-q36",
+              questionNumber: 36,
+              type: "sentence_completion",
+              topic: "history",
+              estimatedBand: 7.5,
+              prompt: "Proto-Sinaitic writing was invented by Semitic laborers working in ____ mines.",
+              correctAnswer: "turquoise",
+              explanation: "Professor Langford mentions Semitic turquoise mine laborers.",
+              evidence: "Semitic turquoise mine laborers, interacting with Egyptian hieroglyphs, devised Proto-Sinaitic"
+            },
+            {
+              id: "l9-q37",
+              questionNumber: 37,
+              type: "sentence_completion",
+              topic: "linguistics",
+              estimatedBand: 8.0,
+              prompt: "The phonetic system used the ____ principle where a symbol represented an initial sound.",
+              correctAnswer: "acrophonic",
+              explanation: "Professor Langford explains they applied the acrophonic principle.",
+              evidence: "they applied the acrophonic principle: selecting roughly twenty-two simple pictograms"
+            },
+            {
+              id: "l9-q38",
+              questionNumber: 38,
+              type: "sentence_completion",
+              topic: "linguistics",
+              estimatedBand: 7.5,
+              prompt: "The original phonetic alphabet consisted of approximately ____ letters.",
+              correctAnswer: ["22", "twenty-two"],
+              explanation: "Professor Langford mentions roughly twenty-two simple pictograms.",
+              evidence: "selecting roughly twenty-two simple pictograms"
+            },
+            {
+              id: "l9-q39",
+              questionNumber: 39,
+              type: "sentence_completion",
+              topic: "history",
+              estimatedBand: 7.0,
+              prompt: "The Phoenician alphabet was spread across the Mediterranean by ____ traders.",
+              correctAnswer: "maritime",
+              explanation: "Professor Langford notes refined by maritime Phoenicians.",
+              evidence: "refined by the maritime Phoenicians, who traded throughout the Mediterranean basin."
+            },
+            {
+              id: "l9-q40",
+              questionNumber: 40,
+              type: "sentence_completion",
+              topic: "linguistics",
+              estimatedBand: 7.0,
+              prompt: "The ancient Greeks adapted the script by introducing dedicated ____.",
+              correctAnswer: "vowels",
+              explanation: "Professor Langford states Greeks modified the script by adding dedicated vowels.",
+              evidence: "Adopted and modified by the ancient Greeks—who added dedicated vowels"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync(
+  path.resolve('./content/listening/listening-test-09.json'),
+  JSON.stringify(listeningTest09, null, 2),
+  'utf8'
+);
+console.log('✓ Created listening-test-09.json');

@@ -1,0 +1,1937 @@
+[
+  {
+    "id": "gram-01",
+    "title": "Present & Past Tenses in IELTS",
+    "focus": "Selecting correct tense when describing past charts, general truths, and ongoing trends.",
+    "explanation": "In IELTS Writing Task 1, tense selection is governed strictly by the timeline in the prompt. If the chart covers historical years (e.g., 2000 to 2020), you must use past simple (e.g. \"surged\", \"remained static\"). If no timeframe is provided, use present simple for general truths. In Task 2, present simple describes ongoing social phenomena, while present perfect connects past trends to current situations.",
+    "bandTips": "Avoid mixing past and present tenses within a single descriptive sentence. E.g. \"In 2010, vehicle sales rose and are peaking\" is incorrect. Use \"rose and peaked\".",
+    "exercises": [
+      {
+        "id": "g01-q01",
+        "prompt": "Between 2012 and 2018, the volume of plastic waste _________ steadily from 4 million to 6.5 million tons.",
+        "options": [
+          "increased",
+          "increases",
+          "has increased",
+          "is increasing"
+        ],
+        "correctAnswer": "increased",
+        "explanation": "Past simple (\"increased\") is mandatory because the time boundary (2012–2018) is completely in the past."
+      },
+      {
+        "id": "g01-q02",
+        "prompt": "In recent decades, urbanization _________ the demographic landscape of developing economies.",
+        "options": [
+          "transformed",
+          "has transformed",
+          "transforms",
+          "is transform"
+        ],
+        "correctAnswer": "has transformed",
+        "explanation": "Present perfect (\"has transformed\") is appropriate because \"In recent decades\" indicates an ongoing trend that began in the past and continues into the present."
+      },
+      {
+        "id": "g01-q03",
+        "prompt": "The line graph _________ the proportion of electricity generated from renewable sources.",
+        "options": [
+          "illustrated",
+          "has illustrated",
+          "illustrates",
+          "is illustrating"
+        ],
+        "correctAnswer": "illustrates",
+        "explanation": "Present simple (\"illustrates\") is used for introducing what the visual diagram shows right now."
+      },
+      {
+        "id": "g01-q04",
+        "prompt": "By the time government subsidies ended in 2015, solar adoption _________ already tripled.",
+        "options": [
+          "has",
+          "was",
+          "would",
+          "had"
+        ],
+        "correctAnswer": "had",
+        "explanation": "Past perfect (\"had already tripled\") describes an action completed before a specific reference point in the past (2015)."
+      },
+      {
+        "id": "g01-q05",
+        "prompt": "Many sociologists argue that income disparity _________ an existential threat to civic harmony.",
+        "options": [
+          "poses",
+          "posed",
+          "is posing",
+          "was posed"
+        ],
+        "correctAnswer": "poses",
+        "explanation": "Present simple (\"poses\") expresses an accepted general truth or enduring academic argument."
+      },
+      {
+        "id": "g01-q06",
+        "prompt": "During the 1990s, the number of international tourists _________ at around 15 million before climbing sharply.",
+        "options": [
+          "remains",
+          "remained",
+          "has remained",
+          "was remaining"
+        ],
+        "correctAnswer": "remained",
+        "explanation": "The specific past decade \"During the 1990s\" requires past simple (\"remained\")."
+      },
+      {
+        "id": "g01-q07",
+        "prompt": "Since the implementation of the congestion charge, traffic delays _________ by 22%.",
+        "options": [
+          "fell",
+          "falls",
+          "have fallen",
+          "were falling"
+        ],
+        "correctAnswer": "have fallen",
+        "explanation": "Sentences beginning with \"Since + past event\" take present perfect (\"have fallen\") in the main clause."
+      },
+      {
+        "id": "g01-q08",
+        "prompt": "The pie charts indicate that in 2005, nuclear power _________ for 18% of domestic energy.",
+        "options": [
+          "accounts",
+          "has accounted",
+          "had been accounting",
+          "accounted"
+        ],
+        "correctAnswer": "accounted",
+        "explanation": "Past simple (\"accounted\") must be used for the historical data point \"in 2005\"."
+      },
+      {
+        "id": "g01-q09",
+        "prompt": "Currently, renewable energy technologies _________ rapid global investment.",
+        "options": [
+          "are attracting",
+          "attracted",
+          "has attracted",
+          "were attracting"
+        ],
+        "correctAnswer": "are attracting",
+        "explanation": "\"Currently\" indicates a present ongoing process, making the present continuous (\"are attracting\") appropriate."
+      },
+      {
+        "id": "g01-q10",
+        "prompt": "Prior to 2008, few corporations _________ telecommuting as a viable workplace alternative.",
+        "options": [
+          "considered",
+          "had considered",
+          "have considered",
+          "are considering"
+        ],
+        "correctAnswer": "had considered",
+        "explanation": "Past perfect (\"had considered\") marks an action occurring prior to the past baseline year (2008)."
+      }
+    ]
+  },
+  {
+    "id": "gram-02",
+    "title": "Future Forms & Projections in IELTS Writing",
+    "focus": "Expressing demographic and economic projections up to 2030, 2050, or beyond.",
+    "explanation": "IELTS charts frequently extrapolate data into future years (e.g. 2030, 2050). Examiners penalize candidates who write \"will increase\" without qualifying it as a projection, because future data in charts represents an estimate, not a guaranteed historical certainty. Use phrases like \"is projected to rise\", \"is forecasted to surpass\", or future perfect \"will have doubled\".",
+    "bandTips": "Use passive hedging verbs: \"is predicted to\", \"is estimated to\", \"is expected to\", rather than bare \"will\".",
+    "exercises": [
+      {
+        "id": "g02-q01",
+        "prompt": "By 2040, the global human population _________ to reach approximately 9 billion.",
+        "options": [
+          "was projected",
+          "projected",
+          "is projected",
+          "is project"
+        ],
+        "correctAnswer": "is projected",
+        "explanation": "Passive structure \"is projected to reach\" accurately expresses future demographic modeling."
+      },
+      {
+        "id": "g02-q02",
+        "prompt": "Solar power generation _________ to outstrip coal combustion by the end of this decade.",
+        "options": [
+          "expects",
+          "expected",
+          "was expecting",
+          "is expected"
+        ],
+        "correctAnswer": "is expected",
+        "explanation": "Use the passive \"is expected to outstrip\" because solar generation is the subject being predicted."
+      },
+      {
+        "id": "g02-q03",
+        "prompt": "By the year 2050, researchers estimate that electric vehicle sales _________ fourfold.",
+        "options": [
+          "will have multiplied",
+          "will multiply",
+          "multiplied",
+          "are multiplying"
+        ],
+        "correctAnswer": "will have multiplied",
+        "explanation": "Future perfect (\"will have multiplied\") expresses an action completed before a specified future deadline (\"By the year 2050\")."
+      },
+      {
+        "id": "g02-q04",
+        "prompt": "Water consumption in urban sectors _________ forecasted to expand by 35%.",
+        "options": [
+          "are",
+          "is",
+          "was",
+          "were"
+        ],
+        "correctAnswer": "is",
+        "explanation": "\"Water consumption\" is an uncountable singular noun, so \"is forecasted\" is correct."
+      },
+      {
+        "id": "g02-q05",
+        "prompt": "It is predicted _________ renewable sources will supply over 60% of total electrical demand by 2035.",
+        "options": [
+          "which",
+          "what",
+          "that",
+          "where"
+        ],
+        "correctAnswer": "that",
+        "explanation": "The anticipatory \"It is predicted that + clause\" is the standard academic projection formula."
+      },
+      {
+        "id": "g02-q06",
+        "prompt": "Global crude oil reserves are anticipated _________ significantly lower levels by 2060.",
+        "options": [
+          "reaching",
+          "reach",
+          "reached",
+          "to reach"
+        ],
+        "correctAnswer": "to reach",
+        "explanation": "The verb \"anticipate\" in passive takes an infinitive with to: \"are anticipated to reach\"."
+      },
+      {
+        "id": "g02-q07",
+        "prompt": "Over the subsequent twenty years, fertility rates _________ to plateau.",
+        "options": [
+          "are likely",
+          "is likely",
+          "likely",
+          "are likelihood"
+        ],
+        "correctAnswer": "are likely",
+        "explanation": "\"Fertility rates\" is plural, so \"are likely to plateau\" is grammatically correct."
+      },
+      {
+        "id": "g02-q08",
+        "prompt": "According to government estimates, offshore wind capacity _________ by 2030.",
+        "options": [
+          "doubles",
+          "will have doubled",
+          "has doubled",
+          "was doubled"
+        ],
+        "correctAnswer": "will have doubled",
+        "explanation": "\"By 2030\" indicates completion by a future point, requiring future perfect (\"will have doubled\")."
+      },
+      {
+        "id": "g02-q09",
+        "prompt": "Municipal authorities expect that the new subway line _________ completed by next October.",
+        "options": [
+          "is",
+          "was",
+          "will be",
+          "had been"
+        ],
+        "correctAnswer": "will be",
+        "explanation": "Future passive \"will be completed\" accurately describes an upcoming infrastructure project."
+      },
+      {
+        "id": "g02-q10",
+        "prompt": "Petroleum usage is slated _________ steadily over the next two decades.",
+        "options": [
+          "declining",
+          "decline",
+          "declined",
+          "to decline"
+        ],
+        "correctAnswer": "to decline",
+        "explanation": "\"Be slated to + infinitive\" means scheduled or expected to happen."
+      }
+    ]
+  },
+  {
+    "id": "gram-03",
+    "title": "Conditionals in Task 2 Academic Arguments",
+    "focus": "Deploying First, Second, Third, and Mixed conditionals to construct persuasive hypothetical arguments.",
+    "explanation": "Conditionals allow you to evaluate potential outcomes, consequences, and historical alternatives in IELTS Task 2. First conditional (If + present, will + verb) evaluates real policy outcomes. Second conditional (If + past, would + verb) explores hypothetical policy reforms. Third conditional (If + past perfect, would have + past participle) reviews historical causes.",
+    "bandTips": "Use \"Unless\" (Unless governments act...) as a powerful alternative to \"If not\". Invert formal conditionals: \"Were governments to intervene...\" instead of \"If governments intervened...\".",
+    "exercises": [
+      {
+        "id": "g03-q01",
+        "prompt": "If municipal governments _________ in cycling infrastructure, fewer commuters would drive private cars.",
+        "options": [
+          "invested",
+          "invest",
+          "had invested",
+          "will invest"
+        ],
+        "correctAnswer": "invested",
+        "explanation": "Second conditional (hypothetical present/future): \"If + past simple (invested), would + infinitive (would drive)\"."
+      },
+      {
+        "id": "g03-q02",
+        "prompt": "Unless international bodies _________ carbon emissions promptly, climate degradation will accelerate.",
+        "options": [
+          "curbed",
+          "curb",
+          "will curb",
+          "would curb"
+        ],
+        "correctAnswer": "curb",
+        "explanation": "First conditional with \"unless\" takes present simple (\"curb\") in the subordinate condition clause."
+      },
+      {
+        "id": "g03-q03",
+        "prompt": "If public authorities had enacted smoking bans earlier, thousands of premature deaths _________ prevented.",
+        "options": [
+          "would be",
+          "will be",
+          "would have been",
+          "had been"
+        ],
+        "correctAnswer": "would have been",
+        "explanation": "Third conditional (unreal past): \"If + past perfect (had enacted), would have been + past participle\"."
+      },
+      {
+        "id": "g03-q04",
+        "prompt": "Were the government _________ higher taxes on sugary beverages, consumption would decline noticeably.",
+        "options": [
+          "levies",
+          "levied",
+          "will levy",
+          "to levy"
+        ],
+        "correctAnswer": "to levy",
+        "explanation": "Formal inverted conditional: \"Were + subject + to-infinitive (Were the government to levy)\"."
+      },
+      {
+        "id": "g03-q05",
+        "prompt": "Had health officials alerted the public sooner, the epidemic _________ so rapidly.",
+        "options": [
+          "would not have spread",
+          "would not spread",
+          "will not spread",
+          "had not spread"
+        ],
+        "correctAnswer": "would not have spread",
+        "explanation": "Inverted third conditional: \"Had + subject + past participle, would not have + past participle\"."
+      },
+      {
+        "id": "g03-q06",
+        "prompt": "Provided that schools _________ sufficient funding, creative arts programs can flourish.",
+        "options": [
+          "received",
+          "receive",
+          "will receive",
+          "had received"
+        ],
+        "correctAnswer": "receive",
+        "explanation": "\"Provided that\" functions like \"if\" and takes present simple (\"receive\") when discussing real future conditions."
+      },
+      {
+        "id": "g03-q07",
+        "prompt": "If teenagers spend excessive hours on digital screens, their sleep quality _________ compromised.",
+        "options": [
+          "was",
+          "would be",
+          "is",
+          "were"
+        ],
+        "correctAnswer": "is",
+        "explanation": "Zero conditional for scientific or factual cause-and-effect: present simple in both clauses."
+      },
+      {
+        "id": "g03-q08",
+        "prompt": "Should tuition fees _________ further, many underprivileged students will be excluded from university.",
+        "options": [
+          "rose",
+          "risen",
+          "will rise",
+          "rise"
+        ],
+        "correctAnswer": "rise",
+        "explanation": "Formal conditional inversion: \"Should + subject + bare infinitive (Should tuition fees rise)\"."
+      },
+      {
+        "id": "g03-q09",
+        "prompt": "If remote work _________ universally available, housing demands in central metropolitan zones would drop.",
+        "options": [
+          "were",
+          "is",
+          "will be",
+          "has been"
+        ],
+        "correctAnswer": "were",
+        "explanation": "In formal academic subjunctive second conditionals, \"were\" is preferred over \"was\" for all persons."
+      },
+      {
+        "id": "g03-q10",
+        "prompt": "Children will struggle to develop social empathy unless they _________ in face-to-face peer play.",
+        "options": [
+          "engaged",
+          "engage",
+          "will engage",
+          "would engage"
+        ],
+        "correctAnswer": "engage",
+        "explanation": "Clause following \"unless\" takes present simple (\"engage\") in a real predictive conditional."
+      }
+    ]
+  },
+  {
+    "id": "gram-04",
+    "title": "The Passive Voice in Academic Writing & Processes",
+    "focus": "Using the passive voice to maintain objective scientific detachment and describe process steps.",
+    "explanation": "The passive voice is fundamental in IELTS Writing. In Task 1 process diagrams, the agent (who did it) is irrelevant; the object and the action matter (e.g., \"The water is heated\", \"The tea leaves are harvested and dried\"). In Task 2, the passive voice avoids informal personal pronouns like \"I think\" or \"People do\" by focusing on the action: \"It is often argued that...\", \"Stricter penalties should be enforced\".",
+    "bandTips": "When describing processes in Task 1, use present simple passive: [is/are + past participle].",
+    "exercises": [
+      {
+        "id": "g04-q01",
+        "prompt": "In the second stage of the recycling process, the plastic bottles _________ by color.",
+        "options": [
+          "sort",
+          "is sorted",
+          "are sorted",
+          "were sorted"
+        ],
+        "correctAnswer": "are sorted",
+        "explanation": "Plural noun (\"bottles\") in a present general process diagram takes \"are sorted\"."
+      },
+      {
+        "id": "g04-q02",
+        "prompt": "Subsequently, the crushed pulp _________ to a high temperature to remove moisture.",
+        "options": [
+          "heats",
+          "are heated",
+          "heated",
+          "is heated"
+        ],
+        "correctAnswer": "is heated",
+        "explanation": "Uncountable singular noun (\"pulp\") takes singular present passive: \"is heated\"."
+      },
+      {
+        "id": "g04-q03",
+        "prompt": "It _________ that access to clean drinking water is a fundamental human entitlement.",
+        "options": [
+          "is widely acknowledged",
+          "widely acknowledges",
+          "was widely acknowledging",
+          "is widely acknowledge"
+        ],
+        "correctAnswer": "is widely acknowledged",
+        "explanation": "The impersonal passive \"It is widely acknowledged that...\" creates a formal, objective academic tone."
+      },
+      {
+        "id": "g04-q04",
+        "prompt": "Once the tea leaves _________, they are transported to processing factories.",
+        "options": [
+          "have dried",
+          "are dried",
+          "dry",
+          "will be dried"
+        ],
+        "correctAnswer": "are dried",
+        "explanation": "Present simple passive \"are dried\" matches the sequential process convention."
+      },
+      {
+        "id": "g04-q05",
+        "prompt": "Stringent carbon taxes ought to _________ on heavy fossil fuel industries.",
+        "options": [
+          "impose",
+          "imposed",
+          "be imposed",
+          "been imposed"
+        ],
+        "correctAnswer": "be imposed",
+        "explanation": "Modal passive structure: modal verb (\"ought to\") + be + past participle (\"be imposed\")."
+      },
+      {
+        "id": "g04-q06",
+        "prompt": "Over twenty thousand survey questionnaires _________ by the university research team last year.",
+        "options": [
+          "analyzed",
+          "are analyzed",
+          "have been analyzed",
+          "were analyzed"
+        ],
+        "correctAnswer": "were analyzed",
+        "explanation": "Past passive \"were analyzed\" matches the past timeframe indicator \"last year\"."
+      },
+      {
+        "id": "g04-q07",
+        "prompt": "The filtered brine _________ into the cooling chamber through automated pipes.",
+        "options": [
+          "is pumped",
+          "pumps",
+          "are pumped",
+          "pumped"
+        ],
+        "correctAnswer": "is pumped",
+        "explanation": "Singular noun (\"brine\") takes \"is pumped\" in process descriptions."
+      },
+      {
+        "id": "g04-q08",
+        "prompt": "Significant breakthroughs _________ in the treatment of cardiovascular disorders.",
+        "options": [
+          "achieved",
+          "have been achieved",
+          "have achieved",
+          "were achieving"
+        ],
+        "correctAnswer": "have been achieved",
+        "explanation": "Present perfect passive: \"have been achieved\" indicates ongoing historical progress."
+      },
+      {
+        "id": "g04-q09",
+        "prompt": "Underage offenders should _________ toward community restitution rather than detention.",
+        "options": [
+          "direct",
+          "are directed",
+          "be directed",
+          "been directed"
+        ],
+        "correctAnswer": "be directed",
+        "explanation": "Modal passive: \"should be directed\"."
+      },
+      {
+        "id": "g04-q10",
+        "prompt": "At the end of the manufacturing line, the finished goods _________ in cardboard cartons.",
+        "options": [
+          "package",
+          "is packaged",
+          "were packaged",
+          "are packaged"
+        ],
+        "correctAnswer": "are packaged",
+        "explanation": "Plural passive \"are packaged\" fits the final packaging step in a production diagram."
+      }
+    ]
+  },
+  {
+    "id": "gram-05",
+    "title": "Relative Clauses (Defining & Non-Defining)",
+    "focus": "Combining complex sentences accurately with who, which, that, where, and whose.",
+    "explanation": "Relative clauses allow you to pack descriptive and causal information into sophisticated complex sentences. Defining clauses give essential identification without commas (e.g., \"Students who study abroad develop greater independence\"). Non-defining clauses add extra non-essential information separated by commas and must use \"which\", never \"that\" (e.g., \"Solar energy, which produces zero carbon emissions, is expanding rapidly\").",
+    "bandTips": "Never use \"that\" in a non-defining clause surrounded by commas! E.g. \"Public transit, that is subsidized...\" is a frequent error. Write \"Public transit, which is subsidized...\".",
+    "exercises": [
+      {
+        "id": "g05-q01",
+        "prompt": "Nuclear energy, _________ generates minimal greenhouse gas, remains controversial due to radioactive waste.",
+        "options": [
+          "which",
+          "that",
+          "what",
+          "who"
+        ],
+        "correctAnswer": "which",
+        "explanation": "Non-defining relative clause enclosed in commas requires \"which\", never \"that\"."
+      },
+      {
+        "id": "g05-q02",
+        "prompt": "Individuals _________ engage in regular physical exercise experience lower rates of depression.",
+        "options": [
+          "which",
+          "who",
+          "whom",
+          "whose"
+        ],
+        "correctAnswer": "who",
+        "explanation": "Defining relative clause referring to human subjects takes \"who\"."
+      },
+      {
+        "id": "g05-q03",
+        "prompt": "Developing countries _________ infrastructure is fragile suffer the greatest damage from extreme weather.",
+        "options": [
+          "which",
+          "their",
+          "whose",
+          "that"
+        ],
+        "correctAnswer": "whose",
+        "explanation": "Possessive relative pronoun \"whose\" shows ownership (\"whose infrastructure\")."
+      },
+      {
+        "id": "g05-q04",
+        "prompt": "The city center, _________ heavy freight vehicles are prohibited, has seen air quality improve markedly.",
+        "options": [
+          "which",
+          "that",
+          "when",
+          "where"
+        ],
+        "correctAnswer": "where",
+        "explanation": "Relative adverb \"where\" denotes a physical geographical location."
+      },
+      {
+        "id": "g05-q05",
+        "prompt": "The policy reform _________ was enacted in 2018 lowered youth unemployment by 14%.",
+        "options": [
+          "that",
+          "who",
+          "where",
+          "whom"
+        ],
+        "correctAnswer": "that",
+        "explanation": "Defining relative clause referring to an inanimate thing without commas can use \"that\" or \"which\"."
+      },
+      {
+        "id": "g05-q06",
+        "prompt": "Professor Lawson, _________ lectures on sustainable development inspired my thesis, retired last semester.",
+        "options": [
+          "who",
+          "whose",
+          "which",
+          "whom"
+        ],
+        "correctAnswer": "whose",
+        "explanation": "Possessive reference to the professor’s lectures requires \"whose\"."
+      },
+      {
+        "id": "g05-q07",
+        "prompt": "Rapid automation, _________ eliminates manual assembly roles, simultaneously creates software engineering jobs.",
+        "options": [
+          "that",
+          "what",
+          "which",
+          "whose"
+        ],
+        "correctAnswer": "which",
+        "explanation": "Non-defining relative clause with commas requires \"which\"."
+      },
+      {
+        "id": "g05-q08",
+        "prompt": "The era _________ fossil fuels powered the majority of industrial growth is gradually drawing to a close.",
+        "options": [
+          "where",
+          "which",
+          "that",
+          "when"
+        ],
+        "correctAnswer": "when",
+        "explanation": "Relative adverb \"when\" denotes a temporal period (\"The era when...\")."
+      },
+      {
+        "id": "g05-q09",
+        "prompt": "Children _________ parents read with them daily develop larger vocabularies.",
+        "options": [
+          "whose",
+          "who",
+          "which",
+          "whom"
+        ],
+        "correctAnswer": "whose",
+        "explanation": "Possessive relationship (\"children whose parents\") requires \"whose\"."
+      },
+      {
+        "id": "g05-q10",
+        "prompt": "The proposal, the details _________ remain classified, has provoked intense public debate.",
+        "options": [
+          "of that",
+          "of which",
+          "of whose",
+          "of whom"
+        ],
+        "correctAnswer": "of which",
+        "explanation": "Formal prepositional relative structure: \"the details of which\"."
+      }
+    ]
+  },
+  {
+    "id": "gram-06",
+    "title": "Articles: Definite (the), Indefinite (a/an) & Zero Article",
+    "focus": "Eliminating the most pervasive grammatical slip made by non-native candidates.",
+    "explanation": "Articles are essential in IELTS writing. Use \"a/an\" with singular countable nouns when introducing them for the first time. Use \"the\" when a noun is specific, previously mentioned, or unique (e.g. \"the government\", \"the internet\", \"the environment\"). Use the zero article (no article) with plural countable nouns and uncountable nouns when making broad generalizations (e.g. \"Education is vital\", \"Children need sleep\", NOT \"The education is vital\").",
+    "bandTips": "Do not put \"the\" before uncountable generalizations! \"The society needs rules\" -> Incorrect. \"Society needs rules\" -> Correct.",
+    "exercises": [
+      {
+        "id": "g06-q01",
+        "prompt": "_________ education plays a pivotal role in fostering democratic values.",
+        "options": [
+          "The",
+          "An",
+          "Zero article (no article)",
+          "A"
+        ],
+        "correctAnswer": "Zero article (no article)",
+        "explanation": "General uncountable abstract nouns like \"education\" take zero article when speaking broadly."
+      },
+      {
+        "id": "g06-q02",
+        "prompt": "It is the duty of _________ government to regulate hazardous waste.",
+        "options": [
+          "a",
+          "an",
+          "zero article",
+          "the"
+        ],
+        "correctAnswer": "the",
+        "explanation": "\"The government\" takes the definite article because it refers to the specific governing authority."
+      },
+      {
+        "id": "g06-q03",
+        "prompt": "Rapid advances in _________ technology have transformed communication.",
+        "options": [
+          "zero article (no article)",
+          "the",
+          "a",
+          "an"
+        ],
+        "correctAnswer": "zero article (no article)",
+        "explanation": "\"Technology\" used as an overarching generalization takes no article."
+      },
+      {
+        "id": "g06-q04",
+        "prompt": "The chart illustrates the consumption of energy in _________ United Kingdom.",
+        "options": [
+          "a",
+          "the",
+          "an",
+          "zero article"
+        ],
+        "correctAnswer": "the",
+        "explanation": "Country names containing \"Kingdom\", \"States\", \"Republic\", or plurals take \"the\" (The United Kingdom)."
+      },
+      {
+        "id": "g06-q05",
+        "prompt": "Excessive consumption of sugar is _________ major cause of dental cavities.",
+        "options": [
+          "the",
+          "an",
+          "a",
+          "zero article"
+        ],
+        "correctAnswer": "C",
+        "explanation": "\"A major cause\" introduces one of several possible contributing causes."
+      },
+      {
+        "id": "g06-q06",
+        "prompt": "Protecting _________ environment requires coordinated multilateral legislation.",
+        "options": [
+          "an",
+          "a",
+          "zero article",
+          "the"
+        ],
+        "correctAnswer": "the",
+        "explanation": "\"The environment\" is unique in our shared biosphere and universally takes the definite article."
+      },
+      {
+        "id": "g06-q07",
+        "prompt": "_________ children who participate in team sports build stronger leadership habits.",
+        "options": [
+          "Zero article (no article)",
+          "The",
+          "A",
+          "An"
+        ],
+        "correctAnswer": "Zero article (no article)",
+        "explanation": "Plural generalizations (\"Children who participate...\") take zero article."
+      },
+      {
+        "id": "g06-q08",
+        "prompt": "Over 60% of citizens now access _________ internet on mobile devices.",
+        "options": [
+          "a",
+          "the",
+          "an",
+          "zero article"
+        ],
+        "correctAnswer": "the",
+        "explanation": "\"The internet\" is a unique global network and takes the definite article."
+      },
+      {
+        "id": "g06-q09",
+        "prompt": "The research team conducted _________ unprecedented clinical experiment.",
+        "options": [
+          "a",
+          "the",
+          "an",
+          "zero article"
+        ],
+        "correctAnswer": "an",
+        "explanation": "Indefinite article \"an\" precedes words starting with vowel sounds (\"unprecedented\")."
+      },
+      {
+        "id": "g06-q10",
+        "prompt": "In conclusion, _________ health should be prioritized over short-term corporate profits.",
+        "options": [
+          "the",
+          "a",
+          "an",
+          "zero article (no article)"
+        ],
+        "correctAnswer": "zero article (no article)",
+        "explanation": "Abstract general noun \"health\" takes zero article."
+      }
+    ]
+  },
+  {
+    "id": "gram-07",
+    "title": "Cohesive Devices & Transition Linking Words",
+    "focus": "Mastering Band 8+ transitions without mechanical over-use or repetition.",
+    "explanation": "Coherence and Cohesion constitutes 25% of your IELTS Writing score. Band 6 candidates use linking words mechanically at the start of every sentence (\"Firstly\", \"Secondly\", \"Moreover\", \"Furthermore\"). Band 8 candidates weave cohesive devices naturally within and between sentences using contrasting markers (However, Whereas, In contrast), cause-and-effect markers (Consequently, As a result), and concession markers (Although, Despite).",
+    "bandTips": "Remember: \"Despite\" is a preposition and must be followed by a noun phrase or gerund: \"Despite the high cost...\", NOT \"Despite it was expensive\".",
+    "exercises": [
+      {
+        "id": "g07-q01",
+        "prompt": "_________ electric vehicles produce zero tailpipe emissions, their manufacturing process generates carbon.",
+        "options": [
+          "Although",
+          "Despite",
+          "In spite of",
+          "However"
+        ],
+        "correctAnswer": "Although",
+        "explanation": "\"Although\" is a subordinating conjunction followed by a full subject-verb clause (\"electric vehicles produce...\")."
+      },
+      {
+        "id": "g07-q02",
+        "prompt": "Public transit was subsidized heavily. _________, private car usage remained persistently high.",
+        "options": [
+          "Because",
+          "Nevertheless",
+          "Owing to",
+          "Furthermore"
+        ],
+        "correctAnswer": "Nevertheless",
+        "explanation": "\"Nevertheless\" creates a strong, formal adversative contrast between two independent sentences."
+      },
+      {
+        "id": "g07-q03",
+        "prompt": "_________ the heavy financial investment, the high-speed railway failed to attract anticipated ridership.",
+        "options": [
+          "Although",
+          "Even though",
+          "Despite",
+          "Whereas"
+        ],
+        "correctAnswer": "Despite",
+        "explanation": "\"Despite\" must be followed by a noun phrase (\"the heavy financial investment\")."
+      },
+      {
+        "id": "g07-q04",
+        "prompt": "Tuition fees rose steeply; _________, enrollment in humanities degrees plunged by 30%.",
+        "options": [
+          "on the contrary",
+          "in addition",
+          "similarly",
+          "consequently"
+        ],
+        "correctAnswer": "consequently",
+        "explanation": "\"Consequently\" establishes a logical cause-and-effect result."
+      },
+      {
+        "id": "g07-q05",
+        "prompt": "Coal usage plunged dramatically, _________ natural gas experienced a modest expansion.",
+        "options": [
+          "whereas",
+          "in spite of",
+          "despite",
+          "because of"
+        ],
+        "correctAnswer": "whereas",
+        "explanation": "\"Whereas\" links two contrasting data points within a single complex sentence."
+      },
+      {
+        "id": "g07-q06",
+        "prompt": "Solar power is completely renewable. _________, it produces no harmful atmospheric particulates.",
+        "options": [
+          "In contrast",
+          "Furthermore",
+          "However",
+          "Nevertheless"
+        ],
+        "correctAnswer": "Furthermore",
+        "explanation": "\"Furthermore\" adds an additional reinforcing positive argument."
+      },
+      {
+        "id": "g07-q07",
+        "prompt": "The city suffered severe economic stagnation _________ the closure of its industrial shipyards.",
+        "options": [
+          "because",
+          "since",
+          "owing to",
+          "as"
+        ],
+        "correctAnswer": "owing to",
+        "explanation": "\"Owing to\" is a prepositional phrase followed by a noun phrase (\"the closure...\")."
+      },
+      {
+        "id": "g07-q08",
+        "prompt": "Organic farming yields healthier soil; _________, its crop yields per hectare remain lower.",
+        "options": [
+          "furthermore",
+          "as a result",
+          "for instance",
+          "on the other hand"
+        ],
+        "correctAnswer": "on the other hand",
+        "explanation": "\"On the other hand\" introduces a balanced contrasting trade-off."
+      },
+      {
+        "id": "g07-q09",
+        "prompt": "_________ of strict penalties, industrial factories continued discharging untreated runoff.",
+        "options": [
+          "In spite",
+          "Despite",
+          "Although",
+          "Even though"
+        ],
+        "correctAnswer": "In spite",
+        "explanation": "The full idiomatic phrase is \"In spite of\" (whereas \"Despite\" does not take \"of\")."
+      },
+      {
+        "id": "g07-q10",
+        "prompt": "Regular physical exercise lowers resting blood pressure, _________ reducing cardiovascular risk.",
+        "options": [
+          "whereas",
+          "thereby",
+          "despite",
+          "although"
+        ],
+        "correctAnswer": "thereby",
+        "explanation": "\"Thereby\" followed by an -ing participle (\"thereby reducing\") expresses an immediate causal outcome."
+      }
+    ]
+  },
+  {
+    "id": "gram-08",
+    "title": "Complex Sentences & Subordination",
+    "focus": "Building grammatical range by avoiding strings of simple and coordinate clauses.",
+    "explanation": "Grammatical Range and Accuracy (25% of score) requires candidates to produce a variety of complex structures. Coordinate sentences joined by \"and\" or \"but\" are simple and repetitive. Subordinate sentences created with conjunctions like \"while\", \"although\", \"since\", \"provided that\", and \"inasmuch as\" elevate your syntactic maturity to Band 8 standards.",
+    "bandTips": "Vary the position of your subordinate clause! Instead of always putting \"although\" at the start, place it in the middle or end of sentences.",
+    "exercises": [
+      {
+        "id": "g08-q01",
+        "prompt": "_________ automated algorithms enhance workplace efficiency, they simultaneously displace manual laborers.",
+        "options": [
+          "Because",
+          "Since",
+          "While",
+          "Unless"
+        ],
+        "correctAnswer": "While",
+        "explanation": "\"While\" used concessively (meaning \"although\") introduces a balanced complex subordinate clause."
+      },
+      {
+        "id": "g08-q02",
+        "prompt": "The government should subsidize public transit _________ it reduces vehicular carbon emissions.",
+        "options": [
+          "despite",
+          "unless",
+          "whereas",
+          "inasmuch as"
+        ],
+        "correctAnswer": "inasmuch as",
+        "explanation": "\"Inasmuch as\" is a sophisticated formal academic conjunction meaning \"to the extent that / since\"."
+      },
+      {
+        "id": "g08-q03",
+        "prompt": "Children will develop healthy reading habits, _________ parents model active reading at home.",
+        "options": [
+          "provided that",
+          "although",
+          "unless",
+          "whereas"
+        ],
+        "correctAnswer": "provided that",
+        "explanation": "\"Provided that\" sets a positive necessary condition for the main clause outcome."
+      },
+      {
+        "id": "g08-q04",
+        "prompt": "The unemployment rate dropped, _________ the national economy expanded by 4.2%.",
+        "options": [
+          "despite",
+          "as",
+          "unless",
+          "though"
+        ],
+        "correctAnswer": "as",
+        "explanation": "\"As\" functions here as a causal and temporal conjunction showing simultaneous progression."
+      },
+      {
+        "id": "g08-q05",
+        "prompt": "_________ renewable sources supply the majority of power, fossil fuel backup remains necessary.",
+        "options": [
+          "In spite of",
+          "Due to",
+          "Even though",
+          "Owing to"
+        ],
+        "correctAnswer": "Even though",
+        "explanation": "\"Even though\" is a conjunction followed by a subject and verb clause."
+      },
+      {
+        "id": "g08-q06",
+        "prompt": "The policy was enacted _________ every citizen might enjoy access to primary healthcare.",
+        "options": [
+          "in order",
+          "because of",
+          "despite",
+          "so that"
+        ],
+        "correctAnswer": "so that",
+        "explanation": "\"So that\" introduces a clause of purpose."
+      },
+      {
+        "id": "g08-q07",
+        "prompt": "Urban property values soared _________ municipal green corridors were expanded.",
+        "options": [
+          "after",
+          "despite",
+          "unless",
+          "while as"
+        ],
+        "correctAnswer": "after",
+        "explanation": "\"After\" introduces a temporal subordinate clause establishing chronological sequence."
+      },
+      {
+        "id": "g08-q08",
+        "prompt": "_________ remote work offers flexibility, it can lead to acute professional isolation.",
+        "options": [
+          "In spite",
+          "Much as",
+          "Due to",
+          "Owing to"
+        ],
+        "correctAnswer": "Much as",
+        "explanation": "\"Much as\" is an advanced concessive subordinating conjunction meaning \"even though / although\"."
+      },
+      {
+        "id": "g08-q09",
+        "prompt": "Candidates will not pass the examination _________ they demonstrate critical reasoning.",
+        "options": [
+          "if",
+          "providing",
+          "unless",
+          "because"
+        ],
+        "correctAnswer": "unless",
+        "explanation": "\"Unless\" introduces a negative condition meaning \"except if\"."
+      },
+      {
+        "id": "g08-q10",
+        "prompt": "The project succeeded _________ the research team confronted severe logistical barriers.",
+        "options": [
+          "even if",
+          "in spite",
+          "owing to",
+          "notwithstanding that"
+        ],
+        "correctAnswer": "notwithstanding that",
+        "explanation": "\"Notwithstanding that\" is a formal academic conjunction meaning \"in spite of the fact that\"."
+      }
+    ]
+  },
+  {
+    "id": "gram-09",
+    "title": "Advanced Comparison & Contrast Structures",
+    "focus": "Writing precise mathematical, proportional, and qualitative comparisons in Task 1 and Task 2.",
+    "explanation": "IELTS Writing Task 1 instructions explicitly state: \"make comparisons where relevant\". Band 6 candidates repeat simple comparatives (\"was higher than\", \"was lower than\"). Band 8 candidates employ varied structures: \"three times as high as\", \"outstripped by a margin of\", \"in stark contrast to\", and \"the gap widened/narrowed\".",
+    "bandTips": "Use \"twice as much as\" for uncountable nouns and \"twice as many as\" for countable nouns!",
+    "exercises": [
+      {
+        "id": "g09-q01",
+        "prompt": "In 2020, European electric car sales were roughly three times _________ than North American figures.",
+        "options": [
+          "higher",
+          "more high",
+          "as high",
+          "highest"
+        ],
+        "correctAnswer": "higher",
+        "explanation": "\"Three times higher than\" is a standard multiplier comparative formula."
+      },
+      {
+        "id": "g09-q02",
+        "prompt": "The factory produced twice as _________ units in 2022 as it did in 2015.",
+        "options": [
+          "much",
+          "many",
+          "more",
+          "higher"
+        ],
+        "correctAnswer": "many",
+        "explanation": "\"Units\" is a countable plural noun, requiring \"as many as\"."
+      },
+      {
+        "id": "g09-q03",
+        "prompt": "Expenditure on healthcare was considerably _________ than spending on defense.",
+        "options": [
+          "more great",
+          "greatest",
+          "greater",
+          "as great"
+        ],
+        "correctAnswer": "greater",
+        "explanation": "\"Considerably greater than\" is the correct academic comparative form."
+      },
+      {
+        "id": "g09-q04",
+        "prompt": "China consumed twice as _________ coal as all European nations combined.",
+        "options": [
+          "many",
+          "more",
+          "most",
+          "much"
+        ],
+        "correctAnswer": "much",
+        "explanation": "\"Coal\" is an uncountable resource noun, requiring \"as much as\"."
+      },
+      {
+        "id": "g09-q05",
+        "prompt": "The proportion of urban car owners was _________ to that of rural households.",
+        "options": [
+          "similar",
+          "same",
+          "identically",
+          "similarity"
+        ],
+        "correctAnswer": "similar",
+        "explanation": "The adjective \"similar\" takes the preposition \"to\" (\"similar to that of...\")."
+      },
+      {
+        "id": "g09-q06",
+        "prompt": "The number of male engineering applicants _________ female applicants by four to one.",
+        "options": [
+          "outnumbering",
+          "outnumbered",
+          "outnumbers",
+          "outnumbered by"
+        ],
+        "correctAnswer": "outnumbered",
+        "explanation": "Transitive verb \"outnumbered\" means exceeded in number."
+      },
+      {
+        "id": "g09-q07",
+        "prompt": "In 2018, solar energy output was only a _________ fraction of total power generation.",
+        "options": [
+          "tinier",
+          "tiniest",
+          "tiny",
+          "more tiny"
+        ],
+        "correctAnswer": "tiny",
+        "explanation": "\"A tiny fraction of\" is a natural descriptive collocation."
+      },
+      {
+        "id": "g09-q08",
+        "prompt": "The disparity between rich and poor households was far _________ pronounced in 2020.",
+        "options": [
+          "most",
+          "much",
+          "many",
+          "more"
+        ],
+        "correctAnswer": "more",
+        "explanation": "\"Far more pronounced\" uses the intensifying adverb \"far\" before comparative \"more pronounced\"."
+      },
+      {
+        "id": "g09-q09",
+        "prompt": "By contrast, household savings rates in country B were _________ lower.",
+        "options": [
+          "marginally",
+          "marginal",
+          "margin",
+          "marginalize"
+        ],
+        "correctAnswer": "marginally",
+        "explanation": "Adverb \"marginally\" modifies the comparative adjective \"lower\"."
+      },
+      {
+        "id": "g09-q10",
+        "prompt": "The gap between the two indicators _________ noticeably over the decade.",
+        "options": [
+          "wide",
+          "widened",
+          "widening",
+          "widen"
+        ],
+        "correctAnswer": "widened",
+        "explanation": "Past simple verb \"widened\" describes the expanding distance between two statistical trends."
+      }
+    ]
+  },
+  {
+    "id": "gram-10",
+    "title": "Modals of Deduction, Ability & Academic Hedging",
+    "focus": "Using may, might, could, and modal passives to avoid dogmatic over-generalizations.",
+    "explanation": "Academic writing avoids absolute statements. Writing \"Social media causes teenage depression\" is dogmatic and unscientific. Using modal hedging: \"Social media may contribute to adolescent anxiety\" or \"This policy could arguably reduce congestion\" demonstrates the nuanced objectivity examiners look for at Bands 7 and 8.",
+    "bandTips": "Use \"arguably\" and \"could potentially\" to soften assertions without weakening your core thesis.",
+    "exercises": [
+      {
+        "id": "g10-q01",
+        "prompt": "Excessive smartphone usage _________ impair adolescent concentration over prolonged periods.",
+        "options": [
+          "must to",
+          "will definitely",
+          "may",
+          "shall"
+        ],
+        "correctAnswer": "may",
+        "explanation": "Modal \"may\" expresses a scientifically measured, plausible academic likelihood."
+      },
+      {
+        "id": "g10-q02",
+        "prompt": "Introducing congestion charges _________ arguably alleviate peak-hour traffic gridlock.",
+        "options": [
+          "should to",
+          "must have",
+          "can to",
+          "could"
+        ],
+        "correctAnswer": "could",
+        "explanation": "Modal \"could\" paired with the adverb \"arguably\" provides balanced academic hedging."
+      },
+      {
+        "id": "g10-q03",
+        "prompt": "Stricter industrial emission caps _________ be enforced by international maritime authorities.",
+        "options": [
+          "must",
+          "ought",
+          "can to",
+          "have"
+        ],
+        "correctAnswer": "must",
+        "explanation": "\"Must be enforced\" conveys strong normative recommendation."
+      },
+      {
+        "id": "g10-q04",
+        "prompt": "The sharp drop in retail sales _________ have been triggered by the nationwide transit strike.",
+        "options": [
+          "should",
+          "might",
+          "would",
+          "shall"
+        ],
+        "correctAnswer": "might",
+        "explanation": "Modal of past deduction \"might have been triggered\" proposes a plausible explanation."
+      },
+      {
+        "id": "g10-q05",
+        "prompt": "Without state intervention, vulnerable demographics _________ face acute energy poverty.",
+        "options": [
+          "will to",
+          "must to",
+          "would inevitably",
+          "can inevitably"
+        ],
+        "correctAnswer": "would inevitably",
+        "explanation": "\"Would inevitably\" expresses a logical conditional deduction."
+      },
+      {
+        "id": "g10-q06",
+        "prompt": "Early childhood language immersion _________ foster greater cognitive neuroplasticity.",
+        "options": [
+          "believed to",
+          "is believe to",
+          "believes to",
+          "is believed to"
+        ],
+        "correctAnswer": "is believed to",
+        "explanation": "Passive reporting modal \"is believed to foster\" provides objective attribution."
+      },
+      {
+        "id": "g10-q07",
+        "prompt": "Citizens _________ not be compelled to forfeit their privacy in the name of corporate surveillance.",
+        "options": [
+          "should",
+          "ought",
+          "have",
+          "need"
+        ],
+        "correctAnswer": "should",
+        "explanation": "Modal \"should not be compelled\" expresses an ethical moral judgment."
+      },
+      {
+        "id": "g10-q08",
+        "prompt": "The initial laboratory data _________ indicate a promising breakthrough in vaccine design.",
+        "options": [
+          "is appeared to",
+          "would appear to",
+          "appears to be",
+          "appearing to"
+        ],
+        "correctAnswer": "would appear to",
+        "explanation": "Hedging formula \"would appear to indicate\" avoids hasty scientific overstatement."
+      },
+      {
+        "id": "g10-q09",
+        "prompt": "Governments _________ prioritize healthcare expenditure over defense subsidies.",
+        "options": [
+          "ought",
+          "must to",
+          "ought to",
+          "should to"
+        ],
+        "correctAnswer": "ought to",
+        "explanation": "Modal \"ought\" must be accompanied by the infinitive marker \"to\" (\"ought to prioritize\")."
+      },
+      {
+        "id": "g10-q10",
+        "prompt": "Automated chatbots _________ replace the emotional empathy provided by human counselors.",
+        "options": [
+          "could not to",
+          "must not to",
+          "should to not",
+          "cannot"
+        ],
+        "correctAnswer": "cannot",
+        "explanation": "Modal of impossibility \"cannot replace\" refutes a technological claim."
+      }
+    ]
+  },
+  {
+    "id": "gram-11",
+    "title": "Subject-Verb Agreement & Uncountable Nouns",
+    "focus": "Eliminating singular/plural mismatches with words like information, equipment, research, and data.",
+    "explanation": "Subject-verb agreement slips undermine Grammatical Accuracy. Crucially, high-frequency IELTS academic nouns such as \"information\", \"research\", \"equipment\", \"advice\", \"machinery\", and \"traffic\" are uncountable in English. They never take an \"s\" and always take a singular verb (e.g., \"The research reveals\", NOT \"The researches reveal\").",
+    "bandTips": "Never write \"informations\" or \"advices\". Use \"pieces of information\" or \"pieces of advice\" if you need countability.",
+    "exercises": [
+      {
+        "id": "g11-q01",
+        "prompt": "Recent empirical research _________ that bilingualism boosts executive cognitive control.",
+        "options": [
+          "demonstrates",
+          "demonstrate",
+          "are demonstrating",
+          "have demonstrated"
+        ],
+        "correctAnswer": "demonstrates",
+        "explanation": "\"Research\" is uncountable singular, requiring the third-person singular verb \"demonstrates\"."
+      },
+      {
+        "id": "g11-q02",
+        "prompt": "The information provided in the municipal reports _________ inconclusive.",
+        "options": [
+          "were",
+          "was",
+          "are",
+          "have been"
+        ],
+        "correctAnswer": "was",
+        "explanation": "\"Information\" is uncountable and takes singular \"was\", not plural \"were\"."
+      },
+      {
+        "id": "g11-q03",
+        "prompt": "New laboratory equipment _________ installed to expedite chemical sample analysis.",
+        "options": [
+          "have been",
+          "are",
+          "has been",
+          "were"
+        ],
+        "correctAnswer": "has been",
+        "explanation": "\"Equipment\" is uncountable, so singular present perfect passive \"has been installed\" is correct."
+      },
+      {
+        "id": "g11-q04",
+        "prompt": "The percentage of students who passed the examination _________ risen to 85%.",
+        "options": [
+          "have",
+          "are",
+          "were",
+          "has"
+        ],
+        "correctAnswer": "has",
+        "explanation": "\"The percentage\" takes a singular verb (\"has risen\"), unlike \"A percentage of students have...\"."
+      },
+      {
+        "id": "g11-q05",
+        "prompt": "A large number of citizens _________ dissatisfied with public transportation delays.",
+        "options": [
+          "are",
+          "is",
+          "was",
+          "has been"
+        ],
+        "correctAnswer": "are",
+        "explanation": "\"A number of + plural noun\" takes a plural verb (\"are dissatisfied\")."
+      },
+      {
+        "id": "g11-q06",
+        "prompt": "Neither the school principal nor the teachers _________ informed about the sudden curriculum change.",
+        "options": [
+          "was",
+          "were",
+          "is",
+          "has been"
+        ],
+        "correctAnswer": "were",
+        "explanation": "In \"neither... nor...\", the verb agrees with the closer subject (\"the teachers\" -> were)."
+      },
+      {
+        "id": "g11-q07",
+        "prompt": "Heavy vehicular traffic _________ chronic congestion during peak morning hours.",
+        "options": [
+          "cause",
+          "are causing",
+          "causes",
+          "have caused"
+        ],
+        "correctAnswer": "causes",
+        "explanation": "\"Traffic\" is an uncountable singular noun, requiring \"causes\"."
+      },
+      {
+        "id": "g11-q08",
+        "prompt": "Each of the participants _________ a comprehensive consent form prior to the interview.",
+        "options": [
+          "sign",
+          "were signing",
+          "have signed",
+          "signed"
+        ],
+        "correctAnswer": "signed",
+        "explanation": "\"Each of + plural noun\" takes a singular grammatical verb."
+      },
+      {
+        "id": "g11-q09",
+        "prompt": "Physics _________ among the most demanding academic disciplines at university.",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "have been"
+        ],
+        "correctAnswer": "is",
+        "explanation": "Academic subjects ending in -s (physics, economics, mathematics) are singular."
+      },
+      {
+        "id": "g11-q10",
+        "prompt": "Every citizen _________ the right to petition the municipal council.",
+        "options": [
+          "have",
+          "has",
+          "are having",
+          "were having"
+        ],
+        "correctAnswer": "has",
+        "explanation": "\"Every\" precedes singular countable nouns and takes singular verb \"has\"."
+      }
+    ]
+  },
+  {
+    "id": "gram-12",
+    "title": "Inversion for Dramatic Emphasis in Band 8+ Essays",
+    "focus": "Using negative and limiting adverbs at the sentence front (Rarely, Seldom, Not only).",
+    "explanation": "Grammatical inversion reverses the normal subject-verb order (auxiliary verb + subject + main verb) when a negative or restrictive adverb begins a sentence. Instead of writing \"Governments rarely invest in prevention\", an inverted Band 8 version reads: \"Rarely do governments invest in prevention\". This demonstrates full grammatical flexibility under the IELTS criteria.",
+    "bandTips": "Use inversion sparingly—once or twice per essay—for maximum dramatic impact. E.g. \"Not only does renewable energy curb emissions, but it also creates green jobs.\"",
+    "exercises": [
+      {
+        "id": "g12-q01",
+        "prompt": "Not only _________ carbon emissions, but it also creates sustainable employment.",
+        "options": [
+          "renewable energy reduces",
+          "is renewable energy reducing",
+          "does renewable energy reduce",
+          "renewable energy reduce"
+        ],
+        "correctAnswer": "does renewable energy reduce",
+        "explanation": "Negative inversion: \"Not only + auxiliary (does) + subject (renewable energy) + bare verb (reduce)\"."
+      },
+      {
+        "id": "g12-q02",
+        "prompt": "Rarely _________ an economic policy achieved such unanimous parliamentary support.",
+        "options": [
+          "have",
+          "is",
+          "was",
+          "has"
+        ],
+        "correctAnswer": "has",
+        "explanation": "Inverted present perfect: \"Rarely + auxiliary has + subject (an economic policy) + past participle (achieved)\"."
+      },
+      {
+        "id": "g12-q03",
+        "prompt": "Seldom _________ international delegates reach a consensus on climate quotas so quickly.",
+        "options": [
+          "do",
+          "does",
+          "are",
+          "is"
+        ],
+        "correctAnswer": "do",
+        "explanation": "Plural subject \"international delegates\" takes auxiliary \"do\": \"Seldom do international delegates reach...\"."
+      },
+      {
+        "id": "g12-q04",
+        "prompt": "Under no circumstances _________ hazardous chemical waste be dumped into public waterways.",
+        "options": [
+          "ought",
+          "should",
+          "must to",
+          "could to"
+        ],
+        "correctAnswer": "should",
+        "explanation": "Prepositional negative inversion: \"Under no circumstances should + subject + be dumped\"."
+      },
+      {
+        "id": "g12-q05",
+        "prompt": "Only when municipal authorities intervene _________ public transit become truly efficient.",
+        "options": [
+          "it will",
+          "is",
+          "will",
+          "did it"
+        ],
+        "correctAnswer": "will",
+        "explanation": "Inversion occurs in the main clause following \"Only when...\": \"will public transit become\"."
+      },
+      {
+        "id": "g12-q06",
+        "prompt": "Little _________ that the industrial revolution would alter planetary atmospheric chemistry.",
+        "options": [
+          "early scientists realized",
+          "have early scientists realized",
+          "do early scientists realize",
+          "did early scientists realize"
+        ],
+        "correctAnswer": "did early scientists realize",
+        "explanation": "Past tense inversion: \"Little did + subject + bare infinitive\"."
+      },
+      {
+        "id": "g12-q07",
+        "prompt": "Scarcely _________ the new subway station opened when ridership surpassed all initial forecasts.",
+        "options": [
+          "had",
+          "has",
+          "did",
+          "was"
+        ],
+        "correctAnswer": "had",
+        "explanation": "Formula: \"Scarcely had + subject + past participle + when...\"."
+      },
+      {
+        "id": "g12-q08",
+        "prompt": "Not until the late 20th century _________ public health officials recognize the hazards of lead pipes.",
+        "options": [
+          "have",
+          "did",
+          "do",
+          "had"
+        ],
+        "correctAnswer": "did",
+        "explanation": "\"Not until + past time + auxiliary did + subject + verb\"."
+      },
+      {
+        "id": "g12-q09",
+        "prompt": "On no account _________ students be allowed into laboratory facilities without protective eyewear.",
+        "options": [
+          "should to",
+          "must to",
+          "may",
+          "are to"
+        ],
+        "correctAnswer": "may",
+        "explanation": "Inverted modal expression of prohibition: \"On no account may students be allowed...\"."
+      },
+      {
+        "id": "g12-q10",
+        "prompt": "Never before _________ humanity confronted such an interconnected ecological challenge.",
+        "options": [
+          "have",
+          "is",
+          "was",
+          "has"
+        ],
+        "correctAnswer": "has",
+        "explanation": "Collective singular noun \"humanity\" takes \"has\": \"Never before has humanity confronted...\"."
+      }
+    ]
+  },
+  {
+    "id": "gram-13",
+    "title": "Participle Clauses (-ing and -ed clauses) for Syntactic Elegance",
+    "focus": "Compressing complex ideas into smooth, fluent participial introductory phrases.",
+    "explanation": "Participle clauses allow you to express cause, result, and condition concisely without clunky coordinating conjunctions. Present participle (-ing) clauses indicate active simultaneous or causal actions (e.g. \"Recognizing the danger of climate change, governments signed the treaty\"). Past participle (-ed) clauses express passive conditions (e.g. \"Supported by empirical research, the hypothesis gained credibility\").",
+    "bandTips": "Watch out for \"dangling participles\"! The subject of the participle clause must match the subject of the main clause.",
+    "exercises": [
+      {
+        "id": "g13-q01",
+        "prompt": "_________ by extensive empirical trials, the novel vaccine was approved by health regulators.",
+        "options": [
+          "Supported",
+          "Supporting",
+          "Having supported",
+          "Support"
+        ],
+        "correctAnswer": "Supported",
+        "explanation": "Past participle clause (\"Supported by...\") expresses a passive condition modifying \"the novel vaccine\"."
+      },
+      {
+        "id": "g13-q02",
+        "prompt": "_________ the acute dangers of air pollution, municipal councils banned diesel vehicles from downtown.",
+        "options": [
+          "Recognized",
+          "Recognizing",
+          "Having recognized",
+          "To recognize"
+        ],
+        "correctAnswer": "Recognizing",
+        "explanation": "Active present participle (-ing) expresses the reason for the council’s subsequent action."
+      },
+      {
+        "id": "g13-q03",
+        "prompt": "Subterranean transit tunnels expanded rapidly, _________ road congestion across the central district.",
+        "options": [
+          "relieved",
+          "having relieved",
+          "relieving",
+          "to relieve"
+        ],
+        "correctAnswer": "relieving",
+        "explanation": "Result participle clause: \", relieving road congestion\" shows the immediate positive consequence."
+      },
+      {
+        "id": "g13-q04",
+        "prompt": "_________ from ancient limestone quarries, the cathedral bricks exhibit remarkable durability.",
+        "options": [
+          "Harvesting",
+          "To harvest",
+          "Harvest",
+          "Harvested"
+        ],
+        "correctAnswer": "Harvested",
+        "explanation": "Passive past participle modifying \"the cathedral bricks\"."
+      },
+      {
+        "id": "g13-q05",
+        "prompt": "Having _________ the primary data sets, the economists drafted their final policy brief.",
+        "options": [
+          "compiled",
+          "compiling",
+          "compile",
+          "compiles"
+        ],
+        "correctAnswer": "compiled",
+        "explanation": "Perfect participle clause \"Having compiled\" emphasizes that the data compilation preceded drafting."
+      },
+      {
+        "id": "g13-q06",
+        "prompt": "Renewable energy adoption grew by 45%, _________ previous historic records.",
+        "options": [
+          "eclipsed",
+          "eclipsing",
+          "to eclipse",
+          "eclipse"
+        ],
+        "correctAnswer": "eclipsing",
+        "explanation": "Active -ing participle clause indicating result."
+      },
+      {
+        "id": "g13-q07",
+        "prompt": "_________ with severe budgetary deficits, the city was forced to scale back cultural subsidies.",
+        "options": [
+          "Facing",
+          "Face",
+          "Faced",
+          "To face"
+        ],
+        "correctAnswer": "Faced",
+        "explanation": "Passive past participle: \"Faced with severe budgetary deficits...\"."
+      },
+      {
+        "id": "g13-q08",
+        "prompt": "_________ under rigorous peer scrutiny, the theoretical model gained widespread acceptance.",
+        "options": [
+          "Testing",
+          "Test",
+          "To test",
+          "Tested"
+        ],
+        "correctAnswer": "Tested",
+        "explanation": "Passive participle clause modifying \"the theoretical model\"."
+      },
+      {
+        "id": "g13-q09",
+        "prompt": "The government introduced congestion pricing, _________ commuters to adopt public transit.",
+        "options": [
+          "prompting",
+          "prompted",
+          "prompts",
+          "to prompt"
+        ],
+        "correctAnswer": "prompting",
+        "explanation": "Active causal participle clause: \", prompting commuters to adopt...\"."
+      },
+      {
+        "id": "g13-q10",
+        "prompt": "_________ in pristine alpine forests, the mountain lake remains completely unpolluted.",
+        "options": [
+          "Nestling",
+          "Nestled",
+          "Nestle",
+          "To nestle"
+        ],
+        "correctAnswer": "Nestled",
+        "explanation": "Past participle describing the serene geographical location of the lake."
+      }
+    ]
+  },
+  {
+    "id": "gram-14",
+    "title": "Nominalisation: Elevating Informal Verbs to Formal Academic Nouns",
+    "focus": "Converting conversational actions into dense, high-register academic concepts.",
+    "explanation": "Nominalisation is the process of turning verbs and adjectives into nouns. It is the hallmark of advanced Academic IELTS prose. Informal writers write: \"Because people are cutting down forests, animals are disappearing.\" An academic Band 8 writer nominalises the sentence: \"Deforestation is precipitating severe biodiversity loss.\" Nominalisation condenses arguments and creates an objective, scholarly register.",
+    "bandTips": "Convert \"People are destroying nature because cities are expanding\" into \"Urban expansion drives environmental destruction.\"",
+    "exercises": [
+      {
+        "id": "g14-q01",
+        "prompt": "The rapid _________ of metropolitan centers has placed immense strain on transit networks.",
+        "options": [
+          "expanding",
+          "expand",
+          "expansion",
+          "expanded"
+        ],
+        "correctAnswer": "expansion",
+        "explanation": "Nominalized noun form \"expansion\" replaces informal \"the way cities expand\"."
+      },
+      {
+        "id": "g14-q02",
+        "prompt": "Industrial _________ of toxic runoff threatens freshwater ecosystems.",
+        "options": [
+          "discharging",
+          "discharged",
+          "discharges",
+          "discharge"
+        ],
+        "correctAnswer": "discharge",
+        "explanation": "Nominalized noun \"discharge\" creates a concise formal academic structure."
+      },
+      {
+        "id": "g14-q03",
+        "prompt": "The _________ of corporate carbon emissions is essential for achieving net-zero targets.",
+        "options": [
+          "reduction",
+          "reducing",
+          "reduce",
+          "reduced"
+        ],
+        "correctAnswer": "reduction",
+        "explanation": "The abstract noun \"reduction\" formalizes \"reducing\"."
+      },
+      {
+        "id": "g14-q04",
+        "prompt": "Excessive reliance on synthetic fertilizers accelerates soil _________.",
+        "options": [
+          "degrading",
+          "degradation",
+          "degrade",
+          "degraded"
+        ],
+        "correctAnswer": "degradation",
+        "explanation": "Nominalized noun \"degradation\" replaces \"the soil degrades\"."
+      },
+      {
+        "id": "g14-q05",
+        "prompt": "The _________ of automated checkouts eliminated thousands of retail jobs.",
+        "options": [
+          "proliferating",
+          "proliferate",
+          "proliferation",
+          "proliferated"
+        ],
+        "correctAnswer": "proliferation",
+        "explanation": "Nominalized noun \"proliferation\" expresses rapid multiplication."
+      },
+      {
+        "id": "g14-q06",
+        "prompt": "Public health campaigns emphasize the _________ of pediatric obesity.",
+        "options": [
+          "preventing",
+          "prevent",
+          "prevented",
+          "prevention"
+        ],
+        "correctAnswer": "prevention",
+        "explanation": "Nominalized noun \"prevention\" formalizes \"how to prevent\"."
+      },
+      {
+        "id": "g14-q07",
+        "prompt": "The _________ of renewable energy subsidies provoked widespread political debate.",
+        "options": [
+          "cancellation",
+          "cancelling",
+          "cancel",
+          "cancelled"
+        ],
+        "correctAnswer": "cancellation",
+        "explanation": "Nominalized noun \"cancellation\" replaces informal \"canceling the subsidies\"."
+      },
+      {
+        "id": "g14-q08",
+        "prompt": "Bilingual education promotes cognitive _________ in young learners.",
+        "options": [
+          "flexible",
+          "flexibility",
+          "flexibly",
+          "flex"
+        ],
+        "correctAnswer": "flexibility",
+        "explanation": "Abstract noun \"flexibility\" nominalizes the adjective \"flexible\"."
+      },
+      {
+        "id": "g14-q09",
+        "prompt": "The _________ of historical archives preserves cultural memory.",
+        "options": [
+          "digitalize",
+          "digitalizing",
+          "digitalization",
+          "digitalized"
+        ],
+        "correctAnswer": "digitalization",
+        "explanation": "Technical academic nominalization: \"digitalization\"."
+      },
+      {
+        "id": "g14-q10",
+        "prompt": "The _________ of endangered species from national parks has disrupted the food chain.",
+        "options": [
+          "disappearing",
+          "disappear",
+          "disappeared",
+          "disappearance"
+        ],
+        "correctAnswer": "disappearance",
+        "explanation": "Nominalized noun \"disappearance\" replaces \"species are disappearing\"."
+      }
+    ]
+  },
+  {
+    "id": "gram-15",
+    "title": "Cleft Sentences & Focusing Structures (It is... that, What... is)",
+    "focus": "Highlighting crucial arguments with stylistic cleft structures in Task 2.",
+    "explanation": "Cleft sentences split a single clause into two parts to place intense rhetorical emphasis on a key element. An \"It-cleft\" takes the form: [It + be + emphasized element + that/who + clause] (e.g. \"It is government regulation that generates systemic change, not individual choices\"). A \"Wh-cleft\" takes the form: [What + clause + is + emphasized point] (e.g. \"What is urgently required is decisive multilateral leadership\").",
+    "bandTips": "Use an It-cleft in your Task 2 body paragraph topic sentence to sharply emphasize the decisive factor.",
+    "exercises": [
+      {
+        "id": "g15-q01",
+        "prompt": "It is systemic corporate regulation, not individual consumer choice, _________ drives lasting carbon reduction.",
+        "options": [
+          "that",
+          "which",
+          "who",
+          "what"
+        ],
+        "correctAnswer": "that",
+        "explanation": "Standard \"It-cleft\" focusing structure requires \"that\": \"It is [focused element] that [clause]\"."
+      },
+      {
+        "id": "g15-q02",
+        "prompt": "What is urgently required _________ decisive multilateral intervention to protect global biodiversity.",
+        "options": [
+          "are",
+          "is",
+          "was",
+          "were"
+        ],
+        "correctAnswer": "is",
+        "explanation": "A Wh-cleft clause (\"What is urgently required...\") functions as a singular noun clause taking singular \"is\"."
+      },
+      {
+        "id": "g15-q03",
+        "prompt": "It was the rapid proliferation of smartphones _________ fundamentally reshaped adolescent socializing.",
+        "options": [
+          "which",
+          "what",
+          "that",
+          "whose"
+        ],
+        "correctAnswer": "that",
+        "explanation": "Past It-cleft: \"It was [noun phrase] that [clause]\"."
+      },
+      {
+        "id": "g15-q04",
+        "prompt": "What children need most from educators _________ empathetic pastoral guidance, not mechanical drills.",
+        "options": [
+          "are",
+          "was",
+          "were",
+          "is"
+        ],
+        "correctAnswer": "is",
+        "explanation": "Wh-cleft subject \"What children need most\" takes singular verb \"is\"."
+      },
+      {
+        "id": "g15-q05",
+        "prompt": "It is precisely in times of socioeconomic crisis _________ strong public healthcare proves indispensable.",
+        "options": [
+          "that",
+          "which",
+          "where",
+          "when"
+        ],
+        "correctAnswer": "that",
+        "explanation": "Cleft sentence emphasizing a prepositional circumstance takes \"that\": \"It is in times of crisis that...\"."
+      },
+      {
+        "id": "g15-q06",
+        "prompt": "What distinguishes exceptional public speakers _________ their capacity for authentic emotional empathy.",
+        "options": [
+          "are",
+          "is",
+          "was",
+          "being"
+        ],
+        "correctAnswer": "is",
+        "explanation": "Singular verb \"is\" links the Wh-cleft clause to the complement."
+      },
+      {
+        "id": "g15-q07",
+        "prompt": "It was through relentless perseverance _________ the research team successfully decoded the genome.",
+        "options": [
+          "which",
+          "who",
+          "that",
+          "what"
+        ],
+        "correctAnswer": "that",
+        "explanation": "\"It was through perseverance that...\" emphasizes the method."
+      },
+      {
+        "id": "g15-q08",
+        "prompt": "What many critics fail to recognize _________ that automation also generates high-skill engineering roles.",
+        "options": [
+          "are",
+          "was",
+          "were",
+          "is"
+        ],
+        "correctAnswer": "is",
+        "explanation": "Singular Wh-cleft: \"What critics fail to recognize is that...\"."
+      },
+      {
+        "id": "g15-q09",
+        "prompt": "It is parents _________ exert the most enduring formative influence on early childhood ethics.",
+        "options": [
+          "who",
+          "which",
+          "what",
+          "whom"
+        ],
+        "correctAnswer": "who",
+        "explanation": "When an It-cleft focuses on human subjects (\"parents\"), \"who\" or \"that\" is appropriate."
+      },
+      {
+        "id": "g15-q10",
+        "prompt": "What makes open-access journals so vital _________ their elimination of financial paywalls.",
+        "options": [
+          "are",
+          "is",
+          "was",
+          "were"
+        ],
+        "correctAnswer": "is",
+        "explanation": "Wh-cleft focusing on a defining characteristic takes singular \"is\"."
+      }
+    ]
+  }
+]

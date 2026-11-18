@@ -1,0 +1,633 @@
+import fs from 'fs';
+import path from 'path';
+
+const readingTest08 = {
+  id: "acad-reading-08",
+  title: "Academic Reading Practice Test 8",
+  testType: "academic",
+  difficulty: "hard",
+  timeLimitMinutes: 60,
+  passages: [
+    {
+      passageNumber: 1,
+      title: "Cryospheric Geomorphology and Thawing Arctic Permafrost",
+      subtitle: "The Structural Destabilization of High-Latitude Landscapes Under Accelerated Warming",
+      text: `Paragraph A
+Spanning nearly twenty-four percent of the terrestrial land surface in the Northern Hemisphere, permafrost is defined cryospherically as ground—soil, sediment, or bedrock—that remains continuously at or below zero degrees Celsius for at least two consecutive years. In continuous permafrost zones across Siberia, northern Canada, and the Alaskan interior, this frozen subterranean strata extends downwards for hundreds of meters. Historically, permafrost acted as a stable geological foundation, anchoring terrain and sequestering roughly one thousand four hundred billion metric tons of organic carbon—nearly double the quantity of carbon currently circulating in Earth's entire atmosphere.
+
+Paragraph B
+However, with the Arctic warming at nearly four times the global rate—a phenomenon known as Arctic amplification—the thermal equilibrium of this cryospheric realm is fracturing. As annual summer temperatures penetrate deeper into the subsurface, the seasonally thawed surface layer, termed the active layer, is expanding downward. This deep thawing triggers widespread thermokarst development: the collapse and subsidence of ground caused by the melting of massive subterranean wedge ice. Where polygonal ice wedges melt, stable tundra collapses into saturated sinkholes, swampy bogs, and expanding thermokarst thaw lakes.
+
+Paragraph C
+On sloping terrain, this loss of cryogenic cohesion induces dramatic morphological failure in the form of retrogressive thaw slumps. These are massive, horseshoe-shaped amphitheater excavations where exposed cliff faces of rich ice-bearing permafrost thaw rapidly under solar radiation, slumping thousands of cubic meters of muddy slurry down mountainsides into river valleys. In northwestern Canada's Peel River watershed, retrogressive thaw slumps have increased tenfold over the past three decades. The resulting sediment plumes inundate pristine salmon-spawning gravels with choking mineral silt and mobilize ancient heavy metals like toxic methylmercury into indigenous food webs.
+
+Paragraph D
+Compounding the geomorphic devastation is the permafrost carbon feedback loop. Locked within frozen permafrost are Pleistocene-era plant and animal remains, preserved in anoxic cryogenic stasis for millennia. As this organic matrix thaws, subterranean soil microbes metabolize the organic carbon. Under well-drained, aerobic conditions, microbial decomposition yields carbon dioxide. However, within waterlogged, anoxic thermokarst lakes, methanogenic archaea digest the sludge, releasing potent methane gas—a greenhouse gas with a global warming potential nearly eighty times greater than carbon dioxide over a twenty-year horizon.
+
+Paragraph E
+Finally, thawing permafrost imposes an acute infrastructural and economic crisis across polar settlements. Engineered structures—including airport runways, petrochemical pipelines, municipal water conduits, and multi-story foundations—were constructed on the engineering premise that permafrost was immutable bedrock. As the supporting permafrost transitions into muddy, load-incompetent silt, buildings crack, pipeline pylons heave and buckle, and roads develop rollercoaster-like undulating collapses. In response, geotechnical engineers are retrofitting critical foundations with thermosiphons: closed two-phase fluid pipes that passively extract subterranean geothermal heat and radiate it into winter air, artificially freezing the ground beneath structural footings to prevent catastrophic structural failure.`,
+      wordCount: 850,
+      questionGroups: [
+        {
+          groupInstruction: "Do the following statements agree with the information given in Reading Passage 1? In boxes 1–7 on your answer sheet, write:\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+          questionType: "true_false_not_given",
+          questions: [
+            {
+              id: "a8-q1",
+              questionNumber: 1,
+              type: "true_false_not_given",
+              topic: "geology",
+              estimatedBand: 7.0,
+              prompt: "Permafrost is defined as ground that remains frozen for at least twelve consecutive months.",
+              correctAnswer: "FALSE",
+              explanation: "Paragraph A defines permafrost as ground that remains continuously at or below zero Celsius for at least two consecutive years.",
+              evidence: "remains continuously at or below zero degrees Celsius for at least two consecutive years."
+            },
+            {
+              id: "a8-q2",
+              questionNumber: 2,
+              type: "true_false_not_given",
+              topic: "climatology",
+              estimatedBand: 7.0,
+              prompt: "Arctic permafrost contains approximately twice as much carbon as Earth's atmosphere.",
+              correctAnswer: "TRUE",
+              explanation: "Paragraph A states permafrost sequesters roughly 1,400 billion metric tons of carbon—nearly double atmospheric carbon.",
+              evidence: "sequestering roughly one thousand four hundred billion metric tons of organic carbon—nearly double the quantity of carbon currently circulating in Earth's entire atmosphere."
+            },
+            {
+              id: "a8-q3",
+              questionNumber: 3,
+              type: "true_false_not_given",
+              topic: "geomorphology",
+              estimatedBand: 7.5,
+              prompt: "Thermokarst sinkholes and thaw lakes are caused by the melting of subsurface ice wedges.",
+              correctAnswer: "TRUE",
+              explanation: "Paragraph B explains thermokarst is caused by the melting of massive subterranean wedge ice.",
+              evidence: "collapse and subsidence of ground caused by the melting of massive subterranean wedge ice."
+            },
+            {
+              id: "a8-q4",
+              questionNumber: 4,
+              type: "true_false_not_given",
+              topic: "geology",
+              estimatedBand: 7.5,
+              prompt: "Retrogressive thaw slumps occur only on completely flat ground.",
+              correctAnswer: "FALSE",
+              explanation: "Paragraph C notes that 'On sloping terrain, this loss of cryogenic cohesion induces dramatic morphological failure in the form of retrogressive thaw slumps.'",
+              evidence: "On sloping terrain, this loss of cryogenic cohesion induces dramatic morphological failure in the form of retrogressive thaw slumps."
+            },
+            {
+              id: "a8-q5",
+              questionNumber: 5,
+              type: "true_false_not_given",
+              topic: "environment",
+              estimatedBand: 8.0,
+              prompt: "Sediment runoff from thaw slumps in the Peel River has drastically lowered commercial fishing profits.",
+              correctAnswer: "NOT GIVEN",
+              explanation: "Paragraph C mentions sediment plumes in the Peel River inundating salmon gravels, but makes no mention of commercial fishing financial profits.",
+              evidence: "resulting sediment plumes inundate pristine salmon-spawning gravels with choking mineral silt and mobilize ancient heavy metals"
+            },
+            {
+              id: "a8-q6",
+              questionNumber: 6,
+              type: "true_false_not_given",
+              topic: "chemistry",
+              estimatedBand: 7.5,
+              prompt: "Methane gas is released when permafrost decomposes in well-drained, aerobic conditions.",
+              correctAnswer: "FALSE",
+              explanation: "Paragraph D states aerobic decomposition yields carbon dioxide, whereas anoxic conditions in waterlogged lakes release methane.",
+              evidence: "Under well-drained, aerobic conditions, microbial decomposition yields carbon dioxide. However, within waterlogged, anoxic thermokarst lakes, methanogenic archaea digest the sludge, releasing potent methane gas"
+            },
+            {
+              id: "a8-q7",
+              questionNumber: 7,
+              type: "true_false_not_given",
+              topic: "engineering",
+              estimatedBand: 7.5,
+              prompt: "Thermosiphons function by extracting subterranean heat and dispersing it into the cold air.",
+              correctAnswer: "TRUE",
+              explanation: "Paragraph E describes thermosiphons as closed pipes that extract geothermal heat and radiate it into winter air.",
+              evidence: "closed two-phase fluid pipes that passively extract subterranean geothermal heat and radiate it into winter air"
+            }
+          ]
+        },
+        {
+          groupInstruction: "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 8–13 on your answer sheet.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "a8-q8",
+              questionNumber: 8,
+              type: "sentence_completion",
+              topic: "climatology",
+              estimatedBand: 7.0,
+              prompt: "The accelerated rate of temperature increase in polar regions is called Arctic ____.",
+              correctAnswer: "amplification",
+              explanation: "Paragraph B refers to warming at nearly four times the global rate as 'Arctic amplification'.",
+              evidence: "warming at nearly four times the global rate—a phenomenon known as Arctic amplification"
+            },
+            {
+              id: "a8-q9",
+              questionNumber: 9,
+              type: "sentence_completion",
+              topic: "geology",
+              estimatedBand: 7.0,
+              prompt: "The topmost layer of permafrost that thaws annually in summer is termed the ____ layer.",
+              correctAnswer: "active",
+              explanation: "Paragraph B refers to the 'active layer' expanding downward.",
+              evidence: "seasonally thawed surface layer, termed the active layer, is expanding downward."
+            },
+            {
+              id: "a8-q10",
+              questionNumber: 10,
+              type: "sentence_completion",
+              topic: "geomorphology",
+              estimatedBand: 7.5,
+              prompt: "Slumps release mud and wash ancient toxic ____ into indigenous food chains.",
+              correctAnswer: "methylmercury",
+              explanation: "Paragraph C mentions mobilizing ancient heavy metals like toxic methylmercury.",
+              evidence: "mobilize ancient heavy metals like toxic methylmercury into indigenous food webs."
+            },
+            {
+              id: "a8-q11",
+              questionNumber: 11,
+              type: "sentence_completion",
+              topic: "biology",
+              estimatedBand: 8.0,
+              prompt: "Methane in waterlogged lakes is generated by specialized microbes called methanogenic ____.",
+              correctAnswer: "archaea",
+              explanation: "Paragraph D states methanogenic archaea digest the sludge.",
+              evidence: "within waterlogged, anoxic thermokarst lakes, methanogenic archaea digest the sludge"
+            },
+            {
+              id: "a8-q12",
+              questionNumber: 12,
+              type: "sentence_completion",
+              topic: "engineering",
+              estimatedBand: 7.5,
+              prompt: "Older buildings were erected under the false assumption that permafrost was immutable ____.",
+              correctAnswer: "bedrock",
+              explanation: "Paragraph E refers to the engineering premise that permafrost was immutable bedrock.",
+              evidence: "constructed on the engineering premise that permafrost was immutable bedrock."
+            },
+            {
+              id: "a8-q13",
+              questionNumber: 13,
+              type: "sentence_completion",
+              topic: "engineering",
+              estimatedBand: 8.0,
+              prompt: "Geotechnical engineers stabilize melting ground by retrofitting structural foundations with ____.",
+              correctAnswer: "thermosiphons",
+              explanation: "Paragraph E states engineers are retrofitting critical foundations with thermosiphons.",
+              evidence: "geotechnical engineers are retrofitting critical foundations with thermosiphons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      passageNumber: 2,
+      title: "The Epigenetics of Stress Inheritance and Cellular Memory",
+      subtitle: "How Environmental Trauma Reshapes Gene Expression Across Generations",
+      text: `Paragraph A
+For the greater part of the twentieth century, classical Mendelian genetics operated on a rigid central dogma: an organism's biological traits are determined exclusively by the fixed sequence of nucleotide base pairs (adenine, cytosine, guanine, and thymine) encoded in its DNA genome. Environmental influences might alter an individual's physical phenotype during their lifetime, but these environmental modifications were considered incapable of being passed down to offspring. However, in the late 1990s, the burgeoning discipline of epigenetics dismantled this genetic determinism, demonstrating that environmental inputs—such as famine, chronic psychological trauma, and toxic chemical exposure—can leave molecular bookmarks on the genome that dynamically alter gene expression across multiple generations without changing the underlying DNA code.
+
+Paragraph B
+The primary molecular mechanisms executing epigenetic regulation are DNA methylation and post-translational histone modification. DNA methylation involves the covalent attachment of a chemical methyl group (CH3) to cytosine residues on the DNA strand, typically at cytosine-guanine dinucleotide sites (termed CpG islands). When CpG islands in a gene's promoter region become heavily methylated, transcriptional enzymes are physically blocked, effectively silencing or downregulating that gene. Conversely, histone modification involves altering the charge of histone protein octamers—the biological spools around which chromatin DNA threads are wound. Adding acetyl chemical groups to histone tails relaxes the chromatin structure, permitting transcriptional machinery easy access to transcribe the DNA.
+
+Paragraph C
+The foundational empirical human proof of transgenerational epigenetic inheritance emerged from the Dutch Hunger Winter epidemiological cohorts. Between November 1944 and May 1945, Nazi blockades plunged the western Netherlands into catastrophic famine, capping rations at less than one thousand calories per day. Decades later, molecular geneticist Dr. Lumey and his research team analyzed the DNA of individuals whose mothers were pregnant during the famine. They discovered that individuals conceived during the famine exhibited persistent, hypomethylated silencing in the IGF2 (insulin-like growth factor II) gene compared to their same-sex siblings born before or after the blockade. Astonishingly, even sixty years later, these individuals suffered from significantly elevated rates of cardiovascular disease, obesity, and insulin resistance.
+
+Paragraph D
+To prove direct biological causality rather than cultural transmission, researchers turned to controlled rodent models. Neurobiologist Dr. Kerry Ressler and his colleagues conducted landmark olfactory conditioning experiments with laboratory mice. Male mice were exposed to the fruity scent of acetophenone while receiving mild electrical foot shocks, conditioning them to freeze in fear whenever they detected the scent. When these conditioned male mice were mated with unconditioned females, their offspring—and remarkably, their grand-offspring—exhibited profound behavioral sensitivity and fear reactions to acetophenone, despite having never experienced foot shocks or met their fathers.
+
+Paragraph E
+Molecular dissection of the rodents' reproductive tissue solved the transmission mystery. The conditioned fathers exhibited altered DNA methylation patterns in their sperm cells, specifically at the Olfr151 olfactory receptor gene locus. This epigenetic marking caused the offspring to develop significantly enlarged olfactory glomeruli in their nasal sensory systems, granting them heightened perceptual sensitivity to the threatening odor. Furthermore, subsequent studies revealed that small non-coding microRNAs (miRNAs) in paternal seminal fluid act as chemical messengers that reprogram the embryonic stem cell epigenome immediately following fertilization.
+
+Paragraph F
+The revolutionary implication of epigenetics is that our genome is not a deterministic stone tablet, but a dynamic, malleable script that responds continuously to lived history. While this vulnerability means inherited trauma can cast a multi-generational biological shadow, epigenetics also reveals remarkable plasticity. Unlike hard-coded DNA mutations, epigenetic chemical tags are inherently reversible. Positive environmental interventions—such as mindfulness meditation, physical aerobic exercise, supportive cognitive behavioral therapy, and balanced dietary nutrition—have been clinically demonstrated to strip away pathological methyl tags, effectively rehabilitating cellular health and rewriting the biological legacy passed on to future generations.`,
+      wordCount: 880,
+      questionGroups: [
+        {
+          groupInstruction: "Reading Passage 2 has six paragraphs, A–F. Which paragraph contains the following information? Write the correct letter, A–F, in boxes 14–20 on your answer sheet.",
+          questionType: "matching_information",
+          questions: [
+            {
+              id: "a8-q14",
+              questionNumber: 14,
+              type: "matching_information",
+              topic: "biology",
+              estimatedBand: 7.0,
+              prompt: "A chemical explanation of how methyl groups attach to DNA strands to turn off genes.",
+              correctAnswer: "B",
+              explanation: "Paragraph B explains covalent attachment of methyl groups to CpG islands, physically blocking enzymes and silencing genes.",
+              evidence: "DNA methylation involves the covalent attachment of a chemical methyl group (CH3) to cytosine residues on the DNA strand"
+            },
+            {
+              id: "a8-q15",
+              questionNumber: 15,
+              type: "matching_information",
+              topic: "history",
+              estimatedBand: 7.5,
+              prompt: "Long-term health consequences observed in adults whose mothers endured wartime food shortages.",
+              correctAnswer: "C",
+              explanation: "Paragraph C details the Dutch Hunger Winter cohort suffering elevated rates of cardiovascular disease, obesity, and insulin resistance.",
+              evidence: "even sixty years later, these individuals suffered from significantly elevated rates of cardiovascular disease, obesity, and insulin resistance."
+            },
+            {
+              id: "a8-q16",
+              questionNumber: 16,
+              type: "matching_information",
+              topic: "psychology",
+              estimatedBand: 8.0,
+              prompt: "Evidence that positive lifestyle practices can undo harmful molecular marks on genes.",
+              correctAnswer: "F",
+              explanation: "Paragraph F discusses mindfulness, aerobic exercise, and therapy stripping away pathological methyl tags.",
+              evidence: "Positive environmental interventions—such as mindfulness meditation, physical aerobic exercise, supportive cognitive behavioral therapy... strip away pathological methyl tags"
+            },
+            {
+              id: "a8-q17",
+              questionNumber: 17,
+              type: "matching_information",
+              topic: "genetics",
+              estimatedBand: 7.0,
+              prompt: "The earlier biological belief that an organism's traits depended entirely on fixed DNA sequences.",
+              correctAnswer: "A",
+              explanation: "Paragraph A describes the twentieth-century Mendelian dogma that biological traits are determined exclusively by fixed nucleotide sequences.",
+              evidence: "classical Mendelian genetics operated on a rigid central dogma: an organism's biological traits are determined exclusively by the fixed sequence of nucleotide base pairs"
+            },
+            {
+              id: "a8-q18",
+              questionNumber: 18,
+              type: "matching_information",
+              topic: "neurobiology",
+              estimatedBand: 7.5,
+              prompt: "An experiment where offspring demonstrated inherited fear toward a scent they had never smelled.",
+              correctAnswer: "D",
+              explanation: "Paragraph D details the mice conditioned with acetophenone and foot shocks, whose offspring showed fear reactions.",
+              evidence: "their offspring—and remarkably, their grand-offspring—exhibited profound behavioral sensitivity and fear reactions to acetophenone"
+            },
+            {
+              id: "a8-q19",
+              questionNumber: 19,
+              type: "matching_information",
+              topic: "molecular biology",
+              estimatedBand: 8.0,
+              prompt: "How non-coding RNA molecules in sperm fluid transmit parental information during fertilization.",
+              correctAnswer: "E",
+              explanation: "Paragraph E explains small non-coding microRNAs in seminal fluid act as chemical messengers.",
+              evidence: "small non-coding microRNAs (miRNAs) in paternal seminal fluid act as chemical messengers that reprogram the embryonic stem cell epigenome"
+            },
+            {
+              id: "a8-q20",
+              questionNumber: 20,
+              type: "matching_information",
+              topic: "anatomy",
+              estimatedBand: 7.5,
+              prompt: "Physical changes in the nasal structures of mice resulting from ancestral conditioning.",
+              correctAnswer: "E",
+              explanation: "Paragraph E notes offspring developed significantly enlarged olfactory glomeruli in their nasal systems.",
+              evidence: "caused the offspring to develop significantly enlarged olfactory glomeruli in their nasal sensory systems"
+            }
+          ]
+        },
+        {
+          groupInstruction: "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 21–26 on your answer sheet.",
+          questionType: "summary_completion",
+          questions: [
+            {
+              id: "a8-q21",
+              questionNumber: 21,
+              type: "summary_completion",
+              topic: "molecular biology",
+              estimatedBand: 7.0,
+              prompt: "Epigenetic methyl groups attach at cytosine-guanine sites referred to as CpG ____.",
+              correctAnswer: "islands",
+              explanation: "Paragraph B refers to CpG islands.",
+              evidence: "typically at cytosine-guanine dinucleotide sites (termed CpG islands)."
+            },
+            {
+              id: "a8-q22",
+              questionNumber: 22,
+              type: "summary_completion",
+              topic: "biochemistry",
+              estimatedBand: 7.5,
+              prompt: "Adding ____ chemical groups to histone spools loosens chromatin structure.",
+              correctAnswer: "acetyl",
+              explanation: "Paragraph B mentions adding acetyl chemical groups to histone tails.",
+              evidence: "Adding acetyl chemical groups to histone tails relaxes the chromatin structure"
+            },
+            {
+              id: "a8-q23",
+              questionNumber: 23,
+              type: "summary_completion",
+              topic: "medicine",
+              estimatedBand: 8.0,
+              prompt: "Children conceived during the Dutch famine showed altered methylation on the ____ gene.",
+              correctAnswer: "IGF2",
+              explanation: "Paragraph C notes hypomethylated silencing in the IGF2 gene.",
+              evidence: "persistent, hypomethylated silencing in the IGF2 (insulin-like growth factor II) gene"
+            },
+            {
+              id: "a8-q24",
+              questionNumber: 24,
+              type: "summary_completion",
+              topic: "experiment",
+              estimatedBand: 7.5,
+              prompt: "Mice in conditioning trials were conditioned to fear the fruity odor of ____.",
+              correctAnswer: "acetophenone",
+              explanation: "Paragraph D states mice were exposed to the fruity scent of acetophenone.",
+              evidence: "exposed to the fruity scent of acetophenone while receiving mild electrical foot shocks"
+            },
+            {
+              id: "a8-q25",
+              questionNumber: 25,
+              type: "summary_completion",
+              topic: "genetics",
+              estimatedBand: 8.0,
+              prompt: "Conditioned male mice passed down changes via altered methylation in their ____ cells.",
+              correctAnswer: "sperm",
+              explanation: "Paragraph E states conditioned fathers had altered DNA methylation patterns in their sperm cells.",
+              evidence: "altered DNA methylation patterns in their sperm cells"
+            },
+            {
+              id: "a8-q26",
+              questionNumber: 26,
+              type: "summary_completion",
+              topic: "medicine",
+              estimatedBand: 7.5,
+              prompt: "Unlike fixed DNA mutations, epigenetic markers possess the quality of cellular ____.",
+              correctAnswer: "plasticity",
+              explanation: "Paragraph F highlights that epigenetics reveals remarkable plasticity.",
+              evidence: "epigenetics also reveals remarkable plasticity. Unlike hard-coded DNA mutations, epigenetic chemical tags are inherently reversible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      passageNumber: 3,
+      title: "Game Theory, Mechanism Design, and Combinatorial Spectrum Auctions",
+      subtitle: "The Mathematical Engineering of Multi-Billion Dollar Electromagnetic Allocation",
+      text: `Paragraph A
+In 1994, the United States Federal Communications Commission (FCC) fundamentally revolutionized how public assets are allocated by pioneering competitive spectrum auctions. Previously, valuable licenses to broadcast over electromagnetic radio frequencies—essential for cellular mobile networks, television, and satellite communications—were allocated through bureaucratic 'beauty contests' (administrative comparative hearings) or randomized lotteries. Both legacy methods were notoriously inefficient: beauty contests encouraged corrupt political lobbying and took years of litigation, while lotteries invited opportunistic speculators who promptly flipped winning spectrum licenses to telecommunications operators for windfall profits without investing a dime in infrastructure.
+
+Paragraph B
+To design an auction that was both economically efficient and resistant to predatory speculation, economists turned to mechanism design—an advanced branch of game theory colloquially described as 'reverse game theory'. In standard game theory, an analyst observes the rules of a game and predicts the strategic behaviors and equilibria of self-interested players. In mechanism design, by contrast, the mathematical economist defines the desired social outcome—such as allocative efficiency or revenue maximization—and works backward to engineer incentives and game rules so that self-interested actors achieve that outcome naturally.
+
+Paragraph C
+The foundational mathematical model of modern auction theory was formulated in 1961 by Nobel laureate William Vickrey: the second-price sealed-bid auction, later expanded into the generalized Vickrey-Clarke-Groves (VCG) mechanism. Vickrey proved that in an auction where the highest bidder wins but pays only the price submitted by the second-highest bidder, truth-telling becomes a dominant strategy. A bidder has zero mathematical incentive to underbid or inflate their valuation; bidding one's exact, true private willingness to pay maximizes the probability of winning while guaranteeing that one never pays more than the asset is actually worth.
+
+Paragraph D
+However, applying pure VCG mechanisms to nationwide telecommunications auctions encountered formidable real-world complexities. Electromagnetic spectrum possesses intense combinatorial complementarities: a telecommunications carrier values a license in Chicago significantly more if it simultaneously secures matching licenses in neighboring Milwaukee and Detroit, allowing it to build a contiguous roaming network. If licenses were auctioned off sequentially in separate individual lots, bidders faced the catastrophic 'exposure problem': winning one expensive regional license while losing its complementary neighbors, leaving the bidder stranded with an unprofitable, fragmented asset.
+
+Paragraph E
+To conquer this challenge, game theorists Paul Milgrom and Robert Wilson engineered the Simultaneous Multiple-Round Auction (SMRA). In an SMRA, hundreds of spectrum licenses across different geographic zones are placed on the auction block simultaneously and remain open across multiple bidding rounds. Bidders can observe competitor bids across all geographic licenses concurrently, adjusting their bidding portfolios dynamically. Strict 'activity rules' prevent bidders from hiding in the background and sniping lots at the last minute; to remain eligible in later rounds, a participant must actively bid on a minimum percentage of their desired spectrum volume in every round.
+
+Paragraph F
+The practical and financial triumph of SMRA mechanism design has been staggering. Since 1994, spectrum auctions utilizing Milgrom and Wilson's architecture have raised hundreds of billions of dollars for public treasuries globally, while ensuring that spectrum assets were allocated to the most innovative, technologically capable operators. In 2020, Milgrom and Wilson were deservedly awarded the Nobel Memorial Prize in Economic Sciences. Their work stands as a luminous testament to how abstract, pure mathematical game theory can be harnessed to resolve massive, complex real-world socioeconomic allocation challenges.`,
+      wordCount: 890,
+      questionGroups: [
+        {
+          groupInstruction: "Choose the correct letter, A, B, C, or D. Write the correct letter in boxes 27–32 on your answer sheet.",
+          questionType: "multiple_choice_single",
+          questions: [
+            {
+              id: "a8-q27",
+              questionNumber: 27,
+              type: "multiple_choice_single",
+              topic: "economics",
+              estimatedBand: 7.5,
+              prompt: "Prior to 1994, spectrum lotteries were criticized primarily because they",
+              options: [
+                "A) favored major international conglomerates exclusively.",
+                "B) allowed speculators to flip licenses for unearned private profits.",
+                "C) raised too much tax revenue for government departments.",
+                "D) failed to generate any public interest."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph A states lotteries invited opportunistic speculators who flipped winning licenses for windfall profits without investing in infrastructure.",
+              evidence: "lotteries invited opportunistic speculators who promptly flipped winning spectrum licenses to telecommunications operators for windfall profits"
+            },
+            {
+              id: "a8-q28",
+              questionNumber: 28,
+              type: "multiple_choice_single",
+              topic: "game theory",
+              estimatedBand: 8.0,
+              prompt: "How does mechanism design differ from traditional game theory?",
+              options: [
+                "A) It assumes all economic players act entirely altruistically.",
+                "B) It sets a desired outcome first and designs rules to achieve it.",
+                "C) It relies on random coin flips rather than mathematical formulas.",
+                "D) It can only be applied to agricultural grain sales."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph B explains mechanism design defines the desired outcome and works backward to engineer incentives.",
+              evidence: "the mathematical economist defines the desired social outcome... and works backward to engineer incentives and game rules so that self-interested actors achieve that outcome naturally."
+            },
+            {
+              id: "a8-q29",
+              questionNumber: 29,
+              type: "multiple_choice_single",
+              topic: "economics",
+              estimatedBand: 8.0,
+              prompt: "In a second-price sealed-bid Vickrey auction, a bidder's best strategy is to",
+              options: [
+                "A) submit a bid higher than their true valuation to intimidate competitors.",
+                "B) collude secretly with other bidders.",
+                "C) bid exactly their true private valuation.",
+                "D) wait until the final five seconds of the auction."
+              ],
+              correctAnswer: "C",
+              explanation: "Paragraph C notes that truth-telling becomes a dominant strategy, where bidding one's true private valuation maximizes payoff.",
+              evidence: "truth-telling becomes a dominant strategy. A bidder has zero mathematical incentive to underbid or inflate their valuation; bidding one's exact, true private willingness to pay"
+            },
+            {
+              id: "a8-q30",
+              questionNumber: 30,
+              type: "multiple_choice_single",
+              topic: "telecommunications",
+              estimatedBand: 7.5,
+              prompt: "The 'exposure problem' occurred in sequential auctions when a bidder",
+              options: [
+                "A) ran out of money during bidding.",
+                "B) won one regional license but failed to acquire neighboring complementary licenses.",
+                "C) leaked their secret bidding formula to the press.",
+                "D) suffered technical computer network failure during bidding."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph D defines the exposure problem as winning one regional license while losing its complementary neighbors.",
+              evidence: "winning one expensive regional license while losing its complementary neighbors, leaving the bidder stranded with an unprofitable, fragmented asset."
+            },
+            {
+              id: "a8-q31",
+              questionNumber: 31,
+              type: "multiple_choice_single",
+              topic: "economics",
+              estimatedBand: 8.0,
+              prompt: "The purpose of 'activity rules' in Simultaneous Multiple-Round Auctions is to",
+              options: [
+                "A) ensure bidders take frequent rest breaks during auctions.",
+                "B) prevent participants from waiting silently and sniping licenses at the end.",
+                "C) limit the total number of telecommunications companies.",
+                "D) mandate that all bids are submitted verbally."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph E explains activity rules prevent bidders from hiding in the background and sniping lots at the last minute.",
+              evidence: "Strict 'activity rules' prevent bidders from hiding in the background and sniping lots at the last minute"
+            },
+            {
+              id: "a8-q32",
+              questionNumber: 32,
+              type: "multiple_choice_single",
+              topic: "history",
+              estimatedBand: 7.5,
+              prompt: "Paul Milgrom and Robert Wilson received the Nobel Prize in Economic Sciences in",
+              options: [
+                "A) 1961.",
+                "B) 1994.",
+                "C) 2012.",
+                "D) 2020."
+              ],
+              correctAnswer: "D",
+              explanation: "Paragraph F notes they were awarded the Nobel Memorial Prize in 2020.",
+              evidence: "In 2020, Milgrom and Wilson were deservedly awarded the Nobel Memorial Prize in Economic Sciences."
+            }
+          ]
+        },
+        {
+          groupInstruction: "Look at the following economic models (Questions 33–36) and characteristics below. Match each model with the correct description, A–D. Write the correct letter in boxes 33–36.",
+          questionType: "matching_features",
+          questions: [
+            {
+              id: "a8-q33",
+              questionNumber: 33,
+              type: "matching_features",
+              topic: "economics",
+              estimatedBand: 7.5,
+              prompt: "Beauty contest allocation",
+              options: [
+                "A) Administrative comparative hearings prone to lobbying and prolonged litigation.",
+                "B) Second-price sealed-bid structure where truth-telling is mathematically dominant.",
+                "C) Multiple interdependent licenses auctioned concurrently across iterative rounds.",
+                "D) Randomized prize distribution susceptible to secondary market ticket scalping."
+              ],
+              correctAnswer: "A",
+              explanation: "Paragraph A states beauty contests were administrative hearings that encouraged corrupt political lobbying and litigation.",
+              evidence: "beauty contests (administrative comparative hearings)... beauty contests encouraged corrupt political lobbying and took years of litigation"
+            },
+            {
+              id: "a8-q34",
+              questionNumber: 34,
+              type: "matching_features",
+              topic: "economics",
+              estimatedBand: 7.0,
+              prompt: "Spectrum lotteries",
+              options: [
+                "A) Administrative comparative hearings prone to lobbying and prolonged litigation.",
+                "B) Second-price sealed-bid structure where truth-telling is mathematically dominant.",
+                "C) Multiple interdependent licenses auctioned concurrently across iterative rounds.",
+                "D) Randomized prize distribution susceptible to secondary market ticket scalping."
+              ],
+              correctAnswer: "D",
+              explanation: "Paragraph A describes lotteries inviting speculators who flipped licenses for windfall profits.",
+              evidence: "while lotteries invited opportunistic speculators who promptly flipped winning spectrum licenses"
+            },
+            {
+              id: "a8-q35",
+              questionNumber: 35,
+              type: "matching_features",
+              topic: "game theory",
+              estimatedBand: 8.0,
+              prompt: "Vickrey mechanism",
+              options: [
+                "A) Administrative comparative hearings prone to lobbying and prolonged litigation.",
+                "B) Second-price sealed-bid structure where truth-telling is mathematically dominant.",
+                "C) Multiple interdependent licenses auctioned concurrently across iterative rounds.",
+                "D) Randomized prize distribution susceptible to secondary market ticket scalping."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph C describes the Vickrey second-price auction where truth-telling is a dominant strategy.",
+              evidence: "Vickrey proved that in an auction where the highest bidder wins but pays only the price submitted by the second-highest bidder, truth-telling becomes a dominant strategy."
+            },
+            {
+              id: "a8-q36",
+              questionNumber: 36,
+              type: "matching_features",
+              topic: "game theory",
+              estimatedBand: 8.0,
+              prompt: "SMRA architecture",
+              options: [
+                "A) Administrative comparative hearings prone to lobbying and prolonged litigation.",
+                "B) Second-price sealed-bid structure where truth-telling is mathematically dominant.",
+                "C) Multiple interdependent licenses auctioned concurrently across iterative rounds.",
+                "D) Randomized prize distribution susceptible to secondary market ticket scalping."
+              ],
+              correctAnswer: "C",
+              explanation: "Paragraph E explains hundreds of licenses placed on the block simultaneously across multiple bidding rounds.",
+              evidence: "hundreds of spectrum licenses across different geographic zones are placed on the auction block simultaneously and remain open across multiple bidding rounds."
+            }
+          ]
+        },
+        {
+          groupInstruction: "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 37–40 on your answer sheet.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "a8-q37",
+              questionNumber: 37,
+              type: "sentence_completion",
+              topic: "institutions",
+              estimatedBand: 7.0,
+              prompt: "In 1994, the US Federal Communications ____ introduced competitive spectrum auctions.",
+              correctAnswer: "Commission",
+              explanation: "Paragraph A refers to the US Federal Communications Commission (FCC).",
+              evidence: "United States Federal Communications Commission (FCC) fundamentally revolutionized"
+            },
+            {
+              id: "a8-q38",
+              questionNumber: 38,
+              type: "sentence_completion",
+              topic: "game theory",
+              estimatedBand: 7.5,
+              prompt: "Mechanism design is colloquially referred to as reverse game ____.",
+              correctAnswer: "theory",
+              explanation: "Paragraph B describes mechanism design as 'reverse game theory'.",
+              evidence: "branch of game theory colloquially described as 'reverse game theory'."
+            },
+            {
+              id: "a8-q39",
+              questionNumber: 39,
+              type: "sentence_completion",
+              topic: "telecommunications",
+              estimatedBand: 8.0,
+              prompt: "Radio licenses exhibit strong combinatorial ____ because neighboring zones increase overall network value.",
+              correctAnswer: "complementarities",
+              explanation: "Paragraph D states electromagnetic spectrum possesses intense combinatorial complementarities.",
+              evidence: "spectrum possesses intense combinatorial complementarities"
+            },
+            {
+              id: "a8-q40",
+              questionNumber: 40,
+              type: "sentence_completion",
+              topic: "economics",
+              estimatedBand: 7.5,
+              prompt: "SMRA auctions have raised hundreds of billions of dollars for public ____ worldwide.",
+              correctAnswer: "treasuries",
+              explanation: "Paragraph F notes raising hundreds of billions for public treasuries globally.",
+              evidence: "raised hundreds of billions of dollars for public treasuries globally"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync(
+  path.resolve('./content/reading/academic-test-08.json'),
+  JSON.stringify(readingTest08, null, 2),
+  'utf8'
+);
+console.log('✓ Created academic-test-08.json');

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "v-mitigate",
+    "word": "mitigate",
+    "phonetic": "/ˈmɪtɪɡeɪt/",
+    "partOfSpeech": "verb",
+    "definition": "To make something bad less severe, serious, or painful.",
+    "academicBandTarget": 7.5,
+    "collocations": ["mitigate risks", "mitigate environmental damage", "mitigate the effects of climate change", "take steps to mitigate"],
+    "ieltsTopic": "environment",
+    "exampleSentences": [
+      "Municipal councils must implement sustainable drainage networks to mitigate flood risks in urban developments.",
+      "Effective carbon tax policies can help mitigate the long-term impacts of greenhouse gas emissions."
+    ],
+    "synonyms": ["alleviate", "lessen", "attenuate", "moderate", "diminish"],
+    "antonyms": ["aggravate", "exacerbate", "worsen"],
+    "academicWordList": true
+  },
+  {
+    "id": "v-ubiquitous",
+    "word": "ubiquitous",
+    "phonetic": "/juːˈbɪkwɪtəs/",
+    "partOfSpeech": "adjective",
+    "definition": "Present, appearing, or found everywhere; omnipresent.",
+    "academicBandTarget": 8.0,
+    "collocations": ["ubiquitous presence", "become ubiquitous", "ubiquitous computing", "ubiquitous smartphone use"],
+    "ieltsTopic": "technology",
+    "exampleSentences": [
+      "Smartphones have evolved from luxury gadgets into ubiquitous tools indispensable for modern commerce.",
+      "The ubiquitous nature of automated surveillance cameras has ignited vigorous debates over individual privacy rights."
+    ],
+    "synonyms": ["omnipresent", "pervasive", "universal", "widespread"],
+    "antonyms": ["rare", "scarce", "uncommon"],
+    "academicWordList": true
+  },
+  {
+    "id": "v-disparity",
+    "word": "disparity",
+    "phonetic": "/dɪˈspærəti/",
+    "partOfSpeech": "noun",
+    "definition": "A noticeable and usually unfair difference or inequality between groups or quantities.",
+    "academicBandTarget": 7.5,
+    "collocations": ["income disparity", "growing disparity", "regional disparities", "address disparities"],
+    "ieltsTopic": "economy",
+    "exampleSentences": [
+      "Subsidized vocational schooling can bridge the widening income disparity between rural and metropolitan populations.",
+      "Policymakers must confront regional healthcare disparities to ensure equitable life expectancy."
+    ],
+    "synonyms": ["inequality", "imbalance", "discrepancy", "divergence"],
+    "antonyms": ["parity", "equality", "similarity"],
+    "academicWordList": true
+  }
+]

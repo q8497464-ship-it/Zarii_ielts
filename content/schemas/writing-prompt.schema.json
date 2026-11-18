@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ZariiWritingPrompt",
+  "type": "object",
+  "required": ["id", "taskType", "title", "promptText", "minWordCount", "recommendedMinutes", "sampleAnswers", "checklist"],
+  "properties": {
+    "id": { "type": "string" },
+    "taskType": { "type": "string", "enum": ["task1_academic", "task1_general", "task2"] },
+    "title": { "type": "string" },
+    "promptText": { "type": "string" },
+    "visualDataUrl": { "type": "string" },
+    "visualDataDescription": { "type": "string" },
+    "minWordCount": { "type": "integer" },
+    "recommendedMinutes": { "type": "integer" },
+    "sampleAnswers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["band", "text", "examinerCommentary"],
+        "properties": {
+          "band": { "type": "number" },
+          "text": { "type": "string" },
+          "examinerCommentary": { "type": "string" }
+        }
+      }
+    },
+    "checklist": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

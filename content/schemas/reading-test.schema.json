@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ZariiReadingTest",
+  "type": "object",
+  "required": ["id", "title", "testType", "timeLimitMinutes", "passages", "attribution"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "testType": { "type": "string", "enum": ["academic", "general"] },
+    "difficulty": { "type": "string", "enum": ["easy", "standard", "challenging"] },
+    "timeLimitMinutes": { "type": "integer", "default": 60 },
+    "passages": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["passageNumber", "title", "text", "wordCount", "questionGroups"],
+        "properties": {
+          "passageNumber": { "type": "integer", "enum": [1, 2, 3] },
+          "title": { "type": "string" },
+          "subtitle": { "type": "string" },
+          "text": { "type": "string" },
+          "wordCount": { "type": "integer" },
+          "questionGroups": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["groupInstruction", "questionType", "questions"],
+              "properties": {
+                "groupInstruction": { "type": "string" },
+                "questionType": {
+                  "type": "string",
+                  "enum": [
+                    "multiple_choice_single",
+                    "multiple_choice_multi",
+                    "true_false_not_given",
+                    "yes_no_not_given",
+                    "matching_headings",
+                    "matching_information",
+                    "matching_features",
+                    "sentence_completion",
+                    "summary_completion",
+                    "diagram_label_completion",
+                    "short_answer"
+                  ]
+                },
+                "questions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["id", "questionNumber", "prompt", "correctAnswer"],
+                    "properties": {
+                      "id": { "type": "string" },
+                      "questionNumber": { "type": "integer" },
+                      "prompt": { "type": "string" },
+                      "instruction": { "type": "string" },
+                      "options": { "type": "array", "items": { "type": "string" } },
+                      "correctAnswer": {
+                        "oneOf": [
+                          { "type": "string" },
+                          { "type": "array", "items": { "type": "string" } }
+                        ]
+                      },
+                      "explanation": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "attribution": {
+      "type": "object",
+      "required": ["source", "license", "authorOrTopic"],
+      "properties": {
+        "source": { "type": "string" },
+        "license": { "type": "string" },
+        "authorOrTopic": { "type": "string" }
+      }
+    }
+  }
+}

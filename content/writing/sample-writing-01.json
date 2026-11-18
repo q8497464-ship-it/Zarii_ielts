@@ -1,0 +1,22 @@
+{
+  "id": "write-task2-01",
+  "taskType": "task2",
+  "title": "Remote Work and City Centers",
+  "promptText": "In many countries, an increasing number of people are choosing to work remotely from home rather than commute to an office. Some people believe that this trend has positive effects on workers and society, while others argue that it leads to isolation and harms city economies.\n\nDiscuss both views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
+  "minWordCount": 250,
+  "recommendedMinutes": 40,
+  "sampleAnswers": [
+    {
+      "band": 8.5,
+      "text": "The advent of telecommuting has dramatically reshaped the global workforce over the past decade. While skeptics highlight the risks of professional alienation and the economic downturn in commercial city centers, proponents argue that flexible working significantly improves work-life balance and curbs traffic congestion. In my view, the advantages for individual wellbeing and environmental sustainability outweigh the transitional economic drawbacks.\n\nOn the one hand, remote employment undoubtedly poses socio-economic hurdles. When office towers remain under-occupied, ancillary downtown enterprises—such as cafes, dry cleaners, and public transport systems—suffer catastrophic revenue losses. Furthermore, the absence of spontaneous face-to-face interaction can erode team cohesion and spark feelings of loneliness among junior employees who miss out on informal mentorship.\n\nOn the other hand, the benefits of remote work are profound. By eradicating lengthy daily commutes, professionals recover hundreds of hours annually, resulting in reduced stress levels and greater personal autonomy. From an ecological perspective, reduced vehicular traffic diminishes carbon emissions in urban metropolitan regions. Moreover, advances in collaborative digital platforms have largely mitigated initial communication barriers.\n\nIn conclusion, although the decentralization of city centers demands structural economic adaptation, remote work delivers transformative benefits for individual autonomy, family life, and planetary health. Governments should support this evolution while helping city cores transition into vibrant cultural and residential hubs.",
+      "examinerCommentary": "Task Response: Thoroughly explores both viewpoints and presents a nuanced, consistent personal stance throughout. Coherence & Cohesion: Seamless transitions between paragraphs with strong topic sentences. Lexical Resource: Sophisticated topic-specific vocabulary ('ancillary downtown enterprises', 'telecommuting', 'eradicating daily commutes', 'decentralization'). Grammatical Range: Flawless complex sentences."
+    }
+  ],
+  "checklist": [
+    "Did you discuss BOTH viewpoints in balanced detail?",
+    "Is your personal opinion clearly stated in the introduction, body, and conclusion?",
+    "Have you written at least 250 words?",
+    "Are paragraphs logically organized with topic sentences and supporting examples?",
+    "Have you checked for subject-verb agreement and spelling slips?"
+  ]
+}

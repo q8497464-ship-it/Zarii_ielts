@@ -1,0 +1,587 @@
+import fs from 'fs';
+import path from 'path';
+
+const generalTest03 = {
+  id: "gen-reading-03",
+  title: "General Training Reading Practice Test 3",
+  testType: "general",
+  difficulty: "easy",
+  timeLimitMinutes: 60,
+  passages: [
+    {
+      passageNumber: 1,
+      title: "Camden Borough Resident Parking Schemes & Community Maker-Space",
+      subtitle: "Everyday community information and civic service regulations",
+      text: `Section 1A: Camden Council Controlled Parking Zones (CPZs)
+Residents residing within designated Controlled Parking Zones (CPZ) in the Borough of Camden are entitled to apply for an annual residential parking permit. To qualify, an applicant must be the registered keeper of the vehicle and provide two documentary proofs of address: a valid council tax bill and a domestic utility invoice issued within the preceding three months. Annual permit charges are calculated strictly based on vehicle carbon dioxide emissions; electric vehicles pay a subsidized flat rate of forty pounds per annum, whereas high-emission diesel models incur an annual charge of two hundred and twenty pounds.
+
+Visitor parking vouchers can be purchased online in books of ten single-day permits. Visitors must display the scratch-card voucher clearly on the vehicle dashboard, ensuring that the date, month, and vehicle registration are legibly revealed. Unscratched or obscured vouchers will result in the issuance of a Penalty Charge Notice (PCN). Parking enforcement operates Monday through Saturday between eight thirty in the morning and six thirty in the evening, excluding bank holidays. Vehicles parked on double yellow lines or blocking wheelchair access dropped-kerbs will be towed immediately without prior warning.
+
+Section 1B: Central Library Community Maker-Space
+The Central Library Maker-Space provides free access to advanced fabrication tools, including two industrial 3D printers, a computer numerical control (CNC) wood router, and four digital embroidery sewing machines. All registered library cardholders aged sixteen and over may book up to four hours of equipment time per week through the online library portal. 
+
+Before utilizing any motorized machinery, patrons must complete a mandatory forty-five-minute Safety Induction Workshop, conducted every Tuesday evening at five PM by our resident technician. Safety goggles and ear defenders are provided free of charge and must be worn at all times while operating cutting equipment. Patrons must bring their own raw materials, such as non-toxic PLA filament, acrylic sheets, or untreated birch plywood. Toxic substrates, such as PVC, polycarbonate, or pressure-treated timber, are strictly prohibited due to dangerous chemical fumes. Children under sixteen may enter the workshop only if accompanied by an adult who has completed the safety certification.`,
+      wordCount: 420,
+      questionGroups: [
+        {
+          groupInstruction: "Do the following statements agree with the information given in Section 1A? In boxes 1–7 on your answer sheet, write:\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+          questionType: "true_false_not_given",
+          questions: [
+            {
+              id: "g3-q1",
+              questionNumber: 1,
+              type: "true_false_not_given",
+              topic: "community",
+              estimatedBand: 5.5,
+              prompt: "Electric vehicle owners pay a lower annual parking permit rate than diesel vehicle owners.",
+              correctAnswer: "TRUE",
+              explanation: "Section 1A states electric vehicles pay forty pounds while high-emission diesel models incur two hundred and twenty pounds.",
+              evidence: "electric vehicles pay a subsidized flat rate of forty pounds per annum, whereas high-emission diesel models incur an annual charge of two hundred and twenty pounds."
+            },
+            {
+              id: "g3-q2",
+              questionNumber: 2,
+              type: "true_false_not_given",
+              topic: "community",
+              estimatedBand: 5.5,
+              prompt: "Residents can submit utility bills dated from six months ago as proof of address.",
+              correctAnswer: "FALSE",
+              explanation: "Section 1A states utility invoices must be 'issued within the preceding three months.'",
+              evidence: "domestic utility invoice issued within the preceding three months."
+            },
+            {
+              id: "g3-q3",
+              questionNumber: 3,
+              type: "true_false_not_given",
+              topic: "community",
+              estimatedBand: 6.0,
+              prompt: "Parking restrictions in Controlled Parking Zones apply on Sundays.",
+              correctAnswer: "FALSE",
+              explanation: "Section 1A states enforcement operates Monday through Saturday, excluding bank holidays.",
+              evidence: "Parking enforcement operates Monday through Saturday between eight thirty in the morning and six thirty in the evening"
+            },
+            {
+              id: "g3-q4",
+              questionNumber: 4,
+              type: "true_false_not_given",
+              topic: "community",
+              estimatedBand: 6.5,
+              prompt: "The council offers discounts for households with three or more registered cars.",
+              correctAnswer: "NOT GIVEN",
+              explanation: "Section 1A mentions emissions-based pricing, but gives no information on discounts for multiple cars.",
+              evidence: "Annual permit charges are calculated strictly based on vehicle carbon dioxide emissions"
+            },
+            {
+              id: "g3-q5",
+              questionNumber: 5,
+              type: "true_false_not_given",
+              topic: "community",
+              estimatedBand: 6.0,
+              prompt: "Vehicles obstructing dropped-kerbs will receive a warning before being towed.",
+              correctAnswer: "FALSE",
+              explanation: "Section 1A explicitly states vehicles blocking dropped-kerbs 'will be towed immediately without prior warning.'",
+              evidence: "blocking wheelchair access dropped-kerbs will be towed immediately without prior warning."
+            },
+            {
+              id: "g3-q6",
+              questionNumber: 6,
+              type: "true_false_not_given",
+              topic: "community",
+              estimatedBand: 5.5,
+              prompt: "Library members can book a maximum of four hours of Maker-Space machine time each week.",
+              correctAnswer: "TRUE",
+              explanation: "Section 1B notes members may book 'up to four hours of equipment time per week'.",
+              evidence: "book up to four hours of equipment time per week through the online library portal."
+            },
+            {
+              id: "g3-q7",
+              questionNumber: 7,
+              type: "true_false_not_given",
+              topic: "community",
+              estimatedBand: 6.0,
+              prompt: "Safety inductions at the Maker-Space are offered on weekend mornings.",
+              correctAnswer: "FALSE",
+              explanation: "Section 1B notes inductions are conducted 'every Tuesday evening at five PM'.",
+              evidence: "Safety Induction Workshop, conducted every Tuesday evening at five PM"
+            }
+          ]
+        },
+        {
+          groupInstruction: "Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 8–14 on your answer sheet.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "g3-q8",
+              questionNumber: 8,
+              type: "sentence_completion",
+              topic: "community",
+              estimatedBand: 5.5,
+              prompt: "Permit prices depend directly upon vehicle carbon dioxide ____.",
+              correctAnswer: "emissions",
+              explanation: "Section 1A explains charges are calculated based on vehicle carbon dioxide emissions.",
+              evidence: "calculated strictly based on vehicle carbon dioxide emissions"
+            },
+            {
+              id: "g3-q9",
+              questionNumber: 9,
+              type: "sentence_completion",
+              topic: "community",
+              estimatedBand: 6.0,
+              prompt: "Visitor permits are available in booklets containing ____ individual vouchers.",
+              correctAnswer: ["10", "ten"],
+              explanation: "Section 1A mentions visitor vouchers purchased in books of ten single-day permits.",
+              evidence: "purchased online in books of ten single-day permits."
+            },
+            {
+              id: "g3-q10",
+              questionNumber: 10,
+              type: "sentence_completion",
+              topic: "community",
+              estimatedBand: 6.0,
+              prompt: "On Saturdays, parking rules end at ____ in the evening.",
+              correctAnswer: ["6:30", "six thirty"],
+              explanation: "Section 1A states enforcement operates between eight thirty in the morning and six thirty in the evening.",
+              evidence: "between eight thirty in the morning and six thirty in the evening"
+            },
+            {
+              id: "g3-q11",
+              questionNumber: 11,
+              type: "sentence_completion",
+              topic: "community",
+              estimatedBand: 5.5,
+              prompt: "Minimum age required for independent booking of Maker-Space tools is ____.",
+              correctAnswer: ["16", "sixteen"],
+              explanation: "Section 1B specifies registered cardholders aged sixteen and over.",
+              evidence: "cardholders aged sixteen and over may book"
+            },
+            {
+              id: "g3-q12",
+              questionNumber: 12,
+              type: "sentence_completion",
+              topic: "community",
+              estimatedBand: 6.0,
+              prompt: "The mandatory Safety Induction Workshop lasts for ____ minutes.",
+              correctAnswer: ["45", "forty-five"],
+              explanation: "Section 1B notes a mandatory forty-five-minute Safety Induction Workshop.",
+              evidence: "mandatory forty-five-minute Safety Induction Workshop"
+            },
+            {
+              id: "g3-q13",
+              questionNumber: 13,
+              type: "sentence_completion",
+              topic: "safety",
+              estimatedBand: 6.0,
+              prompt: "Eye goggles and ____ defenders are supplied without charge.",
+              correctAnswer: "ear",
+              explanation: "Section 1B lists 'Safety goggles and ear defenders are provided free of charge'.",
+              evidence: "Safety goggles and ear defenders are provided free of charge"
+            },
+            {
+              id: "g3-q14",
+              questionNumber: 14,
+              type: "sentence_completion",
+              topic: "safety",
+              estimatedBand: 6.5,
+              prompt: "Materials like PVC are banned because they release dangerous chemical ____.",
+              correctAnswer: "fumes",
+              explanation: "Section 1B states PVC is prohibited due to dangerous chemical fumes.",
+              evidence: "prohibited due to dangerous chemical fumes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      passageNumber: 2,
+      title: "Corporate Hybrid Working Policy & Employee Wellbeing Initiatives",
+      subtitle: "Workplace procedures and professional support services at Apex Global",
+      text: `Section 2A: Hybrid Work Attendance and Equipment Support
+Apex Global operates a flexible hybrid work model designed to balance operational collaboration with personal flexibility. Under this framework, full-time staff must spend a minimum of two core days per week working at their designated regional office. Core office days for individual departments are established by Department Directors to ensure cross-functional alignment. Tuesdays and Thursdays are designated as Universal Collaborative Days across the company; all client-facing project reviews and inter-departmental town halls must be scheduled on these two days.
+
+To support home office ergonomics, the company provides all permanent employees with an initial remote setup stipend of three hundred and fifty pounds. This fund may be used to purchase an ergonomic mesh desk chair, an external keyboard and mouse, or an adjustable laptop riser. Furthermore, the IT Department supplies an external twenty-seven-inch monitor and an encrypted company laptop. Employees are personally responsible for maintaining a reliable, secure broadband internet connection with a minimum download speed of twenty-five megabits per second.
+
+Section 2B: Mental Health Support and Wellness Benefits
+Apex Global is deeply committed to employee psychological wellbeing. All staff and their immediate household dependents have complimentary, round-the-clock access to the Employee Assistance Programme (EAP). Operated by an independent clinical provider, the EAP offers confidential telephone counseling for stress, bereavement, financial anxiety, and relationship difficulties. Each employee is entitled to up to six private cognitive behavioral therapy (CBT) sessions per year at no personal expense.
+
+In addition to counseling, the company provides two paid Wellness Recharge Days annually. These days are granted in addition to standard statutory annual leave entitlements and may be taken at the employee's discretion to prevent professional burnout. To promote physical vitality, staff can claim a monthly wellness subsidy of thirty pounds towards commercial gym memberships, swimming pool passes, or yoga classes upon uploading digital receipts through the employee expense portal.`,
+      wordCount: 380,
+      questionGroups: [
+        {
+          groupInstruction: "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 15–21 on your answer sheet.",
+          questionType: "sentence_completion",
+          questions: [
+            {
+              id: "g3-q15",
+              questionNumber: 15,
+              type: "sentence_completion",
+              topic: "employment",
+              estimatedBand: 5.5,
+              prompt: "Employees must work at least ____ core days in the office each week.",
+              correctAnswer: ["2", "two"],
+              explanation: "Section 2A specifies a minimum of two core days per week.",
+              evidence: "minimum of two core days per week working at their designated regional office."
+            },
+            {
+              id: "g3-q16",
+              questionNumber: 16,
+              type: "sentence_completion",
+              topic: "employment",
+              estimatedBand: 6.0,
+              prompt: "The two Universal Collaborative Days are Tuesdays and ____.",
+              correctAnswer: "Thursdays",
+              explanation: "Section 2A states Tuesdays and Thursdays are designated Universal Collaborative Days.",
+              evidence: "Tuesdays and Thursdays are designated as Universal Collaborative Days across the company"
+            },
+            {
+              id: "g3-q17",
+              questionNumber: 17,
+              type: "sentence_completion",
+              topic: "finance",
+              estimatedBand: 6.0,
+              prompt: "The initial remote workstation stipend is £____.",
+              correctAnswer: ["350", "three hundred and fifty"],
+              explanation: "Section 2A states setup stipend of three hundred and fifty pounds.",
+              evidence: "remote setup stipend of three hundred and fifty pounds."
+            },
+            {
+              id: "g3-q18",
+              questionNumber: 18,
+              type: "sentence_completion",
+              topic: "technology",
+              estimatedBand: 6.0,
+              prompt: "Home broadband must maintain a download speed of at least ____ megabits per second.",
+              correctAnswer: ["25", "twenty-five"],
+              explanation: "Section 2A requires minimum download speed of twenty-five megabits per second.",
+              evidence: "minimum download speed of twenty-five megabits per second."
+            },
+            {
+              id: "g3-q19",
+              questionNumber: 19,
+              type: "sentence_completion",
+              topic: "health",
+              estimatedBand: 6.5,
+              prompt: "Employees may receive up to ____ free cognitive behavioral therapy sessions annually.",
+              correctAnswer: ["6", "six"],
+              explanation: "Section 2B states up to six private CBT sessions per year.",
+              evidence: "entitled to up to six private cognitive behavioral therapy (CBT) sessions per year"
+            },
+            {
+              id: "g3-q20",
+              questionNumber: 20,
+              type: "sentence_completion",
+              topic: "health",
+              estimatedBand: 6.0,
+              prompt: "Staff receive two paid Wellness ____ Days each year to rest.",
+              correctAnswer: "Recharge",
+              explanation: "Section 2B mentions two paid Wellness Recharge Days annually.",
+              evidence: "two paid Wellness Recharge Days annually."
+            },
+            {
+              id: "g3-q21",
+              questionNumber: 21,
+              type: "sentence_completion",
+              topic: "finance",
+              estimatedBand: 6.0,
+              prompt: "The monthly wellness reimbursement limit for gym memberships is £____.",
+              correctAnswer: ["30", "thirty"],
+              explanation: "Section 2B notes a monthly wellness subsidy of thirty pounds.",
+              evidence: "monthly wellness subsidy of thirty pounds towards commercial gym memberships"
+            }
+          ]
+        },
+        {
+          groupInstruction: "Do the following statements agree with the information given in Section 2A and 2B? In boxes 22–27 on your answer sheet, write:\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+          questionType: "true_false_not_given",
+          questions: [
+            {
+              id: "g3-q22",
+              questionNumber: 22,
+              type: "true_false_not_given",
+              topic: "employment",
+              estimatedBand: 6.0,
+              prompt: "The IT Department will pay for employees' home monthly internet subscriptions.",
+              correctAnswer: "FALSE",
+              explanation: "Section 2A states employees are personally responsible for maintaining their broadband connection.",
+              evidence: "Employees are personally responsible for maintaining a reliable, secure broadband internet connection"
+            },
+            {
+              id: "g3-q23",
+              questionNumber: 23,
+              type: "true_false_not_given",
+              topic: "employment",
+              estimatedBand: 6.0,
+              prompt: "External monitors supplied by IT have a screen size of twenty-seven inches.",
+              correctAnswer: "TRUE",
+              explanation: "Section 2A notes IT supplies an external twenty-seven-inch monitor.",
+              evidence: "IT Department supplies an external twenty-seven-inch monitor and an encrypted company laptop."
+            },
+            {
+              id: "g3-q24",
+              questionNumber: 24,
+              type: "true_false_not_given",
+              topic: "health",
+              estimatedBand: 6.5,
+              prompt: "Family members living in the employee's home may also access the counseling hotline.",
+              correctAnswer: "TRUE",
+              explanation: "Section 2B explicitly states staff and their immediate household dependents have access to the EAP.",
+              evidence: "All staff and their immediate household dependents have complimentary, round-the-clock access"
+            },
+            {
+              id: "g3-q25",
+              questionNumber: 25,
+              type: "true_false_not_given",
+              topic: "health",
+              estimatedBand: 7.0,
+              prompt: "Unused Wellness Recharge Days can be carried forward into the following year.",
+              correctAnswer: "NOT GIVEN",
+              explanation: "Section 2B describes the recharge days, but does not mention carrying them forward to the next year.",
+              evidence: "In addition to counseling, the company provides two paid Wellness Recharge Days annually."
+            },
+            {
+              id: "g3-q26",
+              questionNumber: 26,
+              type: "true_false_not_given",
+              topic: "finance",
+              estimatedBand: 6.0,
+              prompt: "Employees must upload digital receipts to receive their monthly gym subsidy.",
+              correctAnswer: "TRUE",
+              explanation: "Section 2B notes subsidy can be claimed upon uploading digital receipts through the portal.",
+              evidence: "upon uploading digital receipts through the employee expense portal."
+            },
+            {
+              id: "g3-q27",
+              questionNumber: 27,
+              type: "true_false_not_given",
+              topic: "employment",
+              estimatedBand: 6.5,
+              prompt: "Department Directors can mandate three office days if client needs demand it.",
+              correctAnswer: "NOT GIVEN",
+              explanation: "Section 2A states Department Directors establish core office days, but does not explicitly discuss mandating three days.",
+              evidence: "Core office days for individual departments are established by Department Directors to ensure cross-functional alignment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      passageNumber: 3,
+      title: "The History and Renaissance of Sourdough Breadmaking",
+      subtitle: "The microbiology, cultural heritage, and modern revival of wild fermentation",
+      text: `Paragraph A
+For millennia prior to the advent of industrialized food manufacturing, all leavened bread was sourdough bread. Archaeological excavations along the Nile River basin indicate that ancient Egyptians were cultivating wild fermented dough as early as four thousand years before the common era. By trapping ubiquitous airborne spores of wild yeast and environmental bacteria inside a simple mixture of crushed cereal grain and water, ancient bakers discovered that bread would rise naturally, producing an airy crumb, rich complex flavor, and remarkable resistance to spoilage.
+
+Paragraph B
+The foundational engine of sourdough is the starter culture—known traditionally in French as the levain. A healthy sourdough starter is a symbiotic microbiological ecosystem comprising wild yeasts (principally Kazachstania exigua and Candida humilis) alongside lactic acid bacteria (predominantly Fructilactobacillus sanfranciscensis). Unlike commercial monoculture brewer's yeast (Saccharomyces cerevisiae), which was isolated industrially in the mid-nineteenth century for rapid carbon dioxide production, sourdough microorganisms operate in an interdependent mutualism. The wild yeasts ferment cereal sugars into ethanol and carbon dioxide, inflating microscopic gas pockets in the gluten matrix, while the lactic acid bacteria produce lactic and acetic acids.
+
+Paragraph C
+It is this microbial acidification that endows sourdough with its characteristic tangy flavor and distinct physiological benefits. The sharp decline in dough pH activates endogenous phytase enzymes naturally present within cereal bran. In conventional quick-rise commercial bread, phytic acid binds tightly to dietary minerals like iron, zinc, magnesium, and calcium, forming insoluble phytate complexes that prevent absorption in the human gut. In sourdough, the acidic environment enables phytase to degrade over seventy percent of phytic acid, dramatically enhancing mineral bioavailability.
+
+Paragraph D
+Furthermore, the protracted fermentation period—frequently spanning twenty-four to forty-eight hours of cold retardation—radically alters the biochemical architecture of cereal proteins. Sourdough enzymes steadily break down complex gluten proteins into smaller, easily digestible peptides and free amino acids. Recent clinical gastroenterology trials suggest that while sourdough is not safe for individuals with celiac disease, many people with non-celiac wheat sensitivity experience significantly fewer digestive symptoms, such as bloating and abdominal discomfort, when consuming authentic, long-fermented sourdough compared to industrial white bread.
+
+Paragraph E
+Despite these demonstrable benefits, sourdough was almost entirely eradicated in the twentieth century by the invention of the industrial Chorleywood Bread Process in 1961. This high-speed mechanical method deployed chemical oxidizing agents, emulsifiers, and massive doses of isolated commercial yeast to produce fluffy, uniform bread in less than three hours. However, in the twenty-first century, a global artisan sourdough renaissance has taken hold. Sparked by consumer desire for additive-free whole foods and accelerated by home baking during global pandemic lockdowns, thousands of micro-bakeries have emerged, championing ancient grains like spelt, einkorn, and emmer, and restoring bread to its ancestral status as a nourishing, living staple.`,
+      wordCount: 520,
+      questionGroups: [
+        {
+          groupInstruction: "Choose the correct letter, A, B, C, or D. Write the correct letter in boxes 28–33 on your answer sheet.",
+          questionType: "multiple_choice_single",
+          questions: [
+            {
+              id: "g3-q28",
+              questionNumber: 28,
+              type: "multiple_choice_single",
+              topic: "history",
+              estimatedBand: 6.0,
+              prompt: "Archaeological evidence shows sourdough was cultivated in ancient Egypt around",
+              options: [
+                "A) 1961 BCE.",
+                "B) 4,000 BCE.",
+                "C) 500 CE.",
+                "D) 1850 CE."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph A states Egyptians cultivated wild dough as early as 4000 BCE.",
+              evidence: "ancient Egyptians were cultivating wild fermented dough as early as four thousand years before the common era."
+            },
+            {
+              id: "g3-q29",
+              questionNumber: 29,
+              type: "multiple_choice_single",
+              topic: "biology",
+              estimatedBand: 6.5,
+              prompt: "The sourdough starter culture is known in French as the",
+              options: [
+                "A) baguette.",
+                "B) levain.",
+                "C) croissant.",
+                "D) brioche."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph B states the starter is known traditionally in French as the levain.",
+              evidence: "starter culture—known traditionally in French as the levain."
+            },
+            {
+              id: "g3-q30",
+              questionNumber: 30,
+              type: "multiple_choice_single",
+              topic: "chemistry",
+              estimatedBand: 7.0,
+              prompt: "Lactic acid bacteria in sourdough are responsible for producing",
+              options: [
+                "A) lactic and acetic acids.",
+                "B) artificial chemical preservatives.",
+                "C) pure sucrose sugar.",
+                "D) brewer's yeast."
+              ],
+              correctAnswer: "A",
+              explanation: "Paragraph B explains lactic acid bacteria produce lactic and acetic acids.",
+              evidence: "while the lactic acid bacteria produce lactic and acetic acids."
+            },
+            {
+              id: "g3-q31",
+              questionNumber: 31,
+              type: "multiple_choice_single",
+              topic: "nutrition",
+              estimatedBand: 7.0,
+              prompt: "Sourdough improves mineral absorption in the human digestive system by",
+              options: [
+                "A) adding synthetic multivitamin powder.",
+                "B) using acidity to activate phytase, which breaks down phytic acid.",
+                "C) removing all calcium from the flour.",
+                "D) speeding up stomach digestion to under ten minutes."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph C notes acidic conditions allow phytase to degrade phytic acid, unlocking minerals.",
+              evidence: "In sourdough, the acidic environment enables phytase to degrade over seventy percent of phytic acid, dramatically enhancing mineral bioavailability."
+            },
+            {
+              id: "g3-q32",
+              questionNumber: 32,
+              type: "multiple_choice_single",
+              topic: "health",
+              estimatedBand: 7.0,
+              prompt: "Medical research indicates that long-fermented sourdough bread is",
+              options: [
+                "A) completely safe for celiac disease patients.",
+                "B) easier to digest for individuals with non-celiac wheat sensitivity.",
+                "C) hazardous for all elderly individuals.",
+                "D) identical in protein structure to quick-rise white bread."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph D notes people with non-celiac wheat sensitivity experience fewer digestive symptoms.",
+              evidence: "many people with non-celiac wheat sensitivity experience significantly fewer digestive symptoms, such as bloating and abdominal discomfort"
+            },
+            {
+              id: "g3-q33",
+              questionNumber: 33,
+              type: "multiple_choice_single",
+              topic: "industry",
+              estimatedBand: 6.5,
+              prompt: "The Chorleywood Bread Process was developed in",
+              options: [
+                "A) 1914.",
+                "B) 1961.",
+                "C) 1980.",
+                "D) 2020."
+              ],
+              correctAnswer: "B",
+              explanation: "Paragraph E refers to the invention of the Chorleywood Bread Process in 1961.",
+              evidence: "Chorleywood Bread Process in 1961."
+            }
+          ]
+        },
+        {
+          groupInstruction: "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 34–40 on your answer sheet.",
+          questionType: "summary_completion",
+          questions: [
+            {
+              id: "g3-q34",
+              questionNumber: 34,
+              type: "summary_completion",
+              topic: "biology",
+              estimatedBand: 6.5,
+              prompt: "A sourdough starter is a symbiotic ecosystem containing wild yeasts and ____ bacteria.",
+              correctAnswer: "lactic acid",
+              explanation: "Paragraph B describes yeasts alongside lactic acid bacteria.",
+              evidence: "alongside lactic acid bacteria (predominantly Fructilactobacillus sanfranciscensis)."
+            },
+            {
+              id: "g3-q35",
+              questionNumber: 35,
+              type: "summary_completion",
+              topic: "biology",
+              estimatedBand: 6.5,
+              prompt: "Wild yeasts create carbon dioxide which expands pockets in the ____ matrix.",
+              correctAnswer: "gluten",
+              explanation: "Paragraph B states carbon dioxide inflates gas pockets in the gluten matrix.",
+              evidence: "inflating microscopic gas pockets in the gluten matrix"
+            },
+            {
+              id: "g3-q36",
+              questionNumber: 36,
+              type: "summary_completion",
+              topic: "nutrition",
+              estimatedBand: 7.0,
+              prompt: "In unfermented bread, minerals bind with ____ acid to form insoluble compounds.",
+              correctAnswer: "phytic",
+              explanation: "Paragraph C notes that phytic acid binds tightly to dietary minerals.",
+              evidence: "In conventional quick-rise commercial bread, phytic acid binds tightly to dietary minerals"
+            },
+            {
+              id: "g3-q37",
+              questionNumber: 37,
+              type: "summary_completion",
+              topic: "biochemistry",
+              estimatedBand: 7.5,
+              prompt: "The sourdough acidic environment enables ____ to degrade the majority of phytic acid.",
+              correctAnswer: "phytase",
+              explanation: "Paragraph C notes the environment enables phytase to degrade over seventy percent of phytic acid.",
+              evidence: "the acidic environment enables phytase to degrade over seventy percent of phytic acid"
+            },
+            {
+              id: "g3-q38",
+              questionNumber: 38,
+              type: "summary_completion",
+              topic: "cooking",
+              estimatedBand: 7.0,
+              prompt: "Traditional sourdough relies on extended cold ____ fermentation.",
+              correctAnswer: "retardation",
+              explanation: "Paragraph D refers to twenty-four to forty-eight hours of cold retardation.",
+              evidence: "frequently spanning twenty-four to forty-eight hours of cold retardation"
+            },
+            {
+              id: "g3-q39",
+              questionNumber: 39,
+              type: "summary_completion",
+              topic: "industry",
+              estimatedBand: 6.5,
+              prompt: "The Chorleywood technique used commercial yeast and chemical ____ agents.",
+              correctAnswer: "oxidizing",
+              explanation: "Paragraph E refers to chemical oxidizing agents.",
+              evidence: "deployed chemical oxidizing agents, emulsifiers, and massive doses of isolated commercial yeast"
+            },
+            {
+              id: "g3-q40",
+              questionNumber: 40,
+              type: "summary_completion",
+              topic: "agriculture",
+              estimatedBand: 7.0,
+              prompt: "Modern artisan bakers are reviving ancient grains such as spelt and ____.",
+              correctAnswer: "einkorn",
+              explanation: "Paragraph E mentions ancient grains like spelt, einkorn, and emmer.",
+              evidence: "championing ancient grains like spelt, einkorn, and emmer"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync(
+  path.resolve('./content/reading/general-test-03.json'),
+  JSON.stringify(generalTest03, null, 2),
+  'utf8'
+);
+console.log('✓ Created general-test-03.json');

@@ -1,0 +1,47 @@
+name: BandUp IELTS CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Lint, Test, Content Audit & Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: TypeScript Type-Check
+        run: npx tsc -b
+
+      - name: Run Vitest Unit Tests
+        run: npm run test
+
+      - name: Validate Content JSON Schemas
+        run: npm run validate-content
+
+      - name: Audit Content Answer Integrity
+        run: npm run audit-content
+
+      - name: Verify Writing AI Evaluator Calibration (6 Benchmarks)
+        run: npm run test:calibration
+
+      - name: Production Build
+        run: npm run build

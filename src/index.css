@@ -1,0 +1,418 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-source-serif: 'Source Serif 4', 'Source Serif Pro', Georgia, Cambria, serif;
+
+    /* Zarii Brand Green Scale */
+    --brand-50: #F1FAF5;
+    --brand-100: #DDF2E7;
+    --brand-200: #B6E3CD;
+    --brand-300: #8ACFAE;
+    --brand-400: #5BB78D; /* Logo mint accent */
+    --brand-500: #2F9477;
+    --brand-600: #1E7A62;
+    --brand-700: #17634F;
+    --brand-800: #124F40; /* Logo deep green */
+    --brand-900: #0E3D32;
+    --brand-950: #0A2E25;
+
+    /* Neutrals (Slightly green-tinted gray) */
+    --bg-page: #F7FAF8;
+    --surface-card: #FFFFFF;
+    --border-subtle: #E1EBE5;
+    --text-muted: #5B6B63;
+    --text-main: #12211B;
+
+    /* Semantic light tokens */
+    --semantic-success: #1E9E63;
+    --semantic-warning: #D99A0B;
+    --semantic-error: #D1453B;
+    --semantic-info: #2B7FB8;
+
+    /* Skill colors (soft tint background + strong tone) */
+    --skill-listening-tint: #E6F5F5;
+    --skill-listening-tone: #0F8B8D;
+    --skill-listening-border: #BCE3E4;
+
+    --skill-reading-tint: #DDF2E7;
+    --skill-reading-tone: #1E7A62;
+    --skill-reading-border: #B6E3CD;
+
+    --skill-writing-tint: #FAF2E3;
+    --skill-writing-tone: #C98A0A;
+    --skill-writing-border: #F3DCB1;
+
+    --skill-speaking-tint: #FCECE9;
+    --skill-speaking-tone: #CF5C45;
+    --skill-speaking-border: #F6CBC3;
+  }
+
+  .dark {
+    /* Zarii Dark Theme matching anchors */
+    --bg-page: #0B1612;
+    --surface-card: #112019;
+    --surface-elevated: #172A21;
+    --border-subtle: #24392F;
+    --text-muted: #9DB3A7;
+    --text-main: #E8F2EC;
+
+    /* Semantic dark tokens */
+    --skill-listening-tint: rgba(15, 139, 141, 0.18);
+    --skill-listening-tone: #29B4B6;
+    --skill-listening-border: rgba(15, 139, 141, 0.35);
+
+    --skill-reading-tint: rgba(30, 122, 98, 0.18);
+    --skill-reading-tone: #5BB78D;
+    --skill-reading-border: rgba(30, 122, 98, 0.35);
+
+    --skill-writing-tint: rgba(201, 138, 10, 0.18);
+    --skill-writing-tone: #E5AC3A;
+    --skill-writing-border: rgba(201, 138, 10, 0.35);
+
+    --skill-speaking-tint: rgba(207, 92, 69, 0.18);
+    --skill-speaking-tone: #E07D69;
+    --skill-speaking-border: rgba(207, 92, 69, 0.35);
+  }
+
+  /* High Contrast Theme (WCAG AAA 7:1+ contrast) */
+  .high-contrast {
+    --skill-listening-tint: #000000;
+    --skill-listening-tone: #fde047;
+    --skill-listening-border: #ffffff;
+
+    --skill-reading-tint: #000000;
+    --skill-reading-tone: #4ade80;
+    --skill-reading-border: #ffffff;
+
+    --skill-writing-tint: #000000;
+    --skill-writing-tone: #fb923c;
+    --skill-writing-border: #ffffff;
+
+    --skill-speaking-tint: #000000;
+    --skill-speaking-tone: #f472b6;
+    --skill-speaking-border: #ffffff;
+
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  .high-contrast * {
+    border-color: #ffffff !important;
+  }
+
+  .high-contrast .bg-white,
+  .high-contrast .bg-slate-50,
+  .high-contrast .bg-slate-100,
+  .high-contrast .bg-slate-900,
+  .high-contrast .bg-slate-950 {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  .high-contrast text,
+  .high-contrast span,
+  .high-contrast p,
+  .high-contrast h1,
+  .high-contrast h2,
+  .high-contrast h3,
+  .high-contrast h4 {
+    color: #ffffff !important;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #root {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+  }
+
+  /* Scoped layout wrappers for fixed-viewport application shells (Student App & Admin Console) */
+  .app-shell,
+  .admin-shell {
+    height: 100dvh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Anchor sections scroll-margin-top equal to 72px navbar height so headings are not hidden */
+  #features,
+  #modules,
+  #how-it-works,
+  #faq {
+    scroll-margin-top: 72px;
+  }
+
+  html {
+    font-family: var(--font-inter);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+  }
+
+  /* Safe area insets for iOS/Android bottom bar */
+  .safe-bottom {
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Reading font class for passages */
+.font-reading {
+  font-family: var(--font-source-serif);
+  line-height: 1.8;
+  letter-spacing: -0.003em;
+}
+
+/* Dark mode Recharts global readability and contrast enhancements */
+.dark .recharts-cartesian-grid line {
+  stroke: #24392F !important;
+  stroke-opacity: 0.6 !important;
+}
+
+.dark .recharts-text,
+.dark .recharts-cartesian-axis-tick-value {
+  fill: #9DB3A7 !important;
+  color: #9DB3A7 !important;
+}
+
+.dark .recharts-cartesian-axis-line {
+  stroke: #24392F !important;
+}
+
+.dark .recharts-legend-item-text {
+  color: #E8F2EC !important;
+}
+
+.dark .recharts-polar-grid line,
+.dark .recharts-polar-grid polygon,
+.dark .recharts-polar-grid circle {
+  stroke: #24392F !important;
+  stroke-opacity: 0.6 !important;
+}
+
+.dark .recharts-polar-angle-axis text,
+.dark .recharts-polar-radius-axis text {
+  fill: #E8F2EC !important;
+}
+
+/* Links: green 600 with green 700 hover */
+a:not([class*="text-"]):not([class*="btn"]) {
+  color: #1E7A62;
+  transition: color 150ms ease-in-out;
+}
+
+a:not([class*="text-"]):not([class*="btn"]):hover {
+  color: #17634F;
+}
+
+.dark a:not([class*="text-"]):not([class*="btn"]) {
+  color: #5BB78D;
+}
+
+.dark a:not([class*="text-"]):not([class*="btn"]):hover {
+  color: #8ACFAE;
+}
+
+/* Dyslexia-Friendly Font Stack & Enhanced Letter Spacing */
+.font-dyslexic {
+  font-family: 'Lexend', 'OpenDyslexic', 'Comic Sans MS', 'Trebuchet MS', Verdana, sans-serif !important;
+  letter-spacing: 0.04em !important;
+  word-spacing: 0.08em !important;
+}
+
+.font-serif-mode {
+  font-family: var(--font-source-serif) !important;
+}
+
+/* Line Spacing Classes */
+.line-spacing-normal {
+  line-height: 1.5 !important;
+}
+
+.line-spacing-relaxed {
+  line-height: 1.75 !important;
+}
+
+.line-spacing-loose {
+  line-height: 2.0 !important;
+}
+
+/* Global 2px Focus Ring in Mint 300 (#8ACFAE) */
+*:focus-visible {
+  outline: 2px solid #8ACFAE !important;
+  outline-offset: 2px !important;
+}
+
+.high-contrast *:focus-visible {
+  outline: 3px solid #facc15 !important;
+  outline-offset: 3px !important;
+}
+
+/* Accessible Minimum Tap Targets on Mobile (WCAG 2.5.5 / 2.5.8) */
+@media (max-width: 640px) {
+  button,
+  a[role="button"],
+  input[type="button"],
+  input[type="submit"],
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Prevent mobile Safari & Chrome from auto-zooming on input focus (requires 16px minimum) */
+  input:not([type="checkbox"]):not([type="radio"]),
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* Ensure focused inputs and textareas are not hidden by on-screen keyboards or sticky bottom navigation */
+input,
+textarea,
+select,
+[contenteditable="true"] {
+  scroll-margin-bottom: 5.5rem;
+  scroll-margin-top: 4.5rem;
+}
+
+/* Eliminate 300ms mobile tap delay & prevent accidental double-tap zoom on interactive controls */
+button,
+a,
+input,
+textarea,
+select {
+  touch-action: manipulation;
+}
+
+/* Prevent horizontal viewport overflow on narrow screens */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars with Zarii brand green tint */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(18, 79, 64, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(18, 79, 64, 0.4);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(91, 183, 141, 0.25);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(91, 183, 141, 0.45);
+}
+
+/* Zarii Splash Screen & Loading Keyframes */
+@keyframes zarii-progress {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(50%); }
+  100% { transform: translateX(200%); }
+}
+
+.animate-mint-progress {
+  animation: zarii-progress 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes zarii-fade-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-zarii-fade {
+  animation: zarii-fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Reduced Motion Support for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print Stylesheet for Official IELTS Test Report Form (PDF Export) */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm;
+  }
+
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background: white !important;
+    color: #0f172a !important;
+    font-size: 10pt;
+  }
+
+  header, aside, nav, .print\:hidden, button, [role="navigation"] {
+    display: none !important;
+  }
+
+  .print\:p-0 {
+    padding: 0 !important;
+  }
+
+  .print\:border-none {
+    border: none !important;
+  }
+
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+
+  .print\:avoid-break {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}

@@ -1,0 +1,695 @@
+{
+  "id": "list-test-01",
+  "title": "Listening Practice Test 1",
+  "difficulty": "standard",
+  "timeLimitMinutes": 40,
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Community Watersports Center Membership Enquiry",
+      "contextDescription": "A phone conversation between a new resident, Mark Henderson, and the receptionist at the West Bay Watersports Center.",
+      "audioScript": [
+        {
+          "speaker": "Receptionist",
+          "text": "Good morning! West Bay Watersports Center. How can I help you today?"
+        },
+        {
+          "speaker": "Mark",
+          "text": "Hello there! I recently moved to the coast and I'm interested in joining the community sailing and paddleboard club. Could you give me some information about your membership packages?"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Certainly, sir! We offer three main tiers: Single Day Pass, Monthly Explorer, and our most popular one, the Annual Gold Pass."
+        },
+        {
+          "speaker": "Mark",
+          "text": "Great. What does the Annual Gold Pass include?"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "With the Annual Gold Pass, you get unlimited kayak and paddleboard rentals, plus access to our weekend sailing regattas. The regular price is four hundred and eighty pounds, but if you sign up before the fifteenth of May, it's discounted to four hundred and twenty pounds."
+        },
+        {
+          "speaker": "Mark",
+          "text": "Four hundred and twenty pounds sounds very reasonable. What time do you open on Saturday mornings?"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "On Saturdays and Sundays, our equipment lockers open at seven thirty in the morning, and water sessions continue until sunset, which is usually eight fifteen in the evening."
+        },
+        {
+          "speaker": "Mark",
+          "text": "Wonderful. And where exactly is the center located? I know it's near the marina."
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Yes, our main clubhouse is situated at forty-two Ocean Esplanade, right next to the lighthouse beacon."
+        },
+        {
+          "speaker": "Mark",
+          "text": "Forty-two Ocean Esplanade. Got it. Do I need to bring my own life jacket, or is safety gear provided?"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "All safety gear is provided free of charge, including certified buoyancy vests and emergency whistles. However, members must provide their own wetsuit."
+        },
+        {
+          "speaker": "Mark",
+          "text": "That's fine, I already have one. And what about car parking?"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "We have a secure parking compound behind the boathouse. For annual members, parking is completely free; you just need to display your blue permit on the dashboard."
+        },
+        {
+          "speaker": "Mark",
+          "text": "Excellent. Could you take down my email address to send me the application form?"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Of course! What's your surname and email?"
+        },
+        {
+          "speaker": "Mark",
+          "text": "My surname is Henderson, that's H-E-N-D-E-R-S-O-N, and my email is mark dot henderson ninety-two at mailhub dot com."
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Thank you, Mr. Henderson. I've sent the welcome packet over to you right now."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 1–10.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "l1-q1",
+              "questionNumber": 1,
+              "prompt": "Discounted Annual Gold Pass fee if paid before May 15: £____",
+              "correctAnswer": [
+                "420",
+                "four hundred and twenty",
+                "420 pounds"
+              ],
+              "explanation": "Receptionist mentions: 'if you sign up before the fifteenth of May, it's discounted to four hundred and twenty pounds.'",
+              "evidence": "if you sign up before the fifteenth of May, it's discounted to four hundred and twenty pounds."
+            },
+            {
+              "id": "l1-q2",
+              "questionNumber": 2,
+              "prompt": "Weekend equipment lockers open at ____ AM.",
+              "correctAnswer": [
+                "7:30",
+                "7.30",
+                "seven thirty"
+              ],
+              "explanation": "Receptionist states: 'On Saturdays and Sundays, our equipment lockers open at seven thirty in the morning'.",
+              "evidence": "our equipment lockers open at seven thirty in the morning"
+            },
+            {
+              "id": "l1-q3",
+              "questionNumber": 3,
+              "prompt": "Clubhouse address: 42 ____ Esplanade.",
+              "correctAnswer": "Ocean",
+              "explanation": "Receptionist says: 'forty-two Ocean Esplanade'.",
+              "evidence": "our main clubhouse is situated at forty-two Ocean Esplanade"
+            },
+            {
+              "id": "l1-q4",
+              "questionNumber": 4,
+              "prompt": "The center is positioned immediately adjacent to the ____.",
+              "correctAnswer": [
+                "lighthouse beacon",
+                "lighthouse"
+              ],
+              "explanation": "Receptionist says: 'right next to the lighthouse beacon.'",
+              "evidence": "right next to the lighthouse beacon."
+            },
+            {
+              "id": "l1-q5",
+              "questionNumber": 5,
+              "prompt": "Safety equipment supplied free includes buoyancy vests and emergency ____.",
+              "correctAnswer": "whistles",
+              "explanation": "Receptionist specifies: 'including certified buoyancy vests and emergency whistles.'",
+              "evidence": "including certified buoyancy vests and emergency whistles."
+            },
+            {
+              "id": "l1-q6",
+              "questionNumber": 6,
+              "prompt": "Item of apparel that members must supply for themselves: ____.",
+              "correctAnswer": "wetsuit",
+              "explanation": "Receptionist explains: 'However, members must provide their own wetsuit.'",
+              "evidence": "However, members must provide their own wetsuit."
+            },
+            {
+              "id": "l1-q7",
+              "questionNumber": 7,
+              "prompt": "Parking location: behind the ____.",
+              "correctAnswer": "boathouse",
+              "explanation": "Receptionist states: 'secure parking compound behind the boathouse.'",
+              "evidence": "We have a secure parking compound behind the boathouse."
+            },
+            {
+              "id": "l1-q8",
+              "questionNumber": 8,
+              "prompt": "Color of the dashboard parking permit: ____.",
+              "correctAnswer": "blue",
+              "explanation": "Receptionist says: 'display your blue permit on the dashboard.'",
+              "evidence": "you just need to display your blue permit on the dashboard."
+            },
+            {
+              "id": "l1-q9",
+              "questionNumber": 9,
+              "prompt": "Caller's family surname: ____.",
+              "correctAnswer": "Henderson",
+              "explanation": "Caller spells out H-E-N-D-E-R-S-O-N.",
+              "evidence": "My surname is Henderson, that's H-E-N-D-E-R-S-O-N"
+            },
+            {
+              "id": "l1-q10",
+              "questionNumber": 10,
+              "prompt": "Number included in the email address username: ____.",
+              "correctAnswer": [
+                "92",
+                "ninety-two"
+              ],
+              "explanation": "Caller gives: 'mark dot henderson ninety-two'.",
+              "evidence": "my email is mark dot henderson ninety-two at mailhub dot com."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Coastal Heritage Pier and Maritime Museum Tour",
+      "contextDescription": "A volunteer guide orienting visitors to the layout and facilities of the newly refurbished Victorian Heritage Pier.",
+      "audioScript": [
+        {
+          "speaker": "Tour Guide",
+          "text": "Good morning, ladies and gentlemen, and a warm welcome to the St. Jude Heritage Pier! Originally constructed in 1888 during the Victorian steamship boom, this historic pier has recently undergone a twelve-million-pound restoration."
+        },
+        {
+          "speaker": "Tour Guide",
+          "text": "Before you set off to explore, please look at the map of the pier head displayed on the brochure in your hands. We are currently standing at the Main Entrance Turnstiles at the very foot of the pier."
+        },
+        {
+          "speaker": "Tour Guide",
+          "text": "If you follow the central timber boardwalk straight ahead towards the ocean, the very first structure you will encounter on your left is the Maritime Ticket Office, labeled Location A."
+        },
+        {
+          "speaker": "Tour Guide",
+          "text": "Just past the ticket office on your left, you'll see a large octagonal dome with stained glass windows. That is our famous Victorian Tea Pavilion, indicated by Location B, where traditional afternoon tea is served daily."
+        },
+        {
+          "speaker": "Tour Guide",
+          "text": "Directly opposite the tea pavilion on the right-hand side of the boardwalk, marked as Location C, is the Children's Discovery Aquarium, featuring touch pools with starfish and hermit crabs."
+        },
+        {
+          "speaker": "Tour Guide",
+          "text": "Continuing further down the pier towards the seaward end, the boardwalk widens into a circular observation plaza. On the eastern perimeter of this plaza, at Location D, stands the historic Lifeboat Rescue Station, which houses the restored 1910 wooden rescue vessel."
+        },
+        {
+          "speaker": "Tour Guide",
+          "text": "Finally, at the absolute tip of the pier jutting out into deep water, designated as Location E, you will find the Open-Air Angling Platform, which offers panoramic views of the coastal cliffs."
+        },
+        {
+          "speaker": "Tour Guide",
+          "text": "Now, a couple of quick notices regarding visitor safety. Because the pier decking is made of authentic English oak planks, high-heeled shoes and wheeled skateboards are strictly prohibited. The pier gates close automatically at nine in the evening, so please ensure you make your way back to the shore by eight forty-five."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Label the map below. Choose the correct letter, A–E, and write the answers in boxes 11–15 on your answer sheet.",
+          "questionType": "diagram_label_completion",
+          "diagramSvg": "<svg viewBox='0 0 500 320' xmlns='http://www.w3.org/2000/svg' class='w-full max-w-lg mx-auto bg-slate-50 dark:bg-slate-900 rounded-xl p-2 border border-slate-200 dark:border-slate-700'><rect width='500' height='320' fill='#f0f9ff' rx='10'/><path d='M 50 160 L 450 160' stroke='#0d9488' stroke-width='36' stroke-linecap='round'/><text x='30' y='140' font-size='12' font-weight='bold' fill='#0f766e'>Entrance Turnstiles</text><rect x='100' y='70' width='60' height='45' rx='6' fill='#0284c7' stroke='#0369a1' stroke-width='2'/><text x='125' y='98' font-size='16' font-weight='bold' fill='white'>A</text><rect x='200' y='60' width='70' height='55' rx='6' fill='#0284c7' stroke='#0369a1' stroke-width='2'/><text x='230' y='94' font-size='16' font-weight='bold' fill='white'>B</text><rect x='200' y='200' width='70' height='55' rx='6' fill='#0284c7' stroke='#0369a1' stroke-width='2'/><text x='230' y='234' font-size='16' font-weight='bold' fill='white'>C</text><circle cx='380' cy='100' r='28' fill='#0284c7' stroke='#0369a1' stroke-width='2'/><text x='374' y='106' font-size='16' font-weight='bold' fill='white'>D</text><polygon points='440,160 490,120 490,200' fill='#0284c7' stroke='#0369a1' stroke-width='2'/><text x='465' y='166' font-size='16' font-weight='bold' fill='white'>E</text><text x='210' y='290' font-size='12' font-weight='bold' fill='#64748b'>Central Boardwalk</text></svg>",
+          "questions": [
+            {
+              "id": "l1-q11",
+              "questionNumber": 11,
+              "prompt": "Maritime Ticket Office",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Guide states: 'the very first structure you will encounter on your left is the Maritime Ticket Office, labeled Location A.'",
+              "evidence": "the very first structure you will encounter on your left is the Maritime Ticket Office, labeled Location A."
+            },
+            {
+              "id": "l1-q12",
+              "questionNumber": 12,
+              "prompt": "Victorian Tea Pavilion",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Guide notes: 'Just past the ticket office on your left... Victorian Tea Pavilion, indicated by Location B'.",
+              "evidence": "Victorian Tea Pavilion, indicated by Location B, where traditional afternoon tea is served daily."
+            },
+            {
+              "id": "l1-q13",
+              "questionNumber": 13,
+              "prompt": "Children's Discovery Aquarium",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Guide points out: 'Directly opposite the tea pavilion on the right-hand side of the boardwalk, marked as Location C, is the Children's Discovery Aquarium'.",
+              "evidence": "marked as Location C, is the Children's Discovery Aquarium, featuring touch pools with starfish"
+            },
+            {
+              "id": "l1-q14",
+              "questionNumber": 14,
+              "prompt": "Lifeboat Rescue Station",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "correctAnswer": "D",
+              "explanation": "Guide states: 'On the eastern perimeter of this plaza, at Location D, stands the historic Lifeboat Rescue Station'.",
+              "evidence": "at Location D, stands the historic Lifeboat Rescue Station, which houses the restored 1910 wooden rescue vessel."
+            },
+            {
+              "id": "l1-q15",
+              "questionNumber": 15,
+              "prompt": "Open-Air Angling Platform",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "correctAnswer": "E",
+              "explanation": "Guide specifies: 'at the absolute tip of the pier jutting out into deep water, designated as Location E, you will find the Open-Air Angling Platform'.",
+              "evidence": "designated as Location E, you will find the Open-Air Angling Platform"
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Choose the correct letter, A, B, or C. Write your answers in boxes 16–20 on your answer sheet.",
+          "questionType": "multiple_choice_single",
+          "questions": [
+            {
+              "id": "l1-q16",
+              "questionNumber": 16,
+              "prompt": "In what year was the St. Jude Heritage Pier originally constructed?",
+              "options": [
+                "1888",
+                "1910",
+                "1928"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Guide says: 'Originally constructed in 1888 during the Victorian steamship boom'.",
+              "evidence": "Originally constructed in 1888 during the Victorian steamship boom"
+            },
+            {
+              "id": "l1-q17",
+              "questionNumber": 17,
+              "prompt": "How much funding was invested in the recent restoration project?",
+              "options": [
+                "Two million pounds",
+                "Twelve million pounds",
+                "Ten million pounds"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Guide states: 'undergone a twelve-million-pound restoration.'",
+              "evidence": "undergone a twelve-million-pound restoration."
+            },
+            {
+              "id": "l1-q18",
+              "questionNumber": 18,
+              "prompt": "Which item of footwear is explicitly banned on the pier?",
+              "options": [
+                "Running sneakers",
+                "Open-toed sandals",
+                "High-heeled shoes"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Guide states: 'high-heeled shoes and wheeled skateboards are strictly prohibited.'",
+              "evidence": "high-heeled shoes and wheeled skateboards are strictly prohibited."
+            },
+            {
+              "id": "l1-q19",
+              "questionNumber": 19,
+              "prompt": "What wood was used for the restored pier decking planks?",
+              "options": [
+                "English oak",
+                "Scandinavian pine",
+                "Teak"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Guide mentions: 'Because the pier decking is made of authentic English oak planks'.",
+              "evidence": "Because the pier decking is made of authentic English oak planks"
+            },
+            {
+              "id": "l1-q20",
+              "questionNumber": 20,
+              "prompt": "By what time should visitors start returning to shore before gates lock?",
+              "options": [
+                "8:15 PM",
+                "8:45 PM",
+                "9:00 PM"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Guide states: 'The pier gates close automatically at nine in the evening, so please ensure you make your way back to the shore by eight forty-five.'",
+              "evidence": "please ensure you make your way back to the shore by eight forty-five."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Academic Seminar on Marine Microplastics Research",
+      "contextDescription": "Two environmental science students, Chloe and Sam, discussing their upcoming seminar on microplastics with Professor Davies.",
+      "audioScript": [
+        {
+          "speaker": "Professor",
+          "text": "Good afternoon, Chloe, Sam. Let's review the final draft of your presentation on microplastic trophic transfer."
+        },
+        {
+          "speaker": "Chloe",
+          "text": "Thanks, Professor Davies. We've structured the talk into four sections: primary sources, fragmentation mechanisms, biological ingestion, and mitigation."
+        },
+        {
+          "speaker": "Sam",
+          "text": "For the primary sources, I was planning to focus mainly on industrial cosmetic microbeads, but recent literature suggests synthetic textile microfibers actually account for over thirty-five percent of ocean microplastics."
+        },
+        {
+          "speaker": "Professor",
+          "text": "That's a very prudent update, Sam. Every laundry wash cycle can release up to seven hundred thousand microfibers into municipal wastewater streams."
+        },
+        {
+          "speaker": "Chloe",
+          "text": "And in the biological section, I looked at zooplankton. When copepods ingest non-nutritive plastic spheres, their caloric intake drops significantly, leading to decreased reproductive egg viability."
+        },
+        {
+          "speaker": "Professor",
+          "text": "Excellent evidence. But what about trophic magnification? Do the toxins travel up to apex predators like seals and seabirds?"
+        },
+        {
+          "speaker": "Sam",
+          "text": "Yes, we found studies examining polychlorinated biphenyls—PCBs. Because plastic particles are hydrophobic, they absorb persistent organic pollutants from surrounding seawater like sponges. When small fish consume thousands of particles, the toxic burden biomagnifies up the food chain."
+        },
+        {
+          "speaker": "Professor",
+          "text": "Very thorough. Now, regarding your slide design: your current data graph on slide eight is far too crowded. You should eliminate the background gridlines and use contrasting colors for the benthic vs pelagic sample groups."
+        },
+        {
+          "speaker": "Chloe",
+          "text": "Understood. I will simplify the axis labels and highlight the benthic species in amber."
+        },
+        {
+          "speaker": "Professor",
+          "text": "Good. Remember that each team has strictly twenty minutes to present, followed by five minutes for faculty Q&A."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Choose TWO letters, A–E. Write your answers in boxes 21 and 22 on your answer sheet.\nWhich TWO primary findings regarding microplastics are mentioned by the students?",
+          "questionType": "multiple_choice_multi",
+          "questions": [
+            {
+              "id": "l1-q21",
+              "questionNumber": 21,
+              "prompt": "Key findings discussed in the seminar (Choose TWO letters)",
+              "options": [
+                "A. Synthetic clothing fibers produce more marine pollution than cosmetic beads.",
+                "B. Microplastics completely dissolve in ocean water within six months.",
+                "C. Copepod zooplankton suffer reduced reproductive fertility when ingesting plastic.",
+                "D. Freshwater rivers contain zero microplastic particles.",
+                "E. Microplastics repel all chemical pollutants in seawater."
+              ],
+              "correctAnswer": [
+                "A",
+                "C"
+              ],
+              "explanation": "Sam mentions synthetic microfibers account for >35% of pollution (A), and Chloe notes copepods suffer decreased reproductive egg viability (C).",
+              "evidence": "synthetic textile microfibers actually account for over thirty-five percent... caloric intake drops significantly, leading to decreased reproductive egg viability."
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Who suggested the following actions? Choose the correct letter, A, B, or C, for questions 23–25.\nA: Professor Davies\nB: Chloe\nC: Sam",
+          "questionType": "matching",
+          "questions": [
+            {
+              "id": "l1-q23",
+              "questionNumber": 23,
+              "prompt": "Include data regarding the release of microfibers during household laundry washes.",
+              "options": [
+                "A. Professor Davies",
+                "B. Chloe",
+                "C. Sam"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Professor Davies points out: 'Every laundry wash cycle can release up to seven hundred thousand microfibers'.",
+              "evidence": "Every laundry wash cycle can release up to seven hundred thousand microfibers into municipal wastewater streams."
+            },
+            {
+              "id": "l1-q24",
+              "questionNumber": 24,
+              "prompt": "Highlight the chemical absorption of persistent pollutants like PCBs.",
+              "options": [
+                "A. Professor Davies",
+                "B. Chloe",
+                "C. Sam"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Sam states: 'we found studies examining polychlorinated biphenyls—PCBs. Because plastic particles are hydrophobic...'",
+              "evidence": "Yes, we found studies examining polychlorinated biphenyls—PCBs. Because plastic particles are hydrophobic, they absorb persistent organic pollutants"
+            },
+            {
+              "id": "l1-q25",
+              "questionNumber": 25,
+              "prompt": "Remove distracting background gridlines from presentation slide graphs.",
+              "options": [
+                "A. Professor Davies",
+                "B. Chloe",
+                "C. Sam"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Professor Davies advises: 'You should eliminate the background gridlines and use contrasting colors'.",
+              "evidence": "You should eliminate the background gridlines and use contrasting colors for the benthic vs pelagic sample groups."
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Complete the summary below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 26–30.",
+          "questionType": "summary_completion",
+          "questions": [
+            {
+              "id": "l1-q26",
+              "questionNumber": 26,
+              "prompt": "Microplastics absorb toxins because their surface chemical characteristic is ____.",
+              "correctAnswer": "hydrophobic",
+              "explanation": "Sam explains: 'Because plastic particles are hydrophobic, they absorb persistent organic pollutants'.",
+              "evidence": "Because plastic particles are hydrophobic, they absorb persistent organic pollutants from surrounding seawater like sponges."
+            },
+            {
+              "id": "l1-q27",
+              "questionNumber": 27,
+              "prompt": "The biological buildup of contaminants across food web tiers is known as ____.",
+              "correctAnswer": [
+                "biomagnification",
+                "trophic magnification"
+              ],
+              "explanation": "Sam mentions: 'biomagnifies up the food chain'.",
+              "evidence": "the toxic burden biomagnifies up the food chain."
+            },
+            {
+              "id": "l1-q28",
+              "questionNumber": 28,
+              "prompt": "Chloe intends to color-code the benthic organism samples using ____.",
+              "correctAnswer": "amber",
+              "explanation": "Chloe says: 'I will simplify the axis labels and highlight the benthic species in amber.'",
+              "evidence": "I will simplify the axis labels and highlight the benthic species in amber."
+            },
+            {
+              "id": "l1-q29",
+              "questionNumber": 29,
+              "prompt": "Maximum presentation speaking duration permitted: ____ minutes.",
+              "correctAnswer": [
+                "20",
+                "twenty"
+              ],
+              "explanation": "Professor says: 'each team has strictly twenty minutes to present'.",
+              "evidence": "each team has strictly twenty minutes to present"
+            },
+            {
+              "id": "l1-q30",
+              "questionNumber": 30,
+              "prompt": "Duration set aside for faculty questions following the talk: ____ minutes.",
+              "correctAnswer": [
+                "5",
+                "five"
+              ],
+              "explanation": "Professor states: 'followed by five minutes for faculty Q&A.'",
+              "evidence": "followed by five minutes for faculty Q&A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "University Lecture: Aerodynamic Architecture and Urban Wind Tunnels",
+      "contextDescription": "A lecture delivered by an architectural engineering professor on managing pedestrian wind microclimates around high-rise towers.",
+      "audioScript": [
+        {
+          "speaker": "Lecturer",
+          "text": "Welcome back to Architectural Aerodynamics. Today we turn our attention to the urban microclimate—specifically, how the geometry of high-rise structures impacts pedestrian ground-level wind speeds."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "When a solitary skyscraper is erected in an open cityscape, it acts as a colossal sail. Approaching atmospheric winds, which travel significantly faster at higher altitudes due to lack of ground friction, strike the upper facade of the building. This collision creates a high-pressure stagnation zone on the windward face."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "Because air naturally flows from high to low pressure, this intercepted air is driven forcefully downward along the building facade. This aerodynamic downward diversion is known as the downwash vortex. When the downwash reaches the ground plane, it rolls outwards across pedestrian footpaths at accelerating velocities, frequently exceeding twenty-five meters per second."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "In addition, when tall towers are positioned close together with narrow gaps between them, they induce the Venturi effect—often called the wind tunnel effect. Compressed into constricted urban alleys, wind streamlines accelerate dramatically, ripping awnings and toppling outdoor cafe furniture."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "Fortunately, architectural engineers have developed several structural countermeasures. The first design mitigation involves aerodynamic corner chamfering: carving curved or beveled edges onto building corners, which softens sharp vortex separation. Research demonstrates that chamfered corners can diminish ground wind gusts by up to thirty-two percent."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "A second prominent intervention is the incorporation of through-building openings, known in engineering as porous wind slits. Rather than forcing the entire air mass downwards, these horizontal voids allow wind to flow harmlessly through upper stories. A striking example is the Shanghai World Financial Center, whose aperture near the pinnacle significantly alleviates structural vortex shedding."
+        },
+        {
+          "speaker": "Lecturer",
+          "text": "Finally, at the street level, architects deploy large horizontal podiums and landscaped canopies. A broad podium extending five to eight meters from the tower perimeter acts as a physical shield, intercepting descending downwash winds before they can strike pedestrians on the sidewalk."
+        }
+      ],
+      "questionGroups": [
+        {
+          "groupInstruction": "Complete the lecture notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer. Write your answers in boxes 31–40 on your answer sheet.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "l1-q31",
+              "questionNumber": 31,
+              "prompt": "Winds at higher altitudes travel faster because of an absence of ____.",
+              "correctAnswer": [
+                "ground friction",
+                "friction"
+              ],
+              "explanation": "Lecturer notes: 'due to lack of ground friction'.",
+              "evidence": "due to lack of ground friction, strike the upper facade of the building."
+            },
+            {
+              "id": "l1-q32",
+              "questionNumber": 32,
+              "prompt": "Wind colliding with a building facade generates a high-pressure ____ zone.",
+              "correctAnswer": "stagnation",
+              "explanation": "Lecturer says: 'creates a high-pressure stagnation zone on the windward face.'",
+              "evidence": "creates a high-pressure stagnation zone on the windward face."
+            },
+            {
+              "id": "l1-q33",
+              "questionNumber": 33,
+              "prompt": "The downward movement of high-level air to the street is termed the ____.",
+              "correctAnswer": "downwash vortex",
+              "explanation": "Lecturer states: 'downward diversion is known as the downwash vortex.'",
+              "evidence": "This aerodynamic downward diversion is known as the downwash vortex."
+            },
+            {
+              "id": "l1-q34",
+              "questionNumber": 34,
+              "prompt": "Ground-level street wind speeds can exceed ____ meters per second.",
+              "correctAnswer": [
+                "25",
+                "twenty-five"
+              ],
+              "explanation": "Lecturer says: 'frequently exceeding twenty-five meters per second.'",
+              "evidence": "frequently exceeding twenty-five meters per second."
+            },
+            {
+              "id": "l1-q35",
+              "questionNumber": 35,
+              "prompt": "Narrow passages between adjacent towers cause wind to speed up via the ____ effect.",
+              "correctAnswer": "Venturi",
+              "explanation": "Lecturer states: 'induce the Venturi effect—often called the wind tunnel effect.'",
+              "evidence": "they induce the Venturi effect—often called the wind tunnel effect."
+            },
+            {
+              "id": "l1-q36",
+              "questionNumber": 36,
+              "prompt": "Cutting curved or angled edges on building corners is termed ____.",
+              "correctAnswer": [
+                "chamfering",
+                "corner chamfering"
+              ],
+              "explanation": "Lecturer refers to: 'aerodynamic corner chamfering: carving curved or beveled edges'.",
+              "evidence": "involves aerodynamic corner chamfering: carving curved or beveled edges onto building corners"
+            },
+            {
+              "id": "l1-q37",
+              "questionNumber": 37,
+              "prompt": "Corner modifications can decrease ground gust speeds by as much as ____ percent.",
+              "correctAnswer": [
+                "32",
+                "thirty-two"
+              ],
+              "explanation": "Lecturer cites: 'can diminish ground wind gusts by up to thirty-two percent.'",
+              "evidence": "can diminish ground wind gusts by up to thirty-two percent."
+            },
+            {
+              "id": "l1-q38",
+              "questionNumber": 38,
+              "prompt": "Horizontal voids designed through buildings are called ____.",
+              "correctAnswer": "wind slits",
+              "explanation": "Lecturer refers to: 'through-building openings, known in engineering as porous wind slits.'",
+              "evidence": "through-building openings, known in engineering as porous wind slits."
+            },
+            {
+              "id": "l1-q39",
+              "questionNumber": 39,
+              "prompt": "The landmark building cited in China featuring an upper wind opening is the ____ Financial Center.",
+              "correctAnswer": [
+                "Shanghai World",
+                "Shanghai"
+              ],
+              "explanation": "Lecturer refers to: 'Shanghai World Financial Center, whose aperture near the pinnacle'.",
+              "evidence": "A striking example is the Shanghai World Financial Center"
+            },
+            {
+              "id": "l1-q40",
+              "questionNumber": 40,
+              "prompt": "Pedestrians can be shielded from descending air by street-level horizontal structures called ____.",
+              "correctAnswer": "podiums",
+              "explanation": "Lecturer says: 'deploy large horizontal podiums and landscaped canopies.'",
+              "evidence": "A broad podium extending five to eight meters from the tower perimeter acts as a physical shield"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "attribution": {
+    "source": "Zarii Open Audio Education Lab",
+    "license": "CC BY-SA 4.0",
+    "notes": "Original multi-speaker listening audio scripts designed for IELTS listening assessment."
+  }
+}

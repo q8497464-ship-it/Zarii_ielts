@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ZariiListeningTest",
+  "type": "object",
+  "required": ["id", "title", "timeLimitMinutes", "sections", "attribution"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "difficulty": { "type": "string", "enum": ["easy", "standard", "challenging"] },
+    "timeLimitMinutes": { "type": "integer", "default": 40 },
+    "sections": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["sectionNumber", "title", "contextDescription", "audioScript", "questionGroups"],
+        "properties": {
+          "sectionNumber": { "type": "integer", "enum": [1, 2, 3, 4] },
+          "title": { "type": "string" },
+          "contextDescription": { "type": "string" },
+          "audioUrl": { "type": "string" },
+          "audioScript": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["speaker", "text"],
+              "properties": {
+                "speaker": { "type": "string" },
+                "text": { "type": "string" }
+              }
+            }
+          },
+          "questionGroups": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["groupInstruction", "questionType", "questions"],
+              "properties": {
+                "groupInstruction": { "type": "string" },
+                "questionType": { "type": "string" },
+                "questions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["id", "questionNumber", "prompt", "correctAnswer"],
+                    "properties": {
+                      "id": { "type": "string" },
+                      "questionNumber": { "type": "integer" },
+                      "prompt": { "type": "string" },
+                      "options": { "type": "array", "items": { "type": "string" } },
+                      "correctAnswer": {
+                        "oneOf": [
+                          { "type": "string" },
+                          { "type": "array", "items": { "type": "string" } }
+                        ]
+                      },
+                      "explanation": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "attribution": {
+      "type": "object",
+      "required": ["source", "license", "notes"],
+      "properties": {
+        "source": { "type": "string" },
+        "license": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
