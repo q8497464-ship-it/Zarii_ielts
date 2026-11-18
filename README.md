@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 Zarii — Free IELTS Preparation Web App (Academic & General Training)
 
 **Zarii** is a 100% free, offline-first IELTS preparation platform built with modern web technologies. Designed for zero-cost hosting and operation, it empowers learners globally to practice Reading, Listening, Writing, and Speaking without subscriptions, paywalls, or credit cards.
@@ -244,3 +245,6 @@ npm run build
 - [Administrator & Editor Guide](ADMIN_GUIDE.md)
 - [Content Schema & Test Writing Guide](content/SCHEMA.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
+=======
+# Zarii_ielts
+>>>>>>> 2961992090687de4a9576a7f3d6bfe99e04aeb1c
