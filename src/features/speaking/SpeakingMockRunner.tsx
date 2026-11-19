@@ -34,6 +34,7 @@ import {
   isSpeechSynthesisSupported,
 } from './speechUtils';
 import { evaluateSpeakingSubmission } from './speakingAiEvaluator';
+import { AiEvaluationWaitingScreen } from '../../components/loader';
 import { db } from '../../lib/db';
 import { Button } from '../../components/ui/Button';
 import { Card } from '../../components/ui/Card';
@@ -718,15 +719,12 @@ export function SpeakingMockRunner() {
 
       {/* Stage: Evaluating */}
       {stage === 'evaluating' && (
-        <Card className="p-12 text-center space-y-4">
-          <Loader2 className="w-10 h-10 animate-spin text-teal-600 dark:text-teal-400 mx-auto" />
-          <h2 className="text-xl font-bold text-slate-900 dark:text-white">
-            Examiner is Evaluating Your Speaking Test...
-          </h2>
-          <p className="text-xs text-slate-500 max-w-md mx-auto leading-relaxed">
-            Analyzing speech fluency, filler word density, grammatical range and accuracy, lexical resource, and coherence using certified IELTS grading criteria.
-          </p>
-        </Card>
+        <div className="py-6">
+          <AiEvaluationWaitingScreen
+            moduleType="speaking"
+            title="Examiner is Evaluating Your Speaking Test..."
+          />
+        </div>
       )}
 
       {/* Setup modal */}

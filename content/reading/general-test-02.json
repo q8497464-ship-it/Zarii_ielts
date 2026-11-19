@@ -73,6 +73,93 @@
               "evidence": "Hazardous materials—including lithium batteries, domestic chemical solvents, used motor fluids, and fluorescent light tubes—must be deposited personally at the Central Civic Amenity Depot"
             }
           ]
+        },
+        {
+          "groupInstruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the text for each answer. Write your answers in boxes 8–14 on your answer sheet.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "g2-q8",
+              "questionNumber": 8,
+              "prompt": "On weekdays, the Oakwood Leisure Pavilion opens at ____ in the morning.",
+              "correctAnswer": [
+                "06:30",
+                "6:30",
+                "6.30"
+              ],
+              "explanation": "Paragraph A: from 06:30 to 22:00 on weekdays.",
+              "evidence": "06:30 to 22:00 on weekdays"
+            },
+            {
+              "id": "g2-q9",
+              "questionNumber": 9,
+              "prompt": "Proof of address must be dated within the preceding ____ months.",
+              "correctAnswer": [
+                "3",
+                "three"
+              ],
+              "explanation": "Paragraph A: dated within the previous three months.",
+              "evidence": "dated within the previous three months"
+            },
+            {
+              "id": "g2-q10",
+              "questionNumber": 10,
+              "prompt": "In the swimming pool, children under twelve must be accompanied by an adult of at least ____ years.",
+              "correctAnswer": [
+                "18",
+                "eighteen"
+              ],
+              "explanation": "Paragraph A: accompanied in the aquatic facility by an adult aged eighteen or older.",
+              "evidence": "adult aged eighteen or older"
+            },
+            {
+              "id": "g2-q11",
+              "questionNumber": 11,
+              "prompt": "Cardboard boxes for blue bins must not exceed ____ in length.",
+              "correctAnswer": [
+                "one meter",
+                "1 meter",
+                "1 metre",
+                "one metre",
+                "1m"
+              ],
+              "explanation": "Paragraph B: must not exceed one meter in length.",
+              "evidence": "must not exceed one meter in length"
+            },
+            {
+              "id": "g2-q12",
+              "questionNumber": 12,
+              "prompt": "Grease-soaked pizza boxes must be placed in ____ refuse bins.",
+              "correctAnswer": [
+                "grey",
+                "gray"
+              ],
+              "explanation": "Paragraph B: must be diverted to grey refuse bins.",
+              "evidence": "diverted to grey refuse bins"
+            },
+            {
+              "id": "g2-q13",
+              "questionNumber": 13,
+              "prompt": "Green bins accept tree branches with a diameter under ____ centimeters.",
+              "correctAnswer": [
+                "10",
+                "ten"
+              ],
+              "explanation": "Paragraph C: small pruned tree branches under ten centimeters in diameter.",
+              "evidence": "under ten centimeters in diameter"
+            },
+            {
+              "id": "g2-q14",
+              "questionNumber": 14,
+              "prompt": "Hazardous chemicals and batteries should be taken to the depot located on ____ Road.",
+              "correctAnswer": [
+                "Millfield",
+                "Millfield Road"
+              ],
+              "explanation": "Paragraph C: Central Civic Amenity Depot on Millfield Road.",
+              "evidence": "Central Civic Amenity Depot on Millfield Road"
+            }
+          ]
         }
       ]
     },
@@ -84,64 +171,141 @@
       "text": "Paragraph A\nRegistered cardholders of the Metropolitan Public Library system may borrow up to fifteen physical volumes and ten digital e-books or audiobooks simultaneously. Physical book loans are issued for twenty-one days, while multimedia DVD loans carry a seven-day borrowing limit. Electronic titles automatically expire from client reading devices at 23:59 on their scheduled due date, preventing the accrual of overdue financial penalties. Physical books renewed online or via the mobile application will be extended for an additional three weeks, provided no active reservation hold has been requested by another member.\n\nParagraph B\nThe third-floor Innovation Lab houses twelve collaborative multimedia suites equipped with high-performance audio editing software, 3D printing equipment, and professional podcasting microphones. Access to these specialty studios is complimentary for library members; however, reservations must be booked online at least forty-eight hours in advance through the library patron portal. Members who fail to check in within fifteen minutes of their reserved start time forfeit their booking slot, which is then made available to walk-in patrons.\n\nParagraph C\nThe silent reading concourse on the fourth floor enforces absolute noise restrictions. Mobile phone telephone conversations are strictly forbidden, and personal headphones must be adjusted to prevent sound leakage. Beverages in spill-proof thermos flasks or securely capped water bottles are permitted; open takeaway coffee cups and hot food items are forbidden and will be confiscated by floor wardens. Printing and copying stations operate on a prepaid account basis: standard monochrome prints cost five pence per page, while color reproductions incur a twenty pence per sheet tariff.",
       "questionGroups": [
         {
-          "groupInstruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 8–14 on your answer sheet.",
-          "questionType": "summary_completion",
+          "groupInstruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the text for each answer. Write your answers in boxes 15–21 on your answer sheet.",
+          "questionType": "sentence_completion",
           "questions": [
             {
-              "id": "g2-q8",
-              "questionNumber": 8,
-              "prompt": "Members can borrow a maximum of ____ digital books or audiobooks at any one time.",
-              "correctAnswer": "ten",
-              "explanation": "Paragraph A states members can borrow 'ten digital e-books or audiobooks simultaneously.'",
-              "evidence": "borrow up to fifteen physical volumes and ten digital e-books or audiobooks simultaneously."
+              "id": "g2-q15",
+              "questionNumber": 15,
+              "prompt": "Library members can borrow up to ____ physical books at one time.",
+              "correctAnswer": [
+                "15",
+                "fifteen"
+              ],
+              "explanation": "Paragraph A: borrow up to fifteen physical volumes.",
+              "evidence": "up to fifteen physical volumes"
             },
             {
-              "id": "g2-q9",
-              "questionNumber": 9,
-              "prompt": "The loan period for multimedia DVD items is ____ days.",
-              "correctAnswer": "seven",
-              "explanation": "Paragraph A says 'multimedia DVD loans carry a seven-day borrowing limit.'",
-              "evidence": "while multimedia DVD loans carry a seven-day borrowing limit."
+              "id": "g2-q16",
+              "questionNumber": 16,
+              "prompt": "Loans for physical books last for ____ days.",
+              "correctAnswer": [
+                "21",
+                "twenty-one",
+                "twenty one"
+              ],
+              "explanation": "Paragraph A: Physical book loans are issued for twenty-one days.",
+              "evidence": "twenty-one days"
             },
             {
-              "id": "g2-q10",
-              "questionNumber": 10,
-              "prompt": "Renewals are not permitted if another cardholder has placed a ____ on the book.",
-              "correctAnswer": "reservation hold",
-              "explanation": "Paragraph A states renewal is extended 'provided no active reservation hold has been requested by another member.'",
-              "evidence": "provided no active reservation hold has been requested by another member."
+              "id": "g2-q17",
+              "questionNumber": 17,
+              "prompt": "Multimedia DVD loans must be returned within ____ days.",
+              "correctAnswer": [
+                "7",
+                "seven"
+              ],
+              "explanation": "Paragraph A: multimedia DVD loans carry a seven-day borrowing limit.",
+              "evidence": "seven-day borrowing limit"
             },
             {
-              "id": "g2-q11",
-              "questionNumber": 11,
-              "prompt": "Specialized multimedia suites must be booked at least ____ in advance.",
-              "correctAnswer": "forty-eight hours",
-              "explanation": "Paragraph B explains reservations must be made 'at least forty-eight hours in advance'.",
-              "evidence": "reservations must be booked online at least forty-eight hours in advance through the library patron portal."
+              "id": "g2-q18",
+              "questionNumber": 18,
+              "prompt": "Electronic titles automatically expire from devices at ____ at night.",
+              "correctAnswer": [
+                "23:59",
+                "11:59"
+              ],
+              "explanation": "Paragraph A: expire from client reading devices at 23:59.",
+              "evidence": "expire from client reading devices at 23:59"
             },
             {
-              "id": "g2-q12",
-              "questionNumber": 12,
-              "prompt": "Booked studio slots are relinquished if members arrive more than ____ late.",
-              "correctAnswer": "fifteen minutes",
-              "explanation": "Paragraph B notes 'Members who fail to check in within fifteen minutes of their reserved start time forfeit their booking slot'.",
-              "evidence": "Members who fail to check in within fifteen minutes of their reserved start time forfeit their booking slot"
+              "id": "g2-q19",
+              "questionNumber": 19,
+              "prompt": "Innovations Lab specialty studios must be reserved at least ____ hours in advance.",
+              "correctAnswer": [
+                "48",
+                "forty-eight",
+                "forty eight"
+              ],
+              "explanation": "Paragraph B: booked online at least forty-eight hours in advance.",
+              "evidence": "at least forty-eight hours in advance"
             },
             {
-              "id": "g2-q13",
-              "questionNumber": 13,
-              "prompt": "In the silent study concourse, drinks must be carried in spill-proof flasks or ____ bottles.",
-              "correctAnswer": "securely capped",
-              "explanation": "Paragraph C notes beverages are permitted in 'securely capped water bottles'.",
+              "id": "g2-q20",
+              "questionNumber": 20,
+              "prompt": "Patrons who arrive more than ____ minutes late lose their studio booking.",
+              "correctAnswer": [
+                "15",
+                "fifteen"
+              ],
+              "explanation": "Paragraph B: fail to check in within fifteen minutes of their reserved start time forfeit their booking.",
+              "evidence": "within fifteen minutes of their reserved start time"
+            },
+            {
+              "id": "g2-q21",
+              "questionNumber": 21,
+              "prompt": "Standard black and white printing costs ____ pence per sheet.",
+              "correctAnswer": [
+                "5",
+                "five"
+              ],
+              "explanation": "Paragraph C: standard monochrome prints cost five pence per page.",
+              "evidence": "five pence per page"
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Do the following statements agree with the information given in Passage 2? In boxes 22–27 on your answer sheet, write TRUE, FALSE, or NOT GIVEN.",
+          "questionType": "true_false_not_given",
+          "questions": [
+            {
+              "id": "g2-q22",
+              "questionNumber": 22,
+              "prompt": "Physical book loans can be renewed even if another patron has reserved the title.",
+              "correctAnswer": "false",
+              "explanation": "Paragraph A: extended for an additional three weeks, provided no active reservation hold has been requested.",
+              "evidence": "provided no active reservation hold has been requested by another member"
+            },
+            {
+              "id": "g2-q23",
+              "questionNumber": 23,
+              "prompt": "Library patrons are charged an hourly rental fee to use the multimedia editing suites.",
+              "correctAnswer": "false",
+              "explanation": "Paragraph B: Access to these specialty studios is complimentary for library members.",
+              "evidence": "Access to these specialty studios is complimentary for library members"
+            },
+            {
+              "id": "g2-q24",
+              "questionNumber": 24,
+              "prompt": "Voice phone calls may be taken in designated stairwells near the silent reading concourse.",
+              "correctAnswer": "not given",
+              "explanation": "Paragraph C states phone conversations are forbidden on the concourse, but makes no mention of stairwells.",
+              "evidence": "Mobile phone telephone conversations are strictly forbidden"
+            },
+            {
+              "id": "g2-q25",
+              "questionNumber": 25,
+              "prompt": "Water bottles with secure caps are permitted on the fourth-floor reading floor.",
+              "correctAnswer": "true",
+              "explanation": "Paragraph C: Beverages in spill-proof thermos flasks or securely capped water bottles are permitted.",
               "evidence": "Beverages in spill-proof thermos flasks or securely capped water bottles are permitted"
             },
             {
-              "id": "g2-q14",
-              "questionNumber": 14,
-              "prompt": "Standard black-and-white printing costs ____ per page.",
-              "correctAnswer": "five pence",
-              "explanation": "Paragraph C states 'standard monochrome prints cost five pence per page'.",
-              "evidence": "standard monochrome prints cost five pence per page, while color reproductions incur a twenty pence per sheet tariff."
+              "id": "g2-q26",
+              "questionNumber": 26,
+              "prompt": "The library mobile application offers voice recognition search capabilities.",
+              "correctAnswer": "not given",
+              "explanation": "The mobile app is mentioned for renewals, but search capabilities are not discussed.",
+              "evidence": "renewed online or via the mobile application"
+            },
+            {
+              "id": "g2-q27",
+              "questionNumber": 27,
+              "prompt": "Color printing costs four times as much as monochrome printing.",
+              "correctAnswer": "true",
+              "explanation": "Paragraph C: monochrome is 5p, while color reproductions incur a 20p tariff (20 / 5 = 4).",
+              "evidence": "monochrome prints cost five pence per page, while color reproductions incur a twenty pence per sheet tariff"
             }
           ]
         }
@@ -155,56 +319,173 @@
       "text": "Paragraph A\nThe dissemination of written dispatches is as old as organized statehood itself. In the ancient Persian Empire, the royal courier network known as the Chapar Khaneh operated relay stations spaced one day's ride apart along the 2,500-kilometer Royal Road. Fresh horses and rested couriers were kept perpetually stationed; messages traversed the entire breadth of the realm in seven days—a speed described by the Greek historian Herodotus as unhampered by snow, rain, heat, or darkness. Similar imperial courier networks, such as the Roman Cursus Publicus and the Incan Chasqui runners who traversed Andean mountain suspension bridges on foot, were designed strictly to convey administrative military decrees rather than personal correspondence for ordinary citizens.\n\nParagraph B\nThe democratization of postal communication emerged in the mid-nineteenth century, sparked by British social reformer Rowland Hill. Prior to Hill's reforms, postal tariffs were extortionate and convoluted: postage was calculated based on the number of paper sheets and the mileage traveled, and payment was collected from the recipient upon delivery rather than the sender. This led to widespread fraud, as recipients routinely inspected the exterior of letters to decipher prearranged code marks before refusing delivery to avoid paying the carrier fee. In 1840, Hill introduced the Uniform Penny Post, introducing a uniform flat rate of one penny for any domestic letter weighing under half an ounce, prepaid by the sender using the world's first adhesive postage stamp, the famous Penny Black.\n\nParagraph C\nThe introduction of prepaid uniform pricing catalyzed an astronomical surge in mail volume. Within two decades of the Penny Black's launch, British mail volumes leaped from 76 million to over 600 million items annually. The postal service rapidly evolved into an indispensable societal artery, democratizing familial correspondence, facilitating commercial catalog trading, and enabling the publication of low-cost periodicals. Railway transport networks transformed delivery speeds; specialized Traveling Post Office railway carriages were introduced, allowing postal clerks to manually sort letters inside vibrating train carriages while speeding between metropolitan rail termini.\n\nParagraph D\nIn the contemporary era, the nature of postal logistics has undergone a complete structural inversion. As electronic mail, instant messaging, and digital invoicing rendered traditional physical letters virtually obsolete, the explosion of e-commerce catalyzed an exponential boom in parcel logistics. Modern fulfillment centers no longer resemble the manual sorting halls of the nineteenth century; today, automated hubs feature miles of optical barcode scanners, robotic sortation arms, and automated guided vehicles (AGVs) that process up to fifty thousand parcels an hour. Furthermore, environmental mandates are driving courier networks to replace diesel delivery vans with electric cargo bicycles and battery-electric fleets, ensuring that the ancient human urge to transmit goods evolves toward carbon-neutral resilience.",
       "questionGroups": [
         {
-          "groupInstruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 15–20 on your answer sheet.",
+          "groupInstruction": "Choose the correct letter, A, B, C, or D. Write the correct letter in boxes 28–33 on your answer sheet.",
+          "questionType": "multiple_choice_single",
+          "questions": [
+            {
+              "id": "g2-q28",
+              "questionNumber": 28,
+              "prompt": "The Persian Chapar Khaneh network was notable because",
+              "options": [
+                "A. it allowed common citizens to send private letters.",
+                "B. relay stations enabled dispatches to cross the empire in seven days.",
+                "C. couriers used mountain suspension bridges on foot.",
+                "D. it relied on railway transport networks."
+              ],
+              "correctAnswer": "B",
+              "explanation": "Paragraph A: messages traversed the entire breadth of the realm in seven days.",
+              "evidence": "messages traversed the entire breadth of the realm in seven days"
+            },
+            {
+              "id": "g2-q29",
+              "questionNumber": 29,
+              "prompt": "Ancient imperial postal networks such as Rome's Cursus Publicus were created primarily to",
+              "options": [
+                "A. transmit imperial administrative decrees.",
+                "B. deliver consumer shopping catalogs.",
+                "C. transport elderly pilgrims.",
+                "D. sell prepaid postage tokens."
+              ],
+              "correctAnswer": "A",
+              "explanation": "Paragraph A: designed strictly to convey administrative military decrees.",
+              "evidence": "designed strictly to convey administrative military decrees"
+            },
+            {
+              "id": "g2-q30",
+              "questionNumber": 30,
+              "prompt": "Before Rowland Hill's 1840 postal reform, postage fees were",
+              "options": [
+                "A. uniform across all distances.",
+                "B. prepaid by senders using adhesive labels.",
+                "C. paid upon delivery by the letter recipient.",
+                "D. subsidized by municipal council taxes."
+              ],
+              "correctAnswer": "C",
+              "explanation": "Paragraph B: payment was collected from the recipient upon delivery rather than the sender.",
+              "evidence": "payment was collected from the recipient upon delivery rather than the sender"
+            },
+            {
+              "id": "g2-q31",
+              "questionNumber": 31,
+              "prompt": "The Uniform Penny Post eliminated delivery fraud by",
+              "options": [
+                "A. requiring senders to prepay postage with adhesive stamps.",
+                "B. banning coded marks on envelopes.",
+                "C. inspecting letters at railway stations.",
+                "D. restricting letters to government officials."
+              ],
+              "correctAnswer": "A",
+              "explanation": "Paragraph B: prepaid by the sender using the world's first adhesive postage stamp.",
+              "evidence": "prepaid by the sender using the world's first adhesive postage stamp"
+            },
+            {
+              "id": "g2-q32",
+              "questionNumber": 32,
+              "prompt": "What occurred within twenty years of the Penny Black's release?",
+              "options": [
+                "A. Annual British mail volume grew from 76 million to over 600 million items.",
+                "B. Postal services were replaced by the electric telegraph.",
+                "C. Traveling Post Offices were banned by rail companies.",
+                "D. Senders refused to prepay postal rates."
+              ],
+              "correctAnswer": "A",
+              "explanation": "Paragraph C: British mail volumes leaped from 76 million to over 600 million items annually.",
+              "evidence": "British mail volumes leaped from 76 million to over 600 million items annually"
+            },
+            {
+              "id": "g2-q33",
+              "questionNumber": 33,
+              "prompt": "Modern postal and courier hubs differ from historical facilities because they rely heavily on",
+              "options": [
+                "A. manual sorting desks and steam locomotives.",
+                "B. automated barcode scanners, robotics, and AGVs.",
+                "C. hand delivery by horse relay stations.",
+                "D. diesel compaction lorries."
+              ],
+              "correctAnswer": "B",
+              "explanation": "Paragraph D: optical barcode scanners, robotic sortation arms, and automated guided vehicles.",
+              "evidence": "miles of optical barcode scanners, robotic sortation arms, and automated guided vehicles (AGVs)"
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the text for each answer. Write your answers in boxes 34–40 on your answer sheet.",
           "questionType": "sentence_completion",
           "questions": [
             {
-              "id": "g2-q15",
-              "questionNumber": 15,
-              "prompt": "The Persian royal courier system along the Royal Road was called the ____.",
-              "correctAnswer": "Chapar Khaneh",
-              "explanation": "Paragraph A identifies the network as 'the Chapar Khaneh'.",
-              "evidence": "In the ancient Persian Empire, the royal courier network known as the Chapar Khaneh operated relay stations"
+              "id": "g2-q34",
+              "questionNumber": 34,
+              "prompt": "The Persian Royal Road measured approximately ____ kilometers in length.",
+              "correctAnswer": [
+                "2500",
+                "2,500"
+              ],
+              "explanation": "Paragraph A: along the 2,500-kilometer Royal Road.",
+              "evidence": "along the 2,500-kilometer Royal Road"
             },
             {
-              "id": "g2-q16",
-              "questionNumber": 16,
-              "prompt": "In the Incan empire, administrative messages were carried across mountain suspension bridges by ____ runners.",
-              "correctAnswer": "Chasqui",
-              "explanation": "Paragraph A mentions 'Incan Chasqui runners who traversed Andean mountain suspension bridges on foot'.",
-              "evidence": "and the Incan Chasqui runners who traversed Andean mountain suspension bridges on foot"
+              "id": "g2-q35",
+              "questionNumber": 35,
+              "prompt": "Incan Chasqui messengers crossed suspension bridges on ____.",
+              "correctAnswer": [
+                "foot"
+              ],
+              "explanation": "Paragraph A: Chasqui runners who traversed Andean mountain suspension bridges on foot.",
+              "evidence": "suspension bridges on foot"
             },
             {
-              "id": "g2-q17",
-              "questionNumber": 17,
-              "prompt": "Prior to Rowland Hill's postal reforms, postal charges were collected from the ____ upon arrival.",
-              "correctAnswer": "recipient",
-              "explanation": "Paragraph B states 'payment was collected from the recipient upon delivery rather than the sender.'",
-              "evidence": "and payment was collected from the recipient upon delivery rather than the sender."
+              "id": "g2-q36",
+              "questionNumber": 36,
+              "prompt": "The famous first adhesive postage stamp was named the ____.",
+              "correctAnswer": [
+                "Penny Black"
+              ],
+              "explanation": "Paragraph B: world's first adhesive postage stamp, the famous Penny Black.",
+              "evidence": "world's first adhesive postage stamp, the famous Penny Black"
             },
             {
-              "id": "g2-q18",
-              "questionNumber": 18,
-              "prompt": "The first adhesive postage stamp introduced in 1840 was called the ____.",
-              "correctAnswer": "Penny Black",
-              "explanation": "Paragraph B identifies 'the world's first adhesive postage stamp, the famous Penny Black.'",
-              "evidence": "prepaid by the sender using the world's first adhesive postage stamp, the famous Penny Black."
+              "id": "g2-q37",
+              "questionNumber": 37,
+              "prompt": "Specialized carriages allowed clerks to sort letters inside moving ____.",
+              "correctAnswer": [
+                "trains",
+                "train carriages",
+                "railway carriages"
+              ],
+              "explanation": "Paragraph C: sort letters inside vibrating train carriages.",
+              "evidence": "vibrating train carriages"
             },
             {
-              "id": "g2-q19",
-              "questionNumber": 19,
-              "prompt": "Clerks sorted letters on moving trains inside carriages known as the ____.",
-              "correctAnswer": "Traveling Post Office",
-              "explanation": "Paragraph C describes 'specialized Traveling Post Office railway carriages'.",
-              "evidence": "specialized Traveling Post Office railway carriages were introduced, allowing postal clerks to manually sort letters inside vibrating train carriages"
+              "id": "g2-q38",
+              "questionNumber": 38,
+              "prompt": "The growth of e-commerce has led to a major expansion in ____ logistics.",
+              "correctAnswer": [
+                "parcel"
+              ],
+              "explanation": "Paragraph D: exponential boom in parcel logistics.",
+              "evidence": "exponential boom in parcel logistics"
             },
             {
-              "id": "g2-q20",
-              "questionNumber": 20,
-              "prompt": "Modern fulfillment centers utilize automated vehicles known as ____ to move goods rapidly.",
-              "correctAnswer": "AGVs",
-              "explanation": "Paragraph D cites 'automated guided vehicles (AGVs) that process up to fifty thousand parcels an hour.'",
-              "evidence": "and automated guided vehicles (AGVs) that process up to fifty thousand parcels an hour."
+              "id": "g2-q39",
+              "questionNumber": 39,
+              "prompt": "Modern distribution facilities can sort up to ____ thousand parcels each hour.",
+              "correctAnswer": [
+                "50",
+                "fifty"
+              ],
+              "explanation": "Paragraph D: process up to fifty thousand parcels an hour.",
+              "evidence": "up to fifty thousand parcels an hour"
+            },
+            {
+              "id": "g2-q40",
+              "questionNumber": 40,
+              "prompt": "To meet climate mandates, delivery companies are introducing electric cargo ____.",
+              "correctAnswer": [
+                "bicycles",
+                "bikes"
+              ],
+              "explanation": "Paragraph D: electric cargo bicycles and battery-electric fleets.",
+              "evidence": "electric cargo bicycles and battery-electric fleets"
             }
           ]
         }

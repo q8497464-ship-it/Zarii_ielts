@@ -73,21 +73,41 @@ You must respond ONLY with a valid, parseable JSON object matching this exact st
 
 /**
  * Validates the raw JSON object returned by the AI model.
+ * Enforces 0.5-step band scores in [0, 9] and verifies that quoted evidence
+ * exists in candidate spoken transcript.
  */
-function validateSpeakingFeedbackJson(data: any): { valid: boolean; reason?: string } {
+function validateSpeakingFeedbackJson(data: any, transcript?: string): { valid: boolean; reason?: string } {
   if (!data || typeof data !== 'object') {
     return { valid: false, reason: 'Response is not a valid JSON object' };
   }
-  if (typeof data.overallBand !== 'number' || data.overallBand < 0 || data.overallBand > 9) {
-    return { valid: false, reason: 'overallBand must be a number between 0 and 9' };
+  const isValidBand = (b: any): boolean =>
+    typeof b === 'number' && b >= 0 && b <= 9 && (b * 2) % 1 === 0;
+
+  if (!isValidBand(data.overallBand)) {
+    return { valid: false, reason: 'overallBand must be a valid 0.5-step score between 0 and 9' };
   }
   const c = data.criteria;
   if (!c || typeof c !== 'object') {
     return { valid: false, reason: 'Missing criteria object' };
   }
+
+  const lowerTranscript = transcript ? transcript.toLowerCase().replace(/[\s\r\n]+/g, ' ') : '';
+
   for (const key of ['fluencyAndCoherence', 'lexicalResource', 'grammaticalRangeAndAccuracy']) {
-    if (!c[key] || typeof c[key].band !== 'number' || typeof c[key].comments !== 'string') {
+    const crit = c[key];
+    if (!crit || !isValidBand(crit.band) || typeof crit.comments !== 'string') {
       return { valid: false, reason: `Invalid or missing criterion: ${key}` };
+    }
+
+    if (lowerTranscript) {
+      const quotes = (Array.from(crit.comments.matchAll(/["“]([^"”]{3,})["”]/g)) as RegExpMatchArray[]).map(m => m[1].toLowerCase().trim());
+      if (quotes.length === 0) {
+        return { valid: false, reason: `Criterion ${key} is missing direct quoted evidence in quotation marks` };
+      }
+      const hasVerifiedQuote = quotes.some(q => lowerTranscript.includes(q));
+      if (!hasVerifiedQuote) {
+        return { valid: false, reason: `Quoted evidence for ${key} does not exist in candidate transcript` };
+      }
     }
   }
   if (!Array.isArray(data.strengths) || !Array.isArray(data.improvementTips)) {
@@ -112,11 +132,31 @@ export async function evaluateSpeakingSubmission(
   topicTitle: string,
   part: 1 | 2 | 3 | 'full'
 ): Promise<SpeakingSessionFeedback> {
-  const metrics = computeSpeakingMetrics(transcript, durationSeconds);
-  const fallback = evaluateSpeakingRuleBased(transcript, durationSeconds, topicTitle, part);
+  const minWords = part === 1 ? 20 : part === 2 ? 80 : 30;
+  const wordCount = transcript ? transcript.trim().split(/\s+/).filter(Boolean).length : 0;
 
-  if (!transcript || transcript.trim().split(/\s+/).length < 15) {
-    return fallback;
+  const metrics = computeSpeakingMetrics(transcript || '', durationSeconds);
+  const fallback = evaluateSpeakingRuleBased(transcript || '', durationSeconds, topicTitle, part);
+
+  // Reject empty or severely insufficient input before calling AI
+  if (wordCount < minWords) {
+    return {
+      evaluationMode: 'rule_based',
+      overallBand: 0,
+      criteria: {
+        fluencyAndCoherence: { band: 0, comments: `Insufficient spoken sample (minimum ${minWords} words required for Part ${part}).` },
+        lexicalResource: { band: 0, comments: 'Insufficient spoken sample.' },
+        grammaticalRangeAndAccuracy: { band: 0, comments: 'Insufficient spoken sample.' },
+      },
+      metrics,
+      strengths: [],
+      improvementTips: [`Record a more detailed answer (at least ${minWords} words) to receive band assessment and feedback.`],
+      upgradedPhrases: [],
+      pronunciationGuide: fallback.pronunciationGuide,
+      followUpQuestion: { question: '', rationale: '', sampleAnswer: '' },
+      topicVocabulary: [],
+      modelBand7Answer: { transcript: '', keyDifferences: [], examinerBreakdown: '' },
+    };
   }
 
   const settings = await getAppSettings();
@@ -224,7 +264,7 @@ Evaluate strictly according to the official descriptors. Quote direct evidence i
     return null;
   }
 
-  const validation = validateSpeakingFeedbackJson(parsed);
+  const validation = validateSpeakingFeedbackJson(parsed, transcript);
   if (!validation.valid) {
     if (retryAttempt === 0) {
       return callGeminiSpeaking(transcript, durationSeconds, topicTitle, part, apiKey, metrics, fallback, 1);
@@ -304,7 +344,7 @@ Evaluate strictly according to the official descriptors. Quote direct evidence i
     return null;
   }
 
-  const validation = validateSpeakingFeedbackJson(parsed);
+  const validation = validateSpeakingFeedbackJson(parsed, transcript);
   if (!validation.valid) {
     if (retryAttempt === 0) {
       return callGroqSpeaking(transcript, durationSeconds, topicTitle, part, apiKey, metrics, fallback, 1);

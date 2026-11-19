@@ -5,11 +5,12 @@ test.describe('E2E: Reading Test Execution & Marking', () => {
     // Seed profile in indexedDB / state to skip onboarding
     await page.addInitScript(() => {
       window.localStorage.setItem('zarii_tour_completed', 'true');
+      window.localStorage.setItem('zarii_guest_mode', 'true');
     });
   });
 
   test('navigates to reading catalog, starts test, answers questions, and views results', async ({ page }) => {
-    await page.goto('/practice/reading');
+    await page.goto('/app/practice/reading');
 
     // Verify Reading Catalog renders test cards
     await expect(page.locator('h1, h2').filter({ hasText: /Reading/i }).first()).toBeVisible();

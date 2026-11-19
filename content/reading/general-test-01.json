@@ -73,6 +73,90 @@
               "evidence": "they must notify Human Resources within twenty-four hours using the online Incident Log Portal."
             }
           ]
+        },
+        {
+          "groupInstruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the text for each answer. Write your answers in boxes 8–14 on your answer sheet.",
+          "questionType": "sentence_completion",
+          "questions": [
+            {
+              "id": "g1-q8",
+              "questionNumber": 8,
+              "prompt": "Computer monitors should be positioned at ____ to avoid neck strain.",
+              "correctAnswer": [
+                "eye level",
+                "eye-level"
+              ],
+              "explanation": "Paragraph A: Computer display monitors must be arranged at eye level.",
+              "evidence": "arranged at eye level"
+            },
+            {
+              "id": "g1-q9",
+              "questionNumber": 9,
+              "prompt": "The distance between the monitor and user face should be roughly ____ centimeters.",
+              "correctAnswer": [
+                "50 to 70",
+                "50-70",
+                "50–70"
+              ],
+              "explanation": "Paragraph A: roughly an arm's distance (50 to 70 centimeters).",
+              "evidence": "50 to 70 centimeters"
+            },
+            {
+              "id": "g1-q10",
+              "questionNumber": 10,
+              "prompt": "The visual guideline requires looking at an object 20 feet away every ____ minutes.",
+              "correctAnswer": [
+                "20",
+                "twenty"
+              ],
+              "explanation": "Paragraph B: every twenty minutes of screen engagement.",
+              "evidence": "every twenty minutes of screen engagement"
+            },
+            {
+              "id": "g1-q11",
+              "questionNumber": 11,
+              "prompt": "Employees should take a five-minute movement break every ____ minutes.",
+              "correctAnswer": [
+                "60",
+                "sixty"
+              ],
+              "explanation": "Paragraph B: stand, stretch, or walk for five minutes every sixty minutes.",
+              "evidence": "five minutes every sixty minutes"
+            },
+            {
+              "id": "g1-q12",
+              "questionNumber": 12,
+              "prompt": "To receive a sit-stand desk converter, staff must provide a recommendation from a ____.",
+              "correctAnswer": [
+                "physical therapist"
+              ],
+              "explanation": "Paragraph B: upon receipt of a certified physical therapist recommendation letter.",
+              "evidence": "certified physical therapist recommendation letter"
+            },
+            {
+              "id": "g1-q13",
+              "questionNumber": 13,
+              "prompt": "Remote teleworkers are required to evaluate their home office ____ via an online questionnaire.",
+              "correctAnswer": [
+                "annually",
+                "once a year"
+              ],
+              "explanation": "Paragraph C: Remote teleworkers must certify their home office environment annually.",
+              "evidence": "certify their home office environment annually"
+            },
+            {
+              "id": "g1-q14",
+              "questionNumber": 14,
+              "prompt": "Any work-related physical accident at home must be reported within ____ hours.",
+              "correctAnswer": [
+                "24",
+                "twenty-four",
+                "twenty four"
+              ],
+              "explanation": "Paragraph C: notify Human Resources within twenty-four hours.",
+              "evidence": "within twenty-four hours using the online Incident Log Portal"
+            }
+          ]
         }
       ]
     },
@@ -84,85 +168,138 @@
       "wordCount": 320,
       "questionGroups": [
         {
-          "groupInstruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Write your answers in boxes 8–14 on your answer sheet.",
+          "groupInstruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the text for each answer. Write your answers in boxes 15–21 on your answer sheet.",
           "questionType": "sentence_completion",
           "questions": [
             {
-              "id": "g1-q8",
-              "questionNumber": 8,
-              "prompt": "Employees become eligible for study funding after completing ____ of continuous employment.",
+              "id": "g1-q15",
+              "questionNumber": 15,
+              "prompt": "Employees must have completed ____ months of service before applying for tuition subsidies.",
               "correctAnswer": [
-                "twelve months",
-                "12 months",
-                "1 year"
+                "12",
+                "twelve"
               ],
-              "explanation": "The text states: 'who have completed at least twelve months of uninterrupted service'.",
-              "evidence": "All full-time staff who have completed at least twelve months of uninterrupted service are eligible"
+              "explanation": "Text states: completed at least twelve months of uninterrupted service.",
+              "evidence": "completed at least twelve months of uninterrupted service"
             },
             {
-              "id": "g1-q9",
-              "questionNumber": 9,
-              "prompt": "The maximum financial subsidy provided per financial year is ____.",
+              "id": "g1-q16",
+              "questionNumber": 16,
+              "prompt": "The maximum financial subsidy available per fiscal year is ____ pounds.",
               "correctAnswer": [
-                "£2,500",
                 "2500",
-                "2,500"
+                "2,500",
+                "£2,500"
               ],
-              "explanation": "The text explicitly states: 'up to £2,500 per fiscal year.'",
-              "evidence": "Annual Professional Development Subsidy of up to £2,500 per fiscal year."
+              "explanation": "Text states: up to £2,500 per fiscal year.",
+              "evidence": "up to £2,500 per fiscal year"
             },
             {
-              "id": "g1-q10",
-              "questionNumber": 10,
-              "prompt": "Employees must complete and submit Form ____ before registering for a course.",
-              "correctAnswer": "TD-40",
-              "explanation": "The text states: 'employees must submit Form TD-40 via the intranet'.",
-              "evidence": "employees must submit Form TD-40 via the intranet along with course syllabus documentation"
-            },
-            {
-              "id": "g1-q11",
-              "questionNumber": 11,
-              "prompt": "Funding applications must be submitted at least ____ before the course registration cut-off.",
+              "id": "g1-q17",
+              "questionNumber": 17,
+              "prompt": "Courses that are pursued for ____ or hobby reasons cannot receive funding.",
               "correctAnswer": [
-                "four weeks",
-                "4 weeks"
+                "recreational"
               ],
-              "explanation": "The text notes: 'Applications must be lodged at least four weeks before the registration deadline.'",
-              "evidence": "Applications must be lodged at least four weeks before the registration deadline."
+              "explanation": "Text: Recreational, hobby, or non-accredited courses are excluded.",
+              "evidence": "Recreational, hobby, or non-accredited courses are excluded"
             },
             {
-              "id": "g1-q12",
-              "questionNumber": 12,
-              "prompt": "The subsidy will pay for tuition, exam fees, and required ____.",
+              "id": "g1-q18",
+              "questionNumber": 18,
+              "prompt": "Employees must lodge Form ____ on the corporate intranet to initiate their request.",
               "correctAnswer": [
-                "textbooks",
-                "mandatory textbooks"
+                "TD-40",
+                "TD40"
               ],
-              "explanation": "The text states: 'cover tuition, examination fees, and mandatory textbooks.'",
-              "evidence": "Approved expenses cover tuition, examination fees, and mandatory textbooks."
+              "explanation": "Text: employees must submit Form TD-40 via the intranet.",
+              "evidence": "submit Form TD-40 via the intranet"
             },
             {
-              "id": "g1-q13",
-              "questionNumber": 13,
-              "prompt": "To receive reimbursement, candidates must achieve a minimum grade of ____.",
+              "id": "g1-q19",
+              "questionNumber": 19,
+              "prompt": "Applications must be submitted at least ____ weeks prior to the course registration deadline.",
+              "correctAnswer": [
+                "4",
+                "four"
+              ],
+              "explanation": "Text: Applications must be lodged at least four weeks before the registration deadline.",
+              "evidence": "at least four weeks before the registration deadline"
+            },
+            {
+              "id": "g1-q20",
+              "questionNumber": 20,
+              "prompt": "Mandatory ____ and examination fees are eligible for reimbursement.",
+              "correctAnswer": [
+                "textbooks"
+              ],
+              "explanation": "Text: Approved expenses cover tuition, examination fees, and mandatory textbooks.",
+              "evidence": "tuition, examination fees, and mandatory textbooks"
+            },
+            {
+              "id": "g1-q21",
+              "questionNumber": 21,
+              "prompt": "To receive payment, the employee transcript must demonstrate a grade of ____ or better.",
               "correctAnswer": [
                 "B",
                 "'B'"
               ],
-              "explanation": "The text mentions 'demonstrating a passing grade of 'B' or higher'.",
-              "evidence": "demonstrating a passing grade of 'B' or higher"
+              "explanation": "Text: submitting an official transcript demonstrating a passing grade of 'B' or higher.",
+              "evidence": "passing grade of 'B' or higher"
+            }
+          ]
+        },
+        {
+          "groupInstruction": "Do the following statements agree with the information given in Passage 2? In boxes 22–27 on your answer sheet, write TRUE, FALSE, or NOT GIVEN.",
+          "questionType": "true_false_not_given",
+          "questions": [
+            {
+              "id": "g1-q22",
+              "questionNumber": 22,
+              "prompt": "Hardware equipment purchased for university courses is eligible for subsidy reimbursement.",
+              "correctAnswer": "false",
+              "explanation": "Text: Hardware, commuting expenses, and accommodation costs... are strictly ineligible.",
+              "evidence": "Hardware, commuting expenses, and accommodation costs during external seminar trips are strictly ineligible."
             },
             {
-              "id": "g1-q14",
-              "questionNumber": 14,
-              "prompt": "Staff who leave within one year must return ____ of the money granted.",
-              "correctAnswer": [
-                "fifty percent",
-                "50%",
-                "50 percent"
-              ],
-              "explanation": "The text states: 'repay fifty percent of the subsidy.'",
-              "evidence": "the employee is required to repay fifty percent of the subsidy."
+              "id": "g1-q23",
+              "questionNumber": 23,
+              "prompt": "Employees who resign within one year of completing their course must repay half the subsidy.",
+              "correctAnswer": "true",
+              "explanation": "Text: resigns... within twelve months... required to repay fifty percent of the subsidy.",
+              "evidence": "resign from the organization within twelve months of completing funded coursework, the employee is required to repay fifty percent"
+            },
+            {
+              "id": "g1-q24",
+              "questionNumber": 24,
+              "prompt": "Line managers are notified automatically when Form TD-40 is downloaded.",
+              "correctAnswer": "not given",
+              "explanation": "The text specifies submitting a line manager endorsement letter, but does not mention automated download notifications.",
+              "evidence": "line manager endorsement letter"
+            },
+            {
+              "id": "g1-q25",
+              "questionNumber": 25,
+              "prompt": "Part-time workers can apply for a reduced proportion of the annual development subsidy.",
+              "correctAnswer": "false",
+              "explanation": "Text: 'All full-time staff who have completed at least twelve months... are eligible'. Part-time staff are not listed.",
+              "evidence": "All full-time staff who have completed at least twelve months"
+            },
+            {
+              "id": "g1-q26",
+              "questionNumber": 26,
+              "prompt": "Travel expenses to international academic seminars may be approved by departmental directors.",
+              "correctAnswer": "not given",
+              "explanation": "The text notes commuting expenses are strictly ineligible, but does not mention exceptions by departmental directors.",
+              "evidence": "commuting expenses, and accommodation costs during external seminar trips are strictly ineligible"
+            },
+            {
+              "id": "g1-q27",
+              "questionNumber": 27,
+              "prompt": "Tuition reimbursement is paid out before course enrollment commences.",
+              "correctAnswer": "false",
+              "explanation": "Text: Reimbursements are processed after the employee submits an official transcript demonstrating a passing grade.",
+              "evidence": "Reimbursements are processed after the employee submits an official transcript"
             }
           ]
         }
@@ -176,92 +313,168 @@
       "wordCount": 380,
       "questionGroups": [
         {
-          "groupInstruction": "Choose the correct letter, A, B, C or D. Write the correct letter in boxes 15–18 on your answer sheet.",
+          "groupInstruction": "Choose the correct letter, A, B, C, or D. Write the correct letter in boxes 28–33 on your answer sheet.",
           "questionType": "multiple_choice_single",
           "questions": [
             {
-              "id": "g1-q15",
-              "questionNumber": 15,
-              "prompt": "What did technological cynics predict in the early 2000s regarding physical libraries?",
+              "id": "g1-q28",
+              "questionNumber": 28,
+              "prompt": "In the past, public libraries were primarily recognized for their",
               "options": [
-                "They would permanently close due to digital alternatives.",
-                "They would become exclusive research spaces for academics.",
-                "They would increase charges for borrowing physical books.",
-                "They would replace librarians with automated robotic sorters."
-              ],
-              "correctAnswer": "A",
-              "explanation": "Paragraph 2 states: 'As digital e-readers and internet search engines proliferated... cynics predicted the imminent demise of physical libraries.'",
-              "evidence": "cynics predicted the imminent demise of physical libraries. Yet foot traffic has actually rebounded across many urban centers."
-            },
-            {
-              "id": "g1-q16",
-              "questionNumber": 16,
-              "prompt": "Which modern service offered by urban libraries is mentioned in the text?",
-              "options": [
-                "Free medical consultations and dental checkups",
-                "Specialized audio recording studios for podcasts",
-                "Commercial package delivery and courier services",
-                "Paid overnight computer programming bootcamps"
+                "A. collaborative technological innovation hubs.",
+                "B. quiet environments dedicated to reading print books.",
+                "C. multimedia recording and broadcasting equipment.",
+                "D. community town hall gatherings."
               ],
               "correctAnswer": "B",
-              "explanation": "Paragraph 2 lists 'borrowing 3D printers in creative makerspaces, and recording podcasts in acoustic media studios.'",
-              "evidence": "and recording podcasts in acoustic media studios."
+              "explanation": "Paragraph 1 notes libraries were 'cathedrals of quiet contemplation—a repository of print volumes'.",
+              "evidence": "cathedral of quiet contemplation—a repository of print volumes governed by the strict shushing"
             },
             {
-              "id": "g1-q17",
-              "questionNumber": 17,
-              "prompt": "How have modern library interiors changed structurally?",
+              "id": "g1-q29",
+              "questionNumber": 29,
+              "prompt": "What did critics predict would occur when internet search engines emerged in the early 2000s?",
               "options": [
-                "They have eliminated all windows to preserve paper books.",
-                "They are built entirely underground to save heating energy.",
-                "They are designed with open layouts and abundant daylight.",
-                "They consist solely of soundproof individual study cubicles."
+                "A. Libraries would purchase more physical fiction books.",
+                "B. Physical libraries would disappear entirely.",
+                "C. Librarians would conduct resume workshops.",
+                "D. Municipal library budgets would double."
               ],
-              "correctAnswer": "C",
-              "explanation": "Paragraph 3 states: 'shed their cavernous, dim corridors in favor of bright, open-plan spaces flooded with natural sunlight.'",
-              "evidence": "shed their cavernous, dim corridors in favor of bright, open-plan spaces flooded with natural sunlight."
+              "correctAnswer": "B",
+              "explanation": "Paragraph 2 states 'cynics predicted the imminent demise of physical libraries'.",
+              "evidence": "cynics predicted the imminent demise of physical libraries"
             },
             {
-              "id": "g1-q18",
-              "questionNumber": 18,
-              "prompt": "How has smartphone technology complemented physical library visits?",
+              "id": "g1-q30",
+              "questionNumber": 30,
+              "prompt": "Which technological equipment is specifically mentioned as available in creative makerspaces?",
               "options": [
-                "It has forced libraries to sell off their paper inventory.",
-                "It alerts patrons whenever they speak too loudly inside.",
-                "It charges fines automatically to patrons' credit cards.",
-                "It allows users to rent audiobooks remotely while attending in-person events."
+                "A. Commercial offset printing presses",
+                "B. 3D printers",
+                "C. Holographic projectors",
+                "D. Microfilm teleprompters"
               ],
-              "correctAnswer": "D",
-              "explanation": "Paragraph 3 notes: 'patrons can borrow audiobooks from home via smartphone apps while visiting physical branches for human connection'.",
-              "evidence": "patrons can borrow audiobooks from home via smartphone apps while visiting physical branches for human connection and community collaboration."
+              "correctAnswer": "B",
+              "explanation": "Paragraph 2 mentions 'borrowing 3D printers in creative makerspaces'.",
+              "evidence": "borrowing 3D printers in creative makerspaces"
+            },
+            {
+              "id": "g1-q31",
+              "questionNumber": 31,
+              "prompt": "In disadvantaged neighborhoods, libraries support senior citizens by organizing",
+              "options": [
+                "A. digital literacy classes.",
+                "B. competitive sporting events.",
+                "C. corporate career recruiting fairs.",
+                "D. audio-visual recording seminars."
+              ],
+              "correctAnswer": "A",
+              "explanation": "Paragraph 2 highlights 'providing free digital literacy classes for elderly citizens'.",
+              "evidence": "free digital literacy classes for elderly citizens"
+            },
+            {
+              "id": "g1-q32",
+              "questionNumber": 32,
+              "prompt": "Modern library architectural designs prioritize",
+              "options": [
+                "A. dimly lit narrow corridors for historical archive preservation.",
+                "B. bright, open spaces illuminated by natural daylight.",
+                "C. permanent, unmovable lecture seating.",
+                "D. windowless subterranean chambers."
+              ],
+              "correctAnswer": "B",
+              "explanation": "Paragraph 3 describes 'bright, open-plan spaces flooded with natural sunlight'.",
+              "evidence": "bright, open-plan spaces flooded with natural sunlight"
+            },
+            {
+              "id": "g1-q33",
+              "questionNumber": 33,
+              "prompt": "What architectural feature allows libraries to host various events like town halls and story hours?",
+              "options": [
+                "A. Modular furniture",
+                "B. Soundproof floor tiles",
+                "C. Glass partitions",
+                "D. Fixed oak bookshelves"
+              ],
+              "correctAnswer": "A",
+              "explanation": "Paragraph 3 notes: 'Modular furniture can be rearranged to accommodate author talks, civic town halls...'.",
+              "evidence": "Modular furniture can be rearranged to accommodate author talks, civic town halls"
             }
           ]
         },
         {
-          "groupInstruction": "Answer the questions below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 19–20 on your answer sheet.",
-          "questionType": "short_answer",
+          "groupInstruction": "Complete the summary below. Choose NO MORE THAN ONE WORD from the text for each answer. Write your answers in boxes 34–40 on your answer sheet.",
+          "questionType": "summary_completion",
           "questions": [
             {
-              "id": "g1-q19",
-              "questionNumber": 19,
-              "prompt": "What digital creative tools can patrons borrow inside modern makerspaces?",
+              "id": "g1-q34",
+              "questionNumber": 34,
+              "prompt": "Rather than decreasing, library foot traffic has actually ____ in various cities.",
               "correctAnswer": [
-                "3D printers",
-                "3-D printers"
+                "rebounded"
               ],
-              "explanation": "Paragraph 2 specifies: 'borrowing 3D printers in creative makerspaces'.",
-              "evidence": "borrowing 3D printers in creative makerspaces"
+              "explanation": "Paragraph 2: Yet foot traffic has actually rebounded across many urban centers.",
+              "evidence": "foot traffic has actually rebounded"
             },
             {
-              "id": "g1-q20",
-              "questionNumber": 20,
-              "prompt": "What kind of furniture enables library staff to reconfigure spaces for public events?",
+              "id": "g1-q35",
+              "questionNumber": 35,
+              "prompt": "Patrons can record podcasts in sound-treated acoustic ____ studios.",
               "correctAnswer": [
-                "modular furniture",
-                "modular"
+                "media"
               ],
-              "explanation": "Paragraph 3 mentions: 'Modular furniture can be rearranged to accommodate author talks'.",
-              "evidence": "Modular furniture can be rearranged to accommodate author talks, civic town halls, or bilingual children's story hours."
+              "explanation": "Paragraph 2: recording podcasts in acoustic media studios.",
+              "evidence": "acoustic media studios"
+            },
+            {
+              "id": "g1-q36",
+              "questionNumber": 36,
+              "prompt": "Libraries serve as vital safety nets by organizing resume workshops for ____ job seekers.",
+              "correctAnswer": [
+                "unemployed"
+              ],
+              "explanation": "Paragraph 2: resume workshops for unemployed job seekers.",
+              "evidence": "unemployed job seekers"
+            },
+            {
+              "id": "g1-q37",
+              "questionNumber": 37,
+              "prompt": "After school, children can use libraries as quiet ____ sanctuaries.",
+              "correctAnswer": [
+                "homework"
+              ],
+              "explanation": "Paragraph 2: quiet after-school homework sanctuaries.",
+              "evidence": "quiet after-school homework sanctuaries"
+            },
+            {
+              "id": "g1-q38",
+              "questionNumber": 38,
+              "prompt": "Library architecture now replaces cavernous corridors with spaces filled with natural ____.",
+              "correctAnswer": [
+                "sunlight"
+              ],
+              "explanation": "Paragraph 3: flooded with natural sunlight.",
+              "evidence": "flooded with natural sunlight"
+            },
+            {
+              "id": "g1-q39",
+              "questionNumber": 39,
+              "prompt": "Borrowers can access digital audiobooks from home using ____ applications.",
+              "correctAnswer": [
+                "smartphone"
+              ],
+              "explanation": "Paragraph 3: borrow audiobooks from home via smartphone apps.",
+              "evidence": "smartphone apps"
+            },
+            {
+              "id": "g1-q40",
+              "questionNumber": 40,
+              "prompt": "Physical library branches remain important destinations for human connection and community ____.",
+              "correctAnswer": [
+                "collaboration"
+              ],
+              "explanation": "Paragraph 3: human connection and community collaboration.",
+              "evidence": "human connection and community collaboration"
             }
           ]
         }

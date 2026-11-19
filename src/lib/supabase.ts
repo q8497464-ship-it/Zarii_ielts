@@ -8,6 +8,9 @@
  * seamlessly in offline/mock mode for local development and offline exams.
  */
 
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+import { extractCandidateName } from '../shared/utils/candidateUtils';
+
 export interface AuthUser {
   id: string;
   email: string;
@@ -56,7 +59,11 @@ const SIGNUP_DISABLED_KEY = 'zarii_signup_disabled';
 const envUrl = (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_SUPABASE_URL) || '';
 const envAnonKey = (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_SUPABASE_ANON_KEY) || '';
 
-export const isLiveSupabaseConfigured = Boolean(envUrl && envAnonKey);
+export const isLiveSupabaseConfigured = Boolean(
+  envUrl &&
+  envAnonKey &&
+  !(typeof import.meta !== 'undefined' && (import.meta as any).env?.MODE === 'test')
+);
 
 /**
  * Maps raw backend/network errors into human-friendly Zarii copy.
@@ -105,20 +112,172 @@ export function isSignupEnabled(): boolean {
   }
 }
 
+function parseJwtPayload(token: string): any {
+  try {
+    const parts = token.split('.');
+    if (parts.length < 2) return null;
+    const base64Url = parts[1];
+    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    if (typeof window !== 'undefined' && typeof window.atob === 'function') {
+      const jsonPayload = decodeURIComponent(
+        window
+          .atob(base64)
+          .split('')
+          .map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
+          .join('')
+      );
+      return JSON.parse(jsonPayload);
+    } else if (typeof Buffer !== 'undefined') {
+      const decoded = Buffer.from(base64, 'base64').toString('utf-8');
+      return JSON.parse(decoded);
+    }
+  } catch {
+    return null;
+  }
+}
+
 class SupabaseAuthClient {
   private url: string;
   private key: string;
+  private realClient: SupabaseClient | null = null;
   private listeners: Set<AuthStateChangeCallback> = new Set();
   private currentSession: AuthSession | null = null;
 
   constructor() {
     this.url = envUrl.replace(/\/+$/, '');
     this.key = envAnonKey;
+    if (isLiveSupabaseConfigured) {
+      try {
+        this.realClient = createClient(this.url, this.key, {
+          auth: {
+            persistSession: true,
+            autoRefreshToken: true,
+            detectSessionInUrl: true,
+            flowType: 'pkce',
+          },
+        });
+      } catch (err) {
+        console.warn('Could not initialize real Supabase client:', err);
+      }
+    }
     this.restoreSession();
+
+    // Hook real client auth state changes to synchronize local session and candidate name
+    if (this.realClient) {
+      this.realClient.auth.onAuthStateChange((event, session) => {
+        if (session?.user) {
+          this.currentSession = session as any;
+          this.saveSession(this.currentSession);
+          const candidateName = extractCandidateName(session.user);
+          if (candidateName) {
+            localStorage.setItem('zarii_candidate_name', candidateName);
+          }
+        } else if (event === 'SIGNED_OUT') {
+          this.currentSession = null;
+          this.saveSession(null);
+        }
+        this.notify(event as any, session as any);
+      });
+    }
   }
 
   private restoreSession() {
     try {
+      // 1. Check for Supabase OAuth redirect tokens or errors in URL hash or search parameters
+      if (typeof window !== 'undefined' && window.location) {
+        const hash = window.location.hash ? window.location.hash.substring(1) : '';
+        const search = window.location.search ? window.location.search.substring(1) : '';
+
+        const hashParams = new URLSearchParams(hash);
+        const searchParams = new URLSearchParams(search);
+
+        const error = hashParams.get('error') || searchParams.get('error');
+        const errorDesc = hashParams.get('error_description') || searchParams.get('error_description');
+
+        if (error) {
+          console.warn('Supabase OAuth callback error:', error, errorDesc);
+          try {
+            sessionStorage.setItem('zarii_oauth_error', errorDesc || error);
+          } catch {}
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, '', window.location.pathname);
+          }
+        } else {
+          const accessToken = hashParams.get('access_token') || searchParams.get('access_token');
+          const refreshToken = hashParams.get('refresh_token') || searchParams.get('refresh_token');
+          const expiresIn = hashParams.get('expires_in') || searchParams.get('expires_in');
+          const tokenType = hashParams.get('token_type') || searchParams.get('token_type') || 'bearer';
+
+          if (accessToken) {
+            const jwtPayload = parseJwtPayload(accessToken);
+            const user: AuthUser = {
+              id: jwtPayload?.sub || `usr_google_${Date.now()}`,
+              email: jwtPayload?.email || '',
+              user_metadata: jwtPayload?.user_metadata || {
+                full_name: jwtPayload?.name || jwtPayload?.full_name || '',
+                avatar_url: jwtPayload?.avatar_url || jwtPayload?.picture || '',
+              },
+              app_metadata: jwtPayload?.app_metadata || { provider: 'google' },
+              role: jwtPayload?.role || 'authenticated',
+              created_at: new Date().toISOString(),
+            };
+
+            const session: AuthSession = {
+              access_token: accessToken,
+              token_type: tokenType,
+              expires_in: expiresIn ? parseInt(expiresIn, 10) : 3600,
+              refresh_token: refreshToken || '',
+              user,
+            };
+
+            this.currentSession = session;
+            this.saveSession(session);
+
+            const candidateName = extractCandidateName(user);
+            if (candidateName) {
+              localStorage.setItem('zarii_candidate_name', candidateName);
+            }
+
+            this.notify('SIGNED_IN', session);
+
+            if (window.history && window.history.replaceState) {
+              window.history.replaceState(null, '', window.location.pathname);
+            }
+
+            // Sync fresh profile from Supabase API in background if online
+            if (isLiveSupabaseConfigured) {
+              fetch(`${this.url}/auth/v1/user`, {
+                headers: {
+                  apikey: this.key,
+                  Authorization: `Bearer ${accessToken}`,
+                },
+              })
+                .then((res) => (res.ok ? res.json() : null))
+                .then((userData) => {
+                  if (userData && this.currentSession?.access_token === accessToken) {
+                    this.currentSession.user = {
+                      ...this.currentSession.user,
+                      ...userData,
+                      user_metadata: {
+                        ...this.currentSession.user.user_metadata,
+                        ...userData.user_metadata,
+                      },
+                    };
+                    this.saveSession(this.currentSession);
+                    const freshName = extractCandidateName(this.currentSession.user);
+                    if (freshName) {
+                      localStorage.setItem('zarii_candidate_name', freshName);
+                    }
+                    this.notify('USER_UPDATED', this.currentSession);
+                  }
+                })
+                .catch(() => {});
+            }
+            return;
+          }
+        }
+      }
+
       const raw = localStorage.getItem(SESSION_STORAGE_KEY);
       if (raw) {
         this.currentSession = JSON.parse(raw);
@@ -166,11 +325,33 @@ class SupabaseAuthClient {
   }
 
   public async getSession(): Promise<{ data: { session: AuthSession | null }; error: AuthError | null }> {
+    if (this.realClient) {
+      try {
+        const { data } = await this.realClient.auth.getSession();
+        if (data?.session) {
+          this.currentSession = data.session as any;
+          this.saveSession(this.currentSession);
+          const name = extractCandidateName(data.session.user);
+          if (name) localStorage.setItem('zarii_candidate_name', name);
+          return { data: { session: this.currentSession }, error: null };
+        }
+      } catch {}
+    }
     this.restoreSession();
     return { data: { session: this.currentSession }, error: null };
   }
 
   public async getUser(): Promise<{ data: { user: AuthUser | null }; error: AuthError | null }> {
+    if (this.realClient) {
+      try {
+        const { data } = await this.realClient.auth.getUser();
+        if (data?.user) {
+          const name = extractCandidateName(data.user);
+          if (name) localStorage.setItem('zarii_candidate_name', name);
+          return { data: { user: data.user as any }, error: null };
+        }
+      } catch {}
+    }
     this.restoreSession();
     return { data: { user: this.currentSession?.user || null }, error: null };
   }
@@ -401,11 +582,30 @@ class SupabaseAuthClient {
       redirectTo?: string;
     };
   }): Promise<{ data: { url: string | null; provider: string }; error: AuthError | null }> {
-    const redirectUrl = params.options?.redirectTo || window.location.origin;
+    const redirectUrl = params.options?.redirectTo || (typeof window !== 'undefined' ? `${window.location.origin}/app` : '/app');
+
+    if (this.realClient) {
+      try {
+        const { data, error } = await this.realClient.auth.signInWithOAuth({
+          provider: 'google',
+          options: {
+            redirectTo: redirectUrl,
+          },
+        });
+        if (error) {
+          return { data: { url: null, provider: 'google' }, error: { name: 'OAuthError', message: mapAuthErrorMessage(error) } };
+        }
+        return { data: { url: data?.url || null, provider: 'google' }, error: null };
+      } catch (err: any) {
+        return { data: { url: null, provider: 'google' }, error: { name: 'NetworkError', message: mapAuthErrorMessage(err) } };
+      }
+    }
 
     if (isLiveSupabaseConfigured) {
       const authUrl = `${this.url}/auth/v1/authorize?provider=google&redirect_to=${encodeURIComponent(redirectUrl)}`;
-      window.location.href = authUrl;
+      if (typeof window !== 'undefined' && window.location) {
+        window.location.assign(authUrl);
+      }
       return { data: { url: authUrl, provider: 'google' }, error: null };
     }
 
@@ -418,7 +618,7 @@ class SupabaseAuthClient {
         id: `usr_google_${Date.now()}`,
         email: mockEmail,
         password: 'OAuth_Secure_Password_123',
-        full_name: 'Zarii Scholar (Google User)',
+        full_name: 'Zarii Scholar',
         created_at: new Date().toISOString(),
       };
       mockUsers[mockEmail] = existing;
@@ -438,6 +638,7 @@ class SupabaseAuthClient {
       },
     };
 
+    localStorage.setItem('zarii_candidate_name', existing.full_name);
     this.saveSession(session);
     this.notify('SIGNED_IN', session);
 

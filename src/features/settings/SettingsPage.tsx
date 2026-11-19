@@ -33,6 +33,7 @@ import {
 } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { useAppStore } from '../../store/useAppStore';
+import { Loader } from '../../components/loader';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
 import { Input, Label, Select } from '../../components/ui/Input';
@@ -45,6 +46,7 @@ import {
   sendTestNotification,
 } from '../../lib/notifications';
 import type { TestType, EnglishProficiencyLevel } from '../../types';
+import { extractCandidateName, isPlaceholderName } from '../../shared/utils/candidateUtils';
 
 export type SettingsTab = 'profile' | 'preferences' | 'account' | 'data' | 'help';
 
@@ -74,11 +76,14 @@ export function SettingsPage() {
   const setActiveTab = (tab: SettingsTab) => {
     setSearchParams({ tab });
   };
+  const [isSigningOut, setIsSigningOut] = useState(false);
 
   // --------------------------------------------------------------------------
   // TAB 1: PROFILE STATE
   // --------------------------------------------------------------------------
-  const [displayName, setDisplayName] = useState<string>('Candidate');
+  const [displayName, setDisplayName] = useState<string>(() => {
+    return extractCandidateName(null, profile?.displayName) || '';
+  });
   const [testType, setTestType] = useState<TestType>('academic');
   const [targetBand, setTargetBand] = useState<number>(7.5);
   const [currentLevel, setCurrentLevel] = useState<EnglishProficiencyLevel>('intermediate');
@@ -117,7 +122,8 @@ export function SettingsPage() {
   // Synchronize profile data
   useEffect(() => {
     if (profile) {
-      setDisplayName(profile.displayName || 'Candidate');
+      const name = extractCandidateName(null, profile.displayName);
+      if (name) setDisplayName(name);
       setTestType(profile.testType || 'academic');
       setTargetBand(profile.targetBand || 7.5);
       setCurrentLevel(profile.currentLevel || 'intermediate');
@@ -160,8 +166,17 @@ export function SettingsPage() {
     e.preventDefault();
     setIsSavingProfile(true);
     try {
+      const clean = displayName.trim();
+      const finalName = clean && !isPlaceholderName(clean)
+        ? clean
+        : (extractCandidateName(null, profile?.displayName) || 'Candidate');
+
+      if (clean && !isPlaceholderName(clean)) {
+        localStorage.setItem('zarii_candidate_name', clean);
+      }
+
       await updateProfile({
-        displayName: displayName.trim() || 'Candidate',
+        displayName: finalName,
         testType,
         targetBand,
         currentLevel,
@@ -307,6 +322,7 @@ export function SettingsPage() {
   };
 
   const handleSignOut = async () => {
+    setIsSigningOut(true);
     localStorage.removeItem('zarii_guest_mode');
     await supabase.auth.signOut();
     addToast({
@@ -314,7 +330,7 @@ export function SettingsPage() {
       title: 'Logged Out',
       message: 'You have been logged out',
     });
-    navigate('/', { replace: true });
+    navigate('/login', { replace: true });
   };
 
   const handleExportData = async () => {
@@ -407,6 +423,9 @@ export function SettingsPage() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-6">
+      {isSigningOut && (
+        <Loader variant="overlay" message="Signing out of Zarii..." />
+      )}
       {/* Page Header (Consistent Zarii Header Pattern) */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-slate-200/80 dark:border-[#24392F] pb-4">
         <div>
@@ -844,19 +863,30 @@ export function SettingsPage() {
 
                 <div className="flex items-center gap-2 shrink-0">
                   {isGuestMode ? (
-                    <Link to="/login">
-                      <Button size="sm" variant="primary">
-                        Connect Login to Sync
+                    <>
+                      <Link to="/login">
+                        <Button size="sm" variant="primary">
+                          Connect Login to Sync
+                        </Button>
+                      </Link>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        onClick={handleSignOut}
+                        leftIcon={<LogOut className="w-3.5 h-3.5" />}
+                      >
+                        Log out of Zarii
                       </Button>
-                    </Link>
+                    </>
                   ) : (
                     <Button
                       size="sm"
                       variant="danger"
                       onClick={handleSignOut}
                       leftIcon={<LogOut className="w-3.5 h-3.5" />}
+                      aria-label="Log out of Zarii"
                     >
-                      Sign Out
+                      Log out of Zarii
                     </Button>
                   )}
                 </div>
@@ -1083,6 +1113,34 @@ export function SettingsPage() {
           </Card>
         </div>
       )}
+
+      {/* Settings Footer: Global Session & Logout Bar */}
+      <div className="mt-8 pt-6 border-t border-slate-200/80 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="text-xs text-slate-500 dark:text-slate-400 text-center sm:text-left">
+          {isGuestMode ? (
+            <span>You are browsing in guest mode with local device storage.</span>
+          ) : (
+            <span>Signed in as <strong>{profile?.displayName || 'Candidate'}</strong></span>
+          )}
+        </div>
+        <div className="flex items-center gap-3">
+          {isGuestMode && (
+            <Link to="/login">
+              <Button size="sm" variant="outline">
+                Connect Login to Sync
+              </Button>
+            </Link>
+          )}
+          <Button
+            size="sm"
+            variant={isGuestMode ? 'outline' : 'danger'}
+            onClick={handleSignOut}
+            leftIcon={<LogOut className="w-3.5 h-3.5" />}
+          >
+            Log out of Zarii
+          </Button>
+        </div>
+      </div>
 
       {/* Report Problem Modal */}
       <ReportProblemModal

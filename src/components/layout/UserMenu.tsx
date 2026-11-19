@@ -21,6 +21,7 @@ import { supabase, type AuthUser } from '../../lib/supabase';
 import { useAppStore } from '../../store/useAppStore';
 import { formatBand, cn } from '../../lib/utils';
 import { db } from '../../lib/db';
+import { extractCandidateName } from '../../shared/utils/candidateUtils';
 
 interface UserMenuProps {
   variant?: 'sidebar' | 'topbar' | 'mobile';
@@ -185,19 +186,42 @@ export function UserMenu({
     navigate('/', { replace: true });
   };
 
-  const displayName = isAdmin
-    ? 'Administrator'
-    : authUser?.user_metadata?.full_name || profile?.displayName || (isGuest ? 'Guest User' : 'Candidate');
+  const userMetaName =
+    authUser?.user_metadata?.full_name ||
+    authUser?.user_metadata?.name ||
+    authUser?.user_metadata?.display_name;
 
-  const emailDisplay = isAdmin
+  const fallbackEmailName = authUser?.email
+    ? authUser.email
+        .split('@')[0]
+        .replace(/[._-]+/g, ' ')
+        .split(' ')
+        .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ')
+    : undefined;
+
+  const candidateResolved = extractCandidateName(authUser, profile?.displayName);
+
+  const displayName: string = isAdmin
+    ? 'Administrator'
+    : isGuest
+    ? (candidateResolved || 'Guest Scholar')
+    : candidateResolved ||
+      userMetaName ||
+      fallbackEmailName ||
+      'Candidate';
+
+  const emailDisplay: string = isAdmin
     ? 'admin@zarii.internal'
-    : authUser?.email || (isGuest ? 'Offline Guest Mode' : 'student@zarii.app');
+    : isGuest
+    ? 'Guest (Local only)'
+    : authUser?.email || 'student@zarii.app';
 
   const initials = isAdmin
     ? 'AD'
     : displayName
         .split(' ')
-        .map((n) => n[0])
+        .map((n: string) => n[0])
         .slice(0, 2)
         .join('')
         .toUpperCase() || 'C';

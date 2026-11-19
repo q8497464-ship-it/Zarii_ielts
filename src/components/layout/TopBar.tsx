@@ -21,6 +21,7 @@ import { subscribeToOnlineStatus } from '../../lib/pwa';
 import { getStreakData, getLevelInfo, getUserXp } from '../../features/habits/habitEngine';
 import { getPageTitle, MAIN_NAVIGATION } from '../../lib/navigationConfig';
 import { UserMenu } from './UserMenu';
+import { SurpriseHeartButton } from '../../features/surprise';
 
 export function TopBar() {
   const location = useLocation();
@@ -200,6 +201,9 @@ export function TopBar() {
             {textSize === 'normal' ? 'A' : textSize === 'medium' ? 'A+' : 'A++'}
           </Button>
 
+          {/* Surprise Heart Easter Egg Button (Quietly next to Theme Toggle) */}
+          <SurpriseHeartButton />
+
           {/* Theme Toggle */}
           <Button
             variant="ghost"
@@ -228,6 +232,7 @@ export function TopBar() {
         <div
           role="dialog"
           aria-modal="true"
+          aria-label="Navigation"
           className="fixed inset-0 z-50 md:hidden flex"
         >
           {/* Backdrop */}

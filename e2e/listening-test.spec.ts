@@ -4,11 +4,12 @@ test.describe('E2E: Listening Test Execution', () => {
   test.beforeEach(async ({ page }) => {
     await page.addInitScript(() => {
       window.localStorage.setItem('zarii_tour_completed', 'true');
+      window.localStorage.setItem('zarii_guest_mode', 'true');
     });
   });
 
   test('navigates to listening catalog, enters practice test, verifies audio bar and questions', async ({ page }) => {
-    await page.goto('/practice/listening');
+    await page.goto('/app/practice/listening');
 
     // Verify Listening Catalog
     await expect(page.locator('h1, h2').filter({ hasText: /Listening/i }).first()).toBeVisible();
@@ -19,7 +20,7 @@ test.describe('E2E: Listening Test Execution', () => {
     await practiceBtn.click();
 
     // Verify test runner audio engine or instructions
-    await expect(page.locator('text=Section 1').first()).toBeVisible({ timeout: 10000 });
+    await expect(page.locator('text=/Section 1|Part 1/i').first()).toBeVisible({ timeout: 10000 });
 
     // Verify questions inputs exist
     const inputs = page.locator('input[type="text"]');

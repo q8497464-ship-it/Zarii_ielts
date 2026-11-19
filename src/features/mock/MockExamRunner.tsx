@@ -19,7 +19,15 @@ import {
   Sliders,
 } from 'lucide-react';
 import { getFullMockById, type FullMockTestConfig } from './mockData';
-import { MockReportForm, type MockReportData } from './MockReportForm';
+import { MockReportForm } from './MockReportForm';
+import {
+  scoreListeningSection,
+  scoreReadingSection,
+  scoreWritingSection,
+  scoreSpeakingSection,
+  computeMockExamReport,
+  type MockReportData,
+} from './mockScoring';
 import { convertRawToBand as convertReadingBand, isAnswerCorrect as isReadingAnswerCorrect } from '../reading/marking';
 import { convertListeningRawToBand, isListeningAnswerCorrect } from '../listening/marking';
 import { db } from '../../lib/db';
@@ -27,7 +35,7 @@ import { useAppStore } from '../../store/useAppStore';
 import { formatSecondsToTime, cn } from '../../lib/utils';
 import { ExamTestSetupModal } from '../../components/exam';
 
-type ExamPhase = 'briefing' | 'listening' | 'reading' | 'writing' | 'speaking' | 'report';
+type ExamPhase = 'briefing' | 'listening' | 'reading' | 'writing' | 'speaking' | 'review' | 'report';
 
 export const MockExamRunner: React.FC = () => {
   const { mockId } = useParams<{ mockId: string }>();
@@ -170,7 +178,7 @@ export const MockExamRunner: React.FC = () => {
       addToast({ type: 'warning', title: 'Writing Time Elapsed', message: 'Moving to Speaking Simulator.' });
       startSpeaking();
     } else if (phase === 'speaking') {
-      completeFullMock();
+      setPhase('review');
     }
   };
 
@@ -230,146 +238,141 @@ export const MockExamRunner: React.FC = () => {
     }
   };
 
+  // Summary calculations for Review Phase & Empty Attempt Guard
+  const listeningCount = Object.keys(listeningAnswers).length;
+  const readingCount = Object.keys(readingAnswers).length;
+  const t1Words = writingTask1Text.trim().split(/\s+/).filter(Boolean).length;
+  const t2Words = writingTask2Text.trim().split(/\s+/).filter(Boolean).length;
+  const p1Spoken = (speakingTranscripts[0] || '').trim().split(/\s+/).filter(Boolean).length;
+  const p2Spoken = (speakingTranscripts[1] || '').trim().split(/\s+/).filter(Boolean).length;
+  const p3Spoken = (speakingTranscripts[2] || '').trim().split(/\s+/).filter(Boolean).length;
+
+  const isListeningEmpty = listeningCount === 0;
+  const isReadingEmpty = readingCount === 0;
+  const isWritingEmpty = t1Words === 0 && t2Words === 0;
+  const isSpeakingEmpty = p1Spoken === 0 && p2Spoken === 0 && p3Spoken === 0;
+  const isEntireAttemptEmpty = isListeningEmpty && isReadingEmpty && isWritingEmpty && isSpeakingEmpty;
+
+  const handleDiscardAttempt = () => {
+    window.speechSynthesis.cancel();
+    if (isRecording && recognitionRef.current) {
+      recognitionRef.current.stop();
+    }
+    addToast({
+      type: 'info',
+      title: 'Attempt Discarded',
+      message: 'Unattempted mock exam session was discarded. No data was saved.',
+    });
+    navigate('/app/mock');
+  };
+
   // Complete mock examination and compute final TRF scores
-  const completeFullMock = async () => {
+  const completeFullMock = async (submitIncomplete = false) => {
     window.speechSynthesis.cancel();
     if (isRecording && recognitionRef.current) {
       recognitionRef.current.stop();
     }
 
     // 1. Score Listening
-    let listeningRaw = 0;
-    let listeningTotal = 0;
-    for (const sec of mock.listeningTest.sections) {
-      const groups = sec.questionGroups || (sec.questions ? [{ questions: sec.questions }] : []);
-      for (const g of groups) {
-        for (const q of g.questions || []) {
-          listeningTotal += 1;
-          const userAns = listeningAnswers[q.id];
-          if (isListeningAnswerCorrect(userAns, q.correctAnswer)) {
-            listeningRaw += 1;
-          }
-        }
-      }
-    }
-    const listeningBand = convertListeningRawToBand(listeningRaw, listeningTotal || 40);
+    const listeningSectionScore = scoreListeningSection(listeningAnswers, mock.listeningTest.sections);
 
     // 2. Score Reading
-    let readingRaw = 0;
-    let readingTotal = 0;
-    for (const pas of mock.readingTest.passages) {
-      for (const g of pas.questionGroups || []) {
-        for (const q of g.questions || []) {
-          readingTotal += 1;
-          const userAns = readingAnswers[q.id];
-          if (isReadingAnswerCorrect(userAns, q.correctAnswer)) {
-            readingRaw += 1;
-          }
-        }
-      }
-    }
-    const readingBand = convertReadingBand(readingRaw, mock.testType, readingTotal || 40);
+    const readingSectionScore = scoreReadingSection(readingAnswers, mock.readingTest.passages, mock.testType);
 
     // 3. Score Writing
-    const t1Words = writingTask1Text.trim().split(/\s+/).filter(Boolean).length;
-    const t2Words = writingTask2Text.trim().split(/\s+/).filter(Boolean).length;
-    let writingBand = 5.5;
-    if (t1Words >= 150 && t2Words >= 250) {
-      writingBand = 7.0;
-    } else if (t1Words >= 130 && t2Words >= 220) {
-      writingBand = 6.5;
-    } else if (t1Words >= 100 || t2Words >= 180) {
-      writingBand = 6.0;
-    }
+    const writingSectionScore = scoreWritingSection(
+      writingTask1Text,
+      writingTask2Text,
+      mock.writingTask1.prompt,
+      mock.writingTask2.prompt
+    );
 
     // 4. Score Speaking
-    const combinedSpeech = speakingTranscripts.join(' ');
-    const spkWords = combinedSpeech.trim().split(/\s+/).filter(Boolean).length;
-    let speakingBand = 6.0;
-    if (spkWords >= 260) speakingBand = 7.5;
-    else if (spkWords >= 180) speakingBand = 7.0;
-    else if (spkWords >= 120) speakingBand = 6.5;
+    const speakingSectionScore = scoreSpeakingSection(speakingTranscripts);
 
-    // 5. Overall Band: Official IELTS Rounding Rules
-    // Average of 4 skills rounded to nearest half band
-    const avg = (listeningBand + readingBand + writingBand + speakingBand) / 4;
-    const decimal = avg - Math.floor(avg);
-    let overallBand: number;
-    if (decimal < 0.25) {
-      overallBand = Math.floor(avg);
-    } else if (decimal < 0.75) {
-      overallBand = Math.floor(avg) + 0.5;
-    } else {
-      overallBand = Math.ceil(avg);
-    }
-
-    // Strengths & Weaknesses calculation
-    const strengths: string[] = [];
-    const weaknesses: string[] = [];
-
-    if (listeningBand >= 7.0) strengths.push('High auditory recognition and numerical accuracy in Listening.');
-    else weaknesses.push('Listening distractor filtering and spelling retention under pressure.');
-
-    if (readingBand >= 7.0) strengths.push('Strong skimming and scanning across long academic passages.');
-    else weaknesses.push('True/False/Not Given and Heading synthesis in Reading Passage 3.');
-
-    if (writingBand >= 7.0) strengths.push('Excellent word count compliance and structured paragraphing.');
-    else weaknesses.push('Expanding formal lexical resource and counter-argument depth in Writing Task 2.');
-
-    if (speakingBand >= 7.0) strengths.push('Sustained fluency and discourse markers in Part 2 long turn.');
-    else weaknesses.push('Reducing pause length and enhancing idiomatic vocabulary in Speaking.');
-
-    const nextSteps = [
-      'Focus daily practice on your lowest component score in the next 7 days.',
-      'Review missed listening and reading questions with transcript evidence.',
-      'Study Band 8.0 model answers in the Writing Phrase Bank for advanced cohesion.',
-    ];
-
-    const reportData: MockReportData = {
+    // 5. Generate comprehensive honest report
+    const reportData = computeMockExamReport({
       mockId: mock.id,
       mockTitle: mock.title,
       testType: mock.testType,
-      completedAt: new Date().toISOString(),
       candidateName: profile?.displayName || 'IELTS Candidate',
-      scores: {
-        listening: { raw: listeningRaw, total: listeningTotal || 40, band: listeningBand },
-        reading: { raw: readingRaw, total: readingTotal || 40, band: readingBand },
-        writing: { band: writingBand, wordCountTask1: t1Words, wordCountTask2: t2Words },
-        speaking: { band: speakingBand },
-      },
-      overallBand,
-      strengths,
-      weaknesses,
-      nextSteps,
-    };
+      listening: listeningSectionScore,
+      reading: readingSectionScore,
+      writing: writingSectionScore,
+      speaking: speakingSectionScore,
+    });
 
     setFinalReport(reportData);
     setPhase('report');
 
-    // Save into Dexie database
+    // 6. Save into Dexie database with streak & fake score guards
     try {
-      await db.attempts.add({
-        testId: mock.id,
-        testType: mock.testType,
-        module: 'reading',
-        title: `${mock.title} (Full Mock)`,
-        score: readingRaw,
-        totalQuestions: readingTotal || 40,
-        bandEstimate: overallBand,
-        timeSpentSeconds: 165 * 60 - secondsRemaining,
-        startedAt: new Date(Date.now() - 165 * 60000).toISOString(),
-        completedAt: new Date().toISOString(),
-        status: 'completed',
-        notes: `Full Mock Examination: L:${listeningBand} R:${readingBand} W:${writingBand} S:${speakingBand} -> Overall Band ${overallBand}`,
-      });
+      if (isEntireAttemptEmpty) {
+        await db.attempts.add({
+          testId: mock.id,
+          testType: mock.testType,
+          module: 'reading',
+          title: `${mock.title} (Full Mock)`,
+          score: 0,
+          totalQuestions: readingSectionScore.total || 40,
+          bandEstimate: 0,
+          timeSpentSeconds: 165 * 60 - secondsRemaining,
+          startedAt: new Date(Date.now() - 165 * 60000).toISOString(),
+          completedAt: new Date().toISOString(),
+          status: 'not_attempted',
+          notes: 'Unattempted mock examination (all sections skipped)',
+        });
 
-      addToast({
-        type: 'success',
-        title: 'Mock Examination Complete!',
-        message: `Your Overall Result: Band ${overallBand}. Report Form generated.`,
-      });
+        addToast({
+          type: 'info',
+          title: 'Unattempted Exam Recorded',
+          message: 'No sections were attempted. Band scores not awarded.',
+        });
+      } else if (!reportData.allSkillsAssessed) {
+        await db.attempts.add({
+          testId: mock.id,
+          testType: mock.testType,
+          module: 'reading',
+          title: `${mock.title} (Full Mock)`,
+          score: readingSectionScore.raw || 0,
+          totalQuestions: readingSectionScore.total || 40,
+          bandEstimate: 0,
+          timeSpentSeconds: 165 * 60 - secondsRemaining,
+          startedAt: new Date(Date.now() - 165 * 60000).toISOString(),
+          completedAt: new Date().toISOString(),
+          status: 'abandoned',
+          notes: `Incomplete mock: ${reportData.unassessedSkills.join(', ')} not assessed`,
+        });
+
+        addToast({
+          type: 'warning',
+          title: 'Incomplete Mock Recorded',
+          message: 'Report generated for attempted sections. Complete all 4 sections for an overall band.',
+        });
+      } else {
+        await db.attempts.add({
+          testId: mock.id,
+          testType: mock.testType,
+          module: 'reading',
+          title: `${mock.title} (Full Mock)`,
+          score: readingSectionScore.raw || 0,
+          totalQuestions: readingSectionScore.total || 40,
+          bandEstimate: reportData.overallBand ?? 0,
+          timeSpentSeconds: 165 * 60 - secondsRemaining,
+          startedAt: new Date(Date.now() - 165 * 60000).toISOString(),
+          completedAt: new Date().toISOString(),
+          status: 'completed',
+          notes: `Full Mock Examination: L:${listeningSectionScore.band} R:${readingSectionScore.band} W:${writingSectionScore.band} S:${speakingSectionScore.band} -> Overall Band ${reportData.overallBand}`,
+        });
+
+        addToast({
+          type: 'success',
+          title: 'Mock Examination Complete!',
+          message: `Your Overall Result: Band ${reportData.overallBand}. Practice Report generated.`,
+        });
+      }
     } catch (err) {
-      console.error('Failed to save full mock attempt:', err);
+      console.error('Failed to save mock attempt:', err);
     }
   };
 
@@ -913,12 +916,295 @@ export const MockExamRunner: React.FC = () => {
                 </button>
               ) : (
                 <button
-                  onClick={completeFullMock}
-                  className="px-6 py-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-teal-600 to-emerald-600 text-white transition-all shadow-md inline-flex items-center gap-1.5"
+                  onClick={() => setPhase('review')}
+                  className="px-6 py-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-teal-600 to-emerald-600 text-white transition-all shadow-md inline-flex items-center gap-1.5 cursor-pointer"
                 >
                   <Sparkles className="w-4 h-4" />
-                  <span>Submit & Generate TRF Report</span>
+                  <span>Proceed to Review & Submit</span>
                 </button>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Phase: Submission Review Screen */}
+        {phase === 'review' && (
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="bg-white dark:bg-slate-800 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-700/60 pb-5">
+                <div>
+                  <span className="text-[11px] font-bold uppercase tracking-widest text-teal-600 dark:text-teal-400">
+                    Step 5 of 5: Pre-Submission Verification
+                  </span>
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight mt-1">
+                    Mock Exam Submission Review
+                  </h2>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                    Review your completed work and unanswered questions across all four modules before final evaluation.
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => setPhase('speaking')}
+                    className="px-3.5 py-2 rounded-xl text-xs font-semibold border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+                  >
+                    ← Back to Speaking
+                  </button>
+                </div>
+              </div>
+
+              {/* 4 Skills Breakdown */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* Listening Summary */}
+                <div
+                  className={cn(
+                    'p-5 rounded-2xl border transition-all space-y-3',
+                    listeningCount === 0
+                      ? 'bg-amber-50/50 dark:bg-amber-950/20 border-amber-300 dark:border-amber-800'
+                      : 'bg-slate-50 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700'
+                  )}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 text-slate-800 dark:text-slate-200 font-bold text-sm">
+                      <Headphones className="w-4 h-4 text-teal-600" />
+                      <span>Listening Module</span>
+                    </div>
+                    <span
+                      className={cn(
+                        'text-xs font-mono font-bold px-2 py-0.5 rounded-full',
+                        listeningCount === 0
+                          ? 'bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200'
+                          : 'bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200'
+                      )}
+                    >
+                      {listeningCount} / 40 Answered
+                    </span>
+                  </div>
+
+                  {listeningCount === 0 ? (
+                    <div className="flex items-start gap-2 text-xs text-amber-800 dark:text-amber-300 bg-amber-100/70 dark:bg-amber-900/40 p-2.5 rounded-xl">
+                      <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
+                      <p>Section is empty and will receive no band score.</p>
+                    </div>
+                  ) : (
+                    <p className="text-xs text-slate-600 dark:text-slate-300">
+                      {listeningCount === 40
+                        ? 'All 40 questions answered.'
+                        : `${40 - listeningCount} questions left unanswered (will count as incorrect).`}
+                    </p>
+                  )}
+
+                  <button
+                    onClick={() => setPhase('listening')}
+                    className="text-xs font-bold text-teal-700 dark:text-teal-400 hover:underline cursor-pointer block"
+                  >
+                    Go back to Listening →
+                  </button>
+                </div>
+
+                {/* Reading Summary */}
+                <div
+                  className={cn(
+                    'p-5 rounded-2xl border transition-all space-y-3',
+                    readingCount === 0
+                      ? 'bg-amber-50/50 dark:bg-amber-950/20 border-amber-300 dark:border-amber-800'
+                      : 'bg-slate-50 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700'
+                  )}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 text-slate-800 dark:text-slate-200 font-bold text-sm">
+                      <BookOpen className="w-4 h-4 text-teal-600" />
+                      <span>Reading Module</span>
+                    </div>
+                    <span
+                      className={cn(
+                        'text-xs font-mono font-bold px-2 py-0.5 rounded-full',
+                        readingCount === 0
+                          ? 'bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200'
+                          : 'bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200'
+                      )}
+                    >
+                      {readingCount} / 40 Answered
+                    </span>
+                  </div>
+
+                  {readingCount === 0 ? (
+                    <div className="flex items-start gap-2 text-xs text-amber-800 dark:text-amber-300 bg-amber-100/70 dark:bg-amber-900/40 p-2.5 rounded-xl">
+                      <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
+                      <p>Section is empty and will receive no band score.</p>
+                    </div>
+                  ) : (
+                    <p className="text-xs text-slate-600 dark:text-slate-300">
+                      {readingCount === 40
+                        ? 'All 40 questions answered.'
+                        : `${40 - readingCount} questions left unanswered (will count as incorrect).`}
+                    </p>
+                  )}
+
+                  <button
+                    onClick={() => setPhase('reading')}
+                    className="text-xs font-bold text-teal-700 dark:text-teal-400 hover:underline cursor-pointer block"
+                  >
+                    Go back to Reading →
+                  </button>
+                </div>
+
+                {/* Writing Summary */}
+                <div
+                  className={cn(
+                    'p-5 rounded-2xl border transition-all space-y-3',
+                    t1Words === 0 && t2Words === 0
+                      ? 'bg-amber-50/50 dark:bg-amber-950/20 border-amber-300 dark:border-amber-800'
+                      : 'bg-slate-50 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700'
+                  )}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 text-slate-800 dark:text-slate-200 font-bold text-sm">
+                      <PenTool className="w-4 h-4 text-teal-600" />
+                      <span>Writing Module</span>
+                    </div>
+                    <span
+                      className={cn(
+                        'text-xs font-mono font-bold px-2 py-0.5 rounded-full',
+                        t1Words === 0 && t2Words === 0
+                          ? 'bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200'
+                          : 'bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200'
+                      )}
+                    >
+                      T1: {t1Words}w • T2: {t2Words}w
+                    </span>
+                  </div>
+
+                  {t1Words === 0 && t2Words === 0 ? (
+                    <div className="flex items-start gap-2 text-xs text-amber-800 dark:text-amber-300 bg-amber-100/70 dark:bg-amber-900/40 p-2.5 rounded-xl">
+                      <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
+                      <p>Section is empty and will receive no band score.</p>
+                    </div>
+                  ) : t1Words < 40 || t2Words < 80 ? (
+                    <div className="flex items-start gap-2 text-xs text-amber-800 dark:text-amber-300 bg-amber-100/70 dark:bg-amber-900/40 p-2.5 rounded-xl">
+                      <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
+                      <p>
+                        Writing is below minimum assessment threshold (T1 &ge; 40w, T2 &ge; 80w) and will receive no band score.
+                      </p>
+                    </div>
+                  ) : (
+                    <p className="text-xs text-slate-600 dark:text-slate-300">
+                      Both tasks contain assessable responses.
+                    </p>
+                  )}
+
+                  <button
+                    onClick={() => setPhase('writing')}
+                    className="text-xs font-bold text-teal-700 dark:text-teal-400 hover:underline cursor-pointer block"
+                  >
+                    Go back to Writing →
+                  </button>
+                </div>
+
+                {/* Speaking Summary */}
+                <div
+                  className={cn(
+                    'p-5 rounded-2xl border transition-all space-y-3',
+                    isSpeakingEmpty
+                      ? 'bg-amber-50/50 dark:bg-amber-950/20 border-amber-300 dark:border-amber-800'
+                      : 'bg-slate-50 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700'
+                  )}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 text-slate-800 dark:text-slate-200 font-bold text-sm">
+                      <Mic className="w-4 h-4 text-teal-600" />
+                      <span>Speaking Simulator</span>
+                    </div>
+                    <span
+                      className={cn(
+                        'text-xs font-mono font-bold px-2 py-0.5 rounded-full',
+                        isSpeakingEmpty
+                          ? 'bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200'
+                          : 'bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200'
+                      )}
+                    >
+                      P1: {p1Spoken}w • P2: {p2Spoken}w • P3: {p3Spoken}w
+                    </span>
+                  </div>
+
+                  {isSpeakingEmpty ? (
+                    <div className="flex items-start gap-2 text-xs text-amber-800 dark:text-amber-300 bg-amber-100/70 dark:bg-amber-900/40 p-2.5 rounded-xl">
+                      <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
+                      <p>Section is empty and will receive no band score.</p>
+                    </div>
+                  ) : p2Spoken < 80 ? (
+                    <div className="flex items-start gap-2 text-xs text-amber-800 dark:text-amber-300 bg-amber-100/70 dark:bg-amber-900/40 p-2.5 rounded-xl">
+                      <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
+                      <p>Part 2 long turn requires at least 80 words for band scoring.</p>
+                    </div>
+                  ) : (
+                    <p className="text-xs text-slate-600 dark:text-slate-300">
+                      Spoken responses recorded for assessment.
+                    </p>
+                  )}
+
+                  <button
+                    onClick={() => setPhase('speaking')}
+                    className="text-xs font-bold text-teal-700 dark:text-teal-400 hover:underline cursor-pointer block"
+                  >
+                    Go back to Speaking →
+                  </button>
+                </div>
+              </div>
+
+              {/* Bottom Actions & Empty Guard */}
+              {isEntireAttemptEmpty ? (
+                <div className="p-6 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-800 space-y-4">
+                  <div className="flex items-start gap-3">
+                    <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-bold text-sm text-amber-950 dark:text-amber-200">
+                        This attempt has no completed sections
+                      </h4>
+                      <p className="text-xs text-amber-900/80 dark:text-amber-300/80 mt-1">
+                        You have not answered any questions or entered any written or spoken responses. You can discard this session without recording an unattempted exam, or submit as incomplete.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row items-center justify-end gap-3 pt-2 border-t border-amber-200 dark:border-amber-900/60">
+                    <button
+                      onClick={handleDiscardAttempt}
+                      className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-xs font-bold bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all cursor-pointer"
+                    >
+                      Discard this attempt
+                    </button>
+                    <button
+                      onClick={() => completeFullMock(true)}
+                      className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-xs font-bold bg-amber-600 text-white hover:bg-amber-700 transition-all shadow-sm cursor-pointer"
+                    >
+                      Submit as incomplete
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100 dark:border-slate-700/60">
+                  <div className="text-xs text-slate-500 dark:text-slate-400">
+                    Once submitted, your responses will be scored and your practice report generated.
+                  </div>
+
+                  <div className="flex items-center gap-3 w-full sm:w-auto">
+                    <button
+                      onClick={() => setPhase('speaking')}
+                      className="w-full sm:w-auto px-4 py-2.5 rounded-xl text-xs font-semibold border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+                    >
+                      Go back to complete
+                    </button>
+                    <button
+                      onClick={() => completeFullMock(false)}
+                      className="w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs font-bold bg-brand-800 hover:bg-brand-700 text-white transition-all shadow-md inline-flex items-center justify-center gap-1.5 cursor-pointer"
+                    >
+                      <Sparkles className="w-4 h-4" />
+                      <span>Submit & Generate Report</span>
+                    </button>
+                  </div>
+                </div>
               )}
             </div>
           </div>
@@ -932,6 +1218,7 @@ export const MockExamRunner: React.FC = () => {
               setPhase('briefing');
               setFinalReport(null);
             }}
+            onNavigateSection={(sec) => setPhase(sec)}
           />
         )}
       </main>

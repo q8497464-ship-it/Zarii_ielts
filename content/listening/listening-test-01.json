@@ -429,7 +429,7 @@
             {
               "id": "l1-q21",
               "questionNumber": 21,
-              "prompt": "Key findings discussed in the seminar (Choose TWO letters)",
+              "prompt": "Which primary finding regarding microplastics is mentioned by the students? (Box 21)",
               "options": [
                 "A. Synthetic clothing fibers produce more marine pollution than cosmetic beads.",
                 "B. Microplastics completely dissolve in ocean water within six months.",
@@ -441,7 +441,25 @@
                 "A",
                 "C"
               ],
-              "explanation": "Sam mentions synthetic microfibers account for >35% of pollution (A), and Chloe notes copepods suffer decreased reproductive egg viability (C).",
+              "explanation": "Sam mentions synthetic microfibers account for >35% of pollution (A), and Chloe notes copepods suffer decreased reproductive egg viability (C). Either A or C is accepted for Box 21.",
+              "evidence": "synthetic textile microfibers actually account for over thirty-five percent... caloric intake drops significantly, leading to decreased reproductive egg viability."
+            },
+            {
+              "id": "l1-q22",
+              "questionNumber": 22,
+              "prompt": "Which primary finding regarding microplastics is mentioned by the students? (Box 22)",
+              "options": [
+                "A. Synthetic clothing fibers produce more marine pollution than cosmetic beads.",
+                "B. Microplastics completely dissolve in ocean water within six months.",
+                "C. Copepod zooplankton suffer reduced reproductive fertility when ingesting plastic.",
+                "D. Freshwater rivers contain zero microplastic particles.",
+                "E. Microplastics repel all chemical pollutants in seawater."
+              ],
+              "correctAnswer": [
+                "A",
+                "C"
+              ],
+              "explanation": "Sam mentions synthetic microfibers account for >35% of pollution (A), and Chloe notes copepods suffer decreased reproductive egg viability (C). Either A or C is accepted for Box 22.",
               "evidence": "synthetic textile microfibers actually account for over thirty-five percent... caloric intake drops significantly, leading to decreased reproductive egg viability."
             }
           ]

@@ -2,16 +2,19 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { Eye, EyeOff, Lock, Mail, AlertCircle, Loader2, ArrowRight } from 'lucide-react';
 import { AuthLayout } from '../../components/auth/AuthLayout';
-import { supabase, mapAuthErrorMessage, isMaintenanceMode } from '../../lib/supabase';
+import { supabase, mapAuthErrorMessage, isMaintenanceMode, isLiveSupabaseConfigured } from '../../lib/supabase';
 import { validateEmail, getLoginRateLimitState, recordFailedLoginAttempt, resetLoginRateLimit } from '../../lib/authValidators';
 import { useAppStore } from '../../store/useAppStore';
 import { cn } from '../../lib/utils';
+import { Loader } from '../../components/loader';
+import { extractCandidateName } from '../../shared/utils/candidateUtils';
 
 export function LoginPage() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const rawRedirect = searchParams.get('redirect');
   const redirectTarget = rawRedirect && rawRedirect !== '/' ? rawRedirect : '/app';
+  const [isRedirecting, setIsRedirecting] = useState(false);
 
   const { profile, updateProfile } = useAppStore();
 
@@ -31,9 +34,21 @@ export function LoginPage() {
 
   const emailInputRef = useRef<HTMLInputElement>(null);
 
-  // Page title
+  // Page title and OAuth errors
   useEffect(() => {
     document.title = 'Log in | Zarii';
+
+    try {
+      const oauthErr = sessionStorage.getItem('zarii_oauth_error');
+      if (oauthErr) {
+        sessionStorage.removeItem('zarii_oauth_error');
+        if (oauthErr.toLowerCase().includes('unsupported_provider') || oauthErr.toLowerCase().includes('not enabled')) {
+          setServerError('Google Sign-In is not enabled yet in your Supabase project. Please enable Google provider in Supabase Dashboard (Authentication > Providers > Google).');
+        } else {
+          setServerError(`Google sign-in error: ${oauthErr}`);
+        }
+      }
+    } catch {}
   }, []);
 
   // Check existing session: redirect if already authenticated
@@ -126,22 +141,9 @@ export function LoginPage() {
       // Extract candidate name from auth user and update profile
       const user = data.user;
       if (user) {
-        const rawName =
-          user.user_metadata?.full_name ||
-          user.user_metadata?.name ||
-          user.user_metadata?.display_name;
-
-        let nameToSave = rawName?.trim();
-        if (!nameToSave && user.email) {
-          nameToSave = user.email
-            .split('@')[0]
-            .replace(/[._-]+/g, ' ')
-            .split(' ')
-            .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
-            .join(' ');
-        }
-
+        const nameToSave = extractCandidateName(user);
         if (nameToSave) {
+          localStorage.setItem('zarii_candidate_name', nameToSave);
           await updateProfile({
             displayName: nameToSave,
           });
@@ -155,6 +157,7 @@ export function LoginPage() {
       }
 
       // Success: redirect to original destination
+      setIsRedirecting(true);
       navigate(redirectTarget, { replace: true });
     } catch (err: any) {
       setServerError('Unable to connect to login service. Please try again.');
@@ -166,7 +169,7 @@ export function LoginPage() {
     setServerError(null);
     setIsLoading(true);
     try {
-      const { error } = await supabase.auth.signInWithOAuth({
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
           redirectTo: window.location.origin + redirectTarget,
@@ -175,7 +178,11 @@ export function LoginPage() {
       if (error) {
         setServerError(mapAuthErrorMessage(error));
         setIsLoading(false);
-      } else {
+      } else if (!isLiveSupabaseConfigured) {
+        const scholarName = localStorage.getItem('zarii_candidate_name') || 'Zarii Scholar';
+        localStorage.setItem('zarii_candidate_name', scholarName);
+        await updateProfile({ displayName: scholarName });
+        setIsRedirecting(true);
         navigate(redirectTarget, { replace: true });
       }
     } catch {
@@ -184,14 +191,31 @@ export function LoginPage() {
     }
   };
 
-  const handleContinueAsGuest = () => {
+  const handleContinueAsGuest = async () => {
     // Guest mode: continue to application with local Dexie storage
     localStorage.setItem('zarii_guest_mode', 'true');
+    const existingName = extractCandidateName(null, profile?.displayName);
+    const guestName = existingName || 'Guest Candidate';
+    if (!profile || !profile.displayName || profile.displayName === 'IELTS Candidate') {
+      await updateProfile({
+        displayName: guestName,
+        testType: 'academic',
+        targetBand: 7.5,
+        currentLevel: 'intermediate',
+        dailyStudyMinutes: 30,
+        onboardingCompleted: true,
+      });
+    }
+    setIsRedirecting(true);
     navigate(redirectTarget, { replace: true });
   };
 
   return (
-    <AuthLayout activeScreen="login">
+    <>
+      {isRedirecting && (
+        <Loader variant="overlay" message="Opening your study workspace..." />
+      )}
+      <AuthLayout activeScreen="login">
       <div className="space-y-6 animate-in fade-in duration-300">
         {/* Header */}
         <div className="space-y-1.5 text-center sm:text-left">
@@ -413,5 +437,6 @@ export function LoginPage() {
         </div>
       </div>
     </AuthLayout>
+  </>
   );
 }

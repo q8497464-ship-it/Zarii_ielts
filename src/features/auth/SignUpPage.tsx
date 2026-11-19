@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Eye, EyeOff, Lock, Mail, User, AlertCircle, Loader2, Check, ArrowRight, ShieldCheck, Database, Calendar } from 'lucide-react';
 import { AuthLayout } from '../../components/auth/AuthLayout';
-import { supabase, mapAuthErrorMessage, isSignupEnabled, isMaintenanceMode } from '../../lib/supabase';
+import { supabase, mapAuthErrorMessage, isSignupEnabled, isMaintenanceMode, isLiveSupabaseConfigured } from '../../lib/supabase';
 import { validateEmail, validateName, evaluatePasswordStrength } from '../../lib/authValidators';
 import { db } from '../../lib/db';
 import { useAppStore } from '../../store/useAppStore';
@@ -53,6 +53,18 @@ export function SignUpPage() {
 
   useEffect(() => {
     document.title = 'Sign up | Zarii';
+
+    try {
+      const oauthErr = sessionStorage.getItem('zarii_oauth_error');
+      if (oauthErr) {
+        sessionStorage.removeItem('zarii_oauth_error');
+        if (oauthErr.toLowerCase().includes('unsupported_provider') || oauthErr.toLowerCase().includes('not enabled')) {
+          setServerError('Google Sign-In is not enabled yet in your Supabase project. Please enable Google provider in Supabase Dashboard (Authentication > Providers > Google).');
+        } else {
+          setServerError(`Google sign-in error: ${oauthErr}`);
+        }
+      }
+    } catch {}
   }, []);
 
   // Check if user is already logged in
@@ -162,6 +174,7 @@ export function SignUpPage() {
       }
 
       // Update local profile with display name
+      localStorage.setItem('zarii_candidate_name', fullName.trim());
       await updateProfile({
         displayName: fullName.trim(),
         onboardingCompleted: true,
@@ -207,7 +220,10 @@ export function SignUpPage() {
       if (error) {
         setServerError(mapAuthErrorMessage(error));
         setIsLoading(false);
-      } else {
+      } else if (!isLiveSupabaseConfigured) {
+        const scholarName = localStorage.getItem('zarii_candidate_name') || 'Zarii Scholar';
+        localStorage.setItem('zarii_candidate_name', scholarName);
+        await updateProfile({ displayName: scholarName });
         navigate('/app', { replace: true });
       }
     } catch {

@@ -245,6 +245,91 @@ npm run build
 - [Administrator & Editor Guide](ADMIN_GUIDE.md)
 - [Content Schema & Test Writing Guide](content/SCHEMA.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
-=======
-# Zarii_ielts
->>>>>>> 2961992090687de4a9576a7f3d6bfe99e04aeb1c
+
+---
+
+## 💌 Private Surprise Mode (Easter Egg)
+
+The student portal features an optional, tasteful surprise easter egg located next to the theme toggle in the student top bar.
+
+### Privacy Overview
+By default, the letter content is configured in `src/features/surprise/loveNote.ts`. Anyone inspecting the compiled client-side JavaScript bundle could potentially view the static text. 
+
+For maximum privacy, **Private Surprise Mode** can be enabled so that the letter content is never included in the client bundle. Instead, it is fetched dynamically from a Supabase PostgreSQL table protected by **Row Level Security (RLS)**, ensuring that only the authenticated recipient can access and read it.
+
+### Step 1: Create Supabase Table & RLS Policy
+Run the following SQL migration in your Supabase SQL Editor:
+
+```sql
+-- 1. Create the private notes table
+create table public.private_notes (
+  id uuid primary key default gen_random_uuid(),
+  recipient_email text not null,
+  sender_name text not null,
+  recipient_name text not null,
+  headline_prefix text not null default 'Qamar loves you sooo much,',
+  greeting text not null default 'My dearest Zarmeen,',
+  paragraphs jsonb not null,
+  closing text not null default 'Always and only yours,',
+  signature text not null default 'Qamar',
+  footer_line text not null default 'P.S. Band 8 is going to be yours, I just know it.',
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+-- 2. Enable Row Level Security (RLS)
+alter table public.private_notes enable row level security;
+
+-- 3. Policy: Only authenticated user matching recipient_email can SELECT
+create policy "Recipient can read own private note"
+  on public.private_notes
+  for select
+  using (
+    auth.role() = 'authenticated' and
+    lower(auth.jwt() ->> 'email') = lower(recipient_email)
+  );
+
+-- 4. Insert the letter for the recipient
+insert into public.private_notes (
+  recipient_email,
+  sender_name,
+  recipient_name,
+  headline_prefix,
+  greeting,
+  paragraphs,
+  closing,
+  signature,
+  footer_line
+) values (
+  'zarmeen@example.com',
+  'Qamar',
+  'Zarmeen',
+  'Qamar loves you sooo much,',
+  'My dearest Zarmeen,',
+  '[
+    "I am completely mesmerized by your eyes. They are deep and calm like a lake, and every time I look into them, time slows down and I happily lose myself in them.",
+    "When you smile, my whole world lights up. Your laughter is the cure for my every tiredness, and your name is the first word in all of my prayers.",
+    "I know preparing for IELTS is not easy. Some nights you will be tired, some days you will feel anxious, and sometimes it will feel like it is too much. In those moments, please remember how hardworking you are, how smart you are, and that you can achieve anything you set your heart on.",
+    "I made this little app just for you, with the hope that every lesson, every practice test and every band score brings you one step closer to your dream. All the effort you put in will never go to waste.",
+    "When you feel worn out, take a deep breath, smile a little, and remember that there is someone standing beside you at every step, your biggest fan.",
+    "Just keep trying, my love. I will keep you in my prayers, and I believe in you more than you know."
+  ]'::jsonb,
+  'Always and only yours,',
+  'Qamar',
+  'P.S. Band 8 is going to be yours, I just know it.'
+);
+```
+
+### Step 2: Configure `surpriseConfig.ts`
+In `src/features/surprise/surpriseConfig.ts`, update:
+
+```ts
+export const surpriseConfig = {
+  enabled: true,
+  recipientName: 'Zarmeen',
+  senderName: 'Qamar',
+  visibleForEmails: ['zarmeen@example.com'], // Restrict visibility to authenticated recipient
+  autoShowOnDate: '', // Optional date lock (e.g. "2026-12-25")
+  useSupabasePrivateNotes: true, // Fetch securely via RLS
+};
+```
+

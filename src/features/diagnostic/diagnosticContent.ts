@@ -401,10 +401,10 @@ export function evaluateDiagnostic(
 
     if (accuracy < 50) {
       severity = 'critical';
-      advice = `Significant revision required in ${stat.type.replace(/_/g, ' ')}. Focus on keyword matching and distractor elimination.`;
+      advice = `Significant revision required in ${(stat.type || '').replace(/_/g, ' ')}. Focus on keyword matching and distractor elimination.`;
     } else if (accuracy < 75) {
       severity = 'moderate';
-      advice = `Consistent practice recommended in ${stat.type.replace(/_/g, ' ')} to eliminate minor errors.`;
+      advice = `Consistent practice recommended in ${(stat.type || '').replace(/_/g, ' ')} to eliminate minor errors.`;
     }
 
     const typeLabel = stat.type

@@ -54,7 +54,8 @@ export function ZariiLogo({
         />
         <img
           src="/brand/zarii-logo-full-white.svg"
-          alt={alt}
+          alt=""
+          aria-hidden="true"
           className={cn('w-auto object-contain', heights.full, darkClass)}
         />
       </div>
@@ -71,7 +72,8 @@ export function ZariiLogo({
         />
         <img
           src="/brand/zarii-mark-white.svg"
-          alt={alt}
+          alt=""
+          aria-hidden="true"
           className={cn('w-auto object-contain', heights.mark, darkClass)}
         />
       </div>
@@ -88,7 +90,8 @@ export function ZariiLogo({
         />
         <img
           src="/brand/zarii-wordmark-white.svg"
-          alt={alt}
+          alt=""
+          aria-hidden="true"
           className={cn('w-auto object-contain', heights.wordmark, darkClass)}
         />
       </div>
@@ -102,11 +105,13 @@ export function ZariiLogo({
         <img
           src="/brand/zarii-mark.svg"
           alt=""
+          aria-hidden="true"
           className={cn('w-auto object-contain', heights.mark, lightClass)}
         />
         <img
           src="/brand/zarii-mark-white.svg"
           alt=""
+          aria-hidden="true"
           className={cn('w-auto object-contain', heights.mark, darkClass)}
         />
       </div>
@@ -118,7 +123,8 @@ export function ZariiLogo({
         />
         <img
           src="/brand/zarii-wordmark-white.svg"
-          alt={alt}
+          alt=""
+          aria-hidden="true"
           className={cn('w-auto object-contain', heights.wordmark, darkClass)}
         />
       </div>

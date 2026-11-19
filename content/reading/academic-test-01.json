@@ -399,7 +399,7 @@
             {
               "id": "a1-q32",
               "questionNumber": 32,
-              "prompt": "Consequences of Urban Heat Island effect (Choose TWO)",
+              "prompt": "Negative consequences of the Urban Heat Island effect highlighted in Paragraph 2 (Box 32)",
               "options": [
                 "A. Faster formation of harmful ground-level smog",
                 "B. Immediate structural damage to underground subways",
@@ -411,7 +411,25 @@
                 "A",
                 "C"
               ],
-              "explanation": "Paragraph 2 highlights accelerated ground-level photochemical smog formation (A) and heavy electrical grid strain from surging air-conditioning demand (C).",
+              "explanation": "Paragraph 2 highlights accelerated ground-level photochemical smog formation (A) and heavy electrical grid strain from surging air-conditioning demand (C). Either A or C is accepted for Box 32.",
+              "evidence": "Elevated urban temperatures dramatically accelerate the formation of ground-level photochemical smog... Concurrently, heightened ambient temperatures trigger an exponential surge in mechanical air-conditioning demands. This peak cooling load not only strains vulnerable electric grids..."
+            },
+            {
+              "id": "a1-q33",
+              "questionNumber": 33,
+              "prompt": "Negative consequences of the Urban Heat Island effect highlighted in Paragraph 2 (Box 33)",
+              "options": [
+                "A. Faster formation of harmful ground-level smog",
+                "B. Immediate structural damage to underground subways",
+                "C. Heavy electrical power grid strain from cooling appliances",
+                "D. Permanent contamination of regional aquifers",
+                "E. Premature leaf loss in metropolitan parks"
+              ],
+              "correctAnswer": [
+                "A",
+                "C"
+              ],
+              "explanation": "Paragraph 2 highlights accelerated ground-level photochemical smog formation (A) and heavy electrical grid strain from surging air-conditioning demand (C). Either A or C is accepted for Box 33.",
               "evidence": "Elevated urban temperatures dramatically accelerate the formation of ground-level photochemical smog... Concurrently, heightened ambient temperatures trigger an exponential surge in mechanical air-conditioning demands. This peak cooling load not only strains vulnerable electric grids..."
             }
           ]
@@ -423,7 +441,7 @@
             {
               "id": "a1-q34",
               "questionNumber": 34,
-              "prompt": "Water-saving techniques in dry climates (Choose TWO)",
+              "prompt": "Techniques suggested in Paragraph 5 to mitigate water scarcity in dry regions (Box 34)",
               "options": [
                 "A. Replacing living vegetation with synthetic astroturf",
                 "B. Utilizing native drought-tolerant plants (xeriscaping)",
@@ -435,7 +453,25 @@
                 "B",
                 "D"
               ],
-              "explanation": "Paragraph 5 mentions xeriscaping using indigenous drought-tolerant flora (B) and subterranean greywater retention cisterns (D).",
+              "explanation": "Paragraph 5 mentions xeriscaping using indigenous drought-tolerant flora (B) and subterranean greywater retention cisterns (D). Either B or D is accepted for Box 34.",
+              "evidence": "landscape architects increasingly advocate for xeriscaping—utilizing indigenous drought-tolerant flora—coupled with subterranean greywater retention cisterns."
+            },
+            {
+              "id": "a1-q35",
+              "questionNumber": 35,
+              "prompt": "Techniques suggested in Paragraph 5 to mitigate water scarcity in dry regions (Box 35)",
+              "options": [
+                "A. Replacing living vegetation with synthetic astroturf",
+                "B. Utilizing native drought-tolerant plants (xeriscaping)",
+                "C. Building deeper municipal desalinated water wells",
+                "D. Installing underground greywater collection tanks",
+                "E. Prohibiting all multi-story construction near coastlines"
+              ],
+              "correctAnswer": [
+                "B",
+                "D"
+              ],
+              "explanation": "Paragraph 5 mentions xeriscaping using indigenous drought-tolerant flora (B) and subterranean greywater retention cisterns (D). Either B or D is accepted for Box 35.",
               "evidence": "landscape architects increasingly advocate for xeriscaping—utilizing indigenous drought-tolerant flora—coupled with subterranean greywater retention cisterns."
             }
           ]

@@ -12,6 +12,7 @@ import {
   GraduationCap,
   Award,
   Zap,
+  X,
 } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { Button } from '../../components/ui/Button';
@@ -21,6 +22,7 @@ import { Input, Label } from '../../components/ui/Input';
 import { ZariiLogo } from '../../components/ui/ZariiLogo';
 import { copy } from '../../lib/copy';
 import { cn } from '../../lib/utils';
+import { extractCandidateName, isPlaceholderName } from '../../shared/utils/candidateUtils';
 import type { TestType, EnglishProficiencyLevel } from '../../types';
 
 interface OnboardingModalProps {
@@ -29,7 +31,7 @@ interface OnboardingModalProps {
 }
 
 export function OnboardingModal({ isOpen, onFinish }: OnboardingModalProps) {
-  const { updateProfile, addToast } = useAppStore();
+  const { profile, updateProfile, addToast } = useAppStore();
 
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
   const [testType, setTestType] = useState<TestType>('academic');
@@ -38,7 +40,9 @@ export function OnboardingModal({ isOpen, onFinish }: OnboardingModalProps) {
   const [dailyStudyMinutes, setDailyStudyMinutes] = useState<number>(45);
   const [isExamBooked, setIsExamBooked] = useState<boolean>(false);
   const [examDate, setExamDate] = useState<string>('');
-  const [displayName, setDisplayName] = useState<string>('Candidate');
+  const [displayName, setDisplayName] = useState<string>(() => {
+    return extractCandidateName(null, profile?.displayName) || '';
+  });
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   if (!isOpen) return null;
@@ -77,6 +81,15 @@ export function OnboardingModal({ isOpen, onFinish }: OnboardingModalProps) {
   const handleSaveAndShowCelebration = async () => {
     setIsSubmitting(true);
     try {
+      const clean = displayName.trim();
+      const finalName = clean && !isPlaceholderName(clean)
+        ? clean
+        : (extractCandidateName(null, profile?.displayName) || 'Candidate');
+
+      if (clean && !isPlaceholderName(clean)) {
+        localStorage.setItem('zarii_candidate_name', clean);
+      }
+
       await updateProfile({
         testType,
         targetBand,
@@ -84,7 +97,7 @@ export function OnboardingModal({ isOpen, onFinish }: OnboardingModalProps) {
         dailyStudyMinutes,
         isExamBooked,
         examDate: isExamBooked ? examDate : '',
-        displayName: displayName.trim() || 'Candidate',
+        displayName: finalName,
         onboardingCompleted: true,
       });
 
@@ -116,9 +129,19 @@ export function OnboardingModal({ isOpen, onFinish }: OnboardingModalProps) {
           <div className="flex items-center gap-2">
             <ZariiLogo variant="mark-wordmark" size="sm" theme="dark" />
           </div>
-          <span className="text-2xs font-mono font-bold uppercase tracking-wider text-[#B6E3CD] bg-[#0A2E25]/60 px-2.5 py-1 rounded-full border border-[#5BB78D]/30">
-            {step === 4 ? 'Complete' : `Step ${step} of 3`}
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="text-2xs font-mono font-bold uppercase tracking-wider text-[#B6E3CD] bg-[#0A2E25]/60 px-2.5 py-1 rounded-full border border-[#5BB78D]/30">
+              {step === 4 ? 'Complete' : `Step ${step} of 3`}
+            </span>
+            <button
+              onClick={onFinish}
+              className="p-1 rounded-lg text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+              aria-label="Skip onboarding"
+              title="Skip for now"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
         </div>
 
         {/* Step Progress in Mint */}

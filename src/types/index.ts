@@ -111,11 +111,11 @@ export interface TestAttempt {
   title: string;
   score: number; // Raw score e.g. 32/40
   totalQuestions: number;
-  bandEstimate: number; // e.g. 7.5
+  bandEstimate: number; // e.g. 7.5; 0 for unattempted / abandoned
   timeSpentSeconds: number;
   startedAt: string;
   completedAt: string;
-  status: 'in_progress' | 'completed' | 'abandoned';
+  status: 'in_progress' | 'completed' | 'abandoned' | 'not_attempted';
   notes?: string;
 }
 
@@ -390,13 +390,19 @@ export interface VocabProgress {
   repetitions: number; // SM-2 consecutive successful reviews
   interval: number; // SM-2 interval in days
   easeFactor: number; // SM-2 ease factor (default 2.5)
+  lapses?: number; // consecutive/total lapses for leech detection (>= 8)
   lastReviewedAt: string;
   nextReviewAt: string;
+  dueDate?: string;
   timesCorrect: number;
   timesIncorrect: number;
   mastered: boolean;
+  isDifficult?: boolean; // Leech / difficult word flag
   isCustom?: boolean; // added by user manually or from reading passage
   notes?: string;
+  customLists?: string[]; // e.g. ['Writing Task 2 words', 'Speaking Part 3']
+  source?: 'built_in' | 'manual' | 'reading' | 'writing_feedback';
+  lastRating?: 'again' | 'hard' | 'good' | 'easy';
 }
 
 export interface StudyPlanTask {
@@ -660,17 +666,45 @@ export interface SpeakingCardContent {
 
 export type PartOfSpeech = 'noun' | 'verb' | 'adjective' | 'adverb' | 'phrase';
 
+export interface WordExample {
+  sentence: string;
+  type: 'academic' | 'everyday' | 'ielts';
+  context?: string;
+}
+
+export interface WordFamily {
+  noun?: string;
+  verb?: string;
+  adjective?: string;
+  adverb?: string;
+}
+
 export interface VocabWordContent {
   id: string;
-  word: string;
-  partOfSpeech: PartOfSpeech;
-  topic: string;
-  meaning: string;
+  word: string; // headword
+  headword?: string; // alias
+  partOfSpeech: PartOfSpeech | string;
+  phonetic?: string; // IPA e.g. "/ˌbaɪ.oʊ.daɪˈvɜːr.sə.ti/"
+  topic: string; // primary topic
+  topicTags?: string[]; // multiple topic tags
+  meaning: string; // plain-English definition
+  definition?: string; // alias
   urduMeaning: string;
-  exampleSentence: string;
-  collocations: string[];
+  exampleSentence: string; // primary example sentence
+  examples?: WordExample[] | string[]; // 2-3 examples
+  collocations: string[]; // 3-6
   synonyms: string[];
-  bandTarget: number;
+  antonyms?: string[];
+  wordFamily?: WordFamily;
+  commonMistakes?: string;
+  register?: 'formal' | 'neutral' | 'informal';
+  skillTags?: Array<'Writing' | 'Speaking' | 'Reading' | 'Listening'>;
+  level?: 'B1' | 'B2' | 'C1';
+  bandTarget: number; // e.g. 7.5
+  bandRange?: string; // e.g. "6.5-7.5"
+  frequencyRank?: number;
+  mnemonic?: string;
+  status?: 'published' | 'draft';
 }
 
 export interface GrammarExercise {

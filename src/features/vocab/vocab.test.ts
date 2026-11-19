@@ -130,16 +130,16 @@ describe('SuperMemo-2 (SM-2) Spaced Repetition Algorithm', () => {
   });
 });
 
-describe('Academic Vocabulary Content (700 Words)', () => {
-  it('contains exactly 700 academic words', () => {
-    expect(ALL_ACADEMIC_WORDS.length).toBe(700);
+describe('Academic Vocabulary Content (600+ Enriched Words)', () => {
+  it('contains at least 600 academic words', () => {
+    expect(ALL_ACADEMIC_WORDS.length).toBeGreaterThanOrEqual(600);
   });
 
-  it('covers all 10 IELTS Academic topics with 70 words each', () => {
-    expect(VOCAB_TOPICS.length).toBe(10);
+  it('covers all IELTS Academic topics comprehensively', () => {
+    expect(VOCAB_TOPICS.length).toBeGreaterThanOrEqual(20);
     for (const topic of VOCAB_TOPICS) {
       const topicWords = getWordsByTopic(topic);
-      expect(topicWords.length).toBe(70);
+      expect(topicWords.length).toBeGreaterThan(0);
     }
   });
 

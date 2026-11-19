@@ -1,5 +1,11 @@
 import { test, expect } from '@playwright/test';
 
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(() => {
+    window.localStorage.setItem('zarii_product_tour_completed', 'true');
+  });
+});
+
 test.describe('Issue 1: Redesigned Auth Brand Panel (Responsive Viewports)', () => {
   const desktopViewports = [
     { width: 1366, height: 768, name: '1366x768' },
@@ -54,7 +60,7 @@ test.describe('Issue 2: Single Logo in App Shell & Grouped Sidebar Alignment', (
     // Enter as guest
     await page.goto('/login');
     await page.getByRole('button', { name: /continue without an account/i }).click();
-    await page.waitForURL('**/');
+    await page.waitForURL('**/app');
 
     // Sidebar has Zarii logo
     const sidebarLogo = page.locator('aside').getByAltText('Zarii: IELTS Preparation');
@@ -67,14 +73,14 @@ test.describe('Issue 2: Single Logo in App Shell & Grouped Sidebar Alignment', (
 
     // Sidebar navigation groups: LEARN and PROGRESS
     await expect(page.locator('aside').getByText('LEARN')).toBeVisible();
-    await expect(page.locator('aside').getByText('PROGRESS')).toBeVisible();
+    await expect(page.locator('aside').getByText('PROGRESS', { exact: true })).toBeVisible();
   });
 
   test('mobile (390px) shows top bar logo and mobile drawer does NOT repeat logo header', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto('/login');
     await page.getByRole('button', { name: /continue without an account/i }).click();
-    await page.waitForURL('**/');
+    await page.waitForURL('**/app');
 
     // Mobile top bar shows logo
     const mobileTopBarLogo = page.locator('header').getByAltText('Zarii: IELTS Preparation');
@@ -99,7 +105,7 @@ test.describe('Issue 3: Account Controls, Guest Mode, and Logout Flow', () => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/login');
     await page.getByRole('button', { name: /continue without an account/i }).click();
-    await page.waitForURL('**/');
+    await page.waitForURL('**/app');
 
     // Open user menu from TopBar
     const userBtn = page.locator('header').getByRole('button', { name: 'User Account Menu' });
@@ -107,7 +113,7 @@ test.describe('Issue 3: Account Controls, Guest Mode, and Logout Flow', () => {
 
     const menu = page.getByRole('menu');
     await expect(menu).toBeVisible();
-    await expect(menu.getByText('Guest (Local only)').or(menu.getByText('Guest User'))).toBeVisible();
+    await expect(menu.getByText('Guest User')).toBeVisible();
     await expect(menu.getByRole('menuitem', { name: /log in to existing account/i })).toBeVisible();
     await expect(menu.getByRole('menuitem', { name: /create free account/i })).toBeVisible();
     await expect(menu.getByRole('menuitem', { name: /log out/i })).toHaveCount(0);
@@ -117,10 +123,10 @@ test.describe('Issue 3: Account Controls, Guest Mode, and Logout Flow', () => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/login');
     await page.getByRole('button', { name: /continue without an account/i }).click();
-    await page.waitForURL('**/');
+    await page.waitForURL('**/app');
 
     // Go to settings
-    await page.goto('/settings');
+    await page.goto('/app/settings');
     const logoutBtn = page.getByRole('button', { name: /log out of zarii/i });
     await expect(logoutBtn).toBeVisible();
 

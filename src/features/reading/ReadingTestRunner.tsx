@@ -924,7 +924,7 @@ export function ReadingTestRunner() {
                               {q.questionNumber}
                             </span>
                             <span className="text-[11px] font-semibold text-slate-400 uppercase">
-                              {q.type.replace(/_/g, ' ')}
+                              {(q.type || group.questionType || '').replace(/_/g, ' ')}
                             </span>
                           </div>
 

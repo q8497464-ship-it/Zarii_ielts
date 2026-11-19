@@ -76,23 +76,47 @@ You must respond ONLY with a valid, parseable JSON object matching this exact st
 
 /**
  * Validates the raw JSON object returned by the AI model.
+ * Enforces valid 0.5-step band scores in range [0, 9] and verified quotation evidence
+ * from the candidate's actual submission.
  */
-function validateWritingFeedbackJson(data: any): { valid: boolean; reason?: string } {
+function validateWritingFeedbackJson(data: any, essayText?: string): { valid: boolean; reason?: string } {
   if (!data || typeof data !== 'object') {
     return { valid: false, reason: 'Response is not a valid JSON object' };
   }
-  if (typeof data.overallBand !== 'number' || data.overallBand < 0 || data.overallBand > 9) {
-    return { valid: false, reason: 'overallBand must be a number between 0 and 9' };
+
+  const isValidBand = (b: any): boolean =>
+    typeof b === 'number' && b >= 0 && b <= 9 && (b * 2) % 1 === 0;
+
+  if (!isValidBand(data.overallBand)) {
+    return { valid: false, reason: 'overallBand must be a valid 0.5-step score between 0 and 9' };
   }
+
   const c = data.criteria;
   if (!c || typeof c !== 'object') {
     return { valid: false, reason: 'Missing criteria object' };
   }
+
+  const lowerEssay = essayText ? essayText.toLowerCase().replace(/[\s\r\n]+/g, ' ') : '';
+
   for (const key of ['taskAchievement', 'coherenceAndCohesion', 'lexicalResource', 'grammaticalRangeAndAccuracy']) {
-    if (!c[key] || typeof c[key].band !== 'number' || typeof c[key].comments !== 'string') {
-      return { valid: false, reason: `Invalid or missing criterion: ${key}` };
+    const crit = c[key];
+    if (!crit || !isValidBand(crit.band) || typeof crit.comments !== 'string') {
+      return { valid: false, reason: `Invalid or missing criterion score/comments for: ${key}` };
+    }
+
+    // Evidence quotation validation: ensure AI cited verbatim evidence from student submission
+    if (lowerEssay) {
+      const quotes = (Array.from(crit.comments.matchAll(/["“]([^"”]{4,})["”]/g)) as RegExpMatchArray[]).map(m => m[1].toLowerCase().trim());
+      if (quotes.length === 0) {
+        return { valid: false, reason: `Criterion ${key} is missing direct quoted evidence in quotation marks` };
+      }
+      const hasVerifiedQuote = quotes.some(q => lowerEssay.includes(q));
+      if (!hasVerifiedQuote) {
+        return { valid: false, reason: `Quoted evidence for ${key} does not exist in student submission` };
+      }
     }
   }
+
   if (!Array.isArray(data.strengths) || !Array.isArray(data.weaknesses)) {
     return { valid: false, reason: 'strengths and weaknesses must be arrays' };
   }

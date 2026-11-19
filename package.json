@@ -14,6 +14,7 @@
     "audit-content": "node scripts/audit-content-integrity.js",
     "audit-mcq": "node scripts/audit-mcq.js",
     "fix-mcq-positions": "node scripts/fix-mcq-positions.js",
+    "validate-vocab": "node scripts/validate-vocab.cjs",
     "migrate:content": "npx tsx scripts/migrateContent.ts"
   },
   "dependencies": {

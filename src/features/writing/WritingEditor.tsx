@@ -32,6 +32,7 @@ import { useAppStore } from '../../store/useAppStore';
 import { Button } from '../../components/ui/Button';
 import { Badge } from '../../components/ui/Badge';
 import { cn } from '../../lib/utils';
+import { AiEvaluationWaitingScreen } from '../../components/loader';
 import type { WritingPromptContent, WritingSubmission } from '../../types';
 import { ExamTestSetupModal } from '../../components/exam';
 import { ParaphrasePracticeModal } from './ParaphrasePracticeModal';
@@ -268,6 +269,18 @@ export function WritingEditor() {
 
   const isTimerUrgent = remainingSeconds <= 300 && !isUntimed;
   const isTimerAmber = remainingSeconds <= 600 && remainingSeconds > 300 && !isUntimed;
+
+  if (isSubmitting) {
+    return (
+      <div className="min-h-screen flex items-center justify-center p-4 sm:p-6 bg-[#F7FAF8] dark:bg-[#0B1612]">
+        <AiEvaluationWaitingScreen
+          moduleType="writing"
+          error={submitError}
+          onRetry={handleSubmitEvaluation}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className={cn('min-h-screen transition-colors', isFocusMode ? 'bg-[#0B1612] text-slate-100' : 'bg-[#F7FAF8] dark:bg-[#0B1612] pb-16')}>

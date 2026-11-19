@@ -33,6 +33,7 @@ import {
 } from '../../components/results';
 import { LowAccuracyLessonPrompt, QuestionMiniLessonModal } from '../adaptive/QuestionMiniLessonModal';
 import { getLessonByQuestionType } from '../adaptive/questionLessonsData';
+import { ResultsSkeleton } from '../../components/ui/Skeleton';
 import type { QuestionStrategyLesson } from '../../types';
 import { formatBand, formatSecondsToTime, getBandBadgeColor } from '../../lib/utils';
 import type { TestAttempt, QuestionResponse, QuestionType } from '../../types';
@@ -160,12 +161,7 @@ export function ListeningResultsPage() {
   };
 
   if (isLoading) {
-    return (
-      <div className="max-w-2xl mx-auto py-20 text-center space-y-3">
-        <div className="w-8 h-8 rounded-full border-2 border-sky-500 border-t-transparent animate-spin mx-auto" />
-        <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">Grading listening responses against audio evidence...</p>
-      </div>
-    );
+    return <ResultsSkeleton />;
   }
 
   if (!attempt || !test) {
@@ -464,7 +460,7 @@ export function ListeningResultsPage() {
                     </span>
                     <Badge variant="navy">Section {q.sectionNumber}</Badge>
                     <span className="text-xs text-slate-400 font-medium uppercase">
-                      {q.type.replace(/_/g, ' ')}
+                      {(q.type || (q as any).questionType || '').replace(/_/g, ' ')}
                     </span>
                   </div>
 

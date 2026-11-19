@@ -183,13 +183,13 @@ export const DashboardPage: React.FC = () => {
 
   // 1. Overall Estimated Band Calculation
   const latestBands = useMemo(() => {
-    const readingAtts = attempts.filter((a) => a.module === 'reading');
-    const listeningAtts = attempts.filter((a) => a.module === 'listening');
+    const readingAtts = attempts.filter((a) => a.module === 'reading' && a.status === 'completed' && a.bandEstimate > 0);
+    const listeningAtts = attempts.filter((a) => a.module === 'listening' && a.status === 'completed' && a.bandEstimate > 0);
 
-    const readingBand = readingAtts.length > 0 ? readingAtts[0].bandEstimate : 6.5;
-    const listeningBand = listeningAtts.length > 0 ? listeningAtts[0].bandEstimate : 6.5;
-    const writingBand = writingSubs.length > 0 ? writingSubs[writingSubs.length - 1].bandEstimate : 6.0;
-    const speakingBand = speakingSessions.length > 0 ? speakingSessions[speakingSessions.length - 1].bandEstimate : 6.5;
+    const readingBand: number = readingAtts.length > 0 ? readingAtts[0].bandEstimate : 6.5;
+    const listeningBand: number = listeningAtts.length > 0 ? listeningAtts[0].bandEstimate : 6.5;
+    const writingBand: number = writingSubs.length > 0 ? writingSubs[writingSubs.length - 1].bandEstimate : 6.0;
+    const speakingBand: number = speakingSessions.length > 0 ? speakingSessions[speakingSessions.length - 1].bandEstimate : 6.5;
 
     const rawAvg = (readingBand + listeningBand + writingBand + speakingBand) / 4;
     const overallBand = Math.round(rawAvg * 2) / 2;
@@ -208,6 +208,9 @@ export const DashboardPage: React.FC = () => {
     const events: Array<{ date: string; reading?: number; listening?: number; writing?: number; speaking?: number }> = [];
 
     attempts.forEach((att) => {
+      if (att.status !== 'completed' || !att.bandEstimate || att.bandEstimate <= 0) {
+        return;
+      }
       const d = att.completedAt.split('T')[0];
       events.push({
         date: d,
@@ -876,10 +879,16 @@ export const DashboardPage: React.FC = () => {
 
                 <div className="flex items-center gap-4 self-end sm:self-center">
                   <div className="text-right">
-                    <div className="text-base font-black font-mono text-teal-600 dark:text-teal-400">
-                      Band {formatBand(att.bandEstimate)}
-                    </div>
-                    <span className="text-xs text-slate-400 font-mono">
+                    {att.status === 'completed' && att.bandEstimate > 0 ? (
+                      <div className="text-base font-black font-mono text-teal-600 dark:text-teal-400">
+                        Band {formatBand(att.bandEstimate)}
+                      </div>
+                    ) : (
+                      <span className="inline-block px-2 py-0.5 rounded text-xs font-semibold bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+                        {att.status === 'not_attempted' ? 'Not Attempted' : 'Incomplete'}
+                      </span>
+                    )}
+                    <span className="text-xs text-slate-400 font-mono block">
                       {att.score} / {att.totalQuestions}
                     </span>
                   </div>

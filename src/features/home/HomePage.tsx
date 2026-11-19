@@ -21,7 +21,9 @@ import {
   Award,
   Trophy,
   Snowflake,
+  Pencil,
 } from 'lucide-react';
+import { extractCandidateName, isPlaceholderName } from '../../shared/utils/candidateUtils';
 import { useAppStore } from '../../store/useAppStore';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
@@ -45,10 +47,11 @@ import {
   getLevelInfo,
 } from '../habits/habitEngine';
 import { motion } from 'framer-motion';
+import { HomeSkeleton } from '../../components/ui/Skeleton';
 
 export function HomePage() {
   const navigate = useNavigate();
-  const { profile, settings, addToast } = useAppStore();
+  const { profile, settings, addToast, isLoadingProfile } = useAppStore();
 
   const isGamificationEnabled = settings?.gamificationEnabled !== false;
 
@@ -64,58 +67,43 @@ export function HomePage() {
 
   // Dynamic Candidate Display Name Resolution
   const [candidateName, setCandidateName] = useState<string>(() => {
-    if (profile?.displayName && profile.displayName !== 'Candidate' && profile.displayName !== 'IELTS Candidate') {
-      return profile.displayName;
-    }
-    return '';
+    return extractCandidateName(null, profile?.displayName) || '';
   });
+  const [isEditingName, setIsEditingName] = useState<boolean>(false);
+  const [editingNameValue, setEditingNameValue] = useState<string>('');
 
   useEffect(() => {
     let isMounted = true;
 
     async function resolveCandidateName() {
-      // 1. If local profile already has a user-configured name, use it
-      if (profile?.displayName && profile.displayName !== 'Candidate' && profile.displayName !== 'IELTS Candidate') {
-        if (isMounted) setCandidateName(profile.displayName);
-        return;
+      // 1. Resolve from current cached or profile data
+      const immediate = extractCandidateName(null, profile?.displayName);
+      if (immediate && isMounted) {
+        setCandidateName(immediate);
       }
 
       // 2. Fetch logged-in Supabase user metadata
       try {
-        const { data: { user } } = await supabase.auth.getUser();
+        const { data } = await supabase.auth.getUser();
+        const user = data?.user;
         if (user && isMounted) {
-          const rawName =
-            user.user_metadata?.full_name ||
-            user.user_metadata?.name ||
-            user.user_metadata?.display_name;
-
-          if (rawName && rawName.trim()) {
-            const formatted = rawName.trim();
-            setCandidateName(formatted);
-            useAppStore.getState().updateProfile({ displayName: formatted });
-            return;
-          }
-
-          if (user.email) {
-            const emailPrefix = user.email.split('@')[0];
-            const formattedEmailName = emailPrefix
-              .replace(/[._-]+/g, ' ')
-              .split(' ')
-              .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
-              .join(' ');
-            if (formattedEmailName) {
-              setCandidateName(formattedEmailName);
-              useAppStore.getState().updateProfile({ displayName: formattedEmailName });
-              return;
+          const resolved = extractCandidateName(user, profile?.displayName);
+          if (resolved) {
+            setCandidateName(resolved);
+            localStorage.setItem('zarii_candidate_name', resolved);
+            if (!profile?.displayName || isPlaceholderName(profile.displayName) || profile.displayName !== resolved) {
+              useAppStore.getState().updateProfile({ displayName: resolved });
             }
+            return;
           }
         }
       } catch (err) {
         console.warn('Could not fetch candidate auth user:', err);
       }
 
-      if (isMounted) {
-        setCandidateName(profile?.displayName || 'Candidate');
+      if (isMounted && !candidateName) {
+        const fallback = extractCandidateName(null, profile?.displayName);
+        if (fallback) setCandidateName(fallback);
       }
     }
 
@@ -123,23 +111,31 @@ export function HomePage() {
 
     const { data: authSub } = supabase.auth.onAuthStateChange((_event, session) => {
       if (session?.user && isMounted) {
-        const name =
-          session.user.user_metadata?.full_name ||
-          session.user.user_metadata?.name ||
-          session.user.user_metadata?.display_name ||
-          (session.user.email ? session.user.email.split('@')[0] : '');
-        if (name && name.trim()) {
-          setCandidateName(name.trim());
-          useAppStore.getState().updateProfile({ displayName: name.trim() });
+        const resolved = extractCandidateName(session.user, profile?.displayName);
+        if (resolved) {
+          setCandidateName(resolved);
+          localStorage.setItem('zarii_candidate_name', resolved);
+          useAppStore.getState().updateProfile({ displayName: resolved });
         }
       }
     });
 
     return () => {
       isMounted = false;
-      authSub.subscription.unsubscribe();
+      authSub?.subscription?.unsubscribe();
     };
   }, [profile?.displayName]);
+
+  const handleSaveCandidateName = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const clean = editingNameValue.trim();
+    if (clean && !isPlaceholderName(clean)) {
+      setCandidateName(clean);
+      localStorage.setItem('zarii_candidate_name', clean);
+      await useAppStore.getState().updateProfile({ displayName: clean });
+    }
+    setIsEditingName(false);
+  };
   const [celebrationData, setCelebrationData] = useState<{
     isOpen: boolean;
     title: string;
@@ -367,6 +363,10 @@ export function HomePage() {
     },
   ];
 
+  if (isLoadingProfile) {
+    return <HomeSkeleton />;
+  }
+
   return (
     <div className="space-y-8 max-w-6xl mx-auto pb-12">
       {/* 1. Deep-Green Greeting Banner with Mark Watermark */}
@@ -391,8 +391,57 @@ export function HomePage() {
                 </span>
               )}
             </div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
-              {getGreeting()}, {candidateName || profile?.displayName || 'Candidate'}
+            <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white flex items-center gap-2 flex-wrap">
+              <span>{getGreeting()},</span>
+              {isEditingName ? (
+                <form onSubmit={handleSaveCandidateName} className="inline-flex items-center gap-1.5 animate-in fade-in">
+                  <input
+                    type="text"
+                    value={editingNameValue}
+                    onChange={(e) => setEditingNameValue(e.target.value)}
+                    placeholder="Enter candidate name"
+                    autoFocus
+                    className="px-2.5 py-0.5 text-base sm:text-lg rounded-lg bg-white text-slate-900 font-bold shadow-md outline-none focus:ring-2 focus:ring-brand-400"
+                  />
+                  <button
+                    type="submit"
+                    className="px-2.5 py-1 text-xs font-bold rounded-lg bg-brand-400 text-brand-950 hover:bg-brand-300 shadow-sm"
+                  >
+                    Save
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsEditingName(false)}
+                    className="px-2 py-1 text-xs text-brand-200 hover:text-white"
+                  >
+                    Cancel
+                  </button>
+                </form>
+              ) : (
+                <span className="inline-flex items-center gap-2 group">
+                  <span
+                    onClick={() => {
+                      setEditingNameValue(candidateName || (profile?.displayName && !isPlaceholderName(profile.displayName) ? profile.displayName : ''));
+                      setIsEditingName(true);
+                    }}
+                    className="text-brand-300 hover:text-white transition-colors cursor-pointer border-b border-dashed border-brand-400/50 hover:border-white"
+                    title="Click to edit candidate name"
+                  >
+                    {candidateName || (profile?.displayName && !isPlaceholderName(profile.displayName) ? profile.displayName : 'Candidate')}
+                  </span>
+                  <button
+                    onClick={() => {
+                      setEditingNameValue(candidateName || (profile?.displayName && !isPlaceholderName(profile.displayName) ? profile.displayName : ''));
+                      setIsEditingName(true);
+                    }}
+                    className="opacity-70 group-hover:opacity-100 transition-opacity text-brand-300 hover:text-white p-1 rounded hover:bg-brand-800/50"
+                    title="Edit candidate name"
+                    aria-label="Edit candidate name"
+                  >
+                    <Pencil className="w-3.5 h-3.5" />
+                  </button>
+                </span>
+              )}
             </h1>
             <p className="text-sm text-brand-100/90 mt-1.5 leading-relaxed max-w-xl">
               Targeting <strong className="text-brand-300">Band {formatBand(targetBand)}</strong>. Every focused practice session builds official exam stamina.

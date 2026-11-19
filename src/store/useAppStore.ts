@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { db, getActiveProfile, getAppSettings, updateAppSettings, saveProfile } from '../lib/db';
 import { supabase } from '../lib/supabase';
+import { extractCandidateName, isPlaceholderName } from '../shared/utils/candidateUtils';
 import type { UserProfile, AppSettings } from '../types';
 
 export interface ToastMessage {
@@ -188,21 +189,21 @@ export const useAppStore = create<AppState>((set, get) => ({
     try {
       let profile = await getActiveProfile();
 
-      // Check if logged in user has a name in Supabase
+      // Check if logged in user has a name in Supabase or local cache
       try {
+        let candidateName = '';
         const { data } = await supabase.auth.getUser();
         const user = data?.user;
         if (user) {
-          const authName =
-            user.user_metadata?.full_name ||
-            user.user_metadata?.name ||
-            user.user_metadata?.display_name ||
-            (user.email ? user.email.split('@')[0] : '');
+          candidateName = extractCandidateName(user, profile?.displayName);
+        } else {
+          candidateName = extractCandidateName(null, profile?.displayName);
+        }
 
-          if (authName && (!profile?.displayName || profile.displayName === 'Candidate' || profile.displayName === 'IELTS Candidate')) {
-            await get().updateProfile({ displayName: authName.trim() });
-            profile = await getActiveProfile();
-          }
+        if (candidateName && (!profile?.displayName || isPlaceholderName(profile.displayName) || profile.displayName !== candidateName)) {
+          await get().updateProfile({ displayName: candidateName });
+          profile = await getActiveProfile();
+          localStorage.setItem('zarii_candidate_name', candidateName);
         }
       } catch {
         // Supabase offline / network error handling
@@ -299,5 +300,21 @@ export const useAppStore = create<AppState>((set, get) => ({
     applyLineSpacingToDocument(storedSpacing);
 
     await Promise.all([get().loadSettings(), get().loadProfile()]);
+
+    // Keep candidate profile display name in sync whenever auth changes
+    try {
+      supabase.auth.onAuthStateChange(async (_event, session) => {
+        if (session?.user) {
+          const name = extractCandidateName(session.user);
+          if (name) {
+            localStorage.setItem('zarii_candidate_name', name);
+            const currentProfile = get().profile;
+            if (!currentProfile?.displayName || isPlaceholderName(currentProfile.displayName) || currentProfile.displayName !== name) {
+              await get().updateProfile({ displayName: name });
+            }
+          }
+        }
+      });
+    } catch {}
   },
 }));

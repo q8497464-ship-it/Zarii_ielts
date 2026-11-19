@@ -3,6 +3,7 @@ import { useLocation, Navigate } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
 import { useAppStore } from '../../store/useAppStore';
 import { ZariiLogo } from '../ui/ZariiLogo';
+import { Loader } from '../loader';
 
 interface StudentAuthGuardProps {
   children: React.ReactNode;
@@ -51,21 +52,7 @@ export function StudentAuthGuard({ children }: StudentAuthGuardProps) {
   }, [profile, isLoadingProfile]);
 
   if (isLoadingProfile || isAuthenticated === null) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-[#F7FAF8] dark:bg-[#0B1612] text-slate-800 dark:text-slate-100 transition-colors">
-        <div className="flex flex-col items-center animate-zarii-fade">
-          <ZariiLogo variant="mark" size="xl" />
-          <div className="mt-8 flex flex-col items-center gap-3">
-            <div className="h-0.5 w-44 bg-teal-200 dark:bg-[#124F40]/50 rounded-full overflow-hidden relative">
-              <div className="h-full w-20 bg-[#124F40] dark:bg-[#5BB78D] rounded-full animate-mint-progress" />
-            </div>
-            <span className="text-2xs font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase">
-              Verifying student session...
-            </span>
-          </div>
-        </div>
-      </div>
-    );
+    return <Loader variant="splash" message="Verifying student session..." showTip={true} />;
   }
 
   if (!isAuthenticated) {

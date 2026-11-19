@@ -6,6 +6,7 @@ import { OnboardingModal } from '../../features/onboarding/OnboardingModal';
 import { ZariiLogo } from '../../components/ui/ZariiLogo';
 import { settingsStore } from '../../shared/settings/settingsStore';
 import { MaintenanceScreen } from '../../components/maintenance/MaintenanceScreen';
+import { Loader, TopProgressBar } from '../../components/loader';
 
 // Lazy-loaded Student Feature Pages for High-Performance Code-Splitting
 const HomePage = lazy(() => import('../../features/home/HomePage').then((m) => ({ default: m.HomePage })));
@@ -49,15 +50,12 @@ const NotFoundPage = lazy(() => import('../../features/notfound/NotFoundPage').t
 
 function RouteLoadingFallback() {
   return (
-    <div className="min-h-[50vh] flex flex-col items-center justify-center gap-3 text-brand-neutral-muted dark:text-brand-dark-muted">
-      <ZariiLogo variant="mark" size="md" className="opacity-90 animate-pulse" />
-      <div className="h-0.5 w-32 bg-brand-200 dark:bg-brand-dark-border rounded-full overflow-hidden relative">
-        <div className="h-full w-16 bg-brand-400 rounded-full animate-mint-progress" />
+    <>
+      <TopProgressBar isLoading={true} />
+      <div className="min-h-[50vh] flex flex-col items-center justify-center">
+        <Loader variant="page" message="Loading practice module..." showTip={true} />
       </div>
-      <span className="text-2xs font-semibold tracking-wider uppercase text-brand-neutral-muted dark:text-brand-dark-muted">
-        Loading module...
-      </span>
-    </div>
+    </>
   );
 }
 
@@ -74,8 +72,14 @@ export function StudentApp() {
 
   useEffect(() => {
     if (!isLoadingProfile) {
+      const isGuest = typeof window !== 'undefined' && localStorage.getItem('zarii_guest_mode') === 'true';
       if (!profile || !profile.onboardingCompleted) {
-        setShowOnboarding(true);
+        // Do not trap guests who explicitly opted into explore mode
+        if (!isGuest) {
+          setShowOnboarding(true);
+        } else {
+          setShowOnboarding(false);
+        }
       } else {
         setShowOnboarding(false);
       }

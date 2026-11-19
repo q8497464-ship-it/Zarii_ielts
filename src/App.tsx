@@ -6,6 +6,8 @@ import { ZariiLogo } from './components/ui/ZariiLogo';
 import { ScrollToTop } from './components/layout/ScrollToTop';
 import { StudentAuthGuard } from './components/auth/StudentAuthGuard';
 import { PublicInfoLayout } from './components/layout/PublicInfoLayout';
+import { Loader, TopProgressBar } from './components/loader';
+import { runMockAttemptsMigration } from './lib/mockMigration';
 
 // Lazy-loaded code-split applications
 const LandingPage = lazy(() => import('./landing/LandingPage'));
@@ -34,19 +36,12 @@ const FaqPage = lazy(() => import('./features/info/FaqPage').then((m) => ({ defa
 
 function RouteLoadingFallback({ message = 'Loading Zarii IELTS...' }: { message?: string }) {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#F7FAF8] dark:bg-[#0B1612] text-slate-800 dark:text-slate-100 transition-colors">
-      <div className="flex flex-col items-center animate-zarii-fade">
-        <ZariiLogo variant="mark" size="xl" />
-        <div className="mt-8 flex flex-col items-center gap-3">
-          <div className="h-0.5 w-44 bg-teal-200 dark:bg-[#124F40]/50 rounded-full overflow-hidden relative">
-            <div className="h-full w-20 bg-[#124F40] dark:bg-[#5BB78D] rounded-full animate-mint-progress" />
-          </div>
-          <span className="text-2xs font-bold tracking-widest text-slate-500 dark:text-slate-400 uppercase">
-            {message}
-          </span>
-        </div>
+    <>
+      <TopProgressBar isLoading={true} />
+      <div className="min-h-screen flex flex-col items-center justify-center bg-[#F7FAF8] dark:bg-[#0B1612] transition-colors">
+        <Loader variant="page" message={message} showTip={true} />
       </div>
-    </div>
+    </>
   );
 }
 
@@ -74,7 +69,12 @@ export default function App() {
   const { initialize } = useAppStore();
 
   useEffect(() => {
-    initialize();
+    initialize().finally(() => {
+      runMockAttemptsMigration().catch(console.error);
+      if (typeof window !== 'undefined' && (window as any).__dismissZariiSplash) {
+        (window as any).__dismissZariiSplash();
+      }
+    });
   }, [initialize]);
 
   return (

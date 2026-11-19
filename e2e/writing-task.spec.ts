@@ -4,6 +4,7 @@ test.describe('E2E: Writing Task & AI Evaluator', () => {
   test.beforeEach(async ({ page }) => {
     await page.addInitScript(() => {
       window.localStorage.setItem('zarii_tour_completed', 'true');
+      window.localStorage.setItem('zarii_guest_mode', 'true');
     });
 
     // Mock external Gemini / Groq API endpoints if invoked
@@ -42,7 +43,7 @@ test.describe('E2E: Writing Task & AI Evaluator', () => {
   });
 
   test('types essay in WritingEditor, verifies live word counter and submits for evaluation', async ({ page }) => {
-    await page.goto('/practice/writing/prompt/t2-01');
+    await page.goto('/app/practice/writing/prompt/t2-01');
 
     // Verify prompt and textarea exist
     const editor = page.locator('textarea');
@@ -59,7 +60,7 @@ In conclusion, artificial intelligence should be embraced as an empowering suppl
     await editor.fill(sampleEssay);
 
     // Verify word count updates (sample is ~180+ words)
-    await expect(page.locator('text=/\\d+\\s+words/i').first()).toBeVisible();
+    await expect(page.locator('text=/Words:\\s*\\d+|\\d+\\s*\\/|\\d+\\s+words/i').first()).toBeVisible();
 
     // Verify autosave status
     await expect(page.locator('text=/saved/i').first()).toBeVisible();
