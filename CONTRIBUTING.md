@@ -4,6 +4,19 @@ Thank you for your interest in making IELTS preparation 100% free, accessible, a
 
 ---
 
+## Architecture & IELTS Feature Protection Rule
+
+> [!IMPORTANT]
+> **Core Stability Mandate**:
+> **No change may alter an existing IELTS route, data shape or score logic without a migration, a redirect and a passing regression suite.**
+>
+> 1. **Zero Route Breakages**: Any renamed or restructured URL must have an explicit redirect configured in `src/App.tsx`.
+> 2. **Database Schema Continuity**: The local IndexedDB (`src/lib/db.ts`) schema must maintain backwards compatibility. Any changes must bump the Dexie version with an upgrade function.
+> 3. **Scoring Integrity**: IELTS band conversion tables, Cambridge rounding rules, and empty-attempt guards (`src/features/mock/mockScoring.ts`) must never be altered or bypassed.
+> 4. **Regression Verification**: `npm run test:regression` and `npm run test` must pass on every change. See `docs/BASELINE.md` for the complete platform baseline.
+
+---
+
 ## Content Integrity & Originality Rules
 
 1. **NO Copyrighted Materials**:

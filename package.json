@@ -8,6 +8,8 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
+    "test:regression": "vitest run src/features/testing/ieltsScoringRegression.test.ts src/features/mock/mockScoring.test.ts && playwright test e2e/ielts-full-regression.spec.ts",
+    "test:all": "vitest run && node scripts/validate-vocab.cjs && node scripts/validate-content.js && playwright test",
     "test:e2e": "playwright test",
     "test:calibration": "node scripts/calibrate-writing.js",
     "validate-content": "node scripts/validate-content.js",
