@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-11-22T00:00:00.000Z",
+  "project": "Zarii IELTS & English",
+  "statement": "Zarii is committed to 100% free, high-quality, open-access education. Our dictionary and lexical engines are built strictly upon open-source and permissively licensed linguistic corpora.",
+  "sources": [
+    {
+      "id": "open-english-wordnet",
+      "name": "Open English WordNet (2024 Edition)",
+      "organization": "Global WordNet Association & Princeton University",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://github.com/globalwordnet/english-wordnet",
+      "description": "Comprehensive English lexical database providing synsets, definitions, semantic domains, relations, examples, and morphological exception indexes.",
+      "attributionText": "Open English WordNet 2024 by the Global WordNet Association, based on Princeton University WordNet 3.0. Licensed under CC BY 4.0."
+    },
+    {
+      "id": "cmudict",
+      "name": "CMU Pronouncing Dictionary",
+      "organization": "Carnegie Mellon University Speech Group",
+      "license": "CMUdict License (BSD-Style / Public Domain)",
+      "licenseUrl": "https://github.com/cmusphinx/cmudict/blob/master/LICENSE",
+      "sourceUrl": "https://github.com/cmusphinx/cmudict",
+      "description": "North American English pronunciation dictionary with over 134,000 phonetic transcriptions, mapped to International Phonetic Alphabet (IPA) and readable respelling.",
+      "attributionText": "The CMU Pronouncing Dictionary, Copyright (C) 1993-2015 Carnegie Mellon University. Free for commercial and educational use with attribution."
+    },
+    {
+      "id": "frequency-ngrams",
+      "name": "Google Web Trillion Word N-Grams & OpenSubtitles Frequency",
+      "organization": "Google Inc., Peter Norvig & Hermit Dave",
+      "license": "Public Domain & CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceUrl": "https://norvig.com/ngrams/count_1w.txt",
+      "description": "Statistical word frequency lists used to compute CEFR level estimates (A1 to C1) and sort definitions by real-world usage prevalence.",
+      "attributionText": "Frequency rankings computed using datasets by Peter Norvig (Google Web Trillion Word Corpus) and Hermit Dave (OpenSubtitles)."
+    },
+    {
+      "id": "dwyl-words",
+      "name": "DWYL English Words",
+      "organization": "Infochimps & dwyl",
+      "license": "The Unlicense (Public Domain)",
+      "licenseUrl": "https://unlicense.org/",
+      "sourceUrl": "https://github.com/dwyl/english-words",
+      "description": "Open English headword spell-checking list used solely for lexical validation (no definitions or proprietary texts).",
+      "attributionText": "Spelling validation aided by dwyl english-words (Public Domain)."
+    }
+  ],
+  "exclusions": "No copyrighted material from Oxford, Cambridge, Longman, Merriam-Webster, or other proprietary dictionaries is utilized."
+}

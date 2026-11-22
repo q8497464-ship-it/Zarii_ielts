@@ -1,5 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useParams } from 'react-router-dom';
 import { useAppStore } from '../../store/useAppStore';
 import { AppShell } from '../../components/layout/AppShell';
 import { OnboardingModal } from '../../features/onboarding/OnboardingModal';
@@ -48,6 +48,21 @@ const FaqPage = lazy(() => import('../../features/info/FaqPage').then((m) => ({ 
 const ContactPage = lazy(() => import('../../features/info/ContactPage').then((m) => ({ default: m.ContactPage })));
 const NotFoundPage = lazy(() => import('../../features/notfound/NotFoundPage').then((m) => ({ default: m.NotFoundPage })));
 
+// English Course Lazy-loaded Feature Pages
+const EnglishHomePage = lazy(() => import('../../features/english/pages/EnglishHomePage').then((m) => ({ default: m.EnglishHomePage })));
+const EnglishCourseCatalogPage = lazy(() => import('../../features/english/pages/EnglishCourseCatalogPage').then((m) => ({ default: m.EnglishCourseCatalogPage })));
+const EnglishLessonRunnerPage = lazy(() => import('../../features/english/pages/EnglishLessonRunnerPage').then((m) => ({ default: m.EnglishLessonRunnerPage })));
+const EnglishPracticePage = lazy(() => import('../../features/english/pages/EnglishPracticePage').then((m) => ({ default: m.EnglishPracticePage })));
+const EnglishGrammarReferencePage = lazy(() => import('../../features/english/pages/EnglishGrammarReferencePage').then((m) => ({ default: m.EnglishGrammarReferencePage })));
+const EnglishReadingListeningPage = lazy(() => import('../../features/english/pages/EnglishReadingListeningPage').then((m) => ({ default: m.EnglishReadingListeningPage })));
+const EnglishSpeakingPronunciationPage = lazy(() => import('../../features/english/pages/EnglishSpeakingPronunciationPage').then((m) => ({ default: m.EnglishSpeakingPronunciationPage })));
+
+// Shared Dictionary Feature
+const DictionaryPage = lazy(() => import('../../features/dictionary/DictionaryPage').then((m) => ({ default: m.DictionaryPage })));
+const DictionaryEntryPage = lazy(() => import('../../features/dictionary/DictionaryEntryPage').then((m) => ({ default: m.DictionaryEntryPage })));
+import { useTapToLookup } from '../../features/dictionary/hooks/useTapToLookup';
+import { TapToLookupPopover } from '../../features/dictionary/components/TapToLookupPopover';
+
 function RouteLoadingFallback() {
   return (
     <>
@@ -59,10 +74,52 @@ function RouteLoadingFallback() {
   );
 }
 
+// Param-Preserving Backward-Compatibility Redirect Components
+function LegacyReadingTestRedirect() {
+  const { testId } = useParams();
+  return <Navigate to={`/app/ielts/practice/reading/test/${testId}`} replace />;
+}
+
+function LegacyReadingResultsRedirect() {
+  const { attemptId } = useParams();
+  return <Navigate to={`/app/ielts/practice/reading/results/${attemptId}`} replace />;
+}
+
+function LegacyListeningTestRedirect() {
+  const { testId } = useParams();
+  return <Navigate to={`/app/ielts/practice/listening/test/${testId}`} replace />;
+}
+
+function LegacyListeningResultsRedirect() {
+  const { attemptId } = useParams();
+  return <Navigate to={`/app/ielts/practice/listening/results/${attemptId}`} replace />;
+}
+
+function LegacyWritingPromptRedirect() {
+  const { promptId } = useParams();
+  return <Navigate to={`/app/ielts/practice/writing/prompt/${promptId}`} replace />;
+}
+
+function LegacyWritingSubmissionRedirect() {
+  const { submissionId } = useParams();
+  return <Navigate to={`/app/ielts/practice/writing/submission/${submissionId}`} replace />;
+}
+
+function LegacySpeakingResultsRedirect() {
+  const { sessionId } = useParams();
+  return <Navigate to={`/app/ielts/practice/speaking/results/${sessionId}`} replace />;
+}
+
+function LegacyGrammarLessonRedirect() {
+  const { lessonId } = useParams();
+  return <Navigate to={`/app/ielts/grammar/lesson/${lessonId}`} replace />;
+}
+
 export function StudentApp() {
   const { profile, isLoadingProfile } = useAppStore();
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [maintenance, setMaintenance] = useState(() => settingsStore.getMaintenance());
+  const { lookupPosition, closeLookup } = useTapToLookup();
 
   useEffect(() => {
     return settingsStore.subscribe(() => {
@@ -101,51 +158,75 @@ export function StudentApp() {
         isOpen={showOnboarding}
         onFinish={() => setShowOnboarding(false)}
       />
+      <TapToLookupPopover
+        position={lookupPosition}
+        onClose={closeLookup}
+      />
 
       <Suspense fallback={<RouteLoadingFallback />}>
         <Routes>
           {/* Fullscreen Mock Exam Runner */}
+          <Route path="ielts/mock/exam/:mockId" element={<MockExamRunner />} />
           <Route path="mock/exam/:mockId" element={<MockExamRunner />} />
 
           {/* Standard Student Portal Layout (under /app/*) */}
           <Route element={<AppShell />}>
+            {/* Unified Home */}
             <Route path="" element={<HomePage />} />
-            <Route path="practice" element={<PracticePage />} />
-            <Route path="practice/smart" element={<Navigate to="/app/practice?tab=smart" replace />} />
-            <Route path="mistakes" element={<Navigate to="/app/dashboard?tab=mistakes" replace />} />
-            <Route path="lessons" element={<QuestionLessonsPage />} />
-            <Route path="strategies" element={<QuestionLessonsPage />} />
-            <Route path="weekly-review" element={<Navigate to="/app/dashboard?tab=weekly-review" replace />} />
-            <Route path="achievements" element={<Navigate to="/app/dashboard?tab=achievements" replace />} />
-            <Route path="badges" element={<Navigate to="/app/dashboard?tab=achievements" replace />} />
-            <Route path="habits" element={<Navigate to="/app/dashboard?tab=achievements" replace />} />
-            <Route path="practice/reading" element={<ReadingPage />} />
-            <Route path="practice/reading/test/:testId" element={<ReadingTestRunner />} />
-            <Route path="practice/reading/results/:attemptId" element={<ReadingResultsPage />} />
-            <Route path="practice/listening" element={<ListeningPage />} />
-            <Route path="practice/listening/test/:testId" element={<ListeningTestRunner />} />
-            <Route path="practice/listening/results/:attemptId" element={<ListeningResultsPage />} />
-            <Route path="practice/writing" element={<WritingPage />} />
-            <Route path="practice/writing/prompt/:promptId" element={<WritingEditor />} />
-            <Route path="practice/writing/submission/:submissionId" element={<WritingFeedbackPage />} />
-            <Route path="practice/speaking" element={<SpeakingPage />} />
-            <Route path="practice/speaking/mock" element={<SpeakingMockRunner />} />
-            <Route path="practice/speaking/part1" element={<SpeakingPart1Practice />} />
-            <Route path="practice/speaking/part2" element={<SpeakingPart2Practice />} />
-            <Route path="practice/speaking/shadowing" element={<SpeakingShadowing />} />
-            <Route path="practice/speaking/results/:sessionId" element={<SpeakingResultsPage />} />
-            <Route path="mock" element={<MockPage />} />
-            <Route path="vocab" element={<VocabPage />} />
-            <Route path="vocab/flashcards" element={<VocabFlashcards />} />
-            <Route path="vocab/quiz" element={<VocabQuiz />} />
-            <Route path="vocab/bank" element={<PersonalWordBank />} />
-            <Route path="vocab/phrases" element={<PhraseBankPage />} />
-            <Route path="grammar" element={<Navigate to="/app/vocab?tab=grammar" replace />} />
-            <Route path="grammar/lesson/:lessonId" element={<GrammarLessonRunner />} />
-            <Route path="diagnostic" element={<DiagnosticPage />} />
-            <Route path="dashboard" element={<DashboardPage />} />
-            <Route path="progress" element={<Navigate to="/app/dashboard" replace />} />
-            <Route path="plan" element={<PlanPage />} />
+            <Route path="ielts" element={<HomePage />} />
+
+            {/* IELTS Track Routes (/app/ielts/*) */}
+            <Route path="ielts/practice" element={<PracticePage />} />
+            <Route path="ielts/practice/smart" element={<Navigate to="/app/ielts/practice?tab=smart" replace />} />
+            <Route path="ielts/mistakes" element={<Navigate to="/app/progress?tab=mistakes" replace />} />
+            <Route path="ielts/lessons" element={<QuestionLessonsPage />} />
+            <Route path="ielts/strategies" element={<QuestionLessonsPage />} />
+            <Route path="ielts/weekly-review" element={<Navigate to="/app/progress?tab=weekly-review" replace />} />
+            <Route path="ielts/achievements" element={<Navigate to="/app/progress?tab=achievements" replace />} />
+            <Route path="ielts/badges" element={<Navigate to="/app/progress?tab=achievements" replace />} />
+            <Route path="ielts/habits" element={<Navigate to="/app/progress?tab=achievements" replace />} />
+            <Route path="ielts/practice/reading" element={<ReadingPage />} />
+            <Route path="ielts/practice/reading/test/:testId" element={<ReadingTestRunner />} />
+            <Route path="ielts/practice/reading/results/:attemptId" element={<ReadingResultsPage />} />
+            <Route path="ielts/practice/listening" element={<ListeningPage />} />
+            <Route path="ielts/practice/listening/test/:testId" element={<ListeningTestRunner />} />
+            <Route path="ielts/practice/listening/results/:attemptId" element={<ListeningResultsPage />} />
+            <Route path="ielts/practice/writing" element={<WritingPage />} />
+            <Route path="ielts/practice/writing/prompt/:promptId" element={<WritingEditor />} />
+            <Route path="ielts/practice/writing/submission/:submissionId" element={<WritingFeedbackPage />} />
+            <Route path="ielts/practice/speaking" element={<SpeakingPage />} />
+            <Route path="ielts/practice/speaking/mock" element={<SpeakingMockRunner />} />
+            <Route path="ielts/practice/speaking/part1" element={<SpeakingPart1Practice />} />
+            <Route path="ielts/practice/speaking/part2" element={<SpeakingPart2Practice />} />
+            <Route path="ielts/practice/speaking/shadowing" element={<SpeakingShadowing />} />
+            <Route path="ielts/practice/speaking/results/:sessionId" element={<SpeakingResultsPage />} />
+            <Route path="ielts/mock" element={<MockPage />} />
+            <Route path="ielts/vocab" element={<VocabPage />} />
+            <Route path="ielts/vocab/flashcards" element={<VocabFlashcards />} />
+            <Route path="ielts/vocab/quiz" element={<VocabQuiz />} />
+            <Route path="ielts/vocab/bank" element={<Navigate to="/app/word-bank" replace />} />
+            <Route path="ielts/vocab/phrases" element={<PhraseBankPage />} />
+            <Route path="ielts/grammar" element={<Navigate to="/app/ielts/vocab?tab=grammar" replace />} />
+            <Route path="ielts/grammar/lesson/:lessonId" element={<GrammarLessonRunner />} />
+            <Route path="ielts/diagnostic" element={<DiagnosticPage />} />
+            <Route path="ielts/dashboard" element={<Navigate to="/app/progress" replace />} />
+            <Route path="ielts/plan" element={<PlanPage />} />
+
+            {/* English Course Track Routes (/app/english/*) */}
+            <Route path="english" element={<EnglishHomePage />} />
+            <Route path="english/course" element={<EnglishCourseCatalogPage />} />
+            <Route path="english/course/lesson/:lessonId" element={<EnglishLessonRunnerPage />} />
+            <Route path="english/practice" element={<EnglishPracticePage />} />
+            <Route path="english/grammar" element={<EnglishGrammarReferencePage />} />
+            <Route path="english/skills" element={<EnglishReadingListeningPage />} />
+            <Route path="english/speaking" element={<EnglishSpeakingPronunciationPage />} />
+
+            {/* Shared Pages */}
+            <Route path="dictionary" element={<DictionaryPage />} />
+            <Route path="dictionary/:word" element={<DictionaryEntryPage />} />
+            <Route path="word-bank" element={<PersonalWordBank />} />
+            <Route path="progress" element={<DashboardPage />} />
+            <Route path="dashboard" element={<Navigate to="/app/progress" replace />} />
             <Route path="settings" element={<SettingsPage />} />
             <Route path="profile" element={<Navigate to="/app/settings" replace />} />
             <Route path="about" element={<AboutPage />} />
@@ -154,6 +235,43 @@ export function StudentApp() {
             <Route path="faq" element={<FaqPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="design-system" element={<DesignSystemPage />} />
+
+            {/* Permanent Backward-Compatibility Redirects from Old URLs */}
+            <Route path="practice" element={<Navigate to="/app/ielts/practice" replace />} />
+            <Route path="practice/smart" element={<Navigate to="/app/ielts/practice?tab=smart" replace />} />
+            <Route path="practice/reading" element={<Navigate to="/app/ielts/practice/reading" replace />} />
+            <Route path="practice/reading/test/:testId" element={<LegacyReadingTestRedirect />} />
+            <Route path="practice/reading/results/:attemptId" element={<LegacyReadingResultsRedirect />} />
+            <Route path="practice/listening" element={<Navigate to="/app/ielts/practice/listening" replace />} />
+            <Route path="practice/listening/test/:testId" element={<LegacyListeningTestRedirect />} />
+            <Route path="practice/listening/results/:attemptId" element={<LegacyListeningResultsRedirect />} />
+            <Route path="practice/writing" element={<Navigate to="/app/ielts/practice/writing" replace />} />
+            <Route path="practice/writing/prompt/:promptId" element={<LegacyWritingPromptRedirect />} />
+            <Route path="practice/writing/submission/:submissionId" element={<LegacyWritingSubmissionRedirect />} />
+            <Route path="practice/speaking" element={<Navigate to="/app/ielts/practice/speaking" replace />} />
+            <Route path="practice/speaking/mock" element={<Navigate to="/app/ielts/practice/speaking/mock" replace />} />
+            <Route path="practice/speaking/part1" element={<Navigate to="/app/ielts/practice/speaking/part1" replace />} />
+            <Route path="practice/speaking/part2" element={<Navigate to="/app/ielts/practice/speaking/part2" replace />} />
+            <Route path="practice/speaking/shadowing" element={<Navigate to="/app/ielts/practice/speaking/shadowing" replace />} />
+            <Route path="practice/speaking/results/:sessionId" element={<LegacySpeakingResultsRedirect />} />
+            <Route path="mock" element={<Navigate to="/app/ielts/mock" replace />} />
+            <Route path="vocab" element={<Navigate to="/app/ielts/vocab" replace />} />
+            <Route path="vocab/flashcards" element={<Navigate to="/app/ielts/vocab/flashcards" replace />} />
+            <Route path="vocab/quiz" element={<Navigate to="/app/ielts/vocab/quiz" replace />} />
+            <Route path="vocab/bank" element={<Navigate to="/app/word-bank" replace />} />
+            <Route path="vocab/phrases" element={<Navigate to="/app/ielts/vocab/phrases" replace />} />
+            <Route path="grammar" element={<Navigate to="/app/ielts/vocab?tab=grammar" replace />} />
+            <Route path="grammar/lesson/:lessonId" element={<LegacyGrammarLessonRedirect />} />
+            <Route path="plan" element={<Navigate to="/app/ielts/plan" replace />} />
+            <Route path="diagnostic" element={<Navigate to="/app/ielts/diagnostic" replace />} />
+            <Route path="mistakes" element={<Navigate to="/app/progress?tab=mistakes" replace />} />
+            <Route path="lessons" element={<Navigate to="/app/ielts/lessons" replace />} />
+            <Route path="strategies" element={<Navigate to="/app/ielts/strategies" replace />} />
+            <Route path="weekly-review" element={<Navigate to="/app/progress?tab=weekly-review" replace />} />
+            <Route path="achievements" element={<Navigate to="/app/progress?tab=achievements" replace />} />
+            <Route path="badges" element={<Navigate to="/app/progress?tab=achievements" replace />} />
+            <Route path="habits" element={<Navigate to="/app/progress?tab=achievements" replace />} />
+
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

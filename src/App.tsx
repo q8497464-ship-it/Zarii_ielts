@@ -8,6 +8,7 @@ import { StudentAuthGuard } from './components/auth/StudentAuthGuard';
 import { PublicInfoLayout } from './components/layout/PublicInfoLayout';
 import { Loader, TopProgressBar } from './components/loader';
 import { runMockAttemptsMigration } from './lib/mockMigration';
+import { runTrackMigration } from './lib/trackMigration';
 
 // Lazy-loaded code-split applications
 const LandingPage = lazy(() => import('./landing/LandingPage'));
@@ -33,6 +34,7 @@ const ContactPage = lazy(() => import('./features/info/ContactPage').then((m) =>
 const PrivacyPage = lazy(() => import('./features/info/PrivacyPage').then((m) => ({ default: m.PrivacyPage })));
 const TermsPage = lazy(() => import('./features/info/TermsPage').then((m) => ({ default: m.TermsPage })));
 const FaqPage = lazy(() => import('./features/info/FaqPage').then((m) => ({ default: m.FaqPage })));
+const CreditsPage = lazy(() => import('./features/info/CreditsPage').then((m) => ({ default: m.CreditsPage })));
 
 function RouteLoadingFallback({ message = 'Loading Zarii IELTS...' }: { message?: string }) {
   return (
@@ -71,6 +73,7 @@ export default function App() {
   useEffect(() => {
     initialize().finally(() => {
       runMockAttemptsMigration().catch(console.error);
+      runTrackMigration().catch(console.error);
       if (typeof window !== 'undefined' && (window as any).__dismissZariiSplash) {
         (window as any).__dismissZariiSplash();
       }
@@ -180,6 +183,16 @@ export default function App() {
             <Suspense fallback={<RouteLoadingFallback message="Loading FAQs..." />}>
               <PublicInfoLayout>
                 <FaqPage />
+              </PublicInfoLayout>
+            </Suspense>
+          }
+        />
+        <Route
+          path="/credits"
+          element={
+            <Suspense fallback={<RouteLoadingFallback message="Loading Credits & Attributions..." />}>
+              <PublicInfoLayout>
+                <CreditsPage />
               </PublicInfoLayout>
             </Suspense>
           }

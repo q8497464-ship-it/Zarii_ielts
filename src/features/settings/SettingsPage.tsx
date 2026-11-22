@@ -31,6 +31,7 @@ import {
   Shield,
   Languages,
 } from 'lucide-react';
+import { dictionaryStore, type OfflineStorageStatus } from '../dictionary/dictionaryService';
 import { supabase } from '../../lib/supabase';
 import { useAppStore } from '../../store/useAppStore';
 import { Loader } from '../../components/loader';
@@ -58,6 +59,7 @@ export function SettingsPage() {
   const {
     profile,
     updateProfile,
+    currentTrack,
     theme,
     setTheme,
     textSize,
@@ -97,6 +99,9 @@ export function SettingsPage() {
   // --------------------------------------------------------------------------
   const [soundEnabled, setSoundEnabled] = useState<boolean>(true);
   const [urduHintsEnabled, setUrduHintsEnabled] = useState<boolean>(true);
+  const [tapToLookup, setTapToLookup] = useState<boolean>(true);
+  const [showAllWordsSafeMode, setShowAllWordsSafeMode] = useState<boolean>(false);
+  const [offlineStatus, setOfflineStatus] = useState<OfflineStorageStatus>(() => dictionaryStore.getOfflineStatus());
   const [showTimer, setShowTimer] = useState<boolean>(true);
   const [timerWarningEnabled, setTimerWarningEnabled] = useState<boolean>(true);
   const [dailyReminderEnabled, setDailyReminderEnabled] = useState<boolean>(false);
@@ -138,12 +143,15 @@ export function SettingsPage() {
     if (settings) {
       setSoundEnabled(settings.soundEnabled !== false);
       setUrduHintsEnabled(settings.urduHintsEnabled !== false);
+      setTapToLookup(settings.tapToLookup !== undefined ? settings.tapToLookup : currentTrack === 'english');
+      setShowAllWordsSafeMode(Boolean(settings.showAllWordsSafeMode));
       setShowTimer(settings.showTimer !== false);
       setTimerWarningEnabled(settings.timerWarningEnabled !== false);
       setDailyReminderEnabled(Boolean(settings.dailyReminderEnabled));
       setDailyReminderTime(settings.dailyReminderTime || '19:00');
+      setOfflineStatus(dictionaryStore.getOfflineStatus());
     }
-  }, [settings]);
+  }, [settings, currentTrack]);
 
   // Check auth user status
   useEffect(() => {
@@ -220,6 +228,41 @@ export function SettingsPage() {
       message: val
         ? 'Vocabulary flashcards and idioms will include Urdu meanings.'
         : 'Vocabulary displayed in English only.',
+    });
+  };
+
+  const handleToggleTapToLookup = async (val: boolean) => {
+    setTapToLookup(val);
+    await updateSettings({ tapToLookup: val });
+    addToast({
+      type: 'info',
+      title: val ? 'Tap-to-Lookup Enabled' : 'Tap-to-Lookup Disabled',
+      message: val
+        ? 'Double-click or long-press any word in lessons to open quick definition popover.'
+        : 'Word tap lookup disabled.',
+    });
+  };
+
+  const handleToggleSafeMode = async (val: boolean) => {
+    setShowAllWordsSafeMode(val);
+    await updateSettings({ showAllWordsSafeMode: val });
+    addToast({
+      type: 'info',
+      title: val ? 'Safe Mode Off (Show All Words)' : 'Safe Mode On (Offensive Filter Active)',
+      message: val
+        ? 'All dictionary terms including sensitive words are visible.'
+        : 'Offensive and sensitive words are filtered out by default.',
+    });
+  };
+
+  const handleRemoveOfflineDictionary = async () => {
+    await dictionaryStore.clearOfflineStorage();
+    const updated = dictionaryStore.getOfflineStatus();
+    setOfflineStatus(updated);
+    addToast({
+      type: 'info',
+      title: 'Offline Storage Cleared',
+      message: 'Downloaded dictionary files have been removed from browser storage.',
     });
   };
 
@@ -735,6 +778,44 @@ export function SettingsPage() {
                   />
                 </div>
 
+                {/* Tap to Look Up Words Toggle */}
+                <div className="flex items-center justify-between p-3.5 rounded-xl border border-slate-200/80 dark:border-[#24392F] bg-slate-50/50 dark:bg-slate-900/50">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-[#124F40]/10 text-[#124F40] dark:text-[#5BB78D] flex items-center justify-center">
+                      <BookOpen className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-slate-900 dark:text-white">Tap to Look Up Words</div>
+                      <div className="text-[11px] text-slate-500">Double-click or long-press any word in lessons to open quick definition popover</div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    checked={tapToLookup}
+                    onChange={(e) => handleToggleTapToLookup(e.target.checked)}
+                    className="w-4 h-4 rounded text-[#124F40] focus:ring-[#5BB78D] cursor-pointer"
+                  />
+                </div>
+
+                {/* Show All Words (Dictionary Safe-Mode) */}
+                <div className="flex items-center justify-between p-3.5 rounded-xl border border-slate-200/80 dark:border-[#24392F] bg-slate-50/50 dark:bg-slate-900/50">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-[#124F40]/10 text-[#124F40] dark:text-[#5BB78D] flex items-center justify-center">
+                      <Shield className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-slate-900 dark:text-white">Show All Words (Disable Safe-Mode)</div>
+                      <div className="text-[11px] text-slate-500">Include sensitive and offensive terms in dictionary searches (off by default)</div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    checked={showAllWordsSafeMode}
+                    onChange={(e) => handleToggleSafeMode(e.target.checked)}
+                    className="w-4 h-4 rounded text-[#124F40] focus:ring-[#5BB78D] cursor-pointer"
+                  />
+                </div>
+
                 {/* Sound Effects Toggle */}
                 <div className="flex items-center justify-between p-3.5 rounded-xl border border-slate-200/80 dark:border-[#24392F] bg-slate-50/50 dark:bg-slate-900/50">
                   <div className="flex items-center gap-3">
@@ -1011,6 +1092,64 @@ export function SettingsPage() {
                     Select Backup JSON
                   </Button>
                 </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Offline Dictionary Storage Card */}
+          <Card>
+            <CardHeader>
+              <div className="flex items-center gap-2">
+                <HardDrive className="w-5 h-5 text-[#124F40] dark:text-[#5BB78D]" />
+                <CardTitle>Offline Dictionary Storage</CardTitle>
+              </div>
+              <CardDescription>
+                Manage downloaded dictionary packs and offline vocabulary data stored in your browser.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="p-4 rounded-xl border border-slate-200/80 dark:border-[#24392F] bg-slate-50/50 dark:bg-slate-900/50 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <div className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    {offlineStatus.isDownloaded ? (
+                      <>
+                        <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                        <span>Installed: {offlineStatus.type === 'essential' ? 'Essential 20k Pack' : 'Full 144k Dictionary'}</span>
+                      </>
+                    ) : (
+                      <>
+                        <HelpCircle className="w-4 h-4 text-slate-400" />
+                        <span>Not Downloaded (Online On-Demand Streaming Active)</span>
+                      </>
+                    )}
+                  </div>
+                  <p className="text-[11px] text-slate-500 mt-0.5">
+                    {offlineStatus.isDownloaded
+                      ? `${offlineStatus.cachedEntriesCount.toLocaleString()} words cached • ${(offlineStatus.sizeBytes / (1024 * 1024)).toFixed(1)} MB storage used`
+                      : 'Dictionary shards load automatically as you browse words.'}
+                  </p>
+                </div>
+
+                {offlineStatus.isDownloaded ? (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleRemoveOfflineDictionary}
+                    className="text-xs text-rose-600 border-rose-300 dark:border-rose-900/40 hover:bg-rose-50 dark:hover:bg-rose-950/30 gap-1.5 h-8 shrink-0"
+                  >
+                    <Trash2 className="w-3.5 h-3.5" />
+                    <span>Remove Offline Dictionary</span>
+                  </Button>
+                ) : (
+                  <Button
+                    size="sm"
+                    onClick={() => navigate('/app/dictionary')}
+                    className="bg-[#124F40] hover:bg-[#124F40]/90 text-white text-xs h-8 gap-1.5 shrink-0"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    <span>Download in Dictionary</span>
+                  </Button>
+                )}
               </div>
             </CardContent>
           </Card>

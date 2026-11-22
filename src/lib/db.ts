@@ -9,6 +9,11 @@ import type {
   VocabProgress,
   StudyPlanDay,
   MistakeItem,
+  CourseProgress,
+  LessonAttempt,
+  DictionaryFavorite,
+  DictionaryHistory,
+  UserNote,
 } from '../types';
 
 export class ZariiDatabase extends Dexie {
@@ -21,6 +26,11 @@ export class ZariiDatabase extends Dexie {
   studyPlan!: Table<StudyPlanDay, number>;
   settings!: Table<AppSettings, number>;
   mistakes!: Table<MistakeItem, number>;
+  courseProgress!: Table<CourseProgress, number>;
+  lessonAttempts!: Table<LessonAttempt, number>;
+  dictionaryFavorites!: Table<DictionaryFavorite, number>;
+  dictionaryHistory!: Table<DictionaryHistory, number>;
+  userNotes!: Table<UserNote, number>;
 
   constructor() {
     super('ZariiIELTS_DB');
@@ -53,6 +63,53 @@ export class ZariiDatabase extends Dexie {
     }).upgrade(() => {
       console.log('✓ Upgraded Zarii database schema to v3');
     });
+
+    this.version(4).stores({
+      profile: '++id, testType, targetBand, onboardingCompleted, primaryTrack, createdAt, updatedAt',
+      attempts: '++id, testId, testType, module, track, completedAt, status, startedAt',
+      responses: '++id, attemptId, questionId, module, isCorrect',
+      writingSubmissions: '++id, promptId, taskType, track, submittedAt',
+      speakingSessions: '++id, cardId, part, track, recordedAt',
+      vocabProgress: '++id, wordId, box, track, nextReviewAt, mastered',
+      studyPlan: '++id, dayIndex, dateStr, track, module, completed',
+      settings: '++id, theme, updatedAt',
+      mistakes: '++id, questionId, module, questionType, track, isMastered, createdAt, lastReviewedAt',
+      courseProgress: '++id, courseId, level, status, progressPercentage, lastAccessedAt',
+      lessonAttempts: '++id, lessonId, courseId, track, score, completedAt',
+      dictionaryFavorites: '++id, word, track, savedAt',
+      dictionaryHistory: '++id, query, track, searchedAt',
+      userNotes: '++id, referenceId, track, createdAt, updatedAt',
+    }).upgrade(async (tx) => {
+      console.log('✓ Upgrading Zarii database schema to v4 (Tracks & English Course & Dictionary)');
+      try {
+        await tx.table('attempts').toCollection().modify((attempt: any) => {
+          if (!attempt.track) attempt.track = 'ielts';
+        });
+        await tx.table('writingSubmissions').toCollection().modify((sub: any) => {
+          if (!sub.track) sub.track = 'ielts';
+        });
+        await tx.table('speakingSessions').toCollection().modify((sess: any) => {
+          if (!sess.track) sess.track = 'ielts';
+        });
+        await tx.table('vocabProgress').toCollection().modify((v: any) => {
+          if (!v.track) v.track = 'ielts';
+        });
+        await tx.table('studyPlan').toCollection().modify((sp: any) => {
+          if (!sp.track) sp.track = 'ielts';
+        });
+        await tx.table('mistakes').toCollection().modify((m: any) => {
+          if (!m.track) m.track = 'ielts';
+        });
+        await tx.table('profile').toCollection().modify((p: any) => {
+          if (!p.goals || p.goals.length === 0) p.goals = ['ielts'];
+          if (!p.primaryTrack) p.primaryTrack = 'ielts';
+          if (!p.englishLevel) p.englishLevel = 'unknown';
+          if (p.urduHints === undefined) p.urduHints = true;
+        });
+      } catch (err) {
+        console.warn('Non-fatal migration notice during v4 schema upgrade:', err);
+      }
+    });
   }
 }
 
@@ -65,6 +122,8 @@ export const DEFAULT_SETTINGS: AppSettings = {
   soundEnabled: true,
   hapticEnabled: true,
   preferredAiProvider: 'none',
+  tapToLookup: true,
+  showAllWordsSafeMode: false,
   updatedAt: new Date().toISOString(),
 };
 
@@ -122,22 +181,41 @@ export async function updateAppSettings(updates: Partial<AppSettings>): Promise<
 
 // Full export of Dexie database to a JSON object
 export async function exportDatabaseBackup(): Promise<string> {
-  const [profile, attempts, responses, writingSubmissions, speakingSessions, vocabProgress, studyPlan, settings, mistakes] =
-    await Promise.all([
-      db.profile.toArray(),
-      db.attempts.toArray(),
-      db.responses.toArray(),
-      db.writingSubmissions.toArray(),
-      db.speakingSessions.toArray(),
-      db.vocabProgress.toArray(),
-      db.studyPlan.toArray(),
-      db.settings.toArray(),
-      db.mistakes.toArray(),
-    ]);
+  const [
+    profile,
+    attempts,
+    responses,
+    writingSubmissions,
+    speakingSessions,
+    vocabProgress,
+    studyPlan,
+    settings,
+    mistakes,
+    courseProgress,
+    lessonAttempts,
+    dictionaryFavorites,
+    dictionaryHistory,
+    userNotes,
+  ] = await Promise.all([
+    db.profile.toArray(),
+    db.attempts.toArray(),
+    db.responses.toArray(),
+    db.writingSubmissions.toArray(),
+    db.speakingSessions.toArray(),
+    db.vocabProgress.toArray(),
+    db.studyPlan.toArray(),
+    db.settings.toArray(),
+    db.mistakes.toArray(),
+    db.courseProgress.toArray(),
+    db.lessonAttempts.toArray(),
+    db.dictionaryFavorites.toArray(),
+    db.dictionaryHistory.toArray(),
+    db.userNotes.toArray(),
+  ]);
 
   const backup = {
-    appName: 'Zarii IELTS',
-    version: '1.0',
+    appName: 'Zarii Learning Platform (IELTS & English)',
+    version: '2.0',
     exportedAt: new Date().toISOString(),
     data: {
       profile,
@@ -149,6 +227,11 @@ export async function exportDatabaseBackup(): Promise<string> {
       studyPlan,
       settings,
       mistakes,
+      courseProgress,
+      lessonAttempts,
+      dictionaryFavorites,
+      dictionaryHistory,
+      userNotes,
     },
   };
 
@@ -173,6 +256,11 @@ export async function importDatabaseBackup(jsonString: string): Promise<boolean>
       db.studyPlan,
       db.settings,
       db.mistakes,
+      db.courseProgress,
+      db.lessonAttempts,
+      db.dictionaryFavorites,
+      db.dictionaryHistory,
+      db.userNotes,
     ], async () => {
       // Clear current data
       await Promise.all([
@@ -185,6 +273,11 @@ export async function importDatabaseBackup(jsonString: string): Promise<boolean>
         db.studyPlan.clear(),
         db.settings.clear(),
         db.mistakes.clear(),
+        db.courseProgress.clear(),
+        db.lessonAttempts.clear(),
+        db.dictionaryFavorites.clear(),
+        db.dictionaryHistory.clear(),
+        db.userNotes.clear(),
       ]);
 
       // Insert restored data
@@ -197,6 +290,11 @@ export async function importDatabaseBackup(jsonString: string): Promise<boolean>
       if (parsed.data.studyPlan?.length) await db.studyPlan.bulkAdd(parsed.data.studyPlan);
       if (parsed.data.settings?.length) await db.settings.bulkAdd(parsed.data.settings);
       if (parsed.data.mistakes?.length) await db.mistakes.bulkAdd(parsed.data.mistakes);
+      if (parsed.data.courseProgress?.length) await db.courseProgress.bulkAdd(parsed.data.courseProgress);
+      if (parsed.data.lessonAttempts?.length) await db.lessonAttempts.bulkAdd(parsed.data.lessonAttempts);
+      if (parsed.data.dictionaryFavorites?.length) await db.dictionaryFavorites.bulkAdd(parsed.data.dictionaryFavorites);
+      if (parsed.data.dictionaryHistory?.length) await db.dictionaryHistory.bulkAdd(parsed.data.dictionaryHistory);
+      if (parsed.data.userNotes?.length) await db.userNotes.bulkAdd(parsed.data.userNotes);
     });
 
     return true;
@@ -270,6 +368,11 @@ export async function emergencySalvageAndExport(): Promise<{ backupJson: string 
       'studyPlan',
       'settings',
       'mistakes',
+      'courseProgress',
+      'lessonAttempts',
+      'dictionaryFavorites',
+      'dictionaryHistory',
+      'userNotes',
     ] as const;
 
     const salvageData: Record<string, any[]> = {};
@@ -285,8 +388,8 @@ export async function emergencySalvageAndExport(): Promise<{ backupJson: string 
     }
 
     const backup = {
-      appName: 'Zarii IELTS Emergency Salvage Backup',
-      version: '1.0',
+      appName: 'Zarii Emergency Salvage Backup (All Tracks)',
+      version: '2.0',
       salvagedAt: new Date().toISOString(),
       data: salvageData,
     };
@@ -308,6 +411,11 @@ export async function clearAllUserData(): Promise<void> {
     db.vocabProgress,
     db.studyPlan,
     db.mistakes,
+    db.courseProgress,
+    db.lessonAttempts,
+    db.dictionaryFavorites,
+    db.dictionaryHistory,
+    db.userNotes,
   ], async () => {
     await Promise.all([
       db.profile.clear(),
@@ -318,6 +426,11 @@ export async function clearAllUserData(): Promise<void> {
       db.vocabProgress.clear(),
       db.studyPlan.clear(),
       db.mistakes.clear(),
+      db.courseProgress.clear(),
+      db.lessonAttempts.clear(),
+      db.dictionaryFavorites.clear(),
+      db.dictionaryHistory.clear(),
+      db.userNotes.clear(),
     ]);
   });
 }

@@ -507,6 +507,16 @@ export function AdminSettingsPage() {
                   name: 'Public Candidate Self-Registration',
                   desc: 'Allow new students to create free accounts via /signup. When disabled, registration is closed.',
                 },
+                {
+                  key: 'english_course_enabled' as const,
+                  name: 'General English Course Track',
+                  desc: 'Enable the complete English language learning track alongside IELTS (A1 to C1 levels).',
+                },
+                {
+                  key: 'dictionary_enabled' as const,
+                  name: 'English Offline Dictionary & Word Lookup',
+                  desc: 'Enable the fast offline dictionary, phonetics, audio pronunciations, and vocabulary bookmarks.',
+                },
               ] as const
             ).map((flag) => {
               const enabled = state.features[flag.key];

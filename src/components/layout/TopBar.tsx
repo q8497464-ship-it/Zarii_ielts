@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {
   Sun,
   Moon,
@@ -11,6 +11,8 @@ import {
   Flame,
   Menu,
   X,
+  BookOpen,
+  GraduationCap,
 } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { Button } from '../ui/Button';
@@ -19,16 +21,38 @@ import { ZariiLogo } from '../ui/ZariiLogo';
 import { formatBand } from '../../lib/utils';
 import { subscribeToOnlineStatus } from '../../lib/pwa';
 import { getStreakData, getLevelInfo, getUserXp } from '../../features/habits/habitEngine';
-import { getPageTitle, MAIN_NAVIGATION } from '../../lib/navigationConfig';
+import { getPageTitle, getSidebarNavigation } from '../../routes';
+import { settingsStore } from '../../shared/settings/settingsStore';
 import { UserMenu } from './UserMenu';
 import { SurpriseHeartButton } from '../../features/surprise';
 
 export function TopBar() {
   const location = useLocation();
-  const { theme, setTheme, profile, settings, textSize, setTextSize, setCommandPaletteOpen } = useAppStore();
+  const navigate = useNavigate();
+  const { theme, setTheme, profile, settings, textSize, setTextSize, setCommandPaletteOpen, currentTrack, setCurrentTrack } = useAppStore();
   const [isOnline, setIsOnline] = useState(typeof navigator !== 'undefined' ? navigator.onLine : true);
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const [features, setFeatures] = useState(() => settingsStore.getFeatures());
+
+  useEffect(() => {
+    return settingsStore.subscribe(() => {
+      setFeatures(settingsStore.getFeatures());
+    });
+  }, []);
+
+  const englishEnabled = features.english_course_enabled;
+  const dictionaryEnabled = features.dictionary_enabled;
+  const effectiveTrack = englishEnabled ? currentTrack : 'ielts';
+  const navGroups = getSidebarNavigation(effectiveTrack).map(group => {
+    if (!dictionaryEnabled) {
+      return {
+        ...group,
+        items: group.items.filter(item => item.path !== '/app/dictionary' && item.path !== '/app/word-bank')
+      };
+    }
+    return group;
+  }).filter(group => group.items.length > 0);
 
   const isGamificationEnabled = settings?.gamificationEnabled !== false;
   const streak = getStreakData();
@@ -258,9 +282,47 @@ export function TopBar() {
               </button>
             </div>
 
+            {/* Mobile Track Switcher (When English Course is Enabled) */}
+            {englishEnabled && (
+              <div className="pt-3 pb-2 border-b border-slate-100 dark:border-slate-800">
+                <div className="p-1 rounded-xl bg-gray-100 dark:bg-neutral-800 flex items-center gap-1 border border-gray-200/60 dark:border-neutral-700/60">
+                  <button
+                    onClick={() => {
+                      setCurrentTrack('ielts');
+                      setMobileDrawerOpen(false);
+                      navigate('/app');
+                    }}
+                    className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg text-xs font-semibold transition-all ${
+                      effectiveTrack === 'ielts'
+                        ? 'bg-white dark:bg-neutral-700 text-[#124F40] dark:text-emerald-400 shadow-xs'
+                        : 'text-gray-500'
+                    }`}
+                  >
+                    <BookOpen className="w-3.5 h-3.5" />
+                    <span>IELTS</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      setCurrentTrack('english');
+                      setMobileDrawerOpen(false);
+                      navigate('/app/english');
+                    }}
+                    className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg text-xs font-semibold transition-all ${
+                      effectiveTrack === 'english'
+                        ? 'bg-white dark:bg-neutral-700 text-[#124F40] dark:text-emerald-400 shadow-xs'
+                        : 'text-gray-500'
+                    }`}
+                  >
+                    <GraduationCap className="w-3.5 h-3.5" />
+                    <span>English</span>
+                  </button>
+                </div>
+              </div>
+            )}
+
             {/* Navigation Groups */}
             <div className="flex-1 overflow-y-auto py-3 space-y-4">
-              {MAIN_NAVIGATION.map((group, groupIdx) => (
+              {navGroups.map((group, groupIdx) => (
                 <div key={groupIdx} className="space-y-1">
                   {group.label && (
                     <div className="px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">

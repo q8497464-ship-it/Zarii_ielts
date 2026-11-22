@@ -8,6 +8,10 @@ export type BandScore = 5.0 | 5.5 | 6.0 | 6.5 | 7.0 | 7.5 | 8.0 | 8.5 | 9.0;
 
 export type EnglishProficiencyLevel = 'beginner' | 'intermediate' | 'upper_intermediate' | 'advanced';
 
+export type LearningTrack = 'ielts' | 'english';
+
+export type EnglishCEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'unknown';
+
 export interface UserProfile {
   id?: number;
   testType: TestType;
@@ -21,6 +25,63 @@ export interface UserProfile {
   onboardingCompleted: boolean;
   diagnosticCompleted?: boolean;
   diagnosticBand?: number;
+  // Multi-track extensions
+  goals?: LearningTrack[];
+  primaryTrack?: LearningTrack;
+  englishLevel?: EnglishCEFRLevel;
+  urduHints?: boolean;
+  createdAt: string;
+  updatedAt: string;
+}
+
+// ---------------------------------------------------------------------------
+// English Course & Dictionary Data Models
+// ---------------------------------------------------------------------------
+
+export interface CourseProgress {
+  id?: number;
+  courseId: string;
+  level: EnglishCEFRLevel;
+  status: 'not_started' | 'in_progress' | 'completed';
+  progressPercentage: number;
+  completedLessons: string[];
+  lastAccessedAt: string;
+}
+
+export interface LessonAttempt {
+  id?: number;
+  lessonId: string;
+  courseId: string;
+  track: LearningTrack;
+  score: number;
+  totalQuestions: number;
+  answers: Record<string, any>;
+  completedAt: string;
+}
+
+export interface DictionaryFavorite {
+  id?: number;
+  word: string;
+  phonetic?: string;
+  partOfSpeech?: string;
+  definition: string;
+  urduMeaning?: string;
+  track: LearningTrack | 'shared';
+  savedAt: string;
+}
+
+export interface DictionaryHistory {
+  id?: number;
+  query: string;
+  track: LearningTrack | 'shared';
+  searchedAt: string;
+}
+
+export interface UserNote {
+  id?: number;
+  referenceId: string;
+  track: LearningTrack;
+  content: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -45,6 +106,8 @@ export interface AppSettings {
   dailyReminderTime?: string;
   gamificationEnabled?: boolean; // toggle all streaks, XP, badges, celebrations off
   weeklyGoalDays?: number; // target active days per week (default 5)
+  tapToLookup?: boolean;
+  showAllWordsSafeMode?: boolean;
   productTourCompleted?: boolean;
   updatedAt: string;
 }
@@ -107,6 +170,7 @@ export interface TestAttempt {
   id?: number;
   testId: string;
   testType: TestType;
+  track?: LearningTrack;
   module: IELTSModule;
   title: string;
   score: number; // Raw score e.g. 32/40
@@ -143,6 +207,7 @@ export interface MistakeItem {
   id?: number;
   questionId: string;
   module: IELTSModule;
+  track?: LearningTrack;
   questionType: string;
   topic?: string;
   difficulty?: 'easy' | 'standard' | 'challenging';
@@ -379,6 +444,7 @@ export interface VocabProgress {
   id?: number;
   wordId: string;
   word: string;
+  track?: LearningTrack | 'shared';
   definition: string;
   urduMeaning?: string;
   partOfSpeech?: string;

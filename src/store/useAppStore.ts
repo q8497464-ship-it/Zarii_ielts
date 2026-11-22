@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { db, getActiveProfile, getAppSettings, updateAppSettings, saveProfile } from '../lib/db';
 import { supabase } from '../lib/supabase';
 import { extractCandidateName, isPlaceholderName } from '../shared/utils/candidateUtils';
-import type { UserProfile, AppSettings } from '../types';
+import type { UserProfile, AppSettings, LearningTrack } from '../types';
 
 export interface ToastMessage {
   id: string;
@@ -33,6 +33,10 @@ interface AppState {
   isLoadingProfile: boolean;
   loadProfile: () => Promise<void>;
   updateProfile: (data: Partial<UserProfile>) => Promise<void>;
+
+  // Learning Track
+  currentTrack: LearningTrack;
+  setCurrentTrack: (track: LearningTrack) => void;
 
   // Settings
   settings: AppSettings | null;
@@ -132,6 +136,13 @@ export const useAppStore = create<AppState>((set, get) => ({
   isTourOpen: false,
   profile: null,
   isLoadingProfile: true,
+  currentTrack: (safeGetStorage('zarii_current_track', 'ielts') as LearningTrack),
+  setCurrentTrack: (track: LearningTrack) => {
+    try {
+      localStorage.setItem('zarii_current_track', track);
+    } catch {}
+    set({ currentTrack: track });
+  },
   settings: null,
   toasts: [],
   sidebarCollapsed: safeGetStorage('zarii_sidebar_collapsed', 'false') === 'true',

@@ -13,18 +13,31 @@ import {
 } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MOBILE_NAV_ITEMS } from '../../routes';
+import { getMobileNavItems } from '../../routes';
+import { useAppStore } from '../../store/useAppStore';
+import { settingsStore } from '../../shared/settings/settingsStore';
 
 export function BottomNav() {
   const navigate = useNavigate();
   const [isQuickActionOpen, setIsQuickActionOpen] = useState(false);
+  const { currentTrack } = useAppStore();
+  const features = settingsStore.getFeatures();
 
-  const quickPracticeActions = [
-    { label: 'Reading Test', path: '/practice/reading', icon: BookOpen, color: 'text-brand-700 bg-brand-50 dark:bg-brand-950/60' },
-    { label: 'Listening Audio', path: '/practice/listening', icon: BookOpen, color: 'text-[#0F8B8D] bg-[#E6F5F5] dark:bg-[#0F8B8D]/20' },
-    { label: 'Writing Prompt', path: '/practice/writing', icon: BookOpen, color: 'text-[#C98A0A] bg-[#FAF2E3] dark:bg-[#C98A0A]/20' },
-    { label: 'Speaking Mock', path: '/practice/speaking/mock', icon: Sparkles, color: 'text-[#CF5C45] bg-[#FCECE9] dark:bg-[#CF5C45]/20' },
-    { label: 'Diagnostic Exam', path: '/diagnostic', icon: Compass, color: 'text-brand-800 bg-brand-100 dark:bg-brand-900/60' },
+  const effectiveTrack = features.english_course_enabled ? currentTrack : 'ielts';
+  const navItems = getMobileNavItems(effectiveTrack);
+
+  const quickPracticeActions = effectiveTrack === 'english' ? [
+    { label: 'Interactive Exercises', path: '/app/english/practice', icon: Sparkles, color: 'text-brand-700 bg-brand-50 dark:bg-brand-950/60' },
+    { label: 'Grammar Reference', path: '/app/english/grammar', icon: BookOpen, color: 'text-[#0F8B8D] bg-[#E6F5F5] dark:bg-[#0F8B8D]/20' },
+    { label: 'Reading & Listening', path: '/app/english/skills', icon: BookOpen, color: 'text-[#C98A0A] bg-[#FAF2E3] dark:bg-[#C98A0A]/20' },
+    { label: 'Pronunciation Lab', path: '/app/english/speaking', icon: Sparkles, color: 'text-[#CF5C45] bg-[#FCECE9] dark:bg-[#CF5C45]/20' },
+    { label: 'Dictionary', path: '/app/dictionary', icon: Compass, color: 'text-brand-800 bg-brand-100 dark:bg-brand-900/60' },
+  ] : [
+    { label: 'Reading Test', path: '/app/practice/reading', icon: BookOpen, color: 'text-brand-700 bg-brand-50 dark:bg-brand-950/60' },
+    { label: 'Listening Audio', path: '/app/practice/listening', icon: BookOpen, color: 'text-[#0F8B8D] bg-[#E6F5F5] dark:bg-[#0F8B8D]/20' },
+    { label: 'Writing Prompt', path: '/app/practice/writing', icon: BookOpen, color: 'text-[#C98A0A] bg-[#FAF2E3] dark:bg-[#C98A0A]/20' },
+    { label: 'Speaking Mock', path: '/app/practice/speaking/mock', icon: Sparkles, color: 'text-[#CF5C45] bg-[#FCECE9] dark:bg-[#CF5C45]/20' },
+    { label: 'Diagnostic Exam', path: '/app/diagnostic', icon: Compass, color: 'text-brand-800 bg-brand-100 dark:bg-brand-900/60' },
   ];
 
   return (
@@ -101,13 +114,13 @@ export function BottomNav() {
       {/* 5-Item Bottom Navigation Bar */}
       <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-950/95 border-t border-slate-200/80 dark:border-slate-800/80 backdrop-blur-md px-2 py-1 safe-bottom shadow-lg">
         <div className="flex items-center justify-around">
-          {MOBILE_NAV_ITEMS.map((item) => {
+          {navItems.map((item) => {
             const Icon = item.icon;
             return (
               <NavLink
                 key={item.path}
                 to={item.path}
-                end={item.path === '/'}
+                end={item.path === '/' || item.path === '/app' || item.path === '/app/english'}
                 className={({ isActive }) =>
                   cn(
                     'flex flex-col items-center justify-center py-1 px-2 rounded-xl transition-all min-w-[56px] min-h-[44px]',

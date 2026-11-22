@@ -1,14 +1,52 @@
-import { NavLink } from 'react-router-dom';
-import { PanelLeftClose, PanelLeft } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
+import { PanelLeftClose, PanelLeft, Award, Sparkles, BookOpen, GraduationCap } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { useAppStore } from '../../store/useAppStore';
 import { Tooltip } from '../ui/Tooltip';
 import { ZariiLogo } from '../ui/ZariiLogo';
-import { MAIN_NAVIGATION } from '../../lib/navigationConfig';
+import { getSidebarNavigation } from '../../routes';
 import { UserMenu } from './UserMenu';
+import { settingsStore } from '../../shared/settings/settingsStore';
+import type { LearningTrack } from '../../types';
 
 export function Sidebar() {
-  const { sidebarCollapsed, toggleSidebar } = useAppStore();
+  const { sidebarCollapsed, toggleSidebar, currentTrack, setCurrentTrack } = useAppStore();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [features, setFeatures] = useState(() => settingsStore.getFeatures());
+
+  useEffect(() => {
+    return settingsStore.subscribe(() => {
+      setFeatures(settingsStore.getFeatures());
+    });
+  }, []);
+
+  const englishEnabled = features.english_course_enabled;
+  const dictionaryEnabled = features.dictionary_enabled;
+
+  // Resolve navigation groups for active track
+  const effectiveTrack: LearningTrack = englishEnabled
+    ? (location.pathname.startsWith('/app/english') ? 'english' : currentTrack)
+    : 'ielts';
+  const navGroups = getSidebarNavigation(effectiveTrack).map(group => {
+    if (!dictionaryEnabled) {
+      return {
+        ...group,
+        items: group.items.filter(item => item.path !== '/app/dictionary' && item.path !== '/app/word-bank')
+      };
+    }
+    return group;
+  }).filter(group => group.items.length > 0);
+
+  const handleTrackChange = (track: LearningTrack) => {
+    setCurrentTrack(track);
+    if (track === 'english') {
+      navigate('/app/english');
+    } else {
+      navigate('/app');
+    }
+  };
 
   return (
     <aside
@@ -26,7 +64,7 @@ export function Sidebar() {
       >
         <NavLink to="/app" className="flex items-center gap-2 group focus:outline-none" aria-label="Zarii Home">
           {sidebarCollapsed ? (
-            <Tooltip content="Zarii: IELTS Preparation" position="right">
+            <Tooltip content="Zarii: IELTS & English" position="right">
               <div>
                 <ZariiLogo variant="mark" size="sm" className="group-hover:scale-105 transition-transform" />
               </div>
@@ -67,15 +105,67 @@ export function Sidebar() {
         </div>
       )}
 
-      {/* 2. Grouped Navigation Links (Only middle area scrolls on short windows) */}
+      {/* 2. Track Switcher (When English Course is Enabled) */}
+      {englishEnabled && (
+        <div className="px-3 pt-3 pb-2 shrink-0">
+          {sidebarCollapsed ? (
+            <Tooltip
+              content={effectiveTrack === 'ielts' ? 'Switch to English Course' : 'Switch to IELTS Prep'}
+              position="right"
+            >
+              <button
+                onClick={() => handleTrackChange(effectiveTrack === 'ielts' ? 'english' : 'ielts')}
+                className="w-full h-10 rounded-xl flex items-center justify-center bg-gray-100 dark:bg-neutral-800/80 hover:bg-emerald-50 dark:hover:bg-neutral-700 text-[#124F40] dark:text-[#5BB78D] font-bold text-xs transition-colors"
+                aria-label="Switch Learning Track"
+              >
+                {effectiveTrack === 'ielts' ? (
+                  <span className="text-[11px] font-black tracking-tight">IELTS</span>
+                ) : (
+                  <span className="text-[11px] font-black tracking-tight text-emerald-600 dark:text-emerald-400">ENG</span>
+                )}
+              </button>
+            </Tooltip>
+          ) : (
+            <div className="p-1 rounded-xl bg-gray-100 dark:bg-neutral-800/80 flex items-center gap-1 border border-gray-200/60 dark:border-neutral-700/60">
+              <button
+                onClick={() => handleTrackChange('ielts')}
+                className={cn(
+                  'flex-1 flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg text-xs font-semibold transition-all',
+                  effectiveTrack === 'ielts'
+                    ? 'bg-white dark:bg-neutral-700 text-[#124F40] dark:text-emerald-400 shadow-xs'
+                    : 'text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100'
+                )}
+              >
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>IELTS Prep</span>
+              </button>
+
+              <button
+                onClick={() => handleTrackChange('english')}
+                className={cn(
+                  'flex-1 flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg text-xs font-semibold transition-all',
+                  effectiveTrack === 'english'
+                    ? 'bg-white dark:bg-neutral-700 text-[#124F40] dark:text-emerald-400 shadow-xs'
+                    : 'text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100'
+                )}
+              >
+                <GraduationCap className="w-3.5 h-3.5" />
+                <span>English Course</span>
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* 3. Grouped Navigation Links (Only middle area scrolls on short windows) */}
       <div className="flex-1 px-3 py-2 overflow-y-auto space-y-1 overscroll-contain">
-        {MAIN_NAVIGATION.map((group, groupIdx) => (
+        {navGroups.map((group, groupIdx) => (
           <div key={groupIdx} className="space-y-1">
             {group.label && !sidebarCollapsed && (
               <div
                 className={cn(
                   'px-3 text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500',
-                  groupIdx === 0 ? 'pt-2 pb-2' : 'pt-6 pb-2'
+                  groupIdx === 0 ? 'pt-1 pb-2' : 'pt-5 pb-2'
                 )}
               >
                 {group.label}
@@ -92,7 +182,7 @@ export function Sidebar() {
                 <NavLink
                   key={item.path}
                   to={item.path}
-                  end={item.end}
+                  end={item.end ?? (item.path === '/app' || item.path === '/app/english')}
                   className={({ isActive }) =>
                     cn(
                       'flex items-center h-11 rounded-xl text-sm font-medium transition-all group relative',
@@ -147,7 +237,7 @@ export function Sidebar() {
         ))}
       </div>
 
-      {/* 3. Bottom Pinned Section: User Card ONLY (Settings moved to ACCOUNT in MAIN_NAVIGATION) */}
+      {/* 4. Bottom Pinned Section: User Card ONLY */}
       <div className="p-3 border-t border-slate-200/80 dark:border-[#24392F] mt-auto shrink-0 bg-white dark:bg-[#112019] relative">
         <UserMenu variant="sidebar" collapsed={sidebarCollapsed} />
       </div>

@@ -26,3 +26,8 @@ dist-ssr
 # Environment Variables
 .env.local
 .env.*.local
+
+# Data Pipeline Cache
+data/raw/
+public/dictionary/
+

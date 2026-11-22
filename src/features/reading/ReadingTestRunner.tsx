@@ -108,6 +108,7 @@ export function ReadingTestRunner() {
   // Passage styling controls
   const [fontScale, setFontScale] = useState<number>(1); // 0.9, 1, 1.15, 1.3
   const [lineSpacing, setLineSpacing] = useState<'normal' | 'relaxed' | 'loose'>('relaxed');
+  const [practiceToolMode, setPracticeToolMode] = useState<'highlight' | 'lookup'>('highlight');
 
   // Draggable Split View
   const [splitRatio, setSplitRatio] = useState<number>(50); // percentage for passage pane
@@ -317,6 +318,10 @@ export function ReadingTestRunner() {
 
   // Text selection listener for highlighter
   const handlePassageMouseUp = () => {
+    if (!isExamMode && practiceToolMode === 'lookup') {
+      setSelectionRange(null);
+      return;
+    }
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) {
       setSelectionRange(null);
@@ -724,6 +729,38 @@ export function ReadingTestRunner() {
                   2.2
                 </button>
               </div>
+
+              {/* Practice Mode Tool Switcher */}
+              {!isExamMode && (
+                <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-0.5 rounded-lg border border-slate-200 dark:border-slate-700">
+                  <button
+                    onClick={() => setPracticeToolMode('highlight')}
+                    className={cn(
+                      'px-2 py-1 text-2xs rounded font-medium transition-colors flex items-center gap-1',
+                      practiceToolMode === 'highlight'
+                        ? 'bg-white dark:bg-slate-900 text-teal-600 dark:text-teal-400 font-bold shadow-xs'
+                        : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+                    )}
+                    title="Highlight tool"
+                  >
+                    <Highlighter className="w-3 h-3" />
+                    <span>Highlight</span>
+                  </button>
+                  <button
+                    onClick={() => setPracticeToolMode('lookup')}
+                    className={cn(
+                      'px-2 py-1 text-2xs rounded font-medium transition-colors flex items-center gap-1',
+                      practiceToolMode === 'lookup'
+                        ? 'bg-white dark:bg-slate-900 text-teal-600 dark:text-teal-400 font-bold shadow-xs'
+                        : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+                    )}
+                    title="Dictionary lookup tool (Double-click any word)"
+                  >
+                    <BookOpen className="w-3 h-3" />
+                    <span>Lookup</span>
+                  </button>
+                </div>
+              )}
 
               {/* Clear Highlights */}
               {(highlights[currentPassage.passageNumber] || []).length > 0 && (

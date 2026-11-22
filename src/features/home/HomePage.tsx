@@ -22,6 +22,8 @@ import {
   Trophy,
   Snowflake,
   Pencil,
+  GraduationCap,
+  X,
 } from 'lucide-react';
 import { extractCandidateName, isPlaceholderName } from '../../shared/utils/candidateUtils';
 import { useAppStore } from '../../store/useAppStore';
@@ -33,6 +35,8 @@ import { calculateDaysLeft, formatBand } from '../../lib/utils';
 import { db } from '../../lib/db';
 import { computeSmartRecommendations } from '../dashboard/recommendations';
 import type { StudyPlanDay, StudyPlanTask, SmartRecommendation, TestAttempt, StreakData, WeeklyChallenge as WeeklyChallengeType } from '../../types';
+import { settingsStore } from '../../shared/settings/settingsStore';
+import { EnglishHomePage } from '../english/pages/EnglishHomePage';
 import { DailyGoalRing } from '../habits/DailyGoalRing';
 import { WeeklyChallengeWidget } from '../habits/WeeklyChallengeWidget';
 import { MilestoneCelebration } from '../habits/MilestoneCelebration';
@@ -64,6 +68,9 @@ export function HomePage() {
   const [streakData, setStreakData] = useState<StreakData>(getStreakData());
   const [weeklyChallenge, setWeeklyChallenge] = useState<WeeklyChallengeType>(getWeeklyChallenge());
   const [unlockedBadgesCount, setUnlockedBadgesCount] = useState(0);
+  const [bannerDismissed, setBannerDismissed] = useState<boolean>(() => {
+    return typeof localStorage !== 'undefined' && localStorage.getItem('zarii_dismissed_english_banner') === 'true';
+  });
 
   // Dynamic Candidate Display Name Resolution
   const [candidateName, setCandidateName] = useState<string>(() => {
@@ -367,6 +374,11 @@ export function HomePage() {
     return <HomeSkeleton />;
   }
 
+  // If user only opted for the English track
+  if (profile?.primaryTrack === 'english' && (!profile?.goals || !profile.goals.includes('ielts'))) {
+    return <EnglishHomePage />;
+  }
+
   return (
     <div className="space-y-8 max-w-6xl mx-auto pb-12">
       {/* 1. Deep-Green Greeting Banner with Mark Watermark */}
@@ -491,6 +503,127 @@ export function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Dismissible New English Track & Dictionary Announcement Banner */}
+      {!bannerDismissed && settingsStore.getFeatures().english_course_enabled && (
+        <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-emerald-500/5 border border-emerald-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-start sm:items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-[#124F40] text-white flex items-center justify-center shrink-0 shadow-xs">
+              <GraduationCap className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-bold text-emerald-950 dark:text-emerald-300">
+                  New: General English Course &amp; Dictionary
+                </span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300/40">
+                  100% Free
+                </span>
+              </div>
+              <p className="text-xs text-gray-600 dark:text-gray-400 mt-0.5">
+                Learn English foundations from A1 to C1 with grammar formulas, audio stories, minimal pairs, and offline Urdu dictionary.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
+            <button
+              onClick={() => {
+                useAppStore.getState().setCurrentTrack('english');
+                navigate('/app/english');
+              }}
+              className="px-4 py-2 rounded-xl bg-[#124F40] hover:bg-[#0d3b30] text-white text-xs font-semibold shadow-xs transition-colors"
+            >
+              Explore Course
+            </button>
+            <button
+              onClick={() => {
+                localStorage.setItem('zarii_dismissed_english_banner', 'true');
+                setBannerDismissed(true);
+              }}
+              className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-neutral-800 transition-colors"
+              title="Dismiss announcement"
+              aria-label="Dismiss announcement"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Dual Track Cards (When user enrolled in both IELTS and English) */}
+      {profile?.goals?.includes('english') && profile?.goals?.includes('ielts') && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Continue IELTS Card */}
+          <Card className="p-5 border-teal-500/30 bg-white dark:bg-neutral-900 flex flex-col justify-between">
+            <div className="flex items-start justify-between">
+              <div>
+                <span className="text-[11px] font-bold uppercase tracking-wider text-teal-700 dark:text-teal-400">
+                  IELTS Preparation Track
+                </span>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mt-0.5">
+                  Target Band: {profile?.targetBand || 7.5}
+                </h3>
+                <p className="text-xs text-gray-500 mt-1">
+                  4-module practice, Cambridge-style tests, and AI examiners.
+                </p>
+              </div>
+              <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-950 text-teal-700 dark:text-teal-400 flex items-center justify-center shrink-0">
+                <Target className="w-5 h-5" />
+              </div>
+            </div>
+            <div className="mt-4 pt-3 border-t border-gray-100 dark:border-neutral-800 flex items-center justify-between">
+              <span className="text-xs text-gray-500">
+                {daysLeft !== null ? `${daysLeft} days until exam` : 'Self-paced'}
+              </span>
+              <button
+                onClick={() => {
+                  useAppStore.getState().setCurrentTrack('ielts');
+                  navigate('/app/practice');
+                }}
+                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-[#124F40] hover:bg-[#0d3b30] text-white text-xs font-semibold transition-colors"
+              >
+                <span>Continue IELTS</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </Card>
+
+          {/* Continue English Course Card */}
+          <Card className="p-5 border-emerald-500/30 bg-white dark:bg-neutral-900 flex flex-col justify-between">
+            <div className="flex items-start justify-between">
+              <div>
+                <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
+                  English Course Track
+                </span>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mt-0.5">
+                  Level: {profile?.englishLevel || 'A1 Beginner'}
+                </h3>
+                <p className="text-xs text-gray-500 mt-1">
+                  Grammar formulas, audio dialogues, minimal pairs &amp; Urdu hints.
+                </p>
+              </div>
+              <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                <GraduationCap className="w-5 h-5" />
+              </div>
+            </div>
+            <div className="mt-4 pt-3 border-t border-gray-100 dark:border-neutral-800 flex items-center justify-between">
+              <span className="text-xs text-gray-500">
+                Bilingual Urdu &amp; English
+              </span>
+              <button
+                onClick={() => {
+                  useAppStore.getState().setCurrentTrack('english');
+                  navigate('/app/english');
+                }}
+                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-[#124F40] hover:bg-[#0d3b30] text-white text-xs font-semibold transition-colors"
+              >
+                <span>Continue Course</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </Card>
+        </div>
+      )}
 
       {/* 2. Hero Action Card: "Continue Where You Left Off" */}
       <Card className="relative overflow-hidden border-brand-500/30 bg-gradient-to-r from-brand-50/80 via-white to-brand-100/30 dark:from-brand-950/30 dark:via-slate-900 dark:to-brand-900/20 shadow-card">

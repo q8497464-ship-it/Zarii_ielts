@@ -19,6 +19,8 @@ export interface FeatureFlagsSettings {
   ai_feedback: boolean;
   urdu_hints: boolean;
   signup: boolean;
+  english_course_enabled: boolean;
+  dictionary_enabled: boolean;
 }
 
 export interface MaintenanceSettings {
@@ -112,6 +114,8 @@ export const INITIAL_SITE_SETTINGS: SiteSettingsState = {
     ai_feedback: true,
     urdu_hints: true,
     signup: true,
+    english_course_enabled: true,
+    dictionary_enabled: true,
   },
   maintenance: {
     enabled: false,
