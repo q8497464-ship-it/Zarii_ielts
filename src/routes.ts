@@ -386,6 +386,7 @@ export function getPageTitle(pathname: string): { title: string; category?: stri
   if (pathname === '/app' || pathname === '/') return { title: 'Home' };
   
   // English Course track
+  if (pathname.includes('/english/placement')) return { title: 'Placement Assessment', category: 'English Course' };
   if (pathname.includes('/english/course/lesson')) return { title: 'Lesson Runner', category: 'English Course' };
   if (pathname.includes('/english/course')) return { title: 'Curriculum & Units', category: 'English Course' };
   if (pathname.includes('/english/practice')) return { title: 'Practice Arena', category: 'English Course' };

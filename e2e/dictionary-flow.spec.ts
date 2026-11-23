@@ -61,14 +61,14 @@ test.describe('Zarii Dictionary & Tap-to-Lookup Suite', () => {
   });
 
   test('3. Tap-to-lookup works inside lessons', async ({ page }) => {
-    await page.goto('/app/english/course/lesson/eng-a1-l1');
+    await page.goto('/app/english/course/lesson/eng-a1-u1-l1', { waitUntil: 'domcontentloaded' });
 
-    // Find lesson text and double-click a word
-    const lessonHeading = page.locator('h1, h2, h3, p').filter({ hasText: /Verb|Lesson|English|Hello|Student/i }).first();
-    await expect(lessonHeading).toBeVisible({ timeout: 12000 });
+    // Find lesson text inside main and double-click a word
+    const lessonText = page.locator('main').locator('h1, h2, p').filter({ hasText: /Verb|Understanding|English/i }).first();
+    await expect(lessonText).toBeVisible({ timeout: 12000 });
 
     // Double-click to trigger lookup
-    await lessonHeading.dblclick();
+    await lessonText.dblclick();
 
     // Verify TapToLookupPopover appears
     const popover = page.locator('div.fixed.z-50').filter({ hasText: /Open Full Entry|Save/i });

@@ -56,6 +56,7 @@ const EnglishPracticePage = lazy(() => import('../../features/english/pages/Engl
 const EnglishGrammarReferencePage = lazy(() => import('../../features/english/pages/EnglishGrammarReferencePage').then((m) => ({ default: m.EnglishGrammarReferencePage })));
 const EnglishReadingListeningPage = lazy(() => import('../../features/english/pages/EnglishReadingListeningPage').then((m) => ({ default: m.EnglishReadingListeningPage })));
 const EnglishSpeakingPronunciationPage = lazy(() => import('../../features/english/pages/EnglishSpeakingPronunciationPage').then((m) => ({ default: m.EnglishSpeakingPronunciationPage })));
+const EnglishPlacementPage = lazy(() => import('../../features/english/pages/EnglishPlacementPage').then((m) => ({ default: m.EnglishPlacementPage })));
 
 // Shared Dictionary Feature
 const DictionaryPage = lazy(() => import('../../features/dictionary/DictionaryPage').then((m) => ({ default: m.DictionaryPage })));
@@ -215,6 +216,7 @@ export function StudentApp() {
             {/* English Course Track Routes (/app/english/*) */}
             <Route path="english" element={<EnglishHomePage />} />
             <Route path="english/course" element={<EnglishCourseCatalogPage />} />
+            <Route path="english/placement" element={<EnglishPlacementPage />} />
             <Route path="english/course/lesson/:lessonId" element={<EnglishLessonRunnerPage />} />
             <Route path="english/practice" element={<EnglishPracticePage />} />
             <Route path="english/grammar" element={<EnglishGrammarReferencePage />} />

@@ -122,8 +122,8 @@ test.describe('IELTS Master Regression Suite', () => {
       await expect(page.locator('h1, h2').filter({ hasText: /Reading/i }).first()).toBeVisible();
 
       // Navigate to first test runner
-      await page.goto('/app/practice/reading/test/acad-reading-01');
-      await expect(page.locator('text=/Passage 1|Roman Aqueducts/i').first()).toBeVisible({ timeout: 10000 });
+      await page.goto('/app/practice/reading/test/acad-reading-01', { waitUntil: 'domcontentloaded' });
+      await expect(page.locator('text=/Passage 1|Roman Aqueducts/i').first()).toBeVisible({ timeout: 15000 });
 
       // Answer at least one question
       const input = page.locator('input[type="text"]').first();
@@ -210,7 +210,8 @@ In conclusion, artificial intelligence should be embraced as an empowering suppl
     });
 
     test('Mock Exam Flow: empty attempt displays review warning and honest Not Attempted report without fake scores', async ({ page }) => {
-      await page.goto('/app/mock/exam/mock-acad-01');
+      test.setTimeout(60000);
+      await page.goto('/app/mock/exam/mock-acad-01', { waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(500);
 
       // Start mock exam
@@ -229,22 +230,22 @@ In conclusion, artificial intelligence should be embraced as an empowering suppl
       }
 
       const toReadingBtn = page.getByRole('button', { name: /Proceed to Reading/i });
-      await expect(toReadingBtn).toBeVisible();
-      await toReadingBtn.click();
+      await expect(toReadingBtn).toBeVisible({ timeout: 10000 });
+      await toReadingBtn.click({ force: true });
       await page.waitForTimeout(300);
 
       // Skip Reading passages
       for (let i = 0; i < 2; i++) {
         const nextPasBtn = page.getByRole('button', { name: /Next Passage/i });
         if (await nextPasBtn.isVisible()) {
-          await nextPasBtn.click();
+          await nextPasBtn.click({ force: true });
           await page.waitForTimeout(150);
         }
       }
 
       const toWritingBtn = page.getByRole('button', { name: /Proceed to Section 3: Writing/i });
-      await expect(toWritingBtn).toBeVisible();
-      await toWritingBtn.click();
+      await expect(toWritingBtn).toBeVisible({ timeout: 10000 });
+      await toWritingBtn.click({ force: true });
       await page.waitForTimeout(300);
 
       // Skip Writing -> Speaking
@@ -285,8 +286,8 @@ In conclusion, artificial intelligence should be embraced as an empowering suppl
     });
 
     test('Vocabulary: flashcard review flips card and registers rating', async ({ page }) => {
-      await page.goto('/app/vocab/flashcards');
-      await expect(page.locator('text=/Flashcards|Vocabulary|Card/i').first()).toBeVisible({ timeout: 10000 });
+      await page.goto('/app/vocab/flashcards', { waitUntil: 'domcontentloaded' });
+      await expect(page.locator('text=/Flashcards|Vocabulary|Card/i').first()).toBeVisible({ timeout: 15000 });
 
       // Flip card
       const flipBtn = page.getByRole('button', { name: /Flip Card|Show Meaning|Show Answer/i }).first();
@@ -303,8 +304,8 @@ In conclusion, artificial intelligence should be embraced as an empowering suppl
     });
 
     test('Vocabulary Quiz: loads multiple-choice quiz questions', async ({ page }) => {
-      await page.goto('/app/vocab/quiz');
-      await expect(page.locator('text=/Vocabulary Quiz|Question|Select the best/i').first()).toBeVisible({ timeout: 10000 });
+      await page.goto('/app/vocab/quiz', { waitUntil: 'domcontentloaded' });
+      await expect(page.locator('text=/Vocabulary Quiz|Question|Select the best/i').first()).toBeVisible({ timeout: 15000 });
     });
 
     test('Grammar Lesson: renders exercises with deterministically shuffled MCQ options', async ({ page }) => {

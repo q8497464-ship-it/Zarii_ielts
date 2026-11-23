@@ -1,0 +1,222 @@
+{
+  "id": "eng-a1-u1-l1",
+  "level": "A1",
+  "unit": "unit-1",
+  "order": 1,
+  "title": "To Be: I am, You are, He/She/It is",
+  "description": "Learn the foundation of English sentences: the verb 'to be' in positive, negative, and question forms.",
+  "objectives": [
+    "Introduce yourself and others using 'am', 'is', and 'are'",
+    "Form positive and negative statements with personal pronouns",
+    "Ask and answer simple questions about identity and professions"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [],
+  "skillTags": ["verb-to-be", "pronouns", "introductions"],
+  "vocabularyList": [
+    {
+      "word": "student",
+      "partOfSpeech": "noun",
+      "phonetic": "/ˈstjuːdənt/",
+      "definition": "A person who is studying at a school, college, or university.",
+      "urduMeaning": "طالب علم",
+      "exampleSentence": "I am an English student."
+    },
+    {
+      "word": "teacher",
+      "partOfSpeech": "noun",
+      "phonetic": "/ˈtiːtʃər/",
+      "definition": "A person who teaches, especially in a school.",
+      "urduMeaning": "استاد",
+      "exampleSentence": "She is our English teacher."
+    },
+    {
+      "word": "happy",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ˈhæpi/",
+      "definition": "Feeling or showing pleasure or contentment.",
+      "urduMeaning": "خوش",
+      "exampleSentence": "We are very happy today."
+    },
+    {
+      "word": "friend",
+      "partOfSpeech": "noun",
+      "phonetic": "/frend/",
+      "definition": "A person whom one knows and with whom one has a bond of mutual affection.",
+      "urduMeaning": "دوست",
+      "exampleSentence": "You are my best friend."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-l1-1",
+      "type": "explain",
+      "title": "Understanding the Verb 'To Be'",
+      "content": "The verb **to be** is the most important verb in English. It links a subject (who or what) to information about that subject (who they are, how they feel, or where they are).\n\nIn the present tense, 'to be' has three forms: **am**, **is**, and **are**.",
+      "tables": [
+        {
+          "title": "Present Tense Conjugation of 'To Be'",
+          "headers": ["Subject Pronoun", "Full Form", "Contraction", "Negative", "Urdu Meaning"],
+          "rows": [
+            ["I", "I am", "I'm", "I am not / I'm not", "میں ہوں"],
+            ["You (singular)", "You are", "You're", "You are not / You aren't", "آپ ہیں / تم ہو"],
+            ["He", "He is", "He's", "He is not / He isn't", "وہ ہے (مرد)"],
+            ["She", "She is", "She's", "She is not / She isn't", "وہ ہے (عورت)"],
+            ["It", "It is", "It's", "It is not / It isn't", "یہ ہے (بے جان/جانور)"],
+            ["We", "We are", "We're", "We are not / We aren't", "ہم ہیں"],
+            ["They", "They are", "They're", "They are not / They aren't", "وہ ہیں (جمع)"]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Contractions in Daily Speech",
+          "text": "Native speakers almost always use contractions like **I'm**, **you're**, and **she's** in casual conversation."
+        },
+        {
+          "type": "warning",
+          "title": "Common Mistake",
+          "text": "Never say 'I is' or 'They is'. Match the pronoun: I am, You/We/They are, He/She/It is."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-l1-2",
+      "type": "timeline",
+      "title": "Present State Timeline",
+      "timeline": {
+        "title": "State of Being (Right Now)",
+        "past": "Past State",
+        "present": "I am a student (Current truth)",
+        "future": "Future State",
+        "activePoint": "present",
+        "explanation": "The simple present of 'to be' expresses a current permanent or temporary state of fact."
+      }
+    },
+    {
+      "id": "sec-a1-l1-3",
+      "type": "examples",
+      "title": "Real-world Sentences with Audio",
+      "examples": [
+        {
+          "english": "I am a student from Lahore.",
+          "urdu": "میں لاہور سے ایک طالب علم ہوں۔",
+          "audioText": "I am a student from Lahore.",
+          "phonetic": "/aɪ æm ə ˈstjuːdənt frɒm ləˈhɔːr/"
+        },
+        {
+          "english": "She is our English teacher.",
+          "urdu": "وہ ہماری انگریزی کی استانی ہیں۔",
+          "audioText": "She is our English teacher.",
+          "phonetic": "/ʃiː ɪz ˈaʊər ˈɪŋɡlɪʃ ˈtiːtʃər/"
+        },
+        {
+          "english": "They are not tired; they are ready.",
+          "urdu": "وہ تھکے ہوئے نہیں ہیں؛ وہ تیار ہیں۔",
+          "audioText": "They are not tired; they are ready."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-l1-4",
+      "type": "dialogue",
+      "title": "At the Language Center",
+      "dialogue": [
+        {
+          "speaker": "Sara",
+          "avatar": "S",
+          "english": "Hello! I am Sara. Are you the new student?",
+          "urdu": "ہیلو! میں سارہ ہوں۔ کیا آپ نئے طالب علم ہیں؟",
+          "audioText": "Hello! I am Sara. Are you the new student?"
+        },
+        {
+          "speaker": "Ali",
+          "avatar": "A",
+          "english": "Yes, I am! My name is Ali. It is nice to meet you.",
+          "urdu": "جی ہاں، میں ہوں! میرا نام علی ہے۔ آپ سے مل کر خوشی ہوئی۔",
+          "audioText": "Yes, I am! My name is Ali. It is nice to meet you."
+        },
+        {
+          "speaker": "Sara",
+          "avatar": "S",
+          "english": "Nice to meet you too! Mr. David is our teacher. He is very kind.",
+          "urdu": "آپ سے بھی مل کر خوشی ہوئی! مسٹر ڈیوڈ ہمارے استاد ہیں۔ وہ بہت مہربان ہیں۔",
+          "audioText": "Nice to meet you too! Mr. David is our teacher. He is very kind."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-l1-5",
+      "type": "practice",
+      "title": "Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-l1-1",
+          "type": "mcq",
+          "skillTag": "verb-to-be",
+          "prompt": "Complete the sentence: 'Sarah and I _____ excited about the new course.'",
+          "options": [
+            { "id": "opt-1", "text": "am" },
+            { "id": "opt-2", "text": "are" },
+            { "id": "opt-3", "text": "is" },
+            { "id": "opt-4", "text": "be" }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Sarah and I' represents 'we' (first person plural), so the correct verb form is 'are'.",
+          "urduExplanation": "'Sarah and I' جمع فاعل (ہم / We) ہے، اس لیے فعل 'are' استعمال ہوگا۔"
+        },
+        {
+          "id": "ex-a1-l1-2",
+          "type": "fill_blank",
+          "skillTag": "verb-to-be",
+          "prompt": "She _____ (not be) at home right now; she is at work.",
+          "correctAnswer": "isn't",
+          "acceptableAnswers": ["is not", "isn't"],
+          "explanation": "With third-person singular 'she', the negative present form of 'to be' is 'is not' or contracted 'isn't'.",
+          "urduExplanation": "ضمیر 'she' کے ساتھ منفی شکل 'is not' یا 'isn't' بنتی ہے۔"
+        },
+        {
+          "id": "ex-a1-l1-3",
+          "type": "order_sentence",
+          "skillTag": "verb-to-be",
+          "prompt": "Put the words in order to form a polite question:",
+          "sentenceTokens": ["Are", "you", "ready", "for", "the", "exam", "?"],
+          "correctOrder": ["Are", "you", "ready", "for", "the", "exam", "?"],
+          "explanation": "Questions with the verb 'to be' invert the subject and verb: 'Are' (verb) + 'you' (subject) + 'ready' (adjective) + 'for the exam'?",
+          "urduExplanation": "سوالیہ جملے میں فعل 'Are' فاعل 'you' سے پہلے آتا ہے۔"
+        },
+        {
+          "id": "ex-a1-l1-4",
+          "type": "match_pairs",
+          "skillTag": "pronouns",
+          "prompt": "Match each subject pronoun with its matching form of 'to be':",
+          "pairs": [
+            { "left": "I", "right": "am" },
+            { "left": "He / She / It", "right": "is" },
+            { "left": "We / You / They", "right": "are" }
+          ],
+          "explanation": "I matches 'am'; third-person singular matches 'is'; plural and second-person pronouns match 'are'.",
+          "urduExplanation": "I کے ساتھ am، واحد غائب کے ساتھ is، اور جمع/تم کے ساتھ are آتا ہے۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-l1-6",
+      "type": "urduNote",
+      "title": "اردو بولنے والوں کے لیے رہنمائی",
+      "urduText": "انگریزی زبان میں جملہ بنانے کے لیے فعل (Verb) کا ہونا لازمی ہے۔ اردو میں ہم کہتے ہیں: 'میں طالب علم ہوں'۔ انگریزی میں 'ہوں' کے لیے 'am' استعمال ہوتا ہے: 'I am a student'۔ اردو کی طرح انگریزی میں فعل کو چھوڑا نہیں جا سکتا۔ کبھی بھی 'I student' نہ کہیں، بلکہ ہمیشہ 'I am a student' کہیں۔"
+    },
+    {
+      "id": "sec-a1-l1-7",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "summaryPoints": [
+        "The verb 'to be' has three present forms: am (I), is (he/she/it), are (you/we/they).",
+        "Contractions (I'm, she's, they're) are standard in conversational English.",
+        "To make negatives, add 'not' after the verb: 'He is not' or 'He isn't'.",
+        "To make questions, invert the subject and verb: 'Are you ready?'"
+      ]
+    }
+  ]
+}

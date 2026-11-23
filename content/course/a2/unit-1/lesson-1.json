@@ -1,0 +1,228 @@
+{
+  "id": "eng-a2-u1-l1",
+  "level": "A2",
+  "unit": "unit-1",
+  "order": 1,
+  "title": "Past Simple: Regular Verbs (-ed)",
+  "description": "Master talking about completed past actions using regular verbs with -ed endings and proper pronunciation.",
+  "objectives": [
+    "Form positive and negative statements in the past simple with regular verbs",
+    "Apply spelling rules for adding -ed (-d, -ied, consonant doubling)",
+    "Distinguish the three pronunciations of -ed: /t/, /d/, and /ɪd/"
+  ],
+  "estimatedMinutes": 15,
+  "prerequisites": ["eng-a1-u1-l1"],
+  "skillTags": ["past-simple", "regular-verbs", "ed-pronunciation"],
+  "vocabularyList": [
+    {
+      "word": "walk",
+      "partOfSpeech": "verb",
+      "phonetic": "/wɔːk/",
+      "definition": "Move at a regular pace by lifting and setting down each foot in turn.",
+      "urduMeaning": "پیدل چلنا",
+      "exampleSentence": "Yesterday, we walked to the park."
+    },
+    {
+      "word": "work",
+      "partOfSpeech": "verb",
+      "phonetic": "/wɜːrk/",
+      "definition": "Be engaged in physical or mental activity in order to achieve a result.",
+      "urduMeaning": "کام کرنا",
+      "exampleSentence": "Ali worked late last night."
+    },
+    {
+      "word": "clean",
+      "partOfSpeech": "verb",
+      "phonetic": "/kliːn/",
+      "definition": "Make something free of dirt, marks, or mess.",
+      "urduMeaning": "صاف کرنا",
+      "exampleSentence": "I cleaned my room on Sunday."
+    },
+    {
+      "word": "watch",
+      "partOfSpeech": "verb",
+      "phonetic": "/wɒtʃ/",
+      "definition": "Look at or observe attentively over a period of time.",
+      "urduMeaning": "دیکھنا",
+      "exampleSentence": "They watched an interesting documentary."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a2-l1-1",
+      "type": "explain",
+      "title": "Spelling Rules for Regular Past Simple",
+      "content": "The **Past Simple** expresses actions that started and finished at a specific time in the past.\n\nFor regular verbs, we add **-ed** to the base form of the verb for all subjects (I, you, he, she, it, we, they).\n\nHowever, watch out for these four spelling rules:",
+      "tables": [
+        {
+          "title": "Regular Verb -ed Spelling Rules",
+          "headers": ["Rule", "Base Form", "Past Form", "Example Sentence"],
+          "rows": [
+            ["Most verbs: add -ed", "walk, clean, watch", "walked, cleaned, watched", "I walked five miles."],
+            ["Verbs ending in -e: add -d", "live, decide, like", "lived, decided, liked", "She lived in London."],
+            ["Consonant + vowel + consonant (CVC): double last letter", "stop, plan, rob", "stopped, planned, robbed", "The bus stopped suddenly."],
+            ["Consonant + y: change y to -ied", "study, marry, carry", "studied, married, carried", "He studied for the test."]
+          ]
+        },
+        {
+          "title": "The 3 Pronunciations of -ed",
+          "headers": ["Ending Sound of Base Verb", "Pronunciation of -ed", "Examples"],
+          "rows": [
+            ["Voiceless sounds (/p/, /k/, /s/, /ʃ/, /tʃ/, /f/)", "/t/", "walked /wɔːkt/, watched /wɒtʃt/"],
+            ["Voiced sounds (/b/, /g/, /v/, /z/, /m/, /n/, /l/, vowels)", "/d/", "cleaned /kliːnd/, played /pleɪd/"],
+            ["Ending in /t/ or /d/ sound", "/ɪd/ (extra syllable)", "wanted /ˈwɒntɪd/, decided /dɪˈsaɪdɪd/"]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "The /ɪd/ Rule",
+          "text": "Only pronounce -ed as an extra syllable (/ɪd/) when the base verb ends in a **T** or **D** sound! For all other verbs, -ed does not add an extra syllable."
+        },
+        {
+          "type": "warning",
+          "title": "Negative Statements",
+          "text": "In negative sentences, use **did not (didn't) + base verb**: 'I didn't walk' (NOT 'I didn't walked')."
+        }
+      ]
+    },
+    {
+      "id": "sec-a2-l1-2",
+      "type": "timeline",
+      "title": "Past Completed Timeline",
+      "timeline": {
+        "title": "Completed Action in the Past",
+        "past": "Yesterday at 3 PM: I cleaned the kitchen (Action finished)",
+        "present": "Now: The kitchen is clean",
+        "future": "Future",
+        "activePoint": "past",
+        "explanation": "Past simple verbs indicate completed events whose time is finished."
+      }
+    },
+    {
+      "id": "sec-a2-l1-3",
+      "type": "examples",
+      "title": "Spoken Examples with Audio",
+      "examples": [
+        {
+          "english": "We waited for twenty minutes at the station.",
+          "urdu": "ہم نے اسٹیشن پر بیس منٹ انتظار کیا۔",
+          "audioText": "We waited for twenty minutes at the station.",
+          "phonetic": "/wiː ˈweɪtɪd fɔːr ˈtwenti ˈmɪnɪts æt ðə ˈsteɪʃn/"
+        },
+        {
+          "english": "He closed the door quietly.",
+          "urdu": "اس نے خاموشی سے دروازہ بند کیا۔",
+          "audioText": "He closed the door quietly.",
+          "phonetic": "/hiː kləʊzd ðə dɔːr ˈkwaɪətli/"
+        },
+        {
+          "english": "I didn't watch TV last night.",
+          "urdu": "میں نے کل رات ٹی وی نہیں دیکھا۔",
+          "audioText": "I didn't watch TV last night."
+        }
+      ]
+    },
+    {
+      "id": "sec-a2-l1-4",
+      "type": "dialogue",
+      "title": "Weekend Talk",
+      "dialogue": [
+        {
+          "speaker": "Zaid",
+          "avatar": "Z",
+          "english": "Did you enjoy your weekend, Fatima?",
+          "urdu": "فاطمہ، کیا آپ کا ویک اینڈ اچھا گزرا؟",
+          "audioText": "Did you enjoy your weekend, Fatima?"
+        },
+        {
+          "speaker": "Fatima",
+          "avatar": "F",
+          "english": "Yes, I did! I visited my grandparents and cooked dinner with them.",
+          "urdu": "جی ہاں! میں نے اپنے دادا دادی سے ملاقات کی اور ان کے ساتھ کھانا پکایا۔",
+          "audioText": "Yes, I did! I visited my grandparents and cooked dinner with them."
+        },
+        {
+          "speaker": "Zaid",
+          "avatar": "Z",
+          "english": "That sounds lovely. I stayed at home and studied for the IELTS exam.",
+          "urdu": "یہ تو بہت اچھا رہا۔ میں گھر پر ہی رہا اور آئی ایل ٹی ایس امتحان کے لیے پڑھائی کی۔",
+          "audioText": "That sounds lovely. I stayed at home and studied for the IELTS exam."
+        }
+      ]
+    },
+    {
+      "id": "sec-a2-l1-5",
+      "type": "practice",
+      "title": "Interactive Practice",
+      "exercises": [
+        {
+          "id": "ex-a2-l1-1",
+          "type": "mcq",
+          "skillTag": "regular-verbs",
+          "prompt": "Which of the following regular verbs requires doubling the final consonant before -ed?",
+          "options": [
+            { "id": "opt-1", "text": "jump" },
+            { "id": "opt-2", "text": "stop" },
+            { "id": "opt-3", "text": "wash" },
+            { "id": "opt-4", "text": "call" }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'stop' is a single-syllable verb ending in a single consonant preceded by a single vowel (CVC: t-o-p), so the final 'p' doubles: 'stopped'.",
+          "urduExplanation": "'stop' ایک حرفی لفظ ہے جس میں ایک ہی vowel کے بعد ایک consonant ہے، اس لیے آخری حرف دوگنا ہو جاتا ہے: stopped۔"
+        },
+        {
+          "id": "ex-a2-l1-2",
+          "type": "error_correction",
+          "skillTag": "past-simple",
+          "prompt": "Find and correct the error in this sentence: 'They didn't wanted to leave the party early.'",
+          "correctAnswer": "They didn't want to leave the party early.",
+          "acceptableAnswers": [
+            "They didn't want to leave the party early.",
+            "They did not want to leave the party early.",
+            "want"
+          ],
+          "explanation": "After the auxiliary 'did not' or 'didn't', the main verb must remain in its base form ('want', not 'wanted').",
+          "urduExplanation": "جب جملے میں 'didn't' آ جائے تو اس کے بعد اصل فعل ہمیشہ پہلی فارم (base form) میں رہتا ہے۔"
+        },
+        {
+          "id": "ex-a2-l1-3",
+          "type": "fill_blank",
+          "skillTag": "ed-pronunciation",
+          "prompt": "The verb 'decided' ends with the /_____/ sound because its base form ends in a 'd' sound.",
+          "correctAnswer": "ɪd",
+          "acceptableAnswers": ["ɪd", "id", "/ɪd/"],
+          "explanation": "Verbs ending with the /t/ or /d/ sound take the extra-syllable pronunciation /ɪd/: de-ci-ded.",
+          "urduExplanation": "جن افعال کا اختتام t یا d کی آواز پر ہوتا ہے، ان کا -ed 'ɪd' کے طور پر بولا جاتا ہے۔"
+        },
+        {
+          "id": "ex-a2-l1-4",
+          "type": "repeat_after_me",
+          "skillTag": "ed-pronunciation",
+          "prompt": "Listen and repeat with clear pronunciation: 'I worked all morning and walked home in the evening.'",
+          "audioPrompt": "I worked all morning and walked home in the evening.",
+          "explanation": "Notice the voiceless /t/ sound at the end of both 'worked' (/wɜːrkt/) and 'walked' (/wɔːkt/).",
+          "urduExplanation": "worked اور walked کے آخر میں 't' کی آواز صاف طور پر ادا کریں۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a2-l1-6",
+      "type": "urduNote",
+      "title": "ماضی قریب کے بارے میں اردو نوٹس",
+      "urduText": "اردو میں ہم کہتے ہیں: 'میں نے کام کیا'، 'وہ چلے گئے'۔ انگریزی میں باقاعدہ افعال (Regular Verbs) کے ساتھ صرف -ed کا اضافہ کیا جاتا ہے۔ منفی جملوں کے لیے 'didn't' کا استعمال ہوتا ہے، اور یاد رہے کہ 'didn't' کے بعد فعل کی پہلی شکل (First Form) ہی آئے گی، مثلاً: 'I didn't work' (نہ کہ 'I didn't worked')۔"
+    },
+    {
+      "id": "sec-a2-l1-7",
+      "type": "summary",
+      "title": "Key Takeaways",
+      "summaryPoints": [
+        "Regular verbs take -ed in the past simple for all subjects.",
+        "Doubling rule applies to single-syllable CVC verbs (stop -> stopped, plan -> planned).",
+        "Negative sentences use 'didn't' + base verb.",
+        "Only add an extra syllable /ɪd/ if the base verb ends in /t/ or /d/ (waited, decided)."
+      ]
+    }
+  ]
+}

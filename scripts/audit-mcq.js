@@ -61,6 +61,14 @@ function findCorrectIndex(q) {
   if (!Array.isArray(q.options) || q.options.length < 2) return -1;
   const ans = q.correctAnswer;
 
+  // Option ID match (e.g. 'opt-1', 'opt-2')
+  if (typeof ans === 'string') {
+    const idIdx = q.options.findIndex(
+      (o) => typeof o === 'object' && o.id?.toLowerCase() === ans.trim().toLowerCase()
+    );
+    if (idIdx !== -1) return idIdx;
+  }
+
   // Single letter match: 'A' -> 0, 'B' -> 1, etc.
   if (typeof ans === 'string' && /^[A-Z]$/i.test(ans.trim())) {
     const letterIdx = ans.trim().toUpperCase().charCodeAt(0) - 65;
@@ -94,6 +102,7 @@ export function runAudit(options = { exitOnError: true }) {
     grammar: { 0: 0, 1: 0, 2: 0, 3: 0, other: 0, total: 0 },
     reading: { 0: 0, 1: 0, 2: 0, 3: 0, other: 0, total: 0 },
     listening: { 0: 0, 1: 0, 2: 0, 3: 0, other: 0, total: 0 },
+    course: { 0: 0, 1: 0, 2: 0, 3: 0, other: 0, total: 0 },
   };
   const overall = { 0: 0, 1: 0, 2: 0, 3: 0, other: 0, total: 0 };
   const fileReports = [];
@@ -107,6 +116,8 @@ export function runAudit(options = { exitOnError: true }) {
       ? 'reading'
       : relPath.startsWith('listening')
       ? 'listening'
+      : relPath.startsWith('course')
+      ? 'course'
       : null;
 
     if (!mod) continue;
@@ -116,7 +127,7 @@ export function runAudit(options = { exitOnError: true }) {
 
     const collectQ = (q, groupType) => {
       const type = q.type || groupType;
-      if (q.options && q.options.length >= 2 && (type?.includes('choice') || mod === 'grammar')) {
+      if (q.options && q.options.length >= 2 && (type?.includes('choice') || type === 'mcq' || mod === 'grammar' || mod === 'course')) {
         // Exclude multi-select sets from single position distribution
         if (!Array.isArray(q.correctAnswer)) {
           questions.push(q);
@@ -138,6 +149,17 @@ export function runAudit(options = { exitOnError: true }) {
     }
     if (data.sections) {
       for (const s of data.sections) {
+        if (s.exercises) {
+          for (const ex of s.exercises) {
+            if (ex.type === 'mcq') {
+              collectQ({
+                ...ex,
+                correctAnswer: ex.correctOptionId || ex.correctAnswer,
+                options: ex.options
+              }, 'mcq');
+            }
+          }
+        }
         const groups = s.questionGroups || (s.questions ? [{ questionType: s.questionType, questions: s.questions }] : []);
         for (const g of groups) {
           for (const q of g.questions || []) collectQ(q, g.questionType);
@@ -220,6 +242,7 @@ export function runAudit(options = { exitOnError: true }) {
   printStatRow('Grammar', modules.grammar);
   printStatRow('Reading', modules.reading);
   printStatRow('Listening', modules.listening);
+  printStatRow('English Course', modules.course);
 
   console.log('\n--- OVERALL BANK ---');
   printStatRow('ALL MODULES', overall);
