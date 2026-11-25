@@ -42,6 +42,7 @@ export function MistakeNotebookPage() {
   const [isLoading, setIsLoading] = useState(true);
 
   // Filters
+  const [selectedTrack, setSelectedTrack] = useState<'all' | 'ielts' | 'english'>('all');
   const [selectedModule, setSelectedModule] = useState<IELTSModule | 'all'>('all');
   const [selectedStatus, setSelectedStatus] = useState<'all' | 'unmastered' | 'mastered'>('unmastered');
   const [selectedType, setSelectedType] = useState<string>('all');
@@ -106,6 +107,7 @@ export function MistakeNotebookPage() {
 
   // Filtered Mistakes
   const filteredMistakes = mistakes.filter((m) => {
+    if (selectedTrack !== 'all' && (m.track || 'ielts') !== selectedTrack) return false;
     if (selectedModule !== 'all' && m.module !== selectedModule) return false;
     if (selectedStatus === 'unmastered' && m.isMastered) return false;
     if (selectedStatus === 'mastered' && !m.isMastered) return false;
@@ -466,6 +468,17 @@ export function MistakeNotebookPage() {
 
             {/* Module Filter & Search */}
             <div className="flex items-center gap-2">
+              <select
+                aria-label="Filter by learning track"
+                value={selectedTrack}
+                onChange={(e) => setSelectedTrack(e.target.value as 'all' | 'ielts' | 'english')}
+                className="text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 focus:outline-none font-semibold"
+              >
+                <option value="all">All Tracks</option>
+                <option value="ielts">IELTS Track</option>
+                <option value="english">English Course</option>
+              </select>
+
               <select
                 value={selectedModule}
                 onChange={(e) => setSelectedModule(e.target.value as IELTSModule | 'all')}

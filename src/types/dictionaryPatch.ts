@@ -50,13 +50,13 @@ export function applyDictionaryPatch(
     return null;
   }
 
-  if (patch.action === 'add' && !entry) {
+  if ((patch.action === 'add' || patch.action === 'edit') && !entry) {
     return {
       id: `custom_${patch.headword}_${patch.pos || 'n'}`,
       word: patch.headword,
       headword: patch.headword,
       partOfSpeech: patch.pos || 'noun',
-      definition: patch.senses?.[0]?.def || '',
+      definition: patch.senses?.[0]?.def || 'Definition updated via patch.',
       urduMeaning: patch.urduMeaning || patch.senses?.[0]?.urduMeaning || '',
       exampleSentence: patch.senses?.[0]?.examples?.[0] || '',
       collocations: [],

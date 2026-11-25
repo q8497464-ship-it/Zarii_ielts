@@ -28,6 +28,7 @@ import {
 import { MistakeNotebookPage } from '../adaptive/MistakeNotebookPage';
 import { WeeklyReviewPage } from '../adaptive/WeeklyReviewPage';
 import { BadgeGalleryPage } from '../habits/BadgeGalleryPage';
+import { englishProgressService, type EnglishProgressOverview } from '../english/services/englishProgressService';
 import {
   ResponsiveContainer,
   LineChart,
@@ -108,6 +109,8 @@ export const DashboardPage: React.FC = () => {
   const [writingSubs, setWritingSubs] = useState<WritingSubmission[]>([]);
   const [speakingSessions, setSpeakingSessions] = useState<SpeakingSession[]>([]);
   const [recommendations, setRecommendations] = useState<SmartRecommendation[]>([]);
+  const [englishOverview, setEnglishOverview] = useState<EnglishProgressOverview | null>(null);
+  const [selectedTrack, setSelectedTrack] = useState<'all' | 'ielts' | 'english'>('all');
   const [notificationsActive, setNotificationsActive] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
@@ -116,20 +119,22 @@ export const DashboardPage: React.FC = () => {
   useEffect(() => {
     async function loadData() {
       try {
-        const [atts, resps, writings, speakings, recs] = await Promise.all([
+        const [atts, resps, writings, speakings, recs, engOverview] = await Promise.all([
           db.attempts.toArray(),
           db.responses.toArray(),
           db.writingSubmissions.toArray(),
           db.speakingSessions.toArray(),
           computeSmartRecommendations(),
+          englishProgressService.getProgressOverview(profile?.displayName || 'Student'),
         ]);
 
-        atts.sort((a, b) => new Date(b.completedAt).getTime() - new Date(a.completedAt).getTime());
+        atts.sort((a: TestAttempt, b: TestAttempt) => new Date(b.completedAt).getTime() - new Date(a.completedAt).getTime());
         setAttempts(atts);
         setResponses(resps);
         setWritingSubs(writings);
         setSpeakingSessions(speakings);
         setRecommendations(recs);
+        setEnglishOverview(engOverview);
 
         const perm = getNotificationPermission();
         setNotificationsActive(perm === 'granted');
@@ -140,7 +145,7 @@ export const DashboardPage: React.FC = () => {
       }
     }
     loadData();
-  }, []);
+  }, [profile?.displayName]);
 
   const handleToggleNotifications = async () => {
     if (!isNotificationSupported()) {
@@ -181,18 +186,22 @@ export const DashboardPage: React.FC = () => {
 
   const targetBand = profile?.targetBand || 7.5;
 
-  // 1. Overall Estimated Band Calculation
+  // 1. Overall Estimated Band Calculation (Strictly honest: null when unattempted)
   const latestBands = useMemo(() => {
-    const readingAtts = attempts.filter((a) => a.module === 'reading' && a.status === 'completed' && a.bandEstimate > 0);
-    const listeningAtts = attempts.filter((a) => a.module === 'listening' && a.status === 'completed' && a.bandEstimate > 0);
+    const readingAtts = attempts.filter((a) => (a.track !== 'english') && a.module === 'reading' && a.status === 'completed' && a.bandEstimate > 0);
+    const listeningAtts = attempts.filter((a) => (a.track !== 'english') && a.module === 'listening' && a.status === 'completed' && a.bandEstimate > 0);
+    const ieltsWriting = writingSubs.filter((w) => (w as any).track !== 'english' && w.bandEstimate > 0);
+    const ieltsSpeaking = speakingSessions.filter((s) => (s as any).track !== 'english' && s.bandEstimate > 0);
 
-    const readingBand: number = readingAtts.length > 0 ? readingAtts[0].bandEstimate : 6.5;
-    const listeningBand: number = listeningAtts.length > 0 ? listeningAtts[0].bandEstimate : 6.5;
-    const writingBand: number = writingSubs.length > 0 ? writingSubs[writingSubs.length - 1].bandEstimate : 6.0;
-    const speakingBand: number = speakingSessions.length > 0 ? speakingSessions[speakingSessions.length - 1].bandEstimate : 6.5;
+    const readingBand: number | null = readingAtts.length > 0 ? readingAtts[0].bandEstimate : null;
+    const listeningBand: number | null = listeningAtts.length > 0 ? listeningAtts[0].bandEstimate : null;
+    const writingBand: number | null = ieltsWriting.length > 0 ? ieltsWriting[ieltsWriting.length - 1].bandEstimate : null;
+    const speakingBand: number | null = ieltsSpeaking.length > 0 ? ieltsSpeaking[ieltsSpeaking.length - 1].bandEstimate : null;
 
-    const rawAvg = (readingBand + listeningBand + writingBand + speakingBand) / 4;
-    const overallBand = Math.round(rawAvg * 2) / 2;
+    const recorded = [readingBand, listeningBand, writingBand, speakingBand].filter((b): b is number => b !== null);
+    const overallBand = recorded.length > 0
+      ? Math.round((recorded.reduce((a, b) => a + b, 0) / recorded.length) * 2) / 2
+      : null;
 
     return {
       reading: readingBand,
@@ -259,10 +268,10 @@ export const DashboardPage: React.FC = () => {
   // 3. Radar Chart Data: 4 Skills vs Target Band
   const radarData = useMemo(() => {
     return [
-      { skill: 'Listening', current: latestBands.listening, target: targetBand, fullMark: 9 },
-      { skill: 'Reading', current: latestBands.reading, target: targetBand, fullMark: 9 },
-      { skill: 'Writing', current: latestBands.writing, target: targetBand, fullMark: 9 },
-      { skill: 'Speaking', current: latestBands.speaking, target: targetBand, fullMark: 9 },
+      { skill: 'Listening', current: latestBands.listening || 0, target: targetBand, fullMark: 9 },
+      { skill: 'Reading', current: latestBands.reading || 0, target: targetBand, fullMark: 9 },
+      { skill: 'Writing', current: latestBands.writing || 0, target: targetBand, fullMark: 9 },
+      { skill: 'Speaking', current: latestBands.speaking || 0, target: targetBand, fullMark: 9 },
     ];
   }, [latestBands, targetBand]);
 
@@ -284,13 +293,7 @@ export const DashboardPage: React.FC = () => {
     });
 
     if (stats.size === 0) {
-      return [
-        { type: 'True / False / NG', accuracy: 75, total: 10 },
-        { type: 'Multiple Choice', accuracy: 80, total: 10 },
-        { type: 'Matching Headings', accuracy: 50, total: 6 },
-        { type: 'Form Completion', accuracy: 85, total: 10 },
-        { type: 'Sentence Completion', accuracy: 70, total: 8 },
-      ];
+      return [];
     }
 
     return Array.from(stats.entries())
@@ -386,7 +389,7 @@ export const DashboardPage: React.FC = () => {
   }, [attempts, writingSubs, speakingSessions]);
 
   const activeDaysCount = heatmapDays.filter((d) => d.minutes > 0).length;
-  const bandDiff = (latestBands.overall - targetBand).toFixed(1);
+  const bandDiff = latestBands.overall !== null ? (latestBands.overall - targetBand).toFixed(1) : null;
 
   const renderTabBar = () => (
     <div className="flex flex-wrap items-center gap-1.5 p-1 rounded-2xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 w-fit">
@@ -527,6 +530,177 @@ export const DashboardPage: React.FC = () => {
         </div>
       </div>
 
+      {/* Dual-Track Overview: IELTS vs English Course (Strictly No Mixing) */}
+      <div className="space-y-3">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white dark:bg-[#112019] p-3.5 rounded-2xl border border-slate-200 dark:border-[#24392F]">
+          <div className="flex items-center gap-2">
+            <Layers className="w-4 h-4 text-brand-700 dark:text-brand-400" />
+            <span className="text-xs font-bold text-slate-800 dark:text-white uppercase tracking-wider">
+              My Learning Tracks (Side-by-Side Overview)
+            </span>
+          </div>
+          <div className="inline-flex rounded-xl bg-slate-100 dark:bg-slate-800 p-1 border border-slate-200 dark:border-slate-700 text-xs font-semibold self-start sm:self-auto">
+            <button
+              onClick={() => setSelectedTrack('all')}
+              className={`px-3 py-1 rounded-lg transition-all ${
+                selectedTrack === 'all'
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-2xs font-bold'
+                  : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              Both Tracks
+            </button>
+            <button
+              onClick={() => setSelectedTrack('ielts')}
+              className={`px-3 py-1 rounded-lg transition-all ${
+                selectedTrack === 'ielts'
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-2xs font-bold'
+                  : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              IELTS Track
+            </button>
+            <button
+              onClick={() => setSelectedTrack('english')}
+              className={`px-3 py-1 rounded-lg transition-all ${
+                selectedTrack === 'english'
+                  ? 'bg-white dark:bg-slate-900 text-slate-900 dark:text-white shadow-2xs font-bold'
+                  : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              English Course Track
+            </button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Card 1: IELTS Academic Track */}
+          {(selectedTrack === 'all' || selectedTrack === 'ielts') && (
+            <div className="p-5 rounded-2xl bg-white dark:bg-[#112019] border border-slate-200 dark:border-[#24392F] shadow-xs flex flex-col justify-between space-y-4">
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-teal-100 text-teal-800 dark:bg-teal-950 dark:text-teal-300 border border-teal-200 dark:border-teal-800">
+                    IELTS Academic Track (0–9 Band Scale)
+                  </span>
+                  <span className="text-xs font-mono text-slate-400">Target: Band {targetBand}</span>
+                </div>
+                <div className="flex items-baseline gap-3 my-2">
+                  <div className="text-3xl font-black font-mono text-brand-800 dark:text-brand-400">
+                    {latestBands.overall !== null ? `Band ${formatBand(latestBands.overall)}` : 'Not attempted'}
+                  </div>
+                  <span className="text-xs text-slate-500 dark:text-slate-400">
+                    {latestBands.overall !== null ? 'Overall Estimate' : 'No tests completed'}
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-slate-100 dark:border-slate-800 text-xs">
+                  <div>
+                    <span className="text-slate-400 block text-[11px]">Reading</span>
+                    <span className="font-bold font-mono text-slate-800 dark:text-slate-200">
+                      {latestBands.reading !== null ? `Band ${formatBand(latestBands.reading)}` : 'Not attempted'}
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-slate-400 block text-[11px]">Listening</span>
+                    <span className="font-bold font-mono text-slate-800 dark:text-slate-200">
+                      {latestBands.listening !== null ? `Band ${formatBand(latestBands.listening)}` : 'Not attempted'}
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-slate-400 block text-[11px]">Writing</span>
+                    <span className="font-bold font-mono text-slate-800 dark:text-slate-200">
+                      {latestBands.writing !== null ? `Band ${formatBand(latestBands.writing)}` : 'Not attempted'}
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-slate-400 block text-[11px]">Speaking</span>
+                    <span className="font-bold font-mono text-slate-800 dark:text-slate-200">
+                      {latestBands.speaking !== null ? `Band ${formatBand(latestBands.speaking)}` : 'Not attempted'}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="pt-2">
+                <Link
+                  to="/app/ielts/practice"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-600 dark:text-teal-400 hover:underline"
+                >
+                  <span>Open IELTS Practice Modules</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+          )}
+
+          {/* Card 2: General English Course Track */}
+          {(selectedTrack === 'all' || selectedTrack === 'english') && (
+            <div className="p-5 rounded-2xl bg-white dark:bg-[#112019] border border-slate-200 dark:border-[#24392F] shadow-xs flex flex-col justify-between space-y-4">
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                    General English Course (CEFR Scale A1–C1)
+                  </span>
+                  <span className="text-xs font-mono text-slate-400">CEFR Certified Standard</span>
+                </div>
+                <div className="flex items-baseline gap-3 my-2">
+                  <div className="text-3xl font-black font-mono text-emerald-700 dark:text-emerald-400">
+                    {englishOverview && englishOverview.totalLessonsCompleted > 0
+                      ? englishOverview.estimatedLevelText
+                      : 'Not attempted'}
+                  </div>
+                  <span className="text-xs text-slate-500 dark:text-slate-400">
+                    {englishOverview && englishOverview.totalLessonsCompleted > 0
+                      ? 'Estimated Level'
+                      : 'Placement Test Recommended'}
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-slate-100 dark:border-slate-800 text-xs">
+                  <div>
+                    <span className="text-slate-400 block text-[11px]">Lessons</span>
+                    <span className="font-bold font-mono text-slate-800 dark:text-slate-200">
+                      {englishOverview?.totalLessonsCompleted ?? 0} finished
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-slate-400 block text-[11px]">Vocabulary</span>
+                    <span className="font-bold font-mono text-slate-800 dark:text-slate-200">
+                      {englishOverview?.totalVocabLearned ?? 0} words
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-slate-400 block text-[11px]">Grammar Mastery</span>
+                    <span className="font-bold font-mono text-slate-800 dark:text-slate-200">
+                      {englishOverview?.skillTagHeatmap.filter((s) => s.status === 'mastered').length ?? 0} mastered
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-slate-400 block text-[11px]">Study Time</span>
+                    <span className="font-bold font-mono text-slate-800 dark:text-slate-200">
+                      {englishOverview?.totalMinutesStudied ?? 0} mins
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="pt-2 flex items-center justify-between">
+                <Link
+                  to="/app/english/progress"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline"
+                >
+                  <span>Detailed English Progress &amp; Skill Heatmap</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+                <Link
+                  to="/app/english/plan"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-600 dark:text-teal-400 hover:underline"
+                >
+                  <span>Study Plan</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
       {/* KPI Metrics Row */}
       {isLoading ? (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -543,13 +717,17 @@ export const DashboardPage: React.FC = () => {
               <Award className="w-4 h-4 text-brand-700 dark:text-brand-400" />
             </div>
             <div className="text-3xl font-black text-brand-800 dark:text-brand-400 font-mono">
-              Band {formatBand(latestBands.overall)}
+              {latestBands.overall !== null ? `Band ${formatBand(latestBands.overall)}` : 'Not attempted'}
             </div>
             <p className="text-xs text-slate-400 dark:text-slate-500">
-              {parseFloat(bandDiff) >= 0 ? (
-                <span className="text-[#1E9E63] font-semibold">Target Met (+{bandDiff})</span>
+              {latestBands.overall !== null ? (
+                parseFloat(bandDiff!) >= 0 ? (
+                  <span className="text-[#1E9E63] font-semibold">Target Met (+{bandDiff})</span>
+                ) : (
+                  <span className="text-amber-600 font-semibold">{bandDiff} to Target Band</span>
+                )
               ) : (
-                <span className="text-amber-600 font-semibold">{bandDiff} to Target Band</span>
+                <span>Complete an IELTS test to calculate</span>
               )}
             </p>
           </div>
@@ -917,10 +1095,15 @@ export const DashboardPage: React.FC = () => {
         isOpen={isShareModalOpen}
         onClose={() => setIsShareModalOpen(false)}
         candidateName={profile?.displayName || 'IELTS Candidate'}
-        overallBand={latestBands.overall}
+        overallBand={latestBands.overall ?? 6.5}
         targetBand={targetBand}
         streakDays={activeDaysCount || 7}
-        skills={latestBands}
+        skills={{
+          reading: latestBands.reading ?? 6.5,
+          listening: latestBands.listening ?? 6.5,
+          writing: latestBands.writing ?? 6.0,
+          speaking: latestBands.speaking ?? 6.5,
+        }}
         testsCompleted={attempts.length}
         accuracyPercentage={82}
       />

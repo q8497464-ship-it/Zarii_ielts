@@ -1,0 +1,643 @@
+{
+  "id": "eng-a1-u2-l4",
+  "level": "A1",
+  "unit": "unit-2",
+  "order": 4,
+  "title": "Classroom & Study Objects",
+  "description": "Build essential vocabulary for study tools and master simple prepositions of place.",
+  "objectives": [
+    "Identify common stationery and classroom equipment by name",
+    "Ask and answer 'What is this/that?' and 'What are these/those?' fluently",
+    "Describe object locations using basic prepositions (on, in, under, next to)"
+  ],
+  "estimatedMinutes": 8,
+  "prerequisites": [
+    "eng-a1-u2-l3"
+  ],
+  "skillTags": [
+    "vocabulary",
+    "objects",
+    "classroom",
+    "prepositions"
+  ],
+  "vocabularyList": [
+    {
+      "word": "pencil",
+      "partOfSpeech": "noun",
+      "phonetic": "/Ëˆpensl/",
+      "definition": "An instrument for writing or drawing, consisting of a thin stick of graphite.",
+      "urduMeaning": "Ù¾Ù†Ø³Ù„",
+      "exampleSentence": "You can write your notes with a pencil."
+    },
+    {
+      "word": "pen",
+      "partOfSpeech": "noun",
+      "phonetic": "/pen/",
+      "definition": "An instrument for writing or drawing with ink.",
+      "urduMeaning": "Ù‚Ù„Ù… / Ù¾ÛŒÙ†",
+      "exampleSentence": "Sign the registration form with a blue pen."
+    },
+    {
+      "word": "notebook",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆnÉ™ÊŠtbÊŠk/",
+      "definition": "A book of blank or ruled pages for writing notes.",
+      "urduMeaning": "Ú©Ø§Ù¾ÛŒ / Ù†ÙˆÙ¹ Ø¨Ú©",
+      "exampleSentence": "Keep your grammar notes in this notebook."
+    },
+    {
+      "word": "eraser",
+      "partOfSpeech": "noun",
+      "phonetic": "/ÉªËˆreÉªzÉ™r/",
+      "definition": "A piece of rubber used for rubbing out pencil marks.",
+      "urduMeaning": "Ø±Ø¨Ú‘ / Ø§Ø±ÛŒØ²Ø±",
+      "exampleSentence": "Use an eraser if you make a mistake."
+    },
+    {
+      "word": "ruler",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆruË lÉ™r/",
+      "definition": "A straight strip used to measure distance or draw straight lines.",
+      "urduMeaning": "Ù Ù¹Û  / Ù¾ÛŒÙ…Ø§Ù†Û ",
+      "exampleSentence": "Draw a straight line with your ruler."
+    },
+    {
+      "word": "desk",
+      "partOfSpeech": "noun",
+      "phonetic": "/desk/",
+      "definition": "A piece of furniture with a flat surface used for working or studying.",
+      "urduMeaning": "ÚˆÛŒØ³Ú© / Ù…ÛŒØ²",
+      "exampleSentence": "Every student has their own desk in class."
+    },
+    {
+      "word": "whiteboard",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆwaÉªtbÉ”Ë d/",
+      "definition": "A smooth white surface for writing on with dry-wipe markers.",
+      "urduMeaning": "ÙˆØ§Ø¦Ù¹ Ø¨ÙˆØ±Úˆ",
+      "exampleSentence": "The teacher wrote the new words on the whiteboard."
+    },
+    {
+      "word": "backpack",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆbÃ¦kpÃ¦k/",
+      "definition": "A bag carried on one's back with two straps.",
+      "urduMeaning": "Ø¨Ø³ØªÛ  / Ø¨ÛŒÚ© Ù¾ÛŒÚ©",
+      "exampleSentence": "Put your books inside your backpack."
+    },
+    {
+      "word": "marker",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆmÉ‘Ë kÉ™r/",
+      "definition": "A felt-tipped pen used for bold writing or drawing.",
+      "urduMeaning": "Ù…Ø§Ø±Ú©Ø±",
+      "exampleSentence": "We need a black marker for the whiteboard."
+    },
+    {
+      "word": "dictionary",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆdÉªkÊƒÉ™nri/",
+      "definition": "A reference book listing words and their meanings.",
+      "urduMeaning": "Ù„ØºØª / ÚˆÚ©Ø´Ù†Ø±ÛŒ",
+      "exampleSentence": "Look up unfamiliar vocabulary in the dictionary."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u2-l4-1",
+      "type": "explain",
+      "title": "Study Objects & Locational Phrases",
+      "content": "To describe your study environment, pair object names with **prepositions of place**:\n- **on**: resting on top of a surface (*on the desk*)\n- **in**: located inside a container (*in the backpack*)\n- **under**: below something (*under the chair*)\n- **next to**: by the side of (*next to the computer*)",
+      "tables": [
+        {
+          "title": "Common Classroom Objects",
+          "headers": [
+            "Object",
+            "Article",
+            "Plural Form",
+            "Typical Location",
+            "Urdu Meaning"
+          ],
+          "rows": [
+            [
+              "pen",
+              "a pen",
+              "pens",
+              "in the pencil case",
+              "Ù‚Ù„Ù…"
+            ],
+            [
+              "notebook",
+              "a notebook",
+              "notebooks",
+              "on the desk",
+              "Ú©Ø§Ù¾ÛŒ"
+            ],
+            [
+              "eraser",
+              "an eraser",
+              "erasers",
+              "next to the ruler",
+              "Ø±Ø¨Ú‘"
+            ],
+            [
+              "whiteboard",
+              "a whiteboard",
+              "whiteboards",
+              "on the classroom wall",
+              "ÙˆØ§Ø¦Ù¹ Ø¨ÙˆØ±Úˆ"
+            ],
+            [
+              "dictionary",
+              "a dictionary",
+              "dictionaries",
+              "on the bookshelf",
+              "Ù„ØºØª"
+            ]
+          ]
+        },
+        {
+          "title": "Useful Question & Answer Patterns",
+          "headers": [
+            "Question",
+            "Expected Answer (Near)",
+            "Expected Answer (Far)",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "What is this/that?",
+              "This is a pen.",
+              "That is a whiteboard.",
+              "ÛŒÛ /ÙˆÛ  Ú©ÛŒØ§ Û Û’ØŸ"
+            ],
+            [
+              "What are these/those?",
+              "These are markers.",
+              "Those are backpacks.",
+              "ÛŒÛ /ÙˆÛ  Ú©ÛŒØ§ Û ÛŒÚºØŸ"
+            ],
+            [
+              "Where is the ruler?",
+              "It is on the desk.",
+              "It is under the notebook.",
+              "Ù¾ÛŒÙ…Ø§Ù†Û  Ú©Û Ø§Úº Û Û’ØŸ"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Question Contractions",
+          "text": "Native speakers often say **What's this?** and **Where's the pen?** in everyday speech."
+        },
+        {
+          "type": "warning",
+          "title": "Preposition Accuracy",
+          "text": "Say **on the desk** (surface), not **in the desk** (unless it is inside a drawer)."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l4-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "My English notebook is on the wooden desk.",
+          "phonetic": "/maÉª ËˆÉªÅ‹É¡lÉªÊƒ ËˆnÉ™ÊŠtbÊŠk Éªz É’n Ã°É™ ËˆwÊŠdn desk/",
+          "urdu": "Ù…ÛŒØ±ÛŒ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú©ÛŒ Ú©Ø§Ù¾ÛŒ Ù„Ú©Ú‘ÛŒ Ú©ÛŒ Ù…ÛŒØ² Ù¾Ø± Û Û’Û”",
+          "audioText": "My English notebook is on the wooden desk."
+        },
+        {
+          "english": "The teacher wrote three sentences on the whiteboard.",
+          "phonetic": "/Ã°É™ ËˆtiË tÊƒÉ™r rÉ™ÊŠt Î¸riË  ËˆsentÉ™nsÉªz É’n Ã°É™ ËˆwaÉªtbÉ”Ë d/",
+          "urdu": "Ø§Ø³ØªØ§Ø¯ Ù†Û’ ÙˆØ§Ø¦Ù¹ Ø¨ÙˆØ±Úˆ Ù¾Ø± ØªÛŒÙ† Ø¬Ù…Ù„Û’ Ù„Ú©Ú¾Û’Û”",
+          "audioText": "The teacher wrote three sentences on the whiteboard."
+        },
+        {
+          "english": "Can you pass me that blue marker?",
+          "phonetic": "/kÃ¦n juË  pÉ‘Ë s miË  Ã°Ã¦t bluË  ËˆmÉ‘Ë kÉ™r/",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ù…Ø¬Ú¾Û’ ÙˆÛ  Ù†ÛŒÙ„Ø§ Ù…Ø§Ø±Ú©Ø± Ù¾Ú©Ú‘Ø§ Ø³Ú©ØªÛ’ Û ÛŒÚºØŸ",
+          "audioText": "Can you pass me that blue marker?"
+        },
+        {
+          "english": "His heavy backpack is under the classroom chair.",
+          "phonetic": "/hÉªz Ëˆhevi ËˆbÃ¦kpÃ¦k Éªz ËˆÊŒndÉ™r Ã°É™ ËˆklÉ‘Ë sruË m tÊƒeÉ™r/",
+          "urdu": "Ø§Ø³ Ú©Ø§ Ø¨Ú¾Ø§Ø±ÛŒ Ø¨Ø³ØªÛ  Ú©Ù„Ø§Ø³ Ú©ÛŒ Ú©Ø±Ø³ÛŒ Ú©Û’ Ù†ÛŒÚ†Û’ Û Û’Û”",
+          "audioText": "His heavy backpack is under the classroom chair."
+        },
+        {
+          "english": "We keep a good bilingual dictionary in our library.",
+          "phonetic": "/wiË  kiË p É™ É¡ÊŠd baÉªËˆlÉªÅ‹É¡wÉ™l ËˆdÉªkÊƒÉ™nri Éªn ËˆaÊŠÉ™r ËˆlaÉªbrÉ™ri/",
+          "urdu": "Û Ù… Ø§Ù¾Ù†ÛŒ Ù„Ø§Ø¦Ø¨Ø±ÛŒØ±ÛŒ Ù…ÛŒÚº Ø§ÛŒÚ© Ø§Ú†Ú¾ÛŒ Ø¯Ùˆ Ù„Ø³Ø§Ù†ÛŒ Ù„ØºØª Ø±Ú©Ú¾ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "We keep a good bilingual dictionary in our library."
+        },
+        {
+          "english": "Draw a straight margin with your ruler and pencil.",
+          "phonetic": "/drÉ”Ë  É™ streÉªt ËˆmÉ‘Ë dÊ’Éªn wÉªÃ° jÉ”Ë r ËˆruË lÉ™r Ã¦nd Ëˆpensl/",
+          "urdu": "Ø§Ù¾Ù†Û’ Ù¾ÛŒÙ…Ø§Ù†Û’ Ø§ÙˆØ± Ù¾Ù†Ø³Ù„ Ø³Û’ Ø³ÛŒØ¯Ú¾Ø§ Ø­Ø§Ø´ÛŒÛ  Ù„Ú¯Ø§Ø¦ÛŒÚºÛ”",
+          "audioText": "Draw a straight margin with your ruler and pencil."
+        },
+        {
+          "english": "There is an eraser next to the computer keyboard.",
+          "phonetic": "/Ã°eÉ™r Éªz É™n ÉªËˆreÉªzÉ™r nekst tuË  Ã°É™ kÉ™mËˆpjuË tÉ™r ËˆkiË bÉ”Ë d/",
+          "urdu": "Ú©Ù…Ù¾ÛŒÙˆÙ¹Ø± Ú©ÛŒ Ø¨ÙˆØ±Úˆ Ú©Û’ Ø¨Ø±Ø§Ø¨Ø± Ù…ÛŒÚº Ø§ÛŒÚ© Ø§Ø±ÛŒØ²Ø± Û Û’Û”",
+          "audioText": "There is an eraser next to the computer keyboard."
+        },
+        {
+          "english": "These pens write very smoothly on paper.",
+          "phonetic": "/Ã°iË z penz raÉªt Ëˆveri ËˆsmuË Ã°li É’n ËˆpeÉªpÉ™r/",
+          "urdu": "ÛŒÛ  Ù‚Ù„Ù… Ú©Ø§ØºØ° Ù¾Ø± Ø¨Û Øª Ø±ÙˆØ§Ù†ÛŒ Ø³Û’ Ù„Ú©Ú¾ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "These pens write very smoothly on paper."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l4-3",
+      "type": "dialogue",
+      "title": "Borrowing Stationery in Class",
+      "dialogue": [
+        {
+          "speaker": "Bilal",
+          "avatar": "B",
+          "english": "Excuse me, Sana, do you have an extra pen?",
+          "urdu": "Ù…Ø¹Ø§Ù  Ú©ÛŒØ¬Ø¦Û’ Ú¯Ø§ Ø«Ù†Ø§ØŒ Ú©ÛŒØ§ Ø¢Ù¾ Ú©Û’ Ù¾Ø§Ø³ Ø§Ø¶Ø§Ù ÛŒ Ù¾ÛŒÙ† Û Û’ØŸ",
+          "audioText": "Excuse me, Sana, do you have an extra pen?"
+        },
+        {
+          "speaker": "Sana",
+          "avatar": "S",
+          "english": "Yes, I do. There are two pens in my pencil case.",
+          "urdu": "Ø¬ÛŒ Û Ø§Úº! Ù…ÛŒØ±Û’ Ù¾Ù†Ø³Ù„ Ø¨Ø§Ú©Ø³ Ù…ÛŒÚº Ø¯Ùˆ Ù‚Ù„Ù… Û ÛŒÚºÛ”",
+          "audioText": "Yes, I do. There are two pens in my pencil case."
+        },
+        {
+          "speaker": "Bilal",
+          "avatar": "B",
+          "english": "Can I borrow this blue one, please?",
+          "urdu": "Ú©ÛŒØ§ Ù…ÛŒÚº ÛŒÛ  Ù†ÛŒÙ„Ø§ Ù‚Ù„Ù… Ø§Ø¯Ú¾Ø§Ø± Ù„Û’ Ø³Ú©ØªØ§ Û ÙˆÚºØŸ",
+          "audioText": "Can I borrow this blue one, please?"
+        },
+        {
+          "speaker": "Sana",
+          "avatar": "S",
+          "english": "Sure, here you go. And here is an eraser too if you need it.",
+          "urdu": "Ø¨Ø§Ù„Ú©Ù„ØŒ ÛŒÛ  Ù„ÛŒÚºÛ” Ø§ÙˆØ± Ø§Ú¯Ø± Ø¶Ø±ÙˆØ±Øª Û Ùˆ ØªÙˆ ÛŒÛ  Ø§Ø±ÛŒØ²Ø± Ø¨Ú¾ÛŒ Û Û’Û”",
+          "audioText": "Sure, here you go. And here is an eraser too if you need it."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l4-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u2-l4-1",
+          "type": "mcq",
+          "skillTag": "objects",
+          "prompt": "What study object is used to rub out pencil mistakes?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "a ruler"
+            },
+            {
+              "id": "opt-2",
+              "text": "a whiteboard"
+            },
+            {
+              "id": "opt-3",
+              "text": "an eraser"
+            },
+            {
+              "id": "opt-4",
+              "text": "a marker"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "An eraser (rubber) is specifically used to remove pencil marks.",
+          "urduExplanation": "Ù¾Ù†Ø³Ù„ Ú©ÛŒ ØºÙ„Ø·ÛŒØ§Úº Ù…Ù¹Ø§Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ 'eraser' Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l4-2",
+          "type": "mcq",
+          "skillTag": "prepositions",
+          "prompt": "Choose the correct preposition: 'The dictionary is _____ the study desk.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "between"
+            },
+            {
+              "id": "opt-2",
+              "text": "into"
+            },
+            {
+              "id": "opt-3",
+              "text": "at"
+            },
+            {
+              "id": "opt-4",
+              "text": "on"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Objects rest on the flat top surface of furniture, so 'on the desk' is correct.",
+          "urduExplanation": "Ù…ÛŒØ² Ú©ÛŒ Ø³Ø·Ø­ Ù¾Ø± Ú©ÙˆØ¦ÛŒ Ú†ÛŒØ² Û Ùˆ ØªÙˆ 'on' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l4-3",
+          "type": "fill_blank",
+          "skillTag": "objects",
+          "prompt": "Fill in the blank with the correct study tool: 'Draw a straight line with a _____.'",
+          "correctAnswer": "ruler",
+          "explanation": "A ruler is the tool used for measuring and drawing straight lines.",
+          "urduExplanation": "Ø³ÛŒØ¯Ú¾ÛŒ Ù„Ø§Ø¦Ù† Ú©Ú¾ÛŒÙ†Ú†Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ 'ruler' (Ù¾ÛŒÙ…Ø§Ù†Û ) Ú†Ø§Û ÛŒÛ’ Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l4-4",
+          "type": "fill_blank",
+          "skillTag": "objects",
+          "prompt": "Fill in the blank: 'Put your notebooks inside your _____.'",
+          "correctAnswer": "backpack",
+          "explanation": "A backpack is the bag used by students to carry books and study items.",
+          "urduExplanation": "Ú©ØªØ§Ø¨ÛŒÚº Ø¨Ø³ØªÛ’ (backpack) Ù…ÛŒÚº Ø±Ú©Ú¾ÛŒ Ø¬Ø§ØªÛŒ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l4-5",
+          "type": "order_sentence",
+          "skillTag": "objects",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "The",
+            "marker",
+            "is",
+            "next",
+            "to",
+            "the",
+            "notebook",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "Subject (The marker) + verb (is) + prepositional phrase (next to the notebook).",
+          "urduExplanation": "The marker is next to the notebook."
+        },
+        {
+          "id": "ex-a1-u2-l4-6",
+          "type": "order_sentence",
+          "skillTag": "objects",
+          "prompt": "Rearrange the words to form a correct question:",
+          "sentenceTokens": [
+            "Where",
+            "is",
+            "my",
+            "English",
+            "dictionary",
+            "?"
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Question word (Where) + verb (is) + subject (my English dictionary).",
+          "urduExplanation": "Where is my English dictionary?"
+        },
+        {
+          "id": "ex-a1-u2-l4-7",
+          "type": "match_pairs",
+          "skillTag": "objects",
+          "prompt": "Match the study object to its primary function:",
+          "pairs": [
+            {
+              "left": "whiteboard",
+              "right": "Writing notes for the whole class"
+            },
+            {
+              "left": "dictionary",
+              "right": "Looking up definitions of words"
+            },
+            {
+              "left": "pencil",
+              "right": "Writing and drawing erasable text"
+            },
+            {
+              "left": "backpack",
+              "right": "Carrying school books and materials"
+            }
+          ],
+          "explanation": "Functions accurately paired with study tools.",
+          "urduExplanation": "Ø§Ø´ÛŒØ§ Ú©Ùˆ Ø§Ù† Ú©Û’ Ú©Ø§Ù…ÙˆÚº Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l4-8",
+          "type": "error_correction",
+          "skillTag": "prepositions",
+          "prompt": "Find and correct the mistake: 'My pen is in the desk surface.'",
+          "correctAnswer": "My pen is on the desk surface.",
+          "explanation": "Objects sit 'on' a surface, not 'in' it.",
+          "urduExplanation": "Ø³Ø·Ø­ Ú©Û’ Ù„ÛŒÛ’ 'on' Ù„Ú©Ú¾Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l4-9",
+          "type": "error_correction",
+          "skillTag": "objects",
+          "prompt": "Find and correct the mistake: 'The teacher writes on the chalkboard with marker.'",
+          "correctAnswer": "The teacher writes on the whiteboard with a marker.",
+          "explanation": "Dry-erase markers are used on a whiteboard, and singular countable 'marker' needs article 'a'.",
+          "urduExplanation": "Ù…Ø§Ø±Ú©Ø± ÙˆØ§Ø¦Ù¹ Ø¨ÙˆØ±Úˆ Ù¾Ø± Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l4-10",
+          "type": "true_false",
+          "skillTag": "objects",
+          "prompt": "A notebook is used to rub out pen ink. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. A notebook is for writing notes; an eraser is for rubbing out pencil marks.",
+          "urduExplanation": "ØºÙ„Ø·Û” Ù†ÙˆÙ¹ Ø¨Ú© Ù„Ú©Ú¾Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Û ÙˆØªÛŒ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l4-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u2-l4-1",
+          "type": "mcq",
+          "skillTag": "objects",
+          "prompt": "Where do students typically carry their books to school?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "In a drawer"
+            },
+            {
+              "id": "opt-2",
+              "text": "In an envelope"
+            },
+            {
+              "id": "opt-3",
+              "text": "In a pocket"
+            },
+            {
+              "id": "opt-4",
+              "text": "In a backpack"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Students use a backpack to carry textbooks and notebooks comfortably.",
+          "urduExplanation": "Ø·Ù„Ø¨Ø§ Ú©ØªØ§Ø¨ÛŒÚº Ø¨Ø³ØªÛ’ (backpack) Ù…ÛŒÚº Ù„Û’ Ú©Ø± Ø¬Ø§ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u2-l4-2",
+          "type": "mcq",
+          "skillTag": "prepositions",
+          "prompt": "Choose the preposition: 'The cat is sleeping _____ the table on the rug.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "under"
+            },
+            {
+              "id": "opt-2",
+              "text": "between"
+            },
+            {
+              "id": "opt-3",
+              "text": "on"
+            },
+            {
+              "id": "opt-4",
+              "text": "into"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Below the table resting on the floor is 'under the table'.",
+          "urduExplanation": "Ù…ÛŒØ² Ú©Û’ Ù†ÛŒÚ†Û’ Ú©Û’ Ù„ÛŒÛ’ 'under' Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u2-l4-3",
+          "type": "mcq",
+          "skillTag": "objects",
+          "prompt": "Which pair of tools is best for drawing a measured rectangle?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "whiteboard and marker"
+            },
+            {
+              "id": "opt-2",
+              "text": "ruler and pencil"
+            },
+            {
+              "id": "opt-3",
+              "text": "dictionary and pen"
+            },
+            {
+              "id": "opt-4",
+              "text": "desk and chair"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "A ruler measures straight lines and a pencil draws them accurately.",
+          "urduExplanation": "Ù¾ÛŒÙ…Ø§Ù†Û  (ruler) Ø§ÙˆØ± Ù¾Ù†Ø³Ù„ (pencil) Ù†Ø§Ù¾ Ú©Ø± Ù„Ø§Ø¦Ù†ÛŒÚº Ú©Ú¾ÛŒÙ†Ú†Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Ø¶Ø±ÙˆØ±ÛŒ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u2-l4-4",
+          "type": "mcq",
+          "skillTag": "objects",
+          "prompt": "What is written on the wall at the front of a modern classroom?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "The whiteboard"
+            },
+            {
+              "id": "opt-2",
+              "text": "The desk"
+            },
+            {
+              "id": "opt-3",
+              "text": "The backpack"
+            },
+            {
+              "id": "opt-4",
+              "text": "The eraser"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "The whiteboard hangs at the front of the classroom for instructional notes.",
+          "urduExplanation": "Ú©Ù„Ø§Ø³ Ú©Û’ Ø³Ø§Ù…Ù†Û’ ÙˆØ§Ø¦Ù¹ Ø¨ÙˆØ±Úˆ Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u2-l4-5",
+          "type": "mcq",
+          "skillTag": "prepositions",
+          "prompt": "Complete the sentence: 'Keep these pens _____ your pencil case.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "on"
+            },
+            {
+              "id": "opt-2",
+              "text": "at"
+            },
+            {
+              "id": "opt-3",
+              "text": "under"
+            },
+            {
+              "id": "opt-4",
+              "text": "in"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "To place something inside an enclosed holder, use the preposition 'in'.",
+          "urduExplanation": "Ú©Ø³ÛŒ ÚˆØ¨Û’ ÛŒØ§ Ú©ÛŒØ³ Ú©Û’ Ø§Ù†Ø¯Ø± Ú©Û’ Ù„ÛŒÛ’ 'in' Ø¢ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l4-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Everyday classroom English takeaways:",
+      "summaryPoints": [
+        "Master common study items: pen, pencil, notebook, eraser, ruler, whiteboard, backpack.",
+        "Use 'on' for flat surfaces (on the desk, on the whiteboard).",
+        "Use 'in' for containers (in the bag, in the pencil case).",
+        "Use 'under' for below an object (under the chair).",
+        "Ask 'What is this/that?' for singular items and 'What are these/those?' for plurals."
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l4-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… Ù„Ù Ø¸ Ú©Û’ **Ø¨Ø¹Ø¯** Ø­Ø±Ù Ù  Ø±Ø¨Ø· Ù„Ú¯Ø§ØªÛ’ Û ÛŒÚº (Postpositions)ØŒ Ø¬ÛŒØ³Û’: 'Ù…ÛŒØ² **Ù¾Ø±**'، 'Ø¨Ø³ØªÛ’ **Ù…ÛŒÚº**'ØŒ 'Ú©Ø±Ø³ÛŒ Ú©Û’ **Ù†ÛŒÚ†Û’**'Û”\n\nÙ„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ÛŒÛ  Ø§Ù„Ù Ø§Ø¸ Ù„Ù Ø¸ Ø³Û’ **Ù¾Û Ù„Û’** Ø¢ØªÛ’ Û ÛŒÚº (Prepositions)ØŒ Ø¬ÛŒØ³Û’: **on** the desk, **in** the bag, **under** the chairÛ” ØªØ±ØªÛŒØ¨ Ú©Ø§ ÛŒÛ  Ù Ø±Ù‚ ÛŒØ§Ø¯ Ø±Ú©Ú¾Ù†Ø§ Ø¨Û Øª Ø§Û Ù… Û Û’Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

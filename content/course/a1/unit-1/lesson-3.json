@@ -1,0 +1,655 @@
+{
+  "id": "eng-a1-u1-l3",
+  "level": "A1",
+  "unit": "unit-1",
+  "order": 3,
+  "title": "Negative Statements & Questions with 'To Be'",
+  "description": "Form negative sentences using 'not' and ask yes/no questions by inverting subject and verb.",
+  "objectives": [
+    "Form negative sentences with 'am not', 'is not (isn't)', and 'are not (aren't)'",
+    "Ask questions with 'to be' by placing the verb before the subject",
+    "Give natural short affirmative and negative answers (Yes, I am / No, he isn't)"
+  ],
+  "estimatedMinutes": 14,
+  "prerequisites": [
+    "eng-a1-u1-l1"
+  ],
+  "skillTags": [
+    "verb-to-be",
+    "negatives",
+    "questions"
+  ],
+  "vocabularyList": [
+    {
+      "word": "tired",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ˈtaɪəd/",
+      "definition": "In need of sleep or rest; weary.",
+      "urduMeaning": "تھکا ہوا",
+      "exampleSentence": "I am not tired."
+    },
+    {
+      "word": "hungry",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ˈhʌŋɡri/",
+      "definition": "Feeling or displaying the need for food.",
+      "urduMeaning": "بھوکا",
+      "exampleSentence": "Are you hungry?"
+    },
+    {
+      "word": "late",
+      "partOfSpeech": "adjective",
+      "phonetic": "/leɪt/",
+      "definition": "Doing something or taking place after the expected time.",
+      "urduMeaning": "دیر سے / تاخیر سے",
+      "exampleSentence": "He is not late."
+    },
+    {
+      "word": "busy",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ˈbɪzi/",
+      "definition": "Having a great deal to do.",
+      "urduMeaning": "مصروف",
+      "exampleSentence": "She isn't busy right now."
+    },
+    {
+      "word": "cold",
+      "partOfSpeech": "adjective",
+      "phonetic": "/kəʊld/",
+      "definition": "Of or at a low temperature.",
+      "urduMeaning": "سرد / ٹھنڈا",
+      "exampleSentence": "It isn't cold today."
+    },
+    {
+      "word": "here",
+      "partOfSpeech": "adverb",
+      "phonetic": "/hɪər/",
+      "definition": "In, at, or to this place or position.",
+      "urduMeaning": "یہاں",
+      "exampleSentence": "Is the manager here?"
+    },
+    {
+      "word": "there",
+      "partOfSpeech": "adverb",
+      "phonetic": "/ðeər/",
+      "definition": "In, at, or to that place or position.",
+      "urduMeaning": "وہاں",
+      "exampleSentence": "They aren't there."
+    },
+    {
+      "word": "right",
+      "partOfSpeech": "adjective",
+      "phonetic": "/raɪt/",
+      "definition": "Morally good, justified, or acceptable; correct.",
+      "urduMeaning": "صحیح / درست",
+      "exampleSentence": "Am I right?"
+    },
+    {
+      "word": "wrong",
+      "partOfSpeech": "adjective",
+      "phonetic": "/rɒŋ/",
+      "definition": "Not correct or true; incorrect.",
+      "urduMeaning": "غلط",
+      "exampleSentence": "You are not wrong."
+    },
+    {
+      "word": "sure",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ʃɔːr/",
+      "definition": "Confident in what one thinks or knows.",
+      "urduMeaning": "یقین رکھنے والا",
+      "exampleSentence": "Are you sure about this?"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u1-l3-1",
+      "type": "explain",
+      "title": "Negatives and Inverted Questions",
+      "content": "To make a sentence **negative**, add **not** immediately after the verb 'to be':\n- I am **not**\n- He is **not** (He **isn't**)\n- They are **not** (They **aren't**)\n\nTo ask a **question**, invert the subject and the verb (place the verb first):\n- Affirmative: *You are ready.*\n- Question: ***Are you** ready?*",
+      "tables": [
+        {
+          "title": "Negative Forms & Contractions",
+          "headers": [
+            "Subject",
+            "Full Negative",
+            "Contracted Form",
+            "Urdu Meaning"
+          ],
+          "rows": [
+            [
+              "I",
+              "I am not",
+              "I'm not",
+              "میں نہیں ہوں"
+            ],
+            [
+              "You",
+              "You are not",
+              "You aren't / You're not",
+              "آپ نہیں ہیں"
+            ],
+            [
+              "He",
+              "He is not",
+              "He isn't / He's not",
+              "وہ نہیں ہے (مرد)"
+            ],
+            [
+              "She",
+              "She is not",
+              "She isn't / She's not",
+              "وہ نہیں ہے (عورت)"
+            ],
+            [
+              "It",
+              "It is not",
+              "It isn't / It's not",
+              "یہ نہیں ہے"
+            ],
+            [
+              "We",
+              "We are not",
+              "We aren't / We're not",
+              "ہم نہیں ہیں"
+            ],
+            [
+              "They",
+              "They are not",
+              "They aren't / They're not",
+              "وہ نہیں ہیں"
+            ]
+          ]
+        },
+        {
+          "title": "Questions & Natural Short Answers",
+          "headers": [
+            "Question",
+            "Short Answer (Yes)",
+            "Short Answer (No)",
+            "Urdu Meaning"
+          ],
+          "rows": [
+            [
+              "Are you ready?",
+              "Yes, I am.",
+              "No, I'm not.",
+              "کیا آپ تیار ہیں؟"
+            ],
+            [
+              "Is he at home?",
+              "Yes, he is.",
+              "No, he isn't.",
+              "کیا وہ گھر پر ہے؟"
+            ],
+            [
+              "Is she a doctor?",
+              "Yes, she is.",
+              "No, she isn't.",
+              "کیا وہ ڈاکٹر ہیں؟"
+            ],
+            [
+              "Are they late?",
+              "Yes, they are.",
+              "No, they aren't.",
+              "کیا وہ دیر سے ہیں؟"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "warning",
+          "title": "No Contractions in Positive Short Answers",
+          "text": "Never contract affirmative short answers: say **Yes, I am** (NOT *Yes, I'm*); say **Yes, he is** (NOT *Yes, he's*)."
+        },
+        {
+          "type": "tip",
+          "title": "'Ain't' is Non-Standard",
+          "text": "You might hear 'ain't' in movies or music, but it is slang. In formal English, always use **am not**, **isn't**, or **aren't**."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l3-2",
+      "type": "examples",
+      "title": "Negative and Question Sentence Examples",
+      "examples": [
+        {
+          "english": "I am not tired after the long journey.",
+          "phonetic": "/aɪ æm nɒt ˈtaɪəd ˈɑːftər ðə lɒŋ ˈdʒɜːni/",
+          "urdu": "طویل سفر کے بعد میں تھکا ہوا نہیں ہوں۔",
+          "audioText": "I am not tired after the long journey."
+        },
+        {
+          "english": "Are you hungry? There is food on the table.",
+          "phonetic": "/ɑːr juː ˈhʌŋɡri ðeər ɪz fuːd ɒn ðə ˈteɪbl/",
+          "urdu": "کیا آپ کو بھوک لگی ہے؟ میز پر کھانا موجود ہے۔",
+          "audioText": "Are you hungry? There is food on the table."
+        },
+        {
+          "english": "She isn't busy; she can speak with you now.",
+          "phonetic": "/ʃiː ˈɪznt ˈbɪzi ʃiː kæn spiːk wɪð juː naʊ/",
+          "urdu": "وہ مصروف نہیں ہیں؛ وہ ابھی آپ سے بات کر سکتی ہیں۔",
+          "audioText": "She isn't busy; she can speak with you now."
+        },
+        {
+          "english": "Is the bank open on Saturday mornings?",
+          "phonetic": "/ɪz ðə bæŋk ˈəʊpən ɒn ˈsætədeɪ ˈmɔːrnɪŋz/",
+          "urdu": "کیا ہفتے کی صبح بینک کھلا ہوتا ہے؟",
+          "audioText": "Is the bank open on Saturday mornings?"
+        },
+        {
+          "english": "We aren't late for the train.",
+          "phonetic": "/wiː ˈɑːnt leɪt fɔːr ðə treɪn/",
+          "urdu": "ہماری ٹرین کے لیے دیر نہیں ہوئی ہے۔",
+          "audioText": "We aren't late for the train."
+        },
+        {
+          "english": "They are not at home right now.",
+          "phonetic": "/ðeɪ ɑːr nɒt æt həʊm raɪt naʊ/",
+          "urdu": "وہ اس وقت گھر پر نہیں ہیں۔",
+          "audioText": "They are not at home right now."
+        },
+        {
+          "english": "Is it cold outside this evening?",
+          "phonetic": "/ɪz ɪt kəʊld ˌaʊtˈsaɪd ðɪs ˈiːvnɪŋ/",
+          "urdu": "کیا آج شام باہر سردی ہے؟",
+          "audioText": "Is it cold outside this evening?"
+        },
+        {
+          "english": "Are you sure about your decision?",
+          "phonetic": "/ɑːr juː ʃɔːr əˈbaʊt jɔːr dɪˈsɪʒn/",
+          "urdu": "کیا آپ کو اپنے فیصلے پر یقین ہے؟",
+          "audioText": "Are you sure about your decision?"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l3-3",
+      "type": "dialogue",
+      "title": "Checking In at Reception",
+      "dialogue": [
+        {
+          "speaker": "Receptionist",
+          "avatar": "R",
+          "english": "Good morning! Are you Mr. Kamal?",
+          "urdu": "صبح بخیر! کیا آپ مسٹر کمال ہیں؟",
+          "audioText": "Good morning! Are you Mr. Kamal?"
+        },
+        {
+          "speaker": "Visitor",
+          "avatar": "V",
+          "english": "No, I am not. I am Tariq Aziz. Is Mr. Bilal in his office?",
+          "urdu": "نہیں، میں نہیں۔ میں طارق عزیز ہوں۔ کیا مسٹر بلال اپنے دفتر میں ہیں؟",
+          "audioText": "No, I am not. I am Tariq Aziz. Is Mr. Bilal in his office?"
+        },
+        {
+          "speaker": "Receptionist",
+          "avatar": "R",
+          "english": "Yes, he is. He isn't in a meeting right now. Please go in.",
+          "urdu": "جی ہاں، وہ ہیں۔ وہ اس وقت کسی میٹنگ میں نہیں ہیں۔ تشریف لے جائیے۔",
+          "audioText": "Yes, he is. He isn't in a meeting right now. Please go in."
+        },
+        {
+          "speaker": "Visitor",
+          "avatar": "V",
+          "english": "Thank you very much!",
+          "urdu": "آپ کا بہت شکریہ!",
+          "audioText": "Thank you very much!"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l3-4",
+      "type": "practice",
+      "title": "Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u1-l3-1",
+          "type": "mcq",
+          "skillTag": "questions",
+          "prompt": "Turn this into a question: 'You are an engineer.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Are you an engineer?"
+            },
+            {
+              "id": "opt-2",
+              "text": "You are an engineer?"
+            },
+            {
+              "id": "opt-3",
+              "text": "Is you an engineer?"
+            },
+            {
+              "id": "opt-4",
+              "text": "Be you an engineer?"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Invert the subject and verb: 'Are' precedes 'you'.",
+          "urduExplanation": "سوال بنانے کے لیے فعل 'Are' کو فاعل 'you' سے پہلے لائیں۔"
+        },
+        {
+          "id": "ex-a1-u1-l3-2",
+          "type": "mcq",
+          "skillTag": "negatives",
+          "prompt": "Choose the correct negative sentence:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "She not is a teacher."
+            },
+            {
+              "id": "opt-2",
+              "text": "She isn't a teacher."
+            },
+            {
+              "id": "opt-3",
+              "text": "She no is a teacher."
+            },
+            {
+              "id": "opt-4",
+              "text": "She aren't a teacher."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'isn't' is the correct negative contraction for 'is not'.",
+          "urduExplanation": "'isn't' درست منفی شکل ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l3-3",
+          "type": "fill_blank",
+          "skillTag": "negatives",
+          "prompt": "We _____ (not be) ready to leave yet.",
+          "correctAnswer": "aren't",
+          "acceptableAnswers": [
+            "aren't",
+            "are not"
+          ],
+          "explanation": "The plural subject 'We' takes 'aren't' or 'are not'.",
+          "urduExplanation": "'We' کے ساتھ منفی شکل 'aren't' یا 'are not' بنتی ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l3-4",
+          "type": "fill_blank",
+          "skillTag": "questions",
+          "prompt": "_____ (be) your sister at the library today?",
+          "correctAnswer": "Is",
+          "acceptableAnswers": [
+            "Is",
+            "is"
+          ],
+          "explanation": "'Your sister' is singular, so the question begins with 'Is'.",
+          "urduExplanation": "'Your sister' واحد ہے، اس لیے سوال 'Is' سے شروع ہوگا۔"
+        },
+        {
+          "id": "ex-a1-u1-l3-5",
+          "type": "order_sentence",
+          "skillTag": "questions",
+          "prompt": "Arrange the words to form a question:",
+          "sentenceTokens": [
+            "Is",
+            "the",
+            "train",
+            "on",
+            "time",
+            "?"
+          ],
+          "correctOrder": [
+            "Is",
+            "the",
+            "train",
+            "on",
+            "time",
+            "?"
+          ],
+          "explanation": "Verb (Is) + Subject (the train) + Prepositional phrase (on time)?",
+          "urduExplanation": "کیا ٹرین وقت پر ہے؟"
+        },
+        {
+          "id": "ex-a1-u1-l3-6",
+          "type": "error_correction",
+          "skillTag": "negatives",
+          "prompt": "Correct the sentence: 'I aren't tired.'",
+          "correctAnswer": "I am not tired.",
+          "acceptableAnswers": [
+            "I am not tired.",
+            "I'm not tired.",
+            "am not"
+          ],
+          "explanation": "The pronoun 'I' must take 'am not' (or 'I'm not'), never 'aren't'.",
+          "urduExplanation": "'I' کے ساتھ 'am not' آتا ہے، 'aren't' نہیں۔"
+        },
+        {
+          "id": "ex-a1-u1-l3-7",
+          "type": "match_pairs",
+          "skillTag": "questions",
+          "prompt": "Match the question with the natural short answer:",
+          "pairs": [
+            {
+              "left": "Are you hungry?",
+              "right": "Yes, I am."
+            },
+            {
+              "left": "Is he at work?",
+              "right": "No, he isn't."
+            },
+            {
+              "left": "Are they Pakistani?",
+              "right": "Yes, they are."
+            }
+          ],
+          "explanation": "Match the subject pronoun in the answer to the subject in the question.",
+          "urduExplanation": "سوال کے فاعل کے مطابق مختصر جواب ملاؤ۔"
+        },
+        {
+          "id": "ex-a1-u1-l3-8",
+          "type": "true_false",
+          "skillTag": "questions",
+          "prompt": "True or False: In a positive short answer, you can contract the verb: 'Yes, I'm.'",
+          "correctAnswer": "False",
+          "acceptableAnswers": [
+            "False",
+            "false",
+            "F"
+          ],
+          "explanation": "False. In affirmative short answers, always use the full form: 'Yes, I am.'",
+          "urduExplanation": "غلط۔ مثبت مختصر جواب میں مکمل فارم 'Yes, I am' کہنا لازمی ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l3-9",
+          "type": "mcq",
+          "skillTag": "questions",
+          "prompt": "Complete the response: 'Is your father a doctor?' - 'No, _____.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "he isn't"
+            },
+            {
+              "id": "opt-2",
+              "text": "he aren't"
+            },
+            {
+              "id": "opt-3",
+              "text": "he not is"
+            },
+            {
+              "id": "opt-4",
+              "text": "he doesn't"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'he isn't' is the grammatically correct negative short answer.",
+          "urduExplanation": "مختصر منفی جواب 'No, he isn't' ہوگا۔"
+        },
+        {
+          "id": "ex-a1-u1-l3-10",
+          "type": "fill_blank",
+          "skillTag": "negatives",
+          "prompt": "The keys _____ (not be) on the kitchen table.",
+          "correctAnswer": "aren't",
+          "acceptableAnswers": [
+            "aren't",
+            "are not"
+          ],
+          "explanation": "Plural subject 'keys' takes 'aren't'.",
+          "urduExplanation": "جمع اسم 'keys' کے ساتھ 'aren't' آئے گا۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l3-5",
+      "type": "quiz",
+      "title": "Lesson 3 Check Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u1-l3-1",
+          "type": "mcq",
+          "skillTag": "questions",
+          "prompt": "Which question is formed correctly?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Where you are?"
+            },
+            {
+              "id": "opt-2",
+              "text": "Are you from Lahore?"
+            },
+            {
+              "id": "opt-3",
+              "text": "You are happy?"
+            },
+            {
+              "id": "opt-4",
+              "text": "Is they ready?"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Are you from Lahore?' properly inverts the verb 'Are' before subject 'you'.",
+          "urduExplanation": "'Are you from Lahore?' سوالیہ جملے کی درست ساخت ہے۔"
+        },
+        {
+          "id": "qz-a1-u1-l3-2",
+          "type": "mcq",
+          "skillTag": "negatives",
+          "prompt": "What is the negative of 'He is in London'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "He isn't in London."
+            },
+            {
+              "id": "opt-2",
+              "text": "He not is in London."
+            },
+            {
+              "id": "opt-3",
+              "text": "He aren't in London."
+            },
+            {
+              "id": "opt-4",
+              "text": "He am not in London."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'He isn't in London' is the correct contracted negative.",
+          "urduExplanation": "'He isn't in London' درست منفی جملہ ہے۔"
+        },
+        {
+          "id": "qz-a1-u1-l3-3",
+          "type": "mcq",
+          "skillTag": "questions",
+          "prompt": "Answer: 'Are your parents teachers?' - 'Yes, _____.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "they're"
+            },
+            {
+              "id": "opt-2",
+              "text": "they are"
+            },
+            {
+              "id": "opt-3",
+              "text": "we are"
+            },
+            {
+              "id": "opt-4",
+              "text": "they is"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Affirmative short answers must use the full form: 'Yes, they are.'",
+          "urduExplanation": "مثبت جواب میں اختصار نہیں ہو سکتا، 'Yes, they are' درست ہے۔"
+        },
+        {
+          "id": "qz-a1-u1-l3-4",
+          "type": "fill_blank",
+          "skillTag": "questions",
+          "prompt": "_____ you sure about the address?",
+          "correctAnswer": "Are",
+          "acceptableAnswers": [
+            "Are",
+            "are"
+          ],
+          "explanation": "Questions with 'you' begin with 'Are'.",
+          "urduExplanation": "'you' کے سوال کے لیے شروع میں 'Are' آئے گا۔"
+        },
+        {
+          "id": "qz-a1-u1-l3-5",
+          "type": "mcq",
+          "skillTag": "negatives",
+          "prompt": "Which sentence expresses negative correctly?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "I'm not hungry."
+            },
+            {
+              "id": "opt-2",
+              "text": "I amn't hungry."
+            },
+            {
+              "id": "opt-3",
+              "text": "I are not hungry."
+            },
+            {
+              "id": "opt-4",
+              "text": "I is not hungry."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'I'm not' is the only standard contracted negative for the first person.",
+          "urduExplanation": "'I'm not hungry' درست جملہ ہے۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l3-6",
+      "type": "urduNote",
+      "title": "اردو بولنے والوں کے لیے اہم ہدایت",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      },
+      "urduText": "اردو میں سوال بنانے کے لیے ہم صرف لفظ 'کیا' کا اضافہ کرتے ہیں، مثلاً: 'آپ تیار ہیں' سے 'کیا آپ تیار ہیں؟'۔ جملے کے باقی الفاظ کی ترتیب نہیں بدلتی۔\nلیکن انگریزی میں 'Inversion' (ترتیب کی تبدیلی) لازمی ہے! آپ کو فعل (Are/Is) کو فاعل سے پہلے لانا ہوتا ہے: 'You are ready' تبدیل ہو کر '**Are you** ready?' بن جاتا ہے۔\nبول چال میں سر ہلا کر یا لہجہ اونچا کر کے 'You are ready?' کہنا عام فہم تو ہو سکتا ہے، لیکن معیاری انگریزی میں فعل کو پہلے لانا لازمی ہے۔"
+    },
+    {
+      "id": "sec-a1-u1-l3-7",
+      "type": "summary",
+      "title": "Lesson 3 Summary Box",
+      "summaryPoints": [
+        "Negatives are formed by adding 'not' after am/is/are (I'm not, he isn't, they aren't).",
+        "Yes/No questions invert the subject and verb (Am I?, Is he?, Are you?).",
+        "Never contract affirmative short answers (always 'Yes, I am' or 'Yes, they are').",
+        "Contracted negative short answers are natural: 'No, he isn't' or 'No, we aren't'."
+      ]
+    }
+  ]
+}

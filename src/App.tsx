@@ -35,6 +35,8 @@ const PrivacyPage = lazy(() => import('./features/info/PrivacyPage').then((m) =>
 const TermsPage = lazy(() => import('./features/info/TermsPage').then((m) => ({ default: m.TermsPage })));
 const FaqPage = lazy(() => import('./features/info/FaqPage').then((m) => ({ default: m.FaqPage })));
 const CreditsPage = lazy(() => import('./features/info/CreditsPage').then((m) => ({ default: m.CreditsPage })));
+const CourseOverviewPage = lazy(() => import('./features/info/CourseOverviewPage').then((m) => ({ default: m.CourseOverviewPage })));
+const DictionaryOverviewPage = lazy(() => import('./features/info/DictionaryOverviewPage').then((m) => ({ default: m.DictionaryOverviewPage })));
 
 function RouteLoadingFallback({ message = 'Loading Zarii IELTS...' }: { message?: string }) {
   return (
@@ -193,6 +195,30 @@ export default function App() {
             <Suspense fallback={<RouteLoadingFallback message="Loading Credits & Attributions..." />}>
               <PublicInfoLayout>
                 <CreditsPage />
+              </PublicInfoLayout>
+            </Suspense>
+          }
+        />
+        <Route
+          path="/course"
+          element={
+            <Suspense fallback={<RouteLoadingFallback message="Loading Course Overview..." />}>
+              <PublicInfoLayout>
+                <CourseOverviewPage />
+              </PublicInfoLayout>
+            </Suspense>
+          }
+        />
+        <Route
+          path="/english-course"
+          element={<Navigate to="/course" replace />}
+        />
+        <Route
+          path="/dictionary-overview"
+          element={
+            <Suspense fallback={<RouteLoadingFallback message="Loading Dictionary Overview..." />}>
+              <PublicInfoLayout>
+                <DictionaryOverviewPage />
               </PublicInfoLayout>
             </Suspense>
           }

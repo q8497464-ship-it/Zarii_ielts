@@ -1,0 +1,622 @@
+{
+  "id": "eng-a1-u4-l1",
+  "level": "A1",
+  "unit": "unit-4",
+  "order": 1,
+  "title": "Have & Has: Expressing Possession",
+  "description": "Learn how to express ownership, relationships, and characteristics using have and has.",
+  "objectives": [
+    "Use 'have' with I, you, we, and they in affirmative sentences",
+    "Use 'has' with he, she, and it accurately",
+    "Form negative sentences using 'don't have' and 'doesn't have' (never 'doesn't has')"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [
+    "eng-a1-u3-l5"
+  ],
+  "skillTags": [
+    "have-has",
+    "possession",
+    "grammar-basics",
+    "verbs"
+  ],
+  "vocabularyList": [
+    {
+      "word": "have",
+      "partOfSpeech": "verb",
+      "phonetic": "/hÃ¦v/",
+      "definition": "To possess, own, or hold.",
+      "urduMeaning": "Ù¾Ø§Ø³ Û ÙˆÙ†Ø§ / Ù…Ù„Ú©ÛŒØª Û ÙˆÙ†Ø§",
+      "exampleSentence": "I have a new laptop for my studies."
+    },
+    {
+      "word": "has",
+      "partOfSpeech": "verb",
+      "phonetic": "/hÃ¦z/",
+      "definition": "Third person singular present of have.",
+      "urduMeaning": "Ù¾Ø§Ø³ Û Û’ (ÙˆØ§Ø­Ø¯ Ú©Û’ Ù„ÛŒÛ’)",
+      "exampleSentence": "She has two brothers and one sister."
+    },
+    {
+      "word": "own",
+      "partOfSpeech": "verb",
+      "phonetic": "/É™ÊŠn/",
+      "definition": "To have something as one's own possession.",
+      "urduMeaning": "Ù…Ø§Ù„Ú© Û ÙˆÙ†Ø§",
+      "exampleSentence": "They own a small house near the canal."
+    },
+    {
+      "word": "smartphone",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆsmÉ‘Ë tfÉ™ÊŠn/",
+      "definition": "A mobile phone that performs many functions of a computer.",
+      "urduMeaning": "Ø§Ø³Ù…Ø§Ø±Ù¹ Ù ÙˆÙ†",
+      "exampleSentence": "He has a modern smartphone."
+    },
+    {
+      "word": "bicycle",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆbaÉªsÉªkl/",
+      "definition": "A vehicle consisting of two wheels held in a frame one behind the other.",
+      "urduMeaning": "Ø³Ø§Ø¦ÛŒÚ©Ù„",
+      "exampleSentence": "I ride my bicycle to the library."
+    },
+    {
+      "word": "passport",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆpÉ‘Ë spÉ”Ë t/",
+      "definition": "An official document issued by a government certifying identity and citizenship.",
+      "urduMeaning": "Ù¾Ø§Ø³Ù¾ÙˆØ±Ù¹",
+      "exampleSentence": "Do you have your passport ready for travel?"
+    },
+    {
+      "word": "ticket",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆtÉªkÉªt/",
+      "definition": "A piece of paper or electronic token giving the holder a right to travel or enter.",
+      "urduMeaning": "Ù¹Ú©Ù¹",
+      "exampleSentence": "She has two tickets for the cricket match."
+    },
+    {
+      "word": "room",
+      "partOfSpeech": "noun",
+      "phonetic": "/ruË m/",
+      "definition": "Space that can be occupied in a building.",
+      "urduMeaning": "Ú©Ù…Ø±Û ",
+      "exampleSentence": "Our house has four large bedrooms."
+    },
+    {
+      "word": "house",
+      "partOfSpeech": "noun",
+      "phonetic": "/haÊŠs/",
+      "definition": "A building for human habitation, especially one that consists of a ground floor and one or more upper storeys.",
+      "urduMeaning": "Ú¯Ú¾Ø± / Ù…Ú©Ø§Ù†",
+      "exampleSentence": "They have a beautiful house with a lawn."
+    },
+    {
+      "word": "pet",
+      "partOfSpeech": "noun",
+      "phonetic": "/pet/",
+      "definition": "A domestic or tamed animal kept for companionship or pleasure.",
+      "urduMeaning": "Ù¾Ø§Ù„ØªÙˆ Ø¬Ø§Ù†ÙˆØ±",
+      "exampleSentence": "We have a gentle pet cat named Snow."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u4-l1-1",
+      "type": "explain",
+      "title": "Possession with Have and Has",
+      "content": "We use the verb **have** (and its third-person form **has**) to describe:\n1. **Ownership**: Things you own (*I have a car*).\n2. **Family ties**: Relatives you have (*She has two sisters*).\n3. **Physical features**: Eyes, hair, height (*He has brown eyes*).\n4. **Illnesses**: Health issues (*I have a headache*).",
+      "tables": [
+        {
+          "title": "Have vs. Has Matrix",
+          "headers": [
+            "Subject",
+            "Affirmative",
+            "Negative",
+            "Urdu Translation",
+            "Example"
+          ],
+          "rows": [
+            [
+              "I / You / We / They",
+              "have",
+              "don't have",
+              "Ù…ÛŒØ±Û’ / Ø¢Ù¾ Ú©Û’ Ù¾Ø§Ø³ Û Û’ / Ù†Û ÛŒÚº Û Û’",
+              "I have a car / We don't have time."
+            ],
+            [
+              "He / She / It",
+              "has",
+              "doesn't have (NEVER has!)",
+              "Ø§Ø³ Ú©Û’ Ù¾Ø§Ø³ Û Û’ / Ù†Û ÛŒÚº Û Û’",
+              "She has a bike / He doesn't have a car."
+            ]
+          ]
+        },
+        {
+          "title": "Crucial Form / Use / Common Mistakes",
+          "headers": [
+            "Aspect",
+            "Rule",
+            "Correct Example",
+            "Error to Avoid"
+          ],
+          "rows": [
+            [
+              "Negative he/she/it",
+              "doesn't + base verb 'have'",
+              "He doesn't have a pen",
+              "Fatal error: 'He doesn't has a pen'."
+            ],
+            [
+              "Question form",
+              "Do/Does + subject + have?",
+              "Does she have a ticket?",
+              "Never: 'Has she a ticket?' in modern standard English."
+            ],
+            [
+              "Contractions",
+              "don't have / doesn't have",
+              "We don't have cash",
+              "Never say 'We haven't cash'."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "warning",
+          "title": "The 'Doesn't Have' Trap",
+          "text": "Because **doesn't** already carries the third-person inflection, the verb MUST be **have**: **He doesn't have** (never *doesn't has*)."
+        },
+        {
+          "type": "tip",
+          "title": "Expressing Possession in Urdu vs English",
+          "text": "In Urdu, you say 'میرے پاس گاڑی ہے' (With me a car is). In English, the owner is the direct grammatical subject: **I have a car**."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l1-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "I have a valid Pakistani passport and a visa.",
+          "phonetic": "/aÉª hÃ¦v É™ ËˆvÃ¦lÉªd ËŒpÉ‘Ë kÉªËˆstÉ‘Ë ni ËˆpÉ‘Ë spÉ”Ë t Ã¦nd É™ ËˆviË zÉ™/",
+          "urdu": "Ù…ÛŒØ±Û’ Ù¾Ø§Ø³ Ø§ÛŒÚ© Ø¬Ø§Ø¦Ø² Ù¾Ø§Ú©Ø³ØªØ§Ù†ÛŒ Ù¾Ø§Ø³Ù¾ÙˆØ±Ù¹ Ø§ÙˆØ± ÙˆÛŒØ²Ø§ Û Û’Û”",
+          "audioText": "I have a valid Pakistani passport and a visa."
+        },
+        {
+          "english": "She has two younger brothers and one older sister.",
+          "phonetic": "/ÊƒiË  hÃ¦z tuË  ËˆjÊŒÅ‹É¡É™r ËˆbrÊŒÃ°É™rz Ã¦nd wÊŒn ËˆÉ™ÊŠldÉ™r ËˆsÉªstÉ™r/",
+          "urdu": "Ø§Ø³ Ú©Û’ Ø¯Ùˆ Ú†Ú¾ÙˆÙ¹Û’ Ø¨ÚÚ¾Ø§Ø¦ÛŒ Ø§ÙˆØ± Ø§ÛŒÚ© Ø¨Ú‘ÛŒ Ø¨Û Ù† Û Û’Û”",
+          "audioText": "She has two younger brothers and one older sister."
+        },
+        {
+          "english": "He doesn't have a driving licence yet.",
+          "phonetic": "/hiË  ËˆdÊŒznt hÃ¦v É™ ËˆdraÉªvÉªÅ‹ ËˆlaÉªsns jet/",
+          "urdu": "Ø§Ø³ Ú©Û’ Ù¾Ø§Ø³ Ø§Ø¨Ú¾ÛŒ ÚˆØ±Ø§Ø¦ÛŒÙˆÙ†Ú¯ Ù„Ø§Ø¦Ø³Ù†Ø³ Ù†Û ÛŒÚº Û Û’Û”",
+          "audioText": "He doesn't have a driving licence yet."
+        },
+        {
+          "english": "We have an important examination on Monday morning.",
+          "phonetic": "/wiË  hÃ¦v É™n ÉªmËˆpÉ”Ë tnt ÉªÉ¡ËŒzÃ¦mÉªËˆneÉªÊƒn É’n ËˆmÊŒndeÉª ËˆmÉ”Ë rnÉªÅ‹/",
+          "urdu": "Ù¾ÛŒØ± Ú©ÛŒ ØµØ¨Ø­ Û Ù…Ø§Ø±Ø§ Ø§ÛŒÚ© Ø§Û Ù… Ø§Ù…ØªØ­Ø§Ù† Û Û’Û”",
+          "audioText": "We have an important examination on Monday morning."
+        },
+        {
+          "english": "They have a lovely house with a large backyard.",
+          "phonetic": "/Ã°eÉª hÃ¦v É™ ËˆlÊŒvli haÊŠs wÉªÃ° É™ lÉ‘Ë dÊ’ ËŒbÃ¦kËˆjÉ‘Ë d/",
+          "urdu": "Ø§Ù† Ú©Ø§ Ø§ÛŒÚ© Ù¾ÛŒØ§Ø±Ø§ Ú¯Ú¾Ø± Û Û’ Ø¬Ø³ Ù…ÛŒÚº Ø¨Ú‘Ø§ ØµØ­Ù† Û Û’Û”",
+          "audioText": "They have a lovely house with a large backyard."
+        },
+        {
+          "english": "Do you have any questions about this grammar rule?",
+          "phonetic": "/duË  juË  hÃ¦v Ëˆeni ËˆkwestÊƒÉ™nz É™ËˆbaÊŠt Ã°Éªs ËˆÉ¡rÃ¦mÉ™r ruË l/",
+          "urdu": "Ú©ÛŒØ§ Ø§Ø³ Ú¯Ø±Ø§Ù…Ø± Ú©Û’ Ù‚Ø§Ø¹Ø¯Û’ Ú©Û’ Ø¨Ø§Ø±Û’ Ù…ÛŒÚº Ø¢Ù¾ Ú©Ø§ Ú©ÙˆØ¦ÛŒ Ø³ÙˆØ§Ù„ Û Û’ØŸ",
+          "audioText": "Do you have any questions about this grammar rule?"
+        },
+        {
+          "english": "Ahmed has a gentle pet cat that sleeps on his chair.",
+          "phonetic": "/ËˆÉ‘Ë mÉ™d hÃ¦z É™ ËˆdÊ’entl pet kÃ¦t Ã°Ã¦t sliË ps É’n hÉªz tÊƒeÉ™r/",
+          "urdu": "Ø§Ø­Ù…Ø¯ Ú©Û’ Ù¾Ø§Ø³ Ø§ÛŒÚ© Ù…Ø¹ØµÙˆÙ… Ù¾Ø§Ù„ØªÙˆ Ø¨Ù„ÛŒ Û Û’ Ø¬Ùˆ Ø§Ø³ Ú©ÛŒ Ú©Ø±Ø³ÛŒ Ù¾Ø± Ø³ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "Ahmed has a gentle pet cat that sleeps on his chair."
+        },
+        {
+          "english": "They don't have enough money for an overseas holiday.",
+          "phonetic": "/Ã°eÉª dÉ™ÊŠnt hÃ¦v ÉªËˆnÊŒf ËˆmÊŒni fÉ”Ë r É™n ËŒÉ™ÊŠvÉ™ËˆsiË z ËˆhÉ’lÉ™deÉª/",
+          "urdu": "Ø§Ù† Ú©Û’ Ù¾Ø§Ø³ ØºÛŒØ± Ù…Ù„Ú©ÛŒ ØªØ¹Ø·ÛŒÙ„Ø§Øª Ú©Û’ Ù„ÛŒÛ’ Ú©Ø§Ù ÛŒ Ù¾ÛŒØ³Û’ Ù†Û ÛŒÚº Û ÛŒÚºÛ”",
+          "audioText": "They don't have enough money for an overseas holiday."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l1-3",
+      "type": "dialogue",
+      "title": "Checking Travel Documents",
+      "dialogue": [
+        {
+          "speaker": "Officer",
+          "avatar": "O",
+          "english": "Good morning. Do you have your boarding pass and passport?",
+          "urdu": "ØµØ¨Ø­ Ø¨Ø®ÛŒØ±Û” Ú©ÛŒØ§ Ø¢Ù¾ Ú©Û’ Ù¾Ø§Ø³ Ø¨ÙˆØ±ÚˆÙ†Ú¯ Ù¾Ø§Ø³ Ø§ÙˆØ± Ù¾Ø§Ø³Ù¾ÙˆØ±Ù¹ Û Û’ØŸ",
+          "audioText": "Good morning. Do you have your boarding pass and passport?"
+        },
+        {
+          "speaker": "Traveler",
+          "avatar": "T",
+          "english": "Yes, I have both documents right here in my pouch.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºØŒ Ù…ÛŒØ±Û’ Ù¾Ø§Ø³ ÛŒÛ Ø§Úº Ù¾Ø§Ø¤Ú† Ù…ÛŒÚº Ø¯ÙˆÙ†ÙˆÚº Ø¯Ø³ØªØ§ÙˆÛŒØ²Ø§Øª Ù…ÙˆØ¬ÙˆØ¯ Û ÛŒÚºÛ”",
+          "audioText": "Yes, I have both documents right here in my pouch."
+        },
+        {
+          "speaker": "Officer",
+          "avatar": "O",
+          "english": "Does your companion have his visa copy?",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ú©Û’ Ø³Ø§ØªÚ¾ÛŒ Ú©Û’ Ù¾Ø§Ø³ Ø§Ù¾Ù†Û’ ÙˆÛŒØ²Û’ Ú©ÛŒ Ú©Ø§Ù¾ÛŒ Û Û’ØŸ",
+          "audioText": "Does your companion have his visa copy?"
+        },
+        {
+          "speaker": "Traveler",
+          "avatar": "T",
+          "english": "Yes, he has all his papers in his backpack.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºØŒ Ø§Ø³ Ú©Û’ Ø³Ø§Ø±Û’ Ú©Ø§ØºØ°Ø§Øª Ø§Ø³ Ú©Û’ Ø¨Ø³ØªÛ’ Ù…ÛŒÚº Û ÛŒÚºÛ”",
+          "audioText": "Yes, he has all his papers in his backpack."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l1-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u4-l1-1",
+          "type": "mcq",
+          "skillTag": "have-has",
+          "prompt": "Choose the correct form: 'Ali _____ a new smartphone.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "has"
+            },
+            {
+              "id": "opt-2",
+              "text": "have"
+            },
+            {
+              "id": "opt-3",
+              "text": "having"
+            },
+            {
+              "id": "opt-4",
+              "text": "haves"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Ali' is third-person singular (he), requiring 'has'.",
+          "urduExplanation": "'Ali' ÙˆØ§Ø­Ø¯ ØºØ§Ø¦Ø¨ (he) Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'has' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "ex-a1-u4-l1-2",
+          "type": "mcq",
+          "skillTag": "have-has",
+          "prompt": "Choose the correct negative sentence:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "She doesn't has a bicycle."
+            },
+            {
+              "id": "opt-2",
+              "text": "She doesn't have a bicycle."
+            },
+            {
+              "id": "opt-3",
+              "text": "She don't have a bicycle."
+            },
+            {
+              "id": "opt-4",
+              "text": "She has not a bicycle."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "After 'doesn't', always use the base form 'have': 'She doesn't have a bicycle'.",
+          "urduExplanation": "'doesn't' Ú©Û’ Ø¨Ø¹Ø¯ Û Ù…ÛŒØ´Û  base verb 'have' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u4-l1-3",
+          "type": "fill_blank",
+          "skillTag": "have-has",
+          "prompt": "Complete with 'have' or 'has': 'We _____ two tickets for the final match.'",
+          "correctAnswer": "have",
+          "explanation": "Subject pronoun 'We' takes 'have'.",
+          "urduExplanation": "'We' Ú©Û’ Ø³Ø§ØªÚ¾ 'have' Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u4-l1-4",
+          "type": "fill_blank",
+          "skillTag": "have-has",
+          "prompt": "Complete with 'have' or 'has': 'He _____ brown eyes and dark hair.'",
+          "correctAnswer": "has",
+          "explanation": "'He' takes 'has' to describe physical characteristics.",
+          "urduExplanation": "'He' Ú©Û’ Ø³Ø§ØªÚ¾ 'has' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u4-l1-5",
+          "type": "order_sentence",
+          "skillTag": "have-has",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "I",
+            "have",
+            "a",
+            "valid",
+            "Pakistani",
+            "passport",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (I) + verb (have) + article + adjectives + noun (passport).",
+          "urduExplanation": "I have a valid Pakistani passport."
+        },
+        {
+          "id": "ex-a1-u4-l1-6",
+          "type": "order_sentence",
+          "skillTag": "have-has",
+          "prompt": "Rearrange the words to form a correct question:",
+          "sentenceTokens": [
+            "Do",
+            "you",
+            "have",
+            "an",
+            "extra",
+            "ticket",
+            "?"
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Auxiliary (Do) + subject (you) + base verb (have) + noun phrase (an extra ticket)?",
+          "urduExplanation": "Do you have an extra ticket?"
+        },
+        {
+          "id": "ex-a1-u4-l1-7",
+          "type": "match_pairs",
+          "skillTag": "have-has",
+          "prompt": "Match the subject pronoun with the correct form of have/has:",
+          "pairs": [
+            {
+              "left": "They",
+              "right": "have"
+            },
+            {
+              "left": "She",
+              "right": "has"
+            },
+            {
+              "left": "You",
+              "right": "have"
+            },
+            {
+              "left": "He",
+              "right": "has"
+            }
+          ],
+          "explanation": "Have/has forms correctly matched with subject pronouns.",
+          "urduExplanation": "Ù Ø§Ø¹Ù„ Ú©Ùˆ have ÛŒØ§ has Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l1-8",
+          "type": "error_correction",
+          "skillTag": "have-has",
+          "prompt": "Find and correct the mistake: 'He doesn't has his student card.'",
+          "correctAnswer": "He doesn't have his student card.",
+          "explanation": "Always use base 'have' after auxiliary 'doesn't': 'He doesn't have'.",
+          "urduExplanation": "'doesn't has' ØºÙ„Ø· Û Û’ØŒ 'doesn't have' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l1-9",
+          "type": "error_correction",
+          "skillTag": "have-has",
+          "prompt": "Find and correct the mistake: 'We has three rooms in our apartment.'",
+          "correctAnswer": "We have three rooms in our apartment.",
+          "explanation": "'We' is plural and takes 'have', not 'has'.",
+          "urduExplanation": "'We' Ú©Û’ Ø³Ø§ØªÚ¾ 'have' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u4-l1-10",
+          "type": "true_false",
+          "skillTag": "have-has",
+          "prompt": "The negative of 'She has a pen' is 'She doesn't has a pen'. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. The correct negative is 'She doesn't have a pen'.",
+          "urduExplanation": "ØºÙ„Ø·Û” ØµØ­ÛŒØ­ Ù…Ù†Ù ÛŒ 'She doesn't have a pen' Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l1-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u4-l1-1",
+          "type": "mcq",
+          "skillTag": "have-has",
+          "prompt": "Which sentence correctly expresses possession?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "He haves a fast car."
+            },
+            {
+              "id": "opt-2",
+              "text": "He has a fast car."
+            },
+            {
+              "id": "opt-3",
+              "text": "He have a fast car."
+            },
+            {
+              "id": "opt-4",
+              "text": "He is having a car habit."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'He has a fast car' correctly conjugates third-person singular possession.",
+          "urduExplanation": "'He has a fast car' Ø¨Ø§Ù„Ú©Ù„ Ø¯Ø±Ø³Øª Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u4-l1-2",
+          "type": "mcq",
+          "skillTag": "have-has",
+          "prompt": "Complete the sentence: 'Tariq and Asad _____ three computers between them.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "has"
+            },
+            {
+              "id": "opt-2",
+              "text": "owns"
+            },
+            {
+              "id": "opt-3",
+              "text": "have"
+            },
+            {
+              "id": "opt-4",
+              "text": "is have"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'Tariq and Asad' make a plural subject (they), requiring 'have'.",
+          "urduExplanation": "Ø¯Ùˆ Ù†Ø§Ù… (Ø¬Ù…Ø¹ Ù Ø§Ø¹Ù„) Ú©Û’ Ù„ÛŒÛ’ 'have' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u4-l1-3",
+          "type": "mcq",
+          "skillTag": "have-has",
+          "prompt": "What is the correct negative for 'My uncle has a pet parrot'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "My uncle don't have a pet parrot."
+            },
+            {
+              "id": "opt-2",
+              "text": "My uncle doesn't has a pet parrot."
+            },
+            {
+              "id": "opt-3",
+              "text": "My uncle hasn't a pet parrot."
+            },
+            {
+              "id": "opt-4",
+              "text": "My uncle doesn't have a pet parrot."
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'doesn't have' correctly pairs the singular auxiliary with base verb 'have'.",
+          "urduExplanation": "'doesn't have' Ø¨Ø§Ù„Ú©Ù„ ØµØ­ÛŒØ­ Ù…Ù†Ù ÛŒ ØµÙˆØ±Øª Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u4-l1-4",
+          "type": "mcq",
+          "skillTag": "have-has",
+          "prompt": "Complete the question: '_____ she have a spare notebook?'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Does"
+            },
+            {
+              "id": "opt-2",
+              "text": "Do"
+            },
+            {
+              "id": "opt-3",
+              "text": "Has"
+            },
+            {
+              "id": "opt-4",
+              "text": "Is"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Does' is the required auxiliary for third-person singular questions with 'have'.",
+          "urduExplanation": "'She' Ú©Û’ Ø³ÙˆØ§Ù„ Ù…ÛŒÚº 'Does' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u4-l1-5",
+          "type": "mcq",
+          "skillTag": "have-has",
+          "prompt": "Which pair is matched correctly?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "I - has"
+            },
+            {
+              "id": "opt-2",
+              "text": "She - have"
+            },
+            {
+              "id": "opt-3",
+              "text": "We - has"
+            },
+            {
+              "id": "opt-4",
+              "text": "They - have"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'They' correctly pairs with 'have'.",
+          "urduExplanation": "'They' Ú©Û’ Ø³Ø§ØªÚ¾ 'have' Ø¯Ø±Ø³Øª Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l1-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Expressing possession takeaways:",
+      "summaryPoints": [
+        "Use 'have' with I, you, we, they (I have a passport).",
+        "Use 'has' with he, she, it (She has two sisters).",
+        "Form negatives with don't have (I, you, we, they) and doesn't have (he, she, it).",
+        "NEVER say 'doesn't has' or 'he haves'.",
+        "Ask questions with 'Do you have...?' or 'Does she have...?'."
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l1-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Ù…Ù„Ú©ÛŒØª (Possession) Ø¸Ø§Û Ø± Ú©Ø±Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Û Ù… **'Ú©Û’ Ù¾Ø§Ø³ Û Û’'** Ú©Ø§ Ù…Ø­Ø§ÙˆØ±Û  Ø§Ø³ØªØ¹Ù…Ø§Ù„ Ú©Ø±ØªÛ’ Û ÛŒÚº:\n- 'Ù…ÛŒØ±Û’ Ù¾Ø§Ø³ Ú¯Ø§Ú‘ÛŒ Û Û’'\n- 'Ø§Ø³ Ú©Û’ Ù¾Ø§Ø³ Ù¾Ø§Ø³Ù¾ÙˆØ±Ù¹ Û Û’'\n\nØ§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ù…Ø§Ù„Ú© Ø®ÙˆØ¯ Ø¬Ù…Ù„Û’ Ú©Ø§ Ù Ø§Ø¹Ù„ (Subject) Ø¨Ù†ØªØ§ Û Û’ Ø§ÙˆØ± Ù Ø¹Ù„ **have** ÛŒØ§ **has** Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’:\n- **I have a car**\n- **She has a passport**\n\n**Ø§Û Ù… ØºÙ„Ø·ÛŒ:** Ù…Ù†Ù ÛŒ Ø¨Ù†Ø§ØªÛ’ ÙˆÙ‚Øª 'doesn't has' Ú©Ø¨Ú¾ÛŒ Ù†Û  Ú©Û ÛŒÚºÛ” Û Ù…ÛŒØ´Û  **'doesn't have'** Ø¨ÙˆÙ„ÛŒÚºÛ”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

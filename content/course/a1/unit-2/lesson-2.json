@@ -1,0 +1,628 @@
+{
+  "id": "eng-a1-u2-l2",
+  "level": "A1",
+  "unit": "unit-2",
+  "order": 2,
+  "title": "Indefinite Articles: A vs. An",
+  "description": "Master the rules of sound-based indefinite articles (a vs an) before singular countable nouns.",
+  "objectives": [
+    "Distinguish between consonant sounds and vowel sounds in English pronunciation",
+    "Use 'a' before consonant sounds and 'an' before vowel sounds correctly",
+    "Identify tricky sound-based words like 'an hour', 'a university', and 'an honest person'"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u2-l1"
+  ],
+  "skillTags": [
+    "articles",
+    "phonetics",
+    "determiners"
+  ],
+  "vocabularyList": [
+    {
+      "word": "apple",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆÃ¦pl/",
+      "definition": "A round fruit with red, green, or yellow skin and firm white flesh.",
+      "urduMeaning": "Ø³ÛŒØ¨",
+      "exampleSentence": "She eats an apple every afternoon."
+    },
+    {
+      "word": "orange",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆÉ’rÉªndÊ’/",
+      "definition": "A round juicy citrus fruit with a tough bright reddish-yellow rind.",
+      "urduMeaning": "Ù…Ø§Ù„Ù¹Ø§ / Ú©Ù†Ùˆ",
+      "exampleSentence": "He ordered an orange juice at breakfast."
+    },
+    {
+      "word": "umbrella",
+      "partOfSpeech": "noun",
+      "phonetic": "/ÊŒmËˆbrelÉ™/",
+      "definition": "A folding canopy supported by ribs, used for protection against rain.",
+      "urduMeaning": "Ú†Ú¾ØªØ±ÛŒ",
+      "exampleSentence": "Take an umbrella because it might rain."
+    },
+    {
+      "word": "university",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËŒjuË nÉªËˆvÉœË sÉ™ti/",
+      "definition": "A high-level educational institution offering degrees.",
+      "urduMeaning": "ÛŒÙˆÙ†ÛŒÙˆØ±Ø³Ù¹ÛŒ",
+      "exampleSentence": "Oxford is a famous ancient university."
+    },
+    {
+      "word": "hour",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆaÊŠÉ™r/",
+      "definition": "A period of time equal to sixty minutes.",
+      "urduMeaning": "Ú¯Ú¾Ù†Ù¹Û ",
+      "exampleSentence": "The exam lasts for an hour."
+    },
+    {
+      "word": "honest",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ËˆÉ’nÉªst/",
+      "definition": "Free of deceit; truthful and sincere.",
+      "urduMeaning": "Ø§ÛŒÙ…Ø§Ù†Ø¯Ø§Ø±",
+      "exampleSentence": "He is an honest police officer."
+    },
+    {
+      "word": "doctor",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆdÉ’ktÉ™r/",
+      "definition": "A qualified medical practitioner.",
+      "urduMeaning": "ÚˆØ§Ú©Ù¹Ø±",
+      "exampleSentence": "She wants to become a doctor."
+    },
+    {
+      "word": "student",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆstjuË dÉ™nt/",
+      "definition": "A person formally engaged in learning.",
+      "urduMeaning": "Ø·Ø§Ù„Ø¨ Ø¹Ù„Ù…",
+      "exampleSentence": "Bilal is a bright university student."
+    },
+    {
+      "word": "car",
+      "partOfSpeech": "noun",
+      "phonetic": "/kÉ‘Ë r/",
+      "definition": "A road vehicle powered by an engine, with four wheels.",
+      "urduMeaning": "Ú¯Ø§Ú‘ÛŒ",
+      "exampleSentence": "My uncle drives a blue car."
+    },
+    {
+      "word": "hotel",
+      "partOfSpeech": "noun",
+      "phonetic": "/hÉ™ÊŠËˆtel/",
+      "definition": "An establishment providing accommodation and meals for travelers.",
+      "urduMeaning": "Û ÙˆÙ¹Ù„",
+      "exampleSentence": "They stayed at a quiet hotel near the lake."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u2-l2-1",
+      "type": "explain",
+      "title": "The Sound Rule for A vs. An",
+      "content": "In English, **a** and **an** are indefinite articles. We use them **only before singular countable nouns** when mentioning something general or for the first time.\n\n### The Cardinal Rule\nThe choice between **a** and **an** is determined by **SOUND**, not by the written letter:\n- Use **a** before a **consonant sound** (e.g. /b/, /d/, /k/, /j/).\n- Use **an** before a **vowel sound** (e.g. /Ã¦/, /e/, /Éª/, /É’/, /ÊŒ/, /aÊŠ/).",
+      "tables": [
+        {
+          "title": "Sound-Based Comparison",
+          "headers": [
+            "Article",
+            "Sound Type",
+            "Regular Examples",
+            "Surprising Examples",
+            "Reason"
+          ],
+          "rows": [
+            [
+              "A",
+              "Consonant Sound",
+              "a book, a doctor, a car",
+              "a university, a European country",
+              "Begins with the consonant /j/ sound ('yoo-ni-ver-si-ty')."
+            ],
+            [
+              "An",
+              "Vowel Sound",
+              "an apple, an egg, an island",
+              "an hour, an honest man, an MBA",
+              "'H' is silent (/aÊŠÉ™r/, /ËˆÉ’nÉªst/); 'M' starts with /e/ ('em-bee-ay')."
+            ]
+          ]
+        },
+        {
+          "title": "Summary of Common Trouble Words",
+          "headers": [
+            "Word",
+            "Spelling Starts With",
+            "Pronunciation Sound",
+            "Correct Article",
+            "Why"
+          ],
+          "rows": [
+            [
+              "university",
+              "Vowel (u)",
+              "Consonant /j/",
+              "a university",
+              "Pronounced like 'yoo'."
+            ],
+            [
+              "umbrella",
+              "Vowel (u)",
+              "Vowel /ÊŒ/",
+              "an umbrella",
+              "Pronounced like 'uh'."
+            ],
+            [
+              "hour",
+              "Consonant (h)",
+              "Vowel /aÊŠ/",
+              "an hour",
+              "Silent 'h'."
+            ],
+            [
+              "house",
+              "Consonant (h)",
+              "Consonant /h/",
+              "a house",
+              "Pronounced 'h' sound."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Say It Out Loud",
+          "text": "If your tongue or lips catch when saying the word, it's a consonant sound (use 'a'). If your throat is open and vowels flow smoothly, use 'an' to create a smooth bridge."
+        },
+        {
+          "type": "warning",
+          "title": "Never Use with Plural or Uncountable Nouns",
+          "text": "Never say 'a books' or 'a water'. Articles 'a' and 'an' literally mean 'one'!"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l2-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "She bought an umbrella for the rainy season.",
+          "phonetic": "/ÊƒiË  bÉ”Ë t É™n ÊŒmËˆbrelÉ™ fÉ”Ë r Ã°É™ ËˆreÉªni ËˆsiË zn/",
+          "urdu": "Ø§Ø³ Ù†Û’ Ø¨Ø§Ø±Ø´ Ú©Û’ Ù…ÙˆØ³Ù… Ú©Û’ Ù„ÛŒÛ’ Ø§ÛŒÚ© Ú†Ú¾ØªØ±ÛŒ Ø®Ø±ÛŒØ¯ÛŒÛ”",
+          "audioText": "She bought an umbrella for the rainy season."
+        },
+        {
+          "english": "He waited for an hour at the bus station.",
+          "phonetic": "/hiË  ËˆweÉªtÉªd fÉ”Ë r É™n ËˆaÊŠÉ™r Ã¦t Ã°É™ bÊŒs ËˆsteÉªÊƒn/",
+          "urdu": "Ø§Ø³ Ù†Û’ Ø¨Ø³ Ø§Ø³Ù¹ÛŒØ´Ù† Ù¾Ø± Ø§ÛŒÚ© Ú¯Ú¾Ù†Ù¹Û  Ø§Ù†ØªØ¸Ø§Ø± Ú©ÛŒØ§Û”",
+          "audioText": "He waited for an hour at the bus station."
+        },
+        {
+          "english": "Lahore is an ancient and vibrant city.",
+          "phonetic": "/lÉ™ËˆhÉ”Ë r Éªz É™n ËˆeÉªnÊƒÉ™nt Ã¦nd ËˆvaÉªbrÉ™nt ËˆsÉªti/",
+          "urdu": "Ù„Ø§Û ÙˆØ± Ø§ÛŒÚ© Ù‚Ø¯ÛŒÙ… Ø§ÙˆØ± Ø²Ù†Ø¯Û  Ø¯Ù„ Ø´Û Ø± Û Û’Û”",
+          "audioText": "Lahore is an ancient and vibrant city."
+        },
+        {
+          "english": "My brother studies at a university in Islamabad.",
+          "phonetic": "/maÉª ËˆbrÊŒÃ°É™r ËˆstÊŒdiz Ã¦t É™ ËŒjuË nÉªËˆvÉœË sÉ™ti Éªn ÉªsËˆlÉ‘Ë mÉ™bÉ‘Ë d/",
+          "urdu": "Ù…ÛŒØ±Ø§ Ø¨ÚÚ¾Ø§Ø¦ÛŒ Ø§Ø³Ù„Ø§Ù… Ø¢Ø¨Ø§Ø¯ Ú©ÛŒ Ø§ÛŒÚ© ÛŒÙˆÙ†ÛŒÙˆØ±Ø³Ù¹ÛŒ Ù…ÛŒÚº Ù¾Ú‘Ú¾ØªØ§ Û Û’Û”",
+          "audioText": "My brother studies at a university in Islamabad."
+        },
+        {
+          "english": "She is an honest and hardworking doctor.",
+          "phonetic": "/ÊƒiË  Éªz É™n ËˆÉ’nÉªst Ã¦nd ËˆhÉ‘Ë dËŒwÉœË kÉªÅ‹ ËˆdÉ’ktÉ™r/",
+          "urdu": "ÙˆÛ  Ø§ÛŒÚ© Ø§ÛŒÙ…Ø§Ù†Ø¯Ø§Ø± Ø§ÙˆØ± Ù…Ø­Ù†ØªÛŒ ÚˆØ§Ú©Ù¹Ø± Û ÛŒÚºÛ”",
+          "audioText": "She is an honest and hardworking doctor."
+        },
+        {
+          "english": "We booked a room at a clean hotel downtown.",
+          "phonetic": "/wiË  bÊŠkt É™ ruË m Ã¦t É™ kliË n hÉ™ÊŠËˆtel ËŒdaÊŠnËˆtaÊŠn/",
+          "urdu": "Û Ù… Ù†Û’ Ø´Û Ø± Ú©Û’ ÙˆØ³Ø· Ù…ÛŒÚº Ø§ÛŒÚ© ØµØ§Ù  Û ÙˆÙ¹Ù„ Ù…ÛŒÚº Ú©Ù…Ø±Û  Ø¨Ú© Ú©ÛŒØ§Û”",
+          "audioText": "We booked a room at a clean hotel downtown."
+        },
+        {
+          "english": "Would you like an apple or an orange?",
+          "phonetic": "/wÊŠd juË  laÉªk É™n ËˆÃ¦pl É”Ë r É™n ËˆÉ’rÉªndÊ’/",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ø³ÛŒØ¨ Ù¾Ø³Ù†Ø¯ Ú©Ø±ÛŒÚº Ú¯Û’ ÛŒØ§ Ù…Ø§Ù„Ù¹Ø§ØŸ",
+          "audioText": "Would you like an apple or an orange?"
+        },
+        {
+          "english": "He drives a new car to work every day.",
+          "phonetic": "/hiË  draÉªvz É™ njuË  kÉ‘Ë r tuË  wÉœË k Ëˆevri deÉª/",
+          "urdu": "ÙˆÛ  Û Ø± Ø±ÙˆØ² Ú©Ø§Ù… Ù¾Ø± Ø§ÛŒÚ© Ù†Ø¦ÛŒ Ú¯Ø§Ú‘ÛŒ Ú†Ù„Ø§ Ú©Ø± Ø¬Ø§ØªØ§ Û Û’Û”",
+          "audioText": "He drives a new car to work every day."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l2-3",
+      "type": "dialogue",
+      "title": "At the University Information Desk",
+      "dialogue": [
+        {
+          "speaker": "Adnan",
+          "avatar": "A",
+          "english": "Excuse me, is this an information desk?",
+          "urdu": "Ù…Ø¹Ø§Ù  Ú©ÛŒØ¬Ø¦Û’ Ú¯Ø§ØŒ Ú©ÛŒØ§ ÛŒÛ  Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ú©ÛŒ Ù…ÛŒØ² Û Û’ØŸ",
+          "audioText": "Excuse me, is this an information desk?"
+        },
+        {
+          "speaker": "Clerk",
+          "avatar": "C",
+          "english": "Yes, it is! Are you a new university student?",
+          "urdu": "Ø¬ÛŒ Û Ø§Úº! Ú©ÛŒØ§ Ø¢Ù¾ ÛŒÙˆÙ†ÛŒÙˆØ±Ø³Ù¹ÛŒ Ú©Û’ Ù†Ø¦Û’ Ø·Ø§Ù„Ø¨ Ø¹Ù„Ù… Û ÛŒÚºØŸ",
+          "audioText": "Yes, it is! Are you a new university student?"
+        },
+        {
+          "speaker": "Adnan",
+          "avatar": "A",
+          "english": "Yes, I am. I need a campus map and an ID card application.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºÛ” Ù…Úrandom Û Ù…ÛŒÚº Ú©ÛŒÙ…Ù¾Ø³ Ú©Ø§ Ù†Ù‚Ø´Û  Ø§ÙˆØ± Ø¢Ø¦ÛŒ ÚˆÛŒ Ú©Ø§Ø±Úˆ Ú©ÛŒ Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ú†Ø§Û ÛŒÛ’Û”",
+          "audioText": "Yes, I am. I need a campus map and an ID card application."
+        },
+        {
+          "speaker": "Clerk",
+          "avatar": "C",
+          "english": "Here is a map. Please wait an hour for your official card.",
+          "urdu": "ÛŒÛ  Ø±Û Ø§ Ù†Ù‚Ø´Û Û” Ø¨Ø±Ø§Û  Ú©Ø±Ù… Ø§Ù¾Ù†Û’ Ø³Ø±Ú©Ø§Ø±ÛŒ Ú©Ø§Ø±Úˆ Ú©Û’ Ù„ÛŒÛ’ Ø§ÛŒÚ© Ú¯Ú¾Ù†Ù¹Û  Ø§Ù†ØªØ¸Ø§Ø± Ú©ÛŒØ¬ÛŒÛ’Û”",
+          "audioText": "Here is a map. Please wait an hour for your official card."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l2-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u2-l2-1",
+          "type": "mcq",
+          "skillTag": "articles",
+          "prompt": "Choose the correct article: 'She has _____ interview at ten o'clock.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "the a"
+            },
+            {
+              "id": "opt-2",
+              "text": "a"
+            },
+            {
+              "id": "opt-3",
+              "text": "an"
+            },
+            {
+              "id": "opt-4",
+              "text": "no article"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'Interview' begins with the short vowel sound /Éª/, so we use 'an'.",
+          "urduExplanation": "'interview' Ú©ÛŒ Ø§Ø¨ØªØ¯Ø§ vowel sound (/Éª/) Ø³Û’ Û ÙˆØªÛŒ Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'an' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "ex-a1-u2-l2-2",
+          "type": "mcq",
+          "skillTag": "articles",
+          "prompt": "Which phrase uses 'a' or 'an' correctly?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "an university"
+            },
+            {
+              "id": "opt-2",
+              "text": "a honest person"
+            },
+            {
+              "id": "opt-3",
+              "text": "an house"
+            },
+            {
+              "id": "opt-4",
+              "text": "a university"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'University' begins with a consonant /j/ sound ('yoo'), so it correctly takes 'a'.",
+          "urduExplanation": "'university' Ù…ÛŒÚº Ø´Ø±ÙˆØ¹ Ú©ÛŒ Ø¢ÙˆØ§Ø² 'yoo' (consonant) Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'a university' ØµØ­ÛŒØ­ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l2-3",
+          "type": "fill_blank",
+          "skillTag": "articles",
+          "prompt": "Fill in the blank with 'a' or 'an': 'We arrived half _____ hour ago.'",
+          "correctAnswer": "an",
+          "explanation": "'Hour' has a silent 'h' and starts with the vowel diphthong /aÊŠ/, requiring 'an'.",
+          "urduExplanation": "'hour' Ù…ÛŒÚº 'h' Ø®Ø§Ù…ÙˆØ´ Û Û’ Ø§ÙˆØ± Ø¢ÙˆØ§Ø² vowel Ø³Û’ Ø´Ø±ÙˆØ¹ Û ÙˆØªÛŒ Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'an' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l2-4",
+          "type": "fill_blank",
+          "skillTag": "articles",
+          "prompt": "Fill in the blank with 'a' or 'an': 'He wants to become _____ pilot.'",
+          "correctAnswer": "a",
+          "explanation": "'Pilot' begins with the consonant sound /p/, so we use 'a'.",
+          "urduExplanation": "'pilot' Ú©Ø§ Ù¾Û Ù„Ø§ Ø­Ø±Ù  consonant sound (/p/) Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'a' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l2-5",
+          "type": "order_sentence",
+          "skillTag": "articles",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "She",
+            "is",
+            "an",
+            "honest",
+            "student",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Subject (She) + verb (is) + article phrase (an honest student).",
+          "urduExplanation": "Ù Ø§Ø¹Ù„ + Ù Ø¹Ù„ + Ù…Ù Ø¹ÙˆÙ„ Ú©Û’ Ø³Ø§ØªÚ¾ Ø¬Ù…Ù„Û  Ø¨Ù†Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l2-6",
+          "type": "order_sentence",
+          "skillTag": "articles",
+          "prompt": "Rearrange the words to make a correct sentence:",
+          "sentenceTokens": [
+            "I",
+            "need",
+            "an",
+            "umbrella",
+            "today",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Subject (I) + verb (need) + object with article (an umbrella) + time adverb (today).",
+          "urduExplanation": "Ù Ø§Ø¹Ù„ + Ù Ø¹Ù„ + an umbrella + time Ø¨Ø§Ù„ØªØ±ØªÛŒØ¨ Ø±Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l2-7",
+          "type": "match_pairs",
+          "skillTag": "articles",
+          "prompt": "Match each noun with its correct indefinite article:",
+          "pairs": [
+            {
+              "left": "orange",
+              "right": "an"
+            },
+            {
+              "left": "university",
+              "right": "a"
+            },
+            {
+              "left": "hour",
+              "right": "an"
+            },
+            {
+              "left": "doctor",
+              "right": "a"
+            }
+          ],
+          "explanation": "Sound rules correctly matched to 'a' or 'an'.",
+          "urduExplanation": "ØµØ­ÛŒØ­ article Ú©Ùˆ Ù„Ù Ø¸ Ú©Û’ Ø³Ø§ØªÚ¾ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l2-8",
+          "type": "error_correction",
+          "skillTag": "articles",
+          "prompt": "Find and correct the mistake: 'He has an unique talent for painting.'",
+          "correctAnswer": "He has a unique talent for painting.",
+          "explanation": "'Unique' begins with the consonant /j/ sound ('yoo-neek'), so it must take 'a', not 'an'.",
+          "urduExplanation": "'unique' Ú©ÛŒ Ø¢ÙˆØ§Ø² 'yoo' (consonant) Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'a unique' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l2-9",
+          "type": "error_correction",
+          "skillTag": "articles",
+          "prompt": "Find and correct the mistake: 'I am reading a interesting book.'",
+          "correctAnswer": "I am reading an interesting book.",
+          "explanation": "'Interesting' begins with the vowel sound /Éª/, requiring 'an'.",
+          "urduExplanation": "'interesting' vowel sound Ø³Û’ Ø´Ø±ÙˆØ¹ Û ÙˆØªØ§ Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'an interesting' Û ÙˆÚ¯Ø§Û”"
+        },
+        {
+          "id": "ex-a1-u2-l2-10",
+          "type": "true_false",
+          "skillTag": "articles",
+          "prompt": "The phrase 'an European country' is grammatically correct. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. 'European' begins with the consonant /j/ sound ('yoo-ro-pe-an'), so it takes 'a European country'.",
+          "urduExplanation": "ØºÙ„Ø·Û” 'European' Ú©ÛŒ Ø¢ÙˆØ§Ø² /j/ (yoo) Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'a European' Ø¢ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l2-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u2-l2-1",
+          "type": "mcq",
+          "skillTag": "articles",
+          "prompt": "Which noun takes 'an' instead of 'a'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "hospital"
+            },
+            {
+              "id": "opt-2",
+              "text": "hotel"
+            },
+            {
+              "id": "opt-3",
+              "text": "honest person"
+            },
+            {
+              "id": "opt-4",
+              "text": "helicopter"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "In 'honest person', the 'h' is silent and starts with the vowel sound /É’/, so it takes 'an'.",
+          "urduExplanation": "'honest' Ù…ÛŒÚº 'h' Ø®Ø§Ù…ÙˆØ´ Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'an' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u2-l2-2",
+          "type": "mcq",
+          "skillTag": "articles",
+          "prompt": "Complete the sentence: 'She studies at _____ European academy.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "an"
+            },
+            {
+              "id": "opt-2",
+              "text": "a"
+            },
+            {
+              "id": "opt-3",
+              "text": "any"
+            },
+            {
+              "id": "opt-4",
+              "text": "the a"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'European' starts with the consonant /j/ sound ('yoo'), so 'a' is correct.",
+          "urduExplanation": "'European' Ú©ÛŒ Ø¢ÙˆØ§Ø² 'yoo' Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'a' Ù„Ú¯Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u2-l2-3",
+          "type": "mcq",
+          "skillTag": "articles",
+          "prompt": "Why do we say 'an umbrella' but 'a university'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Because university is a longer word"
+            },
+            {
+              "id": "opt-2",
+              "text": "Because umbrella is an object and university is a place"
+            },
+            {
+              "id": "opt-3",
+              "text": "Because umbrella starts with a vowel sound /ÊŒ/ and university starts with consonant /j/"
+            },
+            {
+              "id": "opt-4",
+              "text": "Because English grammar allows random choice for words starting with u"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "The article depends strictly on sound: /ÊŒ/ is a vowel sound, while /j/ is a consonant sound.",
+          "urduExplanation": "Ú†ÙˆÙ†Ú©Û  umbrella Ú©ÛŒ Ø¢ÙˆØ§Ø² vowel Û Û’ Ø¬Ø¨Ú©Û  university Ú©ÛŒ Ø¢ÙˆØ§Ø² consonant /j/ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u2-l2-4",
+          "type": "mcq",
+          "skillTag": "articles",
+          "prompt": "Which sentence is completely correct?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "He waited for a hour at the station."
+            },
+            {
+              "id": "opt-2",
+              "text": "He waited for an hour at the station."
+            },
+            {
+              "id": "opt-3",
+              "text": "He waited for hour at the station."
+            },
+            {
+              "id": "opt-4",
+              "text": "He waited for one hours at the station."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'An hour' correctly pairs the indefinite article with the silent 'h' noun.",
+          "urduExplanation": "'An hour' Ø¨Ø§Ù„Ú©Ù„ Ø¯Ø±Ø³Øª Ø¬Ù…Ù„Û  Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u2-l2-5",
+          "type": "mcq",
+          "skillTag": "articles",
+          "prompt": "Which word requires 'an' before it?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "engineer"
+            },
+            {
+              "id": "opt-2",
+              "text": "pilot"
+            },
+            {
+              "id": "opt-3",
+              "text": "lawyer"
+            },
+            {
+              "id": "opt-4",
+              "text": "dentist"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Engineer' begins with the vowel sound /e/, requiring 'an'.",
+          "urduExplanation": "'engineer' vowel sound Ø³Û’ Ø´Ø±ÙˆØ¹ Û ÙˆØªØ§ Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'an' Ù„Ú¯ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l2-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Key takeaways regarding indefinite articles:",
+      "summaryPoints": [
+        "Use 'a' and 'an' ONLY with singular countable nouns.",
+        "Choose 'a' before consonant SOUNDS (a cat, a doctor, a university).",
+        "Choose 'an' before vowel SOUNDS (an apple, an egg, an hour).",
+        "Remember silent 'h' words take 'an' (an hour, an honest man).",
+        "Remember 'u' words that sound like 'yoo' take 'a' (a university, a unique style)."
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l2-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ø²Ø¨Ø§Ù† Ù…ÛŒÚº 'a' ÛŒØ§ 'an' Ø¬ÛŒØ³Ø§ Ú©ÙˆØ¦ÛŒ Article Ù†Û ÛŒÚº Û ÙˆØªØ§Û” Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± Ú©Û ØªÛ’ Û ÛŒÚº: 'Ù…ÛŒÚº Ù†Û’ Ø³ÛŒØ¨ Ú©Ú¾Ø§ÛŒØ§' ÛŒØ§ 'ÙˆÛ  ÚˆØ§Ú©Ù¹Ø± Û Û’'Û”\n\nÙ„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ÙˆØ§Ø­Ø¯ Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ Ø§Ø³Ù… (Singular Countable Noun) Ø³Û’ Ù¾Û Ù„Û’ **a** ÛŒØ§ **an** Ù„Ú¯Ø§Ù†Ø§ Ù„Ø§Ø²Ù…ÛŒ Û Û’Û” 'I ate apple' Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø¨Ù„Ú©Ù„ ØºÙ„Ø· Û Û’ØŒ ØµØ­ÛŒØ­ Ø¬Ù…Ù„Û  **'I ate an apple'** Û ÙˆÚ¯Ø§Û” Ø§Ø³ Ø¨Ø§Øª Ú©Ø§ Ø®Ø§Øµ Ø®ÛŒØ§Ù„ Ø±Ú©Ú¾ÛŒÚº Ú©Û  Ù ÛŒØµÙ„Û  Ø­Ø±Ù  Ú©Û’ Ù„Ú©Ú¾Ù†Û’ Ù¾Ø± Ù†Û ÛŒÚºØŒ Ø¨Ù„Ú©Û  **Ø¨ÙˆÙ„Ù†Û’ Ú©ÛŒ Ø¢ÙˆØ§Ø² (Sound)** Ù¾Ø± Û ÙˆØªØ§ Û Û’Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

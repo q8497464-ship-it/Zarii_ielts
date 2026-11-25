@@ -85,20 +85,38 @@ export const WhatToDoNextCard: React.FC<WhatToDoNextCardProps> = ({
         navigate(`/practice/${module}`);
       },
     },
-    {
-      id: 'action-vocab-or-retake',
-      title: isTargetMet ? 'Solidify Strategy with Spaced Repetition' : 'Expand Academic Vocabulary & Collocations',
-      description: isTargetMet
-        ? 'Review academic vocabulary flashcards (SM-2 spaced repetition) to ensure retention until your exam date.'
-        : 'Save unfamiliar words from this test into your personal word bank and practice flashcards.',
-      buttonText: 'Open Word Bank & Flashcards',
-      badge: 'Academic Vocab',
-      badgeVariant: 'primary',
-      icon: <Layers className="w-4 h-4 text-brand-600 dark:text-brand-400" />,
-      onClick: () => {
-        navigate('/vocab/flashcards');
-      },
-    },
+    ...(currentBand < 6.5 || incorrectCount > 2 || module === 'writing'
+      ? [
+          {
+            id: 'action-cross-track-course-grammar',
+            title: 'Targeted Grammar in English Course',
+            description:
+              'Weak grammar range limits Band scores. Strengthen conditionals, complex sentence structures, and tenses.',
+            buttonText: 'Practise Conditionals: B1 Unit 6',
+            badge: 'English Course Track',
+            badgeVariant: 'secondary' as const,
+            icon: <Sparkles className="w-4 h-4 text-emerald-500" />,
+            onClick: () => {
+              navigate('/app/english/lesson/eng-b1-u6-l1');
+            },
+          },
+        ]
+      : [
+          {
+            id: 'action-vocab-or-retake',
+            title: isTargetMet ? 'Solidify Strategy with Spaced Repetition' : 'Expand Academic Vocabulary & Collocations',
+            description: isTargetMet
+              ? 'Review academic vocabulary flashcards (SM-2 spaced repetition) to ensure retention until your exam date.'
+              : 'Save unfamiliar words from this test into your personal word bank and practice flashcards.',
+            buttonText: 'Open Word Bank & Flashcards',
+            badge: 'Academic Vocab',
+            badgeVariant: 'primary' as const,
+            icon: <Layers className="w-4 h-4 text-brand-600 dark:text-brand-400" />,
+            onClick: () => {
+              navigate('/vocab/flashcards');
+            },
+          },
+        ]),
   ];
 
   return (

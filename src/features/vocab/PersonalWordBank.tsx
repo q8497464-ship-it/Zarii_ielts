@@ -22,6 +22,7 @@ export function PersonalWordBank() {
   const navigate = useNavigate();
 
   const [words, setWords] = useState<VocabProgress[]>([]);
+  const [selectedTrack, setSelectedTrack] = useState<'all' | 'ielts' | 'english'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [showAddModal, setShowAddModal] = useState(false);
 
@@ -88,6 +89,7 @@ export function PersonalWordBank() {
   };
 
   const filtered = words.filter((w) => {
+    if (selectedTrack !== 'all' && (w.track || 'ielts') !== selectedTrack) return false;
     const q = searchQuery.trim().toLowerCase();
     if (!q) return true;
     return (
@@ -130,6 +132,17 @@ export function PersonalWordBank() {
 
       {/* Search & Actions Bar */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+        <select
+          aria-label="Filter by track"
+          value={selectedTrack}
+          onChange={(e) => setSelectedTrack(e.target.value as 'all' | 'ielts' | 'english')}
+          className="text-xs px-3 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-semibold focus:outline-none"
+        >
+          <option value="all">All Tracks</option>
+          <option value="ielts">IELTS Track</option>
+          <option value="english">English Course</option>
+        </select>
+
         <div className="relative flex-1 w-full">
           <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
           <input
@@ -183,6 +196,13 @@ export function PersonalWordBank() {
                       title="Pronounce"
                     >
                       <Volume2 className="w-3.5 h-3.5" />
+                    </button>
+                    <button
+                      onClick={() => navigate(`/app/dictionary/${encodeURIComponent(item.word.toLowerCase())}`)}
+                      className="p-1 rounded text-slate-400 hover:text-[#124F40] dark:hover:text-[#5BB78D]"
+                      title="Lookup in English Dictionary"
+                    >
+                      <BookOpen className="w-3.5 h-3.5" />
                     </button>
                     {item.partOfSpeech && (
                       <span className="text-[11px] text-slate-400 italic">

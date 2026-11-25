@@ -1,0 +1,644 @@
+{
+  "id": "eng-a1-u1-l2",
+  "level": "A1",
+  "unit": "unit-1",
+  "order": 2,
+  "title": "Personal Pronouns & Possessive Adjectives",
+  "description": "Master subject pronouns and show ownership using my, your, his, her, its, our, and their.",
+  "objectives": [
+    "Distinguish subject pronouns (I, you, he...) from possessive adjectives (my, your, his...)",
+    "Express ownership of everyday items accurately",
+    "Avoid confusing contractions with possessives (it's vs. its; you're vs. your)"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [
+    "eng-a1-u1-l1"
+  ],
+  "skillTags": [
+    "pronouns",
+    "possessives",
+    "grammar"
+  ],
+  "vocabularyList": [
+    {
+      "word": "book",
+      "partOfSpeech": "noun",
+      "phonetic": "/bʊk/",
+      "definition": "A written or printed work consisting of pages glued or sewn together.",
+      "urduMeaning": "کتاب",
+      "exampleSentence": "This is my English book."
+    },
+    {
+      "word": "pen",
+      "partOfSpeech": "noun",
+      "phonetic": "/pen/",
+      "definition": "An instrument for writing or drawing with ink.",
+      "urduMeaning": "قلم",
+      "exampleSentence": "Her pen is on the desk."
+    },
+    {
+      "word": "car",
+      "partOfSpeech": "noun",
+      "phonetic": "/kɑːr/",
+      "definition": "A road vehicle powered by an engine.",
+      "urduMeaning": "گاڑی / کار",
+      "exampleSentence": "His car is outside."
+    },
+    {
+      "word": "house",
+      "partOfSpeech": "noun",
+      "phonetic": "/haʊs/",
+      "definition": "A building for human habitation.",
+      "urduMeaning": "گھر / مکان",
+      "exampleSentence": "Our house is near the park."
+    },
+    {
+      "word": "family",
+      "partOfSpeech": "noun",
+      "phonetic": "/ˈfæməli/",
+      "definition": "A group of one or more parents and their children living together.",
+      "urduMeaning": "خاندان / کنبہ",
+      "exampleSentence": "My family lives in Islamabad."
+    },
+    {
+      "word": "phone",
+      "partOfSpeech": "noun",
+      "phonetic": "/fəʊn/",
+      "definition": "A telephone or mobile device.",
+      "urduMeaning": "فون",
+      "exampleSentence": "Your phone is ringing."
+    },
+    {
+      "word": "bag",
+      "partOfSpeech": "noun",
+      "phonetic": "/bæɡ/",
+      "definition": "A container made of flexible material with an opening at the top.",
+      "urduMeaning": "بیگ / بستہ",
+      "exampleSentence": "Their bag is heavy."
+    },
+    {
+      "word": "key",
+      "partOfSpeech": "noun",
+      "phonetic": "/kiː/",
+      "definition": "A small piece of shaped metal used to open a lock.",
+      "urduMeaning": "چابی",
+      "exampleSentence": "This is the car key."
+    },
+    {
+      "word": "desk",
+      "partOfSpeech": "noun",
+      "phonetic": "/desk/",
+      "definition": "A piece of furniture with a flat table-style work surface.",
+      "urduMeaning": "ڈیسک / میز",
+      "exampleSentence": "The laptop is on our desk."
+    },
+    {
+      "word": "room",
+      "partOfSpeech": "noun",
+      "phonetic": "/ruːm/",
+      "definition": "Space that can be occupied in a building.",
+      "urduMeaning": "کمرہ",
+      "exampleSentence": "Its room is clean."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u1-l2-1",
+      "type": "explain",
+      "title": "Subject Pronouns vs. Possessive Adjectives",
+      "content": "A **subject pronoun** performs the action in a sentence (I, you, he, she, it, we, they).\n\nA **possessive adjective** comes before a noun to show who owns or possesses that noun (**my**, **your**, **his**, **her**, **its**, **our**, **their**).",
+      "tables": [
+        {
+          "title": "Pronoun to Possessive Adjective Correspondence",
+          "headers": [
+            "Subject Pronoun",
+            "Possessive Adjective",
+            "Urdu Meaning",
+            "Example Sentence"
+          ],
+          "rows": [
+            [
+              "I",
+              "my",
+              "میرا / میری",
+              "This is my book."
+            ],
+            [
+              "You",
+              "your",
+              "آپ کا / تمہارا",
+              "Is this your pen?"
+            ],
+            [
+              "He",
+              "his",
+              "اس کا (مرد کا)",
+              "His car is blue."
+            ],
+            [
+              "She",
+              "her",
+              "اس کا (عورت کا)",
+              "Her name is Fatima."
+            ],
+            [
+              "It",
+              "its",
+              "اس کا (بے جان/جانور)",
+              "The cat drank its milk."
+            ],
+            [
+              "We",
+              "our",
+              "ہمارا / ہماری",
+              "Our classroom is spacious."
+            ],
+            [
+              "They",
+              "their",
+              "ان کا / ان کی",
+              "Their house is large."
+            ]
+          ]
+        },
+        {
+          "title": "Crucial Distinctions (Sound-Alike Words)",
+          "headers": [
+            "Possessive Adjective",
+            "Contraction with 'To Be'",
+            "How to Test the Difference"
+          ],
+          "rows": [
+            [
+              "its (belonging to it)",
+              "it's (it is)",
+              "If you can replace it with 'it is', use it's."
+            ],
+            [
+              "your (belonging to you)",
+              "you're (you are)",
+              "If you can replace it with 'you are', use you're."
+            ],
+            [
+              "their (belonging to them)",
+              "they're (they are)",
+              "If you can replace it with 'they are', use they're."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Always Followed by a Noun",
+          "text": "A possessive adjective **cannot stand alone**. It must be followed directly by a noun: 'my book', 'his coat', 'our room'."
+        },
+        {
+          "type": "warning",
+          "title": "No Apostrophe in 'its'",
+          "text": "The possessive form 'its' has **no apostrophe**: 'The dog wagged its tail'. 'It's' means 'it is'."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l2-2",
+      "type": "examples",
+      "title": "Real-World Possessive Examples",
+      "examples": [
+        {
+          "english": "My new book is very interesting.",
+          "phonetic": "/maɪ njuː bʊk ɪz ˈveri ˈɪntrəstɪŋ/",
+          "urdu": "میری نئی کتاب بہت دلچسپ ہے۔",
+          "audioText": "My new book is very interesting."
+        },
+        {
+          "english": "What is your telephone number?",
+          "phonetic": "/wɒt ɪz jɔːr ˈtelɪfəʊn ˈnʌmbər/",
+          "urdu": "آپ کا ٹیلیفون نمبر کیا ہے؟",
+          "audioText": "What is your telephone number?"
+        },
+        {
+          "english": "His father is an experienced engineer.",
+          "phonetic": "/hɪz ˈfɑːðər ɪz ən ɪkˈspɪəriənst ˌendʒɪˈnɪər/",
+          "urdu": "ان کے والد ایک تجربہ کار انجینئر ہیں۔",
+          "audioText": "His father is an experienced engineer."
+        },
+        {
+          "english": "Her daughter is a student at the medical college.",
+          "phonetic": "/hɜːr ˈdɔːtər ɪz ə ˈstjuːdənt æt ðə ˈmedɪkl ˈkɒlɪdʒ/",
+          "urdu": "ان کی بیٹی میڈیکل کالج میں طالب علم ہے۔",
+          "audioText": "Her daughter is a student at the medical college."
+        },
+        {
+          "english": "Our family lives in a quiet neighborhood.",
+          "phonetic": "/ˈaʊər ˈfæməli lɪvz ɪn ə ˈkwaɪət ˈneɪbəhʊd/",
+          "urdu": "ہمارا خاندان ایک پرسکون محلے میں رہتا ہے۔",
+          "audioText": "Our family lives in a quiet neighborhood."
+        },
+        {
+          "english": "Their bags are packed for the journey.",
+          "phonetic": "/ðeər bæɡz ɑːr pækt fɔːr ðə ˈdʒɜːni/",
+          "urdu": "ان کے بستے سفر کے لیے تیار ہیں۔",
+          "audioText": "Their bags are packed for the journey."
+        },
+        {
+          "english": "The bird returned to its nest before dark.",
+          "phonetic": "/ðə bɜːrd rɪˈtɜːnd tuː ɪts nest bɪˈfɔːr dɑːrk/",
+          "urdu": "پرندہ اندھیرا ہونے سے پہلے اپنے گھونسلے میں واپس آگیا۔",
+          "audioText": "The bird returned to its nest before dark."
+        },
+        {
+          "english": "Is this your key on the kitchen counter?",
+          "phonetic": "/ɪz ðɪs jɔːr kiː ɒn ðə ˈkɪtʃɪn ˈkaʊntər/",
+          "urdu": "کیا کچن کے کاؤنٹر پر یہ آپ کی چابی ہے؟",
+          "audioText": "Is this your key on the kitchen counter?"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l2-3",
+      "type": "dialogue",
+      "title": "Lost Property at the Library",
+      "dialogue": [
+        {
+          "speaker": "Librarian",
+          "avatar": "L",
+          "english": "Excuse me, is this your backpack?",
+          "urdu": "معاف کیجیے گا، کیا یہ آپ کا بستہ ہے؟",
+          "audioText": "Excuse me, is this your backpack?"
+        },
+        {
+          "speaker": "Student",
+          "avatar": "S",
+          "english": "No, that is not my backpack. My bag is blue, not black.",
+          "urdu": "نہیں، وہ میرا بستہ نہیں ہے۔ میرا بیگ نیلا ہے، کالا نہیں۔",
+          "audioText": "No, that is not my backpack. My bag is blue, not black."
+        },
+        {
+          "speaker": "Librarian",
+          "avatar": "L",
+          "english": "Ah, I see. What about these glasses? Are they his?",
+          "urdu": "اچھا۔ ان چشموں کے بارے میں کیا خیال ہے؟ کیا یہ اس کے ہیں؟",
+          "audioText": "Ah, I see. What about these glasses? Are they his?"
+        },
+        {
+          "speaker": "Student",
+          "avatar": "S",
+          "english": "Yes! Those are his glasses. His name is Tariq.",
+          "urdu": "جی ہاں! وہ اس کا چشمہ ہے۔ اس کا نام طارق ہے۔",
+          "audioText": "Yes! Those are his glasses. His name is Tariq."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l2-4",
+      "type": "practice",
+      "title": "Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u1-l2-1",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "Fill in the blank: 'Sarah loves reading. _____ favorite author is Charles Dickens.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Her"
+            },
+            {
+              "id": "opt-2",
+              "text": "His"
+            },
+            {
+              "id": "opt-3",
+              "text": "She"
+            },
+            {
+              "id": "opt-4",
+              "text": "Its"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Sarah' is female singular, so the possessive adjective is 'Her'.",
+          "urduExplanation": "سارہ مؤنث ہے، اس لیے 'Her' استعمال ہوگا۔"
+        },
+        {
+          "id": "ex-a1-u1-l2-2",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "Choose the correct sentence:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "The cat licked it's paw."
+            },
+            {
+              "id": "opt-2",
+              "text": "The cat licked its paw."
+            },
+            {
+              "id": "opt-3",
+              "text": "The cat licked his paw."
+            },
+            {
+              "id": "opt-4",
+              "text": "The cat licked their paw."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'its' (without an apostrophe) is the possessive adjective for animals and objects.",
+          "urduExplanation": "جانوروں اور بے جان چیزوں کے لیے ملکیتی صفت بغیر اپوسٹروفی کے 'its' ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l2-3",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "'We are proud of _____ school.' Which word fits best?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "our"
+            },
+            {
+              "id": "opt-2",
+              "text": "we"
+            },
+            {
+              "id": "opt-3",
+              "text": "us"
+            },
+            {
+              "id": "opt-4",
+              "text": "ours"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "The possessive adjective matching the subject 'We' is 'our'.",
+          "urduExplanation": "فاعل 'We' کے لیے ملکیتی لفظ 'our' (ہمارا) ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l2-4",
+          "type": "fill_blank",
+          "skillTag": "possessives",
+          "prompt": "I have a new laptop. _____ screen is crystal clear.",
+          "correctAnswer": "Its",
+          "acceptableAnswers": [
+            "Its",
+            "its"
+          ],
+          "explanation": "The laptop is an object, so we refer to its screen using possessive 'Its'.",
+          "urduExplanation": "لیپ ٹاپ کی اسکرین کے لیے 'Its' استعمال ہوگا۔"
+        },
+        {
+          "id": "ex-a1-u1-l2-5",
+          "type": "fill_blank",
+          "skillTag": "possessives",
+          "prompt": "Ali forgot _____ keys on the dining table.",
+          "correctAnswer": "his",
+          "acceptableAnswers": [
+            "his",
+            "His"
+          ],
+          "explanation": "Ali is male singular, so the possessive adjective is 'his'.",
+          "urduExplanation": "علی مذکر ہے، اس کے لیے 'his' استعمال ہوگا۔"
+        },
+        {
+          "id": "ex-a1-u1-l2-6",
+          "type": "order_sentence",
+          "skillTag": "possessives",
+          "prompt": "Put the words in order:",
+          "sentenceTokens": [
+            "This",
+            "is",
+            "my",
+            "favorite",
+            "book",
+            "."
+          ],
+          "correctOrder": [
+            "This",
+            "is",
+            "my",
+            "favorite",
+            "book",
+            "."
+          ],
+          "explanation": "Demonstrative (This) + Verb (is) + Possessive (my) + Adjective (favorite) + Noun (book).",
+          "urduExplanation": "یہ میری پسندیدہ کتاب ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l2-7",
+          "type": "match_pairs",
+          "skillTag": "possessives",
+          "prompt": "Match the subject pronoun with its possessive adjective:",
+          "pairs": [
+            {
+              "left": "You",
+              "right": "your"
+            },
+            {
+              "left": "He",
+              "right": "his"
+            },
+            {
+              "left": "They",
+              "right": "their"
+            }
+          ],
+          "explanation": "You -> your; He -> his; They -> their.",
+          "urduExplanation": "You کا your، He کا his، اور They کا their ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l2-8",
+          "type": "error_correction",
+          "skillTag": "possessives",
+          "prompt": "Find and fix the mistake: 'You're coat is hanging on the door.'",
+          "correctAnswer": "Your coat is hanging on the door.",
+          "acceptableAnswers": [
+            "Your coat is hanging on the door.",
+            "Your"
+          ],
+          "explanation": "Use possessive 'Your', not contraction 'You're' (you are).",
+          "urduExplanation": "یہاں ملکیت ظاہر کرنے کے لیے 'Your' آئے گا، نہ کہ 'You're' (You are)۔"
+        },
+        {
+          "id": "ex-a1-u1-l2-9",
+          "type": "true_false",
+          "skillTag": "possessives",
+          "prompt": "True or False: 'Their' refers to possession by more than one person.",
+          "correctAnswer": "True",
+          "acceptableAnswers": [
+            "True",
+            "true",
+            "T"
+          ],
+          "explanation": "True. 'Their' is the third-person plural possessive adjective.",
+          "urduExplanation": "درست۔ 'Their' جمع کی ملکیت ظاہر کرتا ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l2-10",
+          "type": "fill_blank",
+          "skillTag": "possessives",
+          "prompt": "We love _____ country very much.",
+          "correctAnswer": "our",
+          "acceptableAnswers": [
+            "our",
+            "Our"
+          ],
+          "explanation": "'We' pairs with possessive 'our'.",
+          "urduExplanation": "'We' کے لیے 'our' آئے گا۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l2-5",
+      "type": "quiz",
+      "title": "Lesson 2 Check Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u1-l2-1",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "Which word correctly completes: 'The doctor parked _____ vehicle outside.'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "his"
+            },
+            {
+              "id": "opt-2",
+              "text": "he"
+            },
+            {
+              "id": "opt-3",
+              "text": "him"
+            },
+            {
+              "id": "opt-4",
+              "text": "himself"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Before the noun 'vehicle', use the possessive adjective 'his'.",
+          "urduExplanation": "اسم 'vehicle' سے پہلے ملکیتی لفظ 'his' آئے گا۔"
+        },
+        {
+          "id": "qz-a1-u1-l2-2",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "'_____ house is painted white.' Choose the correct word for 'they':",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "They're"
+            },
+            {
+              "id": "opt-2",
+              "text": "Their"
+            },
+            {
+              "id": "opt-3",
+              "text": "There"
+            },
+            {
+              "id": "opt-4",
+              "text": "Them"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Their' is the possessive adjective indicating ownership by 'they'.",
+          "urduExplanation": "ان کے گھر کے لیے 'Their house' آئے گا۔"
+        },
+        {
+          "id": "qz-a1-u1-l2-3",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "Identify the sentence that has NO error:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Is this you're phone?"
+            },
+            {
+              "id": "opt-2",
+              "text": "Is this your phone?"
+            },
+            {
+              "id": "opt-3",
+              "text": "Is this yours phone?"
+            },
+            {
+              "id": "opt-4",
+              "text": "Is this you phone?"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'your' directly precedes the noun 'phone' without an apostrophe.",
+          "urduExplanation": "'Is this your phone?' بالکل درست جملہ ہے۔"
+        },
+        {
+          "id": "qz-a1-u1-l2-4",
+          "type": "fill_blank",
+          "skillTag": "possessives",
+          "prompt": "Aisha showed me _____ new art drawings.",
+          "correctAnswer": "her",
+          "acceptableAnswers": [
+            "her",
+            "Her"
+          ],
+          "explanation": "Aisha is female singular, so use 'her'.",
+          "urduExplanation": "عائشہ کے لیے 'her' استعمال ہوگا۔"
+        },
+        {
+          "id": "qz-a1-u1-l2-5",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "Complete the sentence: 'The baby cried for _____ mother.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "it's"
+            },
+            {
+              "id": "opt-2",
+              "text": "its"
+            },
+            {
+              "id": "opt-3",
+              "text": "their"
+            },
+            {
+              "id": "opt-4",
+              "text": "they"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'its' is the possessive form with no apostrophe.",
+          "urduExplanation": "بغیر اپوسٹروفی کے 'its' درست ہے۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l2-6",
+      "type": "urduNote",
+      "title": "اردو بولنے والوں کے لیے لسانی نکتہ",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      },
+      "urduText": "اردو میں ہم مذکر اور مؤنث کے لیے الگ الفاظ استعمال کرتے ہیں جیسے 'اس کا بھائی' اور 'اس کی بہن'۔\nانگریزی میں ملکیتی صفت کا انحصار مالک (Owner) کی جنس پر ہوتا ہے، نہ کہ چیز کی جنس پر!\n- اگر مالک مرد ہے تو ہمیشہ **his** آئے گا: 'his brother', 'his sister'۔\n- اگر مالک عورت ہے تو ہمیشہ **her** آئے گا: 'her brother', 'her sister'۔\nاردو بولنے والے اکثر مالک کے بجائے چیز کی جنس دیکھ کر کنفیوز ہو جاتے ہیں، اس لیے اس اصول کو ذہن نشین رکھیں۔"
+    },
+    {
+      "id": "sec-a1-u1-l2-7",
+      "type": "summary",
+      "title": "Lesson 2 Summary Box",
+      "summaryPoints": [
+        "Subject pronouns (I, you, he...) act as sentence subjects.",
+        "Possessive adjectives (my, your, his, her, its, our, their) precede nouns to show ownership.",
+        "Possessive form determines gender based on the owner (his = male, her = female).",
+        "Never confuse possessive 'its' with the contraction 'it's' (it is)."
+      ]
+    }
+  ]
+}

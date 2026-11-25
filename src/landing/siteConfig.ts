@@ -24,10 +24,10 @@ export interface SiteConfig {
 
 export const SITE_CONFIG: SiteConfig = {
   name: 'Zarii',
-  fullName: 'Zarii IELTS Preparation',
-  tagline: 'Free, exam-style practice for Listening, Reading, Writing and Speaking.',
+  fullName: 'Zarii English Course and IELTS Preparation',
+  tagline: 'Learn English. Reach your IELTS goal.',
   description:
-    'Free, exam-style practice for Listening, Reading, Writing and Speaking, with instant feedback and a study plan built around your target band.',
+    'Free, comprehensive English course from A1 to C1 and authentic IELTS preparation with instant feedback, an offline dictionary, and a personalized study plan.',
   contactEmail: 'support@zarii.app',
   supportEmail: 'support@zarii.app',
   social: {

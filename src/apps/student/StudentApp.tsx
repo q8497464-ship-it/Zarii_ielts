@@ -54,9 +54,14 @@ const EnglishCourseCatalogPage = lazy(() => import('../../features/english/pages
 const EnglishLessonRunnerPage = lazy(() => import('../../features/english/pages/EnglishLessonRunnerPage').then((m) => ({ default: m.EnglishLessonRunnerPage })));
 const EnglishPracticePage = lazy(() => import('../../features/english/pages/EnglishPracticePage').then((m) => ({ default: m.EnglishPracticePage })));
 const EnglishGrammarReferencePage = lazy(() => import('../../features/english/pages/EnglishGrammarReferencePage').then((m) => ({ default: m.EnglishGrammarReferencePage })));
-const EnglishReadingListeningPage = lazy(() => import('../../features/english/pages/EnglishReadingListeningPage').then((m) => ({ default: m.EnglishReadingListeningPage })));
+const EnglishReadingPage = lazy(() => import('../../features/english/pages/EnglishReadingPage').then((m) => ({ default: m.EnglishReadingPage })));
+const EnglishListeningPage = lazy(() => import('../../features/english/pages/EnglishListeningPage').then((m) => ({ default: m.EnglishListeningPage })));
+const EnglishWritingPage = lazy(() => import('../../features/english/pages/EnglishWritingPage').then((m) => ({ default: m.EnglishWritingPage })));
+const EnglishDailyRoutinePage = lazy(() => import('../../features/english/pages/EnglishDailyRoutinePage').then((m) => ({ default: m.EnglishDailyRoutinePage })));
 const EnglishSpeakingPronunciationPage = lazy(() => import('../../features/english/pages/EnglishSpeakingPronunciationPage').then((m) => ({ default: m.EnglishSpeakingPronunciationPage })));
 const EnglishPlacementPage = lazy(() => import('../../features/english/pages/EnglishPlacementPage').then((m) => ({ default: m.EnglishPlacementPage })));
+const EnglishProgressPage = lazy(() => import('../../features/english/pages/EnglishProgressPage').then((m) => ({ default: m.EnglishProgressPage })));
+const EnglishStudyPlanPage = lazy(() => import('../../features/english/pages/EnglishStudyPlanPage').then((m) => ({ default: m.EnglishStudyPlanPage })));
 
 // Shared Dictionary Feature
 const DictionaryPage = lazy(() => import('../../features/dictionary/DictionaryPage').then((m) => ({ default: m.DictionaryPage })));
@@ -170,6 +175,12 @@ export function StudentApp() {
           <Route path="ielts/mock/exam/:mockId" element={<MockExamRunner />} />
           <Route path="mock/exam/:mockId" element={<MockExamRunner />} />
 
+          {/* Fullscreen Focus English Lesson Player & Unit Tests */}
+          <Route path="english/lesson/:lessonId" element={<EnglishLessonRunnerPage />} />
+          <Route path="english/course/lesson/:lessonId" element={<EnglishLessonRunnerPage />} />
+          <Route path="english/unit-test/:unitId" element={<EnglishLessonRunnerPage />} />
+          <Route path="english/unit-review/:unitId" element={<EnglishLessonRunnerPage />} />
+
           {/* Standard Student Portal Layout (under /app/*) */}
           <Route element={<AppShell />}>
             {/* Unified Home */}
@@ -215,13 +226,21 @@ export function StudentApp() {
 
             {/* English Course Track Routes (/app/english/*) */}
             <Route path="english" element={<EnglishHomePage />} />
+            <Route path="english/daily" element={<EnglishDailyRoutinePage />} />
             <Route path="english/course" element={<EnglishCourseCatalogPage />} />
             <Route path="english/placement" element={<EnglishPlacementPage />} />
-            <Route path="english/course/lesson/:lessonId" element={<EnglishLessonRunnerPage />} />
             <Route path="english/practice" element={<EnglishPracticePage />} />
-            <Route path="english/grammar" element={<EnglishGrammarReferencePage />} />
-            <Route path="english/skills" element={<EnglishReadingListeningPage />} />
+            <Route path="english/reading" element={<EnglishReadingPage />} />
+            <Route path="english/reading/:readerId" element={<EnglishReadingPage />} />
+            <Route path="english/listening" element={<EnglishListeningPage />} />
+            <Route path="english/listening/:trackId" element={<EnglishListeningPage />} />
             <Route path="english/speaking" element={<EnglishSpeakingPronunciationPage />} />
+            <Route path="english/writing" element={<EnglishWritingPage />} />
+            <Route path="english/writing/:taskId" element={<EnglishWritingPage />} />
+            <Route path="english/grammar" element={<EnglishGrammarReferencePage />} />
+            <Route path="english/progress" element={<EnglishProgressPage />} />
+            <Route path="english/plan" element={<EnglishStudyPlanPage />} />
+            <Route path="english/skills" element={<Navigate to="/app/english/reading" replace />} />
 
             {/* Shared Pages */}
             <Route path="dictionary" element={<DictionaryPage />} />

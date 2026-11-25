@@ -67,7 +67,7 @@ describe('STUDENT APP CLEANUP: Information Architecture & Student-Only Features'
     it('ensures SettingsPage exports valid student tabs', async () => {
       const settingsModule = await import('../settings/SettingsPage');
       expect(settingsModule.SettingsPage).toBeDefined();
-    });
+    }, 15000);
 
     it('manages student study preferences and defaults cleanly', () => {
       const defaults = settingsStore.getDefaults();

@@ -80,6 +80,7 @@ export function AdminCommunicationPage() {
   const [annType, setAnnType] = useState<AnnouncementType>('info');
   const [annFormat, setAnnFormat] = useState<AnnouncementFormat>('banner');
   const [annAudience, setAnnAudience] = useState<AnnouncementAudience>('all');
+  const [annTrack, setAnnTrack] = useState<'all' | 'ielts' | 'english'>('all');
   const [annStartsAt, setAnnStartsAt] = useState(new Date().toISOString().slice(0, 10));
   const [annExpiresAt, setAnnExpiresAt] = useState('');
   const [annIsActive, setAnnIsActive] = useState(true);
@@ -133,6 +134,7 @@ export function AdminCommunicationPage() {
     setAnnType('info');
     setAnnFormat('banner');
     setAnnAudience('all');
+    setAnnTrack('all');
     setAnnStartsAt(new Date().toISOString().slice(0, 10));
     setAnnExpiresAt('');
     setAnnIsActive(true);
@@ -146,6 +148,7 @@ export function AdminCommunicationPage() {
     setAnnType(ann.type);
     setAnnFormat(ann.format);
     setAnnAudience(ann.audience);
+    setAnnTrack(ann.target_track || 'all');
     setAnnStartsAt(ann.starts_at || new Date().toISOString().slice(0, 10));
     setAnnExpiresAt(ann.expires_at || '');
     setAnnIsActive(ann.is_active);
@@ -170,6 +173,7 @@ export function AdminCommunicationPage() {
       type: annType,
       format: annFormat,
       audience: annAudience,
+      target_track: annTrack,
       starts_at: annStartsAt,
       expires_at: annExpiresAt || undefined,
       is_active: annIsActive,
@@ -398,9 +402,18 @@ export function AdminCommunicationPage() {
                       </span>
                     </td>
                     <td className="py-3 px-3">
-                      <span className="capitalize font-semibold text-slate-700 dark:text-slate-300">
-                        {ann.audience} Candidates
-                      </span>
+                      <div className="space-y-0.5">
+                        <span className="capitalize font-semibold text-slate-700 dark:text-slate-300 block">
+                          {ann.audience} Candidates
+                        </span>
+                        <span className="inline-block px-1.5 py-0.2 rounded text-[10px] font-mono font-bold uppercase bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+                          {ann.target_track === 'english'
+                            ? 'English Track'
+                            : ann.target_track === 'ielts'
+                            ? 'IELTS Track'
+                            : 'All Tracks'}
+                        </span>
+                      </div>
                     </td>
                     <td className="py-3 px-3 font-mono text-[11px] text-slate-500 dark:text-slate-400">
                       {ann.starts_at} {ann.expires_at ? `to ${ann.expires_at}` : '(Ongoing)'}
@@ -957,6 +970,21 @@ export function AdminCommunicationPage() {
                     <option value="all">All Students</option>
                     <option value="new">New Signups</option>
                     <option value="active">Active Learners</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                    Target Learning Track
+                  </label>
+                  <select
+                    value={annTrack}
+                    onChange={(e) => setAnnTrack(e.target.value as any)}
+                    className="w-full px-3 py-2 text-xs rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white"
+                  >
+                    <option value="all">Both Tracks (Global)</option>
+                    <option value="ielts">IELTS Candidates Only</option>
+                    <option value="english">English Course Only</option>
                   </select>
                 </div>
               </div>

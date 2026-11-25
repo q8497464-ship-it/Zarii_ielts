@@ -1,0 +1,627 @@
+{
+  "id": "eng-a1-u2-l3",
+  "level": "A1",
+  "unit": "unit-2",
+  "order": 3,
+  "title": "Demonstratives: This, That, These, Those",
+  "description": "Point to objects near and far in both singular and plural forms with confidence.",
+  "objectives": [
+    "Distinguish between near (this/these) and far (that/those) demonstratives",
+    "Correctly match singular (this/that) and plural (these/those) with appropriate nouns and verbs",
+    "Form questions and answers pointing to objects in everyday situations"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u2-l2"
+  ],
+  "skillTags": [
+    "demonstratives",
+    "determiners",
+    "grammar-basics"
+  ],
+  "vocabularyList": [
+    {
+      "word": "this",
+      "partOfSpeech": "pronoun",
+      "phonetic": "/Ã°Éªs/",
+      "definition": "Used to identify a specific person or thing close at hand.",
+      "urduMeaning": "ÛŒÛ  (ÙˆØ§Ø­Ø¯ØŒ Ù‚Ø±ÛŒØ¨)",
+      "exampleSentence": "This is my English notebook."
+    },
+    {
+      "word": "that",
+      "partOfSpeech": "pronoun",
+      "phonetic": "/Ã°Ã¦t/",
+      "definition": "Used to identify a specific person or thing at a distance.",
+      "urduMeaning": "ÙˆÛ  (ÙˆØ§Ø­Ø¯ØŒ Ø¯ÙˆØ±)",
+      "exampleSentence": "That is a very tall building over there."
+    },
+    {
+      "word": "these",
+      "partOfSpeech": "pronoun",
+      "phonetic": "/Ã°iË z/",
+      "definition": "Plural form of this, referring to items close at hand.",
+      "urduMeaning": "ÛŒÛ  (Ø¬Ù…Ø¹ØŒ Ù‚Ø±ÛŒØ¨)",
+      "exampleSentence": "These keys belong to my father."
+    },
+    {
+      "word": "those",
+      "partOfSpeech": "pronoun",
+      "phonetic": "/Ã°É™ÊŠz/",
+      "definition": "Plural form of that, referring to items at a distance.",
+      "urduMeaning": "ÙˆÛ  (Ø¬Ù…Ø¹ØŒ Ø¯ÙˆØ±)",
+      "exampleSentence": "Those birds are flying south."
+    },
+    {
+      "word": "here",
+      "partOfSpeech": "adverb",
+      "phonetic": "/hÉªÉ™r/",
+      "definition": "In, at, or to this place or position.",
+      "urduMeaning": "ÛŒÛ Ø§Úº",
+      "exampleSentence": "Please come and sit here."
+    },
+    {
+      "word": "there",
+      "partOfSpeech": "adverb",
+      "phonetic": "/Ã°eÉ™r/",
+      "definition": "In, at, or to that place or position.",
+      "urduMeaning": "ÙˆÛ Ø§Úº",
+      "exampleSentence": "The pharmacy is right over there."
+    },
+    {
+      "word": "picture",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆpÉªktÊƒÉ™r/",
+      "definition": "A painting, drawing, or photograph.",
+      "urduMeaning": "ØªØµÙˆÛŒØ±",
+      "exampleSentence": "This picture on the wall is very old."
+    },
+    {
+      "word": "window",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆwÉªndÉ™ÊŠ/",
+      "definition": "An opening in a wall fitted with glass.",
+      "urduMeaning": "Ú©Ú¾Ú‘Ú©ÛŒ",
+      "exampleSentence": "Please close that window; it is windy."
+    },
+    {
+      "word": "door",
+      "partOfSpeech": "noun",
+      "phonetic": "/dÉ”Ë r/",
+      "definition": "A hinged, sliding, or revolving barrier.",
+      "urduMeaning": "Ø¯Ø±ÙˆØ§Ø²Û ",
+      "exampleSentence": "Keep these doors unlocked during the day."
+    },
+    {
+      "word": "computer",
+      "partOfSpeech": "noun",
+      "phonetic": "/kÉ™mËˆpjuË tÉ™r/",
+      "definition": "An electronic device for storing and processing data.",
+      "urduMeaning": "Ú©Ù…Ù¾ÛŒÙˆÙ¹Ø±",
+      "exampleSentence": "That computer on the back desk is new."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u2-l3-1",
+      "type": "explain",
+      "title": "The 2x2 Grid of Demonstratives",
+      "content": "Demonstratives point to specific things or people. In English, we choose the word based on **two factors**:\n1. **Distance**: Is the item **near** (here) or **far** (there)?\n2. **Number**: Is the item **singular** (one) or **plural** (two or more)?",
+      "tables": [
+        {
+          "title": "Demonstratives Matrix",
+          "headers": [
+            "Distance",
+            "Singular (1 item)",
+            "Plural (2+ items)",
+            "Linking Verb"
+          ],
+          "rows": [
+            [
+              "Near (Here)",
+              "THIS ('This is a pen')",
+              "THESE ('These are pens')",
+              "This is / These are"
+            ],
+            [
+              "Far (There)",
+              "THAT ('That is a car')",
+              "THOSE ('Those are cars')",
+              "That is / Those are"
+            ]
+          ]
+        },
+        {
+          "title": "Pronunciation Guide for This vs. These",
+          "headers": [
+            "Word",
+            "Vowel Sound",
+            "Final Sound",
+            "Urdu Meaning",
+            "Practice Contrast"
+          ],
+          "rows": [
+            [
+              "This",
+              "Short /Éª/ (like 'hit')",
+              "Voiceless /s/",
+              "ÛŒÛ  (ÙˆØ§Ø­Ø¯)",
+              "This pen /Ã°Éªs pen/"
+            ],
+            [
+              "These",
+              "Long /iË / (like 'feet')",
+              "Voiced /z/",
+              "ÛŒÛ  (Ø¬Ù…Ø¹)",
+              "These pens /Ã°iË z penz/"
+            ],
+            [
+              "That",
+              "Short /Ã¦/ (like 'cat')",
+              "Voiceless /t/",
+              "ÙˆÛ  (ÙˆØ§Ø­Ø¯)",
+              "That car /Ã°Ã¦t kÉ‘Ë r/"
+            ],
+            [
+              "Those",
+              "Diphthong /É™ÊŠ/",
+              "Voiced /z/",
+              "ÙˆÛ  (Ø¬Ù…Ø¹)",
+              "Those cars /Ã°É™ÊŠz kÉ‘Ë rz/"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Pronoun vs. Determiner",
+          "text": "Demonstratives can stand alone as pronouns (**This is great**) or attach to a noun as determiners (**This book is great**)."
+        },
+        {
+          "type": "warning",
+          "title": "Never Mix Singular and Plural",
+          "text": "Never say 'These book' or 'That books'. Match strictly: 'This book' (singular) and 'These books' (plural)."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l3-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "This is my new English dictionary.",
+          "phonetic": "/Ã°Éªs Éªz maÉª njuË  ËˆÉªÅ‹É¡lÉªÊƒ ËˆdÉªkÊƒÉ™nri/",
+          "urdu": "ÛŒÛ  Ù…ÛŒØ±ÛŒ Ù†Ø¦ÛŒ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú©ÛŒ Ù„ØºØª Û Û’Û”",
+          "audioText": "This is my new English dictionary."
+        },
+        {
+          "english": "That building across the street is the national library.",
+          "phonetic": "/Ã°Ã¦t ËˆbÉªldÉªÅ‹ É™ËˆkrÉ’s Ã°É™ striË t Éªz Ã°É™ ËˆnÃ¦ÊƒnÉ™l ËˆlaÉªbrÉ™ri/",
+          "urdu": "Ø³Ú‘Ú© Ú©Û’ Ø§Ù Ø³ Ù¾Ø§Ø± ÙˆÛ  Ø¹Ù…Ø§Ø±Øª Ù‚ÙˆÙ…ÛŒ Ù„Ø§Ø¦Ø¨Ø±ÛŒØ±ÛŒ Û Û’Û”",
+          "audioText": "That building across the street is the national library."
+        },
+        {
+          "english": "These are delicious fresh apples from Swat.",
+          "phonetic": "/Ã°iË z É‘Ë r dÉªËˆlÉªÊƒÉ™s freÊƒ ËˆÃ¦plz frÉ™m swÉ‘Ë t/",
+          "urdu": "ÛŒÛ  Ø³ÙˆØ§Øª Ú©Û’ Ù„Ø°ÛŒØ° ØªØ§Ø²Û  Ø³ÛŒØ¨ Û ÛŒÚºÛ”",
+          "audioText": "These are delicious fresh apples from Swat."
+        },
+        {
+          "english": "Those students over there are preparing for their exam.",
+          "phonetic": "/Ã°É™ÊŠz ËˆstjuË dÉ™nts ËˆÉ™ÊŠvÉ™r Ã°eÉ™r É‘Ë r prÉªËˆpeÉ™rÉªÅ‹ fÉ”Ë r Ã°eÉ™r ÉªÉ¡ËˆzÃ¦m/",
+          "urdu": "ÙˆÛ Ø§Úº ÙˆÛ  Ø·Ù„Ø¨Ø§ Ø§Ù¾Ù†Û’ Ø§Ù…ØªØ­Ø§Ù† Ú©ÛŒ ØªÛŒØ§Ø±ÛŒ Ú©Ø± Ø±Û Û’ Û ÛŒÚºÛ”",
+          "audioText": "Those students over there are preparing for their exam."
+        },
+        {
+          "english": "Is this your car key on the counter?",
+          "phonetic": "/Éªz Ã°Éªs jÉ”Ë r kÉ‘Ë r kiË  É’n Ã°É™ ËˆkaÊŠntÉ™r/",
+          "urdu": "Ú©ÛŒØ§ Ú©Ø§Ø¤Ù†Ù¹Ø± Ù¾Ø± ÛŒÛ  Ø¢Ù¾ Ú©ÛŒ Ú¯Ø§Ú‘ÛŒ Ú©ÛŒ Ú†Ø§Ø¨ÛŒ Û Û’ØŸ",
+          "audioText": "Is this your car key on the counter?"
+        },
+        {
+          "english": "What are those strange lights in the sky?",
+          "phonetic": "/wÉ’t É‘Ë r Ã°É™ÊŠz streÉªndÊ’ laÉªts Éªn Ã°É™ skaÉª/",
+          "urdu": "Ø¢Ø³Ù…Ø§Ù† Ù…ÛŒÚº ÙˆÛ  Ø¹Ø¬ÛŒØ¨ Ø±ÙˆØ´Ù†ÛŒØ§Úº Ú©ÛŒØ§ Û ÛŒÚºØŸ",
+          "audioText": "What are those strange lights in the sky?"
+        },
+        {
+          "english": "These chairs are very comfortable to sit on.",
+          "phonetic": "/Ã°iË z tÊƒeÉ™rz É‘Ë r Ëˆveri ËˆkÊŒmftÉ™bl tuË  sÉªt É’n/",
+          "urdu": "ÛŒÛ  Ú©Ø±Ø³ÛŒØ§Úº Ø¨ÛŒÙ¹Ú¾Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Ø¨Û Øª Ø¢Ø±Ø§Ù… Ø¯Û  Û ÛŒÚºÛ”",
+          "audioText": "These chairs are very comfortable to sit on."
+        },
+        {
+          "english": "That was an unforgettable experience for all of us.",
+          "phonetic": "/Ã°Ã¦t wÉ’z É™n ËŒÊŒnfÉ™ËˆÉ¡etÉ™bl ÉªkËˆspÉªÉ™riÉ™ns fÉ”Ë r É”Ë l É™v ÊŒs/",
+          "urdu": "ÙˆÛ  Û Ù… Ø³Ø¨ Ú©Û’ Ù„ÛŒÛ’ Ø§ÛŒÚ© Ù†Ø§Ù‚Ø§Ø¨Ù„Ù  Ù Ø±Ø§Ù…ÙˆØ´ ØªØ¬Ø±Ø¨Û  ØªÚ¾Ø§Û”",
+          "audioText": "That was an unforgettable experience for all of us."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l3-3",
+      "type": "dialogue",
+      "title": "Looking at Family Photos",
+      "dialogue": [
+        {
+          "speaker": "Farhan",
+          "avatar": "F",
+          "english": "Who is that man in the black suit in that photo?",
+          "urdu": "Ø§Ù Ø³ ØªØµÙˆÛŒØ± Ù…ÛŒÚº Ú©Ø§Ù„Û’ Ø³ÙˆÙ¹ Ù…ÛŒÚº ÙˆÛ  Ø´Ø®Øµ Ú©ÙˆÙ† Û Û’ØŸ",
+          "audioText": "Who is that man in the black suit in that photo?"
+        },
+        {
+          "speaker": "Naveed",
+          "avatar": "N",
+          "english": "That is my uncle Tariq. And look at this picture here.",
+          "urdu": "ÙˆÛ  Ù…ÛŒØ±Û’ Ú†Ú†Ø§ Ø·Ø§Ø±Ù‚ Û ÛŒÚºÛ” Ø§ÙˆØ± ÛŒÛ Ø§Úº ÛŒÛ  ØªØµÙˆÛŒØ± Ø¯ÛŒÚ©Ú¾ÙˆÛ”",
+          "audioText": "That is my uncle Tariq. And look at this picture here."
+        },
+        {
+          "speaker": "Farhan",
+          "avatar": "F",
+          "english": "Are these your cousins playing cricket?",
+          "urdu": "Ú©ÛŒØ§ ÛŒÛ  Ø¢Ù¾ Ú©Û’ Ú©Ø²Ù†Ø² Ú©Ø±Ú©Ù¹ Ú©Ú¾ÛŒÙ„ Ø±Û Û’ Û ÛŒÚºØŸ",
+          "audioText": "Are these your cousins playing cricket?"
+        },
+        {
+          "speaker": "Naveed",
+          "avatar": "N",
+          "english": "Yes, these are my cousins, and those kids over there are their neighbours.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºØŒ ÛŒÛ  Ù…ÛŒØ±Û’ Ú©Ø²Ù†Ø² Û ÛŒÚºØŒ Ø§ÙˆØ± ÙˆÛ Ø§Úº Ù¾Ø± ÙˆÛ  Ø¨Ú†Û’ Ø§Ù† Ú©Û’ Û Ù…Ø³Ø§Ø¦Û’ Û ÛŒÚºÛ”",
+          "audioText": "Yes, these are my cousins, and those kids over there are their neighbours."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l3-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u2-l3-1",
+          "type": "mcq",
+          "skillTag": "demonstratives",
+          "prompt": "Choose the correct demonstrative for an object in your hand: '_____ is my mobile phone.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "This"
+            },
+            {
+              "id": "opt-2",
+              "text": "Those"
+            },
+            {
+              "id": "opt-3",
+              "text": "These"
+            },
+            {
+              "id": "opt-4",
+              "text": "That"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "An object held in your hand is singular and near, requiring 'This'.",
+          "urduExplanation": "Û Ø§ØªÚ¾ Ù…ÛŒÚº Ù…ÙˆØ¬ÙˆØ¯ ÙˆØ§Ø­Ø¯ Ú†ÛŒØ² Ú©Û’ Ù„ÛŒÛ’ 'This' Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l3-2",
+          "type": "mcq",
+          "skillTag": "demonstratives",
+          "prompt": "Choose the correct demonstrative for plural trees across the road: '_____ trees are very tall.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "This"
+            },
+            {
+              "id": "opt-2",
+              "text": "Those"
+            },
+            {
+              "id": "opt-3",
+              "text": "These"
+            },
+            {
+              "id": "opt-4",
+              "text": "That"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Trees across the road are plural and far, requiring 'Those'.",
+          "urduExplanation": "Ø¯ÙˆØ± Ú©ÛŒ Ø¬Ù…Ø¹ Ú†ÛŒØ²ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ 'Those' Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l3-3",
+          "type": "fill_blank",
+          "skillTag": "demonstratives",
+          "prompt": "Complete with the correct demonstrative: 'Look at _____ picture here in my hands.'",
+          "correctAnswer": "this",
+          "explanation": "The picture is singular and close ('here in my hands'), so 'this' is correct.",
+          "urduExplanation": "Ù‚Ø±ÛŒØ¨ Ú©ÛŒ ÙˆØ§Ø­Ø¯ Ú†ÛŒØ² Ú©Û’ Ù„ÛŒÛ’ 'this' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l3-4",
+          "type": "fill_blank",
+          "skillTag": "demonstratives",
+          "prompt": "Complete with the correct demonstrative: '_____ shoes right here fit me perfectly.'",
+          "correctAnswer": "These",
+          "explanation": "The shoes are plural and right here (near), so 'These' is correct.",
+          "urduExplanation": "Ù‚Ø±ÛŒØ¨ Ú©ÛŒ Ø¬Ù…Ø¹ Ú†ÛŒØ²ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ 'These' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l3-5",
+          "type": "order_sentence",
+          "skillTag": "demonstratives",
+          "prompt": "Rearrange the words to form a correct question:",
+          "sentenceTokens": [
+            "Is",
+            "that",
+            "your",
+            "laptop",
+            "over",
+            "there",
+            "?"
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Verb (Is) + demonstrative (that) + noun phrase (your laptop) + adverbial phrase (over there).",
+          "urduExplanation": "Ø³ÙˆØ§Ù„ÛŒÛ  ØªØ±ØªÛŒØ¨: Is + that + your laptop + over there?"
+        },
+        {
+          "id": "ex-a1-u2-l3-6",
+          "type": "order_sentence",
+          "skillTag": "demonstratives",
+          "prompt": "Rearrange the words to make a correct sentence:",
+          "sentenceTokens": [
+            "These",
+            "are",
+            "my",
+            "favourite",
+            "books",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Demonstrative (These) + verb (are) + complement (my favourite books).",
+          "urduExplanation": "These + are + my favourite books ØªØ±ØªÛŒØ¨ Ø¨Ù†Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l3-7",
+          "type": "match_pairs",
+          "skillTag": "demonstratives",
+          "prompt": "Match the demonstrative to its location and number category:",
+          "pairs": [
+            {
+              "left": "This",
+              "right": "Near, Singular"
+            },
+            {
+              "left": "These",
+              "right": "Near, Plural"
+            },
+            {
+              "left": "That",
+              "right": "Far, Singular"
+            },
+            {
+              "left": "Those",
+              "right": "Far, Plural"
+            }
+          ],
+          "explanation": "Matrix categories correctly matched.",
+          "urduExplanation": "Ù‚Ø±ÛŒØ¨ Ùˆ Ø¯ÙˆØ± Ø§ÙˆØ± ÙˆØ§Ø­Ø¯ Ùˆ Ø¬Ù…Ø¹ Ú©Û’ ØµØ­ÛŒØ­ Ø¬ÙˆÚ‘Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l3-8",
+          "type": "error_correction",
+          "skillTag": "demonstratives",
+          "prompt": "Find and correct the mistake: 'These book is very interesting.'",
+          "correctAnswer": "This book is very interesting.",
+          "explanation": "The noun 'book' is singular, so it must take singular 'This', not plural 'These'.",
+          "urduExplanation": "'book' ÙˆØ§Ø­Ø¯ Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'This book' Ù„Ú©Ú¾Ù†Ø§ Ø¶Ø±ÙˆØ±ÛŒ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l3-9",
+          "type": "error_correction",
+          "skillTag": "demonstratives",
+          "prompt": "Find and correct the mistake: 'Those is a very expensive car.'",
+          "correctAnswer": "That is a very expensive car.",
+          "explanation": "'a very expensive car' is singular with verb 'is', so use 'That', not 'Those'.",
+          "urduExplanation": "ÙˆØ§Ø­Ø¯ Ú¯Ø§Ú‘ÛŒ Ú©Û’ Ù„ÛŒÛ’ 'That is' Ù„Ú¯Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l3-10",
+          "type": "true_false",
+          "skillTag": "demonstratives",
+          "prompt": "'These' is used for items that are far away. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. 'These' is used for items that are close (near). For far items, we use 'those'.",
+          "urduExplanation": "ØºÙ„Ø·Û” 'These' Ù‚Ø±ÛŒØ¨ Ú©ÛŒ Ú†ÛŒØ²ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’ØŒ Ø¯ÙˆØ± Ú©Û’ Ù„ÛŒÛ’ 'Those' Ø¢ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l3-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u2-l3-1",
+          "type": "mcq",
+          "skillTag": "demonstratives",
+          "prompt": "Select the sentence with correct demonstrative agreement:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "These shoes is dirty."
+            },
+            {
+              "id": "opt-2",
+              "text": "That houses are old."
+            },
+            {
+              "id": "opt-3",
+              "text": "These books are helpful."
+            },
+            {
+              "id": "opt-4",
+              "text": "Those window is open."
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'These books are helpful' matches plural demonstrative 'These' with plural noun 'books' and plural verb 'are'.",
+          "urduExplanation": "'These books are helpful' Ù…ÛŒÚº demonstrativeØŒ noun Ø§ÙˆØ± verb ØªÛŒÙ†ÙˆÚº Ø¬Ù…Ø¹ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u2-l3-2",
+          "type": "mcq",
+          "skillTag": "demonstratives",
+          "prompt": "What is the correct question pointing to distant mountains?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "What is this?"
+            },
+            {
+              "id": "opt-2",
+              "text": "What are this?"
+            },
+            {
+              "id": "opt-3",
+              "text": "What are these?"
+            },
+            {
+              "id": "opt-4",
+              "text": "What are those?"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Distant mountains are plural and far, so the correct question is 'What are those?'.",
+          "urduExplanation": "Ø¯ÙˆØ± Ú©Û’ Ù¾Û Ø§Ú‘ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ 'What are those?' Ù¾ÙˆÚ†Ú¾Ø§ Ø¬Ø§Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u2-l3-3",
+          "type": "mcq",
+          "skillTag": "demonstratives",
+          "prompt": "Complete the sentence: '_____ pen in my pocket belongs to the teacher.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "This"
+            },
+            {
+              "id": "opt-2",
+              "text": "These"
+            },
+            {
+              "id": "opt-3",
+              "text": "Those"
+            },
+            {
+              "id": "opt-4",
+              "text": "That"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "The pen is singular and in your own pocket (near), so 'This' is correct.",
+          "urduExplanation": "Ø¬ÛŒØ¨ Ù…ÛŒÚº Ù…ÙˆØ¬ÙˆØ¯ Ù‚Ø±ÛŒØ¨ Ú©Û’ Ù‚Ù„Ù… Ú©Û’ Ù„ÛŒÛ’ 'This' Ù„Ú¯Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u2-l3-4",
+          "type": "mcq",
+          "skillTag": "demonstratives",
+          "prompt": "Which pair shows opposites in distance?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "this - these"
+            },
+            {
+              "id": "opt-2",
+              "text": "this - that"
+            },
+            {
+              "id": "opt-3",
+              "text": "these - those"
+            },
+            {
+              "id": "opt-4",
+              "text": "that - those"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'This' (near singular) and 'that' (far singular) contrast in physical distance.",
+          "urduExplanation": "'this' (Ù‚Ø±ÛŒØ¨) Ø§ÙˆØ± 'that' (Ø¯ÙˆØ±) Ù Ø§ØµÙ„Û’ Ú©Û’ Ù„Ø­Ø§Ø¸ Ø³Û’ Ø§Ù„Ù¹ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u2-l3-5",
+          "type": "mcq",
+          "skillTag": "demonstratives",
+          "prompt": "Complete: '_____ are the students who won the trophy.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "That"
+            },
+            {
+              "id": "opt-2",
+              "text": "This"
+            },
+            {
+              "id": "opt-3",
+              "text": "Those"
+            },
+            {
+              "id": "opt-4",
+              "text": "It"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "With plural verb 'are' and plural noun 'students', use plural demonstrative 'Those'.",
+          "urduExplanation": "Ø¬Ù…Ø¹ 'are' Ú©Û’ Ø³Ø§ØªÚ¾ 'Those' Ø¯Ø±Ø³Øª Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l3-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Core principles of demonstratives:",
+      "summaryPoints": [
+        "This = Singular, Near (This book here).",
+        "That = Singular, Far (That car over there).",
+        "These = Plural, Near (These keys in my hand).",
+        "Those = Plural, Far (Those birds in the sky).",
+        "Singular demonstratives take 'is'; plural demonstratives take 'are'."
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l3-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… Ù‚Ø±ÛŒØ¨ Ú©Û’ Ù„ÛŒÛ’ **'ÛŒÛ '** Ø§ÙˆØ± Ø¯ÙˆØ± Ú©Û’ Ù„ÛŒÛ’ **'ÙˆÛ '** Ø¨ÙˆÙ„ØªÛ’ Û ÛŒÚºÛ” ØºÙˆØ± Ú©Ø±ÛŒÚº Ú©Û  Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº ÙˆØ§Ø­Ø¯ Ø§ÙˆØ± Ø¬Ù…Ø¹ Ú©Û’ Ù„ÛŒÛ’ Ù„Ù Ø¸ Ù†Û ÛŒÚº Ø¨Ø¯Ù„ØªØ§:\n- 'ÛŒÛ  Ú©ØªØ§Ø¨' (ÙˆØ§Ø­Ø¯) -> 'ÛŒÛ  Ú©ØªØ§Ø¨ÛŒÚº' (Ø¬Ù…Ø¹) [Ø¯ÙˆÙ†ÙˆÚº Ù…ÛŒÚº 'ÛŒÛ ' Û ÛŒ Ø±Û ØªØ§ Û Û’]\n- 'ÙˆÛ  Ù„Ú‘Ú©Ø§' (ÙˆØ§Ø­Ø¯) -> 'ÙˆÛ  Ù„Ú‘Ú©Û’' (Ø¬Ù…¹) [Ø¯ÙˆÙ†ÙˆÚº Ù…ÛŒÚº 'ÙˆÛ ' Û ÛŒ Ø±Û ØªØ§ Û Û’]\n\nÙ„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ÙˆØ§Ø­Ø¯ Ø§ÙˆØ± Ø¬Ù…Ø¹ Ú©Û’ Ù„Ù Ø¸ Ø¨Ø§Ù„Ú©Ù„ Ø§Ù„Ú¯ Û ÛŒÚº:\n- Ù‚Ø±ÛŒØ¨: **This** (ÙˆØ§Ø­Ø¯) Ø§ÙˆØ± **These** (Ø¬Ù…¹)\n- Ø¯ÙˆØ±: **That** (ÙˆØ§Ø­Ø¯) Ø§ÙˆØ± **Those** (Ø¬Ù…¹)\nÛŒÛ Ø§Úº Ø§Ø±Ø¯Ùˆ Ø¨ÙˆÙ„Ù†Û’ ÙˆØ§Ù„ÙˆÚº Ø³Û’ Ø§Ú©Ø«Ø± ØºÙ„Ø·ÛŒ Û ÙˆØªÛŒ Û Û’ Ú©Û  ÙˆÛ  'This books' Ú©Û  Ø¯ÛŒØªÛ’ Û ÛŒÚºØŒ Ø¬Ø¨Ú©Û  ØµØ­ÛŒØ­ **'These books'** Û Û’Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

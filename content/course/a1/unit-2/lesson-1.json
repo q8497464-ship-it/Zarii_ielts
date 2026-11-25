@@ -1,0 +1,651 @@
+{
+  "id": "eng-a1-u2-l1",
+  "level": "A1",
+  "unit": "unit-2",
+  "order": 1,
+  "title": "Singular & Plural Nouns (-s, -es, irregulars)",
+  "description": "Learn how to turn singular nouns into plural nouns using regular and irregular rules.",
+  "objectives": [
+    "Convert regular singular nouns to plural by adding -s or -es",
+    "Apply spelling rules for words ending in -ch, -sh, -ss, -x, and consonant + y",
+    "Identify and use essential irregular plural nouns (child/children, man/men, person/people)"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [
+    "eng-a1-u1-l5"
+  ],
+  "skillTags": [
+    "nouns",
+    "plurals",
+    "grammar-rules"
+  ],
+  "vocabularyList": [
+    {
+      "word": "book",
+      "partOfSpeech": "noun",
+      "phonetic": "/bÊŠk/",
+      "definition": "A written or printed work consisting of pages.",
+      "urduMeaning": "Ú©ØªØ§Ø¨",
+      "exampleSentence": "She has an interesting book on her desk."
+    },
+    {
+      "word": "box",
+      "partOfSpeech": "noun",
+      "phonetic": "/bÉ’ks/",
+      "definition": "A container with a flat base and sides.",
+      "urduMeaning": "ÚˆØ¨Û ",
+      "exampleSentence": "There are two wooden boxes in the room."
+    },
+    {
+      "word": "watch",
+      "partOfSpeech": "noun",
+      "phonetic": "/wÉ’tÊƒ/",
+      "definition": "A small timepiece worn on the wrist.",
+      "urduMeaning": "Ú¯Ú¾Ú‘ÛŒ",
+      "exampleSentence": "My grandfather gave me this beautiful watch."
+    },
+    {
+      "word": "city",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆsÉªti/",
+      "definition": "A large human settlement or town.",
+      "urduMeaning": "Ø´Û Ø±",
+      "exampleSentence": "Many large cities have modern transport."
+    },
+    {
+      "word": "child",
+      "partOfSpeech": "noun",
+      "phonetic": "/tÊƒaÉªld/",
+      "definition": "A young human being below the age of puberty.",
+      "urduMeaning": "Ø¨Ú†Û ",
+      "exampleSentence": "The young child is playing in the park."
+    },
+    {
+      "word": "person",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆpÉœË sn/",
+      "definition": "A human being regarded as an individual.",
+      "urduMeaning": "Ø´Ø®Øµ / Ù Ø±Ø¯",
+      "exampleSentence": "Each person must show an entrance ticket."
+    },
+    {
+      "word": "key",
+      "partOfSpeech": "noun",
+      "phonetic": "/kiË /",
+      "definition": "A small piece of shaped metal used to open a lock.",
+      "urduMeaning": "Ú†Ø§Ø¨ÛŒ",
+      "exampleSentence": "He keeps his house keys in his pocket."
+    },
+    {
+      "word": "table",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆteÉªbl/",
+      "definition": "A piece of furniture with a flat top and legs.",
+      "urduMeaning": "Ù…ÛŒØ²",
+      "exampleSentence": "The books are on the dining table."
+    },
+    {
+      "word": "chair",
+      "partOfSpeech": "noun",
+      "phonetic": "/tÊƒeÉ™r/",
+      "definition": "A separate seat for one person.",
+      "urduMeaning": "Ú©Ø±Ø³ÛŒ",
+      "exampleSentence": "Please take a comfortable chair."
+    },
+    {
+      "word": "bag",
+      "partOfSpeech": "noun",
+      "phonetic": "/bÃ¦É¡/",
+      "definition": "A flexible container with an opening at the top.",
+      "urduMeaning": "Ø¨Ø³ØªÛ  / ØªÚ¾ÛŒÙ„Ø§",
+      "exampleSentence": "Her school bag is heavy with notebooks."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u2-l1-1",
+      "type": "explain",
+      "title": "Rules for Forming Plural Nouns",
+      "content": "A **singular noun** refers to one person, place, or thing. A **plural noun** refers to two or more.\n\nMost English nouns form their plural simply by adding **-s**. However, certain endings require **-es**, spelling alterations, or completely irregular forms.",
+      "tables": [
+        {
+          "title": "Regular Plural Rules",
+          "headers": [
+            "Rule",
+            "Ending",
+            "Singular Example",
+            "Plural Example",
+            "Spelling Note"
+          ],
+          "rows": [
+            [
+              "Add -s",
+              "General consonant / vowel",
+              "book, chair",
+              "books, chairs",
+              "Standard rule for most English nouns."
+            ],
+            [
+              "Add -es",
+              "-ch, -sh, -ss, -x, -z",
+              "watch, box, glass",
+              "watches, boxes, glasses",
+              "Adds an extra syllable /Éªz/ for easy pronunciation."
+            ],
+            [
+              "Change -y to -ies",
+              "Consonant + -y",
+              "city, baby",
+              "cities, babies",
+              "Drop the y, add -ies. Vowel+y just takes -s (keys, days)."
+            ],
+            [
+              "Change -f/-fe to -ves",
+              "-f or -fe",
+              "leaf, life",
+              "leaves, lives",
+              "The voiceless /f/ shifts to voiced /v/."
+            ]
+          ]
+        },
+        {
+          "title": "Crucial Irregular Plurals",
+          "headers": [
+            "Singular Form",
+            "Plural Form",
+            "Urdu Meaning",
+            "Common Error to Avoid"
+          ],
+          "rows": [
+            [
+              "child",
+              "children",
+              "Ø¨Ú†Û’",
+              "Never say 'childs' or 'childrens'."
+            ],
+            [
+              "person",
+              "people",
+              "Ù„ÙˆÚ¯",
+              "Say 'three people', not 'three persons' in daily speech."
+            ],
+            [
+              "man",
+              "men",
+              "Ù…Ø±Ø¯",
+              "Change vowel sound from /Ã¦/ to /e/."
+            ],
+            [
+              "woman",
+              "women",
+              "Ø¹ÙˆØ±ØªÛŒÚº",
+              "Singular /ËˆwÊŠmÉ™n/, plural /ËˆwÉªmÉªn/."
+            ],
+            [
+              "foot",
+              "feet",
+              "Ù¾Ø§Ø¤Úº",
+              "Double 'oo' becomes double 'ee'."
+            ],
+            [
+              "tooth",
+              "teeth",
+              "Ø¯Ø§Ù†Øª",
+              "Never say 'tooths'."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Vowel + Y vs. Consonant + Y",
+          "text": "Look at the letter before 'y': if it is a vowel (a, e, i, o, u), just add **-s** (boy -> boys, key -> keys). If it is a consonant, change to **-ies** (baby -> babies, story -> stories)."
+        },
+        {
+          "type": "warning",
+          "title": "Verb Agreement with Plural Nouns",
+          "text": "Plural nouns take plural verbs: 'The child **is** playing' -> 'The children **are** playing'."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l1-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "There are four books on the wooden desk.",
+          "phonetic": "/Ã°eÉ™r É‘Ë r fÉ”Ë r bÊŠks É’n Ã°É™ ËˆwÊŠdn desk/",
+          "urdu": "Ù„Ú©Ú‘ÛŒ Ú©ÛŒ Ù…ÛŒØ² Ù¾Ø± Ú†Ø§Ø± Ú©ØªØ§Ø¨ÛŒÚº Û ÛŒÚºÛ”",
+          "audioText": "There are four books on the wooden desk."
+        },
+        {
+          "english": "The children are laughing in the playground.",
+          "phonetic": "/Ã°É™ ËˆtÊƒÉªldrÉ™n É‘Ë r ËˆlÉ‘Ë fÉªÅ‹ Éªn Ã°É™ ËˆpleÉªÉ¡raÊŠnd/",
+          "urdu": "Ø¨Ú†Û’ Ú©Ú¾ÛŒÙ„ Ú©Û’ Ù…ÛŒØ¯Ø§Ù† Ù…ÛŒÚº Û Ù†Ø³ Ø±Û Û’ Û ÛŒÚºÛ”",
+          "audioText": "The children are laughing in the playground."
+        },
+        {
+          "english": "She bought three colourful watches as gifts.",
+          "phonetic": "/ÊƒiË  bÉ”Ë t Î¸riË  ËˆkÊŒlÉ™rfÉ™l ËˆwÉ’tÊƒÉªz Ã¦z É¡Éªfts/",
+          "urdu": "Ø§Ø³ Ù†Û’ ØªØ­Ù Û’ Ú©Û’ Ø·ÙˆØ± Ù¾Ø± ØªÛŒÙ† Ø±Ù†Ú¯ Ø¨Ø±Ù†Ú¯ÛŒ Ú¯Ú¾Ú‘ÛŒØ§Úº Ø®Ø±ÛŒØ¯ÛŒÚºÛ”",
+          "audioText": "She bought three colourful watches as gifts."
+        },
+        {
+          "english": "Many people travel between these two cities every day.",
+          "phonetic": "/Ëˆmeni ËˆpiË pl ËˆtrÃ¦vl bÉªËˆtwiË n Ã°iË z tuË  ËˆsÉªtiz Ëˆevri deÉª/",
+          "urdu": "Ø¨Û Øª Ø³Û’ Ù„ÙˆÚ¯ Û Ø± Ø±ÙˆØ² Ø§Ù† Ø¯Ùˆ Ø´Û Ø±ÙˆÚº Ú©Û’ Ø¯Ø±Ù…ÛŒØ§Ù† Ø³Ù Ø± Ú©Ø±ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "Many people travel between these two cities every day."
+        },
+        {
+          "english": "He has two house keys in his jacket pocket.",
+          "phonetic": "/hiË  hÃ¦z tuË  haÊŠs kiË z Éªn hÉªz ËˆdÊ’Ã¦kÉªt ËˆpÉ’kÉªt/",
+          "urdu": "Ø§Ø³ Ú©ÛŒ Ø¬ÛŒÚ©Ù¹ Ú©ÛŒ Ø¬ÛŒØ¨ Ù…ÛŒÚº Ú¯Ú¾Ø± Ú©ÛŒ Ø¯Ùˆ Ú†Ø§Ø¨ÛŒØ§Úº Û ÛŒÚºÛ”",
+          "audioText": "He has two house keys in his jacket pocket."
+        },
+        {
+          "english": "We need five more chairs for the guests.",
+          "phonetic": "/wiË  niË d faÉªv mÉ”Ë r tÊƒeÉ™rz fÉ”Ë r Ã°É™ É¡ests/",
+          "urdu": "Û Ù…ÛŒÚº Ù…Û Ù…Ø§Ù†ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ Ù¾Ø§Ù†Ú† Ù…Ø²ÛŒØ¯ Ú©Ø±Ø³ÛŒÙˆÚº Ú©ÛŒ Ø¶Ø±ÙˆØ±Øª Û Û’Û”",
+          "audioText": "We need five more chairs for the guests."
+        },
+        {
+          "english": "Both men are skilled computer engineers.",
+          "phonetic": "/boÊŠÎ¸ men É‘Ë r skÉªld kÉ™mËˆpjuË tÉ™r ËŒendÊ’ÉªËˆnÉªÉ™rz/",
+          "urdu": "Ø¯ÙˆÙ†ÙˆÚº Ù…Ø±Ø¯ Ù…Ø§Û Ø± Ú©Ù…Ù¾ÛŒÙˆÙ¹Ø± Ø§Ù†Ø¬Ù†ÛŒØ¦Ø± Û ÛŒÚºÛ”",
+          "audioText": "Both men are skilled computer engineers."
+        },
+        {
+          "english": "The heavy boxes are stacked near the exit door.",
+          "phonetic": "/Ã°É™ Ëˆhevi ËˆbÉ’ksÉªz É‘Ë r stÃ¦kt nÉªÉ™r Ã°i ËˆeksÉªt dÉ”Ë r/",
+          "urdu": "Ø¨Ú¾Ø§Ø±ÛŒ ÚˆØ¨Û’ Ø¨Ø§Û Ø± Ù†Ú©Ù„Ù†Û’ Ú©Û’ Ø¯Ø±ÙˆØ§Ø²Û’ Ú©Û’ Ù‚Ø±ÛŒØ¨ Ø±Ú©Ú¾Û’ Û ÙˆØ¦Û’ Û ÛŒÚºÛ”",
+          "audioText": "The heavy boxes are stacked near the exit door."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l1-3",
+      "type": "dialogue",
+      "title": "Organizing the Study Room",
+      "dialogue": [
+        {
+          "speaker": "Rashid",
+          "avatar": "R",
+          "english": "How many boxes do we need for these books?",
+          "urdu": "Ø§Ù† Ú©ØªØ§Ø¨ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ Û Ù…ÛŒÚº Ú©ØªÙ†Û’ ÚˆØ¨ÙˆÚº Ú©ÛŒ Ø¶Ø±ÙˆØ±Øª Û Û’ØŸ",
+          "audioText": "How many boxes do we need for these books?"
+        },
+        {
+          "speaker": "Amina",
+          "avatar": "A",
+          "english": "We need three large boxes. Put the English books on these shelves.",
+          "urdu": "Û Ù…ÛŒÚº ØªÛŒÙ† Ø¨Ú‘Û’ ÚˆØ¨ÙˆÚº Ú©ÛŒ Ø¶Ø±ÙˆØ±Øª Û Û’Û” Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú©ÛŒ Ú©ØªØ§Ø¨ÛŒÚº Ø§Ù† Ø§Ù„Ù…Ø§Ø±ÛŒÙˆÚº Ù¾Ø± Ø±Ú©Ú¾ Ø¯ÛŒÚºÛ”",
+          "audioText": "We need three large boxes. Put the English books on these shelves."
+        },
+        {
+          "speaker": "Rashid",
+          "avatar": "R",
+          "english": "Where are the room keys?",
+          "urdu": "Ú©Ù…Ø±Û’ Ú©ÛŒ Ú†Ø§Ø¨ÛŒØ§Úº Ú©Û Ø§Úº Û ÛŒÚºØŸ",
+          "audioText": "Where are the room keys?"
+        },
+        {
+          "speaker": "Amina",
+          "avatar": "A",
+          "english": "The keys are right on the table next to the watches.",
+          "urdu": "Ú†Ø§Ø¨ÛŒØ§Úº Ù…ÛŒØ² Ù¾Ø± Ú¯Ú¾Ú‘ÛŒÙˆÚº Ú©Û’ Ø¨Ø±Ø§Ø¨Ø± Ù…ÛŒÚº Û ÛŒ Û ÛŒÚºÛ”",
+          "audioText": "The keys are right on the table next to the watches."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l1-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u2-l1-1",
+          "type": "mcq",
+          "skillTag": "plurals",
+          "prompt": "What is the correct plural form of the noun 'watch'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "watches"
+            },
+            {
+              "id": "opt-2",
+              "text": "watchs"
+            },
+            {
+              "id": "opt-3",
+              "text": "watchies"
+            },
+            {
+              "id": "opt-4",
+              "text": "watchis"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Nouns ending in -ch add '-es' to form their plural, making 'watches'.",
+          "urduExplanation": "Ø¬Ùˆ Ø§Ø³Ù… -ch Ù¾Ø± Ø®ØªÙ… Û ÙˆØªÛ’ Û ÛŒÚº Ø§Ù† Ú©ÛŒ Ø¬Ù…Ø¹ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ '-es' Ú©Ø§ Ø§Ø¶Ø§Ù Û  Ú©ÛŒØ§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l1-2",
+          "type": "mcq",
+          "skillTag": "plurals",
+          "prompt": "Choose the correct sentence featuring an irregular plural:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "The childs are playing."
+            },
+            {
+              "id": "opt-2",
+              "text": "The children are playing."
+            },
+            {
+              "id": "opt-3",
+              "text": "The childrens are playing."
+            },
+            {
+              "id": "opt-4",
+              "text": "The child are playing."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "The plural of 'child' is irregularly 'children'. It does not take an 's'.",
+          "urduExplanation": "'child' Ú©ÛŒ ØµØ­ÛŒØ­ Ø¬Ù…Ø¹ 'children' Û Û’ØŒ Ø§Ø³ Ú©Û’ Ø³Ø§ØªÚ¾ 's' Ù†Û ÛŒÚº Ù„Ú¯ØªØ§Û”"
+        },
+        {
+          "id": "ex-a1-u2-l1-3",
+          "type": "fill_blank",
+          "skillTag": "plurals",
+          "prompt": "Complete with the plural of 'city': 'Islamabad and Lahore are modern _____.'",
+          "correctAnswer": "cities",
+          "explanation": "'City' ends in a consonant + y, so the 'y' changes to 'ies' to form 'cities'.",
+          "urduExplanation": "'city' Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº consonant + y Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ y Ú©Ùˆ Û Ù¹Ø§ Ú©Ø± ies Ù„Ú¯Ø§ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l1-4",
+          "type": "fill_blank",
+          "skillTag": "plurals",
+          "prompt": "Complete with the plural of 'person': 'There are twenty _____ in the conference room.'",
+          "correctAnswer": "people",
+          "explanation": "The normal plural for 'person' in modern English is 'people'.",
+          "urduExplanation": "'person' Ú©ÛŒ Ø¹Ø§Ù… Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø¬Ù…Ø¹ 'people' (Ù„ÙˆÚ¯) Û ÙˆØªÛŒ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l1-5",
+          "type": "order_sentence",
+          "skillTag": "plurals",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "Three",
+            "women",
+            "are",
+            "waiting",
+            "outside",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Subject (Three women) + verb (are waiting) + adverbial phrase (outside).",
+          "urduExplanation": "Ù Ø§Ø¹Ù„ (Three women) Ø§ÙˆØ± Ø¬Ù…Ø¹ Ù Ø¹Ù„ (are waiting) Ú©Û’ Ø³Ø§ØªÚ¾ Ø¬Ù…Ù„Û  Ø¨Ù†Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l1-6",
+          "type": "order_sentence",
+          "skillTag": "plurals",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "The",
+            "wooden",
+            "boxes",
+            "are",
+            "very",
+            "heavy",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "The noun phrase 'The wooden boxes' functions as the plural subject.",
+          "urduExplanation": "'The wooden boxes' Ø¨Ø·ÙˆØ± Ø¬Ù…Ø¹ Ù Ø§Ø¹Ù„ Ù¾Û Ù„Û’ Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "ex-a1-u2-l1-7",
+          "type": "match_pairs",
+          "skillTag": "plurals",
+          "prompt": "Match the singular noun with its correct plural form:",
+          "pairs": [
+            {
+              "left": "man",
+              "right": "men"
+            },
+            {
+              "left": "box",
+              "right": "boxes"
+            },
+            {
+              "left": "key",
+              "right": "keys"
+            },
+            {
+              "left": "baby",
+              "right": "babies"
+            }
+          ],
+          "explanation": "Regular and irregular plurals correctly paired.",
+          "urduExplanation": "ÙˆØ§Ø­Ø¯ Ø§ÙˆØ± Ø¬Ù…Ø¹ Ú©Û’ ØµØ­ÛŒØ­ Ø¬ÙˆÚ‘Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l1-8",
+          "type": "error_correction",
+          "skillTag": "plurals",
+          "prompt": "Find and correct the mistake: 'He has three tooths that hurt.'",
+          "correctAnswer": "He has three teeth that hurt.",
+          "explanation": "The plural of 'tooth' is the irregular noun 'teeth', not 'tooths'.",
+          "urduExplanation": "'tooth' Ú©ÛŒ Ø¬Ù…Ø¹ 'teeth' Û ÙˆØªÛŒ Û Û’ØŒ 'tooths' ØºÙ„Ø· Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l1-9",
+          "type": "error_correction",
+          "skillTag": "plurals",
+          "prompt": "Find and correct the mistake: 'The babys are crying loudly.'",
+          "correctAnswer": "The babies are crying loudly.",
+          "explanation": "For 'baby' (consonant + y), replace 'y' with 'ies' to write 'babies'.",
+          "urduExplanation": "'baby' Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº consonant + y Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'babies' Ù„Ú©Ú¾Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l1-10",
+          "type": "true_false",
+          "skillTag": "plurals",
+          "prompt": "The plural of 'key' is spelled 'keies'. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. 'Key' has a vowel before 'y' (e + y), so it simply adds -s: 'keys'.",
+          "urduExplanation": "ØºÙ„Ø·Û” 'key' Ù…ÛŒÚº y Ø³Û’ Ù¾Û Ù„Û’ vowel (e) Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ ØµØ±Ù  -s Ù„Ú¯ Ú©Ø± 'keys' Ø¨Ù†ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l1-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u2-l1-1",
+          "type": "mcq",
+          "skillTag": "plurals",
+          "prompt": "Which plural form is spelled INCORRECTLY?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "countrys"
+            },
+            {
+              "id": "opt-2",
+              "text": "cities"
+            },
+            {
+              "id": "opt-3",
+              "text": "watches"
+            },
+            {
+              "id": "opt-4",
+              "text": "tables"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Country' ends in consonant + y, so its correct plural is 'countries', not 'countrys'.",
+          "urduExplanation": "'country' Ú©ÛŒ ØµØ­ÛŒØ­ Ø¬Ù…Ø¹ 'countries' Û ÙˆØªÛŒ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u2-l1-2",
+          "type": "mcq",
+          "skillTag": "plurals",
+          "prompt": "What is the plural of 'foot'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "foots"
+            },
+            {
+              "id": "opt-2",
+              "text": "feet"
+            },
+            {
+              "id": "opt-3",
+              "text": "feets"
+            },
+            {
+              "id": "opt-4",
+              "text": "footen"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Foot' changes its vowel to become 'feet' in the plural.",
+          "urduExplanation": "'foot' Ú©ÛŒ Ø¬Ù…Ø¹ 'feet' Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u2-l1-3",
+          "type": "mcq",
+          "skillTag": "plurals",
+          "prompt": "Select the sentence with correct subject-verb agreement:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "The children is here."
+            },
+            {
+              "id": "opt-2",
+              "text": "The people was happy."
+            },
+            {
+              "id": "opt-3",
+              "text": "The boxes are ready."
+            },
+            {
+              "id": "opt-4",
+              "text": "The women is working."
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'The boxes are ready' correctly matches plural subject 'boxes' with plural verb 'are'.",
+          "urduExplanation": "Ø¬Ù…Ø¹ Ù Ø§Ø¹Ù„ 'boxes' Ú©Û’ Ø³Ø§ØªÚ¾ Ø¬Ù…Ø¹ Ù Ø¹Ù„ 'are' ØµØ­ÛŒØ­ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u2-l1-4",
+          "type": "mcq",
+          "skillTag": "plurals",
+          "prompt": "What is the plural of 'life'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "lifes"
+            },
+            {
+              "id": "opt-2",
+              "text": "lifies"
+            },
+            {
+              "id": "opt-3",
+              "text": "lifess"
+            },
+            {
+              "id": "opt-4",
+              "text": "lives"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Nouns ending in -fe like 'life' shift to -ves in the plural: 'lives'.",
+          "urduExplanation": "-fe Ù¾Ø± Ø®ØªÙ… Û ÙˆÙ†Û’ ÙˆØ§Ù„Û’ Ø§Ø³Ù… Ú©ÛŒ Ø¬Ù…Ø¹ 'lives' Û ÙˆØªÛŒ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u2-l1-5",
+          "type": "mcq",
+          "skillTag": "plurals",
+          "prompt": "Which pair shows singular and plural correctly?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "man - men"
+            },
+            {
+              "id": "opt-2",
+              "text": "person - persons"
+            },
+            {
+              "id": "opt-3",
+              "text": "bus - buss"
+            },
+            {
+              "id": "opt-4",
+              "text": "day - daies"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'man - men' is the correct vowel-shift irregular plural pair.",
+          "urduExplanation": "'man - men' Ø¨Ø§Ù„Ú©Ù„ Ø¯Ø±Ø³Øª ÙˆØ§Ø­Ø¯ Ø¬Ù…Ø¹ Ú©Ø§ Ø¬ÙˆÚ‘Ø§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l1-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Here is what you mastered in this lesson:",
+      "summaryPoints": [
+        "Most nouns become plural by adding -s (book -> books, desk -> desks).",
+        "Nouns ending in -ch, -sh, -ss, -x, -z add -es (watch -> watches, box -> boxes).",
+        "Consonant + y changes to -ies (city -> cities); Vowel + y just adds -s (key -> keys).",
+        "Memorize irregular plurals: child -> children, man -> men, woman -> women, person -> people, foot -> feet.",
+        "Plural nouns always require plural verbs (e.g. 'The books are...')."
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l1-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº ÙˆØ§Ø­Ø¯ Ø³Û’ Ø¬Ù…Ø¹ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Û Ù… Ù„Ù Ø¸ Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº 'ÛŒÚº'، 'ÙˆÚº' ÛŒØ§ 'Û’' Ú©Ø§ Ø§Ø¶Ø§Ù Û  Ú©Ø±ØªÛ’ Û ÛŒÚº (Ø¬ÛŒØ³Û’: Ú©ØªØ§Ø¨ Ø³Û’ Ú©ØªØ§Ø¨ÛŒÚºØŒ Ù„Ú‘Ú©Ø§ Ø³Û’ Ù„Ú‘Ú©Û’)Û”\n\nØ§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø¨Ú¾ÛŒ Ø§Ú©Ø«Ø± Ø§ÙˆÙ‚Ø§Øª ØµØ±Ù  **-s** ÛŒØ§ **-es** Ù„Ú¯ØªØ§ Û Û’Û” Ù„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ú©Ú†Ú¾ Ø§Û Ù… Ø¨Û’ Ù‚Ø§Ø¹Ø¯Û  (Irregular) Ø§Ù„Ù Ø§Ø¸ Û ÛŒÚº Ø¬Ù† Ú©Û’ Ø³Ø§ØªÚ¾ 's' Ù†Û ÛŒÚº Ù„Ú¯ØªØ§ØŒ Ø¨Ù„Ú©Û  Ù¾ÙˆØ±Ø§ Ù„Ù Ø¸ Û ÛŒ Ø¨Ø¯Ù„ Ø¬Ø§ØªØ§ Û Û’ØŒ Ø¬ÛŒØ³Û’ **child** Ø³Û’ **children** Ø§ÙˆØ± **person** Ø³Û’ **people**Û” Ø§Ù† Ø¨Û’ Ù‚Ø§Ø¹Ø¯Û  Ø§Ù„Ù Ø§Ø¸ Ú©Ùˆ Ø®Ø§Øµ Ø·ÙˆØ± Ù¾Ø± ÛŒØ§Ø¯ Ø±Ú©Ú¾Ù†Ø§ Ø¶Ø±ÙˆØ±ÛŒ Û Û’Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

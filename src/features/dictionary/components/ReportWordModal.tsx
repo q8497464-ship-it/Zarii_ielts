@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X, AlertTriangle, Send, Check } from 'lucide-react';
 import { Button } from '../../../components/ui/Button';
 import { useAppStore } from '../../../store/useAppStore';
+import { dictionaryAdminStore } from '../dictionaryAdminStore';
 
 interface ReportWordModalProps {
   isOpen: boolean;
@@ -21,6 +22,12 @@ export function ReportWordModal({ isOpen, onClose, word }: ReportWordModalProps)
     e.preventDefault();
     setIsSubmitting(true);
 
+    try {
+      dictionaryAdminStore.submitReport(word, category, details);
+    } catch (err) {
+      console.warn('Failed to submit dictionary report:', err);
+    }
+
     setTimeout(() => {
       setIsSubmitting(false);
       addToast({
@@ -29,7 +36,7 @@ export function ReportWordModal({ isOpen, onClose, word }: ReportWordModalProps)
         message: `Thank you for helping improve the dictionary entry for "${word}".`,
       });
       onClose();
-    }, 400);
+    }, 300);
   };
 
   return (

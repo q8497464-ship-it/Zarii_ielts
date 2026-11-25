@@ -1,0 +1,631 @@
+{
+  "id": "eng-a1-u4-l3",
+  "level": "A1",
+  "unit": "unit-4",
+  "order": 3,
+  "title": "The Possessive 'S (Apostrophe S)",
+  "description": "Show who owns what using apostrophe s ('s) for singular and plural nouns.",
+  "objectives": [
+    "Attach 's to singular nouns to indicate possession (Ali's car, the teacher's desk)",
+    "Add only an apostrophe (') to regular plural nouns ending in -s (the students' books)",
+    "Attach 's to irregular plural nouns that do not end in -s (the children's toys, women's rights)"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u4-l2"
+  ],
+  "skillTags": [
+    "possessives",
+    "apostrophe",
+    "grammar-basics",
+    "punctuation"
+  ],
+  "vocabularyList": [
+    {
+      "word": "wife",
+      "partOfSpeech": "noun",
+      "phonetic": "/waÉªf/",
+      "definition": "A married woman considered in relation to her spouse.",
+      "urduMeaning": "Ø¨ÛŒÙˆÛŒ / Ø§Û Ù„ÛŒÛ ",
+      "exampleSentence": "Tariq's wife is a talented doctor."
+    },
+    {
+      "word": "husband",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆhÊŒzbÉ™nd/",
+      "definition": "A married man considered in relation to his spouse.",
+      "urduMeaning": "Ø´ÙˆÛ Ø±",
+      "exampleSentence": "Sarah's husband works in civil service."
+    },
+    {
+      "word": "cousin",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆkÊŒzn/",
+      "definition": "A child of one's uncle or aunt.",
+      "urduMeaning": "Ú©Ø²Ù† (Ú†Ú†Ø§ Ø²Ø§Ø¯ØŒ Ù…Ø§Ù…ÙˆÚº Ø²Ø§Ø¯)",
+      "exampleSentence": "Bilal's cousin arrived from London today."
+    },
+    {
+      "word": "nephew",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆnefjuË /",
+      "definition": "A son of one's brother or sister.",
+      "urduMeaning": "Ø¨Ú¾ØªÛŒØ¬Ø§ / Ø¨Ú¾Ø§Ù†Ø¬Ø§",
+      "exampleSentence": "My nephew loves playing cricket."
+    },
+    {
+      "word": "niece",
+      "partOfSpeech": "noun",
+      "phonetic": "/niË s/",
+      "definition": "A daughter of one's brother or sister.",
+      "urduMeaning": "Ø¨Ú¾ØªÛŒØ¬ÛŒ / Ø¨Ú¾Ø§Ù†Ø¬ÛŒ",
+      "exampleSentence": "Her niece is five years old."
+    },
+    {
+      "word": "boss",
+      "partOfSpeech": "noun",
+      "phonetic": "/bÉ’s/",
+      "definition": "A person in charge of an employee or organization.",
+      "urduMeaning": "Ø¨Ø§Ø³ / Ø§Ù Ø³Ø±",
+      "exampleSentence": "The boss's office is on the third floor."
+    },
+    {
+      "word": "neighbour",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆneÉªbÉ™r/",
+      "definition": "A person living next door to or very near to the speaker.",
+      "urduMeaning": "Û Ù…Ø³Ø§ÛŒÛ ",
+      "exampleSentence": "Our neighbour's garden is full of roses."
+    },
+    {
+      "word": "colleague",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆkÉ’liË É¡/",
+      "definition": "A person with whom one works in a profession or business.",
+      "urduMeaning": "Û Ù… Ù¾ÛŒØ´Û  Ø³Ø§ØªÚ¾ÛŒ",
+      "exampleSentence": "She attended her colleague's wedding."
+    },
+    {
+      "word": "manager",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆmÃ¦nÉªdÊ’É™r/",
+      "definition": "A person responsible for controlling or administering an organization or group of staff.",
+      "urduMeaning": "Ù…ÛŒÙ†ÛŒØ¬Ø± / Ù…Ù†ØªØ¸Ù…",
+      "exampleSentence": "The manager's signature is required here."
+    },
+    {
+      "word": "partner",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆpÉ‘Ë tnÉ™r/",
+      "definition": "Either of a pair of people engaged in business or a shared activity.",
+      "urduMeaning": "Ø´Ø±Ø§Ú©Øª Ø¯Ø§Ø± / Ø³Ø§ØªÚ¾ÛŒ",
+      "exampleSentence": "His business partner's idea was brilliant."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u4-l3-1",
+      "type": "explain",
+      "title": "Rules for Possessive Apostrophe S",
+      "content": "To show that something belongs to a person or animal, English adds an **apostrophe + s ('s)**.\n\n### The Three Rules of Possessive S\n1. **Singular nouns**: Add **'s** (*Ali's book*, *the teacher's desk*, *the cat's tail*).\n2. **Regular plural nouns ending in -s**: Add **only an apostrophe (')** after the s (*the students' exam results*, *the teachers' lounge*).\n3. **Irregular plural nouns NOT ending in -s**: Add **'s** (*the children's room*, *the men's suits*, *the people's choice*).",
+      "tables": [
+        {
+          "title": "Possessive Apostrophe Matrix",
+          "headers": [
+            "Noun Type",
+            "Rule",
+            "Singular / Plural Example",
+            "Pronunciation"
+          ],
+          "rows": [
+            [
+              "Singular Noun",
+              "Add 's",
+              "Ali's laptop / Sarah's car",
+              "Sound: /z/ or /s/"
+            ],
+            [
+              "Regular Plural (-s)",
+              "Add only '",
+              "The boys' school / The students' books",
+              "No extra syllable added"
+            ],
+            [
+              "Irregular Plural (no -s)",
+              "Add 's",
+              "The children's toys / Women's hospital",
+              "Regular /z/ sound added"
+            ]
+          ]
+        },
+        {
+          "title": "Contraction 's vs. Possessive 's",
+          "headers": [
+            "Sentence",
+            "'s Meaning",
+            "Full Explanation",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "Ali's car is new.",
+              "Possessive (belonging to Ali)",
+              "The car belonging to Ali",
+              "Ø¹Ù„ÛŒ Ú©ÛŒ Ú¯Ø§Ú‘ÛŒ Ù†Ø¦ÛŒ Û Û’Û”"
+            ],
+            [
+              "Ali's a student.",
+              "Contraction of 'is'",
+              "Ali is a student",
+              "Ø¹Ù„ÛŒ Ø§ÛŒÚ© Ø·Ø§Ù„Ø¨ Ø¹Ù„Ù… Û Û’Û”"
+            ],
+            [
+              "It's hot today.",
+              "Contraction of 'It is'",
+              "It is hot today",
+              "Ø¢Ø¬ Ú¯Ø±Ù…ÛŒ Û Û’Û”"
+            ],
+            [
+              "The cat licked its paw.",
+              "Possessive pronoun (NO apostrophe!)",
+              "Belonging to the cat",
+              "Ø¨Ù„ÛŒ Ù†Û’ Ø§Ù¾Ù†Ø§ Ù¾Ù†Ø¬Û  Ú†Ø§Ù¹Ø§Û”"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Its vs. It's",
+          "text": "**It's** with an apostrophe ALWAYS means *It is* or *It has*. The possessive pronoun **its** NEVER has an apostrophe (*The dog wagged **its** tail*)."
+        },
+        {
+          "type": "warning",
+          "title": "Plural vs Possessive",
+          "text": "Do NOT use an apostrophe to make a word plural! Say *two dogs* (plural), NOT *two dog's*."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l3-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "Ali's father is a respected surgeon in the city hospital.",
+          "phonetic": "/ËˆÃ¦liz ËˆfÉ‘Ë Ã°É™r Éªz É™ rÉªËˆspektÉªd ËˆsÉœË dÊ’É™n Éªn Ã°É™ ËˆsÉªti ËˆhÉ’spÉªtl/",
+          "urdu": "Ø¹Ù„ÛŒ Ú©Û’ ÙˆØ§Ù„Ø¯ Ø´Û Ø±ÛŒ Û Ø³Ù¾ØªØ§Ù„ Ù…ÛŒÚº Ø§ÛŒÚ© Ù‚Ø§Ø¨Ù„Ù  Ø§Ø­ØªØ±Ø§Ù… Ø¬Ø±Ø§Ø­ Û ÛŒÚºÛ”",
+          "audioText": "Ali's father is a respected surgeon in the city hospital."
+        },
+        {
+          "english": "The students' examination results were published online.",
+          "phonetic": "/Ã°É™ ËˆstjuË dÉ™nts ÉªÉ¡ËŒzÃ¦mÉªËˆneÉªÊƒn rÉªËˆzÊŒlts wÉœË  ËˆpÊŒblÉªÊƒt ËˆÉ’nlaÉªn/",
+          "urdu": "Ø·Ù„Ø¨Ø§ Ú©Û’ Ø§Ù…ØªØ­Ø§Ù† Ú©Û’ Ù†ØªØ§Ø¦Ø¬ Ø¢Ù† Ù„Ø§Ø¦Ù† Ø¬Ø§Ø±ÛŒ Ú©ÛŒÛ’ Ú¯Ø¦Û’Û”",
+          "audioText": "The students' examination results were published online."
+        },
+        {
+          "english": "The children's playground is safe and well maintained.",
+          "phonetic": "/Ã°É™ ËˆtÊƒÉªldrÉ™nz ËˆpleÉªÉ¡raÊŠnd Éªz seÉªf Ã¦nd wel meÉªnËˆteÉªnd/",
+          "urdu": "Ø¨Ú†ÙˆÚº Ú©Ø§ Ú©Ú¾ÛŒÙ„ Ú©Ø§ Ù…ÛŒØ¯Ø§Ù† Ù…Ø­Ù ÙˆØ¸ Ø§ÙˆØ± Ø¨Û ØªØ±ÛŒÙ† Ø­Ø§Ù„Øª Ù…ÛŒÚº Û Û’Û”",
+          "audioText": "The children's playground is safe and well maintained."
+        },
+        {
+          "english": "Sarah's new laptop has a very long battery life.",
+          "phonetic": "/ËˆseÉ™rÉ™z njuË  ËˆlÃ¦ptÉ’p hÃ¦z É™ Ëˆveri lÉ’Å‹ ËˆbÃ¦tri laÉªf/",
+          "urdu": "Ø³Ø§Ø±Û  Ú©Û’ Ù†Ø¦Û’ Ù„ÛŒÙ¾ Ù¹Ø§Ù¾ Ú©ÛŒ Ø¨ÛŒÙ¹Ø±ÛŒ Ø¨Û Øª Ø²ÛŒØ§Ø¯Û  Ú†Ù„ØªÛŒ Û Û’Û”",
+          "audioText": "Sarah's new laptop has a very long battery life."
+        },
+        {
+          "english": "My brother's car needs a thorough wash today.",
+          "phonetic": "/maÉª ËˆbrÊŒÃ°É™rz kÉ‘Ë r niË dz É™ ËˆÎ¸ÊŒrÉ™ wÉ’Êƒ tÉ™ËˆdeÉª/",
+          "urdu": "Ù…ÛŒØ±Û’ Ø¨ÚÚ¾Ø§Ø¦ÛŒ Ú©ÛŒ Ú¯Ø§Ú‘ÛŒ Ú©Ùˆ Ø¢Ø¬ Ø§Ú†Ú¾ÛŒ Ø·Ø±Ø­ Ø¯Ú¾ÙˆÙ†Û’ Ú©ÛŒ Ø¶Ø±ÙˆØ±Øª Û Û’Û”",
+          "audioText": "My brother's car needs a thorough wash today."
+        },
+        {
+          "english": "We visited our neighbour's beautiful rose garden.",
+          "phonetic": "/wiË  ËˆvÉªzÉªtÉªd ËˆaÊŠÉ™r ËˆneÉªbÉ™rz ËˆbjuË tÉªfl rÉ™ÊŠz ËˆÉ¡É‘Ë dn/",
+          "urdu": "Û Ù… Ù†Û’ Ø§Ù¾Ù†Û’ Û Ù…Ø³Ø§Ø¦Û’ Ú©Û’ Ø®ÙˆØ¨ØµÙˆØ±Øª Ú¯Ù„Ø§Ø¨ Ú©Û’ Ø¨Ø§Øº Ú©ÛŒ Ø³ÛŒØ± Ú©ÛŒÛ”",
+          "audioText": "We visited our neighbour's beautiful rose garden."
+        },
+        {
+          "english": "The doctor examined the patient's sore throat.",
+          "phonetic": "/Ã°É™ ËˆdÉ’ktÉ™r ÉªÉ¡ËˆzÃ¦mÉªnd Ã°É™ ËˆpeÉªÊƒnts sÉ”Ë r Î¸rÉ™ÊŠt/",
+          "urdu": "ÚˆØ§Ú©Ù¹Ø± Ù†Û’ Ù…Ø±ÛŒØ¶ Ú©Û’ Ø¯Ø±Ø¯ Ú©Ø±ØªÛ’ Û ÙˆØ¦Û’ Ú¯Ù„Û’ Ú©Ø§ Ù…Ø¹Ø§Ø¦Ù†Û  Ú©ÛŒØ§Û”",
+          "audioText": "The doctor examined the patient's sore throat."
+        },
+        {
+          "english": "The company's new office is in Blue Area, Islamabad.",
+          "phonetic": "/Ã°É™ ËˆkÊŒmpÉ™niz njuË  ËˆÉ’fÉªs Éªz Éªn bluË  ËˆeÉ™riÉ™ ÉªsËˆlÉ‘Ë mÉ™bÉ‘Ë d/",
+          "urdu": "Ú©Ù…Ù¾Ù†ÛŒ Ú©Ø§ Ù†ÛŒØ§ Ø¯Ù ØªØ± Ø¨Ù„Ùˆ Ø§ÛŒØ±ÛŒØ§ØŒ Ø§Ø³Ù„Ø§Ù… Ø¢Ø¨Ø§Ø¯ Ù…ÛŒÚº Û Û’Û”",
+          "audioText": "The company's new office is in Blue Area, Islamabad."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l3-3",
+      "type": "dialogue",
+      "title": "Whose Bag Is This?",
+      "dialogue": [
+        {
+          "speaker": "Zubair",
+          "avatar": "Z",
+          "english": "Excuse me, whose leather jacket is this on the sofa?",
+          "urdu": "Ù…Ø¹Ø§Ù  Ú©ÛŒØ¬Ø¦Û’ Ú¯Ø§ØŒ ØµÙˆÙ Û’ Ù¾Ø± ÛŒÛ  Ú†Ù…Ú‘Û’ Ú©ÛŒ Ø¬ÛŒÚ©Ù¹ Ú©Ø³ Ú©ÛŒ Û Û’ØŸ",
+          "audioText": "Excuse me, whose leather jacket is this on the sofa?"
+        },
+        {
+          "speaker": "Hamza",
+          "avatar": "H",
+          "english": "That is Hamza's jacket. He left it here after our study session.",
+          "urdu": "ÙˆÛ  Ø­Ù…Ø²Û  Ú©ÛŒ Ø¬ÛŒÚ©Ù¹ Û Û’Û” ÙˆÛ  Ù¾Ú‘Ú¾Ø§Ø¦ÛŒ Ú©Û’ Ø¨Ø¹Ø¯ ÛŒÛ Ø§Úº Ø¨Ú¾ÙˆÙ„ Ú¯ÛŒØ§ ØªÚ¾Ø§Û”",
+          "audioText": "That is Hamza's jacket. He left it here after our study session."
+        },
+        {
+          "speaker": "Zubair",
+          "avatar": "Z",
+          "english": "And are these the teacher's whiteboard markers?",
+          "urdu": "Ø§ÙˆØ± Ú©ÛŒØ§ ÛŒÛ  Ø§Ø³ØªØ§Ø¯ Ú©Û’ ÙˆØ§Ø¦Ù¹ Ø¨ÙˆØ±Úˆ Ù…Ø§Ø±Ú©Ø±Ø² Û ÛŒÚºØŸ",
+          "audioText": "And are these the teacher's whiteboard markers?"
+        },
+        {
+          "speaker": "Hamza",
+          "avatar": "H",
+          "english": "Yes, please put them on the teacher's desk.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºØŒ Ø¨Ø±Ø§Û  Ú©Ø±Ù… Ø§Ù†Û ÛŒÚº Ø§Ø³ØªØ§Ø¯ Ú©ÛŒ Ù…ÛŒØ² Ù¾Ø± Ø±Ú©Ú¾ Ø¯ÛŒÚºÛ”",
+          "audioText": "Yes, please put them on the teacher's desk."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l3-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u4-l3-1",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "Choose the correct phrase for 'the car belonging to Ali':",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Ali's car"
+            },
+            {
+              "id": "opt-2",
+              "text": "Alis' car"
+            },
+            {
+              "id": "opt-3",
+              "text": "Ali car"
+            },
+            {
+              "id": "opt-4",
+              "text": "the car of to Ali"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Singular proper nouns add 's to express possession: 'Ali's car'.",
+          "urduExplanation": "ÙˆØ§Ø­Ø¯ Ù†Ø§Ù… Ú©Û’ Ø³Ø§ØªÚ¾ 's Ù„Ú¯ØªØ§ Û Û’: 'Ali's car'Û”"
+        },
+        {
+          "id": "ex-a1-u4-l3-2",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "Choose the correct phrase for 'the room belonging to several boys':",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "the boy's room"
+            },
+            {
+              "id": "opt-2",
+              "text": "the boys' room"
+            },
+            {
+              "id": "opt-3",
+              "text": "the boys's room"
+            },
+            {
+              "id": "opt-4",
+              "text": "the boies room"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Regular plural nouns ending in -s add only an apostrophe: 'the boys' room'.",
+          "urduExplanation": "Ø¬Ù…Ø¹ Ø§Ø³Ù… Ø¬Ùˆ s Ù¾Ø± Ø®ØªÙ… Û Ùˆ Ø§Ø³ Ú©Û’ Ø¨Ø¹Ø¯ ØµØ±Ù  apostrophe (') Ù„Ú¯ØªÛŒ Û Û’: 'boys' room'Û”"
+        },
+        {
+          "id": "ex-a1-u4-l3-3",
+          "type": "fill_blank",
+          "skillTag": "possessives",
+          "prompt": "Complete with the possessive form: 'The _____ (children) toys are scattered across the floor.'",
+          "correctAnswer": "children's",
+          "explanation": "'Children' is an irregular plural not ending in -s, so it takes 's: 'children's'.",
+          "urduExplanation": "'children' s Ù¾Ø± Ø®ØªÙ… Ù†Û ÛŒÚº Û ÙˆØªØ§ØŒ Ø§Ø³ Ù„ÛŒÛ’ 's Ù„Ú¯Û’ Ú¯Ø§: 'children's'Û”"
+        },
+        {
+          "id": "ex-a1-u4-l3-4",
+          "type": "fill_blank",
+          "skillTag": "possessives",
+          "prompt": "Complete with the possessive form of 'Sarah': 'This is _____ new mobile phone.'",
+          "correctAnswer": "Sarah's",
+          "explanation": "Singular noun 'Sarah' takes 's: 'Sarah's'.",
+          "urduExplanation": "'Sarah' Ú©Û’ Ø³Ø§ØªÚ¾ 's Ù„Ú¯ Ú©Ø± 'Sarah's' Ø¨Ù†ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u4-l3-5",
+          "type": "order_sentence",
+          "skillTag": "possessives",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "My",
+            "brother's",
+            "car",
+            "is",
+            "parked",
+            "outside",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Possessive noun phrase (My brother's car) + verb (is parked) + location adverb (outside).",
+          "urduExplanation": "My brother's car is parked outside."
+        },
+        {
+          "id": "ex-a1-u4-l3-6",
+          "type": "order_sentence",
+          "skillTag": "possessives",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "The",
+            "teacher's",
+            "desk",
+            "is",
+            "very",
+            "neat",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (The teacher's desk) + verb (is) + predicate adjective (very neat).",
+          "urduExplanation": "The teacher's desk is very neat."
+        },
+        {
+          "id": "ex-a1-u4-l3-7",
+          "type": "match_pairs",
+          "skillTag": "possessives",
+          "prompt": "Match the phrase with its correct possessive construction:",
+          "pairs": [
+            {
+              "left": "The book of the student",
+              "right": "The student's book"
+            },
+            {
+              "left": "The books of the students",
+              "right": "The students' books"
+            },
+            {
+              "left": "The toys of the children",
+              "right": "The children's toys"
+            },
+            {
+              "left": "The house of Tariq",
+              "right": "Tariq's house"
+            }
+          ],
+          "explanation": "Prepositional 'of' phrases matched to natural possessive forms.",
+          "urduExplanation": "Ù…Ù„Ú©ÛŒØª Ú©Û’ ØµØ­ÛŒØ­ Ø¬ÙˆÚ‘Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l3-8",
+          "type": "error_correction",
+          "skillTag": "possessives",
+          "prompt": "Find and correct the mistake: 'I saw two dog's in the park.'",
+          "correctAnswer": "I saw two dogs in the park.",
+          "explanation": "A simple plural never takes an apostrophe. Say 'two dogs'.",
+          "urduExplanation": "Ø¬Ù…Ø¹ Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ apostrophe Ù†Û ÛŒÚº Ù„Ú¯ØªÛŒØŒ 'two dogs' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l3-9",
+          "type": "error_correction",
+          "skillTag": "possessives",
+          "prompt": "Find and correct the mistake: 'The cat licked it's paw.'",
+          "correctAnswer": "The cat licked its paw.",
+          "explanation": "The possessive pronoun 'its' does not take an apostrophe ('it's' means 'it is').",
+          "urduExplanation": "Ù…Ù„Ú©ÛŒØª Ú©Û’ Ù„ÛŒÛ’ 'its' Ø¨ØºÛŒØ± apostrophe Ú©Û’ Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u4-l3-10",
+          "type": "true_false",
+          "skillTag": "possessives",
+          "prompt": "In the sentence 'The students' books are heavy', 'students'' refers to more than one student. (True or False)",
+          "correctAnswer": "True",
+          "explanation": "True. An apostrophe after the s (students') indicates plural possessive.",
+          "urduExplanation": "Ø¯Ø±Ø³ØªÛ” 'students'' Ø§ÛŒÚ© Ø³Û’ Ø²ÛŒØ§Ø¯Û  Ø·Ù„Ø¨Ø§ Ú©ÛŒ Ù…Ù„Ú©ÛŒØª Ø¸Ø§Û Ø± Ú©Ø±ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l3-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u4-l3-1",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "Which sentence shows plural possessive correctly?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "The teachers' lounge is on the second floor."
+            },
+            {
+              "id": "opt-2",
+              "text": "The teacher's lounge have five teachers."
+            },
+            {
+              "id": "opt-3",
+              "text": "The teachers's lounge is clean."
+            },
+            {
+              "id": "opt-4",
+              "text": "The teachers lounge' is empty."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Plural noun 'teachers' adds only an apostrophe: 'teachers''.",
+          "urduExplanation": "Ø¬Ù…Ø¹ Ø§Ø³Ù… 'teachers' Ú©Û’ Ø¨Ø¹Ø¯ ØµØ±Ù  apostrophe Ù„Ú¯Û’ Ú¯ÛŒ: 'teachers''."
+        },
+        {
+          "id": "qz-a1-u4-l3-2",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "What is the difference between 'the boy's dog' and 'the boys' dog'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "The first has two dogs; the second has one"
+            },
+            {
+              "id": "opt-2",
+              "text": "There is no difference in meaning"
+            },
+            {
+              "id": "opt-3",
+              "text": "The first belongs to one boy; the second belongs to multiple boys"
+            },
+            {
+              "id": "opt-4",
+              "text": "The first is in the past tense; the second is present"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'Boy's' is singular possessive (one boy); 'boys'' is plural possessive (two or more boys).",
+          "urduExplanation": "'boy's' Ø§ÛŒÚ© Ù„Ú‘Ú©Û’ Ú©Û’ Ù„ÛŒÛ’ Û Û’ØŒ Ø¬Ø¨Ú©Û  'boys'' Ú©Ø¦ÛŒ Ù„Ú‘Ú©ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u4-l3-3",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "What does 'it's' mean with an apostrophe?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Belonging to it"
+            },
+            {
+              "id": "opt-2",
+              "text": "Plural of it"
+            },
+            {
+              "id": "opt-3",
+              "text": "It is or it has"
+            },
+            {
+              "id": "opt-4",
+              "text": "Negative of it"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'It's' is exclusively the contraction of 'it is' or 'it has'.",
+          "urduExplanation": "'it's' Ú©Ø§ Ù…Ø·Ù„Ø¨ 'it is' ÛŒØ§ 'it has' Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u4-l3-4",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "Select the sentence with INCORRECT apostrophe usage:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Ahmed's car is white."
+            },
+            {
+              "id": "opt-2",
+              "text": "The children's toys are new."
+            },
+            {
+              "id": "opt-3",
+              "text": "The girls' bags are heavy."
+            },
+            {
+              "id": "opt-4",
+              "text": "I bought three apple's at the bazaar."
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'three apple's' is incorrect because plurals do not take an apostrophe ('three apples').",
+          "urduExplanation": "'three apple's' ØºÙ„Ø· Û Û’ØŒ Ø¬Ù…Ø¹ Ú©Û’ Ù„ÛŒÛ’ apostrophe Ù†Û ÛŒÚº Ù„Ú¯ØªÛŒÛ”"
+        },
+        {
+          "id": "qz-a1-u4-l3-5",
+          "type": "mcq",
+          "skillTag": "possessives",
+          "prompt": "What is the correct possessive form for 'women'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "womens'"
+            },
+            {
+              "id": "opt-2",
+              "text": "women's"
+            },
+            {
+              "id": "opt-3",
+              "text": "womens's"
+            },
+            {
+              "id": "opt-4",
+              "text": "womans'"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Irregular plurals not ending in -s take 's: 'women's'.",
+          "urduExplanation": "'women' Ú©Û’ Ø³Ø§ØªÚ¾ 's Ù„Ú¯ØªØ§ Û Û’: 'women's'Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l3-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Apostrophe S rules summary:",
+      "summaryPoints": [
+        "Singular nouns add 's (Ali's book, the teacher's pen).",
+        "Regular plural nouns ending in -s add only an apostrophe (') (the students' marks).",
+        "Irregular plurals without -s add 's (the children's toys, women's college).",
+        "Never use an apostrophe for regular plurals (two dogs, NOT two dog's).",
+        "Remember: It's = It is; Its = belonging to it."
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l3-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Ù…Ù„Ú©ÛŒØª Ø¸Ø§Û Ø± Ú©Ø±Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Û Ù… **'Ú©Ø§ / Ú©Û’ / Ú©ÛŒ'** Ø§Ø³ØªØ¹Ù…Ø§Ù„ Ú©Ø±ØªÛ’ Û ÛŒÚº:\n- Ø¹Ù„ÛŒ **Ú©ÛŒ** Ú©ØªØ§Ø¨\n- Ø§Ø³ØªØ§Ø¯ **Ú©ÛŒ** Ù…ÛŒØ²\n- Ø¨Ú†ÙˆÚº **Ú©Û’** Ú©Ú¾Ù„ÙˆÙ†Û’\n\nØ§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ÛŒÛ ÛŒ Ú©Ø§Ù… **Apostrophe S ('s)** Ú©Ø±ØªØ§ Û Û’:\n- Ali**'s** book\n- the teacher**'s** desk\n- the children**'s** toys\n\n**Ø§Û Ù… Ù Ø±Ù‚:** Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº 'Ú©Ø§ / Ú©ÛŒ' Ø¨Ø¹Ø¯ ÙˆØ§Ù„ÛŒ Ú†ÛŒØ² Ú©Û’ Ù…Ø°Ú©Ø± ÛŒØ§ Ù…Ø¤Ù†Ø« Û ÙˆÙ†Û’ Ø³Û’ Ø¨Ø¯Ù„ØªØ§ Û Û’ (Ø¹Ù„ÛŒ **Ú©Ø§** Ú¯Ú¾Ø± / Ø¹Ù„ÛŒ **Ú©ÛŒ** Ú¯Ø§Ú‘ÛŒ)Û” Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø§ÛŒØ³Ø§ Ú©ÙˆØ¦ÛŒ Ù Ø±Ù‚ Ù†Û ÛŒÚºØŒ ØµØ±Ù  **'s** Û ÛŒ Ø±Û ØªØ§ Û Û’: Ali's house, Ali's carÛ”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

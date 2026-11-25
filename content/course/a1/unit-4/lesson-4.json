@@ -1,0 +1,633 @@
+{
+  "id": "eng-a1-u4-l4",
+  "level": "A1",
+  "unit": "unit-4",
+  "order": 4,
+  "title": "Describing Physical Appearance",
+  "description": "Describe height, build, hair style, eye colour, and distinctive facial features accurately.",
+  "objectives": [
+    "Use 'to be' for height, build, and age (He is tall, she is young)",
+    "Use 'have/has' for hair, eyes, and facial features (He has dark hair, she has brown eyes)",
+    "Avoid mixing 'is' and 'has' when describing people"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [
+    "eng-a1-u4-l3"
+  ],
+  "skillTags": [
+    "appearance",
+    "adjectives",
+    "have-has",
+    "descriptive-grammar"
+  ],
+  "vocabularyList": [
+    {
+      "word": "tall",
+      "partOfSpeech": "adjective",
+      "phonetic": "/tÉ”Ë l/",
+      "definition": "Of great or more than average height.",
+      "urduMeaning": "Ù„Ù…Ø¨Ø§",
+      "exampleSentence": "My brother is very tall and plays basketball."
+    },
+    {
+      "word": "short",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ÊƒÉ”Ë t/",
+      "definition": "Measuring a small distance from end to end in height.",
+      "urduMeaning": "Ú†Ú¾ÙˆÙ¹Ø§ / Ù¾Ø³Øª Ù‚Ø¯",
+      "exampleSentence": "She is shorter than her elder sister."
+    },
+    {
+      "word": "slim",
+      "partOfSpeech": "adjective",
+      "phonetic": "/slÉªm/",
+      "definition": "Gracefully thin; slender.",
+      "urduMeaning": "Ø¯Ø¨Ù„Ø§ Ù¾ØªÙ„Ø§ / Ø³Ù…Ø§Ø±Ù¹",
+      "exampleSentence": "He maintains a slim build through regular running."
+    },
+    {
+      "word": "curly",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ËˆkÉœË li/",
+      "definition": "Made of curls or having a wavy or spiral shape.",
+      "urduMeaning": "Ú¯Ú¾Ù†Ú¯Ú¾Ø±Ø§Ù„Ø§",
+      "exampleSentence": "The little girl has curly brown hair."
+    },
+    {
+      "word": "straight",
+      "partOfSpeech": "adjective",
+      "phonetic": "/streÉªt/",
+      "definition": "Extending or moving uniformly in one direction only; without a curve.",
+      "urduMeaning": "Ø³ÛŒØ¯Ú¾Ø§",
+      "exampleSentence": "She has long, straight black hair."
+    },
+    {
+      "word": "dark",
+      "partOfSpeech": "adjective",
+      "phonetic": "/dÉ‘Ë k/",
+      "definition": "With little or no light; of a deep colour.",
+      "urduMeaning": "Ú¯Û Ø±Ø§ / Ú©Ø§Ù„Ø§",
+      "exampleSentence": "He has expressive dark eyes."
+    },
+    {
+      "word": "fair",
+      "partOfSpeech": "adjective",
+      "phonetic": "/feÉ™r/",
+      "definition": "Light, blond, or pale in colour.",
+      "urduMeaning": "Ú¯ÙˆØ±Ø§ / Ø±ÙˆØ´Ù†",
+      "exampleSentence": "She has a fair complexion."
+    },
+    {
+      "word": "beard",
+      "partOfSpeech": "noun",
+      "phonetic": "/bÉªÉ™d/",
+      "definition": "A growth of hair on the chin and lower cheeks of a man's face.",
+      "urduMeaning": "Ø¯Ø§Ú‘Ú¾ÛŒ",
+      "exampleSentence": "My grandfather has a neat white beard."
+    },
+    {
+      "word": "young",
+      "partOfSpeech": "adjective",
+      "phonetic": "/jÊŒÅ‹/",
+      "definition": "Having lived or existed for only a short time.",
+      "urduMeaning": "Ù†ÙˆØ¬ÙˆØ§Ù† / Ú†Ú¾ÙˆÙ¹ÛŒ Ø¹Ù…Ø± Ú©Ø§",
+      "exampleSentence": "He is a bright young professional."
+    },
+    {
+      "word": "elderly",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ËˆeldÉ™li/",
+      "definition": "Of a person, old or aging politely.",
+      "urduMeaning": "Ø¨Ø²Ø±Ú¯ / Ù…Ø¹Ù…Ø±",
+      "exampleSentence": "We should always respect elderly people."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u4-l4-1",
+      "type": "explain",
+      "title": "The Split Rule: 'To Be' vs. 'Have / Has'",
+      "content": "When describing how someone looks, English makes a strict grammatical division:\n\n### 1. Use 'To Be' (am / is / are) for Overall Body & Age\n- Height: *He **is** tall / short / medium height*.\n- Build: *She **is** slim / athletic*.\n- Age: *They **are** young / elderly*.\n\n### 2. Use 'Have / Has' for Features & Parts\n- Hair: *She **has** long straight hair*.\n- Eyes: *He **has** brown eyes*.\n- Facial features: *He **has** a beard / a moustache*.",
+      "tables": [
+        {
+          "title": "Appearance Grammar Matrix",
+          "headers": [
+            "Feature Category",
+            "Correct Verb",
+            "Example Sentence",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "Height",
+              "is / are",
+              "He is tall.",
+              "ÙˆÛ  Ù„Ù…Ø¨Ø§ Û Û’Û”"
+            ],
+            [
+              "Build",
+              "is / are",
+              "She is slim.",
+              "ÙˆÛ  Ø¯Ø¨Ù„ÛŒ Ù¾ØªÙ„ÛŒ Û Û’Û”"
+            ],
+            [
+              "Hair",
+              "has / have",
+              "She has curly black hair.",
+              "Ø§Ø³ Ú©Û’ Ú¯Ú¾Ù†Ú¯Ú¾Ø±Ø§Ù„Û’ Ú©Ø§Ù„Û’ Ø¨Ø§Ù„ Û ÛŒÚºÛ”"
+            ],
+            [
+              "Eyes",
+              "has / have",
+              "He has dark brown eyes.",
+              "Ø§Ø³ Ú©ÛŒ Ú¯Û Ø±ÛŒ Ø¨Ú¾ÙˆØ±ÛŒ Ø¢Ù†Ú©Ú¾ÛŒÚº Û ÛŒÚºÛ”"
+            ],
+            [
+              "Beard / Moustache",
+              "has / have",
+              "He has a well-trimmed beard.",
+              "Ø§Ø³ Ú©ÛŒ Ø®ÙˆØ¨ØµÙˆØ±Øª Ø¯Ø§Ú‘Ú¾ÛŒ Û Û’Û”"
+            ]
+          ]
+        },
+        {
+          "title": "Common Mistakes to Avoid",
+          "headers": [
+            "Incorrect Phrasing",
+            "Why It Fails",
+            "Correct English Phrasing"
+          ],
+          "rows": [
+            [
+              "He has tall.",
+              "'Tall' is an adjective, not a possession.",
+              "He is tall."
+            ],
+            [
+              "She is brown hair.",
+              "She is a human, not hair!",
+              "She has brown hair."
+            ],
+            [
+              "He has a beard on face.",
+              "Redundant phrasing.",
+              "He has a beard."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Hair Order Rule",
+          "text": "When describing hair, order is usually: **Length -> Texture -> Colour**: *She has long (length), curly (texture), black (colour) hair*."
+        },
+        {
+          "type": "warning",
+          "title": "Hair is Uncountable",
+          "text": "In English, the hair on someone's head is uncountable! Say: 'She has dark **hair**' (NEVER 'She has dark hairs')."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l4-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "My elder brother is tall and has short curly hair.",
+          "phonetic": "/maÉª ËˆeldÉ™r ËˆbrÊŒÃ°É™r Éªz tÉ”Ë l Ã¦nd hÃ¦z ÊƒÉ”Ë t ËˆkÉœË li heÉ™r/",
+          "urdu": "Ù…ÛŒØ±Ø§ Ø¨Ú‘Ø§ Ø¨ÚÚ¾Ø§Ø¦ÛŒ Ù„Ù…Ø¨Ø§ Û Û’ Ø§ÙˆØ± Ø§Ø³ Ú©Û’ Ú†Ú¾ÙˆÙ¹Û’ Ú¯Ú¾Ù†Ú¯Ú¾Ø±Ø§Ù„Û’ Ø¨Ø§Ù„ Û ÛŒÚºÛ”",
+          "audioText": "My elder brother is tall and has short curly hair."
+        },
+        {
+          "english": "She is a slim young woman with bright hazel eyes.",
+          "phonetic": "/ÊƒiË  Éªz É™ slÉªm jÊŒÅ‹ ËˆwÊŠmÉ™n wÉªÃ° braÉªt ËˆheÉªzl aÉªz/",
+          "urdu": "ÙˆÛ  Ø§ÛŒÚ© Ø³Ù…Ø§Ø±Ù¹ Ù†ÙˆØ¬ÙˆØ§Ù† Ø®Ø§ØªÙˆÙ† Û Û’ Ø¬Ø³ Ú©ÛŒ Ú†Ù…Ú©Ø¯Ø§Ø± Ø´Û Ø¯ÛŒ Ø¢Ù†Ú©Ú¾ÛŒÚº Û ÛŒÚºÛ”",
+          "audioText": "She is a slim young woman with bright hazel eyes."
+        },
+        {
+          "english": "Our grandfather is elderly and has a dignified white beard.",
+          "phonetic": "/ËˆaÊŠÉ™r ËˆÉ¡rÃ¦nfÉ‘Ë Ã°É™r Éªz ËˆeldÉ™li Ã¦nd hÃ¦z É™ ËˆdÉªÉ¡nÉªfaÉªd waÉªt bÉªÉ™d/",
+          "urdu": "Û Ù…Ø§Ø±Û’ Ø¯Ø§Ø¯Ø§ Ø¨Ø²Ø±Ú¯ Û ÛŒÚº Ø§ÙˆØ± Ø§Ù† Ú©ÛŒ Ø§ÛŒÚ© Ù¾Ø±ÙˆÙ‚Ø§Ø± Ø³Ù ÛŒØ¯ Ø¯Ø§Ú‘Ú¾ÛŒ Û Û’Û”",
+          "audioText": "Our grandfather is elderly and has a dignified white beard."
+        },
+        {
+          "english": "Tariq is medium height and wears modern glasses.",
+          "phonetic": "/ËˆtÉ‘Ë rÉªk Éªz ËˆmiË diÉ™m haÉªt Ã¦nd weÉ™rz ËˆmÉ’dn ËˆÉ¡lÉ‘Ë sÉªz/",
+          "urdu": "Ø·Ø§Ø±Ù‚ Ø¯Ø±Ù…ÛŒØ§Ù†Û’ Ù‚Ø¯ Ú©Ø§ Û Û’ Ø§ÙˆØ± Ø¬Ø¯ÛŒØ¯ Ø¹ÛŒÙ†Ú© Ù¾Û Ù†ØªØ§ Û Û’Û”",
+          "audioText": "Tariq is medium height and wears modern glasses."
+        },
+        {
+          "english": "She has long, straight black hair that reaches her shoulders.",
+          "phonetic": "/ÊƒiË  hÃ¦z lÉ’Å‹ streÉªt blÃ¦k heÉ™r Ã°Ã¦t riË tÊƒÉªz hÉœË r ËˆÊƒÉ™ÊŠldÉ™rz/",
+          "urdu": "Ø§Ø³ Ú©Û’ Ù„Ù…Ø¨Û’ØŒ Ø³ÛŒØ¯Ú¾Û’ Ú©Ø§Ù„Û’ Ø¨Ø§Ù„ Û ÛŒÚº Ø¬Ùˆ Ú©Ù†Ø¯Ú¾ÙˆÚº ØªÚ© Ø¢ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "She has long, straight black hair that reaches her shoulders."
+        },
+        {
+          "english": "Both twins have fair skin and deep blue eyes.",
+          "phonetic": "/boÊŠÎ¸ twÉªnz hÃ¦v feÉ™r skÉªn Ã¦nd diË p bluË  aÉªz/",
+          "urdu": "Ø¯ÙˆÙ†ÙˆÚº Ø¬Ú‘ÙˆØ§Úº Ø¨Ú†ÙˆÚº Ú©Ø§ Ø±Ù†Ú¯ Ú¯ÙˆØ±Ø§ Ø§ÙˆØ± Ø¢Ù†Ú©Ú¾ÛŒÚº Ú¯Û Ø±ÛŒ Ù†ÛŒÙ„ÛŒ Û ÛŒÚºÛ”",
+          "audioText": "Both twins have fair skin and deep blue eyes."
+        },
+        {
+          "english": "He is short, but he is very athletic and energetic.",
+          "phonetic": "/hiË  Éªz ÊƒÉ”Ë t bÊŒt hiË  Éªz Ëˆveri Ã¦Î¸ËˆletÉªk Ã¦nd ËŒenÉ™ËˆdÊ’etÉªk/",
+          "urdu": "ÙˆÛ  Ú†Ú¾ÙˆÙ¹Û’ Ù‚Ø¯ Ú©Ø§ Û Û’ Ù„ÛŒÚ©Ù† Ø¨Û Øª Ú†Ø³Øª Ø§ÙˆØ± Ù¾Ø±Ø¬ÙˆØ´ Û Û’Û”",
+          "audioText": "He is short, but he is very athletic and energetic."
+        },
+        {
+          "english": "Does your friend have a moustache or a clean-shaven face?",
+          "phonetic": "/dÊŒz jÉ”Ë r frend hÃ¦v É™ mÉ™ËˆstÉ‘Ë Êƒ É”Ë r É™ kliË n ËˆÊƒeÉªvn feÉªs/",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ú©Û’ Ø¯ÙˆØ³Øª Ú©ÛŒ Ù…ÙˆÙ†Ú†Ú¾ÛŒÚº Û ÛŒÚº ÛŒØ§ Ø§Ø³ Ú©Ø§ Ú†Û Ø±Û  Ú©Ù„ÛŒÙ† Ø´ÛŒÙˆ Û Û’ØŸ",
+          "audioText": "Does your friend have a moustache or a clean-shaven face?"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l4-3",
+      "type": "dialogue",
+      "title": "Meeting Someone at the Airport",
+      "dialogue": [
+        {
+          "speaker": "Rehan",
+          "avatar": "R",
+          "english": "I am at the arrival terminal, Daniyal. How will I recognize your uncle?",
+          "urdu": "Ø¯Ø§Ù†ÛŒØ§Ù„ØŒ Ù…ÛŒÚº Ø§Ø±Ø§Ø¦ÛŒÙˆÙ„ Ù¹Ø±Ù…Ù†Ù„ Ù¾Ø± Û ÙˆÚºÛ” Ù…ÛŒÚº Ø¢Ù¾ Ú©Û’ Ú†Ú†Ø§ Ú©Ùˆ Ú©ÛŒØ³Û’ Ù¾Û Ú†Ø§Ù†ÙˆÚº Ú¯Ø§ØŸ",
+          "audioText": "I am at the arrival terminal, Daniyal. How will I recognize your uncle?"
+        },
+        {
+          "speaker": "Daniyal",
+          "avatar": "D",
+          "english": "He is tall and elderly. He has a white beard and wears black glasses.",
+          "urdu": "ÙˆÛ  Ù„Ù…Ø¨Û’ Ø§ÙˆØ± Ø¨Ø²Ø±Ú¯ Û ÛŒÚºÛ” Ø§Ù† Ú©ÛŒ Ø³Ù ÛŒØ¯ Ø¯Ø§Ú‘Ú¾ÛŒ Û Û’ Ø§ÙˆØ± ÙˆÛ  Ú©Ø§Ù„ÛŒ Ø¹ÛŒÙ†Ú© Ù¾Û Ù†ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "He is tall and elderly. He has a white beard and wears black glasses."
+        },
+        {
+          "speaker": "Rehan",
+          "avatar": "R",
+          "english": "What is he wearing?",
+          "urdu": "Ø§Ù†Û ÙˆÚº Ù†Û’ Ú©ÙˆÙ† Ø³Ø§ Ù„Ø¨Ø§Ø³ Ù¾Û Ù†Ø§ Û ÙˆØ§ Û Û’ØŸ",
+          "audioText": "What is he wearing?"
+        },
+        {
+          "speaker": "Daniyal",
+          "avatar": "D",
+          "english": "He is wearing a grey shalwar kameez and carrying a brown suitcase.",
+          "urdu": "Ø§Ù†Û ÙˆÚº Ù†Û’ Ø³Ù„ÛŒÙ¹ÛŒ Ø´Ù„ÙˆØ§Ø± Ù‚Ù…ÛŒØµ Ù¾Û Ù†ÛŒ Û Û’ Ø§ÙˆØ± Ø¨Ú¾ÙˆØ±Ø§ Ø³ÙˆÙ¹ Ú©ÛŒØ³ Ø§Ù¹Ú¾Ø§ÛŒØ§ Û ÙˆØ§ Û Û’Û”",
+          "audioText": "He is wearing a grey shalwar kameez and carrying a brown suitcase."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l4-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u4-l4-1",
+          "type": "mcq",
+          "skillTag": "appearance",
+          "prompt": "Choose the correct sentence to describe height:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "He has tall."
+            },
+            {
+              "id": "opt-2",
+              "text": "He does tall."
+            },
+            {
+              "id": "opt-3",
+              "text": "He is tall."
+            },
+            {
+              "id": "opt-4",
+              "text": "He tall."
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Height is a state described with the verb 'to be': 'He is tall'.",
+          "urduExplanation": "Ù‚Ø¯ Ú©Û’ Ù„ÛŒÛ’ verb 'to be' (is) Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’: 'He is tall'Û”"
+        },
+        {
+          "id": "ex-a1-u4-l4-2",
+          "type": "mcq",
+          "skillTag": "appearance",
+          "prompt": "Choose the correct sentence to describe eyes:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "She is blue eyes."
+            },
+            {
+              "id": "opt-2",
+              "text": "She are blue eyes."
+            },
+            {
+              "id": "opt-3",
+              "text": "She haves blue eyes."
+            },
+            {
+              "id": "opt-4",
+              "text": "She has blue eyes."
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Facial features belong to a person and take 'has': 'She has blue eyes'.",
+          "urduExplanation": "Ø¢Ù†Ú©Ú¾ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ 'has' Ø¢Ø¦Û’ Ú¯Ø§: 'She has blue eyes'Û”"
+        },
+        {
+          "id": "ex-a1-u4-l4-3",
+          "type": "fill_blank",
+          "skillTag": "appearance",
+          "prompt": "Complete with 'is' or 'has': 'My grandfather _____ a neat white beard.'",
+          "correctAnswer": "has",
+          "explanation": "A beard is a feature someone possesses, requiring 'has'.",
+          "urduExplanation": "Ø¯Ø§Ú‘Ú¾ÛŒ Ú©Û’ Ù„ÛŒÛ’ 'has' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u4-l4-4",
+          "type": "fill_blank",
+          "skillTag": "appearance",
+          "prompt": "Complete with 'is' or 'has': 'She _____ slim and energetic.'",
+          "correctAnswer": "is",
+          "explanation": "'Slim' is an adjective describing overall build with verb 'to be' ('is').",
+          "urduExplanation": "Ø¬Ø³Ø§Ù…Øª (slim) Ú©Û’ Ù„ÛŒÛ’ 'is' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u4-l4-5",
+          "type": "order_sentence",
+          "skillTag": "appearance",
+          "prompt": "Rearrange the words to form a correct description:",
+          "sentenceTokens": [
+            "She",
+            "has",
+            "long",
+            "curly",
+            "black",
+            "hair",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (She) + verb (has) + length (long) + texture (curly) + colour (black) + hair.",
+          "urduExplanation": "She has long curly black hair."
+        },
+        {
+          "id": "ex-a1-u4-l4-6",
+          "type": "order_sentence",
+          "skillTag": "appearance",
+          "prompt": "Rearrange the words into a correct sentence:",
+          "sentenceTokens": [
+            "He",
+            "is",
+            "tall",
+            "with",
+            "dark",
+            "eyes",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (He) + verb (is) + height (tall) + prepositional feature (with dark eyes).",
+          "urduExplanation": "He is tall with dark eyes."
+        },
+        {
+          "id": "ex-a1-u4-l4-7",
+          "type": "match_pairs",
+          "skillTag": "appearance",
+          "prompt": "Match the feature with the appropriate verb:",
+          "pairs": [
+            {
+              "left": "tall",
+              "right": "is"
+            },
+            {
+              "left": "brown eyes",
+              "right": "has"
+            },
+            {
+              "left": "curly hair",
+              "right": "has"
+            },
+            {
+              "left": "slim",
+              "right": "is"
+            }
+          ],
+          "explanation": "Correctly matched between is (adjectives of build) and has (features).",
+          "urduExplanation": "ÙˆØµÙ  Ú©Ùˆ 'is' ÛŒØ§ 'has' Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l4-8",
+          "type": "error_correction",
+          "skillTag": "appearance",
+          "prompt": "Find and correct the mistake: 'She has long straight hairs.'",
+          "correctAnswer": "She has long straight hair.",
+          "explanation": "Hair on someone's head is uncountable; say 'hair', never 'hairs'.",
+          "urduExplanation": "Ø³Ø± Ú©Û’ Ø¨Ø§Ù„ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ 'hair' (uncountable) Ø¢ØªØ§ Û Û’ØŒ 'hairs' ØºÙ„Ø· Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u4-l4-9",
+          "type": "error_correction",
+          "skillTag": "appearance",
+          "prompt": "Find and correct the mistake: 'He is a beard.'",
+          "correctAnswer": "He has a beard.",
+          "explanation": "A person possesses a beard; use 'has', not 'is'.",
+          "urduExplanation": "Ø¯Ø§Ú‘Ú¾ÛŒ Ú©Û’ Ù„ÛŒÛ’ 'He has a beard' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l4-10",
+          "type": "true_false",
+          "skillTag": "appearance",
+          "prompt": "It is correct to say 'He is short and has brown eyes'. (True or False)",
+          "correctAnswer": "True",
+          "explanation": "True. 'Is' correctly describes height and 'has' correctly describes eye colour.",
+          "urduExplanation": "Ø¯Ø±Ø³ØªÛ” Ù‚Ø¯ Ú©Û’ Ù„ÛŒÛ’ 'is' Ø§ÙˆØ± Ø¢Ù†Ú©Ú¾ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ 'has' Ø¨Ø§Ù„Ú©Ù„ Ø¯Ø±Ø³Øª Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l4-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u4-l4-1",
+          "type": "mcq",
+          "skillTag": "appearance",
+          "prompt": "Which sentence describes appearance correctly?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "She is tall and has brown hair."
+            },
+            {
+              "id": "opt-2",
+              "text": "She has tall and is brown hair."
+            },
+            {
+              "id": "opt-3",
+              "text": "She is tall and is brown hair."
+            },
+            {
+              "id": "opt-4",
+              "text": "She has tall and has brown hair."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Is tall' (height with 'to be') and 'has brown hair' (feature with 'have') is correct.",
+          "urduExplanation": "'She is tall and has brown hair' Ø¯ÙˆÙ†ÙˆÚº Ù‚ÙˆØ§Ø¹Ø¯ Ù¾Ø± Ù¾ÙˆØ±Ø§ Ø§ØªØ±ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u4-l4-2",
+          "type": "mcq",
+          "skillTag": "appearance",
+          "prompt": "What is the natural order for describing hair?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Colour -> Length -> Texture"
+            },
+            {
+              "id": "opt-2",
+              "text": "Length -> Texture -> Colour"
+            },
+            {
+              "id": "opt-3",
+              "text": "Texture -> Colour -> Length"
+            },
+            {
+              "id": "opt-4",
+              "text": "Random order"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Natural English order is Length -> Texture -> Colour (e.g., long curly black hair).",
+          "urduExplanation": "Ø¨Ø§Ù„ÙˆÚº Ú©ÛŒ ØµØ­ÛŒØ­ ØªØ±ØªÛŒØ¨: Ù„Ù…Ø¨Ø§Ø¦ÛŒ -> Ø¨Ù†Ø§ÙˆÙ¹ -> Ø±Ù†Ú¯ (long curly black hair) Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u4-l4-3",
+          "type": "mcq",
+          "skillTag": "appearance",
+          "prompt": "Why is 'She has dark hairs' incorrect?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Because hair on the head is an uncountable noun in English"
+            },
+            {
+              "id": "opt-2",
+              "text": "Because dark cannot describe hair"
+            },
+            {
+              "id": "opt-3",
+              "text": "Because she takes have"
+            },
+            {
+              "id": "opt-4",
+              "text": "Because hairs is always spelled with an e"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Hair as a mass of strands on the head is uncountable: 'hair'.",
+          "urduExplanation": "Ø³Ø± Ú©Û’ Ø¨Ø§Ù„ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº uncountable Ù…Ø§Ù†Û’ Ø¬Ø§ØªÛ’ Û ÛŒÚºØŒ Ø§Ø³ Ù„ÛŒÛ’ 'hair' Ù„Ú©Ú¾Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u4-l4-4",
+          "type": "mcq",
+          "skillTag": "appearance",
+          "prompt": "Which adjective means politely old in age?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "young"
+            },
+            {
+              "id": "opt-2",
+              "text": "slim"
+            },
+            {
+              "id": "opt-3",
+              "text": "tall"
+            },
+            {
+              "id": "opt-4",
+              "text": "elderly"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'Elderly' is the polite, respectful term for an older person.",
+          "urduExplanation": "'elderly' Ø¨Ø²Ø±Ú¯ ÛŒØ§ Ù…Ø¹Ù…Ø± Ø´Ø®Øµ Ú©Û’ Ù„ÛŒÛ’ Ù…ÙˆØ¯Ø¨Ø§Ù†Û  Ù„Ù Ø¸ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u4-l4-5",
+          "type": "mcq",
+          "skillTag": "appearance",
+          "prompt": "Complete the sentence: 'He is clean-shaven; he doesn't have a _____.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "beard"
+            },
+            {
+              "id": "opt-2",
+              "text": "eyes"
+            },
+            {
+              "id": "opt-3",
+              "text": "tall"
+            },
+            {
+              "id": "opt-4",
+              "text": "hair"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "A clean-shaven person does not have a beard or moustache.",
+          "urduExplanation": "Ú©Ù„ÛŒÙ† Ø´ÛŒÙˆ Ø´Ø®Øµ Ú©ÛŒ Ø¯Ø§Ú‘Ú¾ÛŒ (beard) Ù†Û ÛŒÚº Û ÙˆØªÛŒÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l4-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Appearance description takeaways:",
+      "summaryPoints": [
+        "Use 'to be' for height, build, and age (He is tall, she is slim, they are elderly).",
+        "Use 'have/has' for features (She has brown eyes, he has a beard).",
+        "Hair is uncountable (say 'dark hair', never 'hairs').",
+        "Hair descriptive order: Length -> Texture -> Colour (long straight black hair).",
+        "Never confuse: He is tall (NOT he has tall); He has dark eyes (NOT he is dark eyes)."
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l4-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± Ú©Û ØªÛ’ Û ÛŒÚº:\n- 'ÙˆÛ  Ù„Ù…Ø¨Ø§ Û Û’' (ØµÙ Øª)\n- 'Ø§Ø³ Ú©ÛŒ Ø¯Ø§Ú‘Ú¾ÛŒ Û Û’' / 'Ø§Ø³ Ú©Û’ Ú©Ø§Ù„Û’ Ø¨Ø§Ù„ Û ÛŒÚº'\n\nØ§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø¨Ú¾ÛŒ ÛŒÛ ÛŒ Ø§ØµÙˆÙ„ Û Û’ Ù„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ø³ÛŒÚ©Ú¾Ù†Û’ ÙˆØ§Ù„Û’ Ø§Ú©Ø«Ø± **'is'** Ø§ÙˆØ± **'has'** Ú©Ùˆ Ø®Ù„Ø· Ù…Ù„Ø· Ú©Ø± Ø¯ÛŒØªÛ’ Û ÛŒÚº:\n- 'He has tall' (ØºÙ„Ø·) -> ØµØ­ÛŒØ­: **'He is tall'**\n- 'She is brown eyes' (ØºÙ„Ø·) -> ØµØ­ÛŒØ­: **'She has brown eyes'**\n\n**Ø§ÛŒÚ© Ø§ÙˆØ± Ø¨Û Øª Ø¨Ú‘ÛŒ ØºÙ„Ø·ÛŒ:** Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… Ú©Û ØªÛ’ Û ÛŒÚº 'Ø§Ø³ Ú©Û’ Ø¨Ø§Ù„ Ú©Ø§Ù„Û’ Û ÛŒÚº' (Ø¬Ù…Ø¹)Û” Ù„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø³Ø± Ú©Û’ Ø¨Ø§Ù„ **ÙˆØ§Ø­Ø¯ Ù†Ø§Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ (Uncountable)** Û ÙˆØªÛ’ Û ÛŒÚºØŒ Ø§Ø³ Ù„ÛŒÛ’ 'hairs' Ú©Ø¨Ú¾ÛŒ Ù†Û  Ú©Û ÛŒÚºØŒ ØµØ±Ù  **hair** Ú©Û ÛŒÚºÛ”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

@@ -1,0 +1,675 @@
+{
+  "id": "eng-a1-u6-l2",
+  "level": "A1",
+  "unit": "unit-6",
+  "order": 2,
+  "title": "Days of the Week & Months",
+  "description": "Learn the seven days of the week, the twelve months of the year, and capitalization rules.",
+  "objectives": [
+    "Name and spell all seven days of the week in chronological order",
+    "Name and spell all twelve months of the year accurately",
+    "Apply the strict English rule: Days and Months MUST always be capitalized (Monday, July)"
+  ],
+  "estimatedMinutes": 8,
+  "prerequisites": [
+    "eng-a1-u6-l1"
+  ],
+  "skillTags": [
+    "calendar",
+    "vocabulary",
+    "days-months",
+    "capitalization"
+  ],
+  "vocabularyList": [
+    {
+      "word": "Monday",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆmÊŒndeÉª/",
+      "definition": "The day of the week before Tuesday and following Sunday; the start of the working week.",
+      "urduMeaning": "Ù¾ÛŒØ±",
+      "exampleSentence": "Our new course starts on Monday morning."
+    },
+    {
+      "word": "Friday",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆfraÉªdeÉª/",
+      "definition": "The day of the week before Saturday and following Thursday.",
+      "urduMeaning": "Ø¬Ù…Ø¹Û ",
+      "exampleSentence": "Jummah prayers take place on Friday afternoon."
+    },
+    {
+      "word": "Sunday",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆsÊŒndeÉª/",
+      "definition": "The day of the week before Monday and following Saturday; a weekend day.",
+      "urduMeaning": "Ø§ØªÙˆØ§Ø±",
+      "exampleSentence": "Families relax together on Sunday."
+    },
+    {
+      "word": "January",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆdÊ’Ã¦njuÉ™ri/",
+      "definition": "The first month of the year, in the northern hemisphere usually the coldest.",
+      "urduMeaning": "Ø¬Ù†ÙˆØ±ÛŒ",
+      "exampleSentence": "Winter is very cold in January in Quetta."
+    },
+    {
+      "word": "March",
+      "partOfSpeech": "noun",
+      "phonetic": "/mÉ‘Ë tÊƒ/",
+      "definition": "The third month of the year; marks the beginning of spring.",
+      "urduMeaning": "Ù…Ø§Ø±Ú†",
+      "exampleSentence": "Pakistan Day is celebrated on the 23rd of March."
+    },
+    {
+      "word": "August",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆÉ”Ë É¡É™st/",
+      "definition": "The eighth month of the year, in the northern hemisphere usually warm.",
+      "urduMeaning": "Ø§Ú¯Ø³Øª",
+      "exampleSentence": "Independence Day is celebrated on 14th August."
+    },
+    {
+      "word": "October",
+      "partOfSpeech": "noun",
+      "phonetic": "/É’kËˆtÉ™ÊŠbÉ™r/",
+      "definition": "The tenth month of the year, in the northern hemisphere autumn.",
+      "urduMeaning": "Ø§Ú©ØªÙˆØ¨Ø±",
+      "exampleSentence": "The autumn breeze begins in October."
+    },
+    {
+      "word": "December",
+      "partOfSpeech": "noun",
+      "phonetic": "/dÉªËˆsembÉ™r/",
+      "definition": "The twelfth and final month of the year.",
+      "urduMeaning": "Ø¯Ø³Ù…Ø¨Ø±",
+      "exampleSentence": "Schools close for winter vacation in late December."
+    },
+    {
+      "word": "week",
+      "partOfSpeech": "noun",
+      "phonetic": "/wiË k/",
+      "definition": "A period of seven consecutive days, typically from Monday to Sunday.",
+      "urduMeaning": "Û Ù ØªÛ ",
+      "exampleSentence": "There are seven days in a week."
+    },
+    {
+      "word": "month",
+      "partOfSpeech": "noun",
+      "phonetic": "/mÊŒnÎ¸/",
+      "definition": "Each of the twelve named periods into which a year is divided.",
+      "urduMeaning": "Ù…Û ÛŒÙ†Û ",
+      "exampleSentence": "There are twelve months in one calendar year."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u6-l2-1",
+      "type": "explain",
+      "title": "The Calendar Framework & Capitalization",
+      "content": "In English, names of days and months are **proper nouns**. This means they have one inviolable rule:\n\n### The Golden Capitalization Rule\nDays and months **MUST ALWAYS BEGIN WITH A CAPITAL LETTER**, no matter where they appear in a sentence!\n- *I will see you on **M**onday.* (NEVER *monday*).\n- *My birthday is in **J**uly.* (NEVER *july*).",
+      "tables": [
+        {
+          "title": "Days of the Week (Chronological Order)",
+          "headers": [
+            "Day",
+            "Abbreviation",
+            "Category",
+            "Preposition",
+            "Urdu Equivalent"
+          ],
+          "rows": [
+            [
+              "Monday",
+              "Mon",
+              "Weekday",
+              "on Monday",
+              "Ù¾ÛŒØ±"
+            ],
+            [
+              "Tuesday",
+              "Tue",
+              "Weekday",
+              "on Tuesday",
+              "Ù…Ù†Ú¯Ù„"
+            ],
+            [
+              "Wednesday (silent 'd')",
+              "Wed",
+              "Weekday",
+              "on Wednesday",
+              "Ø¨Ø¯Ú¾"
+            ],
+            [
+              "Thursday",
+              "Thu",
+              "Weekday",
+              "on Thursday",
+              "Ø¬Ù…Ø¹Ø±Ø§Øª"
+            ],
+            [
+              "Friday",
+              "Fri",
+              "Weekday",
+              "on Friday",
+              "Ø¬Ù…Ø¹Û "
+            ],
+            [
+              "Saturday",
+              "Sat",
+              "Weekend",
+              "on Saturday",
+              "Û Ù ØªÛ "
+            ],
+            [
+              "Sunday",
+              "Sun",
+              "Weekend",
+              "on Sunday",
+              "Ø§ØªÙˆØ§Ø±"
+            ]
+          ]
+        },
+        {
+          "title": "Twelve Months of the Year",
+          "headers": [
+            "Month",
+            "Days Count",
+            "Season (Northern)",
+            "Preposition",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "January, February",
+              "31 / 28-29",
+              "Winter",
+              "in January",
+              "Ø¬Ù†ÙˆØ±ÛŒØŒ Ù Ø±ÙˆØ±ÛŒ"
+            ],
+            [
+              "March, April, May",
+              "31 / 30 / 31",
+              "Spring",
+              "in March",
+              "Ù…Ø§Ø±Ú†ØŒ Ø§Ù¾Ø±ÛŒÙ„ØŒ Ù…Ø¦ÛŒ"
+            ],
+            [
+              "June, July, August",
+              "30 / 31 / 31",
+              "Summer",
+              "in August",
+              "Ø¬ÙˆÙ†ØŒ Ø¬ÙˆÙ„Ø§Ø¦ÛŒØŒ Ø§Ú¯Ø³Øª"
+            ],
+            [
+              "September, October, November",
+              "30 / 31 / 30",
+              "Autumn / Fall",
+              "in October",
+              "Ø³ØªÙ…Ø¨Ø±ØŒ Ø§Ú©ØªÙˆØ¨Ø±ØŒ Ù†ÙˆÙ…Ø¨Ø±"
+            ],
+            [
+              "December",
+              "31",
+              "Winter",
+              "in December",
+              "Ø¯Ø³Ù…Ø¨Ø±"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Pronouncing Wednesday",
+          "text": "The first 'd' in **Wednesday** is completely silent! It is pronounced as two syllables: **/ËˆwenzdeÉª/** (WENZ-day)."
+        },
+        {
+          "type": "warning",
+          "title": "Preposition Pairings",
+          "text": "Always say **ON** with days (*on Friday*) and **IN** with months (*in August*)."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l2-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "We have our English grammar class on Monday and Wednesday.",
+          "phonetic": "/wiË  hÃ¦v ËˆaÊŠÉ™r ËˆÉªÅ‹É¡lÉªÊƒ ËˆÉ¡rÃ¦mÉ™r klÉ‘Ë s É’n ËˆmÊŒndeÉª Ã¦nd ËˆwenzdeÉª/",
+          "urdu": "Û Ù…Ø§Ø±ÛŒ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú¯Ø±Ø§Ù…Ø± Ú©ÛŒ Ú©Ù„Ø§Ø³ Ù¾ÛŒØ± Ø§ÙˆØ± Ø¨Ø¯Ú¾ Ú©Ùˆ Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "We have our English grammar class on Monday and Wednesday."
+        },
+        {
+          "english": "August is a momentous month in Pakistan's national history.",
+          "phonetic": "/ËˆÉ”Ë É¡É™st Éªz É™ mÉ™ÊŠËˆmentÉ™s mÊŒnÎ¸ Éªn ËŒpÉ‘Ë kÉªËˆstÉ‘Ë nz ËˆnÃ¦ÊƒnÉ™l ËˆhÉªstri/",
+          "urdu": "Ø§Ú¯Ø³Øª Ù¾Ø§Ú©Ø³ØªØ§Ù† Ú©ÛŒ Ù‚ÙˆÙ…ÛŒ ØªØ§Ø±ÛŒØ® Ù…ÛŒÚº Ø§ÛŒÚ© Ø§Ù†ØªÛ Ø§Ø¦ÛŒ Ø§Û Ù… Ù…Û ÛŒÙ†Û  Û Û’Û”",
+          "audioText": "August is a momentous month in Pakistan's national history."
+        },
+        {
+          "english": "Banks and government offices are closed on Sunday.",
+          "phonetic": "/bÃ¦Å‹ks Ã¦nd ËˆÉ¡ÊŒvnmÉ™nt ËˆÉ’fÉªsÉªz É‘Ë  klÉ™ÊŠzd É’n ËˆsÊŒndeÉª/",
+          "urdu": "Ø¨ÛŒÙ†Ú© Ø§ÙˆØ± Ø³Ø±Ú©Ø§Ø±ÛŒ Ø¯Ù Ø§ØªØ± Ø§ØªÙˆØ§Ø± Ú©Ùˆ Ø¨Ù†Ø¯ Û ÙˆØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "Banks and government offices are closed on Sunday."
+        },
+        {
+          "english": "Spring flowers bloom across Islamabad in March and April.",
+          "phonetic": "/sprÉªÅ‹ ËˆflaÊŠÉ™z bluË m É™ËˆkrÉ’s ÉªsËˆlÉ‘Ë mÉ™bÉ‘Ë d Éªn mÉ‘Ë tÊƒ Ã¦nd ËˆeÉªprÉ™l/",
+          "urdu": "Ù…Ø§Ø±Ú† Ø§ÙˆØ± Ø§Ù¾Ø±ÛŒÙ„ Ù…ÛŒÚº Ø§Ø³Ù„Ø§Ù… Ø¢Ø¨Ø§Ø¯ Ù…ÛŒÚº Ø¨Û Ø§Ø± Ú©Û’ Ù¾ÚÚ¾ÙˆÙ„ Ú©Ú¾Ù„ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "Spring flowers bloom across Islamabad in March and April."
+        },
+        {
+          "english": "Do you have any special plans for this Friday evening?",
+          "phonetic": "/duË  juË  hÃ¦v Ëˆeni ËˆspeÊƒl plÃ¦nz fÉ”Ë r Ã°Éªs ËˆfraÉªdeÉª ËˆiË vnÉªÅ‹/",
+          "urdu": "Ú©ÛŒØ§ Ø§Ø³ Ø¬Ù…Ø¹Û’ Ú©ÛŒ Ø´Ø§Ù… Ú©Û’ Ù„ÛŒÛ’ Ø¢Ù¾ Ú©Ø§ Ú©ÙˆØ¦ÛŒ Ø®Ø§Øµ Ù¾Ø±ÙˆÚ¯Ø±Ø§Ù… Û Û’ØŸ",
+          "audioText": "Do you have any special plans for this Friday evening?"
+        },
+        {
+          "english": "December brings cold northern winds to the plains of Punjab.",
+          "phonetic": "/dÉªËˆsembÉ™r brÉªÅ‹z kÉ™ÊŠld ËˆnÉ”Ë Ã°É™n wÉªndz tuË  Ã°É™ pleÉªnz É™v pÊŒnËˆdÊ’É‘Ë b/",
+          "urdu": "Ø¯Ø³Ù…Ø¨Ø± Ù¾Ù†Ø¬Ø§Ø¨ Ú©Û’ Ù…ÛŒØ¯Ø§Ù†ÙˆÚº Ù…ÛŒÚº Ø³Ø±Ø¯ Ø´Ù…Ø§Ù„ÛŒ Û ÙˆØ§Ø¦ÛŒÚº Ù„Ø§ØªØ§ Û Û’Û”",
+          "audioText": "December brings cold northern winds to the plains of Punjab."
+        },
+        {
+          "english": "We usually visit our grandparents on Saturday afternoon.",
+          "phonetic": "/wiË  ËˆjuË Ê’uÉ™li ËˆvÉªzÉªt ËˆaÊŠÉ™r ËˆÉ¡rÃ¦npeÉ™rÉ™nts É’n ËˆsÃ¦tÉ™deÉª ËŒÉ‘Ë ftÉ™ËˆnuË n/",
+          "urdu": "Û Ù… Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± Û Ù ØªÛ’ Ú©ÛŒ Ø³Û  Ù¾Û Ø± Ø§Ù¾Ù†Û’ Ø¯Ø§Ø¯Ø§ Ø¯Ø§Ø¯ÛŒ Ú©Û’ Û Ø§Úº Ø¬Ø§ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "We usually visit our grandparents on Saturday afternoon."
+        },
+        {
+          "english": "July is usually the hottest and rainiest monsoon month.",
+          "phonetic": "/dÊ’uË ËˆlaÉª Éªz ËˆjuË Ê’uÉ™li Ã°É™ ËˆhÉ’tÉªst Ã¦nd ËˆreÉªniÉªst mÉ’nËˆsuË n mÊŒnÎ¸/",
+          "urdu": "Ø¬ÙˆÙ„Ø§Ø¦ÛŒ Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± Ù…ÙˆÙ† Ø³ÙˆÙ† Ú©Ø§ Ø³Ø¨ Ø³Û’ Ú¯Ø±Ù… Ø§ÙˆØ± Ø¨Ø§Ø±Ø´ÙˆÚº ÙˆØ§Ù„Ø§ Ù…Û ÛŒÙ†Û  Û ÙˆØªØ§ Û Û’Û”",
+          "audioText": "July is usually the hottest and rainiest monsoon month."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l2-3",
+      "type": "dialogue",
+      "title": "Planning the Study Schedule",
+      "dialogue": [
+        {
+          "speaker": "Adil",
+          "avatar": "A",
+          "english": "Which days are best for our group study sessions?",
+          "urdu": "Û Ù…Ø§Ø±Û’ Ú¯Ø±ÙˆÙ¾ Ø§Ø³Ù¹ÚˆÛŒ Ú©Û’ Ù„ÛŒÛ’ Ú©ÙˆÙ† Ø³Û’ Ø¯Ù† Ø³Ø¨ Ø³Û’ Ø§Ú†Ú¾Û’ Ø±Û ÛŒÚº Ú¯Û’ØŸ",
+          "audioText": "Which days are best for our group study sessions?"
+        },
+        {
+          "speaker": "Zubair",
+          "avatar": "Z",
+          "english": "I am free on Tuesday and Thursday after five o'clock.",
+          "urdu": "Ù…ÛŒÚº Ù…Ù†Ú¯Ù„ Ø§ÙˆØ± Ø¬Ù…Ø¹Ø±Ø§Øª Ú©Ùˆ Ù¾Ø§Ù†Ú† Ø¨Ø¬Û’ Ú©Û’ Ø¨Ø¹Ø¯ Ù Ø§Ø±Øº Û ÙˆØªØ§ Û ÙˆÚºÛ”",
+          "audioText": "I am free on Tuesday and Thursday after five o'clock."
+        },
+        {
+          "speaker": "Adil",
+          "avatar": "A",
+          "english": "Tuesday and Thursday are perfect! And when does the semester end?",
+          "urdu": "Ù…Ù†Ú¯Ù„ Ø§ÙˆØ± Ø¬Ù…Ø¹Ø±Ø§Øª Ø¨Û ØªØ±ÛŒÙ† Û ÛŒÚº! Ø§ÙˆØ± Ø³Ù…ÛŒØ³Ù¹Ø± Ú©Ø¨ Ø®ØªÙ… Û ÙˆØªØ§ Û Û’ØŸ",
+          "audioText": "Tuesday and Thursday are perfect! And when does the semester end?"
+        },
+        {
+          "speaker": "Zubair",
+          "avatar": "Z",
+          "english": "Final exams begin in late June, so we have plenty of time.",
+          "urdu": "Ø³Ø§Ù„Ø§Ù†Û  Ø§Ù…ØªØ­Ø§Ù†Ø§Øª Ø¬ÙˆÙ† Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº Ø´Ø±ÙˆØ¹ Û ÙˆÙ†Ú¯Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ Û Ù…Ø§Ø±Û’ Ù¾Ø§Ø³ Ú©Ø§Ù ÛŒ ÙˆÙ‚Øª Û Û’Û”",
+          "audioText": "Final exams begin in late June, so we have plenty of time."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l2-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u6-l2-1",
+          "type": "mcq",
+          "skillTag": "capitalization",
+          "prompt": "Which sentence has correct capitalization for days of the week?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "We attend class on monday afternoon."
+            },
+            {
+              "id": "opt-2",
+              "text": "They play soccer on tuesday evening."
+            },
+            {
+              "id": "opt-3",
+              "text": "We have class on Monday and Friday."
+            },
+            {
+              "id": "opt-4",
+              "text": "I visit friends on sunday morning."
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "All days of the week must begin with capital letters: 'Monday' and 'Friday'.",
+          "urduExplanation": "ہفتے کے تمام دنوں کے نام Capital letter سے شروع ہونے چاہیئیں۔"
+        },
+        {
+          "id": "ex-a1-u6-l2-2",
+          "type": "mcq",
+          "skillTag": "prepositions",
+          "prompt": "Choose the correct preposition: 'The festival takes place _____ October.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "on"
+            },
+            {
+              "id": "opt-2",
+              "text": "at"
+            },
+            {
+              "id": "opt-3",
+              "text": "by"
+            },
+            {
+              "id": "opt-4",
+              "text": "in"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Months take the preposition 'in': 'in October'.",
+          "urduExplanation": "Ù…Û ÛŒÙ†ÙˆÚº Ú©Û’ Ù†Ø§Ù… Ú©Û’ Ø³Ø§ØªÚ¾ 'in' Ø¢ØªØ§ Û Û’: 'in October'Û”"
+        },
+        {
+          "id": "ex-a1-u6-l2-3",
+          "type": "fill_blank",
+          "skillTag": "days-months",
+          "prompt": "Which day comes between Tuesday and Thursday? '_____' (capitalize correctly).",
+          "correctAnswer": "Wednesday",
+          "explanation": "'Wednesday' comes between Tuesday and Thursday.",
+          "urduExplanation": "Ù…Ù†Ú¯Ù„ Ø§ÙˆØ± Ø¬Ù…Ø¹Ø±Ø§Øª Ú©Û’ Ø¯Ø±Ù…ÛŒØ§Ù† 'Wednesday' (Ø¨Ø¯Ú¾) Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l2-4",
+          "type": "fill_blank",
+          "skillTag": "prepositions",
+          "prompt": "Complete the preposition: 'We play cricket _____ Saturday afternoon.'",
+          "correctAnswer": "on",
+          "explanation": "Days of the week take 'on': 'on Saturday'.",
+          "urduExplanation": "Ø¯Ù† Ú©Û’ Ù†Ø§Ù… Ú©Û’ Ø³Ø§ØªÚ¾ 'on' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l2-5",
+          "type": "order_sentence",
+          "skillTag": "days-months",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "Independence",
+            "Day",
+            "is",
+            "celebrated",
+            "in",
+            "August",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (Independence Day) + verb (is celebrated) + prepositional phrase (in August).",
+          "urduExplanation": "Independence Day is celebrated in August."
+        },
+        {
+          "id": "ex-a1-u6-l2-6",
+          "type": "order_sentence",
+          "skillTag": "days-months",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "The",
+            "library",
+            "is",
+            "closed",
+            "on",
+            "Sunday",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (The library) + verb (is closed) + time phrase (on Sunday).",
+          "urduExplanation": "The library is closed on Sunday."
+        },
+        {
+          "id": "ex-a1-u6-l2-7",
+          "type": "match_pairs",
+          "skillTag": "days-months",
+          "prompt": "Match the day/month with its correct preposition:",
+          "pairs": [
+            {
+              "left": "Monday",
+              "right": "on"
+            },
+            {
+              "left": "July",
+              "right": "in"
+            },
+            {
+              "left": "Friday morning",
+              "right": "on"
+            },
+            {
+              "left": "December",
+              "right": "in"
+            }
+          ],
+          "explanation": "'On' for days; 'in' for months.",
+          "urduExplanation": "Ø¯Ù† (on) Ø§ÙˆØ± Ù…Û ÛŒÙ†Û’ (in) Ú©Û’ prepositions Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l2-8",
+          "type": "error_correction",
+          "skillTag": "capitalization",
+          "prompt": "Find and correct the mistake: 'I will visit my uncle in rawalpindi next tuesday.'",
+          "correctAnswer": "I will visit my uncle in Rawalpindi next Tuesday.",
+          "explanation": "Proper nouns and days must be capitalized: 'Rawalpindi' and 'Tuesday'.",
+          "urduExplanation": "'Tuesday' Ú©Ø§ T Ø§ÙˆØ± 'Rawalpindi' Ú©Ø§ R capital Û ÙˆÚ¯Ø§Û”"
+        },
+        {
+          "id": "ex-a1-u6-l2-9",
+          "type": "error_correction",
+          "skillTag": "prepositions",
+          "prompt": "Find and correct the mistake: 'We travel to Murree at July.'",
+          "correctAnswer": "We travel to Murree in July.",
+          "explanation": "Months take 'in', not 'at': 'in July'.",
+          "urduExplanation": "Ù…Û ÛŒÙ†Û’ Ú©Û’ Ù„ÛŒÛ’ 'in July' Ù„Ú©Ú¾Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l2-10",
+          "type": "true_false",
+          "skillTag": "capitalization",
+          "prompt": "In English, the months of the year can be written with lowercase initial letters if they appear in the middle of a sentence. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. Months and days of the week MUST ALWAYS be capitalized in English.",
+          "urduExplanation": "ØºÙ„Ø·Û” Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ù…Û ÛŒÙ†ÙˆÚº Ø§ÙˆØ± Ø¯Ù†ÙˆÚº Ú©Û’ Ù†Ø§Ù… Û Ù…ÛŒØ´Û  Capital letter Ø³Û’ Û ÛŒ Ø´Ø±ÙˆØ¹ Û ÙˆØªÛ’ Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l2-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u6-l2-1",
+          "type": "mcq",
+          "skillTag": "capitalization",
+          "prompt": "Why must 'March' and 'Friday' be capitalized?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Because they are proper nouns in English"
+            },
+            {
+              "id": "opt-2",
+              "text": "Because they are long words"
+            },
+            {
+              "id": "opt-3",
+              "text": "Only when they start a sentence"
+            },
+            {
+              "id": "opt-4",
+              "text": "Because they represent religious occasions"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Days and months are proper nouns in English and must always be capitalized.",
+          "urduExplanation": "Ú†ÙˆÙ†Ú©Û  ÛŒÛ  Proper Nouns Û ÛŒÚºØŒ Ø§Ø³ Ù„ÛŒÛ’ Û Ù…ÛŒØ´Û  Capital letter Ø³Û’ Ù„Ú©Ú¾Û’ Ø¬Ø§ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u6-l2-2",
+          "type": "mcq",
+          "skillTag": "pronunciation",
+          "prompt": "Which letter is silent in the word 'Wednesday'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "The letter n"
+            },
+            {
+              "id": "opt-2",
+              "text": "The first letter d"
+            },
+            {
+              "id": "opt-3",
+              "text": "The letter s"
+            },
+            {
+              "id": "opt-4",
+              "text": "The letter y"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "The first 'd' in Wednesday is silent; it is pronounced /ËˆwenzdeÉª/.",
+          "urduExplanation": "'Wednesday' Ù…ÛŒÚº Ù¾Û Ù„Ø§ 'd' Ø®Ø§Ù…ÙˆØ´ (silent) Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l2-3",
+          "type": "mcq",
+          "skillTag": "days-months",
+          "prompt": "Which month comes immediately before October?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "November"
+            },
+            {
+              "id": "opt-2",
+              "text": "August"
+            },
+            {
+              "id": "opt-3",
+              "text": "September"
+            },
+            {
+              "id": "opt-4",
+              "text": "July"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "September is the ninth month, preceding October (the tenth).",
+          "urduExplanation": "Ø§Ú©ØªÙˆØ¨Ø± Ø³Û’ Ù ÙˆØ±Ø§Ù‹ Ù¾Û Ù„Û’ 'September' (Ø³ØªÙ…Ø¨Ø±) Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l2-4",
+          "type": "mcq",
+          "skillTag": "prepositions",
+          "prompt": "Complete the sentence: 'We have a family dinner _____ Saturday.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "in"
+            },
+            {
+              "id": "opt-2",
+              "text": "at"
+            },
+            {
+              "id": "opt-3",
+              "text": "to"
+            },
+            {
+              "id": "opt-4",
+              "text": "on"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Specific days of the week require 'on'.",
+          "urduExplanation": "Ø¯Ù† Ú©Û’ Ù†Ø§Ù… Ú©Û’ Ø³Ø§ØªÚ¾ 'on' Ù„Ú¯ØªØ§ Û Û’: 'on Saturday'Û”"
+        },
+        {
+          "id": "qz-a1-u6-l2-5",
+          "type": "mcq",
+          "skillTag": "days-months",
+          "prompt": "How many months in the calendar year have exactly 30 days?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Four months (April, June, Sept, Nov)"
+            },
+            {
+              "id": "opt-2",
+              "text": "Seven months (Jan, Mar, May, Jul...)"
+            },
+            {
+              "id": "opt-3",
+              "text": "Six months (Feb, Apr, Jun, Aug...)"
+            },
+            {
+              "id": "opt-4",
+              "text": "Five months (Feb, May, Aug, Oct...)"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Thirty days have September, April, June, and November (4 months).",
+          "urduExplanation": "چار مہینے (اپریل، جون، ستمبر، نومبر) 30 دنوں کے ہوتے ہیں۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l2-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Days and months summary:",
+      "summaryPoints": [
+        "Seven days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+        "Twelve months: January through December.",
+        "CAPITALIZE all days and months always (Monday, August).",
+        "Use 'on' with days (on Friday) and 'in' with months (in March).",
+        "Pronounce Wednesday as 'WENZ-day' (silent 'd')."
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l2-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Capital ÛŒØ§ Small letters Ú©Ø§ Ú©ÙˆØ¦ÛŒ ØªØµÙˆØ± Ù†Û ÛŒÚº Û ÙˆØªØ§Û” Ø§Ø³ Ù„ÛŒÛ’ Ø§Ø±Ø¯Ùˆ Ø¨ÙˆÙ„Ù†Û’ ÙˆØ§Ù„Û’ Ø·Ù„Ø¨Ø§ Ø§Ú©Ø«Ø± Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù„Ú©Ú¾ØªÛ’ ÙˆÙ‚Øª Ø¯Ù†ÙˆÚº Ø§ÙˆØ± Ù…Û ÛŒÙ†ÙˆÚº Ú©Ùˆ small letter Ø³Û’ Ù„Ú©Ú¾ Ø¯ÛŒØªÛ’ Û ÛŒÚº (Ø¬ÛŒØ³Û’: 'monday' ÛŒØ§ 'august')Û”\n\n**ÛŒÛ  Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú¯Ø±Ø§Ù…Ø± Ú©ÛŒ Ø§ÛŒÚ© Ø¨Û Øª Ø¨Ú‘ÛŒ ØºÙ„Ø·ÛŒ Û Û’!**\n- Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø¯Ù† Ø§ÙˆØ± Ù…Û ÛŒÙ†Û’ **Proper Nouns** Û ÛŒÚºØŒ Ø§Ø³ Ù„ÛŒÛ’ Ø¬Ù…Ù„Û’ Ú©Û’ Ø¯Ø±Ù…ÛŒØ§Ù† Ù…ÛŒÚº Ø¨Ú¾ÛŒ Û Ù…ÛŒØ´Û  **Capital** Û ÙˆÙ†Ú¯Û’: **Monday**, **Friday**, **January**, **August**Û”\n\nØ§Ø³ Ú©Û’ Ø¹Ù„Ø§ÙˆÛ  Prepositions ÛŒØ§Ø¯ Ø±Ú©Ú¾ÛŒÚº:\n- Ø¯Ù† Ú©Û’ Ø³Ø§ØªÚ¾: **on** (on Monday)\n- Ù…Û ÛŒÙ†Û’ Ú©Û’ Ø³Ø§ØªÚ¾: **in** (in July)",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

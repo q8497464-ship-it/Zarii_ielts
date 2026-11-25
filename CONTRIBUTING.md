@@ -1,74 +1,58 @@
-# Contributing to Zarii IELTS
+# Contributing to Zarii English & IELTS
 
-Thank you for your interest in making IELTS preparation 100% free, accessible, and high-quality for students worldwide!
+Thank you for your interest in making English education and IELTS preparation 100% free, accessible, and high-quality for students worldwide!
 
 ---
 
-## Architecture & IELTS Feature Protection Rule
+## Architecture & Stability Rules
 
 > [!IMPORTANT]
-> **Core Stability Mandate**:
-> **No change may alter an existing IELTS route, data shape or score logic without a migration, a redirect and a passing regression suite.**
->
+> **Core Stability Mandates**:
 > 1. **Zero Route Breakages**: Any renamed or restructured URL must have an explicit redirect configured in `src/App.tsx`.
 > 2. **Database Schema Continuity**: The local IndexedDB (`src/lib/db.ts`) schema must maintain backwards compatibility. Any changes must bump the Dexie version with an upgrade function.
 > 3. **Scoring Integrity**: IELTS band conversion tables, Cambridge rounding rules, and empty-attempt guards (`src/features/mock/mockScoring.ts`) must never be altered or bypassed.
-> 4. **Regression Verification**: `npm run test:regression` and `npm run test` must pass on every change. See `docs/BASELINE.md` for the complete platform baseline.
+> 4. **No Mixing of Band Scores and CEFR Levels**: CEFR levels (A1 to C1) belong strictly to the English Course track; numerical Band Scores (0.0 to 9.0) belong strictly to the IELTS track.
+> 5. **MCQ Balance & Zero Tells**: Multiple choice questions must be evenly distributed across positions A, B, C, D (~25% each) and avoid length/grammar tells.
 
 ---
 
-## Content Integrity & Originality Rules
+## Content Integrity & Originality Standards
 
 1. **NO Copyrighted Materials**:
-   - **Never copy** Cambridge University Press, British Council, IDP, or actual examination papers.
-   - All passages, questions, dialogues, audio scripts, and model essays must be **100% original** or under a permissive open license (CC-BY).
-2. **Quality & Standard**:
-   - Academic passages should reflect authentic scientific or humanities writing (700–950 words).
-   - Questions must match real IELTS specifications (True/False/Not Given, Headings, Form Completion, etc.).
-   - Model essays must demonstrate genuine Band 7.5+ lexical resource and grammatical complexity.
+   - **Never copy** Cambridge University Press, British Council, IDP, Oxford, British Council, or Duolingo.
+   - All passages, lessons, exercises, dialogues, audio scripts, and sample essays must be **100% original** or under permissive open licenses (CC-BY).
+2. **Quality & Formatting**:
+   - **English Course Lessons**: Follow the lesson schema (`content/course/<level>/<unit>/<lesson>.json`) with clear Can-Do objectives, explanation callouts (*Rule, Tip, Careful*), model sentences with audio, varied exercise types, and 5-question quizzes.
+   - **Urdu Notes**: Optional comparative notes highlighting English SVO vs Urdu SOV patterns, articles, and prepositions. Mark notes as `"needs native review"` in metadata.
+   - **Dictionary Entries**: Sourced only from verified open corpora (Open English WordNet, CMU Pronouncing Dictionary). Custom entries and overrides must be added via the patch layer.
 
 ---
 
-## Adding Content Step-by-Step
+## Validation & Quality Checks Before Submitting a PR
 
-### 1. Adding a Reading Test
-1. Create or edit a JSON file in `content/reading/` (e.g. `academic-test-03.json`).
-2. Provide 3 passages with 40 questions total.
-3. Every question must include `id`, `prompt`, `correctAnswer`, `explanation`, and `evidence` (the exact sentence in the passage).
-
-### 2. Adding a Listening Test
-1. Create a JSON file in `content/listening/` (e.g. `listening-test-03.json`).
-2. Provide 4 sections with `audioScript` (speaker turns) and 40 questions total.
-3. Provide accepted spelling variations in `correctAnswer` (e.g. `["420", "four hundred and twenty"]`).
-
-### 3. Adding Vocabulary Words
-1. Add entries to `content/vocab/academic-words.json` or import using CSV:
-   ```bash
-   node scripts/bulk-import-csv.js vocab my_words.csv output.json
-   ```
-2. Include Urdu translations, collocations, and high-quality example sentences.
-
----
-
-## Validation & Verification Before Submitting a PR
-
-Before opening a pull request, verify that all JSON tests comply with the schema and all unit tests pass:
+Before opening a pull request, run all automated validation scripts:
 
 ```bash
-# 1. Validate all content files
-npm run validate-content
+# 1. Validate all English Course JSON lessons against schema
+npm run validate-course
 
-# 2. Run unit tests
-npm run test
+# 2. Validate dictionary shards, entries, and inflections
+npm run validate-dictionary
 
-# 3. Verify TypeScript and production build
+# 3. Audit MCQ answer distribution (guarantees balanced A/B/C/D keys)
+npm run audit-mcq
+
+# 4. Run full Vitest unit & regression suites
+npm run test:regression
+
+# 5. Verify TypeScript compilation and production build
 npm run build
 ```
 
 ---
 
 ## Submitting Pull Requests
-1. Fork the repository and create a feature branch (`git checkout -b content/reading-test-03`).
-2. Commit your validated JSON files (`git commit -m "feat(content): add original Academic Reading Test 3"`).
+1. Fork the repository and create a feature branch (`git checkout -b feature/course-a2-unit-01`).
+2. Commit your validated files with conventional commit messages (`git commit -m "feat(course): add A2 Unit 1 lessons on past simple"`).
 3. Push to your branch and open a Pull Request.
-4. Describe the topic and confirm that all materials are original.
+4. Verify all automated CI checks pass.

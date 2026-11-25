@@ -1,0 +1,644 @@
+{
+  "id": "eng-a1-u5-l5",
+  "level": "A1",
+  "unit": "unit-5",
+  "order": 5,
+  "title": "Understanding Menus & Prices",
+  "description": "Navigate restaurant menus, ask prices using 'How much is/are...', and understand bills.",
+  "objectives": [
+    "Ask prices using 'How much is this?' (singular) and 'How much are these?' (plural)",
+    "Interpret common menu sections (Starters/Appetizers, Mains, Sides, Drinks, Desserts)",
+    "Handle payments, cash, change, and check total calculations comfortably"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u5-l4"
+  ],
+  "skillTags": [
+    "prices",
+    "shopping",
+    "menus",
+    "numbers",
+    "money"
+  ],
+  "vocabularyList": [
+    {
+      "word": "price",
+      "partOfSpeech": "noun",
+      "phonetic": "/praÉªs/",
+      "definition": "The amount of money expected, required, or given in payment for something.",
+      "urduMeaning": "Ù‚ÛŒÙ…Øª",
+      "exampleSentence": "The menu clearly lists the price of each item."
+    },
+    {
+      "word": "cost",
+      "partOfSpeech": "verb",
+      "phonetic": "/kÉ’st/",
+      "definition": "To require the payment of a specified sum of money before it can be acquired.",
+      "urduMeaning": "Ù‚ÛŒÙ…Øª Û ÙˆÙ†Ø§ / Ù„Ø§Ú¯Øª Ø¢Ù†Ø§",
+      "exampleSentence": "How much does this chicken burger cost?"
+    },
+    {
+      "word": "cheap",
+      "partOfSpeech": "adjective",
+      "phonetic": "/tÊƒiË p/",
+      "definition": "Low in price, especially in relation to similar items or value.",
+      "urduMeaning": "Ø³Ø³ØªØ§",
+      "exampleSentence": "Street food in Lahore is delicious and cheap."
+    },
+    {
+      "word": "expensive",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ÉªkËˆspensÉªv/",
+      "definition": "Costing a lot of money.",
+      "urduMeaning": "Ù…Û Ù†Ú¯Ø§",
+      "exampleSentence": "Five-star hotel restaurants are quite expensive."
+    },
+    {
+      "word": "dollar",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆdÉ’lÉ™r/",
+      "definition": "The basic monetary unit of the US, Canada, Australia, and other countries.",
+      "urduMeaning": "ÚˆØ§Ù„Ø±",
+      "exampleSentence": "The meal costs fifteen dollars."
+    },
+    {
+      "word": "pound",
+      "partOfSpeech": "noun",
+      "phonetic": "/paÊŠnd/",
+      "definition": "The basic monetary unit of the UK and some other countries.",
+      "urduMeaning": "Ù¾Ø§Ø¤Ù†Úˆ",
+      "exampleSentence": "A cup of coffee in London costs three pounds."
+    },
+    {
+      "word": "coin",
+      "partOfSpeech": "noun",
+      "phonetic": "/kÉ”Éªn/",
+      "definition": "A flat, typically round piece of metal with an official stamp, used as money.",
+      "urduMeaning": "Ø³Ú©Û ",
+      "exampleSentence": "He paid with a ten-rupee coin."
+    },
+    {
+      "word": "cash",
+      "partOfSpeech": "noun",
+      "phonetic": "/kÃ¦Êƒ/",
+      "definition": "Money in coins or notes, as distinct from credit cards or cheques.",
+      "urduMeaning": "Ù†Ù‚Ø¯ / Ú©ÛŒØ´",
+      "exampleSentence": "Do you accept card payments or only cash?"
+    },
+    {
+      "word": "change",
+      "partOfSpeech": "noun",
+      "phonetic": "/tÊƒeÉªndÊ’/",
+      "definition": "Coins or smaller notes given back when the payment exceeds the price.",
+      "urduMeaning": "Ø¨Ù‚Ø§ÛŒØ§ / Ú†Ú¾Ù¹Û’ Ù¾ÛŒØ³Û’",
+      "exampleSentence": "Here is your receipt and five hundred rupees change."
+    },
+    {
+      "word": "total",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆtÉ™ÊŠtl/",
+      "definition": "The whole number or amount.",
+      "urduMeaning": "Ú©Ù„ ØªØ¹Ø¯Ø§Ø¯ / Ú©Ù„ Ø±Ù‚Ù…",
+      "exampleSentence": "The total comes to two thousand rupees."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u5-l5-1",
+      "type": "explain",
+      "title": "Asking Prices & Navigating Menus",
+      "content": "To ask the price of items in English:\n- **Singular**: *How much **is** this sandwich?* -> *It is $5 (five dollars).*\n- **Plural**: *How much **are** these samosas?* -> *They are $3 (three dollars).*\n- **Using verb 'cost'**: *How much does this burger cost?* -> *It costs $8.*",
+      "tables": [
+        {
+          "title": "Standard Menu Categories",
+          "headers": [
+            "Menu Section",
+            "What It Contains",
+            "Typical Items",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "Starters / Appetizers",
+              "Small light dishes before the meal",
+              "Soup, spring rolls, samosas",
+              "Ø§Ø¨ØªØ¯Ø§Ø¦ÛŒ Ú©Ú¾Ø§Ù†Ø§"
+            ],
+            [
+              "Mains / Entrees",
+              "The principal heavy dishes",
+              "Biryani, karahi, steak, pasta",
+              "Ø¨Ù†ÛŒØ§Ø¯ÛŒ Ú©Ú¾Ø§Ù†Ø§"
+            ],
+            [
+              "Sides",
+              "Accompaniments served alongside",
+              "Roti, naan, rice, raita, salad",
+              "Ø³Ø§ØªÚ¾ Ù…Ù„Ù†Û’ ÙˆØ§Ù„ÛŒ Ø§Ø´ÛŒØ§"
+            ],
+            [
+              "Beverages / Drinks",
+              "Hot and cold refreshments",
+              "Tea, coffee, fresh juice, mineral water",
+              "Ù…Ø´Ø±ÙˆØ¨Ø§Øª"
+            ],
+            [
+              "Desserts",
+              "Sweet final treats",
+              "Kheer, ice cream, gulab jamun",
+              "Ù…ÛŒÙ¹Ú¾Ø§"
+            ]
+          ]
+        },
+        {
+          "title": "Handling the Bill & Payment Phrases",
+          "headers": [
+            "Phrase / Question",
+            "Who Says It",
+            "Meaning",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "How would you like to pay?",
+              "Cashier / Waiter",
+              "Cash or card?",
+              "Ø¢Ù¾ Ú©ÛŒØ³Û’ Ø§Ø¯Ø§Ø¦ÛŒÚ¯ÛŒ Ú©Ø±ÛŒÚº Ú¯Û’ØŸ"
+            ],
+            [
+              "I'll pay by card.",
+              "Customer",
+              "Using debit/credit card",
+              "Ù…ÛŒÚº Ú©Ø§Ø±Úˆ Ø³Û’ Ø§Ø¯Ø§ Ú©Ø±ÙˆÚº Ú¯Ø§Û”"
+            ],
+            [
+              "Keep the change.",
+              "Customer",
+              "Leave remainder as tip",
+              "Ø¨Ù‚Ø§ÛŒØ§ Ø±Ù‚Ù… Ø±Ú©Ú¾ Ù„ÛŒÚºÛ”"
+            ],
+            [
+              "Here is your receipt.",
+              "Cashier",
+              "Proof of purchase paper",
+              "ÛŒÛ  Ø±Û ÛŒ Ø¢Ù¾ Ú©ÛŒ Ø±Ø³ÛŒØ¯Û”"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Reading Prices Aloud",
+          "text": "Prices like **$4.50** are read aloud as: *'Four dollars and fifty cents'* or simply *'Four fifty'*."
+        },
+        {
+          "type": "warning",
+          "title": "Match Singular and Plural with Prices",
+          "text": "Remember: 'How much **is** the coffee?' (singular), but 'How much **are** the drinks?' (plural)."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l5-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "Excuse me, how much is this chicken roll?",
+          "phonetic": "/ÉªkËˆskjuË z miË  haÊŠ mÊŒtÊƒ Éªz Ã°Éªs ËˆtÊƒÉªkÉªn rÉ™ÊŠl/",
+          "urdu": "Ù…Ø¹Ø§Ù  Ú©ÛŒØ¬Ø¦Û’ Ú¯Ø§ØŒ ÛŒÛ  Ú†Ú©Ù† Ø±ÙˆÙ„ Ú©ØªÙ†Û’ Ú©Ø§ Û Û’ØŸ",
+          "audioText": "Excuse me, how much is this chicken roll?"
+        },
+        {
+          "english": "It costs two hundred and fifty rupees.",
+          "phonetic": "/Éªt kÉ’sts tuË  ËˆhÊŒndrÉ™d Ã¦nd ËˆfÉªfti ruË ËˆpiË z/",
+          "urdu": "Ø§Ø³ Ú©ÛŒ Ù‚ÛŒÙ…Øª Ø¯Ú¾Ø§Ø¦ÛŒ Ø³Ùˆ Ø±ÙˆÙ¾Û’ Û Û’Û”",
+          "audioText": "It costs two hundred and fifty rupees."
+        },
+        {
+          "english": "How much are these fresh mango pastries?",
+          "phonetic": "/haÊŠ mÊŒtÊƒ É‘Ë r Ã°iË z freÊƒ ËˆmÃ¦Å‹É¡É™ÊŠ ËˆpeÉªstriz/",
+          "urdu": "ÛŒÛ  ØªØ§Ø²Û  Ø¢Ù… Ú©ÛŒ Ù¾ÛŒØ³Ù¹Ø±ÛŒØ§Úº Ú©ØªÙ†Û’ Ú©ÛŒ Û ÛŒÚºØŸ",
+          "audioText": "How much are these fresh mango pastries?"
+        },
+        {
+          "english": "They are four dollars each.",
+          "phonetic": "/Ã°eÉª É‘Ë r fÉ”Ë r ËˆdÉ’lÉ™rz iË tÊƒ/",
+          "urdu": "ÙˆÛ  Ú†Ø§Ø± ÚˆØ§Ù„Ø± Ù ÛŒ Ù¾ÛŒØ³ Û ÛŒÚºÛ”",
+          "audioText": "They are four dollars each."
+        },
+        {
+          "english": "The total for your meal comes to eighteen pounds.",
+          "phonetic": "/Ã°É™ ËˆtÉ™ÊŠtl fÉ”Ë r jÉ”Ë r miË l kÊŒmz tuË  ËŒeÉªËˆtiË n paÊŠndz/",
+          "urdu": "Ø¢Ù¾ Ú©Û’ Ú©Ú¾Ø§Ù†Û’ Ú©ÛŒ Ú©Ù„ Ø±Ù‚Ù… Ø§Ù¹ÚÚ¾Ø§Ø±Û  Ù¾Ø§Ø¤Ù†Úˆ Ø¨Ù†ØªÛŒ Û Û’Û”",
+          "audioText": "The total for your meal comes to eighteen pounds."
+        },
+        {
+          "english": "Do you accept credit cards or do you only take cash?",
+          "phonetic": "/duË  juË  É™kËˆsept ËˆkredÉªt kÉ‘Ë dz É”Ë r duË  juË  ËˆÉ™ÊŠnli teÉªk kÃ¦Êƒ/",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ú©Ø±ÛŒÚˆÙ¹ Ú©Ø§Ø±Úˆ Ù‚Ø¨ÙˆÙ„ Ú©Ø±ØªÛ’ Û ÛŒÚº ÛŒØ§ ØµØ±Ù  Ù†Ù‚Ø¯ Ù„ÛŒØªÛ’ Û ÛŒÚºØŸ",
+          "audioText": "Do you accept credit cards or do you only take cash?"
+        },
+        {
+          "english": "Here is your change and your printed receipt.",
+          "phonetic": "/hÉªÉ™r Éªz jÉ”Ë r tÊƒeÉªndÊ’ Ã¦nd jÉ”Ë r ËˆprÉªntÉªd rÉªËˆsiË t/",
+          "urdu": "ÛŒÛ  Ø±Û Û’ Ø¢Ù¾ Ú©Û’ Ø¨Ù‚Ø§ÛŒØ§ Ù¾ÛŒØ³Û’ Ø§ÙˆØ± Ø¢Ù¾ Ú©ÛŒ Ù¾Ø±Ù†Ù¹ Ø´Ø¯Û  Ø±Ø³ÛŒØ¯Û”",
+          "audioText": "Here is your change and your printed receipt."
+        },
+        {
+          "english": "Keep the change as a tip for your friendly service.",
+          "phonetic": "/kiË p Ã°É™ tÊƒeÉªndÊ’ Ã¦z É™ tÉªp fÉ”Ë r jÉ”Ë r Ëˆfrendli ËˆsÉœË vÉªs/",
+          "urdu": "Ø§Ù¾Ù†ÛŒ Ø¹Ù…Ø¯Û  Ø®Ø¯Ù…Ø§Øª Ú©Û’ Ù„ÛŒÛ’ Ø¨Ù‚Ø§ÛŒØ§ Ø±Ù‚Ù… Ø¨Ø·ÙˆØ± Ø¨Ø®Ø´ÛŒØ´ Ø±Ú©Ú¾ Ù„ÛŒÚºÛ”",
+          "audioText": "Keep the change as a tip for your friendly service."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l5-3",
+      "type": "dialogue",
+      "title": "Paying at the Cafe Cash Desk",
+      "dialogue": [
+        {
+          "speaker": "Cashier",
+          "avatar": "C",
+          "english": "That is one chicken biryani, one salad, and two mineral waters. That comes to fifteen hundred rupees.",
+          "urdu": "Ø§ÛŒÚ© Ú†Ú©Ù† Ø¨Ø±ÛŒØ§Ù†ÛŒØŒ Ø§ÛŒÚ© Ø³Ù„Ø§Ø¯ Ø§ÙˆØ± Ø¯Ùˆ Ù…Ù†Ø±Ù„ ÙˆØ§Ù¹Ø±Û” Ú©Ù„ Ù¾Ù†Ø¯Ø±Û  Ø³Ùˆ Ø±ÙˆÙ¾Û’ Ø¨Ù†Û’Û”",
+          "audioText": "That is one chicken biryani, one salad, and two mineral waters. That comes to fifteen hundred rupees."
+        },
+        {
+          "speaker": "Customer",
+          "avatar": "P",
+          "english": "Here is a two-thousand-rupee note.",
+          "urdu": "ÛŒÛ  Ø¯Ùˆ Û Ø²Ø§Ø± Ú©Ø§ Ù†ÙˆÙ¹ Ù„ÛŒÚºÛ”",
+          "audioText": "Here is a two-thousand-rupee note."
+        },
+        {
+          "speaker": "Cashier",
+          "avatar": "C",
+          "english": "Thank you. And here is five hundred rupees change, with your receipt.",
+          "urdu": "Ø´Ú©Ø±ÛŒÛ Û” Ø§ÙˆØ± ÛŒÛ  Ù¾Ø§Ù†Ú† Ø³Ùˆ Ø±ÙˆÙ¾Û’ Ø¨Ù‚Ø§ÛŒØ§ Ø¢Ù¾ Ú©ÛŒ Ø±Ø³ÛŒØ¯ Ú©Û’ Ø³Ø§ØªÚ¾Û”",
+          "audioText": "Thank you. And here is five hundred rupees change, with your receipt."
+        },
+        {
+          "speaker": "Customer",
+          "avatar": "P",
+          "english": "Thank you very much. The meal was delicious!",
+          "urdu": "Ø¨Û Øª Ø´Ú©Ø±ÛŒÛ Û” Ú©Ú¾Ø§Ù†Ø§ ÙˆØ§Ù‚Ø¹ÛŒ Ø¨Û Øª Ù„Ø°ÛŒØ° ØªÚ¾Ø§!",
+          "audioText": "Thank you very much. The meal was delicious!"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l5-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u5-l5-1",
+          "type": "mcq",
+          "skillTag": "prices",
+          "prompt": "What is the correct question to ask the price of one single sandwich?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "How much are this sandwich?"
+            },
+            {
+              "id": "opt-2",
+              "text": "How much is this sandwich?"
+            },
+            {
+              "id": "opt-3",
+              "text": "How many is this sandwich?"
+            },
+            {
+              "id": "opt-4",
+              "text": "How many cost this sandwich?"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Singular items use 'How much is this sandwich?'.",
+          "urduExplanation": "ÙˆØ§Ø­Ø¯ Ú†ÛŒØ² Ú©ÛŒ Ù‚ÛŒÙ…Øª Ù¾ÙˆÚ†Ú¾Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ 'How much is this sandwich?' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l5-2",
+          "type": "mcq",
+          "skillTag": "prices",
+          "prompt": "What is the correct question to ask the price of several samosas?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "How much is these samosas?"
+            },
+            {
+              "id": "opt-2",
+              "text": "How many is these samosas?"
+            },
+            {
+              "id": "opt-3",
+              "text": "How much are these samosas?"
+            },
+            {
+              "id": "opt-4",
+              "text": "How much does cost these samosas?"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Plural items take 'How much are these samosas?'.",
+          "urduExplanation": "Ø¬Ù…Ø¹ Ø§Ø´ÛŒØ§ Ú©ÛŒ Ù‚ÛŒÙ…Øª Ú©Û’ Ù„ÛŒÛ’ 'How much are these samosas?' Ù¾ÙˆÚ†Ú¾ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l5-3",
+          "type": "fill_blank",
+          "skillTag": "menus",
+          "prompt": "Complete the menu section name: 'Light dishes eaten before the main course are called _____.'",
+          "correctAnswer": "Starters",
+          "explanation": "'Starters' (or Appetizers) are light dishes served before mains.",
+          "urduExplanation": "Ø¨Ù†ÛŒØ§Ø¯ÛŒ Ú©Ú¾Ø§Ù†Û’ Ø³Û’ Ù¾Û Ù„Û’ Ú©ÛŒ Ø§Ø´ÛŒØ§ Ú©Ùˆ 'Starters' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l5-4",
+          "type": "fill_blank",
+          "skillTag": "money",
+          "prompt": "Complete: 'When you give $20 for a $15 meal, you get $5 _____.'",
+          "correctAnswer": "change",
+          "explanation": "'Change' is the money returned when payment exceeds the price.",
+          "urduExplanation": "Ø¨Ù‚Ø§ÛŒØ§ Ù¾ÛŒØ³ÙˆÚº Ú©Ùˆ 'change' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l5-5",
+          "type": "order_sentence",
+          "skillTag": "prices",
+          "prompt": "Rearrange the words to form a correct price question:",
+          "sentenceTokens": [
+            "How",
+            "much",
+            "does",
+            "this",
+            "coffee",
+            "cost",
+            "?"
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "How much + does + this coffee + cost?",
+          "urduExplanation": "How much does this coffee cost?"
+        },
+        {
+          "id": "ex-a1-u5-l5-6",
+          "type": "order_sentence",
+          "skillTag": "prices",
+          "prompt": "Rearrange the words to form a statement:",
+          "sentenceTokens": [
+            "The",
+            "total",
+            "comes",
+            "to",
+            "fifteen",
+            "pounds",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (The total) + verb (comes) + prepositional phrase (to fifteen pounds).",
+          "urduExplanation": "The total comes to fifteen pounds."
+        },
+        {
+          "id": "ex-a1-u5-l5-7",
+          "type": "match_pairs",
+          "skillTag": "money",
+          "prompt": "Match the currency name with its country:",
+          "pairs": [
+            {
+              "left": "Rupee",
+              "right": "Pakistan"
+            },
+            {
+              "left": "Pound",
+              "right": "United Kingdom"
+            },
+            {
+              "left": "Dollar",
+              "right": "United States"
+            },
+            {
+              "left": "Euro",
+              "right": "European Union"
+            }
+          ],
+          "explanation": "Currencies accurately paired with regions.",
+          "urduExplanation": "Ú©Ø±Ù†Ø³ÛŒ Ú©Ùˆ Ø§Ø³ Ú©Û’ Ù…Ù„Ú© Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l5-8",
+          "type": "error_correction",
+          "skillTag": "prices",
+          "prompt": "Find and correct the mistake: 'How much are this burger?'",
+          "correctAnswer": "How much is this burger?",
+          "explanation": "'This burger' is singular and requires 'is', not 'are'.",
+          "urduExplanation": "ÙˆØ§Ø­Ø¯ Ú©Û’ Ù„ÛŒÛ’ 'is' Ù„Ú©Ú¾ÛŒÚº: 'How much is this burger?'Û”"
+        },
+        {
+          "id": "ex-a1-u5-l5-9",
+          "type": "error_correction",
+          "skillTag": "prices",
+          "prompt": "Find and correct the mistake: 'How many does this book cost?'",
+          "correctAnswer": "How much does this book cost?",
+          "explanation": "Price inquiries always use 'How much', not 'How many'.",
+          "urduExplanation": "Ù‚ÛŒÙ…Øª Ù¾ÙˆÚ†Ú¾Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ 'How much' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l5-10",
+          "type": "true_false",
+          "skillTag": "money",
+          "prompt": "'Keep the change' means the customer wants the waiter to return all coins. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. 'Keep the change' means the customer is giving the remaining money as a tip.",
+          "urduExplanation": "ØºÙ„Ø·Û” 'Keep the change' Ú©Ø§ Ù…Ø·Ù„Ø¨ Û Û’ Ú©Û  Ø¨Ù‚Ø§ÛŒØ§ Ù¾ÛŒØ³Û’ Ø¨Ø·ÙˆØ± Ø¨Ø®Ø´ÛŒØ´ Ø±Ú©Ú¾ Ù„ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l5-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u5-l5-1",
+          "type": "mcq",
+          "skillTag": "menus",
+          "prompt": "Where on a menu would you look to find mineral water or tea?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Starters"
+            },
+            {
+              "id": "opt-2",
+              "text": "Mains"
+            },
+            {
+              "id": "opt-3",
+              "text": "Beverages / Drinks"
+            },
+            {
+              "id": "opt-4",
+              "text": "Desserts"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Water and tea are listed under 'Beverages' or 'Drinks'.",
+          "urduExplanation": "Ù¾Ø§Ù†ÛŒ Ø§ÙˆØ± Ú†Ø§Ø¦Û’ 'Beverages' (Ù…Ø´Ø±ÙˆØ¨Ø§Øª) Ú©Û’ Ø³ÛŒÚ©Ø´Ù† Ù…ÛŒÚº Û ÙˆØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u5-l5-2",
+          "type": "mcq",
+          "skillTag": "prices",
+          "prompt": "How is the price '$7.50' typically spoken in everyday English?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Seven dollars and fifteen cents"
+            },
+            {
+              "id": "opt-2",
+              "text": "Fifty dollars and seven cents"
+            },
+            {
+              "id": "opt-3",
+              "text": "Seven dollars point fifty cents"
+            },
+            {
+              "id": "opt-4",
+              "text": "Seven dollars and fifty cents"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Standard spoken form is 'Seven dollars and fifty cents' (or 'Seven fifty').",
+          "urduExplanation": "$7.50 کو 'Seven dollars and fifty cents' بولا جاتا ہے۔"
+        },
+        {
+          "id": "qz-a1-u5-l5-3",
+          "type": "mcq",
+          "skillTag": "money",
+          "prompt": "What is the opposite of 'expensive'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "cheap"
+            },
+            {
+              "id": "opt-2",
+              "text": "sweet"
+            },
+            {
+              "id": "opt-3",
+              "text": "costly"
+            },
+            {
+              "id": "opt-4",
+              "text": "rich"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Cheap' is the direct antonym of expensive.",
+          "urduExplanation": "expensive (Ù…Û Ù†Ú¯Ø§) Ú©Ø§ Ø§Ù„Ù¹ cheap (Ø³Ø³ØªØ§) Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l5-4",
+          "type": "mcq",
+          "skillTag": "prices",
+          "prompt": "Complete the question: 'How much _____ these two cups of tea?'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "is"
+            },
+            {
+              "id": "opt-2",
+              "text": "are"
+            },
+            {
+              "id": "opt-3",
+              "text": "does"
+            },
+            {
+              "id": "opt-4",
+              "text": "costs"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'These two cups of tea' is plural, requiring 'are'.",
+          "urduExplanation": "Ø¬Ù…Ø¹ 'two cups' Ú©Û’ Ù„ÛŒÛ’ 'are' Ù„Ú¯Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u5-l5-5",
+          "type": "mcq",
+          "skillTag": "money",
+          "prompt": "What piece of paper confirms what you paid at a restaurant?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "A menu"
+            },
+            {
+              "id": "opt-2",
+              "text": "A napkin"
+            },
+            {
+              "id": "opt-3",
+              "text": "A receipt"
+            },
+            {
+              "id": "opt-4",
+              "text": "A poster"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "A receipt is the formal printed proof of purchase.",
+          "urduExplanation": "Ø±Ø³ÛŒØ¯ Ú©Ùˆ 'receipt' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l5-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Menus, prices, and payments summary:",
+      "summaryPoints": [
+        "Ask prices: 'How much is this...?' (singular) / 'How much are these...?' (plural).",
+        "Menu sections: Starters (appetizers), Mains (entrees), Sides, Beverages (drinks), Desserts.",
+        "Payment options: Cash (coins/notes) or Card (debit/credit).",
+        "Change = money returned when you overpay.",
+        "Say 'Keep the change' when leaving a friendly tip."
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l5-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… Ù‚ÛŒÙ…Øª Ù¾ÙˆÚ†Ú¾Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Ú©Û ØªÛ’ Û ÛŒÚº:\n- 'ÛŒÛ  Ú©ØªÙ†Û’ Ú©Ø§ Û Û’ØŸ'\n- 'ÛŒÛ  Ú†ÛŒØ²ÛŒÚº Ú©ØªÙ†Û’ Ú©ÛŒ Û ÛŒÚºØŸ'\n\nØ§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ù‚ÛŒÙ…Øª Ù¾ÙˆÚ†Ú¾ØªÛ’ ÙˆÙ‚Øª Û Ù…ÛŒØ´Û  **'How much'** Ø¢ØªØ§ Û Û’ (Ú©Ø¨Ú¾ÛŒ 'How many' Ù†Û  Ú©Û ÛŒÚº):\n- ÙˆØ§Ø­Ø¯ Ú©Û’ Ù„ÛŒÛ’: **How much is this?**\n- Ø¬Ù…Ø¹ Ú©Û’ Ù„ÛŒÛ’: **How much are these?**\n\nØ§Ø³ Ú©Û’ Ø¹Ù„Ø§ÙˆÛ  Ø¨Ù‚Ø§ÛŒØ§ Ù¾ÛŒØ³ÙˆÚº Ú©Ùˆ **Change** Ø§ÙˆØ± Ù¾Ø±Ù†Ù¹ Ø´Ø¯Û  Ø±Ø³ÛŒØ¯ Ú©Ùˆ **Receipt** (/rÉªËˆsiË t/ - ÛŒÛ Ø§Úº 'p' Ø®Ø§Ù…ÙˆØ´ Û Û’) Ú©Û ØªÛ’ Û ÛŒÚºÛ”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

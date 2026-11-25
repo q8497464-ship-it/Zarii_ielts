@@ -1,0 +1,657 @@
+{
+  "id": "eng-a1-u6-l1",
+  "level": "A1",
+  "unit": "unit-6",
+  "order": 1,
+  "title": "Cardinal Numbers 1 to 100",
+  "description": "Count from 1 to 100, master the difference between -teen and -ty, and say phone numbers and ages.",
+  "objectives": [
+    "Count and write cardinal numbers from 1 to 100 accurately",
+    "Distinguish between -teen numbers (thirteen /Î¸ÉœË ËˆtiË n/) and -ty numbers (thirty /ËˆÎ¸ÉœË ti/)",
+    "Recite phone numbers, room numbers, and ages using standard spoken conventions"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u5-l5"
+  ],
+  "skillTags": [
+    "numbers",
+    "cardinals",
+    "pronunciation",
+    "daily-english"
+  ],
+  "vocabularyList": [
+    {
+      "word": "zero",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆzÉªÉ™rÉ™ÊŠ/",
+      "definition": "No quantity or number; 0 (often pronounced 'oh' in phone numbers).",
+      "urduMeaning": "ØµÙ Ø±",
+      "exampleSentence": "My phone number starts with zero three hundred."
+    },
+    {
+      "word": "thirteen",
+      "partOfSpeech": "numeral",
+      "phonetic": "/ËŒÎ¸ÉœË ËˆtiË n/",
+      "definition": "The number equivalent to the sum of six and seven; 13.",
+      "urduMeaning": "ØªÛŒØ±Û ",
+      "exampleSentence": "He became a teenager on his thirteenth birthday."
+    },
+    {
+      "word": "thirty",
+      "partOfSpeech": "numeral",
+      "phonetic": "/ËˆÎ¸ÉœË ti/",
+      "definition": "The number equivalent to the product of three and ten; 30.",
+      "urduMeaning": "ØªÛŒØ³",
+      "exampleSentence": "There are thirty students in our classroom."
+    },
+    {
+      "word": "fourteen",
+      "partOfSpeech": "numeral",
+      "phonetic": "/ËŒfÉ”Ë ËˆtiË n/",
+      "definition": "The number equivalent to the sum of ten and four; 14.",
+      "urduMeaning": "Ú†ÙˆØ¯Û ",
+      "exampleSentence": "She is fourteen years old."
+    },
+    {
+      "word": "forty",
+      "partOfSpeech": "numeral",
+      "phonetic": "/ËˆfÉ”Ë ti/",
+      "definition": "The number equivalent to the product of four and ten; 40 (spelled without 'u').",
+      "urduMeaning": "Ú†Ø§Ù„ÛŒØ³",
+      "exampleSentence": "The temperature reached forty degrees in Multan."
+    },
+    {
+      "word": "fifteen",
+      "partOfSpeech": "numeral",
+      "phonetic": "/ËŒfÉªfËˆtiË n/",
+      "definition": "The number equivalent to the sum of ten and five; 15.",
+      "urduMeaning": "Ù¾Ù†Ø¯Ø±Û ",
+      "exampleSentence": "The journey takes fifteen minutes."
+    },
+    {
+      "word": "fifty",
+      "partOfSpeech": "numeral",
+      "phonetic": "/ËˆfÉªfti/",
+      "definition": "The number equivalent to the product of five and ten; 50.",
+      "urduMeaning": "Ù¾Ú†Ø§Ø³",
+      "exampleSentence": "He bought a fifty-rupee bus ticket."
+    },
+    {
+      "word": "hundred",
+      "partOfSpeech": "numeral",
+      "phonetic": "/ËˆhÊŒndrÉ™d/",
+      "definition": "The number equivalent to ten times ten; 100.",
+      "urduMeaning": "Ø³Ùˆ",
+      "exampleSentence": "There are one hundred pages in this notebook."
+    },
+    {
+      "word": "number",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆnÊŒmbÉ™r/",
+      "definition": "An arithmetical value, expressed by a word, symbol, or figure.",
+      "urduMeaning": "Ù†Ù…Ø¨Ø± / Ø¹Ø¯Ø¯",
+      "exampleSentence": "Can you give me your contact number?"
+    },
+    {
+      "word": "count",
+      "partOfSpeech": "verb",
+      "phonetic": "/kaÊŠnt/",
+      "definition": "To determine the total number of a collection of items.",
+      "urduMeaning": "Ú¯Ù†Ù†Ø§",
+      "exampleSentence": "The young boy can count up to a hundred."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u6-l1-1",
+      "type": "explain",
+      "title": "Number Building & The Teen vs. Ty Contrast",
+      "content": "Counting in English follows regular building blocks after 20:\n- **21 to 99**: Combine the tens word with the unit word separated by a **hyphen (-)**: *twenty-one, thirty-five, forty-eight, ninety-nine*.\n\n### The Critical Pronunciation Difference: -teen vs. -ty\nMany English learners confuse **13-19** with **30-90**. The difference is in **word stress**:\n- **-teen numbers (13, 14, 15)**: Stress is on the **SECOND syllable** and the vowel is long /iË / (*thir-TEEN*, *four-TEEN*).\n- **-ty numbers (30, 40, 50)**: Stress is on the **FIRST syllable** and the ending is short /ti/ (*THIR-ty*, *FOR-ty*).\n\n### Spelling Watch: 40 vs. 14\nNotice: **fourteen** has a 'u', but **forty** drops the 'u' (F-O-R-T-Y)!",
+      "tables": [
+        {
+          "title": "Teen vs. Ty Contrast Table",
+          "headers": [
+            "Teen (13-19)",
+            "Stress & Sound",
+            "Ty (30-90)",
+            "Stress & Sound",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "13: thirteen",
+              "thir-TEEN /ËŒÎ¸ÉœË ËˆtiË n/",
+              "30: thirty",
+              "THIR-ty /ËˆÎ¸ÉœË ti/",
+              "ØªÛŒØ±Û  Ø¨Ù…Ù‚Ø§Ø¨Ù„Û  ØªÛŒØ³"
+            ],
+            [
+              "14: fourteen",
+              "four-TEEN /ËŒfÉ”Ë ËˆtiË n/",
+              "40: forty (no 'u')",
+              "FOR-ty /ËˆfÉ”Ë ti/",
+              "Ú†ÙˆØ¯Û  Ø¨Ù…Ù‚Ø§Ø¨Ù„Û  Ú†Ø§Ù„ÛŒØ³"
+            ],
+            [
+              "15: fifteen",
+              "fif-TEEN /ËŒfÉªfËˆtiË n/",
+              "50: fifty",
+              "FIF-ty /ËˆfÉªfti/",
+              "Ù¾Ù†Ø¯Ø±Û  Ø¨Ù…Ù‚Ø§Ø¨Ù„Û  Ù¾Ú†Ø§Ø³"
+            ],
+            [
+              "16: sixteen",
+              "six-TEEN /ËŒsÉªksËˆtiË n/",
+              "60: sixty",
+              "SIX-ty /ËˆsÉªksti/",
+              "Ø³ÙˆÙ„Û  Ø¨Ù…Ù‚Ø§Ø¨Ù„Û  Ø³Ø§Ù¹Ú¾"
+            ],
+            [
+              "17: seventeen",
+              "seven-TEEN /ËŒsevnËˆtiË n/",
+              "70: seventy",
+              "SEVEN-ty /Ëˆsevnti/",
+              "Ø³ØªØ±Û  Ø¨Ù…Ù‚Ø§Ø¨Ù„Û  Ø³ØªØ±"
+            ],
+            [
+              "18: eighteen",
+              "eigh-TEEN /ËŒeÉªËˆtiË n/",
+              "80: eighty",
+              "EIGH-ty /ËˆeÉªti/",
+              "Ø§Ù¹ÚÚ¾Ø§Ø±Û  Ø¨Ù…Ù‚Ø§Ø¨Ù„Û  Ø§Ø³ÛŒ"
+            ],
+            [
+              "19: nineteen",
+              "nine-TEEN /ËŒnaÉªnËˆtiË n/",
+              "90: ninety",
+              "NINE-ty /ËˆnaÉªnti/",
+              "Ø§Ù†ÛŒØ³ Ø¨Ù…Ù‚Ø§Ø¨Ù„Û  Ù†ÙˆÛ’"
+            ]
+          ]
+        },
+        {
+          "title": "Saying Contact Numbers & Ages",
+          "headers": [
+            "Context",
+            "Spoken Convention",
+            "Example",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "Phone Numbers",
+              "Read digit by digit; 0 is 'zero' or 'oh'",
+              "0300-1234567: 'oh-three-double-oh...'",
+              "Group into clusters of 3-4 digits."
+            ],
+            [
+              "Ages",
+              "Number alone or 'number years old'",
+              "She is twenty-two / twenty-two years old",
+              "Never say 'twenty-two years' alone."
+            ],
+            [
+              "Room Numbers",
+              "Read in pairs or digits",
+              "Room 305: 'Room three-oh-five'",
+              "'Oh' replaces zero in casual speech."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Hyphen Rule for Compound Numbers",
+          "text": "Always put a hyphen between tens and ones: **twenty-one**, **fifty-five**, **ninety-nine**."
+        },
+        {
+          "type": "warning",
+          "title": "Spelling of Forty",
+          "text": "'Forty' is the only number whose spelling drops the 'u': four (4), fourteen (14), but **forty (40)**."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l1-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "There are thirty-two students in our English classroom.",
+          "phonetic": "/Ã°eÉ™r É‘Ë r ËˆÎ¸ÉœË ti tuË  ËˆstjuË dÉ™nts Éªn ËˆaÊŠÉ™r ËˆÉªÅ‹É¡lÉªÊƒ ËˆklÉ‘Ë sruË m/",
+          "urdu": "Û Ù…Ø§Ø±ÛŒ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú©ÛŒ Ú©Ù„Ø§Ø³ Ù…ÛŒÚº Ø¨ØªÛŒØ³ Ø·Ù„Ø¨Ø§ Û ÛŒÚºÛ”",
+          "audioText": "There are thirty-two students in our English classroom."
+        },
+        {
+          "english": "My grandfather is seventy-five years old and very active.",
+          "phonetic": "/maÉª ËˆÉ¡rÃ¦nfÉ‘Ë Ã°É™r Éªz Ëˆsevnti faÉªv jÉªÉ™z É™ÊŠld Ã¦nd Ëˆveri ËˆÃ¦ktÉªv/",
+          "urdu": "Ù…ÛŒØ±Û’ Ø¯Ø§Ø¯Ø§ Ù¾Ú†Ú¾ØªØ± Ø³Ø§Ù„ Ú©Û’ Û ÛŒÚº Ø§ÙˆØ± Ø¨Û Øª Ù…ØªØ­Ø±Ú© Û ÛŒÚºÛ”",
+          "audioText": "My grandfather is seventy-five years old and very active."
+        },
+        {
+          "english": "The book costs forty-five pounds at the campus bookstore.",
+          "phonetic": "/Ã°É™ bÊŠk kÉ’sts ËˆfÉ”Ë ti faÉªv paÊŠndz Ã¦t Ã°É™ ËˆkÃ¦mpÉ™s ËˆbÊŠkstÉ”Ë r/",
+          "urdu": "Ú©ÛŒÙ…Ù¾Ø³ Ú©Û’ Ú©ØªØ§Ø¨ Ú¯Ú¾Ø± Ù¾Ø± Ú©ØªØ§Ø¨ Ú©ÛŒ Ù‚ÛŒÙ…Øª Ù¾ÛŒÙ†ØªØ§Ù„ÛŒØ³ Ù¾Ø§Ø¤Ù†Úˆ Û Û’Û”",
+          "audioText": "The book costs forty-five pounds at the campus bookstore."
+        },
+        {
+          "english": "Please call me on zero three zero zero, one two three four five six seven.",
+          "phonetic": "/pliË z kÉ”Ë l miË  É’n ËˆzÉªÉ™rÉ™ÊŠ Î¸riË  ËˆzÉªÉ™rÉ™ÊŠ ËˆzÉªÉ™rÉ™ÊŠ wÊŒn tuË  Î¸riË  fÉ”Ë  faÉªv sÉªks Ëˆsevn/",
+          "urdu": "Ø¨Ø±Ø§Û  Ú©Ø±Ù… Ù…Ø¬Ú¾Û’ 0300-1234567 Ù¾Ø± Ú©Ø§Ù„ Ú©ÛŒØ¬ÛŒÛ’Û”",
+          "audioText": "Please call me on zero three zero zero, one two three four five six seven."
+        },
+        {
+          "english": "She celebrated her fourteenth birthday with her family.",
+          "phonetic": "/ÊƒiË  ËˆselÉªbreÉªtÉªd hÉœË r ËŒfÉ”Ë ËˆtiË nÎ¸ ËˆbÉœË Î¸deÉª wÉªÃ° hÉœË r ËˆfÃ¦mÉ™li/",
+          "urdu": "Ø§Ø³ Ù†Û’ Ø§Ù¾Ù†Û’ Ú¯Ú¾Ø± ÙˆØ§Ù„ÙˆÚº Ú©Û’ Ø³Ø§ØªÚ¾ Ø§Ù¾Ù†ÛŒ Ú†ÙˆØ¯Û ÙˆÛŒÚº Ø³Ø§Ù„Ú¯Ø±Û  Ù…Ù†Ø§Ø¦ÛŒÛ”",
+          "audioText": "She celebrated her fourteenth birthday with her family."
+        },
+        {
+          "english": "The speed limit on this highway is one hundred kilometres per hour.",
+          "phonetic": "/Ã°É™ spiË d ËˆlÉªmÉªt É’n Ã°Éªs ËˆhaÉªweÉª Éªz wÊŒn ËˆhÊŒndrÉ™d kÉªËˆlÉ’mÉªtÉ™z pÉœË r ËˆaÊŠÉ™r/",
+          "urdu": "Ø§Ø³ Û Ø§Ø¦ÛŒ ÙˆÛ’ Ù¾Ø± Ø±Ù ØªØ§Ø± Ú©ÛŒ Ø­Ø¯ Ø§ÛŒÚ© Ø³Ùˆ Ú©Ù„ÙˆÙ…ÛŒÙ¹Ø± Ù ÛŒ Ú¯Ú¾Ù†Ù¹Û  Û Û’Û”",
+          "audioText": "The speed limit on this highway is one hundred kilometres per hour."
+        },
+        {
+          "english": "Room number two hundred and fifteen is down this corridor.",
+          "phonetic": "/ruË m ËˆnÊŒmbÉ™r tuË  ËˆhÊŒndrÉ™d Ã¦nd ËŒfÉªfËˆtiË n Éªz daÊŠn Ã°Éªs ËˆkÉ’rÉªdÉ”Ë r/",
+          "urdu": "Ú©Ù…Ø±Û  Ù†Ù…Ø¨Ø± 215 Ø§Ø³ Ø±Ø§Û Ø¯Ø§Ø±ÛŒ Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº Û Û’Û”",
+          "audioText": "Room number two hundred and fifteen is down this corridor."
+        },
+        {
+          "english": "He has eighty-eight coins from different nations in his collection.",
+          "phonetic": "/hiË  hÃ¦z ËˆeÉªti eÉªt kÉ”Éªnz frÉ™m ËˆdÉªfrÉ™nt ËˆneÉªÊƒnz Éªn hÉªz kÉ™ËˆlekÊƒn/",
+          "urdu": "Ø§Ø³ Ú©Û’ Ú©Ù„ÛŒÚ©Ø´Ù† Ù…ÛŒÚº Ù…Ø®ØªÙ„Ù  Ù…Ù…Ø§Ù„Ú© Ú©Û’ Ø§Ù¹Ú¾Ø§Ø³ÛŒ Ø³Ú©Û’ Û ÛŒÚºÛ”",
+          "audioText": "He has eighty-eight coins from different nations in his collection."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l1-3",
+      "type": "dialogue",
+      "title": "Exchanging Phone Numbers",
+      "dialogue": [
+        {
+          "speaker": "Naveed",
+          "avatar": "N",
+          "english": "Could I have your mobile number, Haris?",
+          "urdu": "Ø­Ø§Ø±Ø«ØŒ Ú©ÛŒØ§ Ù…Ø¬Ú¾Û’ Ø¢Ù¾ Ú©Ø§ Ù…ÙˆØ¨Ø§Ø¦Ù„ Ù†Ù…Ø¨Ø± Ù…Ù„ Ø³Ú©ØªØ§ Û Û’ØŸ",
+          "audioText": "Could I have your mobile number, Haris?"
+        },
+        {
+          "speaker": "Haris",
+          "avatar": "H",
+          "english": "Sure! It's zero three two one, four five six seven eight nine zero.",
+          "urdu": "Ø¶Ø±ÙˆØ±! ÛŒÛ  Û Û’: 0321-4567890Û”",
+          "audioText": "Sure! It's zero three two one, four five six seven eight nine zero."
+        },
+        {
+          "speaker": "Naveed",
+          "avatar": "N",
+          "english": "Let me repeat that: zero three two one, four five six, seven eight nine zero. Is that right?",
+          "urdu": "Ù…ÛŒÚº Ø¯Û Ø±Ø§ Ù„ÙˆÚº: 0321-456-7890Û” Ú©ÛŒØ§ ÛŒÛ  Ø¯Ø±Ø³Øª Û Û’ØŸ",
+          "audioText": "Let me repeat that: zero three two one, four five six, seven eight nine zero. Is that right?"
+        },
+        {
+          "speaker": "Haris",
+          "avatar": "H",
+          "english": "Yes, exactly right! Save it under my name.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºØŒ Ø¨Ø§Ù„Ú©Ù„ ØµØ­ÛŒØ­! Ø§Ø³Û’ Ù…ÛŒØ±Û’ Ù†Ø§Ù… Ø³Û’ Ù…Ø­Ù ÙˆØ¸ Ú©Ø± Ù„ÛŒÚºÛ”",
+          "audioText": "Yes, exactly right! Save it under my name."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l1-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u6-l1-1",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "What is the correct spelling for the number 40?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "forty"
+            },
+            {
+              "id": "opt-2",
+              "text": "fourty"
+            },
+            {
+              "id": "opt-3",
+              "text": "fourti"
+            },
+            {
+              "id": "opt-4",
+              "text": "fortee"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Forty' is spelled F-O-R-T-Y without a 'u'.",
+          "urduExplanation": "40 Ú©ÛŒ ØµØ­ÛŒØ­ Ø§Ù…Ù„Ø§ 'forty' (Ø¨ØºÛŒØ± 'u' Ú©Û’) Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l1-2",
+          "type": "mcq",
+          "skillTag": "pronunciation",
+          "prompt": "Where is the main stress in the number 13 (thirteen)?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "On the first syllable (THIR-teen)"
+            },
+            {
+              "id": "opt-2",
+              "text": "On the second syllable (thir-TEEN)"
+            },
+            {
+              "id": "opt-3",
+              "text": "There is no stress"
+            },
+            {
+              "id": "opt-4",
+              "text": "Equal stress on all consonants"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "-Teen numbers have primary stress on the second syllable: thir-TEEN.",
+          "urduExplanation": "-teen ÙˆØ§Ù„Û’ Ù†Ù…Ø¨Ø±ÙˆÚº Ù…ÛŒÚº Ø¯ÙˆØ³Ø±Û’ syllable Ù¾Ø± Ø²ÙˆØ± Ø¯ÛŒØ§ Ø¬Ø§ØªØ§ Û Û’: thir-TEENÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l1-3",
+          "type": "fill_blank",
+          "skillTag": "cardinals",
+          "prompt": "Write out the compound number 25 in words with a hyphen: '_____'",
+          "correctAnswer": "twenty-five",
+          "explanation": "Compound numbers from 21 to 99 are hyphenated: 'twenty-five'.",
+          "urduExplanation": "25 Ú©Ùˆ hyphen Ú©Û’ Ø³Ø§ØªÚ¾ 'twenty-five' Ù„Ú©Ú¾ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l1-4",
+          "type": "fill_blank",
+          "skillTag": "cardinals",
+          "prompt": "Complete the sentence with the word form of 100: 'There are one _____ cents in a dollar.'",
+          "correctAnswer": "hundred",
+          "explanation": "100 is written 'hundred'.",
+          "urduExplanation": "100 Ú©Ùˆ 'hundred' Ù„Ú©Ú¾Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l1-5",
+          "type": "order_sentence",
+          "skillTag": "cardinals",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "My",
+            "father",
+            "is",
+            "fifty-four",
+            "years",
+            "old",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (My father) + verb (is) + age phrase (fifty-four years old).",
+          "urduExplanation": "My father is fifty-four years old."
+        },
+        {
+          "id": "ex-a1-u6-l1-6",
+          "type": "order_sentence",
+          "skillTag": "cardinals",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "There",
+            "are",
+            "thirty",
+            "days",
+            "in",
+            "April",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "There are + thirty days + in April.",
+          "urduExplanation": "There are thirty days in April."
+        },
+        {
+          "id": "ex-a1-u6-l1-7",
+          "type": "match_pairs",
+          "skillTag": "cardinals",
+          "prompt": "Match the numeral with its correct word form:",
+          "pairs": [
+            {
+              "left": "15",
+              "right": "fifteen"
+            },
+            {
+              "left": "50",
+              "right": "fifty"
+            },
+            {
+              "left": "14",
+              "right": "fourteen"
+            },
+            {
+              "left": "40",
+              "right": "forty"
+            }
+          ],
+          "explanation": "Numerals matched accurately to word spellings.",
+          "urduExplanation": "Û Ù†Ø¯Ø³ÙˆÚº Ú©Ùˆ Ø§Ù† Ú©Û’ Ø§Ù„Ù Ø§Ø¸ Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l1-8",
+          "type": "error_correction",
+          "skillTag": "spelling",
+          "prompt": "Find and correct the mistake: 'He paid fourty rupees for the ticket.'",
+          "correctAnswer": "He paid forty rupees for the ticket.",
+          "explanation": "'Forty' is spelled without a 'u': f-o-r-t-y.",
+          "urduExplanation": "'fourty' ØºÙ„Ø· Û Û’ØŒ ØµØ­ÛŒØ­ 'forty' Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l1-9",
+          "type": "error_correction",
+          "skillTag": "cardinals",
+          "prompt": "Find and correct the mistake: 'She is twenty two years old.'",
+          "correctAnswer": "She is twenty-two years old.",
+          "explanation": "Compound numbers from 21 to 99 must have a hyphen: 'twenty-two'.",
+          "urduExplanation": "'twenty-two' Ú©Û’ Ø¯Ø±Ù…ÛŒØ§Ù† hyphen (-) Ù„Ú¯Ø§Ù†Ø§ Ù„Ø§Ø²Ù…ÛŒ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l1-10",
+          "type": "true_false",
+          "skillTag": "pronunciation",
+          "prompt": "In spoken phone numbers, the digit 0 is frequently pronounced like the letter 'oh'. (True or False)",
+          "correctAnswer": "True",
+          "explanation": "True. In phone numbers and room numbers, 0 is often said as 'oh'.",
+          "urduExplanation": "Ø¯Ø±Ø³ØªÛ” Ù ÙˆÙ† Ù†Ù…Ø¨Ø± Ù…ÛŒÚº ØµÙ Ø± Ú©Ùˆ Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± 'oh' Ø¨ÙˆÙ„Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l1-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u6-l1-1",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "Which number is spelled INCORRECTLY?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "fourteen"
+            },
+            {
+              "id": "opt-2",
+              "text": "fifteen"
+            },
+            {
+              "id": "opt-3",
+              "text": "eighteen"
+            },
+            {
+              "id": "opt-4",
+              "text": "fourty"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'Fourty' is misspelled; the correct English spelling is 'forty'.",
+          "urduExplanation": "'fourty' ØºÙ„Ø· Ø§Ù…Ù„Ø§ Û Û’ØŒ ØµØ­ÛŒØ­ 'forty' Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l1-2",
+          "type": "mcq",
+          "skillTag": "cardinals",
+          "prompt": "How is the number 99 written in standard English?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "ninety-nine"
+            },
+            {
+              "id": "opt-2",
+              "text": "ninety nine"
+            },
+            {
+              "id": "opt-3",
+              "text": "ninty-nine"
+            },
+            {
+              "id": "opt-4",
+              "text": "ninety and nine"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Compound numbers require a hyphen: 'ninety-nine'.",
+          "urduExplanation": "99 Ú©Ùˆ hyphen Ú©Û’ Ø³Ø§ØªÚ¾ 'ninety-nine' Ù„Ú©Ú¾ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u6-l1-3",
+          "type": "mcq",
+          "skillTag": "pronunciation",
+          "prompt": "What is the key pronunciation difference between fifteen and fifty?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Fifteen drops the first syllable, whereas fifty preserves both parts"
+            },
+            {
+              "id": "opt-2",
+              "text": "Fifteen stresses the second syllable, while fifty stresses the first"
+            },
+            {
+              "id": "opt-3",
+              "text": "Fifteen uses a voiced ending consonant, whereas fifty remains silent"
+            },
+            {
+              "id": "opt-4",
+              "text": "Fifteen alternates between long vowels, while fifty shortens neither"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "fif-TEEN (second syllable stress) vs. FIF-ty (first syllable stress).",
+          "urduExplanation": "fif-TEEN میں دوسرے syllable پر اور FIF-ty میں پہلے syllable پر زور ہوتا ہے۔"
+        },
+        {
+          "id": "qz-a1-u6-l1-4",
+          "type": "mcq",
+          "skillTag": "cardinals",
+          "prompt": "How do you say someone's age naturally in English?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "He has twenty-five years."
+            },
+            {
+              "id": "opt-2",
+              "text": "He lives twenty-five years."
+            },
+            {
+              "id": "opt-3",
+              "text": "He is twenty-five years old."
+            },
+            {
+              "id": "opt-4",
+              "text": "He owns twenty-five years."
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Use 'to be' + number + 'years old' (or number alone): 'He is twenty-five years old'.",
+          "urduExplanation": "عمر بتانے کے لیے 'He is twenty years old' کہتے ہیں۔"
+        },
+        {
+          "id": "qz-a1-u6-l1-5",
+          "type": "mcq",
+          "skillTag": "cardinals",
+          "prompt": "What number comes after ninety-nine?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "ten hundred"
+            },
+            {
+              "id": "opt-2",
+              "text": "ninety-ten"
+            },
+            {
+              "id": "opt-3",
+              "text": "thousand"
+            },
+            {
+              "id": "opt-4",
+              "text": "one hundred"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "One hundred (100) immediately follows ninety-nine (99).",
+          "urduExplanation": "99 Ú©Û’ Ø¨Ø¹Ø¯ 100 (one hundred) Ø¢ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l1-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Cardinal numbers summary:",
+      "summaryPoints": [
+        "Compound numbers 21-99 take a hyphen (twenty-one, forty-five, ninety-nine).",
+        "Distinguish -teen (stress on 2nd syllable) from -ty (stress on 1st syllable).",
+        "Remember forty is spelled WITHOUT 'u' (forty, NOT fourty).",
+        "In phone numbers and room numbers, 0 is often read as 'oh'.",
+        "State age with 'is [number] years old' or simply 'is [number]'."
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l1-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Ú¯Ù†ØªÛŒ Ú©Û’ Ø§Ù„Ù Ø§Ø¸ (Ø§Ú©ÛŒØ³ØŒ Ø¨Ø§Ø¦ÛŒØ³ØŒ Ø§Ú©ØªØ§Ù„ÛŒØ³ØŒ Ø§Ù†ØªØ§Ù„ÛŒØ³) Û Ø± Ø¹Ø¯Ø¯ Ú©Û’ Ù„ÛŒÛ’ Ø§Ù„Ú¯ Ø§Ù„Ú¯ Û ÙˆØªÛ’ Û ÛŒÚº Ø¬Ù†Û ÛŒÚº ÛŒØ§Ø¯ Ú©Ø±Ù†Ø§ Ù¾Ú‘ØªØ§ Û Û’Û”\n\n**Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú©ÛŒ Ú¯Ù†ØªÛŒ Ø¨Û Øª Ø¨Ø§Ù‚Ø§Ø¹Ø¯Û  (Systematic) Û Û’:**\nØ§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ØµØ±Ù  Ø¯Û Ø§Ø¦ÛŒ (twenty, thirty, forty...) Ú©Û’ Ø¨Ø¹Ø¯ Û Ø§Ø¦ÛŒÙ Ù† Ù„Ú¯Ø§ Ú©Ø± Ù¾Û Ù„ÛŒ Ú¯Ù†ØªÛŒ Ø¬ÙˆÚ‘ Ø¯ÛŒÚº:\n- twenty-one, twenty-two, thirty-one...\n\n**Ø¯Ùˆ Ø§Û Ù… ØºÙ„Ø·ÛŒØ§Úº Ø¬Ù† Ø³Û’ Ø¨Ú†Ù†Ø§ Û Û’:**\n1. **Teen Ø§ÙˆØ± Ty Ú©Ø§ Ù Ø±Ù‚**: Thirteen (13) Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº Ù„Ù…Ø¨ÛŒ Ø¢ÙˆØ§Ø² Û Û’ØŒ Ø¬Ø¨Ú©Û  Thirty (30) Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº Ù…Ø®ØªØµØ± Ø¢ÙˆØ§Ø² Û Û’Û”\n2. **Forty Ú©ÛŒ Ø§Ù…Ù„Ø§**: Four (4) Ù…ÛŒÚº 'u' Û ÙˆØªØ§ Û Û’ØŒ Ù„ÛŒÚ©Ù† Forty (40) Ù…ÛŒÚº 'u' **Ù†Û ÛŒÚº** Û ÙˆØªØ§Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

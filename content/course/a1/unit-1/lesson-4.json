@@ -1,0 +1,609 @@
+{
+  "id": "eng-a1-u1-l4",
+  "level": "A1",
+  "unit": "unit-1",
+  "order": 4,
+  "title": "Everyday Greetings, Introductions & Farewells",
+  "description": "Learn formal and informal greetings, asking how someone is, and polite farewells.",
+  "objectives": [
+    "Greet people appropriately depending on the time of day and level of formality",
+    "Ask 'How are you?' and respond with polite conversational phrases",
+    "Say goodbye formally and casually"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u1-l1"
+  ],
+  "skillTags": [
+    "greetings",
+    "communication",
+    "introductions"
+  ],
+  "vocabularyList": [
+    {
+      "word": "morning",
+      "partOfSpeech": "noun",
+      "phonetic": "/ˈmɔːnɪŋ/",
+      "definition": "The period of time between midnight and noon, especially from sunrise to noon.",
+      "urduMeaning": "صبح",
+      "exampleSentence": "Good morning, everyone!"
+    },
+    {
+      "word": "afternoon",
+      "partOfSpeech": "noun",
+      "phonetic": "/ˌɑːftəˈnuːn/",
+      "definition": "The time from noon or lunchtime to evening.",
+      "urduMeaning": "دوپہر / سہ پہر",
+      "exampleSentence": "Good afternoon, sir."
+    },
+    {
+      "word": "evening",
+      "partOfSpeech": "noun",
+      "phonetic": "/ˈiːvnɪŋ/",
+      "definition": "The period of time at the end of the day.",
+      "urduMeaning": "شام",
+      "exampleSentence": "Good evening, ladies and gentlemen."
+    },
+    {
+      "word": "night",
+      "partOfSpeech": "noun",
+      "phonetic": "/naɪt/",
+      "definition": "The period from sunset to sunrise in each twenty-four hours.",
+      "urduMeaning": "رات",
+      "exampleSentence": "Good night, sleep well."
+    },
+    {
+      "word": "fine",
+      "partOfSpeech": "adjective",
+      "phonetic": "/faɪn/",
+      "definition": "In good health and spirits.",
+      "urduMeaning": "ٹھیک / خیریت سے",
+      "exampleSentence": "I am fine, thank you."
+    },
+    {
+      "word": "great",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ɡreɪt/",
+      "definition": "Of an extent, amount, or intensity considerably above normal; wonderful.",
+      "urduMeaning": "بہترین / زبردست",
+      "exampleSentence": "Everything is great."
+    },
+    {
+      "word": "please",
+      "partOfSpeech": "adverb",
+      "phonetic": "/pliːz/",
+      "definition": "Used in polite requests or questions.",
+      "urduMeaning": "براہ کرم / مہربانی فرما کر",
+      "exampleSentence": "Please come in."
+    },
+    {
+      "word": "thank",
+      "partOfSpeech": "verb",
+      "phonetic": "/θæŋk/",
+      "definition": "Express gratitude to someone.",
+      "urduMeaning": "شکریہ ادا کرنا",
+      "exampleSentence": "Thank you for your help."
+    },
+    {
+      "word": "sorry",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ˈsɒri/",
+      "definition": "Feeling regret or sorrow.",
+      "urduMeaning": "معذرت خواہ",
+      "exampleSentence": "I am sorry for the delay."
+    },
+    {
+      "word": "tomorrow",
+      "partOfSpeech": "noun",
+      "phonetic": "/təˈmɒrəʊ/",
+      "definition": "On the day after today.",
+      "urduMeaning": "کل (آنے والا)",
+      "exampleSentence": "See you tomorrow!"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u1-l4-1",
+      "type": "explain",
+      "title": "Greeting Conventions by Time of Day",
+      "content": "In English, greetings vary depending on whether you are in a formal setting (e.g. at an interview, office, or university) or an informal setting (with friends or family).\n\nAdditionally, greetings change according to the **time of day**.",
+      "tables": [
+        {
+          "title": "Time-Based Formal Greetings",
+          "headers": [
+            "Time Window",
+            "Greeting",
+            "Typical Context",
+            "Urdu Meaning"
+          ],
+          "rows": [
+            [
+              "Sunrise to 12:00 PM",
+              "Good morning",
+              "Offices, classes, formal meetings",
+              "صبح بخیر"
+            ],
+            [
+              "12:00 PM to ~5:00 PM",
+              "Good afternoon",
+              "Workplaces, shops, clinics",
+              "دوپہر بخیر"
+            ],
+            [
+              "5:00 PM onwards",
+              "Good evening",
+              "Dinner gatherings, arrivals",
+              "شام بخیر"
+            ],
+            [
+              "Departure / Bedtime only",
+              "Good night",
+              "Saying goodbye before sleep",
+              "شب بخیر (صرف رخصتی پر)"
+            ]
+          ]
+        },
+        {
+          "title": "Asking 'How are you?' & Polite Replies",
+          "headers": [
+            "Question",
+            "Formality",
+            "Natural Replies",
+            "Urdu Meaning"
+          ],
+          "rows": [
+            [
+              "How are you?",
+              "Neutral / Formal",
+              "I am fine, thank you. And you?",
+              "آپ کیسے ہیں؟"
+            ],
+            [
+              "How's it going?",
+              "Informal",
+              "Great, thanks! / Not bad.",
+              "سب کیسا چل رہا ہے؟"
+            ],
+            [
+              "Nice to meet you.",
+              "First meeting",
+              "Nice to meet you too.",
+              "آپ سے مل کر خوشی ہوئی۔"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "warning",
+          "title": "Never Greet with 'Good night'",
+          "text": "'Good night' is **only** used when leaving or going to bed, never when meeting someone in the evening! When arriving at 8:00 PM, always say **Good evening**."
+        },
+        {
+          "type": "tip",
+          "title": "Polite Return Question",
+          "text": "When someone asks 'How are you?', it is customary to answer and then return the courtesy: 'I'm very well, thank you. **How about you?**'"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l4-2",
+      "type": "examples",
+      "title": "Dialogue & Conversational Examples",
+      "examples": [
+        {
+          "english": "Good morning, Mr. David. How are you today?",
+          "phonetic": "/ɡʊd ˈmɔːnɪŋ ˈmɪstər ˈdeɪvɪd haʊ ɑːr juː təˈdeɪ/",
+          "urdu": "صبح بخیر مسٹر ڈیوڈ، آج آپ کیسے ہیں؟",
+          "audioText": "Good morning, Mr. David. How are you today?"
+        },
+        {
+          "english": "I am doing very well, thank you for asking.",
+          "phonetic": "/aɪ æm ˈduːɪŋ ˈveri wel θæŋk juː fɔːr ˈɑːskɪŋ/",
+          "urdu": "میں بالکل خیریت سے ہوں، پوچھنے کا شکریہ۔",
+          "audioText": "I am doing very well, thank you for asking."
+        },
+        {
+          "english": "Good afternoon, ladies and gentlemen. Welcome to the conference.",
+          "phonetic": "/ɡʊd ˌɑːftəˈnuːn ˈleɪdiz ænd ˈdʒentlmen ˈwelkəm tuː ðə ˈkɒnfərəns/",
+          "urdu": "سہ پہر بخیر، کانفرنس میں آپ سب کو خوش آمدید۔",
+          "audioText": "Good afternoon, ladies and gentlemen. Welcome to the conference."
+        },
+        {
+          "english": "See you tomorrow morning at nine o'clock.",
+          "phonetic": "/siː juː təˈmɒrəʊ ˈmɔːnɪŋ æt naɪn əˈklɒk/",
+          "urdu": "کل صبح نو بجے ملاقات ہوگی۔",
+          "audioText": "See you tomorrow morning at nine o'clock."
+        },
+        {
+          "english": "Good night, have a restful sleep.",
+          "phonetic": "/ɡʊd naɪt hæv ə ˈrestfl sliːp/",
+          "urdu": "شب بخیر، پرسکون نیند لیں۔",
+          "audioText": "Good night, have a restful sleep."
+        },
+        {
+          "english": "It was a pleasure meeting you today.",
+          "phonetic": "/ɪt wɒz ə ˈpleʒər ˈmiːtɪŋ juː təˈdeɪ/",
+          "urdu": "آج آپ سے مل کر بہت خوشی ہوئی۔",
+          "audioText": "It was a pleasure meeting you today."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l4-3",
+      "type": "dialogue",
+      "title": "Meeting a New Colleague",
+      "dialogue": [
+        {
+          "speaker": "Adnan",
+          "avatar": "A",
+          "english": "Good morning! My name is Adnan. I'm the new accounts officer.",
+          "urdu": "صبح بخیر! میرا نام عدنان ہے۔ میں نیا اکاؤنٹس آفیسر ہوں۔",
+          "audioText": "Good morning! My name is Adnan. I'm the new accounts officer."
+        },
+        {
+          "speaker": "Farah",
+          "avatar": "F",
+          "english": "Welcome to the team, Adnan! I'm Farah. Pleased to meet you.",
+          "urdu": "ٹیم میں خوش آمدید، عدنان! میں فرح ہوں۔ آپ سے مل کر خوشی ہوئی۔",
+          "audioText": "Welcome to the team, Adnan! I'm Farah. Pleased to meet you."
+        },
+        {
+          "speaker": "Adnan",
+          "avatar": "A",
+          "english": "Pleased to meet you too, Farah. Have a wonderful day!",
+          "urdu": "مجھے بھی آپ سے مل کر خوشی ہوئی، فرح۔ آپ کا دن اچھا گزرے!",
+          "audioText": "Pleased to meet you too, Farah. Have a wonderful day!"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l4-4",
+      "type": "practice",
+      "title": "Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u1-l4-1",
+          "type": "mcq",
+          "skillTag": "greetings",
+          "prompt": "You arrive at an office meeting at 7:00 PM. What is the correct greeting?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Good evening"
+            },
+            {
+              "id": "opt-2",
+              "text": "Good night"
+            },
+            {
+              "id": "opt-3",
+              "text": "Good morning"
+            },
+            {
+              "id": "opt-4",
+              "text": "Goodbye"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "When arriving in the evening, say 'Good evening'. 'Good night' is only for departure or sleep.",
+          "urduExplanation": "شام کے وقت پہنچنے پر 'Good evening' کہتے ہیں، 'Good night' صرف رخصت ہونے کے لیے ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l4-2",
+          "type": "mcq",
+          "skillTag": "greetings",
+          "prompt": "Someone says: 'How do you do?' What is the traditional polite reply?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "How do you do?"
+            },
+            {
+              "id": "opt-2",
+              "text": "I do fine."
+            },
+            {
+              "id": "opt-3",
+              "text": "Yes, I do."
+            },
+            {
+              "id": "opt-4",
+              "text": "At home."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "In formal English, the traditional reply to 'How do you do?' is 'How do you do?' or 'Pleasure to meet you.'",
+          "urduExplanation": "رسمی تعارف میں 'How do you do?' کا روایتی جواب 'How do you do?' ہی ہوتا ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l4-3",
+          "type": "fill_blank",
+          "skillTag": "greetings",
+          "prompt": "Nice to _____ you, Mr. Khan.",
+          "correctAnswer": "meet",
+          "acceptableAnswers": [
+            "meet"
+          ],
+          "explanation": "'Nice to meet you' is standard polite social convention upon meeting someone.",
+          "urduExplanation": "'Nice to meet you' آپ سے مل کر خوشی ہوئی۔"
+        },
+        {
+          "id": "ex-a1-u1-l4-4",
+          "type": "order_sentence",
+          "skillTag": "greetings",
+          "prompt": "Arrange the words to form a polite farewell:",
+          "sentenceTokens": [
+            "See",
+            "you",
+            "tomorrow",
+            "afternoon",
+            "."
+          ],
+          "correctOrder": [
+            "See",
+            "you",
+            "tomorrow",
+            "afternoon",
+            "."
+          ],
+          "explanation": "'See you tomorrow afternoon' is a natural friendly farewell.",
+          "urduExplanation": "کل دوپہر آپ سے ملاقات ہوگی۔"
+        },
+        {
+          "id": "ex-a1-u1-l4-5",
+          "type": "match_pairs",
+          "skillTag": "greetings",
+          "prompt": "Match the greeting with the appropriate time of day:",
+          "pairs": [
+            {
+              "left": "8:00 AM",
+              "right": "Good morning"
+            },
+            {
+              "left": "2:00 PM",
+              "right": "Good afternoon"
+            },
+            {
+              "left": "6:30 PM",
+              "right": "Good evening"
+            }
+          ],
+          "explanation": "Time of day dictates morning (AM), afternoon (early PM), and evening (late PM).",
+          "urduExplanation": "وقت کے مطابق سلام کا انتخاب کریں۔"
+        },
+        {
+          "id": "ex-a1-u1-l4-6",
+          "type": "true_false",
+          "skillTag": "greetings",
+          "prompt": "True or False: 'Good night' can be used to say hello to someone after dark.",
+          "correctAnswer": "False",
+          "acceptableAnswers": [
+            "False",
+            "false",
+            "F"
+          ],
+          "explanation": "False. 'Good night' is strictly a farewell.",
+          "urduExplanation": "غلط۔ 'Good night' کبھی بھی سلام کے طور پر استعمال نہیں ہوتا، صرف رخصتی پر بولا جاتا ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l4-7",
+          "type": "error_correction",
+          "skillTag": "greetings",
+          "prompt": "Correct the greeting at 9:00 AM: 'Good afternoon, teacher.'",
+          "correctAnswer": "Good morning, teacher.",
+          "acceptableAnswers": [
+            "Good morning, teacher.",
+            "Good morning"
+          ],
+          "explanation": "At 9:00 AM, the correct greeting is 'Good morning'.",
+          "urduExplanation": "صبح 9 بجے 'Good morning' کہا جاتا ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l4-8",
+          "type": "fill_blank",
+          "skillTag": "greetings",
+          "prompt": "I am fine, thank you. How _____ you?",
+          "correctAnswer": "about",
+          "acceptableAnswers": [
+            "about",
+            "are"
+          ],
+          "explanation": "'How about you?' or 'How are you?' politely returns the inquiry.",
+          "urduExplanation": "'How about you?' آپ اپنے بارے میں بتائیے۔"
+        },
+        {
+          "id": "ex-a1-u1-l4-9",
+          "type": "mcq",
+          "skillTag": "greetings",
+          "prompt": "Which phrase means 'I am sorry'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Excuse me / My apologies"
+            },
+            {
+              "id": "opt-2",
+              "text": "You are welcome"
+            },
+            {
+              "id": "opt-3",
+              "text": "Good afternoon"
+            },
+            {
+              "id": "opt-4",
+              "text": "Nice to see you"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'My apologies' or 'Excuse me' expresses regret or polite apology.",
+          "urduExplanation": "معذرت کے لیے 'Excuse me' یا 'My apologies' بولا جاتا ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l4-10",
+          "type": "fill_blank",
+          "skillTag": "greetings",
+          "prompt": "Have a _____ weekend!",
+          "correctAnswer": "great",
+          "acceptableAnswers": [
+            "great",
+            "good",
+            "nice",
+            "wonderful"
+          ],
+          "explanation": "'Have a great weekend' is a typical Friday farewell.",
+          "urduExplanation": "'Have a great weekend' اچھا ویک اینڈ گزرے۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l4-5",
+      "type": "quiz",
+      "title": "Lesson 4 Check Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u1-l4-1",
+          "type": "mcq",
+          "skillTag": "greetings",
+          "prompt": "Which greeting is used at 1:30 PM?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Good morning"
+            },
+            {
+              "id": "opt-2",
+              "text": "Good afternoon"
+            },
+            {
+              "id": "opt-3",
+              "text": "Good night"
+            },
+            {
+              "id": "opt-4",
+              "text": "Goodbye"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "1:30 PM is between 12:00 PM and evening, so 'Good afternoon' is correct.",
+          "urduExplanation": "دوپہر 1:30 بجے 'Good afternoon' کہتے ہیں۔"
+        },
+        {
+          "id": "qz-a1-u1-l4-2",
+          "type": "mcq",
+          "skillTag": "greetings",
+          "prompt": "When parting company at the end of the day, which phrase is appropriate?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Have a good evening!"
+            },
+            {
+              "id": "opt-2",
+              "text": "Good morning!"
+            },
+            {
+              "id": "opt-3",
+              "text": "Nice to meet you"
+            },
+            {
+              "id": "opt-4",
+              "text": "How are you?"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Have a good evening!' is a polite farewell upon leaving.",
+          "urduExplanation": "'Have a good evening!' رخصت ہوتے وقت ایک شائستہ جملہ ہے۔"
+        },
+        {
+          "id": "qz-a1-u1-l4-3",
+          "type": "fill_blank",
+          "skillTag": "greetings",
+          "prompt": "See you _____ Friday!",
+          "correctAnswer": "on",
+          "acceptableAnswers": [
+            "on"
+          ],
+          "explanation": "Days of the week take the preposition 'on': 'on Friday'.",
+          "urduExplanation": "ہفتے کے دنوں کے ساتھ 'on' آتا ہے۔"
+        },
+        {
+          "id": "qz-a1-u1-l4-4",
+          "type": "mcq",
+          "skillTag": "greetings",
+          "prompt": "What is the polite reply to 'Thank you very much'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "You're welcome."
+            },
+            {
+              "id": "opt-2",
+              "text": "Yes, I am."
+            },
+            {
+              "id": "opt-3",
+              "text": "Good night."
+            },
+            {
+              "id": "opt-4",
+              "text": "I'm fine."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'You're welcome' is the standard polite response to thanks.",
+          "urduExplanation": "شکریے کا جواب 'You're welcome' دیا جاتا ہے۔"
+        },
+        {
+          "id": "qz-a1-u1-l4-5",
+          "type": "mcq",
+          "skillTag": "greetings",
+          "prompt": "Choose the correct phrase for introducing yourself to a crowd:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "My name is Bilal, and I am glad to meet everyone."
+            },
+            {
+              "id": "opt-2",
+              "text": "Me is Bilal, and I am here for the evening event."
+            },
+            {
+              "id": "opt-3",
+              "text": "I name Bilal, and I came from the downtown area."
+            },
+            {
+              "id": "opt-4",
+              "text": "Mine name is Bilal, and I want to say hello here."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'My name is Bilal...' follows proper grammar and formal tone.",
+          "urduExplanation": "اپنا تعارف کروانے کے لیے 'My name is...' درست طریقہ ہے۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l4-6",
+      "type": "urduNote",
+      "title": "اردو بولنے والوں کے لیے سماجی و لسانی رہنمائی",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      },
+      "urduText": "ہماری ثقافت میں دن کے ہر وقت 'السلام علیکم' کہا جاتا ہے، جو دن اور رات دونوں کے لیے موزوں ہے۔\nانگریزی میں وقت کے لحاظ سے سلام بدلتا ہے: صبح 12 بجے تک **Good morning**، 12 سے 5 بجے تک **Good afternoon**، اور شام کے وقت **Good evening**۔\nایک عام غلطی یہ ہوتی ہے کہ لوگ رات کو کسی سے ملتے ہی 'Good night' کہہ دیتے ہیں۔ یاد رکھیں، Good night صرف الوداع (رخصتی) کے لیے بولا جاتا ہے!"
+    },
+    {
+      "id": "sec-a1-u1-l4-7",
+      "type": "summary",
+      "title": "Lesson 4 Summary Box",
+      "summaryPoints": [
+        "Use time-appropriate greetings: Good morning (AM), Good afternoon (12-5 PM), Good evening (PM).",
+        "Never say 'Good night' when arriving; reserve it exclusively for departure or bedtime.",
+        "When asked 'How are you?', answer politely ('I'm fine, thank you') and ask in return.",
+        "Standard farewells: Goodbye, See you tomorrow, Have a nice day."
+      ]
+    }
+  ]
+}

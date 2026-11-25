@@ -1,0 +1,645 @@
+{
+  "id": "eng-a1-u5-l1",
+  "level": "A1",
+  "unit": "unit-5",
+  "order": 1,
+  "title": "Countable vs Uncountable Food Nouns",
+  "description": "Distinguish between countable items (apples, eggs) and uncountable food/drink (water, rice, bread).",
+  "objectives": [
+    "Categorize everyday food items into countable and uncountable nouns",
+    "Use 'a/an' and plural numbers with countable nouns, avoiding them with uncountable nouns",
+    "Apply container/measurement counters to uncountable foods (a glass of water, a slice of bread)"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [
+    "eng-a1-u4-l5"
+  ],
+  "skillTags": [
+    "countable-uncountable",
+    "food",
+    "grammar-basics",
+    "quantifiers"
+  ],
+  "vocabularyList": [
+    {
+      "word": "water",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆwÉ”Ë tÉ™r/",
+      "definition": "A colourless, transparent, odourless liquid essential for plant and animal life.",
+      "urduMeaning": "Ù¾Ø§Ù†ÛŒ",
+      "exampleSentence": "Please drink a glass of fresh water."
+    },
+    {
+      "word": "milk",
+      "partOfSpeech": "noun",
+      "phonetic": "/mÉªlk/",
+      "definition": "An opaque white fluid rich in fat and protein, secreted by female mammals.",
+      "urduMeaning": "Ø¯ÙˆØ¯Ú¾",
+      "exampleSentence": "He adds a little milk to his black tea."
+    },
+    {
+      "word": "bread",
+      "partOfSpeech": "noun",
+      "phonetic": "/bred/",
+      "definition": "Food made of flour, water, and yeast or another leavening agent, mixed and baked.",
+      "urduMeaning": "Ø±ÙˆÙ¹ÛŒ / ÚˆØ¨Ù„ Ø±ÙˆÙ¹ÛŒ",
+      "exampleSentence": "We bought fresh bread from the bakery."
+    },
+    {
+      "word": "rice",
+      "partOfSpeech": "noun",
+      "phonetic": "/raÉªs/",
+      "definition": "A swamp grass which is widely cultivated as a source of food, especially in Asia.",
+      "urduMeaning": "Ú†Ø§ÙˆÙ„",
+      "exampleSentence": "Basmati rice is famous for its natural aroma."
+    },
+    {
+      "word": "cheese",
+      "partOfSpeech": "noun",
+      "phonetic": "/tÊƒiË z/",
+      "definition": "A food made from the pressed curds of milk.",
+      "urduMeaning": "Ù¾Ù†ÛŒØ±",
+      "exampleSentence": "She likes melted cheese on her sandwich."
+    },
+    {
+      "word": "egg",
+      "partOfSpeech": "noun",
+      "phonetic": "/eÉ¡/",
+      "definition": "An oval or round object laid by a female bird, reptile, or fish.",
+      "urduMeaning": "Ø§Ù†ÚˆØ§",
+      "exampleSentence": "I boil two eggs for breakfast every morning."
+    },
+    {
+      "word": "apple",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆÃ¦pl/",
+      "definition": "The round fruit of a tree of the rose family, which typically has thin red or green skin.",
+      "urduMeaning": "Ø³ÛŒØ¨",
+      "exampleSentence": "She packed a crisp red apple in her lunchbox."
+    },
+    {
+      "word": "sugar",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆÊƒÊŠÉ¡É™r/",
+      "definition": "A sweet crystalline substance obtained from various plants, especially sugar cane.",
+      "urduMeaning": "Ú†ÛŒÙ†ÛŒ",
+      "exampleSentence": "Do you take sugar in your tea?"
+    },
+    {
+      "word": "coffee",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆkÉ’fi/",
+      "definition": "A hot drink made from the roasted and ground seeds of a tropical shrub.",
+      "urduMeaning": "Ú©Ø§Ù ÛŒ",
+      "exampleSentence": "He orders hot black coffee in the morning."
+    },
+    {
+      "word": "tea",
+      "partOfSpeech": "noun",
+      "phonetic": "/tiË /",
+      "definition": "A hot drink made by infusing dried, crushed tea leaves in boiling water.",
+      "urduMeaning": "Ú†Ø§Ø¦Û’",
+      "exampleSentence": "Karak chai is a beloved hot drink in Pakistan."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u5-l1-1",
+      "type": "explain",
+      "title": "The Logic of Countable vs. Uncountable",
+      "content": "In English, nouns are fundamentally divided into **Countable (C)** and **Uncountable (U)**:\n\n### 1. Countable Nouns\n- Things we can count as individual units: *one apple, two apples, three apples*.\n- Can be singular or plural.\n- Take **a / an** in singular (*an egg, a sandwich*).\n\n### 2. Uncountable Nouns\n- Liquids, grains, powders, masses, and concepts: *water, milk, rice, sugar, bread, cheese*.\n- Cannot be counted directly (*never 'two rices' or 'three milks'*).\n- Have **no plural form** (-s is not added).\n- Never take **a / an** directly (*never 'a bread' or 'a water'*).\n\n### Using Partitive Counters\nTo measure uncountable items, we use a container or measurement counter:\n- *a glass of water* / *two bottles of water*\n- *a slice of bread* / *two loaves of bread*\n- *a cup of tea* / *two cups of tea*\n- *a bowl of rice* / *a kilo of sugar*",
+      "tables": [
+        {
+          "title": "Countable vs. Uncountable Comparison",
+          "headers": [
+            "Category",
+            "Grammar Rules",
+            "Countable Examples",
+            "Uncountable Examples"
+          ],
+          "rows": [
+            [
+              "Counting",
+              "C: 1, 2, 3... / U: Needs counter",
+              "one egg, three apples",
+              "a cup of rice, a bowl of soup"
+            ],
+            [
+              "Indefinite Article",
+              "C: Takes a / an / U: No a / an",
+              "a sandwich, an apple",
+              "bread (NOT a bread), milk"
+            ],
+            [
+              "Plural Form",
+              "C: Adds -s / U: Always singular verb",
+              "apples, eggs, tomatoes",
+              "rice is healthy, water is pure"
+            ],
+            [
+              "Questions",
+              "C: How many? / U: How much?",
+              "How many eggs do we need?",
+              "How much water do you drink?"
+            ]
+          ]
+        },
+        {
+          "title": "Essential Partitive Measurement Expressions",
+          "headers": [
+            "Counter Phrase",
+            "Used With Uncountable Food",
+            "Urdu Translation",
+            "Example"
+          ],
+          "rows": [
+            [
+              "a cup of...",
+              "tea, coffee, hot soup",
+              "Ø§ÛŒÚ© Ú©Ù¾",
+              "A cup of hot green tea."
+            ],
+            [
+              "a glass of...",
+              "water, milk, orange juice",
+              "Ø§ÛŒÚ© Ú¯Ù„Ø§Ø³",
+              "A glass of cold water."
+            ],
+            [
+              "a slice of...",
+              "bread, cheese, cake",
+              "Ø§ÛŒÚ© Ù¹Ú©Ú‘Ø§ / Ø³Ù„Ø§Ø¦Ø³",
+              "A slice of toasted bread."
+            ],
+            [
+              "a bowl of...",
+              "rice, curry, soup",
+              "Ø§ÛŒÚ© Ù¾ÛŒØ§Ù„Û ",
+              "A bowl of boiled basmati rice."
+            ],
+            [
+              "a bottle of...",
+              "water, oil, vinegar",
+              "Ø§ÛŒÚ© Ø¨ÙˆØªÙ„",
+              "A bottle of mineral water."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "warning",
+          "title": "The 'Bread' False Friend",
+          "text": "In Urdu, 'روٹی' is easily counted ('دو روٹیاں'). But in English, **bread** is strictly UNCOUNTABLE! Say: **a slice of bread** or **two pieces of bread**, never *'two breads'*."
+        },
+        {
+          "type": "tip",
+          "title": "Verb Agreement with Uncountable Nouns",
+          "text": "Uncountable nouns always take a SINGULAR verb: **Water is essential**, **Rice is delicious**."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l1-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "Please bring me a glass of cold water.",
+          "phonetic": "/pliË z brÉªÅ‹ miË  É™ É¡lÉ‘Ë s É™v kÉ™ÊŠld ËˆwÉ”Ë tÉ™r/",
+          "urdu": "Ø¨Ø±Ø§Û  Ú©Ø±Ù… Ù…Ø¬Ú¾Û’ Ø§ÛŒÚ© Ú¯Ù„Ø§Ø³ Ù¹Ú¾Ù†ÚˆØ§ Ù¾Ø§Ù†ÛŒ Ù„Ø§ Ø¯ÛŒÚºÛ”",
+          "audioText": "Please bring me a glass of cold water."
+        },
+        {
+          "english": "She eats two boiled eggs and a banana for breakfast.",
+          "phonetic": "/ÊƒiË  iË ts tuË  bÉ”Éªld eÉ¡z Ã¦nd É™ bÉ™ËˆnÉ‘Ë nÉ™ fÉ”Ë r ËˆbrekfÉ™st/",
+          "urdu": "ÙˆÛ  Ù†Ø§Ø´ØªÛ’ Ù…ÛŒÚº Ø¯Ùˆ Ø§Ø¨Ù„Û’ Û ÙˆØ¦Û’ Ø§Ù†ÚˆÛ’ Ø§ÙˆØ± Ø§ÛŒÚ© Ú©ÛŒÙ„Ø§ Ú©Ú¾Ø§ØªÛŒ Û Û’Û”",
+          "audioText": "She eats two boiled eggs and a banana for breakfast."
+        },
+        {
+          "english": "How much rice is left in the container?",
+          "phonetic": "/haÊŠ mÊŒtÊƒ raÉªs Éªz left Éªn Ã°É™ kÉ™nËˆteÉªnÉ™r/",
+          "urdu": "ÚˆØ¨Û’ Ù…ÛŒÚº Ú©ØªÙ†Ø§ Ú†Ø§ÙˆÙ„ Ø¨Ø§Ù‚ÛŒ Û Û’ØŸ",
+          "audioText": "How much rice is left in the container?"
+        },
+        {
+          "english": "How many apples did you buy from the fruit vendor?",
+          "phonetic": "/haÊŠ Ëˆmeni ËˆÃ¦plz dÉªd juË  baÉª frÉ™m Ã°É™ fruË t ËˆvendÉ”Ë r/",
+          "urdu": "Ø¢Ù¾ Ù†Û’ Ù¾Ú¾Ù„ Ù Ø±ÙˆØ´ Ø³Û’ Ú©ØªÙ†Û’ Ø³ÛŒØ¨ Ø®Ø±ÛŒØ¯Û’ØŸ",
+          "audioText": "How many apples did you buy from the fruit vendor?"
+        },
+        {
+          "english": "He spread butter on two slices of wholemeal bread.",
+          "phonetic": "/hiË  spred ËˆbÊŒtÉ™r É’n tuË  ËˆslaÉªsÉªz É™v ËˆhÉ™ÊŠlmiË l bred/",
+          "urdu": "Ø§Ø³ Ù†Û’ Ø®Ø§Ù„Øµ Ú¯Ù†Ø¯Ù… Ú©ÛŒ ÚˆØ¨Ù„ Ø±ÙˆÙ¹ÛŒ Ú©Û’ Ø¯Ùˆ Ø³Ù„Ø§Ø¦Ø³ÙˆÚº Ù¾Ø± Ù…Ú©Ú¾Ù† Ù„Ú¯Ø§ÛŒØ§Û”",
+          "audioText": "He spread butter on two slices of wholemeal bread."
+        },
+        {
+          "english": "Green tea is very popular throughout Pakistan.",
+          "phonetic": "/É¡riË n tiË  Éªz Ëˆveri ËˆpÉ’pjÉ™lÉ™r Î¸ruË ËˆaÊŠt ËŒpÉ‘Ë kÉªËˆstÉ‘Ë n/",
+          "urdu": "Ø³Ø¨Ø² Ú†Ø§Ø¦Û’ Ù¾ÙˆØ±Û’ Ù¾Ø§Ú©Ø³ØªØ§Ù† Ù…ÛŒÚº Ø¨Û Øª Ù…Ù‚Ø¨ÙˆÙ„ Û Û’Û”",
+          "audioText": "Green tea is very popular throughout Pakistan."
+        },
+        {
+          "english": "Would you like a cup of hot coffee with milk?",
+          "phonetic": "/wÊŠd juË  laÉªk É™ kÊŒp É™v hÉ’t ËˆkÉ’fi wÉªÃ° mÉªlk/",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ø¯ÙˆØ¯Ú¾ Ú©Û’ Ø³Ø§ØªÚ¾ Ú¯Ø±Ù… Ú©Ø§Ù ÛŒ Ú©Ø§ Ú©Ù¾ Ù¾Ø³Ù†Ø¯ Ú©Ø±ÛŒÚº Ú¯Û’ØŸ",
+          "audioText": "Would you like a cup of hot coffee with milk?"
+        },
+        {
+          "english": "Pure honey is a natural source of energy.",
+          "phonetic": "/pjÊŠÉ™r ËˆhÊŒni Éªz É™ ËˆnÃ¦tÊƒrÉ™l sÉ”Ë s É™v ËˆenÉ™dÊ’i/",
+          "urdu": "Ø®Ø§Ù„Øµ Ø´Û Ø¯ ØªÙˆØ§Ù†Ø§Ø¦ÛŒ Ú©Ø§ Ù‚Ø¯Ø±ØªÛŒ Ø°Ø±ÛŒØ¹Û  Û Û’Û”",
+          "audioText": "Pure honey is a natural source of energy."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l1-3",
+      "type": "dialogue",
+      "title": "At the Grocery Shop",
+      "dialogue": [
+        {
+          "speaker": "Customer",
+          "avatar": "C",
+          "english": "Good afternoon. I need some groceries for dinner tonight.",
+          "urdu": "Ø³Û  Ù¾Û Ø± Ø¨Ø®ÛŒØ±Û” Ù…Ø¬Ú¾Û’ Ø¢Ø¬ Ø±Ø§Øª Ú©Û’ Ú©Ú¾Ø§Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Ú©Ú†Ú¾ Ø³ÙˆØ¯Ø§ Ø³Ù„Ù  Ú†Ø§Û ÛŒÛ’Û”",
+          "audioText": "Good afternoon. I need some groceries for dinner tonight."
+        },
+        {
+          "speaker": "Grocer",
+          "avatar": "G",
+          "english": "Certainly! How many eggs and how much rice would you like?",
+          "urdu": "Ø¶Ø±ÙˆØ±! Ø¢Ù¾ Ú©Ùˆ Ú©ØªÙ†Û’ Ø§Ù†ÚˆÛ’ Ø§ÙˆØ± Ú©ØªÙ†Ø§ Ú†Ø§ÙˆÙ„ Ú†Ø§Û ÛŒÛ’ØŸ",
+          "audioText": "Certainly! How many eggs and how much rice would you like?"
+        },
+        {
+          "speaker": "Customer",
+          "avatar": "C",
+          "english": "I would like one dozen eggs and two kilograms of basmati rice.",
+          "urdu": "Ù…Ø¬Ú¾Û’ Ø§ÛŒÚ© Ø¯Ø±Ø¬Ù† Ø§Ù†ÚˆÛ’ Ø§ÙˆØ± Ø¯Ùˆ Ú©Ù„Ùˆ Ø¨Ø§Ø³Ù…ØªÛŒ Ú†Ø§ÙˆÙ„ Ú†Ø§Û ÛŒÛŒÚºÛ”",
+          "audioText": "I would like one dozen eggs and two kilograms of basmati rice."
+        },
+        {
+          "speaker": "Grocer",
+          "avatar": "G",
+          "english": "And do you need any bread or milk today?",
+          "urdu": "Ø§ÙˆØ± Ú©ÛŒØ§ Ø¢Ø¬ Ø¢Ù¾ Ú©Ùˆ ÚˆØ¨Ù„ Ø±ÙˆÙ¹ÛŒ ÛŒØ§ Ø¯ÙˆØ¯Ú¾ Ú©ÛŒ Ø¶Ø±ÙˆØ±Øª Û Û’ØŸ",
+          "audioText": "And do you need any bread or milk today?"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l1-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u5-l1-1",
+          "type": "mcq",
+          "skillTag": "countable-uncountable",
+          "prompt": "Which of the following is an UNCOUNTABLE food noun in English?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "apple"
+            },
+            {
+              "id": "opt-2",
+              "text": "rice"
+            },
+            {
+              "id": "opt-3",
+              "text": "sandwich"
+            },
+            {
+              "id": "opt-4",
+              "text": "egg"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Rice' is an uncountable mass grain noun; you cannot say 'three rices'.",
+          "urduExplanation": "'rice' Ù†Ø§Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ (uncountable) Û Û’ØŒ Ø§Ø³ Ú©Û’ Ø³Ø§ØªÚ¾ 'three rices' Ù†Û ÛŒÚº Ú©Û ØªÛ’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l1-2",
+          "type": "mcq",
+          "skillTag": "quantifiers",
+          "prompt": "What is the correct question to ask about water quantity?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "How many waters do you drink?"
+            },
+            {
+              "id": "opt-2",
+              "text": "How much waters do you drink?"
+            },
+            {
+              "id": "opt-3",
+              "text": "How much water do you drink?"
+            },
+            {
+              "id": "opt-4",
+              "text": "How many water do you drink?"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Uncountable nouns take 'How much' and remain in singular: 'How much water do you drink?'.",
+          "urduExplanation": "Ù†Ø§Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ Ø§Ø³Ù… Ú©Û’ Ù„ÛŒÛ’ 'How much water' Ù¾ÙˆÚ†Ú¾Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l1-3",
+          "type": "fill_blank",
+          "skillTag": "countable-uncountable",
+          "prompt": "Complete the counter phrase: 'She ate two _____ of wholemeal bread.'",
+          "correctAnswer": "slices",
+          "explanation": "Bread is counted by 'slices' or 'loaves'.",
+          "urduExplanation": "ÚˆØ¨Ù„ Ø±ÙˆÙ¹ÛŒ Ú©Û’ Ù¹Ú©Ú‘ÙˆÚº Ú©Ùˆ 'slices' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l1-4",
+          "type": "fill_blank",
+          "skillTag": "quantifiers",
+          "prompt": "Fill in 'How many' or 'How much': '_____ eggs are in the fridge?'",
+          "correctAnswer": "How many",
+          "explanation": "'Eggs' is a plural countable noun, so use 'How many'.",
+          "urduExplanation": "Eggs Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ Ø¬Ù…Ø¹ Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'How many' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "ex-a1-u5-l1-5",
+          "type": "order_sentence",
+          "skillTag": "countable-uncountable",
+          "prompt": "Rearrange the words to form a polite request:",
+          "sentenceTokens": [
+            "Can",
+            "I",
+            "have",
+            "a",
+            "glass",
+            "of",
+            "water",
+            "?"
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "Modal (Can) + subject (I) + verb (have) + partitive phrase (a glass of water)?",
+          "urduExplanation": "Can I have a glass of water?"
+        },
+        {
+          "id": "ex-a1-u5-l1-6",
+          "type": "order_sentence",
+          "skillTag": "countable-uncountable",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "Fresh",
+            "milk",
+            "is",
+            "good",
+            "for",
+            "health",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Uncountable subject (Fresh milk) + singular verb (is) + complement (good for health).",
+          "urduExplanation": "Fresh milk is good for health."
+        },
+        {
+          "id": "ex-a1-u5-l1-7",
+          "type": "match_pairs",
+          "skillTag": "countable-uncountable",
+          "prompt": "Match the food item to its noun classification:",
+          "pairs": [
+            {
+              "left": "apple",
+              "right": "Countable (an apple / two apples)"
+            },
+            {
+              "left": "water",
+              "right": "Uncountable (a glass of water)"
+            },
+            {
+              "left": "egg",
+              "right": "Countable (an egg / two eggs)"
+            },
+            {
+              "left": "bread",
+              "right": "Uncountable (a slice of bread)"
+            }
+          ],
+          "explanation": "Nouns matched accurately to countable vs uncountable.",
+          "urduExplanation": "Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ Ø§ÙˆØ± Ù†Ø§Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ Ú©Û’ ØµØ­ÛŒØ­ Ø¬ÙˆÚ‘Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l1-8",
+          "type": "error_correction",
+          "skillTag": "countable-uncountable",
+          "prompt": "Find and correct the mistake: 'I would like two breads, please.'",
+          "correctAnswer": "I would like two slices of bread, please.",
+          "explanation": "Bread is uncountable; say 'two slices of bread' or 'two pieces of bread', never 'two breads'.",
+          "urduExplanation": "'two breads' ØºÙ„Ø· Û Û’ØŒ 'two slices of bread' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l1-9",
+          "type": "error_correction",
+          "skillTag": "quantifiers",
+          "prompt": "Find and correct the mistake: 'How many sugar do you want in your tea?'",
+          "correctAnswer": "How much sugar do you want in your tea?",
+          "explanation": "'Sugar' is uncountable and requires 'How much', not 'How many'.",
+          "urduExplanation": "Ú†ÛŒÙ†ÛŒ (sugar) Ú©Û’ Ù„ÛŒÛ’ 'How much sugar' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "ex-a1-u5-l1-10",
+          "type": "true_false",
+          "skillTag": "countable-uncountable",
+          "prompt": "In English, 'water' can be made plural as 'waters' when asking for two cups. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. Water is uncountable; you must say 'two glasses of water' or 'two bottles of water'.",
+          "urduExplanation": "ØºÙ„Ø·Û” Ù¾Ø§Ù†ÛŒ uncountable Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'two glasses of water' Ú©Û Ù†Ø§ Ù¾Ú‘ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l1-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u5-l1-1",
+          "type": "mcq",
+          "skillTag": "countable-uncountable",
+          "prompt": "Which pair contains ONE countable and ONE uncountable noun?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "apple and banana"
+            },
+            {
+              "id": "opt-2",
+              "text": "milk and water"
+            },
+            {
+              "id": "opt-3",
+              "text": "egg and rice"
+            },
+            {
+              "id": "opt-4",
+              "text": "tea and coffee"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'Egg' is countable (an egg / two eggs), while 'rice' is uncountable.",
+          "urduExplanation": "'egg' Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ Û Û’ Ø§ÙˆØ± 'rice' Ù†Ø§Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l1-2",
+          "type": "mcq",
+          "skillTag": "quantifiers",
+          "prompt": "Complete the question: '_____ cups of coffee do you drink every day?'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "How much"
+            },
+            {
+              "id": "opt-2",
+              "text": "How many"
+            },
+            {
+              "id": "opt-3",
+              "text": "How lot"
+            },
+            {
+              "id": "opt-4",
+              "text": "How few"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Cups' is a countable plural noun, so it takes 'How many'.",
+          "urduExplanation": "'Cups' Ú¯Ù†Û’ Ø¬Ø§ Ø³Ú©ØªÛ’ Û ÛŒÚºØŒ Ø§Ø³ Ù„ÛŒÛ’ 'How many' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u5-l1-3",
+          "type": "mcq",
+          "skillTag": "countable-uncountable",
+          "prompt": "Select the sentence with INCORRECT grammar:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "She bought a fresh bread at the bakery."
+            },
+            {
+              "id": "opt-2",
+              "text": "She bought a loaf of bread at the bakery."
+            },
+            {
+              "id": "opt-3",
+              "text": "She bought some bread at the bakery."
+            },
+            {
+              "id": "opt-4",
+              "text": "She bought two slices of bread at the bakery."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'a fresh bread' is incorrect because uncountable bread cannot take 'a'. Say 'a loaf of bread'.",
+          "urduExplanation": "'a fresh bread' ØºÙ„Ø· Û Û’ Ú©ÛŒÙˆÙ†Ú©Û  bread Ù†Ø§Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l1-4",
+          "type": "mcq",
+          "skillTag": "countable-uncountable",
+          "prompt": "What is the correct counter phrase for hot tea?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "a slice of tea"
+            },
+            {
+              "id": "opt-2",
+              "text": "a cup of tea"
+            },
+            {
+              "id": "opt-3",
+              "text": "a piece of tea"
+            },
+            {
+              "id": "opt-4",
+              "text": "a kilo of tea"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Hot tea is served in a cup: 'a cup of tea'.",
+          "urduExplanation": "Ú†Ø§Ø¦Û’ Ú©Û’ Ù„ÛŒÛ’ 'a cup of tea' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l1-5",
+          "type": "mcq",
+          "skillTag": "countable-uncountable",
+          "prompt": "Which verb correctly completes: 'The rice _____ ready to serve.'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "are"
+            },
+            {
+              "id": "opt-2",
+              "text": "were"
+            },
+            {
+              "id": "opt-3",
+              "text": "is"
+            },
+            {
+              "id": "opt-4",
+              "text": "be"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Uncountable nouns take the singular verb 'is'.",
+          "urduExplanation": "Ù†Ø§Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ Ø§Ø³Ù… Ú©Û’ Ø³Ø§ØªÚ¾ ÙˆØ§Ø­Ø¯ Ù Ø¹Ù„ 'is' Ø¢ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l1-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Countable vs Uncountable food summary:",
+      "summaryPoints": [
+        "Countable nouns can be counted individually (an apple, two apples; an egg, three eggs).",
+        "Uncountable nouns are masses or liquids (water, milk, bread, rice, sugar, tea).",
+        "Uncountable nouns have no plural and take singular verbs (Rice is delicious).",
+        "Measure uncountables with counters: a glass of water, a slice of bread, a cup of tea.",
+        "Use 'How many' for countables; use 'How much' for uncountables."
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l1-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… 'Ø±ÙˆÙ¹ÛŒ' Ú©Ùˆ Ø¨Ø§Ø¢Ø³Ø§Ù†ÛŒ Ú¯Ù†ØªÛ’ Û ÛŒÚº: 'Ø¯Ùˆ Ø±ÙˆÙ¹ÛŒØ§Úº'ØŒ 'ØªÛŒÙ† Ø±ÙˆÙ¹ÛŒØ§Úº'Û”\n\n**Ù„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Bread Ù†Ø§Ù‚Ø§Ø¨Ù„Ù  Ú¯Ù†ØªÛŒ (Uncountable) Û Û’!**\n- Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº 'two breads' Ú©Û Ù†Ø§ Ø¨Û Øª Ø¨Ú‘ÛŒ ØºÙ„Ø·ÛŒ Ù…Ø§Ù†Ø§ Ø¬Ø§ØªØ§ Û Û’Û”\n- ØµØ­ÛŒØ­ Ø·Ø±ÛŒÙ‚Û  ÛŒÛ  Û Û’ Ú©Û  Û Ù… Ú©Û ÛŒÚº: **two slices of bread** ÛŒØ§ **two pieces of bread**Û”\n\nØ§Ø³ÛŒ Ø·Ø±Ø­ Ù¾Ø§Ù†ÛŒØŒ Ú†Ø§Ø¦Û’ØŒ Ø¯ÙˆØ¯Ú¾ Ø§ÙˆØ± Ú†Ø§ÙˆÙ„ Ú©Û’ Ù„ÛŒÛ’ Ø¨Ú¾ÛŒ Û Ù…ÛŒØ´Û  Ù¾ÛŒÙ…Ø§Ù†Û  Ù„Ú¯Ø§Ù†Ø§ Ù¾Ú‘ØªØ§ Û Û’ (a glass of water, a cup of tea, a bowl of rice)Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

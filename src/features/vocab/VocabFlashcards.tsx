@@ -34,6 +34,7 @@ import type { VocabProgress, VocabWordContent } from '../../types';
 export function VocabFlashcards() {
   const navigate = useNavigate();
 
+  const [selectedTrack, setSelectedTrack] = useState<'all' | 'ielts' | 'english'>('all');
   const [selectedTopic, setSelectedTopic] = useState<string>('all');
   const [deck, setDeck] = useState<VocabProgress[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,7 +49,7 @@ export function VocabFlashcards() {
     setStreak(streak);
   }, []);
 
-  // Load deck for the selected topic
+  // Load deck for the selected topic and track
   useEffect(() => {
     async function loadDeck() {
       setIsFlipped(false);
@@ -61,15 +62,30 @@ export function VocabFlashcards() {
         const storedMap = new Map<string, VocabProgress>();
         stored.forEach((item) => storedMap.set(item.wordId, item));
 
-        const words = getWordsByTopic(selectedTopic);
         const deckItems: VocabProgress[] = [];
 
-        for (const w of words) {
-          if (storedMap.has(w.id)) {
-            deckItems.push(storedMap.get(w.id)!);
-          } else {
-            // New unreviewed card
-            deckItems.push(createInitialVocabProgress(w));
+        // If 'all' or 'ielts', include academic word list
+        if (selectedTrack === 'all' || selectedTrack === 'ielts') {
+          const words = getWordsByTopic(selectedTopic);
+          for (const w of words) {
+            if (storedMap.has(w.id)) {
+              const item = storedMap.get(w.id)!;
+              if (selectedTrack === 'all' || (item.track || 'ielts') === selectedTrack) {
+                deckItems.push(item);
+              }
+            } else {
+              deckItems.push(createInitialVocabProgress(w));
+            }
+          }
+        }
+
+        // If 'all' or 'english', also include English track words from stored db.vocabProgress
+        if (selectedTrack === 'all' || selectedTrack === 'english') {
+          const englishWords = stored.filter((w) => w.track === 'english');
+          for (const w of englishWords) {
+            if (!deckItems.some((d) => d.wordId === w.wordId)) {
+              deckItems.push(w);
+            }
           }
         }
 
@@ -90,7 +106,7 @@ export function VocabFlashcards() {
       }
     }
     loadDeck();
-  }, [selectedTopic]);
+  }, [selectedTopic, selectedTrack]);
 
   const currentCard = deck[currentIndex];
 
@@ -201,21 +217,37 @@ export function VocabFlashcards() {
 
       {/* Topic Filter & Progress Header */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm text-xs">
-        <div className="flex items-center gap-2 w-full sm:w-auto">
-          <Filter className="w-4 h-4 text-teal-600" />
-          <span className="font-semibold text-slate-700 dark:text-slate-300">Topic Deck:</span>
-          <select
-            value={selectedTopic}
-            onChange={(e) => setSelectedTopic(e.target.value)}
-            className="flex-1 sm:flex-initial bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg p-1.5 text-slate-800 dark:text-slate-200 font-medium capitalize"
-          >
-            <option value="all">All Topics (200 Words)</option>
-            {VOCAB_TOPICS.map((top) => (
-              <option key={top} value={top}>
-                {top.charAt(0).toUpperCase() + top.slice(1)}
-              </option>
-            ))}
-          </select>
+        <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+          <div className="flex items-center gap-2">
+            <span className="font-semibold text-slate-700 dark:text-slate-300">Track:</span>
+            <select
+              aria-label="Filter by track"
+              value={selectedTrack}
+              onChange={(e) => setSelectedTrack(e.target.value as 'all' | 'ielts' | 'english')}
+              className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg p-1.5 text-slate-800 dark:text-slate-200 font-medium"
+            >
+              <option value="all">All Tracks</option>
+              <option value="ielts">IELTS Track</option>
+              <option value="english">English Course</option>
+            </select>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <Filter className="w-4 h-4 text-teal-600" />
+            <span className="font-semibold text-slate-700 dark:text-slate-300">Topic:</span>
+            <select
+              value={selectedTopic}
+              onChange={(e) => setSelectedTopic(e.target.value)}
+              className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg p-1.5 text-slate-800 dark:text-slate-200 font-medium capitalize"
+            >
+              <option value="all">All Topics (200 Words)</option>
+              {VOCAB_TOPICS.map((top) => (
+                <option key={top} value={top}>
+                  {top.charAt(0).toUpperCase() + top.slice(1)}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
 
         {!sessionCompleted && deck.length > 0 && (
@@ -302,6 +334,16 @@ export function VocabFlashcards() {
                   title="Pronounce word"
                 >
                   <Volume2 className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    navigate(`/app/dictionary/${encodeURIComponent(currentCard.word.toLowerCase())}`);
+                  }}
+                  className="p-1.5 rounded-lg text-slate-500 hover:text-[#124F40] dark:hover:text-[#5BB78D] hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                  title="Lookup in English Dictionary"
+                >
+                  <BookOpen className="w-4 h-4" />
                 </button>
               </div>
             </div>

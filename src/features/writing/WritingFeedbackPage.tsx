@@ -347,6 +347,21 @@ export function WritingFeedbackPage() {
             <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mt-2">
               {feedback.criteria.grammaticalRangeAndAccuracy.comments}
             </p>
+            {feedback.criteria.grammaticalRangeAndAccuracy.band < 6.5 && (
+              <div className="mt-3 p-2.5 rounded-lg bg-[#5BB78D]/10 border border-[#5BB78D]/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div className="text-[11px] text-slate-800 dark:text-slate-200">
+                  <span className="font-bold block text-[#124F40] dark:text-[#5BB78D]">Recommended English Course:</span>
+                  Practise conditionals & complex structures (B1 Unit 6)
+                </div>
+                <button
+                  type="button"
+                  onClick={() => navigate('/app/english/lesson/eng-b1-u6-l1')}
+                  className="px-2.5 py-1 rounded bg-[#124F40] hover:bg-[#0E3D32] text-white text-[10px] font-bold shrink-0 self-start sm:self-auto cursor-pointer"
+                >
+                  Practise in Course &rarr;
+                </button>
+              </div>
+            )}
           </div>
           <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-500 dark:text-slate-400">
             Complex sentences, tenses & punctuation

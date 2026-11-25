@@ -1,0 +1,631 @@
+{
+  "id": "eng-a1-u3-l5",
+  "level": "A1",
+  "unit": "unit-3",
+  "order": 5,
+  "title": "Telling Time & Parts of the Day",
+  "description": "Read the clock, ask the time, and pair time expressions with accurate prepositions (at, in).",
+  "objectives": [
+    "Ask and tell the time using 'o'clock', 'half past', 'quarter past', and 'quarter to'",
+    "Use prepositions of time accurately: 'at' with specific times/night, 'in' with parts of the day",
+    "Differentiate between AM (morning) and PM (afternoon/evening)"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u3-l4"
+  ],
+  "skillTags": [
+    "time",
+    "prepositions",
+    "daily-life",
+    "vocabulary"
+  ],
+  "vocabularyList": [
+    {
+      "word": "morning",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆmÉ”Ë rnÉªÅ‹/",
+      "definition": "The period of time between dawn and noon.",
+      "urduMeaning": "ØµØ¨Ø­",
+      "exampleSentence": "I have the most energy in the morning."
+    },
+    {
+      "word": "afternoon",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËŒÉ‘Ë ftÉ™ËˆnuË n/",
+      "definition": "The time from noon or lunchtime to evening.",
+      "urduMeaning": "Ø³Û  Ù¾Û Ø± / Ø¯ÙˆÙ¾Û Ø±",
+      "exampleSentence": "We have an English lesson in the afternoon."
+    },
+    {
+      "word": "evening",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆiË vnÉªÅ‹/",
+      "definition": "The period of time at the end of the day, usually from about 6 PM to bedtime.",
+      "urduMeaning": "Ø´Ø§Ù…",
+      "exampleSentence": "They walk together in the evening."
+    },
+    {
+      "word": "night",
+      "partOfSpeech": "noun",
+      "phonetic": "/naÉªt/",
+      "definition": "The period of darkness in each twenty-four hours.",
+      "urduMeaning": "Ø±Ø§Øª",
+      "exampleSentence": "It gets pleasantly cool at night."
+    },
+    {
+      "word": "midnight",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆmÉªdnaÉªt/",
+      "definition": "Twelve o'clock at night.",
+      "urduMeaning": "Ø¢Ø¯Ú¾ÛŒ Ø±Ø§Øª",
+      "exampleSentence": "The airport bus arrives at midnight."
+    },
+    {
+      "word": "noon",
+      "partOfSpeech": "noun",
+      "phonetic": "/nuË n/",
+      "definition": "Twelve o'clock in the middle of the day; midday.",
+      "urduMeaning": "Ø¯ÙˆÙ¾Û Ø± Ú©Û’ 12 Ø¨Ø¬Û’",
+      "exampleSentence": "The office cafeteria opens at noon."
+    },
+    {
+      "word": "minute",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆmÉªnÉªt/",
+      "definition": "A period of time equal to sixty seconds.",
+      "urduMeaning": "Ù…Ù†Ù¹",
+      "exampleSentence": "The bus arrives in ten minutes."
+    },
+    {
+      "word": "hour",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆaÊŠÉ™r/",
+      "definition": "A period of time equal to sixty minutes.",
+      "urduMeaning": "Ú¯Ú¾Ù†Ù¹Û ",
+      "exampleSentence": "We study for one hour every evening."
+    },
+    {
+      "word": "early",
+      "partOfSpeech": "adverb",
+      "phonetic": "/ËˆÉœË li/",
+      "definition": "Happening or done before the usual or expected time.",
+      "urduMeaning": "Ø¬Ù„Ø¯ÛŒ / ÙˆÙ‚Øª Ø³Û’ Ù¾Û Ù„Û’",
+      "exampleSentence": "He arrives early for all his interviews."
+    },
+    {
+      "word": "late",
+      "partOfSpeech": "adverb",
+      "phonetic": "/leÉªt/",
+      "definition": "Doing something or taking place after the expected or usual time.",
+      "urduMeaning": "Ø¯ÛŒØ± Ø³Û’",
+      "exampleSentence": "Please do not be late for class."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u3-l5-1",
+      "type": "explain",
+      "title": "Telling the Time & Prepositions",
+      "content": "To ask the time in English, say:\n- **What time is it?** or **What's the time?**\n- Always start the answer with: **It is... (It's...)**\n\n### Clock Expressions\n- Exact hour: *It's seven o'clock (7:00)*\n- 15 minutes after: *It's quarter past seven (7:15)*\n- 30 minutes after: *It's half past seven (7:30)*\n- 15 minutes before the next hour: *It's quarter to eight (7:45)*",
+      "tables": [
+        {
+          "title": "Prepositions with Time Expressions",
+          "headers": [
+            "Preposition",
+            "When to Use",
+            "Examples",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "AT",
+              "Exact clock times, noon, midnight, night",
+              "at 5:00 / at noon / at night",
+              "5 Ø¨Ø¬Û’ / Ø±Ø§Øª Ú©Ùˆ"
+            ],
+            [
+              "IN",
+              "Parts of the day (morning, afternoon, evening)",
+              "in the morning / in the evening",
+              "ØµØ¨Ø­ Ú©Ùˆ / Ø´Ø§Ù… Ú©Ùˆ"
+            ],
+            [
+              "ON",
+              "Days of the week and specific dates",
+              "on Monday / on Friday morning",
+              "Ù¾ÛŒØ± Ú©Ùˆ / Ø¬Ù…Ø¹Û  Ú©Ùˆ"
+            ]
+          ]
+        },
+        {
+          "title": "Digital vs. Analogue Clock Sayings",
+          "headers": [
+            "Digital Time",
+            "Traditional Analogue Way",
+            "Modern Digital Way",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "8:00",
+              "Eight o'clock",
+              "Eight AM / PM",
+              "Only exact hours use 'o'clock'."
+            ],
+            [
+              "8:15",
+              "Quarter past eight",
+              "Eight fifteen",
+              "15 minutes = quarter."
+            ],
+            [
+              "8:30",
+              "Half past eight",
+              "Eight thirty",
+              "30 minutes = half."
+            ],
+            [
+              "8:45",
+              "Quarter to nine",
+              "Eight forty-five",
+              "Count minutes to the next hour."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "The Special Exception: Night",
+          "text": "Notice: We say **in the morning**, **in the afternoon**, and **in the evening**, BUT we say **at night** (never 'in the night' for general time)."
+        },
+        {
+          "type": "warning",
+          "title": "Never Use 'O'clock' with Minutes",
+          "text": "Never say 'eight thirty o'clock'. O'clock is ONLY used for exact on-the-hour times (8:00)."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l5-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "What time is it right now? It is exactly half past seven.",
+          "phonetic": "/wÉ’t taÉªm Éªz Éªt raÉªt naÊŠ Éªt Éªz ÉªÉ¡ËˆzÃ¦ktli hÉ‘Ë f pÉ‘Ë st Ëˆsevn/",
+          "urdu": "Ø§Ø³ ÙˆÙ‚Øª Ú©ÛŒØ§ Ù¹Ø§Ø¦Ù… Û Û’ØŸ Ø¨Ø§Ù„Ú©Ù„ Ø³Ø§Ú‘Ú¾Û’ Ø³Ø§Øª Ø¨Ø¬Û’ Û ÛŒÚºÛ”",
+          "audioText": "What time is it right now? It is exactly half past seven."
+        },
+        {
+          "english": "The morning train leaves at quarter past eight.",
+          "phonetic": "/Ã°É™ ËˆmÉ”Ë rnÉªÅ‹ treÉªn liË vz Ã¦t ËˆkwÉ”Ë tÉ™r pÉ‘Ë st eÉªt/",
+          "urdu": "ØµØ¨Ø­ Ú©ÛŒ Ø±ÛŒÙ„ Ú¯Ø§Ú‘ÛŒ Ø³ÙˆØ§ Ø¢Ù¹Ú¾ Ø¨Ø¬Û’ Ø±ÙˆØ§Ù†Û  Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "The morning train leaves at quarter past eight."
+        },
+        {
+          "english": "I always drink green tea in the afternoon.",
+          "phonetic": "/aÉª ËˆÉ”Ë lweÉªz drÉªÅ‹k É¡riË n tiË  Éªn Ã°i ËŒÉ‘Ë ftÉ™ËˆnuË n/",
+          "urdu": "Ù…ÛŒÚº Ø³Û  Ù¾Û Ø± Ú©Ùˆ Û Ù…ÛŒØ´Û  Ø³Ø¨Ø² Ú†Ø§Ø¦Û’ Ù¾ÛŒØªØ§ Û ÙˆÚºÛ”",
+          "audioText": "I always drink green tea in the afternoon."
+        },
+        {
+          "english": "The library closes at ten o'clock at night.",
+          "phonetic": "/Ã°É™ ËˆlaÉªbrÉ™ri ËˆklÉ™ÊŠzÉªz Ã¦t ten É™ËˆklÉ’k Ã¦t naÉªt/",
+          "urdu": "Ù„Ø§Ø¦Ø¨Ø±ÛŒØ±ÛŒ Ø±Ø§Øª Ø¯Ø³ Ø¨Ø¬Û’ Ø¨Ù†Ø¯ Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "The library closes at ten o'clock at night."
+        },
+        {
+          "english": "We have an important team meeting at noon.",
+          "phonetic": "/wiË  hÃ¦v É™n ÉªmËˆpÉ”Ë tnt tiË m ËˆmiË tÉªÅ‹ Ã¦t nuË n/",
+          "urdu": "Ø¯ÙˆÙ¾Û Ø± Ø¨Ø§Ø±Û  Ø¨Ø¬Û’ Û Ù…Ø§Ø±ÛŒ Ù¹ÛŒÙ… Ú©ÛŒ Ø§ÛŒÚ© Ø§Û Ù… Ù…ÛŒÙ¹Ù†Ú¯ Û Û’Û”",
+          "audioText": "We have an important team meeting at noon."
+        },
+        {
+          "english": "The class begins at quarter to nine in the morning.",
+          "phonetic": "/Ã°É™ klÉ‘Ë s bÉªËˆÉ¡Éªnz Ã¦t ËˆkwÉ”Ë tÉ™r tuË  naÉªn Éªn Ã°É™ ËˆmÉ”Ë rnÉªÅ‹/",
+          "urdu": "Ú©Ù„Ø§Ø³ ØµØ¨Ø­ Ù¾ÙˆÙ†Û’ Ù†Ùˆ Ø¨Ø¬Û’ Ø´Ø±ÙˆØ¹ Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "The class begins at quarter to nine in the morning."
+        },
+        {
+          "english": "He arrives early so that he can prepare his notes.",
+          "phonetic": "/hiË  É™ËˆraÉªvz ËˆÉœË li sÉ™ÊŠ Ã°Ã¦t hiË  kÃ¦n prÉªËˆpeÉ™r hÉªz nÉ™ÊŠts/",
+          "urdu": "ÙˆÛ  Ø¬Ù„Ø¯ÛŒ Ù¾Û Ù†Ú†ØªØ§ Û Û’ ØªØ§Ú©Û  Ø§Ù¾Ù†Û’ Ù†ÙˆÙ¹Ø³ ØªÛŒØ§Ø± Ú©Ø± Ø³Ú©Û’Û”",
+          "audioText": "He arrives early so that he can prepare his notes."
+        },
+        {
+          "english": "It is quiet and peaceful in our town at midnight.",
+          "phonetic": "/Éªt Éªz ËˆkwaÉªÉ™t Ã¦nd ËˆpiË sfl Éªn ËˆaÊŠÉ™r taÊŠn Ã¦t ËˆmÉªdnaÉªt/",
+          "urdu": "Ø¢Ø¯Ú¾ÛŒ Ø±Ø§Øª Ú©Ùˆ Û Ù…Ø§Ø±Û’ Ù‚ØµØ¨Û’ Ù…ÛŒÚº Ù¾Ø±Ø³Ú©ÙˆÙ† Ø®Ø§Ù…ÙˆØ´ÛŒ Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "It is quiet and peaceful in our town at midnight."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l5-3",
+      "type": "dialogue",
+      "title": "Catching the Morning Train",
+      "dialogue": [
+        {
+          "speaker": "Passenger",
+          "avatar": "P",
+          "english": "Excuse me, what time is the next train to Rawalpindi?",
+          "urdu": "Ù…Ø¹Ø§Ù  Ú©ÛŒØ¬Ø¦Û’ Ú¯Ø§ØŒ Ø±Ø§ÙˆÙ„Ù¾Ù†ÚˆÛŒ Ú©Û’ Ù„ÛŒÛ’ Ø§Ú¯Ù„ÛŒ Ú¯Ø§Ú‘ÛŒ Ú©Ø³ ÙˆÙ‚Øª Û Û’ØŸ",
+          "audioText": "Excuse me, what time is the next train to Rawalpindi?"
+        },
+        {
+          "speaker": "Station Master",
+          "avatar": "S",
+          "english": "It leaves at quarter to ten, in about twenty minutes.",
+          "urdu": "ÙˆÛ  Ù¾ÙˆÙ†Û’ Ø¯Ø³ Ø¨Ø¬Û’ Ø±ÙˆØ§Ù†Û  Û ÙˆØªÛŒ Û Û’ØŒ ØªÙ‚Ø±ÛŒØ¨Ø§Ù‹ Ø¨ÛŒØ³ Ù…Ù†Ù¹ Ù…ÛŒÚºÛ”",
+          "audioText": "It leaves at quarter to ten, in about twenty minutes."
+        },
+        {
+          "speaker": "Passenger",
+          "avatar": "P",
+          "english": "And what time does it arrive there?",
+          "urdu": "Ø§ÙˆØ± ÙˆÛ  ÙˆÛ Ø§Úº Ú©Ø³ ÙˆÙ‚Øª Ù¾Û Ù†Ú†ØªÛŒ Û Û’ØŸ",
+          "audioText": "And what time does it arrive there?"
+        },
+        {
+          "speaker": "Station Master",
+          "avatar": "S",
+          "english": "It arrives at half past two in the afternoon.",
+          "urdu": "ÙˆÛ  Ø¯ÙˆÙ¾Û Ø± ÚˆÚ¾Ø§Ø¦ÛŒ Ø¨Ø¬Û’ Ù¾Û Ù†Ú†ØªÛŒ Û Û’Û”",
+          "audioText": "It arrives at half past two in the afternoon."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l5-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u3-l5-1",
+          "type": "mcq",
+          "skillTag": "prepositions",
+          "prompt": "Choose the correct preposition: 'The flight lands _____ 6:30 PM.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "in"
+            },
+            {
+              "id": "opt-2",
+              "text": "on"
+            },
+            {
+              "id": "opt-3",
+              "text": "at"
+            },
+            {
+              "id": "opt-4",
+              "text": "for"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Specific clock times always take the preposition 'at'.",
+          "urduExplanation": "Ú¯Ú¾Ú‘ÛŒ Ú©Û’ Ù…Ø®ØµÙˆØµ ÙˆÙ‚Øª Ú©Û’ Ù„ÛŒÛ’ 'at' Ù„Ú¯Ø§ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l5-2",
+          "type": "mcq",
+          "skillTag": "time",
+          "prompt": "How do you say 9:15 in traditional English?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Quarter to nine"
+            },
+            {
+              "id": "opt-2",
+              "text": "Nine quarter"
+            },
+            {
+              "id": "opt-3",
+              "text": "Half past nine"
+            },
+            {
+              "id": "opt-4",
+              "text": "Quarter past nine"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "15 minutes after nine is 'quarter past nine'.",
+          "urduExplanation": "9:15 Ú©Ùˆ 'quarter past nine' (Ø³ÙˆØ§ Ù†Ùˆ) Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l5-3",
+          "type": "fill_blank",
+          "skillTag": "time",
+          "prompt": "How do you say 4:30? Complete: 'It is half _____ four.'",
+          "correctAnswer": "past",
+          "explanation": "30 minutes past four is 'half past four'.",
+          "urduExplanation": "4:30 Ú©Û’ Ù„ÛŒÛ’ 'half past four' (Ø³Ø§Ú‘Ú¾Û’ Ú†Ø§Ø±) Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l5-4",
+          "type": "fill_blank",
+          "skillTag": "prepositions",
+          "prompt": "Fill in the preposition: 'We sleep _____ night.'",
+          "correctAnswer": "at",
+          "explanation": "Night is paired with 'at': 'at night'.",
+          "urduExplanation": "night Ú©Û’ Ø³Ø§ØªÚ¾ 'at' Ø¢ØªØ§ Û Û’: 'at night'Û”"
+        },
+        {
+          "id": "ex-a1-u3-l5-5",
+          "type": "order_sentence",
+          "skillTag": "time",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "The",
+            "class",
+            "starts",
+            "at",
+            "ten",
+            "o'clock",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (The class) + verb (starts) + preposition (at) + time (ten o'clock).",
+          "urduExplanation": "The class starts at ten o'clock."
+        },
+        {
+          "id": "ex-a1-u3-l5-6",
+          "type": "order_sentence",
+          "skillTag": "time",
+          "prompt": "Rearrange the words to form a correct question:",
+          "sentenceTokens": [
+            "What",
+            "time",
+            "is",
+            "it",
+            "right",
+            "now",
+            "?"
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Question phrase (What time) + verb (is) + pronoun (it) + adverb (right now)?",
+          "urduExplanation": "What time is it right now?"
+        },
+        {
+          "id": "ex-a1-u3-l5-7",
+          "type": "match_pairs",
+          "skillTag": "prepositions",
+          "prompt": "Match the time phrase with its correct preposition:",
+          "pairs": [
+            {
+              "left": "the morning",
+              "right": "in"
+            },
+            {
+              "left": "7:00 PM",
+              "right": "at"
+            },
+            {
+              "left": "night",
+              "right": "at"
+            },
+            {
+              "left": "the afternoon",
+              "right": "in"
+            }
+          ],
+          "explanation": "Prepositions 'at' and 'in' accurately paired.",
+          "urduExplanation": "ÙˆÙ‚Øª Ú©Û’ ØµØ­ÛŒØ­ prepositions Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l5-8",
+          "type": "error_correction",
+          "skillTag": "time",
+          "prompt": "Find and correct the mistake: 'The meeting starts at two thirty o'clock.'",
+          "correctAnswer": "The meeting starts at two thirty.",
+          "explanation": "'O'clock' can only be used with full hours (two o'clock). Say 'two thirty' or 'half past two'.",
+          "urduExplanation": "Ù…Ù†Ù¹ÙˆÚº Ú©Û’ Ø³Ø§ØªÚ¾ 'o'clock' Ù†Û ÛŒÚº Ù„Ú¯ØªØ§ØŒ ØµØ±Ù  'two thirty' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l5-9",
+          "type": "error_correction",
+          "skillTag": "prepositions",
+          "prompt": "Find and correct the mistake: 'I drink warm milk in night.'",
+          "correctAnswer": "I drink warm milk at night.",
+          "explanation": "Use 'at night', not 'in night'.",
+          "urduExplanation": "'at night' ØµØ­ÛŒØ­ Û Û’ØŒ 'in night' ØºÙ„Ø· Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l5-10",
+          "type": "true_false",
+          "skillTag": "time",
+          "prompt": "'Quarter to six' means 5:45. (True or False)",
+          "correctAnswer": "True",
+          "explanation": "True. 'Quarter to six' means 15 minutes before 6:00, which is 5:45.",
+          "urduExplanation": "Ø¯Ø±Ø³ØªÛ” 'Quarter to six' Ú©Ø§ Ù…Ø·Ù„Ø¨ Ù¾ÙˆÙ†Û’ Ú†Ú¾Û’ (5:45) Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l5-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u3-l5-1",
+          "type": "mcq",
+          "skillTag": "time",
+          "prompt": "What time is 'quarter to eight' in digital format?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "7:45"
+            },
+            {
+              "id": "opt-2",
+              "text": "8:15"
+            },
+            {
+              "id": "opt-3",
+              "text": "8:45"
+            },
+            {
+              "id": "opt-4",
+              "text": "7:15"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Quarter to eight' means 15 minutes before 8:00, which is 7:45.",
+          "urduExplanation": "'quarter to eight' Ú©Ø§ Ù…Ø·Ù„Ø¨ Ù¾ÙˆÙ†Û’ Ø¢Ù¹Ú¾ (7:45) Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l5-2",
+          "type": "mcq",
+          "skillTag": "prepositions",
+          "prompt": "Which expression takes 'in' instead of 'at'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "noon"
+            },
+            {
+              "id": "opt-2",
+              "text": "the morning"
+            },
+            {
+              "id": "opt-3",
+              "text": "midnight"
+            },
+            {
+              "id": "opt-4",
+              "text": "4:00 PM"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Parts of the day take 'in' ('in the morning'), while noon, midnight, and clock times take 'at'.",
+          "urduExplanation": "'in the morning' Ù…ÛŒÚº 'in' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l5-3",
+          "type": "mcq",
+          "skillTag": "time",
+          "prompt": "What is twelve o'clock in the middle of the day called?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "midnight"
+            },
+            {
+              "id": "opt-2",
+              "text": "evening"
+            },
+            {
+              "id": "opt-3",
+              "text": "noon"
+            },
+            {
+              "id": "opt-4",
+              "text": "morning"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "12:00 PM midday is specifically called 'noon'.",
+          "urduExplanation": "Ø¯ÙˆÙ¾Û Ø± Ú©Û’ 12 Ø¨Ø¬Û’ Ú©Ùˆ 'noon' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u3-l5-4",
+          "type": "mcq",
+          "skillTag": "time",
+          "prompt": "Select the sentence with INCORRECT grammar:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "The movie starts at eight o'clock."
+            },
+            {
+              "id": "opt-2",
+              "text": "The movie starts at eight thirty."
+            },
+            {
+              "id": "opt-3",
+              "text": "The movie starts at half past eight."
+            },
+            {
+              "id": "opt-4",
+              "text": "The movie starts at eight thirty o'clock."
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'eight thirty o'clock' is wrong because 'o'clock' can only be used on the exact hour.",
+          "urduExplanation": "'eight thirty o'clock' ØºÙ„Ø· Û Û’ Ú©ÛŒÙˆÙ†Ú©Û  o'clock Ù…Ù†Ù¹ÙˆÚº Ú©Û’ Ø³Ø§ØªÚ¾ Ù†Û ÛŒÚº Ù„Ú¯ØªØ§Û”"
+        },
+        {
+          "id": "qz-a1-u3-l5-5",
+          "type": "mcq",
+          "skillTag": "time",
+          "prompt": "What does 'AM' indicate?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Morning (midnight to midday)"
+            },
+            {
+              "id": "opt-2",
+              "text": "Afternoon and evening"
+            },
+            {
+              "id": "opt-3",
+              "text": "Night only"
+            },
+            {
+              "id": "opt-4",
+              "text": "All Month"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "AM (Ante Meridiem) covers the twelve hours between midnight and midday.",
+          "urduExplanation": "AM Ø¢Ø¯Ú¾ÛŒ Ø±Ø§Øª Ø³Û’ Ø¯ÙˆÙ¾Û Ø± ØªÚ© Ú©Ø§ ÙˆÙ‚Øª (ØµØ¨Ø­) Û ÙˆØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l5-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Time expression takeaways:",
+      "summaryPoints": [
+        "Use 'at' for specific times: at 7:00, at half past eight, at noon, at midnight, at night.",
+        "Use 'in' for periods of the day: in the morning, in the afternoon, in the evening.",
+        "15 min past = quarter past; 30 min = half past; 15 min to = quarter to.",
+        "Only use 'o'clock' on the exact hour (7:00 -> 7 o'clock; never 7:30 o'clock).",
+        "AM = morning (midnight to noon); PM = afternoon/evening (noon to midnight)."
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l5-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… ÙˆÙ‚Øª Ú©Û’ Ù„ÛŒÛ’ Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± **'Ú©Ùˆ'** ÛŒØ§ **'Ù¾Ø±'** Ú©Û ØªÛ’ Û ÛŒÚº:\n- 'Ø³Ø§Øª Ø¨Ø¬Û’'\n- 'ØµØ¨Ø­ **Ú©Ùˆ**'\n- 'Ø±Ø§Øª **Ú©Ùˆ**'\n\nÙ„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Û Ù…ÛŒÚº Ø¯Ùˆ Ø§Ù„Ú¯ Prepositions Ø§Ø³ØªØ¹Ù…Ø§Ù„ Ú©Ø±Ù†Û’ Ù¾Ú‘ØªÛ’ Û ÛŒÚº:\n- Ú¯Ú¾Ú‘ÛŒ Ú©Û’ ÙˆÙ‚Øª Ø§ÙˆØ± Ø±Ø§Øª Ú©Û’ Ù„ÛŒÛ’: **at** (at 7:00, at night)\n- Ø¯Ù† Ú©Û’ Ø­ØµÙˆÚº Ú©Û’ Ù„ÛŒÛ’: **in** (in the morning, in the afternoon)\nÛŒÛ Ø§Úº 'in night' Ú©Û Ù†Ø§ Ø§ÛŒÚ© Ø¹Ø§Ù… ØºÙ„Ø·ÛŒ Û Û’ Ø¬Ø³ Ø³Û’ Ø¨Ú†Ù†Ø§ Ú†Ø§Û ÛŒÛ’Û” Û Ù…ÛŒØ´Û  **'at night'** Ú©Û ÛŒÚºÛ”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

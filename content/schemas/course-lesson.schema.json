@@ -279,7 +279,15 @@
             "type": "array",
             "items": { "type": "string" }
           },
-          "urduText": { "type": "string" }
+          "urduText": { "type": "string" },
+          "needsNativeReview": { "type": "boolean" },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "needsNativeReview": { "type": "boolean" },
+              "reviewStatus": { "type": "string" }
+            }
+          }
         }
       }
     }

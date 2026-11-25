@@ -1,4 +1,5 @@
 export type DateRange = '7d' | '30d' | '90d' | 'all';
+export type AnalyticsTrack = 'all' | 'ielts' | 'english';
 
 export interface ModuleAttemptMetric {
   module: string;
@@ -38,15 +39,63 @@ export interface ContentQualityFlag {
   severity: 'high' | 'medium';
 }
 
-export function getAnalyticsDataset(range: DateRange = '30d') {
+export interface DictionarySearchMetric {
+  word: string;
+  searches: number;
+  pos: string;
+  level: string;
+  definitionSnippet: string;
+}
+
+export interface UnitDropoffMetric {
+  unitId: string;
+  unitTitle: string;
+  level: string;
+  startedCount: number;
+  completedCount: number;
+  completionRatePercent: number;
+  dropoffRatePercent: number;
+}
+
+export function getAnalyticsDataset(range: DateRange = '30d', track: AnalyticsTrack = 'all') {
   // Multipliers based on date range
   const multiplier = range === '7d' ? 0.35 : range === '90d' ? 2.6 : range === 'all' ? 4.2 : 1.0;
 
   // 1. Core KPIs
-  const dau = Math.round(184 * multiplier);
-  const wau = Math.round(642 * multiplier);
-  const mau = Math.round(1890 * multiplier);
+  const isEnglish = track === 'english';
+  const isIelts = track === 'ielts';
+
+  const dau = isEnglish ? Math.round(98 * multiplier) : isIelts ? Math.round(112 * multiplier) : Math.round(184 * multiplier);
+  const wau = isEnglish ? Math.round(340 * multiplier) : isIelts ? Math.round(410 * multiplier) : Math.round(642 * multiplier);
+  const mau = isEnglish ? Math.round(920 * multiplier) : isIelts ? Math.round(1180 * multiplier) : Math.round(1890 * multiplier);
   const totalSignups = Math.round(312 * multiplier);
+
+  // English Course Specific Metrics
+  const englishLessonsCompleted = Math.round(2140 * multiplier);
+  const englishAveragePassRate = 78.6;
+  const englishPlacementCount = Math.round(340 * multiplier);
+
+  // Most Searched Dictionary Words
+  const mostSearchedDictionaryWords: DictionarySearchMetric[] = [
+    { word: 'resilience', searches: Math.round(482 * multiplier), pos: 'noun', level: 'B2', definitionSnippet: 'Capacity to recover quickly from difficulties' },
+    { word: 'eloquent', searches: Math.round(395 * multiplier), pos: 'adjective', level: 'C1', definitionSnippet: 'Fluent or persuasive in speaking or writing' },
+    { word: 'meticulous', searches: Math.round(341 * multiplier), pos: 'adjective', level: 'B2', definitionSnippet: 'Showing great attention to detail; careful' },
+    { word: 'serendipity', searches: Math.round(298 * multiplier), pos: 'noun', level: 'C1', definitionSnippet: 'Occurrence of events by chance in a happy way' },
+    { word: 'pragmatic', searches: Math.round(274 * multiplier), pos: 'adjective', level: 'B2', definitionSnippet: 'Dealing with things sensibly and realistically' },
+    { word: 'paradigm', searches: Math.round(245 * multiplier), pos: 'noun', level: 'C1', definitionSnippet: 'A typical example or pattern of something' },
+    { word: 'advocate', searches: Math.round(219 * multiplier), pos: 'verb', level: 'B1', definitionSnippet: 'Publicly recommend or support' },
+  ];
+
+  // Unit Drop-off Analysis (A1 to C1)
+  const unitDropoffMetrics: UnitDropoffMetric[] = [
+    { unitId: 'eng-a1-u1', unitTitle: 'Unit 1: Introductions & Basics', level: 'A1', startedCount: Math.round(640 * multiplier), completedCount: Math.round(614 * multiplier), completionRatePercent: 96, dropoffRatePercent: 4 },
+    { unitId: 'eng-a1-u2', unitTitle: 'Unit 2: Daily Routines & Present Simple', level: 'A1', startedCount: Math.round(590 * multiplier), completedCount: Math.round(537 * multiplier), completionRatePercent: 91, dropoffRatePercent: 9 },
+    { unitId: 'eng-a1-u3', unitTitle: 'Unit 3: Places, Home & Prepositions', level: 'A1', startedCount: Math.round(510 * multiplier), completedCount: Math.round(444 * multiplier), completionRatePercent: 87, dropoffRatePercent: 13 },
+    { unitId: 'eng-a1-u4', unitTitle: 'Unit 4: Family & Possessives', level: 'A1', startedCount: Math.round(430 * multiplier), completedCount: Math.round(348 * multiplier), completionRatePercent: 81, dropoffRatePercent: 19 },
+    { unitId: 'eng-a2-u1', unitTitle: 'Unit 1: Past Memories & Narratives', level: 'A2', startedCount: Math.round(360 * multiplier), completedCount: Math.round(270 * multiplier), completionRatePercent: 75, dropoffRatePercent: 25 },
+    { unitId: 'eng-b1-u1', unitTitle: 'Unit 1: Hopes, Dreams & Ambitions', level: 'B1', startedCount: Math.round(290 * multiplier), completedCount: Math.round(197 * multiplier), completionRatePercent: 68, dropoffRatePercent: 32 },
+    { unitId: 'eng-b2-u1', unitTitle: 'Unit 1: Complex Opinion & Debate', level: 'B2', startedCount: Math.round(180 * multiplier), completedCount: Math.round(97 * multiplier), completionRatePercent: 54, dropoffRatePercent: 46 },
+  ];
 
   // 2. Daily Signups & Attempts Trend
   const activityTrend = [
@@ -213,7 +262,15 @@ export function getAnalyticsDataset(range: DateRange = '30d') {
   ];
 
   return {
+    track,
     kpis: { dau, wau, mau, totalSignups },
+    englishMetrics: {
+      lessonsCompleted: englishLessonsCompleted,
+      averagePassRate: englishAveragePassRate,
+      placementTestsTaken: englishPlacementCount,
+    },
+    mostSearchedDictionaryWords,
+    unitDropoffMetrics,
     activityTrend,
     moduleMetrics,
     questionTypeAccuracies,

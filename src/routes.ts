@@ -299,16 +299,19 @@ export const ENGLISH_NAVIGATION: NavGroupConfig[] = [
   {
     items: [
       { name: 'Home', path: '/app/english', icon: Home, exact: true },
+      { name: 'Daily 15', path: '/app/english/daily', icon: Sparkles },
     ],
   },
   {
     label: 'COURSE',
     items: [
       { name: 'Course', path: '/app/english/course', icon: GraduationCap },
-      { name: 'Practice', path: '/app/english/practice', icon: Zap },
-      { name: 'Grammar Reference', path: '/app/english/grammar', icon: BookOpen },
-      { name: 'Reading & Listening', path: '/app/english/skills', icon: Headphones },
+      { name: 'Practice Hub', path: '/app/english/practice', icon: Zap },
+      { name: 'Reading Library', path: '/app/english/reading', icon: BookOpen },
+      { name: 'Listening Studio', path: '/app/english/listening', icon: Headphones },
       { name: 'Speaking & Pronunciation', path: '/app/english/speaking', icon: Mic },
+      { name: 'Writing Studio', path: '/app/english/writing', icon: PenTool },
+      { name: 'Grammar Reference', path: '/app/english/grammar', icon: Layers },
     ],
   },
   {
@@ -321,7 +324,9 @@ export const ENGLISH_NAVIGATION: NavGroupConfig[] = [
   {
     label: 'PROGRESS',
     items: [
-      { name: 'Progress', path: '/app/progress', icon: BarChart3 },
+      { name: 'Course Progress', path: '/app/english/progress', icon: BarChart3 },
+      { name: 'Study Plan', path: '/app/english/plan', icon: Compass },
+      { name: 'Unified Progress', path: '/app/progress', icon: Layers },
     ],
   },
   {
@@ -389,6 +394,8 @@ export function getPageTitle(pathname: string): { title: string; category?: stri
   if (pathname.includes('/english/placement')) return { title: 'Placement Assessment', category: 'English Course' };
   if (pathname.includes('/english/course/lesson')) return { title: 'Lesson Runner', category: 'English Course' };
   if (pathname.includes('/english/course')) return { title: 'Curriculum & Units', category: 'English Course' };
+  if (pathname.includes('/english/progress')) return { title: 'English Course Progress', category: 'English Course' };
+  if (pathname.includes('/english/plan')) return { title: 'English Study Plan', category: 'English Course' };
   if (pathname.includes('/english/practice')) return { title: 'Practice Arena', category: 'English Course' };
   if (pathname.includes('/english/grammar')) return { title: 'Grammar Reference', category: 'English Course' };
   if (pathname.includes('/english/skills')) return { title: 'Reading & Listening', category: 'English Course' };

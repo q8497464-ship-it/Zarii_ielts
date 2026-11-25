@@ -1,0 +1,629 @@
+{
+  "id": "eng-a1-u5-l2",
+  "level": "A1",
+  "unit": "unit-5",
+  "order": 2,
+  "title": "Some and Any in Food Contexts",
+  "description": "Master the rules of 'some' and 'any' across affirmative, negative, questions, and polite offers.",
+  "objectives": [
+    "Use 'some' in affirmative statements with plural countable and uncountable nouns",
+    "Use 'any' in negative statements and general questions",
+    "Apply the crucial exception: use 'some' in polite offers and requests (Would you like some tea?)"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [
+    "eng-a1-u5-l1"
+  ],
+  "skillTags": [
+    "quantifiers",
+    "some-any",
+    "grammar-basics",
+    "food"
+  ],
+  "vocabularyList": [
+    {
+      "word": "butter",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆbÊŒtÉ™r/",
+      "definition": "A pale yellow fatty substance made by churning cream.",
+      "urduMeaning": "Ù…Ú©Ú¾Ù†",
+      "exampleSentence": "There is some fresh butter in the fridge."
+    },
+    {
+      "word": "juice",
+      "partOfSpeech": "noun",
+      "phonetic": "/dÊ’uË s/",
+      "definition": "The liquid part that can be extracted from plant or animal tissue, especially fruit.",
+      "urduMeaning": "Ø¬ÙˆØ³ / Ø¹Ø±Ù‚",
+      "exampleSentence": "Do you have any fresh orange juice?"
+    },
+    {
+      "word": "fruit",
+      "partOfSpeech": "noun",
+      "phonetic": "/fruË t/",
+      "definition": "The sweet and fleshy product of a tree or other plant containing seed.",
+      "urduMeaning": "Ù¾Ú¾Ù„",
+      "exampleSentence": "We eat some fresh fruit after lunch."
+    },
+    {
+      "word": "vegetable",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆvedÊ’tÉ™bl/",
+      "definition": "A plant or part of a plant used as food, typically as an accompaniment to meat or fish.",
+      "urduMeaning": "Ø³Ø¨Ø²ÛŒ",
+      "exampleSentence": "There are some green vegetables in the basket."
+    },
+    {
+      "word": "meat",
+      "partOfSpeech": "noun",
+      "phonetic": "/miË t/",
+      "definition": "The flesh of an animal as food.",
+      "urduMeaning": "Ú¯ÙˆØ´Øª",
+      "exampleSentence": "He does not eat any red meat."
+    },
+    {
+      "word": "chicken",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆtÊƒÉªkÉªn/",
+      "definition": "A domestic fowl kept for its eggs or meat.",
+      "urduMeaning": "Ù…Ø±ØºÛŒ",
+      "exampleSentence": "We ordered some chicken biryani for dinner."
+    },
+    {
+      "word": "soup",
+      "partOfSpeech": "noun",
+      "phonetic": "/suË p/",
+      "definition": "A liquid dish, typically made by boiling meat, fish, or vegetables in stock or water.",
+      "urduMeaning": "Ø³ÙˆÙ¾ / ÛŒØ®Ù†ÛŒ",
+      "exampleSentence": "Would you like some hot chicken soup?"
+    },
+    {
+      "word": "salad",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆsÃ¦lÉ™d/",
+      "definition": "A cold dish of various raw or cooked vegetables.",
+      "urduMeaning": "Ø³Ù„Ø§Ø¯",
+      "exampleSentence": "She prepared some fresh cucumber salad."
+    },
+    {
+      "word": "salt",
+      "partOfSpeech": "noun",
+      "phonetic": "/sÉ”Ë lt/",
+      "definition": "A white crystalline substance, sodium chloride, used for seasoning food.",
+      "urduMeaning": "Ù†Ù…Ú©",
+      "exampleSentence": "Is there any salt on the dining table?"
+    },
+    {
+      "word": "pepper",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆpepÉ™r/",
+      "definition": "A pungent hot-tasting powder prepared from dried peppercorns.",
+      "urduMeaning": "Ú©Ø§Ù„ÛŒ Ù…Ø±Ú†",
+      "exampleSentence": "Add some black pepper to the soup."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u5-l2-1",
+      "type": "explain",
+      "title": "The Standard Rules for Some & Any",
+      "content": "Both **some** and **any** mean an unspecified amount or number. They are used with **plural countable nouns** (*apples*) and **uncountable nouns** (*milk*).\n\n### 1. Affirmative Statements: Use SOME\n- *There is **some** milk in the fridge.*\n- *We have **some** fresh apples on the table.*\n\n### 2. Negative Statements: Use ANY\n- *There isn't **any** milk left.*\n- *We don't have **any** apples today.*\n\n### 3. General Questions: Use ANY\n- *Is there **any** tea in the pot?*\n- *Do you have **any** brothers?*\n\n### 4. The Polite Offer / Request Exception: Use SOME\nWhen offering something politely or asking for something where you expect a 'yes', use **SOME**, not any:\n- *Would you like **some** tea?* (Offer)\n- *Can I have **some** water, please?* (Request)",
+      "tables": [
+        {
+          "title": "Some vs. Any Decision Matrix",
+          "headers": [
+            "Sentence Type",
+            "Word to Use",
+            "Example with Uncountable",
+            "Example with Plural Countable"
+          ],
+          "rows": [
+            [
+              "Affirmative (+)",
+              "SOME",
+              "There is some butter.",
+              "There are some oranges."
+            ],
+            [
+              "Negative (-)",
+              "ANY",
+              "There isn't any butter.",
+              "There aren't any oranges."
+            ],
+            [
+              "General Question (?)",
+              "ANY",
+              "Is there any butter?",
+              "Are there any oranges?"
+            ],
+            [
+              "Polite Offer / Request",
+              "SOME",
+              "Would you like some tea?",
+              "Can I take some apples?"
+            ]
+          ]
+        },
+        {
+          "title": "Summary of Troublemakers",
+          "headers": [
+            "Incorrect Utterance",
+            "Why It Fails",
+            "Correct Natural English"
+          ],
+          "rows": [
+            [
+              "I don't have some money.",
+              "Negatives require 'any'.",
+              "I don't have any money."
+            ],
+            [
+              "Would you like any tea?",
+              "Offers require 'some' for hospitality.",
+              "Would you like some tea?"
+            ],
+            [
+              "Do you have some salt?",
+              "General questions use 'any'.",
+              "Do you have any salt?"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Hospitality Rule",
+          "text": "When serving guests, always say: **Would you like some tea / some biscuits?** Using 'any' in an offer can sound cold or skeptical."
+        },
+        {
+          "type": "warning",
+          "title": "Never with Singular Countable Nouns",
+          "text": "Do NOT use some/any for one countable item. Say **an apple**, NOT *'some apple'*."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l2-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "There is some fresh butter on the kitchen counter.",
+          "phonetic": "/Ã°eÉ™r Éªz sÊŒm freÊƒ ËˆbÊŒtÉ™r É’n Ã°É™ ËˆkÉªtÊƒÉªn ËˆkaÊŠntÉ™r/",
+          "urdu": "Ø¨Ø§ÙˆØ±Ú†ÛŒ Ø®Ø§Ù†Û’ Ú©Û’ Ú©Ø§Ø¤Ù†Ù¹Ø± Ù¾Ø± Ú©Ú†ÚÚ¾ ØªØ§Ø²Û  Ù…Ú©Ú¾Ù† Û Û’Û”",
+          "audioText": "There is some fresh butter on the kitchen counter."
+        },
+        {
+          "english": "We don't have any milk left for tomorrow's breakfast.",
+          "phonetic": "/wiË  dÉ™ÊŠnt hÃ¦v Ëˆeni mÉªlk left fÉ”Ë r tÉ™ËˆmÉ’rÉ™ÊŠz ËˆbrekfÉ™st/",
+          "urdu": "Ú©Ù„ Ú©Û’ Ù†Ø§Ø´ØªÛ’ Ú©Û’ Ù„ÛŒÛ’ Û Ù…Ø§Ø±Û’ Ù¾Ø§Ø³ Ø¨Ø§Ù„Ú©Ù„ Ø¯ÙˆØ¯Ú¾ Ù†Û ÛŒÚº Ø¨Ú†Ø§Û”",
+          "audioText": "We don't have any milk left for tomorrow's breakfast."
+        },
+        {
+          "english": "Do you have any questions about this grammar lesson?",
+          "phonetic": "/duË  juË  hÃ¦v Ëˆeni ËˆkwestÊƒÉ™nz É™ËˆbaÊŠt Ã°Éªs ËˆÉ¡rÃ¦mÉ™r Ëˆlesn/",
+          "urdu": "Ú©ÛŒØ§ Ø§Ø³ Ú¯Ø±Ø§Ù…Ø± Ú©Û’ Ø³Ø¨Ù‚ Ú©Û’ Ø¨Ø§Ø±Û’ Ù…ÛŒÚº Ø¢Ù¾ Ú©Ø§ Ú©ÙˆØ¦ÛŒ Ø³ÙˆØ§Ù„ Û Û’ØŸ",
+          "audioText": "Do you have any questions about this grammar lesson?"
+        },
+        {
+          "english": "Would you like some hot green tea after dinner?",
+          "phonetic": "/wÊŠd juË  laÉªk sÊŒm hÉ’t É¡riË n tiË  ËˆÉ‘Ë ftÉ™r ËˆdÉªnÉ™r/",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ø±Ø§Øª Ú©Û’ Ú©Ú¾Ø§Ù†Û’ Ú©Û’ Ø¨Ø¹Ø¯ Ú©Ú†Ú¾ Ú¯Ø±Ù… Ø³Ø¨Ø² Ú†Ø§Ø¦Û’ Ù¾Ø³Ù†Ø¯ Ú©Ø±ÛŒÚº Ú¯Û’ØŸ",
+          "audioText": "Would you like some hot green tea after dinner?"
+        },
+        {
+          "english": "Can I have some more water, please?",
+          "phonetic": "/kÃ¦n aÉª hÃ¦v sÊŒm mÉ”Ë r ËˆwÉ”Ë tÉ™r pliË z/",
+          "urdu": "Ú©ÛŒØ§ Ù…Ø¬Ú¾Û’ ØªÚ¾ÙˆÚ‘Ø§ Ø§ÙˆØ± Ù¾Ø§Ù†ÛŒ Ù…Ù„ Ø³Ú©ØªØ§ Û Û’ØŒ Ø¨Ø±Ø§Û  Ú©Ø±Ù…ØŸ",
+          "audioText": "Can I have some more water, please?"
+        },
+        {
+          "english": "There aren't any eggs in the refrigerator.",
+          "phonetic": "/Ã°eÉ™r É‘Ë nt Ëˆeni eÉ¡z Éªn Ã°É™ rÉªËˆfrÉªdÊ’É™reÉªtÉ™r/",
+          "urdu": "Ù Ø±Ø¬ Ù…ÛŒÚº Ø¨Ø§Ù„Ú©Ù„ Ø§Ù†ÚˆÛ’ Ù†Û ÛŒÚº Û ÛŒÚºÛ”",
+          "audioText": "There aren't any eggs in the refrigerator."
+        },
+        {
+          "english": "She prepared some fresh cucumber salad for the guests.",
+          "phonetic": "/ÊƒiË  prÉªËˆpeÉ™d sÊŒm freÊƒ ËˆkjuË kÊŒmbÉ™r ËˆsÃ¦lÉ™d fÉ”Ë r Ã°É™ É¡ests/",
+          "urdu": "Ø§Ø³ Ù†Û’ Ù…Û Ù…Ø§Ù†ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ Ú©Ú†Ú¾ ØªØ§Ø²Û  Ú©Ú¾ÛŒØ±Û’ Ú©Ø§ Ø³Ù„Ø§Ø¯ ØªÛŒØ§Ø± Ú©ÛŒØ§Û”",
+          "audioText": "She prepared some fresh cucumber salad for the guests."
+        },
+        {
+          "english": "Is there any salt on the dining table?",
+          "phonetic": "/Éªz Ã°eÉ™r Ëˆeni sÉ”Ë lt É’n Ã°É™ ËˆdaÉªnÉªÅ‹ ËˆteÉªbl/",
+          "urdu": "Ú©ÛŒØ§ Ú©Ú¾Ø§Ù†Û’ Ú©ÛŒ Ù…ÛŒØ² Ù¾Ø± Ú©Ú†Ú¾ Ù†Ù…Ú© Ù…ÙˆØ¬ÙˆØ¯ Û Û’ØŸ",
+          "audioText": "Is there any salt on the dining table?"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l2-3",
+      "type": "dialogue",
+      "title": "Offering Refreshments to Guests",
+      "dialogue": [
+        {
+          "speaker": "Host",
+          "avatar": "H",
+          "english": "Welcome, brother Tariq! Would you like some tea or cold juice?",
+          "urdu": "Ø®ÙˆØ´ Ø¢Ù…Ø¯ÛŒØ¯ Ø¨ÚÚ¾Ø§Ø¦ÛŒ Ø·Ø§Ø±Ù‚! Ú©ÛŒØ§ Ø¢Ù¾ Ú©Ú†Ú¾ Ú†Ø§Ø¦Û’ ÛŒØ§ Ù¹Ú¾Ù†ÚˆØ§ Ø¬ÙˆØ³ Ù¾Ø³Ù†Ø¯ Ú©Ø±ÛŒÚº Ú¯Û’ØŸ",
+          "audioText": "Welcome, brother Tariq! Would you like some tea or cold juice?"
+        },
+        {
+          "speaker": "Guest",
+          "avatar": "G",
+          "english": "Hot tea would be wonderful, thank you very much.",
+          "urdu": "Ú¯Ø±Ù… Ú†Ø§Ø¦Û’ Ø¨Û Øª Ø§Ú†Ú¾ÛŒ Ø±Û Û’ Ú¯ÛŒØŒ Ø¢Ù¾ Ú©Ø§ Ø¨Û Øª Ø´Ú©Ø±ÛŒÛ Û”",
+          "audioText": "Hot tea would be wonderful, thank you very much."
+        },
+        {
+          "speaker": "Host",
+          "avatar": "H",
+          "english": "Do you take any sugar in your tea?",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ú†Ø§Ø¦Û’ Ù…ÛŒÚº Ú†ÛŒÙ†ÛŒ Ù„ÛŒØªÛ’ Û ÛŒÚºØŸ",
+          "audioText": "Do you take any sugar in your tea?"
+        },
+        {
+          "speaker": "Guest",
+          "avatar": "G",
+          "english": "Just one spoon of sugar, please. And could I have some water too?",
+          "urdu": "Ø¨Ø±Ø§Û  Ú©Ø±Ù… ØµØ±Ù  Ø§ÛŒÚ© Ú†Ù…Ú† Ú†ÛŒÙ†ÛŒÛ” Ø§ÙˆØ± Ú©ÛŒØ§ Ù…Ø¬Ú¾Û’ ØªÚ¾ÙˆÚ‘Ø§ Ù¾Ø§Ù†ÛŒ Ø¨Ú¾ÛŒ Ù…Ù„ Ø³Ú©ØªØ§ Û Û’ØŸ",
+          "audioText": "Just one spoon of sugar, please. And could I have some water too?"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l2-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u5-l2-1",
+          "type": "mcq",
+          "skillTag": "some-any",
+          "prompt": "Choose the correct word: 'We don't have _____ bread left in the kitchen.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "some"
+            },
+            {
+              "id": "opt-2",
+              "text": "a"
+            },
+            {
+              "id": "opt-3",
+              "text": "an"
+            },
+            {
+              "id": "opt-4",
+              "text": "any"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Negative statements take 'any': 'We don't have any bread'.",
+          "urduExplanation": "Ù…Ù†Ù ÛŒ Ø¬Ù…Ù„ÙˆÚº Ù…ÛŒÚº 'any' Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l2-2",
+          "type": "mcq",
+          "skillTag": "some-any",
+          "prompt": "Choose the correct word for a polite offer: 'Would you like _____ tea?'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "some"
+            },
+            {
+              "id": "opt-2",
+              "text": "any"
+            },
+            {
+              "id": "opt-3",
+              "text": "a"
+            },
+            {
+              "id": "opt-4",
+              "text": "no"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Polite offers use 'some' for hospitality: 'Would you like some tea?'.",
+          "urduExplanation": "Ø§Ø®Ù„Ø§Ù‚ÛŒ Ù¾ÛŒØ´Ú©Ø´ Ù…ÛŒÚº 'some' Ø¢ØªØ§ Û Û’: 'Would you like some tea?'Û”"
+        },
+        {
+          "id": "ex-a1-u5-l2-3",
+          "type": "fill_blank",
+          "skillTag": "some-any",
+          "prompt": "Fill in 'some' or 'any': 'There is _____ fresh butter on the plate.'",
+          "correctAnswer": "some",
+          "explanation": "Affirmative statements use 'some'.",
+          "urduExplanation": "Ù…Ø«Ø¨Øª Ø¬Ù…Ù„Û’ Ù…ÛŒÚº 'some' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l2-4",
+          "type": "fill_blank",
+          "skillTag": "some-any",
+          "prompt": "Fill in 'some' or 'any': 'Are there _____ eggs in the basket?'",
+          "correctAnswer": "any",
+          "explanation": "General questions use 'any'.",
+          "urduExplanation": "Ø¹Ø§Ù… Ø³ÙˆØ§Ù„ Ù…ÛŒÚº 'any' Ù„Ú¯Ø§ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l2-5",
+          "type": "order_sentence",
+          "skillTag": "some-any",
+          "prompt": "Rearrange the words to make a polite offer:",
+          "sentenceTokens": [
+            "Would",
+            "you",
+            "like",
+            "some",
+            "hot",
+            "coffee",
+            "?"
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Polite offer formula: Would you like + some + hot coffee?",
+          "urduExplanation": "Would you like some hot coffee?"
+        },
+        {
+          "id": "ex-a1-u5-l2-6",
+          "type": "order_sentence",
+          "skillTag": "some-any",
+          "prompt": "Rearrange the words to form a correct negative sentence:",
+          "sentenceTokens": [
+            "There",
+            "isn't",
+            "any",
+            "milk",
+            "in",
+            "the",
+            "jug",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "There + isn't + any + milk + in the jug.",
+          "urduExplanation": "There isn't any milk in the jug."
+        },
+        {
+          "id": "ex-a1-u5-l2-7",
+          "type": "match_pairs",
+          "skillTag": "some-any",
+          "prompt": "Match the sentence context to whether it typically uses 'some' or 'any':",
+          "pairs": [
+            {
+              "left": "Affirmative statement",
+              "right": "some"
+            },
+            {
+              "left": "Negative statement",
+              "right": "any"
+            },
+            {
+              "left": "Polite tea offer",
+              "right": "some"
+            },
+            {
+              "left": "General inquiry question",
+              "right": "any"
+            }
+          ],
+          "explanation": "Standard rules matched accurately.",
+          "urduExplanation": "Ø¬Ù…Ù„Û’ Ú©ÛŒ Ù‚Ø³Ù… Ú©Ùˆ some ÛŒØ§ any Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l2-8",
+          "type": "error_correction",
+          "skillTag": "some-any",
+          "prompt": "Find and correct the mistake: 'I don't have some money today.'",
+          "correctAnswer": "I don't have any money today.",
+          "explanation": "Negatives require 'any': 'I don't have any money'.",
+          "urduExplanation": "Ù…Ù†Ù ÛŒ Ù…ÛŒÚº 'any' Ø¢Ø¦Û’ Ú¯Ø§: 'I don't have any money'Û”"
+        },
+        {
+          "id": "ex-a1-u5-l2-9",
+          "type": "error_correction",
+          "skillTag": "some-any",
+          "prompt": "Find and correct the mistake: 'Would you like any cake?'",
+          "correctAnswer": "Would you like some cake?",
+          "explanation": "Polite offers of hospitality take 'some': 'Would you like some cake?'.",
+          "urduExplanation": "Ù¾ÛŒØ´Ú©Ø´ Ú©Û’ Ù„ÛŒÛ’ 'some cake' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l2-10",
+          "type": "true_false",
+          "skillTag": "some-any",
+          "prompt": "'Can I have some water, please?' is correct because it is a polite request. (True or False)",
+          "correctAnswer": "True",
+          "explanation": "True. Polite requests expecting an affirmative response take 'some'.",
+          "urduExplanation": "Ø¯Ø±Ø³ØªÛ” Ù…ÙˆØ¯Ø¨Ø§Ù†Û  Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù…ÛŒÚº 'some' Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l2-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u5-l2-1",
+          "type": "mcq",
+          "skillTag": "some-any",
+          "prompt": "Complete the sentence: 'Are there _____ clean glasses in the cupboard?'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "some"
+            },
+            {
+              "id": "opt-2",
+              "text": "a"
+            },
+            {
+              "id": "opt-3",
+              "text": "much"
+            },
+            {
+              "id": "opt-4",
+              "text": "any"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "General questions use 'any': 'Are there any clean glasses?'.",
+          "urduExplanation": "Ø¹Ø§Ù… Ø³ÙˆØ§Ù„ Ù…ÛŒÚº 'any' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l2-2",
+          "type": "mcq",
+          "skillTag": "some-any",
+          "prompt": "Why do we say 'Would you like some tea?' instead of 'any tea'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Because tea is uncountable"
+            },
+            {
+              "id": "opt-2",
+              "text": "Because it is a polite offer of hospitality"
+            },
+            {
+              "id": "opt-3",
+              "text": "Because any is never used in questions"
+            },
+            {
+              "id": "opt-4",
+              "text": "Because some is always for liquids"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "In polite offers and requests, English speakers use 'some'.",
+          "urduExplanation": "Ú†ÙˆÙ†Ú©Û  ÛŒÛ  Ø§Ø®Ù„Ø§Ù‚ÛŒ Ù¾ÛŒØ´Ú©Ø´ Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'some' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l2-3",
+          "type": "mcq",
+          "skillTag": "some-any",
+          "prompt": "Select the sentence with INCORRECT usage:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "She has some fresh apples."
+            },
+            {
+              "id": "opt-2",
+              "text": "We don't have some sugar."
+            },
+            {
+              "id": "opt-3",
+              "text": "Is there any juice left?"
+            },
+            {
+              "id": "opt-4",
+              "text": "Can I have some sugar?"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'We don't have some sugar' is incorrect; negatives take 'any sugar'.",
+          "urduExplanation": "Ù…Ù†Ù ÛŒ Ù…ÛŒÚº 'any sugar' Û ÙˆÙ†Ø§ Ú†Ø§Û ÛŒÛ’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l2-4",
+          "type": "mcq",
+          "skillTag": "some-any",
+          "prompt": "Complete: 'There is _____ delicious biryani left in the pot.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "any"
+            },
+            {
+              "id": "opt-2",
+              "text": "an"
+            },
+            {
+              "id": "opt-3",
+              "text": "some"
+            },
+            {
+              "id": "opt-4",
+              "text": "many"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Affirmative statements take 'some'.",
+          "urduExplanation": "Ù…Ø«Ø¨Øª Ø¬Ù…Ù„Û’ Ù…ÛŒÚº 'some' ØµØ­ÛŒØ­ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l2-5",
+          "type": "mcq",
+          "skillTag": "some-any",
+          "prompt": "Which pair shows statement and negative correctly using some and any?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "I have some money -> I don't have some money"
+            },
+            {
+              "id": "opt-2",
+              "text": "I have any money -> I don't have any money"
+            },
+            {
+              "id": "opt-3",
+              "text": "I have some money -> I don't have any money"
+            },
+            {
+              "id": "opt-4",
+              "text": "I have some money -> I don't have none money"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Affirmative 'some' switches to 'any' in negative.",
+          "urduExplanation": "Ù…Ø«Ø¨Øª (some) Ù…Ù†Ù ÛŒ Ù…ÛŒÚº (any) Ø¨Ù† Ø¬Ø§ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l2-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Some and Any takeaways:",
+      "summaryPoints": [
+        "Use 'some' in positive statements (There is some milk).",
+        "Use 'any' in negative statements (There isn't any milk).",
+        "Use 'any' in general questions (Is there any milk?).",
+        "EXCEPTION: Use 'some' for polite offers (Would you like some tea?) and requests (Can I have some water?).",
+        "Both words work with uncountable nouns and plural countable nouns."
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l2-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… **'Ú©Ú†Ú¾'** ÛŒØ§ **'Ú©ÙˆØ¦ÛŒ'** Ø¯ÙˆÙ†ÙˆÚº Ø·Ø±Ø­ Ú©Û’ Ø¬Ù…Ù„ÙˆÚº Ù…ÛŒÚº Ø¨ÙˆÙ„ Ø¯ÛŒØªÛ’ Û ÛŒÚº:\n- 'Ù…ÛŒØ±Û’ Ù¾Ø§Ø³ Ú©Ú†Ú¾ Ù¾ÛŒØ³Û’ Û ÛŒÚº'\n- 'Ù…ÛŒØ±Û’ Ù¾Ø§Ø³ Ú©ÙˆØ¦ÛŒ Ù¾ÛŒØ³Û  Ù†Û ÛŒÚº Û Û’'\n\nØ§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ù‚Ø§Ø¹Ø¯Û  Ø¨Û Øª ÙˆØ§Ø¶Ø­ Û Û’:\n- Ù…Ø«Ø¨Øª (+) Ø¬Ù…Ù„Û’ Ù…ÛŒÚº: **Some** (I have some money)\n- Ù…Ù†Ù ÛŒ (-) Ø¬Ù…Ù„Û’ Ù…ÛŒÚº: **Any** (I don't have any money)\n- Ø¹Ø§Ù… Ø³ÙˆØ§Ù„ (?) Ù…ÛŒÚº: **Any** (Do you have any money?)\n\n**Ø§Û Ù… Ø§Ø³ØªØ«Ù†ÛŒÙ°:** Ø¬Ø¨ Ù…Û Ù…Ø§Ù† Ú©Ùˆ Ú†Ø§Ø¦Û’ ÛŒØ§ Ú©Ú¾Ø§Ù†Û’ Ú©ÛŒ Ù¾ÛŒØ´Ú©Ø´ Ú©Ø±ÛŒÚº ØªÙˆ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø¨Ú¾ÛŒ Ø§Ø¯Ø¨ Ú©Û’ Ù„Ø­Ø§Ø¸ Ø³Û’ **Some** Ù„Ú¯ØªØ§ Û Û’: **'Would you like some tea?'** (ÛŒÛ Ø§Úº 'any' Ù†Û ÛŒÚº Ø¨ÙˆÙ„Ù†Ø§)Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

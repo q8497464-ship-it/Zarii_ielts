@@ -1,0 +1,628 @@
+{
+  "id": "eng-a1-u6-l4",
+  "level": "A1",
+  "unit": "unit-6",
+  "order": 4,
+  "title": "Prepositions of Time: In, On, At",
+  "description": "Master the pyramid of time prepositions: AT (specific), ON (days/dates), and IN (long periods).",
+  "objectives": [
+    "Apply 'AT' for precise clock times, night, and specific points in time",
+    "Apply 'ON' for days of the week, dates, and specific day parts (on Friday night)",
+    "Apply 'IN' for months, years, seasons, centuries, and parts of the day (in the morning)"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [
+    "eng-a1-u6-l3"
+  ],
+  "skillTags": [
+    "prepositions-time",
+    "grammar",
+    "time-expressions",
+    "rules"
+  ],
+  "vocabularyList": [
+    {
+      "word": "weekend",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËŒwiË kËˆend/",
+      "definition": "Saturday and Sunday, or the period from Friday evening to Sunday night.",
+      "urduMeaning": "Û Ù ØªÛ’ Ú©Ø§ Ø¢Ø®Ø± (Û Ù ØªÛ  Ùˆ Ø§ØªÙˆØ§Ø±)",
+      "exampleSentence": "We relax with friends at the weekend."
+    },
+    {
+      "word": "holiday",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆhÉ’lÉ™deÉª/",
+      "definition": "An extended period of leisure and recreation, especially away from home.",
+      "urduMeaning": "Ú†ÚÚ¾Ù¹ÛŒ / ØªØ¹Ø·ÛŒÙ„",
+      "exampleSentence": "We are going to Swat for our summer holiday."
+    },
+    {
+      "word": "schedule",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆÊƒedjuË l/",
+      "definition": "A plan for carrying out a process or procedure, giving lists of intended events and times.",
+      "urduMeaning": "Ø§ÙˆÙ‚Ø§Øª Ú©Ø§ Ù¹Ø§Ø¦Ù… Ù¹ÛŒØ¨Ù„",
+      "exampleSentence": "Check the train schedule before leaving."
+    },
+    {
+      "word": "future",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆfjuË tÊƒÉ™r/",
+      "definition": "A period of time following the moment of speaking or writing; time regarded as still to come.",
+      "urduMeaning": "Ù…Ø³ØªÙ‚Ø¨Ù„",
+      "exampleSentence": "She plans to study abroad in the future."
+    },
+    {
+      "word": "past",
+      "partOfSpeech": "noun",
+      "phonetic": "/pÉ‘Ë st/",
+      "definition": "The time or a period of time before the moment of speaking or writing.",
+      "urduMeaning": "Ù…Ø§Ø¶ÛŒ",
+      "exampleSentence": "Lahore has a rich historical past."
+    },
+    {
+      "word": "moment",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆmÉ™ÊŠmÉ™nt/",
+      "definition": "A very brief period of time.",
+      "urduMeaning": "Ù„Ù…Ø­Û  / Ù¾Ù„",
+      "exampleSentence": "Please wait for me at this moment."
+    },
+    {
+      "word": "season",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆsiË zn/",
+      "definition": "Each of the four divisions of the year (spring, summer, autumn, and winter).",
+      "urduMeaning": "Ù…ÙˆØ³Ù…",
+      "exampleSentence": "Mangoes are in season during summer."
+    },
+    {
+      "word": "calendar",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆkÃ¦lÉªndÉ™r/",
+      "definition": "A chart or series of pages showing the days, weeks, and months of a particular year.",
+      "urduMeaning": "Ú©ÛŒÙ„Ù†ÚˆØ± / Ø¬Ù†ØªØ±ÛŒ",
+      "exampleSentence": "Mark your exam dates on the calendar."
+    },
+    {
+      "word": "arrive",
+      "partOfSpeech": "verb",
+      "phonetic": "/É™ËˆraÉªv/",
+      "definition": "To reach a destination at a given time.",
+      "urduMeaning": "Ù¾Û Ù†Ú†Ù†Ø§",
+      "exampleSentence": "The express train will arrive at 6:00."
+    },
+    {
+      "word": "begin",
+      "partOfSpeech": "verb",
+      "phonetic": "/bÉªËˆÉ¡Éªn/",
+      "definition": "To perform or undergo the first part of an action or activity.",
+      "urduMeaning": "Ø´Ø±ÙˆØ¹ Û ÙˆÙ†Ø§",
+      "exampleSentence": "Our lectures begin in September."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u6-l4-1",
+      "type": "explain",
+      "title": "The In / On / At Pyramid of Time",
+      "content": "Think of time prepositions as an **inverted pyramid** that moves from the broadest, longest time periods down to the most specific points in time:\n\n### 1. IN (Broad / Long Periods)\n- **Parts of the day**: *in the morning*, *in the afternoon*, *in the evening*.\n- **Months**: *in July*, *in December*.\n- **Seasons**: *in summer*, *in winter*.\n- **Years**: *in 2026*, *in 1947*.\n- **Centuries**: *in the 21st century*.\n\n### 2. ON (Days & Dates)\n- **Days of the week**: *on Monday*, *on Friday*.\n- **Specific dates**: *on the 14th of August*, *on May 5th*.\n- **Day + part of day**: *on Friday morning*, *on Sunday evening*.\n- **Holidays with 'Day'**: *on Independence Day*, *on Eid day*.\n\n### 3. AT (Specific Precise Points)\n- **Exact clock times**: *at 5:00 PM*, *at half past two*.\n- **Fixed points**: *at noon*, *at midnight*, *at sunset*.\n- **Special expressions**: *at night*, *at the weekend* (UK).",
+      "tables": [
+        {
+          "title": "Pyramid of Time Comparison",
+          "headers": [
+            "Preposition",
+            "Scope",
+            "Time Units",
+            "Examples"
+          ],
+          "rows": [
+            [
+              "IN",
+              "General & Long",
+              "Months, Years, Seasons, Centuries, Parts of day",
+              "in July, in 2026, in winter, in the morning"
+            ],
+            [
+              "ON",
+              "Specific Days",
+              "Days of week, Specific dates, Day+part",
+              "on Monday, on 14th August, on Sunday night"
+            ],
+            [
+              "AT",
+              "Precise Points",
+              "Exact clock time, Noon, Midnight, Night",
+              "at 7:30, at noon, at midnight, at night"
+            ]
+          ]
+        },
+        {
+          "title": "Common Mistakes & Traps",
+          "headers": [
+            "Incorrect Phrasing",
+            "Why It Fails",
+            "Correct English Phrasing"
+          ],
+          "rows": [
+            [
+              "in Monday",
+              "Days take 'on'.",
+              "on Monday"
+            ],
+            [
+              "on July",
+              "Months take 'in'.",
+              "in July"
+            ],
+            [
+              "in night",
+              "'Night' is an idiomatic exception taking 'at'.",
+              "at night"
+            ],
+            [
+              "at 2026",
+              "Years take 'in'.",
+              "in 2026"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "warning",
+          "title": "The Day + Part of Day Exception",
+          "text": "Even though we say *in the morning*, if you add a specific day, **ON wins**: say **on Monday morning** (never *in Monday morning*)!"
+        },
+        {
+          "type": "tip",
+          "title": "Weekend: At vs. On",
+          "text": "In British English, say **at the weekend**. In American English, say **on the weekend**. Both are understood globally."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l4-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "Our morning class starts at nine o'clock sharp.",
+          "phonetic": "/ËˆaÊŠÉ™r ËˆmÉ”Ë rnÉªÅ‹ klÉ‘Ë s stÉ‘Ë ts Ã¦t naÉªn É™ËˆklÉ’k ÊƒÉ‘Ë p/",
+          "urdu": "Û Ù…Ø§Ø±ÛŒ ØµØ¨Ø­ Ú©ÛŒ Ú©Ù„Ø§Ø³ Ù¾ÙˆØ±Û’ Ù†Ùˆ Ø¨Ø¬Û’ Ø´Ø±ÙˆØ¹ Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "Our morning class starts at nine o'clock sharp."
+        },
+        {
+          "english": "We have an important project presentation on Friday morning.",
+          "phonetic": "/wiË  hÃ¦v É™n ÉªmËˆpÉ”Ë tnt ËˆprÉ’dÊ’ekt ËŒpreznËˆteÉªÊƒn É’n ËˆfraÉªdeÉª ËˆmÉ”Ë rnÉªÅ‹/",
+          "urdu": "Ø¬Ù…Ø¹Û’ Ú©ÛŒ ØµØ¨Ø­ Û Ù…Ø§Ø±Ø§ Ø§ÛŒÚ© Ø§Û Ù… Ù¾Ø±ÙˆØ¬ÛŒÚ©Ù¹ Ù¾Ø±ÛŒØ²Ù†Ù¹ÛŒØ´Ù† Û Û’Û”",
+          "audioText": "We have an important project presentation on Friday morning."
+        },
+        {
+          "english": "Pakistan celebrates its Independence Day on the fourteenth of August.",
+          "phonetic": "/ËŒpÉ‘Ë kÉªËˆstÉ‘Ë n ËˆselÉªbreÉªts Éªts ËŒÉªndÉªËˆpendÉ™ns deÉª É’n Ã°É™ ËŒfÉ”Ë ËˆtiË nÎ¸ É™v ËˆÉ”Ë É¡É™st/",
+          "urdu": "Ù¾Ø§Ú©Ø³ØªØ§Ù† Ø§Ù¾Ù†Ø§ ÛŒÙˆÙ…Ù  Ø¢Ø²Ø§Ø¯ÛŒ 14 Ø§Ú¯Ø³Øª Ú©Ùˆ Ù…Ù†Ø§ØªØ§ Û Û’Û”",
+          "audioText": "Pakistan celebrates its Independence Day on the fourteenth of August."
+        },
+        {
+          "english": "It rains heavily in northern areas in July and August.",
+          "phonetic": "/Éªt reÉªnz ËˆhevÉªli Éªn ËˆnÉ”Ë Ã°É™n ËˆeÉ™riÉ™z Éªn dÊ’uË ËˆlaÉª Ã¦nd ËˆÉ”Ë É¡É™st/",
+          "urdu": "Ø¬ÙˆÙ„Ø§Ø¦ÛŒ Ø§ÙˆØ± Ø§Ú¯Ø³Øª Ù…ÛŒÚº Ø´Ù…Ø§Ù„ÛŒ Ø¹Ù„Ø§Ù‚ÙˆÚº Ù…ÛŒÚº Ø¨Ú¾Ø§Ø±ÛŒ Ø¨Ø§Ø±Ø´ Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "It rains heavily in northern areas in July and August."
+        },
+        {
+          "english": "He was born in 2004 during the cold winter season.",
+          "phonetic": "/hiË  wÉ’z bÉ”Ë n Éªn tuË  ËˆÎ¸aÊŠznd Ã¦nd fÉ”Ë  ËˆdjÊŠÉ™rÉªÅ‹ Ã°É™ kÉ™ÊŠld ËˆwÉªntÉ™r ËˆsiË zn/",
+          "urdu": "ÙˆÛ  2004 Ù…ÛŒÚº Ø³Ø±Ø¯ÛŒ Ú©Û’ Ù…ÙˆØ³Ù… Ù…ÛŒÚº Ù¾ÛŒØ¯Ø§ Û ÙˆØ§Û”",
+          "audioText": "He was born in 2004 during the cold winter season."
+        },
+        {
+          "english": "The entire town is silent and peaceful at midnight.",
+          "phonetic": "/Ã°i ÉªnËˆtaÉªÉ™r taÊŠn Éªz ËˆsaÉªlÉ™nt Ã¦nd ËˆpiË sfl Ã¦t ËˆmÉªdnaÉªt/",
+          "urdu": "Ø¢Ø¯Ú¾ÛŒ Ø±Ø§Øª Ú©Ùˆ Ù¾ÙˆØ±Ø§ Ù‚ØµØ¨Û  Ø®Ø§Ù…ÙˆØ´ Ø§ÙˆØ± Ù¾Ø±Ø³Ú©ÙˆÙ† Û ÙˆØªØ§ Û Û’Û”",
+          "audioText": "The entire town is silent and peaceful at midnight."
+        },
+        {
+          "english": "She always drinks a cup of warm herbal tea at night.",
+          "phonetic": "/ÊƒiË  ËˆÉ”Ë lweÉªz drÉªÅ‹ks É™ kÊŒp É™v wÉ”Ë m ËˆhÉœË bl tiË  Ã¦t naÉªt/",
+          "urdu": "ÙˆÛ  Ø±Ø§Øª Ú©Ùˆ Û Ù…ÛŒØ´Û  Ú¯Ø±Ù… Û Ø±Ø¨Ù„ Ú†Ø§Ø¦Û’ Ú©Ø§ Ú©Ù¾ Ù¾ÛŒØªÛŒ Û Û’Û”",
+          "audioText": "She always drinks a cup of warm herbal tea at night."
+        },
+        {
+          "english": "What are your plans for studying at the weekend?",
+          "phonetic": "/wÉ’t É‘Ë r jÉ”Ë r plÃ¦nz fÉ”Ë r ËˆstÊŒdiÉªÅ‹ Ã¦t Ã°É™ ËŒwiË kËˆend/",
+          "urdu": "Û Ù ØªÛ’ Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº Ù¾Ú‘Ú¾Ø§Ø¦ÛŒ Ú©Û’ Ù„ÛŒÛ’ Ø¢Ù¾ Ú©Ø§ Ú©ÛŒØ§ Ù¾Ù„Ø§Ù† Û Û’ØŸ",
+          "audioText": "What are your plans for studying at the weekend?"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l4-3",
+      "type": "dialogue",
+      "title": "Scheduling an Important Interview",
+      "dialogue": [
+        {
+          "speaker": "HR Officer",
+          "avatar": "H",
+          "english": "Can you attend the job interview on Tuesday morning, Tariq?",
+          "urdu": "Ø·Ø§Ø±Ù‚ØŒ Ú©ÛŒØ§ Ø¢Ù¾ Ù…Ù†Ú¯Ù„ Ú©ÛŒ ØµØ¨Ø­ Ù…Ù„Ø§Ø²Ù…Øª Ú©Û’ Ø§Ù†Ù¹Ø±ÙˆÛŒÙˆ Ú©Û’ Ù„ÛŒÛ’ Ø¢ Ø³Ú©ØªÛ’ Û ÛŒÚºØŸ",
+          "audioText": "Can you attend the job interview on Tuesday morning, Tariq?"
+        },
+        {
+          "speaker": "Tariq",
+          "avatar": "T",
+          "english": "Yes, certainly. What time should I arrive at the office?",
+          "urdu": "Ø¬ÛŒ Ø¨Ø§Ù„Ú©Ù„Û” Ù…Ø¬Ú¾Û’ Ø¯Ù ØªØ± Ú©Ø³ ÙˆÙ‚Øª Ù¾Û Ù†Ú†Ù†Ø§ Ú†Ø§Û ÛŒÛ’ØŸ",
+          "audioText": "Yes, certainly. What time should I arrive at the office?"
+        },
+        {
+          "speaker": "HR Officer",
+          "avatar": "H",
+          "english": "Please arrive at ten o'clock sharp. We begin promptly in the conference room.",
+          "urdu": "Ø¨Ø±Ø§Û  Ú©Ø±Ù… Ù¾ÙˆØ±Û’ Ø¯Ø³ Ø¨Ø¬Û’ Ù¾Û Ù†Ú†ÛŒÚºÛ” Û Ù… Ú©Ø§Ù†Ù Ø±Ù†Ø³ Ø±ÙˆÙ… Ù…ÛŒÚº Ù ÙˆØ±Ø§Ù‹ Ø´Ø±ÙˆØ¹ Ú©Ø±ÛŒÚº Ú¯Û’Û”",
+          "audioText": "Please arrive at ten o'clock sharp. We begin promptly in the conference room."
+        },
+        {
+          "speaker": "Tariq",
+          "avatar": "T",
+          "english": "Understood! I will see you on Tuesday at ten.",
+          "urdu": "Ø³Ù…Ø¬Ú¾ Ú¯ÛŒØ§! Ù…Ù†Ú¯Ù„ Ú©Ùˆ Ø¯Ø³ Ø¨Ø¬Û’ Ù…Ù„Ø§Ù‚Ø§Øª Û ÙˆÚ¯ÛŒÛ”",
+          "audioText": "Understood! I will see you on Tuesday at ten."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l4-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u6-l4-1",
+          "type": "mcq",
+          "skillTag": "prepositions-time",
+          "prompt": "Choose the correct preposition: 'The lecture starts _____ 10:15 AM.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "in"
+            },
+            {
+              "id": "opt-2",
+              "text": "on"
+            },
+            {
+              "id": "opt-3",
+              "text": "at"
+            },
+            {
+              "id": "opt-4",
+              "text": "to"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Exact clock times always take 'at': 'at 10:15 AM'.",
+          "urduExplanation": "Ú¯Ú¾Ú‘ÛŒ Ú©Û’ Ù…Ø®ØµÙˆØµ ÙˆÙ‚Øª Ú©Û’ Ù„ÛŒÛ’ 'at' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l4-2",
+          "type": "mcq",
+          "skillTag": "prepositions-time",
+          "prompt": "Choose the correct preposition: 'She plays badminton _____ Sunday morning.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "in"
+            },
+            {
+              "id": "opt-2",
+              "text": "at"
+            },
+            {
+              "id": "opt-3",
+              "text": "for"
+            },
+            {
+              "id": "opt-4",
+              "text": "on"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Day + part of day takes 'on': 'on Sunday morning'.",
+          "urduExplanation": "Ø¯Ù† Ú©Û’ Ø³Ø§ØªÚ¾ ØµØ¨Ø­ ÛŒØ§ Ø´Ø§Ù… Û Ùˆ ØªÙˆ 'on' Ø¢ØªØ§ Û Û’: 'on Sunday morning'Û”"
+        },
+        {
+          "id": "ex-a1-u6-l4-3",
+          "type": "fill_blank",
+          "skillTag": "prepositions-time",
+          "prompt": "Fill in the preposition: 'Pakistan was founded _____ 1947.'",
+          "correctAnswer": "in",
+          "explanation": "Calendar years take 'in': 'in 1947'.",
+          "urduExplanation": "Ø³Ø§Ù„ (1947) Ú©Û’ Ø³Ø§ØªÚ¾ 'in' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l4-4",
+          "type": "fill_blank",
+          "skillTag": "prepositions-time",
+          "prompt": "Fill in the preposition: 'It gets very cold here _____ night.'",
+          "correctAnswer": "at",
+          "explanation": "Night takes 'at': 'at night'.",
+          "urduExplanation": "Ø±Ø§Øª Ú©Û’ Ù„ÛŒÛ’ 'at night' Ù„Ú©Ú¾Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l4-5",
+          "type": "order_sentence",
+          "skillTag": "prepositions-time",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "The",
+            "exam",
+            "is",
+            "on",
+            "Monday",
+            "morning",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (The exam) + verb (is) + time phrase (on Monday morning).",
+          "urduExplanation": "The exam is on Monday morning."
+        },
+        {
+          "id": "ex-a1-u6-l4-6",
+          "type": "order_sentence",
+          "skillTag": "prepositions-time",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "We",
+            "travel",
+            "to",
+            "the",
+            "hills",
+            "in",
+            "summer",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "Subject (We) + verb (travel) + location (to the hills) + season (in summer).",
+          "urduExplanation": "We travel to the hills in summer."
+        },
+        {
+          "id": "ex-a1-u6-l4-7",
+          "type": "match_pairs",
+          "skillTag": "prepositions-time",
+          "prompt": "Match the time unit with its required preposition:",
+          "pairs": [
+            {
+              "left": "6:30 PM",
+              "right": "at"
+            },
+            {
+              "left": "Friday",
+              "right": "on"
+            },
+            {
+              "left": "July",
+              "right": "in"
+            },
+            {
+              "left": "night",
+              "right": "at"
+            }
+          ],
+          "explanation": "Prepositions matched accurately according to the pyramid rule.",
+          "urduExplanation": "ÙˆÙ‚Øª Ú©Û’ ØµØ­ÛŒØ­ prepositions Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l4-8",
+          "type": "error_correction",
+          "skillTag": "prepositions-time",
+          "prompt": "Find and correct the mistake: 'I will see you in Monday.'",
+          "correctAnswer": "I will see you on Monday.",
+          "explanation": "Days take 'on', not 'in'.",
+          "urduExplanation": "Ø¯Ù† Ú©Û’ Ù„ÛŒÛ’ 'on Monday' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l4-9",
+          "type": "error_correction",
+          "skillTag": "prepositions-time",
+          "prompt": "Find and correct the mistake: 'The train arrives on 8:00.'",
+          "correctAnswer": "The train arrives at 8:00.",
+          "explanation": "Clock times take 'at', not 'on'.",
+          "urduExplanation": "Ú¯Ú¾Ú‘ÛŒ Ú©Û’ ÙˆÙ‚Øª Ú©Û’ Ù„ÛŒÛ’ 'at 8:00' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l4-10",
+          "type": "true_false",
+          "skillTag": "prepositions-time",
+          "prompt": "'In Monday morning' is correct because we say 'in the morning'. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. When a specific day of the week is added, 'on' takes precedence: 'on Monday morning'.",
+          "urduExplanation": "ØºÙ„Ø·Û” Ø¬Ø¨ Ø¯Ù† Ø¢ Ø¬Ø§Ø¦Û’ ØªÙˆ 'on Monday morning' Ø¨ÙˆÙ„Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l4-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u6-l4-1",
+          "type": "mcq",
+          "skillTag": "prepositions-time",
+          "prompt": "Which phrase correctly uses 'at'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "at Monday"
+            },
+            {
+              "id": "opt-2",
+              "text": "at August"
+            },
+            {
+              "id": "opt-3",
+              "text": "at midnight"
+            },
+            {
+              "id": "opt-4",
+              "text": "at the morning"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Midnight is a precise fixed point in time, taking 'at midnight'.",
+          "urduExplanation": "Midnight Ú©Û’ Ø³Ø§ØªÚ¾ 'at' Ø¢ØªØ§ Û Û’: 'at midnight'Û”"
+        },
+        {
+          "id": "qz-a1-u6-l4-2",
+          "type": "mcq",
+          "skillTag": "prepositions-time",
+          "prompt": "Complete the sentence: 'We have annual exams _____ March.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "on"
+            },
+            {
+              "id": "opt-2",
+              "text": "at"
+            },
+            {
+              "id": "opt-3",
+              "text": "to"
+            },
+            {
+              "id": "opt-4",
+              "text": "in"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Months take 'in': 'in March'.",
+          "urduExplanation": "Ù…Û ÛŒÙ†Û’ Ú©Û’ Ù„ÛŒÛ’ 'in March' ØµØ­ÛŒØ­ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l4-3",
+          "type": "mcq",
+          "skillTag": "prepositions-time",
+          "prompt": "Complete: 'I met him _____ a rainy Friday afternoon.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "at"
+            },
+            {
+              "id": "opt-2",
+              "text": "in"
+            },
+            {
+              "id": "opt-3",
+              "text": "on"
+            },
+            {
+              "id": "opt-4",
+              "text": "for"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Whenever a specific day is named, use 'on': 'on a rainy Friday afternoon'.",
+          "urduExplanation": "Ø¬Ø¨ Ù†Ø§Ù… Ø´Ø§Ù…Ù„ Û Ùˆ ØªÙˆ 'on Friday afternoon' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l4-4",
+          "type": "mcq",
+          "skillTag": "prepositions-time",
+          "prompt": "Select the sentence with INCORRECT preposition usage:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "The match starts at 3:00 PM."
+            },
+            {
+              "id": "opt-2",
+              "text": "We go on vacation in summer."
+            },
+            {
+              "id": "opt-3",
+              "text": "She was born at 2005."
+            },
+            {
+              "id": "opt-4",
+              "text": "We rest on Sundays."
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'at 2005' is wrong because years take 'in': 'in 2005'.",
+          "urduExplanation": "'at 2005' ØºÙ„Ø· Û Û’ØŒ Ø³Ø§Ù„ Ú©Û’ Ù„ÛŒÛ’ 'in 2005' Û ÙˆÙ†Ø§ Ú†Ø§Û ÛŒÛ’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l4-5",
+          "type": "mcq",
+          "skillTag": "prepositions-time",
+          "prompt": "Which preposition is used for centuries (e.g. the 21st century)?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "at"
+            },
+            {
+              "id": "opt-2",
+              "text": "in"
+            },
+            {
+              "id": "opt-3",
+              "text": "on"
+            },
+            {
+              "id": "opt-4",
+              "text": "by"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Centuries represent long broad periods, requiring 'in': 'in the 21st century'.",
+          "urduExplanation": "ØµØ¯ÛŒÙˆÚº Ú©Û’ Ù„ÛŒÛ’ 'in' Ø¢ØªØ§ Û Û’: 'in the 21st century'Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l4-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Time prepositions summary:",
+      "summaryPoints": [
+        "AT = specific precise times (at 5:00, at noon, at midnight, at night).",
+        "ON = days and dates (on Monday, on the 14th of August, on Friday night).",
+        "IN = longer periods (in July, in 2026, in summer, in the morning).",
+        "Day + part of day: 'ON' always wins (on Monday morning).",
+        "Remember: in 1947 (years), in the 21st century (centuries)."
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l4-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… ÙˆÙ‚Øª Ú©Û’ ØªÙ‚Ø±ÛŒØ¨Ø§Ù‹ Ø³Ø¨ Ø§Ù„Ù Ø§Ø¸ Ú©Û’ Ø³Ø§ØªÚ¾ **'Ù…ÛŒÚº'** ÛŒØ§ **'Ú©Ùˆ'** Ù„Ú¯Ø§ØªÛ’ Û ÛŒÚº:\n- 'Ø¬ÙˆÙ„Ø§Ø¦ÛŒ **Ù…ÛŒÚº**' / '2026 **Ù…ÛŒÚº**'\n- 'Ù¾ÛŒØ± **Ú©Ùˆ**' / 'Ø±Ø§Øª **Ú©Ùˆ**' / '5 Ø¨Ø¬Û’'\n\n**Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ÛŒÛ  3 Ø§Ù„Ú¯ Ø§Ù„Ú¯ Prepositions Û ÛŒÚº:**\n1. **AT** (Ù…Ø®ØµÙˆØµ Ù„Ù…Ø­Û ): at 5:00, at night, at noon\n2. **ON** (Ø¯Ù† ÛŒØ§ ØªØ§Ø±ÛŒØ®): on Monday, on 14th August\n3. **IN** (Ù„Ù…Ø¨Ø§ Ø¹Ø±ØµÛ ): in July, in summer, in 2026, in the morning\n\n**Ø³Ø¨ Ø³Û’ Ø¹Ø§Ù… ØºÙ„Ø·ÛŒ:** 'in night' Ú©Û Ù†Ø§ ØºÙ„Ø· Û Û’ØŒ Û Ù…ÛŒØ´Û  **'at night'** Ú©Û ÛŒÚºÛ”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

@@ -17,7 +17,13 @@ import {
 /**
  * Hero Interactive Dashboard Window Mockup
  */
+/**
+ * Hero Interactive Dashboard Window Mockup
+ * Shows both a course lesson card and an IELTS band card (sample data labelled "Sample preview")
+ */
 export function HeroDashboardMockup() {
+  const [activeTab, setActiveTab] = React.useState<'course' | 'ielts'>('course');
+
   return (
     <div className="relative w-full max-w-[500px] mx-auto select-none">
       {/* Background soft mint radial glow */}
@@ -28,157 +34,240 @@ export function HeroDashboardMockup() {
 
       {/* Main floating app window card */}
       <div className="bg-white dark:bg-[#112019] rounded-2xl shadow-2xl border border-slate-200/90 dark:border-white/10 overflow-hidden text-slate-800 dark:text-slate-100 transition-transform duration-500 hover:scale-[1.01]">
-        {/* Window Top Bar */}
+        {/* Window Top Bar with Track Selector */}
         <div className="flex items-center justify-between px-4 py-2.5 bg-slate-50 dark:bg-slate-900/90 border-b border-slate-200/80 dark:border-white/5 text-2xs font-mono text-slate-400">
           <div className="flex items-center gap-1.5">
             <span className="w-2.5 h-2.5 rounded-full bg-rose-400/80 inline-block" />
             <span className="w-2.5 h-2.5 rounded-full bg-amber-400/80 inline-block" />
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/80 inline-block" />
           </div>
-          <span className="text-slate-400 dark:text-slate-500 font-sans font-medium text-3xs">
-            zarii.app/dashboard
-          </span>
+
+          {/* Segmented Track Switcher */}
+          <div className="flex items-center p-0.5 rounded-lg bg-slate-200/60 dark:bg-slate-800 text-3xs font-sans font-bold">
+            <button
+              type="button"
+              onClick={() => setActiveTab('course')}
+              className={`px-2.5 py-1 rounded-md transition-all ${
+                activeTab === 'course'
+                  ? 'bg-white dark:bg-[#124F40] text-slate-900 dark:text-white shadow-xs'
+                  : 'text-slate-500 hover:text-slate-800 dark:text-slate-400'
+              }`}
+            >
+              Course Lesson
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab('ielts')}
+              className={`px-2.5 py-1 rounded-md transition-all ${
+                activeTab === 'ielts'
+                  ? 'bg-white dark:bg-[#124F40] text-slate-900 dark:text-white shadow-xs'
+                  : 'text-slate-500 hover:text-slate-800 dark:text-slate-400'
+              }`}
+            >
+              IELTS Band
+            </button>
+          </div>
+
           <span className="text-3xs uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-[#5BB78D]/15 text-[#124F40] dark:text-[#5BB78D]">
             Sample preview
           </span>
         </div>
 
         {/* Dashboard Content */}
-        <div className="p-5 space-y-4">
-          {/* Target & Current Band Row */}
-          <div className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-white/5">
-            <div className="flex items-center gap-3">
-              <div className="relative w-12 h-12 flex items-center justify-center">
-                <svg className="w-full h-full -rotate-90" viewBox="0 0 36 36">
-                  <path
-                    className="text-slate-200 dark:text-slate-800"
-                    strokeWidth="3.5"
-                    stroke="currentColor"
-                    fill="none"
-                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  />
-                  <path
-                    className="text-[#5BB78D]"
-                    strokeDasharray="78, 100"
-                    strokeWidth="3.5"
-                    strokeLinecap="round"
-                    stroke="currentColor"
-                    fill="none"
-                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  />
-                </svg>
-                <span className="absolute font-bold text-sm text-slate-900 dark:text-white">
-                  7.0
+        <div className="p-4 sm:p-5 space-y-3.5">
+          {/* CARD A: Course Lesson Card */}
+          {activeTab === 'course' ? (
+            <div className="space-y-3 animate-zarii-fade">
+              {/* Lesson Header */}
+              <div className="flex items-center justify-between p-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-white/5">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-9 h-9 rounded-lg bg-[#5BB78D]/20 text-[#124F40] dark:text-[#5BB78D] flex items-center justify-center font-mono font-bold text-xs shrink-0">
+                    A2
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-slate-900 dark:text-white">
+                      Unit 3: Daily Routines &amp; Habits
+                    </div>
+                    <div className="text-3xs text-slate-500 dark:text-slate-400">
+                      Lesson 2 • Present Simple &amp; Adverbs of Frequency
+                    </div>
+                  </div>
+                </div>
+                <span className="text-3xs font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+                  85% Passed
                 </span>
               </div>
-              <div>
-                <div className="text-xs font-bold text-slate-900 dark:text-white">
-                  Estimated Band
+
+              {/* Interactive Exercise Mockup */}
+              <div className="p-3.5 rounded-xl bg-[#F7FAF8] dark:bg-[#162720] border border-[#5BB78D]/30 space-y-2.5">
+                <div className="flex items-center justify-between text-2xs font-bold text-slate-700 dark:text-slate-200">
+                  <span>Exercise 3 of 10: Fill in the blank</span>
+                  <span className="text-3xs font-mono text-[#5BB78D] font-normal">Tap-to-lookup enabled</span>
                 </div>
-                <div className="text-2xs text-slate-500 dark:text-slate-400">
-                  Target: <strong className="text-[#124F40] dark:text-[#5BB78D]">7.5</strong> • 24 days to exam
+
+                <p className="text-xs sm:text-sm text-slate-800 dark:text-slate-100 font-medium">
+                  "She <span className="px-2 py-0.5 bg-[#5BB78D]/20 text-[#124F40] dark:text-[#5BB78D] font-bold rounded underline decoration-2 decoration-[#5BB78D]">usually</span> reads before sleeping."
+                </p>
+
+                {/* Instant Feedback Callout */}
+                <div className="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/25 flex items-start gap-2 text-2xs text-emerald-800 dark:text-emerald-300">
+                  <CheckCircle2 className="w-4 h-4 text-[#5BB78D] shrink-0 mt-0.5" />
+                  <div className="space-y-0.5">
+                    <span className="font-bold">Correct answer!</span>
+                    <p className="text-3xs leading-relaxed opacity-90">
+                      Adverbs of frequency precede main verbs: Subject + Adverb + Verb.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Urdu Note Pill */}
+                <div className="flex items-center justify-between text-3xs pt-1 border-t border-slate-200/60 dark:border-white/5">
+                  <span className="text-slate-500 font-medium">اردو رہنمائی:</span>
+                  <span className="text-emerald-700 dark:text-emerald-400 font-arabic font-semibold" dir="rtl">
+                    وہ عام طور پر سونے سے پہلے مطالعہ کرتی ہے۔
+                  </span>
                 </div>
               </div>
             </div>
-            <span className="inline-flex items-center gap-1 text-2xs font-semibold px-2 py-1 rounded-lg bg-emerald-500/10 text-emerald-700 dark:text-emerald-400">
-              <TrendingUp className="w-3 h-3" />
-              +0.5 Band
-            </span>
+          ) : (
+            /* CARD B: IELTS Band Card */
+            <div className="space-y-3.5 animate-zarii-fade">
+              {/* Target & Current Band Row */}
+              <div className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-white/5">
+                <div className="flex items-center gap-3">
+                  <div className="relative w-11 h-11 flex items-center justify-center shrink-0">
+                    <svg className="w-full h-full -rotate-90" viewBox="0 0 36 36">
+                      <path
+                        className="text-slate-200 dark:text-slate-800"
+                        strokeWidth="3.5"
+                        stroke="currentColor"
+                        fill="none"
+                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path
+                        className="text-[#5BB78D]"
+                        strokeDasharray="78, 100"
+                        strokeWidth="3.5"
+                        strokeLinecap="round"
+                        stroke="currentColor"
+                        fill="none"
+                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                    </svg>
+                    <span className="absolute font-bold text-xs text-slate-900 dark:text-white">
+                      7.0
+                    </span>
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-slate-900 dark:text-white">
+                      IELTS Estimated Band
+                    </div>
+                    <div className="text-2xs text-slate-500 dark:text-slate-400">
+                      Target: <strong className="text-[#124F40] dark:text-[#5BB78D]">7.5</strong> • 24 days to exam
+                    </div>
+                  </div>
+                </div>
+                <span className="inline-flex items-center gap-1 text-3xs font-semibold px-2 py-1 rounded-lg bg-emerald-500/10 text-emerald-700 dark:text-emerald-400">
+                  <TrendingUp className="w-3 h-3" />
+                  +0.5 Band
+                </span>
+              </div>
+
+              {/* 4 Skill Progress Bars */}
+              <div className="space-y-2">
+                <div className="flex justify-between items-center text-3xs font-semibold text-slate-500 dark:text-slate-400">
+                  <span>Skill breakdown</span>
+                  <span>Band</span>
+                </div>
+
+                {/* Listening */}
+                <div className="space-y-0.5">
+                  <div className="flex justify-between text-3xs font-medium">
+                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#0F8B8D]" />
+                      Listening
+                    </span>
+                    <span className="font-bold text-slate-900 dark:text-white">7.5</span>
+                  </div>
+                  <div className="h-1.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div className="h-full bg-[#0F8B8D] rounded-full w-[83%]" />
+                  </div>
+                </div>
+
+                {/* Reading */}
+                <div className="space-y-0.5">
+                  <div className="flex justify-between text-3xs font-medium">
+                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#124F40] dark:bg-[#5BB78D]" />
+                      Reading
+                    </span>
+                    <span className="font-bold text-slate-900 dark:text-white">7.0</span>
+                  </div>
+                  <div className="h-1.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div className="h-full bg-[#124F40] dark:bg-[#5BB78D] rounded-full w-[77%]" />
+                  </div>
+                </div>
+
+                {/* Writing */}
+                <div className="space-y-0.5">
+                  <div className="flex justify-between text-3xs font-medium">
+                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#D97706]" />
+                      Writing
+                    </span>
+                    <span className="font-bold text-slate-900 dark:text-white">6.5</span>
+                  </div>
+                  <div className="h-1.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div className="h-full bg-[#D97706] rounded-full w-[72%]" />
+                  </div>
+                </div>
+
+                {/* Speaking */}
+                <div className="space-y-0.5">
+                  <div className="flex justify-between text-3xs font-medium">
+                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#E05A47]" />
+                      Speaking
+                    </span>
+                    <span className="font-bold text-slate-900 dark:text-white">7.0</span>
+                  </div>
+                  <div className="h-1.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div className="h-full bg-[#E05A47] rounded-full w-[77%]" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Floating Card 1 (Top Right): Course Mastery Badge */}
+      <div className="absolute -top-4 -right-3 sm:-right-6 bg-white dark:bg-[#1A2E24] p-2.5 sm:p-3 rounded-xl shadow-xl border border-slate-200/80 dark:border-white/10 flex items-center gap-2.5 transition-transform hover:-translate-y-0.5">
+        <div className="w-8 h-8 rounded-lg bg-[#5BB78D]/20 text-[#124F40] dark:text-[#5BB78D] flex items-center justify-center shrink-0">
+          <BookOpen className="w-4 h-4" />
+        </div>
+        <div className="text-left pr-1">
+          <div className="text-2xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#5BB78D] animate-pulse" />
+            Course Unit Review
           </div>
-
-          {/* 4 Skill Progress Bars */}
-          <div className="space-y-2.5">
-            <div className="flex justify-between items-center text-2xs font-semibold text-slate-500 dark:text-slate-400">
-              <span>Skill breakdown</span>
-              <span>Current</span>
-            </div>
-
-            {/* Listening */}
-            <div className="space-y-1">
-              <div className="flex justify-between text-2xs font-medium">
-                <span className="flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
-                  <span className="w-2 h-2 rounded-full bg-[#0F8B8D]" />
-                  Listening
-                </span>
-                <span className="font-bold text-slate-900 dark:text-white">7.5</span>
-              </div>
-              <div className="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full bg-[#0F8B8D] rounded-full w-[83%]" />
-              </div>
-            </div>
-
-            {/* Reading */}
-            <div className="space-y-1">
-              <div className="flex justify-between text-2xs font-medium">
-                <span className="flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
-                  <span className="w-2 h-2 rounded-full bg-[#124F40]" />
-                  Reading
-                </span>
-                <span className="font-bold text-slate-900 dark:text-white">7.0</span>
-              </div>
-              <div className="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full bg-[#124F40] dark:bg-[#5BB78D] rounded-full w-[77%]" />
-              </div>
-            </div>
-
-            {/* Writing */}
-            <div className="space-y-1">
-              <div className="flex justify-between text-2xs font-medium">
-                <span className="flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
-                  <span className="w-2 h-2 rounded-full bg-[#D97706]" />
-                  Writing
-                </span>
-                <span className="font-bold text-slate-900 dark:text-white">6.5</span>
-              </div>
-              <div className="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full bg-[#D97706] rounded-full w-[72%]" />
-              </div>
-            </div>
-
-            {/* Speaking */}
-            <div className="space-y-1">
-              <div className="flex justify-between text-2xs font-medium">
-                <span className="flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
-                  <span className="w-2 h-2 rounded-full bg-[#E05A47]" />
-                  Speaking
-                </span>
-                <span className="font-bold text-slate-900 dark:text-white">7.0</span>
-              </div>
-              <div className="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full bg-[#E05A47] rounded-full w-[77%]" />
-              </div>
-            </div>
+          <div className="text-3xs text-slate-500 dark:text-slate-400">
+            A2 Elementary • <strong className="text-emerald-600 dark:text-emerald-400">Passed (85%)</strong>
           </div>
         </div>
       </div>
 
-      {/* Floating Card 1 (Top Right): Writing Feedback Ready */}
-      <div className="absolute -top-4 -right-3 sm:-right-6 bg-white dark:bg-[#1A2E24] p-2.5 sm:p-3 rounded-xl shadow-xl border border-slate-200/80 dark:border-white/10 flex items-center gap-2.5 transition-transform hover:-translate-y-0.5">
-        <div className="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+      {/* Floating Card 2 (Bottom Left): IELTS Feedback */}
+      <div className="absolute -bottom-4 -left-3 sm:-left-6 bg-white dark:bg-[#1A2E24] p-2.5 sm:p-3 rounded-xl shadow-xl border border-slate-200/80 dark:border-white/10 flex items-center gap-2.5 transition-transform hover:-translate-y-0.5">
+        <div className="w-8 h-8 rounded-lg bg-[#D97706]/15 text-[#D97706] flex items-center justify-center shrink-0">
           <Sparkles className="w-4 h-4" />
         </div>
         <div className="text-left pr-1">
           <div className="text-2xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            Writing feedback ready
+            Writing Evaluator
           </div>
           <div className="text-3xs text-slate-500 dark:text-slate-400">
-            Task 2 Essay • <strong className="text-emerald-600 dark:text-emerald-400">Band 7.0</strong>
-          </div>
-        </div>
-      </div>
-
-      {/* Floating Card 2 (Bottom Left): 7-Day Streak */}
-      <div className="absolute -bottom-4 -left-3 sm:-left-6 bg-white dark:bg-[#1A2E24] p-2.5 sm:p-3 rounded-xl shadow-xl border border-slate-200/80 dark:border-white/10 flex items-center gap-2.5 transition-transform hover:-translate-y-0.5">
-        <div className="w-8 h-8 rounded-lg bg-amber-500/15 text-amber-500 flex items-center justify-center shrink-0">
-          <Flame className="w-4 h-4 fill-amber-500" />
-        </div>
-        <div className="text-left pr-1">
-          <div className="text-2xs font-bold text-slate-900 dark:text-white">
-            7-day study streak
-          </div>
-          <div className="text-3xs text-slate-500 dark:text-slate-400">
-            Top 10% daily consistency
+            Task 2 Essay • <strong className="text-amber-600 dark:text-amber-400">Band 7.0</strong>
           </div>
         </div>
       </div>

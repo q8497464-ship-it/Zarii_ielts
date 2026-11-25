@@ -34,15 +34,17 @@ import {
   getAnalyticsDataset,
   exportAnalyticsCsv,
   type DateRange,
+  type AnalyticsTrack,
 } from '../../../shared/analytics/analyticsData';
 
 export function AdminAnalyticsPage() {
   const { addToast } = useAdminToast();
   const navigate = useNavigate();
   const [dateRange, setDateRange] = useState<DateRange>('30d');
+  const [trackFilter, setTrackFilter] = useState<AnalyticsTrack>('all');
 
-  // Compute dataset reactively based on dateRange
-  const dataset = useMemo(() => getAnalyticsDataset(dateRange), [dateRange]);
+  // Compute dataset reactively based on dateRange and trackFilter
+  const dataset = useMemo(() => getAnalyticsDataset(dateRange, trackFilter), [dateRange, trackFilter]);
 
   const handleExportCsv = () => {
     try {
@@ -94,6 +96,32 @@ export function AdminAnalyticsPage() {
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
+          {/* Track Filter Pills */}
+          <div className="inline-flex items-center bg-slate-100 dark:bg-slate-800/80 p-1 rounded-xl border border-slate-200/80 dark:border-slate-700">
+            {(
+              [
+                { label: 'All Tracks', value: 'all' },
+                { label: 'IELTS Track', value: 'ielts' },
+                { label: 'English Course Track', value: 'english' },
+              ] as const
+            ).map((item) => {
+              const active = trackFilter === item.value;
+              return (
+                <button
+                  key={item.value}
+                  onClick={() => setTrackFilter(item.value)}
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-all ${
+                    active
+                      ? 'bg-white dark:bg-[#124F40] text-[#124F40] dark:text-white shadow-xs'
+                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              );
+            })}
+          </div>
+
           {/* Date Range Selector */}
           <div className="inline-flex items-center bg-slate-100 dark:bg-slate-800/80 p-1 rounded-xl border border-slate-200/80 dark:border-slate-700">
             {(
@@ -140,7 +168,7 @@ export function AdminAnalyticsPage() {
           change="+14.2% vs previous period"
           changeType="positive"
           icon={Users}
-          badge="High Engagement"
+          badge={trackFilter === 'english' ? 'English Track' : trackFilter === 'ielts' ? 'IELTS Track' : 'All Tracks'}
           badgeColor="mint"
         />
         <StatCard
@@ -167,6 +195,110 @@ export function AdminAnalyticsPage() {
           badgeColor="slate"
         />
       </div>
+
+      {/* 2.5 English Course & Dictionary Track Insights */}
+      {(trackFilter === 'english' || trackFilter === 'all') && (
+        <div className="p-6 rounded-2xl bg-white dark:bg-[#112019] border border-slate-200/90 dark:border-[#24392F] shadow-xs space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div className="flex items-center gap-2">
+                <h2 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-[#5BB78D]" />
+                  <span>General English Course &amp; Dictionary Analytics</span>
+                </h2>
+                <span className="px-2 py-0.5 text-[10px] font-mono font-bold rounded-full bg-[#124F40] text-[#5BB78D]">
+                  CEFR Track
+                </span>
+              </div>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                Curriculum throughput, unit drop-off progression, and lexical query intelligence.
+              </p>
+            </div>
+            <div className="flex items-center gap-4 text-xs font-mono">
+              <div>
+                <span className="text-slate-400">Lessons Completed: </span>
+                <span className="font-bold text-slate-900 dark:text-white">
+                  {dataset.englishMetrics.lessonsCompleted.toLocaleString()}
+                </span>
+              </div>
+              <div>
+                <span className="text-slate-400">Avg Pass Rate: </span>
+                <span className="font-bold text-emerald-600 dark:text-[#5BB78D]">
+                  {dataset.englishMetrics.averagePassRate}%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Most Searched Dictionary Words */}
+            <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 space-y-3">
+              <h3 className="text-xs font-bold text-slate-900 dark:text-white flex items-center justify-between">
+                <span>Top Searched Dictionary Headwords</span>
+                <span className="text-[10px] text-slate-400 font-normal">Last {dateRange}</span>
+              </h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-xs">
+                  <thead>
+                    <tr className="border-b border-slate-200 dark:border-slate-800 text-slate-400 font-semibold">
+                      <th className="py-2 px-2">Word</th>
+                      <th className="py-2 px-2">POS</th>
+                      <th className="py-2 px-2">Level</th>
+                      <th className="py-2 px-2 text-right">Searches</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 dark:divide-slate-800/80">
+                    {dataset.mostSearchedDictionaryWords.map((item) => (
+                      <tr key={item.word} className="hover:bg-slate-100/50 dark:hover:bg-slate-800/50">
+                        <td className="py-2 px-2 font-bold text-slate-900 dark:text-white capitalize">
+                          {item.word}
+                        </td>
+                        <td className="py-2 px-2 text-slate-500 font-mono text-[11px]">{item.pos}</td>
+                        <td className="py-2 px-2">
+                          <span className="px-1.5 py-0.5 rounded text-[10px] font-bold font-mono bg-slate-200 dark:bg-slate-700">
+                            {item.level}
+                          </span>
+                        </td>
+                        <td className="py-2 px-2 text-right font-mono font-bold text-[#124F40] dark:text-[#5BB78D]">
+                          {item.searches.toLocaleString()}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* English Course Unit Drop-off Progression */}
+            <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 space-y-3">
+              <h3 className="text-xs font-bold text-slate-900 dark:text-white flex items-center justify-between">
+                <span>Unit Progression &amp; Drop-off Retention</span>
+                <span className="text-[10px] text-slate-400 font-normal">A1 to C1 Funnel</span>
+              </h3>
+              <div className="space-y-2.5 pt-1">
+                {dataset.unitDropoffMetrics.map((unit) => (
+                  <div key={unit.unitId} className="space-y-1">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-semibold text-slate-800 dark:text-slate-200">
+                        {unit.unitTitle}
+                      </span>
+                      <span className="font-mono text-[11px] text-slate-500">
+                        {unit.completionRatePercent}% retained ({unit.dropoffRatePercent}% drop-off)
+                      </span>
+                    </div>
+                    <div className="w-full bg-slate-200 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+                      <div
+                        className="bg-[#124F40] dark:bg-[#5BB78D] h-full rounded-full transition-all duration-500"
+                        style={{ width: `${unit.completionRatePercent}%` }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 3. Activity Trends & Test Funnel */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">

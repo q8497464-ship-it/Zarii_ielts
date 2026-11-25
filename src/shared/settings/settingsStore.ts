@@ -13,14 +13,22 @@ export interface BrandingSettings {
 }
 
 export interface FeatureFlagsSettings {
+  // Track flags
+  ielts_track_enabled: boolean;
+  english_track_enabled: boolean;
+  // Feature flags
+  course_enabled: boolean;
+  dictionary_enabled: boolean;
+  tap_to_lookup_enabled: boolean;
+  speaking_ai_feedback: boolean;
+  urdu_hints: boolean;
+  // Core platform flags
   listening: boolean;
   speaking: boolean;
   gamification: boolean;
   ai_feedback: boolean;
-  urdu_hints: boolean;
   signup: boolean;
   english_course_enabled: boolean;
-  dictionary_enabled: boolean;
 }
 
 export interface MaintenanceSettings {
@@ -108,14 +116,19 @@ export const INITIAL_SITE_SETTINGS: SiteSettingsState = {
     faviconUrl: '/favicon.ico',
   },
   features: {
+    ielts_track_enabled: true,
+    english_track_enabled: true,
+    course_enabled: true,
+    dictionary_enabled: true,
+    tap_to_lookup_enabled: true,
+    speaking_ai_feedback: true,
+    urdu_hints: true,
     listening: true,
     speaking: true,
     gamification: true,
     ai_feedback: true,
-    urdu_hints: true,
     signup: true,
     english_course_enabled: true,
-    dictionary_enabled: true,
   },
   maintenance: {
     enabled: false,

@@ -1,0 +1,629 @@
+{
+  "id": "eng-a1-u4-l2",
+  "level": "A1",
+  "unit": "unit-4",
+  "order": 2,
+  "title": "Family Tree Vocabulary",
+  "description": "Identify family members, kinship relationships, and describe immediate and extended family ties.",
+  "objectives": [
+    "Name immediate family members (parents, mother, father, siblings, brother, sister, children, son, daughter)",
+    "Name extended family members (grandparents, uncle, aunt, cousins)",
+    "Introduce and describe your family members using simple present sentences"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u4-l1"
+  ],
+  "skillTags": [
+    "family",
+    "vocabulary",
+    "relationships",
+    "introductions"
+  ],
+  "vocabularyList": [
+    {
+      "word": "parent",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆpeÉ™rÉ™nt/",
+      "definition": "A father or mother.",
+      "urduMeaning": "ÙˆØ§Ù„Ø¯ ÛŒØ§ ÙˆØ§Ù„Ø¯Û  (ÙˆØ§Ù„Ø¯ÛŒÙ†)",
+      "exampleSentence": "My parents live in Rawalpindi."
+    },
+    {
+      "word": "mother",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆmÊŒÃ°É™r/",
+      "definition": "A female parent.",
+      "urduMeaning": "Ù…Ø§Úº / ÙˆØ§Ù„Ø¯Û ",
+      "exampleSentence": "My mother is a caring teacher."
+    },
+    {
+      "word": "father",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆfÉ‘Ë Ã°É™r/",
+      "definition": "A male parent.",
+      "urduMeaning": "Ø¨Ø§Ù¾ / ÙˆØ§Ù„Ø¯",
+      "exampleSentence": "His father works at a government office."
+    },
+    {
+      "word": "brother",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆbrÊŒÃ°É™r/",
+      "definition": "A man or boy in relation to other sons and daughters of his parents.",
+      "urduMeaning": "Ø¨ÚÚ¾Ø§Ø¦ÛŒ",
+      "exampleSentence": "I have an elder brother in Lahore."
+    },
+    {
+      "word": "sister",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆsÉªstÉ™r/",
+      "definition": "A woman or girl in relation to other daughters and sons of her parents.",
+      "urduMeaning": "Ø¨Û Ù†",
+      "exampleSentence": "Her sister studies engineering."
+    },
+    {
+      "word": "son",
+      "partOfSpeech": "noun",
+      "phonetic": "/sÊŒn/",
+      "definition": "A male child or offspring.",
+      "urduMeaning": "Ø¨ÛŒÙ¹Ø§",
+      "exampleSentence": "They have a six-year-old son."
+    },
+    {
+      "word": "daughter",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆdÉ”Ë tÉ™r/",
+      "definition": "A female child or offspring.",
+      "urduMeaning": "Ø¨ÛŒÙ¹ÛŒ",
+      "exampleSentence": "Their daughter is learning English."
+    },
+    {
+      "word": "child",
+      "partOfSpeech": "noun",
+      "phonetic": "/tÊƒaÉªld/",
+      "definition": "A young person; son or daughter.",
+      "urduMeaning": "Ø¨Ú†Û ",
+      "exampleSentence": "Every child deserves a good education."
+    },
+    {
+      "word": "uncle",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆÊŒÅ‹kl/",
+      "definition": "The brother of one's father or mother or the husband of one's aunt.",
+      "urduMeaning": "Ú†Ú†Ø§ / Ù…Ø§Ù…ÙˆÚº / ØªØ§ÛŒØ§ / Ú©Ú¾Ø§Ù„Ùˆ",
+      "exampleSentence": "My uncle Tariq visited us yesterday."
+    },
+    {
+      "word": "aunt",
+      "partOfSpeech": "noun",
+      "phonetic": "/É‘Ë nt/",
+      "definition": "The sister of one's father or mother or the wife of one's uncle.",
+      "urduMeaning": "Ù¾Ú¾ÙˆÙ¾Ú¾ÛŒ / Ø®Ø§Ù„Û  / Ú†Ú†ÛŒ / Ù…Ù…Ø§Ù†ÛŒ",
+      "exampleSentence": "Her aunt lives in the UK."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u4-l2-1",
+      "type": "explain",
+      "title": "Immediate & Extended Family Structure",
+      "content": "In English, family terminology is grouped into two main circles:\n\n### 1. Immediate Family\n- **Parents**: Mother + Father\n- **Children**: Son (boy) + Daughter (girl)\n- **Siblings**: Brothers + Sisters\n- **Spouses**: Husband (male) + Wife (female)\n\n### 2. Extended Family\n- **Grandparents**: Grandfather + Grandmother\n- **Grandchildren**: Grandson + Granddaughter\n- **Parents' Siblings**: Uncle (male) + Aunt (female)\n- **Uncle/Aunt's Children**: Cousins (male or female)",
+      "tables": [
+        {
+          "title": "English vs. Urdu Kinship Terms",
+          "headers": [
+            "English Term",
+            "Scope",
+            "Urdu Equivalents",
+            "Key Difference"
+          ],
+          "rows": [
+            [
+              "uncle",
+              "Any brother of father or mother",
+              "Ú†Ú†Ø§ØŒ Ù…Ø§Ù…ÙˆÚºØŒ ØªØ§ÛŒØ§ØŒ Ú©Ú¾Ø§Ù„Ùˆ",
+              "English uses ONE word for all paternal and maternal uncles."
+            ],
+            [
+              "aunt",
+              "Any sister of father or mother",
+              "Ù¾Ú¾ÙˆÙ¾Ú¾ÛŒØŒ Ø®Ø§Ù„Û ØŒ Ú†Ú†ÛŒØŒ Ù…Ù…Ø§Ù†ÛŒ",
+              "English uses ONE word for all paternal and maternal aunts."
+            ],
+            [
+              "cousin",
+              "Child of any uncle or aunt",
+              "Ú†Ú†Ø§ Ø²Ø§Ø¯ØŒ Ù…Ø§Ù…ÙˆÚº Ø²Ø§Ø¯ØŒ Ø®Ø§Ù„Û  Ø²Ø§Ø¯",
+              "English uses 'cousin' for both boys and girls without gender distinction."
+            ],
+            [
+              "siblings",
+              "Brothers and sisters collectively",
+              "Ø¨Û Ù† Ø¨ÚÚ¾Ø§Ø¦ÛŒ",
+              "A convenient collective word for all brothers and sisters."
+            ]
+          ]
+        },
+        {
+          "title": "Useful Family Introduction Phrases",
+          "headers": [
+            "Phrase Formula",
+            "Example",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "I have [number] [members]",
+              "I have two sisters and one brother.",
+              "Ù…ÛŒØ±ÛŒ Ø¯Ùˆ Ø¨Û Ù†ÛŒÚº Ø§ÙˆØ± Ø§ÛŒÚ© Ø¨ÚÚ¾Ø§Ø¦ÛŒ Û Û’Û”"
+            ],
+            [
+              "This is my [relative]",
+              "This is my mother, Mrs. Nasreen.",
+              "ÛŒÛ  Ù…ÛŒØ±ÛŒ ÙˆØ§Ù„Ø¯Û  Ù…Ø³Ø² Ù†Ø³Ø±ÛŒÙ† Û ÛŒÚºÛ”"
+            ],
+            [
+              "We are a family of [number]",
+              "We are a family of five.",
+              "Û Ù… Ù¾Ø§Ù†Ú† Ø§Ù Ø±Ø§Ø¯ Ú©Ø§ Ú¯Ú¾Ø±Ø§Ù†Û  Û ÛŒÚºÛ”"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Cousin Brother / Cousin Sister",
+          "text": "In standard English, never say 'cousin brother' or 'cousin sister'. Simply say **my cousin** (e.g. 'My cousin Bilal' or 'My cousin Sana')."
+        },
+        {
+          "type": "warning",
+          "title": "Pronunciation of Aunt",
+          "text": "In British English, 'aunt' is pronounced /É‘Ë nt/ (rhyming with 'plant'). In American English, it sounds like /Ã¦nt/ (like 'ant')."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l2-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "We are a close-knit family of five living in Islamabad.",
+          "phonetic": "/wiË  É‘Ë r É™ klÉ™ÊŠs nÉªt ËˆfÃ¦mÉ™li É™v faÉªv ËˆlÉªvÉªÅ‹ Éªn ÉªsËˆlÉ‘Ë mÉ™bÉ‘Ë d/",
+          "urdu": "Û Ù… Ø§Ø³Ù„Ø§Ù… Ø¢Ø¨Ø§Ø¯ Ù…ÛŒÚº Ø±Û Ù†Û’ ÙˆØ§Ù„Ø§ Ù¾Ø§Ù†Ú† Ø§Ù Ø±Ø§Ø¯ Ú©Ø§ Ø§ÛŒÚ© Ù¾ÛŒØ§Ø±Ø§ Ú¯Ú¾Ø±Ø§Ù†Û  Û ÛŒÚºÛ”",
+          "audioText": "We are a close-knit family of five living in Islamabad."
+        },
+        {
+          "english": "My father is a retired bank manager.",
+          "phonetic": "/maÉª ËˆfÉ‘Ë Ã°É™r Éªz É™ rÉªËˆtaÉªÉ™d bÃ¦Å‹k ËˆmÃ¦nÉªdÊ’É™r/",
+          "urdu": "Ù…ÛŒØ±Û’ ÙˆØ§Ù„Ø¯ Ø§ÛŒÚ© Ø±ÛŒÙ¹Ø§Ø¦Ø±Úˆ Ø¨ÛŒÙ†Ú© Ù…ÛŒÙ†ÛŒØ¬Ø± Û ÛŒÚºÛ”",
+          "audioText": "My father is a retired bank manager."
+        },
+        {
+          "english": "Her elder brother works as a civil engineer in Qatar.",
+          "phonetic": "/hÉœË r ËˆeldÉ™r ËˆbrÊŒÃ°É™r wÉœË ks Ã¦z É™ ËˆsÉªvl ËŒendÊ’ÉªËˆnÉªÉ™r Éªn ËˆkÃ¦tÉ‘Ë r/",
+          "urdu": "Ø§Ø³ Ú©Ø§ Ø¨Ú‘Ø§ Ø¨ÚÚ¾Ø§Ø¦ÛŒ Ù‚Ø·Ø± Ù…ÛŒÚº Ø³ÙˆÙ„ Ø§Ù†Ø¬Ù†ÛŒØ¦Ø± Ú©Û’ Ø·ÙˆØ± Ù¾Ø± Ú©Ø§Ù… Ú©Ø±ØªØ§ Û Û’Û”",
+          "audioText": "Her elder brother works as a civil engineer in Qatar."
+        },
+        {
+          "english": "How many siblings do you have? I have three siblings.",
+          "phonetic": "/haÊŠ Ëˆmeni ËˆsÉªblÉªÅ‹z duË  juË  hÃ¦v aÉª hÃ¦v Î¸riË  ËˆsÉªblÉªÅ‹z/",
+          "urdu": "Ø¢Ù¾ Ú©Û’ Ú©ØªÙ†Û’ Ø¨Û Ù† Ø¨ÚÚ¾Ø§Ø¦ÛŒ Û ÛŒÚºØŸ Ù…ÛŒØ±Û’ ØªÛŒÙ† Ø¨Û Ù† Ø¨ÚÚ¾Ø§Ø¦ÛŒ Û ÛŒÚºÛ”",
+          "audioText": "How many siblings do you have? I have three siblings."
+        },
+        {
+          "english": "My uncle Tariq and his wife have three sons.",
+          "phonetic": "/maÉª ËˆÊŒÅ‹kl ËˆtÉ‘Ë rÉªk Ã¦nd hÉªz waÉªf hÃ¦v Î¸riË  sÊŒnz/",
+          "urdu": "Ù…ÛŒØ±Û’ Ú†Ú†Ø§ Ø·Ø§Ø±Ù‚ Ø§ÙˆØ± Ø§Ù† Ú©ÛŒ Ø§Û Ù„ÛŒÛ  Ú©Û’ ØªÛŒÙ† Ø¨ÛŒÙ¹Û’ Û ÛŒÚºÛ”",
+          "audioText": "My uncle Tariq and his wife have three sons."
+        },
+        {
+          "english": "Their daughter is currently studying medicine in Karachi.",
+          "phonetic": "/Ã°eÉ™r ËˆdÉ”Ë tÉ™r Éªz ËˆkÊŒrÉ™ntli ËˆstÊŒdiÉªÅ‹ Ëˆmedsn Éªn kÉ™ËˆrÉ‘Ë tÊƒi/",
+          "urdu": "Ø§Ù† Ú©ÛŒ Ø¨ÛŒÙ¹ÛŒ Ø§Ø³ ÙˆÙ‚Øª Ú©Ø±Ø§Ú†ÛŒ Ù…ÛŒÚº Ù…ÛŒÚˆÛŒØ³Ù† Ù¾Ú‘Ú¾ Ø±Û ÛŒ Û Û’Û”",
+          "audioText": "Their daughter is currently studying medicine in Karachi."
+        },
+        {
+          "english": "My grandmother tells wonderful bedtime stories.",
+          "phonetic": "/maÉª ËˆÉ¡rÃ¦nmÊŒÃ°É™r telz ËˆwÊŒndÉ™fl ËˆbedtaÉªm ËˆstÉ”Ë riz/",
+          "urdu": "Ù…ÛŒØ±ÛŒ Ø¯Ø§Ø¯ÛŒ Ø³ÙˆÙ†Û’ Ú©Û’ ÙˆÙ‚Øª Ø´Ø§Ù†Ø¯Ø§Ø± Ú©Û Ø§Ù†ÛŒØ§Úº Ø³Ù†Ø§ØªÛŒ Û ÛŒÚºÛ”",
+          "audioText": "My grandmother tells wonderful bedtime stories."
+        },
+        {
+          "english": "All my cousins gather at our ancestral home for Eid.",
+          "phonetic": "/É”Ë l maÉª ËˆkÊŒznz ËˆÉ¡Ã¦Ã°É™r Ã¦t ËˆaÊŠÉ™r Ã¦nËˆsestrÉ™l hÉ™ÊŠm fÉ”Ë r iË d/",
+          "urdu": "Ø¹ÛŒØ¯ Ù¾Ø± Ù…ÛŒØ±Û’ ØªÙ…Ø§Ù… Ú©Ø²Ù†Ø² Û Ù…Ø§Ø±Û’ Ø¢Ø¨Ø§Ø¦ÛŒ Ú¯Ú¾Ø± Ù…ÛŒÚº Ø¬Ù…Ø¹ Û ÙˆØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "All my cousins gather at our ancestral home for Eid."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l2-3",
+      "type": "dialogue",
+      "title": "Showing Family Photos",
+      "dialogue": [
+        {
+          "speaker": "Hassan",
+          "avatar": "H",
+          "english": "Is this a photo of your family, Usman?",
+          "urdu": "Ø¹Ø«Ù…Ø§Ù†ØŒ Ú©ÛŒØ§ ÛŒÛ  Ø¢Ù¾ Ú©Û’ Ú¯Ú¾Ø± ÙˆØ§Ù„ÙˆÚº Ú©ÛŒ ØªØµÙˆÛŒØ± Û Û’ØŸ",
+          "audioText": "Is this a photo of your family, Usman?"
+        },
+        {
+          "speaker": "Usman",
+          "avatar": "U",
+          "english": "Yes! These are my parents sitting in the front, and that is my elder brother behind them.",
+          "urdu": "Ø¬ÛŒ Û Ø§Úº! ÛŒÛ  Ø³Ø§Ù…Ù†Û’ Ù…ÛŒØ±Û’ ÙˆØ§Ù„Ø¯ÛŒÙ† Ø¨ÛŒÙ¹Ú¾Û’ Û ÛŒÚºØŒ Ø§ÙˆØ± Ø§Ù† Ú©Û’ Ù¾ÛŒÚ†Ú¾Û’ Ù…ÛŒØ±Ø§ Ø¨Ú‘Ø§ Ø¨ÚÚ¾Ø§Ø¦ÛŒ Û Û’Û”",
+          "audioText": "Yes! These are my parents sitting in the front, and that is my elder brother behind them."
+        },
+        {
+          "speaker": "Hassan",
+          "avatar": "H",
+          "english": "And who is that cheerful girl holding the cat?",
+          "urdu": "Ø§ÙˆØ± ÙˆÛ  Ø¨Ù„ÛŒ Ù¾Ú©Ú‘Û’ Û ÙˆØ¦Û’ Û Ù†Ø³Ù…Ú©Ú¾ Ù„Ú‘Ú©ÛŒ Ú©ÙˆÙ† Û Û’ØŸ",
+          "audioText": "And who is that cheerful girl holding the cat?"
+        },
+        {
+          "speaker": "Usman",
+          "avatar": "U",
+          "english": "That is my younger sister, Ayla. She loves animals.",
+          "urdu": "ÙˆÛ  Ù…ÛŒØ±ÛŒ Ú†ÚÚ¾ÙˆÙ¹ÛŒ Ø¨Û Ù† Ø¹Ø§Ø¦Ù„Û  Û Û’Û” ÙˆÛ  Ø¬Ø§Ù†ÙˆØ±ÙˆÚº Ø³Û’ Ø¨Û Øª Ù¾ÛŒØ§Ø± Ú©Ø±ØªÛŒ Û Û’Û”",
+          "audioText": "That is my younger sister, Ayla. She loves animals."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l2-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u4-l2-1",
+          "type": "mcq",
+          "skillTag": "family",
+          "prompt": "What word refers to your mother and father together?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "grandparents"
+            },
+            {
+              "id": "opt-2",
+              "text": "siblings"
+            },
+            {
+              "id": "opt-3",
+              "text": "parents"
+            },
+            {
+              "id": "opt-4",
+              "text": "cousins"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'Parents' collectively refers to your mother and father.",
+          "urduExplanation": "Ù…Ø§Úº Ø§ÙˆØ± Ø¨Ø§Ù¾ Ú©Ùˆ Ù…Ù„Ø§ Ú©Ø± 'parents' (ÙˆØ§Ù„Ø¯ÛŒÙ†) Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l2-2",
+          "type": "mcq",
+          "skillTag": "family",
+          "prompt": "What is your father's brother called in English?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "nephew"
+            },
+            {
+              "id": "opt-2",
+              "text": "cousin"
+            },
+            {
+              "id": "opt-3",
+              "text": "grandfather"
+            },
+            {
+              "id": "opt-4",
+              "text": "uncle"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Your father's brother is your uncle.",
+          "urduExplanation": "ÙˆØ§Ù„Ø¯ Ú©Û’ Ø¨ÚÚ¾Ø§Ø¦ÛŒ Ú©Ùˆ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº 'uncle' (Ú†Ú†Ø§ / ØªØ§ÛŒØ§) Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l2-3",
+          "type": "fill_blank",
+          "skillTag": "family",
+          "prompt": "Complete: 'A brother and a sister are called _____.'",
+          "correctAnswer": "siblings",
+          "explanation": "'Siblings' is the collective noun for brothers and sisters.",
+          "urduExplanation": "Ø¨Û Ù† Ø¨ÚÚ¾Ø§Ø¦ÛŒÙˆÚº Ú©Ùˆ Ù…Ø¬Ù…ÙˆØ¹ÛŒ Ø·ÙˆØ± Ù¾Ø± 'siblings' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l2-4",
+          "type": "fill_blank",
+          "skillTag": "family",
+          "prompt": "Complete: 'My mother's mother is my _____.'",
+          "correctAnswer": "grandmother",
+          "explanation": "Your mother's mother is your grandmother.",
+          "urduExplanation": "ÙˆØ§Ù„Ø¯Û  Ú©ÛŒ ÙˆØ§Ù„Ø¯Û  Ú©Ùˆ 'grandmother' (Ù†Ø§Ù†ÛŒ) Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l2-5",
+          "type": "order_sentence",
+          "skillTag": "family",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "I",
+            "have",
+            "two",
+            "brothers",
+            "and",
+            "one",
+            "sister",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "Subject (I) + verb (have) + object noun phrase (two brothers and one sister).",
+          "urduExplanation": "I have two brothers and one sister."
+        },
+        {
+          "id": "ex-a1-u4-l2-6",
+          "type": "order_sentence",
+          "skillTag": "family",
+          "prompt": "Rearrange the words to introduce a family member:",
+          "sentenceTokens": [
+            "This",
+            "is",
+            "my",
+            "elder",
+            "brother",
+            "Ali",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Demonstrative (This) + verb (is) + possessive phrase (my elder brother Ali).",
+          "urduExplanation": "This is my elder brother Ali."
+        },
+        {
+          "id": "ex-a1-u4-l2-7",
+          "type": "match_pairs",
+          "skillTag": "family",
+          "prompt": "Match the male family member with the corresponding female member:",
+          "pairs": [
+            {
+              "left": "father",
+              "right": "mother"
+            },
+            {
+              "left": "brother",
+              "right": "sister"
+            },
+            {
+              "left": "son",
+              "right": "daughter"
+            },
+            {
+              "left": "uncle",
+              "right": "aunt"
+            }
+          ],
+          "explanation": "Male and female kinship pairs accurately matched.",
+          "urduExplanation": "Ù…Ø°Ú©Ø± Ø§ÙˆØ± Ù…Ø¤Ù†Ø« Ø±Ø´ØªÙˆÚº Ú©Û’ Ø¬ÙˆÚ‘Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l2-8",
+          "type": "error_correction",
+          "skillTag": "family",
+          "prompt": "Find and correct the mistake: 'He is my cousin brother.'",
+          "correctAnswer": "He is my cousin.",
+          "explanation": "In standard English, simply say 'He is my cousin'; never 'cousin brother'.",
+          "urduExplanation": "Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº 'cousin brother' ØºÙ„Ø· Û Û’ØŒ ØµØ±Ù  'He is my cousin' Ú©Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u4-l2-9",
+          "type": "error_correction",
+          "skillTag": "family",
+          "prompt": "Find and correct the mistake: 'They has two childs.'",
+          "correctAnswer": "They have two children.",
+          "explanation": "Plural subject 'They' takes 'have', and the irregular plural of 'child' is 'children'.",
+          "urduExplanation": "'They have two children' ØµØ­ÛŒØ­ Ø¬Ù…Ù„Û  Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u4-l2-10",
+          "type": "true_false",
+          "skillTag": "family",
+          "prompt": "The word 'cousin' in English is used for both male and female relatives. (True or False)",
+          "correctAnswer": "True",
+          "explanation": "True. 'Cousin' is completely gender-neutral in English.",
+          "urduExplanation": "Ø¯Ø±Ø³ØªÛ” Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº 'cousin' Ù„Ú‘Ú©Û’ Ø§ÙˆØ± Ù„Ú‘Ú©ÛŒ Ø¯ÙˆÙ†ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l2-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u4-l2-1",
+          "type": "mcq",
+          "skillTag": "family",
+          "prompt": "What is your aunt's daughter to you?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "niece"
+            },
+            {
+              "id": "opt-2",
+              "text": "sister"
+            },
+            {
+              "id": "opt-3",
+              "text": "cousin"
+            },
+            {
+              "id": "opt-4",
+              "text": "daughter"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "The child of your aunt or uncle is always your cousin.",
+          "urduExplanation": "Ú†Ú†ÛŒØŒ Ù¾ÚÚ¾ÙˆÙ¾ÚÚ¾ÛŒ ÛŒØ§ Ø®Ø§Ù„Û  Ú©ÛŒ Ø¨ÛŒÙ¹ÛŒ Ø¢Ù¾ Ú©ÛŒ 'cousin' Û ÙˆØªÛŒ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u4-l2-2",
+          "type": "mcq",
+          "skillTag": "family",
+          "prompt": "Which term is NOT used in standard English?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "my sibling"
+            },
+            {
+              "id": "opt-2",
+              "text": "my cousin"
+            },
+            {
+              "id": "opt-3",
+              "text": "my parents"
+            },
+            {
+              "id": "opt-4",
+              "text": "my cousin sister"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'Cousin sister' is non-standard; in standard English, use 'my cousin'.",
+          "urduExplanation": "'cousin sister' Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ØºÙ„Ø· Ù…Ø§Ù†Ø§ Ø¬Ø§ØªØ§ Û Û’ØŒ ØµØ±Ù  'cousin' Ú©Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u4-l2-3",
+          "type": "mcq",
+          "skillTag": "family",
+          "prompt": "What do you call your male child?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "son"
+            },
+            {
+              "id": "opt-2",
+              "text": "nephew"
+            },
+            {
+              "id": "opt-3",
+              "text": "brother"
+            },
+            {
+              "id": "opt-4",
+              "text": "uncle"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "A male child of parents is their son.",
+          "urduExplanation": "Ù†Ø± Ø§ÙˆÙ„Ø§Ø¯ Ú©Ùˆ 'son' (Ø¨ÛŒÙ¹Ø§) Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u4-l2-4",
+          "type": "mcq",
+          "skillTag": "family",
+          "prompt": "Complete the sentence: 'She has two sons and one _____.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "aunt"
+            },
+            {
+              "id": "opt-2",
+              "text": "daughter"
+            },
+            {
+              "id": "opt-3",
+              "text": "mother"
+            },
+            {
+              "id": "opt-4",
+              "text": "niece"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Sons and daughter' form natural offspring pairs.",
+          "urduExplanation": "Ø¨ÛŒÙ¹ÙˆÚº Ú©Û’ Ø³Ø§ØªÚ¾ Ø§ÙˆÙ„Ø§Ø¯ Ù…ÛŒÚº 'daughter' (Ø¨ÛŒÙ¹ÛŒ) Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u4-l2-5",
+          "type": "mcq",
+          "skillTag": "family",
+          "prompt": "What does 'siblings' mean?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Grandparents"
+            },
+            {
+              "id": "opt-2",
+              "text": "Uncles and aunts"
+            },
+            {
+              "id": "opt-3",
+              "text": "Brothers and sisters"
+            },
+            {
+              "id": "opt-4",
+              "text": "Cousins only"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'Siblings' is the collective term for brothers and sisters.",
+          "urduExplanation": "'siblings' Ø¨Û Ù† Ø¨ÚÚ¾Ø§Ø¦ÛŒÙˆÚº Ú©Ùˆ Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l2-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Family vocabulary summary:",
+      "summaryPoints": [
+        "Parents = mother and father.",
+        "Children = son (male) and daughter (female).",
+        "Siblings = brothers and sisters collectively.",
+        "Uncle = any brother of father/mother; Aunt = any sister of father/mother.",
+        "Cousin = child of uncle or aunt (never say 'cousin brother/sister')."
+      ]
+    },
+    {
+      "id": "sec-a1-u4-l2-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Ø®Ø§Ù†Ø¯Ø§Ù†ÛŒ Ø±Ø´ØªÙˆÚº Ú©Û’ Ù„ÛŒÛ’ Ø¨Û Øª Ø²ÛŒØ§Ø¯Û  Ø¨Ø§Ø±ÛŒÚ© Ø§Ù„Ù Ø§Ø¸ Û ÛŒÚº:\n- Ú†Ú†Ø§ØŒ Ù…Ø§Ù…ÙˆÚºØŒ ØªØ§ÛŒØ§ØŒ Ú©Ú¾Ø§Ù„Ùˆ (Ø§Ù„Ú¯ Ø§Ù„Ú¯ Ø±Ø´ØªÛ’)\n- Ù¾Ú¾ÙˆÙ¾Ú¾ÛŒØŒ Ø®Ø§Ù„Û ØŒ Ú†Ú†ÛŒØŒ Ù…Ù…Ø§Ù†ÛŒ (Ø§Ù„Ú¯ Ø§Ù„Ú¯ Ø±Ø´ØªÛ’)\n\n**Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ÛŒÛ  Ù†Ø¸Ø§Ù… Ø¨Û Øª Ø³Ø§Ø¯Û  Û Û’:**\n- ÙˆØ§Ù„Ø¯ ÛŒØ§ ÙˆØ§Ù„Ø¯Û  Ú©Ø§ Ú©ÙˆØ¦ÛŒ Ø¨Ú¾ÛŒ Ø¨ÚÚ¾Ø§Ø¦ÛŒ: **Uncle**\n- ÙˆØ§Ù„Ø¯ ÛŒØ§ ÙˆØ§Ù„Ø¯Û  Ú©ÛŒ Ú©ÙˆØ¦ÛŒ Ø¨Ú¾ÛŒ Ø¨Û Ù†: **Aunt**\n- Ú†Ú†Ø§ØŒ Ù…Ø§Ù…ÙˆÚºØŒ Ø®Ø§Ù„Û ØŒ Ù¾Ú¾ÙˆÙ¾Ú¾ÛŒ Ú©Ø§ Ú©ÙˆØ¦ÛŒ Ø¨Ú¾ÛŒ Ø¨Ú†Û  (Ù„Ú‘Ú©Ø§ ÛŒØ§ Ù„Ú‘Ú©ÛŒ): **Cousin**\n\n**Ø®Ø§Øµ Û Ø¯Ø§ÛŒØª:** Ø§Ø±Ø¯Ùˆ Ø¨ÙˆÙ„Ù†Û’ ÙˆØ§Ù„Û’ Ø§Ú©Ø«Ø± 'Cousin brother' ÛŒØ§ 'Cousin sister' Ú©Û ØªÛ’ Û ÛŒÚºØŒ Ø¬Ùˆ Ú©Û  Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ØºÙ„Ø· Û Û’Û” ØµØ±Ù  **Cousin** Ú©Û ÛŒÚºÛ”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

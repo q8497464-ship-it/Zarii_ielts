@@ -28,6 +28,9 @@ import {
   Target,
   Clock,
   Award,
+  Volume2,
+  Languages,
+  Compass,
 } from 'lucide-react';
 import { ZariiLogo } from '../components/ui/ZariiLogo';
 import { useAppStore } from '../store/useAppStore';
@@ -129,7 +132,7 @@ export function LandingPage() {
 
   // Set document title and SEO meta
   useEffect(() => {
-    document.title = 'Zarii | Free IELTS Preparation for Listening, Reading, Writing and Speaking';
+    document.title = 'Zarii | Learn English. Reach your IELTS goal.';
   }, []);
 
   // Close mobile drawer on Escape key
@@ -487,12 +490,434 @@ export function LandingPage() {
         </section>
 
         {/* =================================================================== */}
+        {/* 1. TWO WAYS TO LEARN                                                */}
+        {/* =================================================================== */}
+        <section
+          id="two-ways"
+          aria-labelledby="two-ways-heading"
+          className="scroll-mt-[72px] py-16 sm:py-24 bg-[#F7FAF8] dark:bg-[#0B1612]"
+        >
+          <div className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-12">
+            <div className="text-center max-w-2xl mx-auto space-y-3">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#5BB78D]">
+                Personalized Learning Pathways
+              </span>
+              <h2
+                id="two-ways-heading"
+                className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight"
+              >
+                {LANDING_COPY.twoWaysToLearn.title}
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                {LANDING_COPY.twoWaysToLearn.subtitle}
+              </p>
+            </div>
+
+            {/* Two Large Cards */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+              {/* Card 1: English Course */}
+              <div className="rounded-3xl p-7 sm:p-9 bg-white dark:bg-[#112019] border-2 border-[#5BB78D]/30 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-6 relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-36 h-36 bg-[#5BB78D]/10 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110" />
+
+                <div className="space-y-4 relative z-10">
+                  <div className="flex items-center justify-between">
+                    <div className="w-12 h-12 rounded-2xl bg-[#5BB78D]/20 text-[#124F40] dark:text-[#5BB78D] flex items-center justify-center">
+                      <BookOpen className="w-6 h-6" />
+                    </div>
+                    <span className="text-2xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-800 dark:text-emerald-300 border border-emerald-500/25">
+                      {LANDING_COPY.twoWaysToLearn.courseCard.levelRange}
+                    </span>
+                  </div>
+
+                  <div>
+                    <span className="text-xs font-bold text-[#5BB78D] uppercase tracking-wider">
+                      {LANDING_COPY.twoWaysToLearn.courseCard.badge}
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
+                      {LANDING_COPY.twoWaysToLearn.courseCard.title}
+                    </h3>
+                  </div>
+
+                  <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                    {LANDING_COPY.twoWaysToLearn.courseCard.description}
+                  </p>
+
+                  <ul className="space-y-3 pt-2 text-xs sm:text-sm text-slate-700 dark:text-slate-200">
+                    {LANDING_COPY.twoWaysToLearn.courseCard.bullets.map((b, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-4 h-4 text-[#5BB78D] shrink-0 mt-0.5" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="pt-6 border-t border-slate-100 dark:border-white/5 relative z-10">
+                  <Link
+                    to="/signup"
+                    className="w-full h-12 px-6 bg-[#124F40] hover:bg-[#0E3D32] text-white font-bold text-sm rounded-xl flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition-all focus:outline-none focus:ring-2 focus:ring-[#5BB78D]"
+                  >
+                    <span>{LANDING_COPY.twoWaysToLearn.courseCard.ctaLabel}</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Card 2: IELTS Preparation */}
+              <div className="rounded-3xl p-7 sm:p-9 bg-white dark:bg-[#112019] border-2 border-[#124F40]/30 dark:border-[#5BB78D]/30 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-6 relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-36 h-36 bg-[#124F40]/10 dark:bg-[#5BB78D]/10 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110" />
+
+                <div className="space-y-4 relative z-10">
+                  <div className="flex items-center justify-between">
+                    <div className="w-12 h-12 rounded-2xl bg-[#124F40]/15 dark:bg-[#5BB78D]/20 text-[#124F40] dark:text-[#5BB78D] flex items-center justify-center">
+                      <Target className="w-6 h-6" />
+                    </div>
+                    <span className="text-2xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-[#124F40]/15 dark:bg-[#5BB78D]/20 text-[#124F40] dark:text-[#5BB78D] border border-[#124F40]/25 dark:border-[#5BB78D]/30">
+                      {LANDING_COPY.twoWaysToLearn.ieltsCard.levelRange}
+                    </span>
+                  </div>
+
+                  <div>
+                    <span className="text-xs font-bold text-[#124F40] dark:text-[#5BB78D] uppercase tracking-wider">
+                      {LANDING_COPY.twoWaysToLearn.ieltsCard.badge}
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
+                      {LANDING_COPY.twoWaysToLearn.ieltsCard.title}
+                    </h3>
+                  </div>
+
+                  <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                    {LANDING_COPY.twoWaysToLearn.ieltsCard.description}
+                  </p>
+
+                  <ul className="space-y-3 pt-2 text-xs sm:text-sm text-slate-700 dark:text-slate-200">
+                    {LANDING_COPY.twoWaysToLearn.ieltsCard.bullets.map((b, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-4 h-4 text-[#5BB78D] shrink-0 mt-0.5" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="pt-6 border-t border-slate-100 dark:border-white/5 relative z-10">
+                  <Link
+                    to="/signup"
+                    className="w-full h-12 px-6 bg-[#124F40] hover:bg-[#0E3D32] text-white font-bold text-sm rounded-xl flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition-all focus:outline-none focus:ring-2 focus:ring-[#5BB78D]"
+                  >
+                    <span>{LANDING_COPY.twoWaysToLearn.ieltsCard.ctaLabel}</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* =================================================================== */}
+        {/* 2. COMPLETE ENGLISH COURSE                                          */}
+        {/* =================================================================== */}
+        <section
+          id="english-course"
+          aria-labelledby="course-heading"
+          className="scroll-mt-[72px] py-16 sm:py-24 bg-white dark:bg-[#0E2018] border-y border-slate-200/80 dark:border-white/5"
+        >
+          <div className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-12">
+            <div className="text-center max-w-2xl mx-auto space-y-3">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#5BB78D]">
+                Structured CEFR Progression
+              </span>
+              <h2
+                id="course-heading"
+                className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight"
+              >
+                {LANDING_COPY.completeCourse.title}
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                {LANDING_COPY.completeCourse.subtitle}
+              </p>
+            </div>
+
+            {/* 5 Levels Stepper Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5">
+              {LANDING_COPY.completeCourse.levels.map((lvl, idx) => (
+                <div
+                  key={lvl.level}
+                  className="p-5 rounded-2xl bg-[#F7FAF8] dark:bg-[#112019] border border-slate-200/90 dark:border-white/5 space-y-3 flex flex-col justify-between hover:-translate-y-1 transition-transform"
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="w-8 h-8 rounded-lg bg-[#124F40] text-[#5BB78D] font-mono font-bold text-xs flex items-center justify-center">
+                        {lvl.level}
+                      </span>
+                      <span className="text-3xs font-semibold text-slate-400">Step {idx + 1}</span>
+                    </div>
+
+                    <h3 className="font-bold text-sm text-slate-900 dark:text-white">
+                      {lvl.name}
+                    </h3>
+
+                    <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                      {lvl.summary}
+                    </p>
+                  </div>
+
+                  <div className="pt-2 border-t border-slate-200/60 dark:border-white/5 space-y-1">
+                    <span className="text-3xs font-bold text-[#124F40] dark:text-[#5BB78D] block">
+                      {lvl.units}
+                    </span>
+                    <span className="text-3xs text-slate-500 block italic leading-tight">
+                      "{lvl.milestone}"
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Test Out Callout Box */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#5BB78D]/10 border border-[#5BB78D]/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-[#5BB78D]/20 text-[#124F40] dark:text-[#5BB78D] flex items-center justify-center shrink-0">
+                  <Compass className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-slate-900 dark:text-white">
+                    Placement Test &amp; Unit Skip-Out
+                  </h4>
+                  <p className="text-xs text-slate-600 dark:text-slate-300">
+                    Take the 20-question placement test to start at your real level, or score 85%+ on any unit test to skip directly to the next milestone.
+                  </p>
+                </div>
+              </div>
+              <Link
+                to="/course"
+                className="text-xs font-bold text-[#124F40] dark:text-[#5BB78D] hover:underline whitespace-nowrap shrink-0"
+              >
+                View curriculum details &rarr;
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* =================================================================== */}
+        {/* 3. BUILT-IN DICTIONARY                                              */}
+        {/* =================================================================== */}
+        <section
+          id="dictionary"
+          aria-labelledby="dict-heading"
+          className="scroll-mt-[72px] py-16 sm:py-24 bg-[#F7FAF8] dark:bg-[#0B1612]"
+        >
+          <div className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-12">
+            <div className="text-center max-w-2xl mx-auto space-y-3">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#5BB78D]">
+                Integrated Lexical Engine
+              </span>
+              <h2
+                id="dict-heading"
+                className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight"
+              >
+                {LANDING_COPY.builtinDictionary.title}
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                {LANDING_COPY.builtinDictionary.subtitle}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              {/* Features List */}
+              <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {LANDING_COPY.builtinDictionary.features.map((feat, i) => (
+                  <div
+                    key={i}
+                    className="p-5 rounded-2xl bg-white dark:bg-[#112019] border border-slate-200/90 dark:border-white/5 space-y-2 shadow-xs"
+                  >
+                    <div className="w-8 h-8 rounded-lg bg-[#5BB78D]/15 text-[#124F40] dark:text-[#5BB78D] flex items-center justify-center">
+                      <Sparkles className="w-4 h-4" />
+                    </div>
+                    <h3 className="font-bold text-sm text-slate-900 dark:text-white">
+                      {feat.title}
+                    </h3>
+                    <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                      {feat.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Dictionary Visual Card */}
+              <div className="lg:col-span-5">
+                <div className="p-6 rounded-2xl bg-white dark:bg-[#112019] border-2 border-[#5BB78D]/30 shadow-lg space-y-4">
+                  <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-white/5">
+                    <span className="text-3xs font-mono text-slate-400">/app/dictionary/diligent</span>
+                    <span className="text-3xs font-bold uppercase px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-800 dark:text-emerald-300">
+                      B2 Vocabulary
+                    </span>
+                  </div>
+
+                  <div className="space-y-2">
+                    <div className="flex items-baseline justify-between">
+                      <h4 className="text-2xl font-black text-slate-900 dark:text-white">diligent</h4>
+                      <span className="text-xs font-mono text-slate-400">/ˈdɪl.ə.dʒənt/</span>
+                    </div>
+
+                    <div className="text-xs font-arabic text-emerald-700 dark:text-emerald-400 font-semibold" dir="rtl">
+                      محنتی، سرگرم، مستعد
+                    </div>
+
+                    <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                      Having or showing care and conscientiousness in one's work or duties.
+                    </p>
+
+                    <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-white/5 text-2xs italic text-slate-600 dark:text-slate-400">
+                      "Diligent students regularly review mistakes in their personal study notebook."
+                    </div>
+
+                    <div className="pt-2 flex items-center justify-between text-3xs text-slate-400">
+                      <span>Source: Open English WordNet</span>
+                      <Link to="/credits" className="text-[#5BB78D] font-bold hover:underline">
+                        Attributions &rarr;
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* =================================================================== */}
+        {/* 4. GRAMMAR MADE SIMPLE                                              */}
+        {/* =================================================================== */}
+        <section
+          id="grammar"
+          aria-labelledby="grammar-heading"
+          className="scroll-mt-[72px] py-16 sm:py-24 bg-white dark:bg-[#0E2018] border-y border-slate-200/80 dark:border-white/5"
+        >
+          <div className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-12">
+            <div className="text-center max-w-2xl mx-auto space-y-3">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#5BB78D]">
+                Visual Linguistic Frameworks
+              </span>
+              <h2
+                id="grammar-heading"
+                className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight"
+              >
+                {LANDING_COPY.grammarSimple.title}
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                {LANDING_COPY.grammarSimple.subtitle}
+              </p>
+            </div>
+
+            {/* Tenses Showcase Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {LANDING_COPY.grammarSimple.tenses.map((tense, idx) => (
+                <div
+                  key={idx}
+                  className="p-5 rounded-2xl bg-[#F7FAF8] dark:bg-[#112019] border border-slate-200/90 dark:border-white/5 space-y-3 flex flex-col justify-between shadow-xs"
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-bold text-sm text-slate-900 dark:text-white">
+                        {tense.name}
+                      </h3>
+                      <span className="text-3xs font-mono text-[#5BB78D] font-semibold">Tense #{idx + 1}</span>
+                    </div>
+
+                    {/* Timeline representation */}
+                    <div className="p-2.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-white/5 font-mono text-3xs text-emerald-800 dark:text-emerald-400">
+                      {tense.timeline}
+                    </div>
+
+                    <div className="space-y-1 pt-1">
+                      <span className="text-3xs uppercase font-bold text-slate-400 tracking-wider">Formula</span>
+                      <p className="text-2xs font-mono text-slate-700 dark:text-slate-300 font-semibold">
+                        {tense.formula}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-2 border-t border-slate-200/60 dark:border-white/5">
+                    <span className="text-3xs uppercase font-bold text-slate-400 tracking-wider block mb-0.5">Example</span>
+                    <p className="text-xs text-slate-600 dark:text-slate-300 italic">
+                      "{tense.example}"
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* =================================================================== */}
+        {/* 5. MADE FOR URDU SPEAKERS                                           */}
+        {/* =================================================================== */}
+        <section
+          id="urdu-speakers"
+          aria-labelledby="urdu-heading"
+          className="scroll-mt-[72px] py-16 sm:py-24 bg-[#F7FAF8] dark:bg-[#0B1612]"
+        >
+          <div className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-12">
+            <div className="text-center max-w-2xl mx-auto space-y-3">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#5BB78D]">
+                Bilingual Language Insights
+              </span>
+              <h2
+                id="urdu-heading"
+                className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight"
+              >
+                {LANDING_COPY.urduSpeakers.title}
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                {LANDING_COPY.urduSpeakers.subtitle}
+              </p>
+            </div>
+
+            {/* Urdu Comparison Cards Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {LANDING_COPY.urduSpeakers.comparisons.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="p-6 rounded-2xl bg-white dark:bg-[#112019] border border-slate-200/90 dark:border-white/5 space-y-3 shadow-xs hover:border-[#5BB78D]/40 transition-colors"
+                >
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-[#5BB78D]/20 text-[#124F40] dark:text-[#5BB78D] flex items-center justify-center font-bold text-xs">
+                      {idx + 1}
+                    </div>
+                    <h3 className="font-bold text-base text-slate-900 dark:text-white">
+                      {item.topic}
+                    </h3>
+                  </div>
+
+                  <div className="space-y-2 pt-1 text-xs">
+                    <div className="p-2.5 rounded-lg bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200/50 dark:border-emerald-800/30">
+                      <span className="font-bold text-emerald-900 dark:text-emerald-300 block mb-0.5">English Rule:</span>
+                      <p className="text-slate-700 dark:text-slate-300">{item.englishRule}</p>
+                    </div>
+
+                    <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-white/5">
+                      <span className="font-bold text-slate-700 dark:text-slate-300 block mb-0.5">Urdu Difference:</span>
+                      <p className="text-slate-600 dark:text-slate-400 font-arabic leading-relaxed" dir="auto">{item.urduDifference}</p>
+                    </div>
+
+                    <div className="p-2.5 rounded-lg bg-rose-50/50 dark:bg-rose-950/20 border border-rose-200/50 dark:border-rose-800/30 text-rose-900 dark:text-rose-300">
+                      <span className="font-bold block mb-0.5">Common Trap to Avoid:</span>
+                      <p className="text-2xs leading-relaxed">{item.commonTrap}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* =================================================================== */}
         {/* D. FOUR MODULES SECTION                                             */}
         {/* =================================================================== */}
         <section
           id="modules"
           aria-labelledby="modules-heading"
-          className="scroll-mt-[72px] py-16 sm:py-24 bg-[#F7FAF8] dark:bg-[#0B1612]"
+          className="scroll-mt-[72px] py-16 sm:py-24 bg-white dark:bg-[#0E2018] border-t border-slate-200/80 dark:border-white/5"
         >
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-12">
             <div className="text-center max-w-2xl mx-auto space-y-3">
@@ -515,7 +940,7 @@ export function LandingPage() {
               {LANDING_COPY.modules.cards.map((mod) => (
                 <div
                   key={mod.id}
-                  className={`rounded-2xl p-6 sm:p-7 bg-white dark:bg-[#112019] border ${mod.borderTint} shadow-xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between`}
+                  className={`rounded-2xl p-6 sm:p-7 bg-[#F7FAF8] dark:bg-[#112019] border ${mod.borderTint} shadow-xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between`}
                 >
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
@@ -834,6 +1259,9 @@ export function LandingPage() {
                   </h3>
                   <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
                     {LANDING_COPY.scoreEstimateNote.explanation}
+                  </p>
+                  <p className="text-3xs text-slate-500 dark:text-slate-400 pt-1 border-t border-slate-100 dark:border-white/5">
+                    IELTS is a registered trademark of its owners. Zarii is independent and not affiliated with or endorsed by IELTS partners. Course levels and certificates are for self-study purposes and are not official qualifications.
                   </p>
                 </div>
               </div>

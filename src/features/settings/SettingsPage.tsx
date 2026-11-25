@@ -98,6 +98,7 @@ export function SettingsPage() {
   // TAB 2: PREFERENCES STATE
   // --------------------------------------------------------------------------
   const [soundEnabled, setSoundEnabled] = useState<boolean>(true);
+  const [gamificationEnabled, setGamificationEnabled] = useState<boolean>(true);
   const [urduHintsEnabled, setUrduHintsEnabled] = useState<boolean>(true);
   const [tapToLookup, setTapToLookup] = useState<boolean>(true);
   const [showAllWordsSafeMode, setShowAllWordsSafeMode] = useState<boolean>(false);
@@ -142,6 +143,7 @@ export function SettingsPage() {
   useEffect(() => {
     if (settings) {
       setSoundEnabled(settings.soundEnabled !== false);
+      setGamificationEnabled(settings.gamificationEnabled !== false);
       setUrduHintsEnabled(settings.urduHintsEnabled !== false);
       setTapToLookup(settings.tapToLookup !== undefined ? settings.tapToLookup : currentTrack === 'english');
       setShowAllWordsSafeMode(Boolean(settings.showAllWordsSafeMode));
@@ -216,6 +218,18 @@ export function SettingsPage() {
       type: 'info',
       title: val ? 'Sound Effects Enabled' : 'Sound Effects Muted',
       message: val ? 'Audio chimes will play on test submission.' : 'Audio effects turned off.',
+    });
+  };
+
+  const handleToggleGamification = async (val: boolean) => {
+    setGamificationEnabled(val);
+    await updateSettings({ gamificationEnabled: val });
+    addToast({
+      type: 'info',
+      title: val ? 'Motivation & Badges Active' : 'Motivation & Badges Muted',
+      message: val
+        ? 'XP, study streaks, achievement badges, and milestone celebrations are active.'
+        : 'Gamification elements and celebrations are hidden.',
     });
   };
 
@@ -812,6 +826,25 @@ export function SettingsPage() {
                     type="checkbox"
                     checked={showAllWordsSafeMode}
                     onChange={(e) => handleToggleSafeMode(e.target.checked)}
+                    className="w-4 h-4 rounded text-[#124F40] focus:ring-[#5BB78D] cursor-pointer"
+                  />
+                </div>
+
+                {/* Motivation & Badges Toggle */}
+                <div className="flex items-center justify-between p-3.5 rounded-xl border border-slate-200/80 dark:border-[#24392F] bg-slate-50/50 dark:bg-slate-900/50">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center">
+                      <Sparkles className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-slate-900 dark:text-white">Motivation &amp; Badges</div>
+                      <div className="text-[11px] text-slate-500">Show XP, daily streaks, level badges, and milestone celebrations</div>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    checked={gamificationEnabled}
+                    onChange={(e) => handleToggleGamification(e.target.checked)}
                     className="w-4 h-4 rounded text-[#124F40] focus:ring-[#5BB78D] cursor-pointer"
                   />
                 </div>

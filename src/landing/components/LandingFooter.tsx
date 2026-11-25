@@ -76,7 +76,7 @@ export function LandingFooter({ onScrollToAnchor }: LandingFooterProps) {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Zarii IELTS Preparation',
+    name: 'Zarii English Course and IELTS Preparation',
     alternateName: 'Zarii',
     url: 'https://zarii.app',
     logo: 'https://zarii.app/brand/zarii-logo-full-white.svg',
@@ -110,15 +110,15 @@ export function LandingFooter({ onScrollToAnchor }: LandingFooterProps) {
             {/* Pill badge with sparkle */}
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#5BB78D]/15 dark:bg-[#5BB78D]/20 text-[#124F40] dark:text-[#5BB78D]">
               <Sparkles className="w-3.5 h-3.5 text-[#0F8B8D] dark:text-[#5BB78D]" />
-              <span>Free Exam-Style Practice</span>
+              <span>Free English Course &amp; IELTS Preparation</span>
             </div>
 
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#124F40] dark:text-white tracking-tight leading-tight">
-              Start your <span className="text-[#0F8B8D] dark:text-[#5BB78D]">IELTS journey</span> today
+              Start your <span className="text-[#0F8B8D] dark:text-[#5BB78D]">English &amp; IELTS journey</span> today
             </h2>
 
             <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
-              Free practice for all four skills. No credit card needed.
+              Free English course from A1 to C1 and authentic IELTS mock tests. No credit card needed.
             </p>
           </div>
 
@@ -233,7 +233,7 @@ export function LandingFooter({ onScrollToAnchor }: LandingFooterProps) {
               >
                 <img
                   src="/brand/zarii-logo-full-white.svg"
-                  alt="Zarii IELTS Preparation"
+                  alt="Zarii English Course and IELTS Preparation"
                   className="h-16 sm:h-[80px] w-auto object-contain drop-shadow-md shrink-0 block"
                 />
               </Link>
@@ -241,10 +241,10 @@ export function LandingFooter({ onScrollToAnchor }: LandingFooterProps) {
               {/* Full Name & 2-Line Description with 24px top breathing room */}
               <div className="pt-2">
                 <h2 className="text-lg font-semibold text-white tracking-tight">
-                  Zarii IELTS Preparation
+                  Zarii <span className="block text-sm font-medium text-white/80">English Course and IELTS Preparation</span>
                 </h2>
                 <p className="text-white/75 text-base leading-[1.7] max-w-[360px] mt-2">
-                  Free, exam-style practice for Listening, Reading, Writing and Speaking, with instant feedback and a study plan built around your target band.
+                  Learn English. Reach your IELTS goal. Free, comprehensive English courses from A1 to C1 and exam-style IELTS preparation with instant feedback and an offline dictionary.
                 </p>
               </div>
 
@@ -573,6 +573,20 @@ export function LandingFooter({ onScrollToAnchor }: LandingFooterProps) {
                     </span>
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/credits"
+                    className="group flex items-center text-[15px] text-white/[0.78] hover:text-white transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5BB78D] rounded-md py-1 min-h-[44px] sm:min-h-0"
+                  >
+                    <span className="flex items-center transform transition-transform duration-200 group-hover:translate-x-1">
+                      <ChevronRight
+                        className="w-3.5 h-3.5 text-[#5BB78D] opacity-0 -ml-3.5 group-hover:opacity-100 group-hover:ml-0 group-hover:mr-1.5 transition-all duration-200 shrink-0"
+                        aria-hidden="true"
+                      />
+                      <span>Open Source Credits</span>
+                    </span>
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>
@@ -588,13 +602,13 @@ export function LandingFooter({ onScrollToAnchor }: LandingFooterProps) {
           <div
             aria-hidden="true"
             data-testid="footer-wordmark"
-            className="text-center select-none pointer-events-none font-extrabold text-[clamp(40px,8vw,120px)] tracking-[-0.03em] leading-none my-6 sm:my-8 overflow-hidden"
+            className="text-center select-none pointer-events-none font-extrabold text-[clamp(32px,6.5vw,110px)] tracking-[-0.03em] leading-none my-6 sm:my-8 overflow-hidden"
           >
-            <span className="inline-block bg-gradient-to-b from-white/[0.22] to-white/[0.04] bg-clip-text text-transparent mr-3 sm:mr-4 whitespace-nowrap">
+            <span className="inline-block bg-gradient-to-b from-white/[0.22] to-white/[0.04] bg-clip-text text-transparent mr-2.5 sm:mr-3.5 whitespace-nowrap">
               Zarii
             </span>
             <span className="inline-block bg-gradient-to-b from-white/[0.18] to-white/[0.03] bg-clip-text text-transparent whitespace-nowrap">
-              IELTS Preparation
+              English and IELTS
             </span>
           </div>
 
@@ -603,7 +617,7 @@ export function LandingFooter({ onScrollToAnchor }: LandingFooterProps) {
           {/* =============================================================== */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-white/70 pt-6 border-t border-white/[0.12]">
             <p className="text-center sm:text-left">
-              &copy; {currentYear} Zarii IELTS Preparation. All rights reserved.
+              &copy; {currentYear} Zarii English Course and IELTS Preparation. All rights reserved.
             </p>
 
             <div className="flex items-center gap-4 sm:gap-6">
@@ -620,6 +634,13 @@ export function LandingFooter({ onScrollToAnchor }: LandingFooterProps) {
                   className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#5BB78D] rounded-md px-1 py-1 min-h-[44px] flex items-center sm:min-h-0"
                 >
                   Terms
+                </Link>
+                <span className="text-white/30" aria-hidden="true">•</span>
+                <Link
+                  to="/credits"
+                  className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#5BB78D] rounded-md px-1 py-1 min-h-[44px] flex items-center sm:min-h-0"
+                >
+                  Credits
                 </Link>
                 <span className="text-white/30" aria-hidden="true">•</span>
                 <Link
@@ -646,7 +667,7 @@ export function LandingFooter({ onScrollToAnchor }: LandingFooterProps) {
           {/* 8. TRADEMARK & ESTIMATED BAND SCORE DISCLAIMER                  */}
           {/* =============================================================== */}
           <p className="text-[12.5px] text-white/60 leading-[1.6] text-center pt-4 max-w-[820px] mx-auto">
-            IELTS is a registered trademark of its respective owners. Zarii IELTS Preparation is an independent preparation platform and is not affiliated with or endorsed by IELTS partners. Band scores shown are estimates, not official results.
+            IELTS is a registered trademark of its owners. Zarii is independent and not affiliated with or endorsed by IELTS partners. Course levels and certificates are for self-study purposes and are not official qualifications.
           </p>
         </div>
       </div>

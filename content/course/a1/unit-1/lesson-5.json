@@ -1,0 +1,631 @@
+{
+  "id": "eng-a1-u1-l5",
+  "level": "A1",
+  "unit": "unit-1",
+  "order": 5,
+  "title": "Countries, Nationalities & Languages",
+  "description": "Learn how to ask where someone is from and state countries, nationalities, and spoken languages.",
+  "objectives": [
+    "Ask 'Where are you from?' and answer with 'I am from... / I am...'",
+    "Distinguish between a country (noun) and a nationality (adjective)",
+    "Always capitalize country names, nationalities, and languages in writing"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [
+    "eng-a1-u1-l1"
+  ],
+  "skillTags": [
+    "countries",
+    "nationalities",
+    "vocabulary"
+  ],
+  "vocabularyList": [
+    {
+      "word": "country",
+      "partOfSpeech": "noun",
+      "phonetic": "/ˈkʌntri/",
+      "definition": "A nation with its own government, occupying a particular territory.",
+      "urduMeaning": "ملک / وطن",
+      "exampleSentence": "Pakistan is a beautiful country."
+    },
+    {
+      "word": "language",
+      "partOfSpeech": "noun",
+      "phonetic": "/ˈlæŋɡwɪdʒ/",
+      "definition": "The method of human communication, either spoken or written.",
+      "urduMeaning": "زبان",
+      "exampleSentence": "English is a global language."
+    },
+    {
+      "word": "world",
+      "partOfSpeech": "noun",
+      "phonetic": "/wɜːld/",
+      "definition": "The earth, together with all of its countries and peoples.",
+      "urduMeaning": "دنیا / عالم",
+      "exampleSentence": "People from all over the world learn English."
+    },
+    {
+      "word": "speak",
+      "partOfSpeech": "verb",
+      "phonetic": "/spiːk/",
+      "definition": "Say something in order to convey information or express a feeling.",
+      "urduMeaning": "بولنا",
+      "exampleSentence": "I speak Urdu and English."
+    },
+    {
+      "word": "live",
+      "partOfSpeech": "verb",
+      "phonetic": "/lɪv/",
+      "definition": "Remain alive; make one's home in a particular place.",
+      "urduMeaning": "رہنا / سکونت اختیار کرنا",
+      "exampleSentence": "They live in London."
+    },
+    {
+      "word": "from",
+      "partOfSpeech": "preposition",
+      "phonetic": "/frɒm/",
+      "definition": "Indicating the point in space at which a journey or motion starts.",
+      "urduMeaning": "سے",
+      "exampleSentence": "Where are you from?"
+    },
+    {
+      "word": "capital",
+      "partOfSpeech": "noun",
+      "phonetic": "/ˈkæpɪtl/",
+      "definition": "The most important city or town of a country or region.",
+      "urduMeaning": "دارالحکومت",
+      "exampleSentence": "Islamabad is the capital of Pakistan."
+    },
+    {
+      "word": "people",
+      "partOfSpeech": "noun",
+      "phonetic": "/ˈpiːpl/",
+      "definition": "Human beings in general or considered collectively.",
+      "urduMeaning": "لوگ / قوم",
+      "exampleSentence": "The people are hospitable."
+    },
+    {
+      "word": "travel",
+      "partOfSpeech": "verb",
+      "phonetic": "/ˈtrævl/",
+      "definition": "Make a journey, typically of some length.",
+      "urduMeaning": "سفر کرنا",
+      "exampleSentence": "We love to travel abroad."
+    },
+    {
+      "word": "visit",
+      "partOfSpeech": "verb",
+      "phonetic": "/ˈvɪzɪt/",
+      "definition": "Go to see and spend time with someone socially.",
+      "urduMeaning": "ملاقات کرنا / سیر کرنا",
+      "exampleSentence": "I want to visit Turkey."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u1-l5-1",
+      "type": "explain",
+      "title": "Country vs. Nationality vs. Language",
+      "content": "When discussing origins, notice the difference between three categories:\n1. **Country**: The name of the nation (e.g. *Pakistan, Canada, Turkey*).\n2. **Nationality**: The adjective describing the person (e.g. *Pakistani, Canadian, Turkish*).\n3. **Language**: What people speak (e.g. *Urdu, English, Turkish*).\n\n**Always capitalize** countries, nationalities, and languages in English!",
+      "tables": [
+        {
+          "title": "Common Countries, Nationalities & Languages",
+          "headers": [
+            "Country",
+            "Nationality (Person)",
+            "Main Language",
+            "Example Sentence"
+          ],
+          "rows": [
+            [
+              "Pakistan",
+              "Pakistani",
+              "Urdu",
+              "I am from Pakistan; I am Pakistani."
+            ],
+            [
+              "United Kingdom",
+              "British",
+              "English",
+              "She is British; she speaks English."
+            ],
+            [
+              "United States",
+              "American",
+              "English",
+              "He is from the US; he is American."
+            ],
+            [
+              "Canada",
+              "Canadian",
+              "English & French",
+              "They are Canadian."
+            ],
+            [
+              "Turkey",
+              "Turkish",
+              "Turkish",
+              "Istanbul is a Turkish city."
+            ],
+            [
+              "Saudi Arabia",
+              "Saudi",
+              "Arabic",
+              "They speak Arabic in Saudi Arabia."
+            ],
+            [
+              "China",
+              "Chinese",
+              "Mandarin",
+              "Beijing is in China; she is Chinese."
+            ]
+          ]
+        },
+        {
+          "title": "Asking About Origins",
+          "headers": [
+            "Question",
+            "Grammar Structure",
+            "Sample Answer"
+          ],
+          "rows": [
+            [
+              "Where are you from?",
+              "Where + are + you + from?",
+              "I am from Lahore, Pakistan."
+            ],
+            [
+              "What is your nationality?",
+              "What + is + possessive + nationality?",
+              "I am Pakistani."
+            ],
+            [
+              "What languages do you speak?",
+              "What languages + do + you + speak?",
+              "I speak Urdu, Punjabi, and English."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "warning",
+          "title": "Capitalization is Mandatory",
+          "text": "Never write 'english' or 'pakistan' with a lower-case letter. In English, proper nouns are strictly capitalized: **English**, **Pakistan**, **Urdu**."
+        },
+        {
+          "type": "tip",
+          "title": "Preposition 'from'",
+          "text": "Use **from** with the country name: 'I am **from** Pakistan'. With nationality, omit 'from': 'I am Pakistani'."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l5-2",
+      "type": "examples",
+      "title": "Country and Nationality Sentences",
+      "examples": [
+        {
+          "english": "I am from Pakistan, and I am proud of my heritage.",
+          "phonetic": "/aɪ æm frɒm ˌpækɪˈstæn ænd aɪ æm praʊd ɒv maɪ ˈherɪtɪdʒ/",
+          "urdu": "میں پاکستان سے ہوں، اور مجھے اپنے ورثے پر فخر ہے۔",
+          "audioText": "I am from Pakistan, and I am proud of my heritage."
+        },
+        {
+          "english": "Where are your grandparents from?",
+          "phonetic": "/weər ɑːr jɔːr ˈɡrænpeərənts frɒm/",
+          "urdu": "آپ کے دادا دادی کہاں سے ہیں؟",
+          "audioText": "Where are your grandparents from?"
+        },
+        {
+          "english": "She speaks fluent English and conversational Arabic.",
+          "phonetic": "/ʃiː spiːks ˈfluːənt ˈɪŋɡlɪʃ ænd ˌkɒnvəˈseɪʃənl ˈærəbɪk/",
+          "urdu": "وہ روانی سے انگریزی اور بول چال کی حد تک عربی بولتی ہیں۔",
+          "audioText": "She speaks fluent English and conversational Arabic."
+        },
+        {
+          "english": "Our teacher is Canadian, but he lives in Islamabad.",
+          "phonetic": "/ˈaʊər ˈtiːtʃər ɪz kəˈneɪdiən bʌt hiː lɪvz ɪn ɪsˈlɑːməbɑːd/",
+          "urdu": "ہمارے استاد کینیڈین ہیں، لیکن وہ اسلام آباد میں رہتے ہیں۔",
+          "audioText": "Our teacher is Canadian, but he lives in Islamabad."
+        },
+        {
+          "english": "Turkish cuisine is famous around the world.",
+          "phonetic": "/ˈtɜːkɪʃ kwɪˈziːn ɪz ˈfeɪməs əˈraʊnd ðə wɜːld/",
+          "urdu": "ترکش کھانا دنیا بھر میں مشہور ہے۔",
+          "audioText": "Turkish cuisine is famous around the world."
+        },
+        {
+          "english": "Are they from the United Kingdom?",
+          "phonetic": "/ɑːr ðeɪ frɒm ðə juːˈnaɪtɪd ˈkɪŋdəm/",
+          "urdu": "کیا وہ برطانیہ سے ہیں؟",
+          "audioText": "Are they from the United Kingdom?"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l5-3",
+      "type": "dialogue",
+      "title": "International Student Orientation",
+      "dialogue": [
+        {
+          "speaker": "Adviser",
+          "avatar": "A",
+          "english": "Welcome to university! Where are you from?",
+          "urdu": "یونیورسٹی میں خوش آمدید! آپ کہاں سے ہیں؟",
+          "audioText": "Welcome to university! Where are you from?"
+        },
+        {
+          "speaker": "Student",
+          "avatar": "S",
+          "english": "I am from Faisalabad, Pakistan.",
+          "urdu": "میں فیصل آباد، پاکستان سے ہوں۔",
+          "audioText": "I am from Faisalabad, Pakistan."
+        },
+        {
+          "speaker": "Adviser",
+          "avatar": "A",
+          "english": "Wonderful! And what languages do you speak?",
+          "urdu": "شاندار! اور آپ کون سی زبانیں بولتے ہیں؟",
+          "audioText": "Wonderful! And what languages do you speak?"
+        },
+        {
+          "speaker": "Student",
+          "avatar": "S",
+          "english": "I speak Urdu, Punjabi, and English.",
+          "urdu": "میں اردو، پنجابی اور انگریزی بولتا ہوں۔",
+          "audioText": "I speak Urdu, Punjabi, and English."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l5-4",
+      "type": "practice",
+      "title": "Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u1-l5-1",
+          "type": "mcq",
+          "skillTag": "nationalities",
+          "prompt": "Complete the sentence: 'He is from Turkey; he is _____.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Turkish"
+            },
+            {
+              "id": "opt-2",
+              "text": "Turkey"
+            },
+            {
+              "id": "opt-3",
+              "text": "Turkian"
+            },
+            {
+              "id": "opt-4",
+              "text": "Turkese"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Turkish' is the correct nationality adjective for someone from Turkey.",
+          "urduExplanation": "ترکی سے تعلق رکھنے والے شخص کی قومیت 'Turkish' ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l5-2",
+          "type": "mcq",
+          "skillTag": "nationalities",
+          "prompt": "Which sentence has all language names correctly capitalized?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "I speak fluent urdu every day."
+            },
+            {
+              "id": "opt-2",
+              "text": "I speak fluent Urdu and English."
+            },
+            {
+              "id": "opt-3",
+              "text": "I study english grammar at night."
+            },
+            {
+              "id": "opt-4",
+              "text": "We write arabic letters in pencil."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "All languages (Urdu, English) must be capitalized.",
+          "urduExplanation": "زبانوں کے ناموں کے پہلے حروف ہمیشہ کیپیٹل ہوتے ہیں: Urdu and English۔"
+        },
+        {
+          "id": "ex-a1-u1-l5-3",
+          "type": "fill_blank",
+          "skillTag": "nationalities",
+          "prompt": "Where are you _____? - I am from Islamabad.",
+          "correctAnswer": "from",
+          "acceptableAnswers": [
+            "from"
+          ],
+          "explanation": "The preposition 'from' asks about origin.",
+          "urduExplanation": "کہاں سے تعلق ہے؟ پوچھنے کے لیے 'from' آتا ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l5-4",
+          "type": "order_sentence",
+          "skillTag": "nationalities",
+          "prompt": "Put the words in order:",
+          "sentenceTokens": [
+            "She",
+            "is",
+            "a",
+            "Pakistani",
+            "doctor",
+            "."
+          ],
+          "correctOrder": [
+            "She",
+            "is",
+            "a",
+            "Pakistani",
+            "doctor",
+            "."
+          ],
+          "explanation": "Subject (She) + Verb (is) + Article & Nationality Adjective (a Pakistani) + Noun (doctor).",
+          "urduExplanation": "وہ ایک پاکستانی ڈاکٹر ہیں۔"
+        },
+        {
+          "id": "ex-a1-u1-l5-5",
+          "type": "match_pairs",
+          "skillTag": "nationalities",
+          "prompt": "Match the country with its nationality:",
+          "pairs": [
+            {
+              "left": "Canada",
+              "right": "Canadian"
+            },
+            {
+              "left": "Pakistan",
+              "right": "Pakistani"
+            },
+            {
+              "left": "United Kingdom",
+              "right": "British"
+            }
+          ],
+          "explanation": "Match each country name with the corresponding nationality adjective.",
+          "urduExplanation": "ملک کے نام کے ساتھ اس کی قومیت کا لفظ ملاؤ۔"
+        },
+        {
+          "id": "ex-a1-u1-l5-6",
+          "type": "error_correction",
+          "skillTag": "nationalities",
+          "prompt": "Correct the sentence: 'I am from Pakistani.'",
+          "correctAnswer": "I am Pakistani.",
+          "acceptableAnswers": [
+            "I am Pakistani.",
+            "I am from Pakistan.",
+            "I am from Pakistan"
+          ],
+          "explanation": "Say 'I am Pakistani' (nationality) OR 'I am from Pakistan' (country). Never combine 'from' with nationality.",
+          "urduExplanation": "یا تو 'I am Pakistani' کہیں یا 'I am from Pakistan'۔ 'from' کے بعد ملک کا نام آتا ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l5-7",
+          "type": "true_false",
+          "skillTag": "nationalities",
+          "prompt": "True or False: In English, languages like Arabic and English are written with a capital letter.",
+          "correctAnswer": "True",
+          "acceptableAnswers": [
+            "True",
+            "true",
+            "T"
+          ],
+          "explanation": "True. All language names are proper nouns and must be capitalized.",
+          "urduExplanation": "درست۔ زبانوں کے تمام نام کیپیٹل لیٹر سے شروع ہوتے ہیں۔"
+        },
+        {
+          "id": "ex-a1-u1-l5-8",
+          "type": "fill_blank",
+          "skillTag": "nationalities",
+          "prompt": "People who live in China are _____.",
+          "correctAnswer": "Chinese",
+          "acceptableAnswers": [
+            "Chinese",
+            "chinese"
+          ],
+          "explanation": "'Chinese' is the nationality adjective for China.",
+          "urduExplanation": "چین کے باشندوں کو 'Chinese' کہا جاتا ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l5-9",
+          "type": "mcq",
+          "skillTag": "nationalities",
+          "prompt": "Complete the sentence: 'Tokyo is the capital of _____.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Japan"
+            },
+            {
+              "id": "opt-2",
+              "text": "Japanese"
+            },
+            {
+              "id": "opt-3",
+              "text": "Japans"
+            },
+            {
+              "id": "opt-4",
+              "text": "Japonese"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Japan' is the country noun.",
+          "urduExplanation": "'Japan' ملک کا نام ہے۔"
+        },
+        {
+          "id": "ex-a1-u1-l5-10",
+          "type": "fill_blank",
+          "skillTag": "nationalities",
+          "prompt": "Islamabad is the capital of _____.",
+          "correctAnswer": "Pakistan",
+          "acceptableAnswers": [
+            "Pakistan"
+          ],
+          "explanation": "Pakistan is the country noun.",
+          "urduExplanation": "پاکستان ملک کا نام ہے۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l5-5",
+      "type": "quiz",
+      "title": "Lesson 5 Check Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u1-l5-1",
+          "type": "mcq",
+          "skillTag": "nationalities",
+          "prompt": "Which pair shows Country and Nationality correctly?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "France - French"
+            },
+            {
+              "id": "opt-2",
+              "text": "Canada - Canada"
+            },
+            {
+              "id": "opt-3",
+              "text": "British - United Kingdom"
+            },
+            {
+              "id": "opt-4",
+              "text": "Turkey - Turkian"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'France' is the country; 'French' is the nationality.",
+          "urduExplanation": "فرانس ملک اور فرینچ قومیت ہے۔"
+        },
+        {
+          "id": "qz-a1-u1-l5-2",
+          "type": "mcq",
+          "skillTag": "nationalities",
+          "prompt": "Which sentence is accurate?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "I am from Canada."
+            },
+            {
+              "id": "opt-2",
+              "text": "I am from Canadian."
+            },
+            {
+              "id": "opt-3",
+              "text": "I from Canada."
+            },
+            {
+              "id": "opt-4",
+              "text": "I am Canada."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'I am from Canada' correctly pairs 'from' with the country noun.",
+          "urduExplanation": "'I am from Canada' درست جملہ ہے۔"
+        },
+        {
+          "id": "qz-a1-u1-l5-3",
+          "type": "fill_blank",
+          "skillTag": "nationalities",
+          "prompt": "What _____ do you speak at home?",
+          "correctAnswer": "language",
+          "acceptableAnswers": [
+            "language",
+            "languages"
+          ],
+          "explanation": "The noun 'language' fits the question.",
+          "urduExplanation": "آپ گھر میں کون سی زبان بولتے ہیں؟"
+        },
+        {
+          "id": "qz-a1-u1-l5-4",
+          "type": "mcq",
+          "skillTag": "nationalities",
+          "prompt": "How do you ask someone's nationality politely?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Where are you from?"
+            },
+            {
+              "id": "opt-2",
+              "text": "Who you are?"
+            },
+            {
+              "id": "opt-3",
+              "text": "What country is?"
+            },
+            {
+              "id": "opt-4",
+              "text": "Are you person?"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Where are you from?' is the universal polite question regarding origins.",
+          "urduExplanation": "شائستہ سوال: 'Where are you from?'"
+        },
+        {
+          "id": "qz-a1-u1-l5-5",
+          "type": "mcq",
+          "skillTag": "nationalities",
+          "prompt": "Which of these is a language name?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Arabic"
+            },
+            {
+              "id": "opt-2",
+              "text": "Saudi Arabia"
+            },
+            {
+              "id": "opt-3",
+              "text": "London"
+            },
+            {
+              "id": "opt-4",
+              "text": "Asia"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Arabic' is a language (Saudi Arabia is a country; London is a city).",
+          "urduExplanation": "'Arabic' (عربی) زبان کا نام ہے۔"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u1-l5-6",
+      "type": "urduNote",
+      "title": "اردو بولنے والوں کے لیے لسانی نکتہ",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      },
+      "urduText": "اردو میں ہم کہتے ہیں: 'میں پاکستان سے ہوں' اور 'میں پاکستانی ہوں'۔\nانگریزی میں طلبہ اکثر دونوں کو ملا کر **'I am from Pakistani'** بول دیتے ہیں جو کہ بالکل غلط ہے!\nاصول یاد رکھیں:\n- اگر 'from' لگائیں گے تو ملک کا نام آئے گا: **I am from Pakistan**۔\n- اگر قومیت بتائیں گے تو 'from' نہیں آئے گا: **I am Pakistani**۔\nاسی طرح تمام ممالک اور زبانوں کے نام ہمیشہ بڑے حرف (Capital letter) سے شروع کریں، جیسے Urdu, English, Pakistan وغیرہ۔"
+    },
+    {
+      "id": "sec-a1-u1-l5-7",
+      "type": "summary",
+      "title": "Lesson 5 Summary Box",
+      "summaryPoints": [
+        "Country = Noun (Pakistan, Turkey, Canada). Use with 'from': I am from Pakistan.",
+        "Nationality = Adjective (Pakistani, Turkish, Canadian). Use without 'from': I am Pakistani.",
+        "Always capitalize countries, nationalities, and languages (English, Urdu, Chinese).",
+        "Ask origins with 'Where are you from?' and languages with 'What languages do you speak?'."
+      ]
+    }
+  ]
+}

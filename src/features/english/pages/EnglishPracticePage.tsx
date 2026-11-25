@@ -1,338 +1,467 @@
-import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Sparkles, 
-  CheckCircle2, 
-  XCircle, 
-  ArrowRight, 
-  RotateCcw, 
-  Volume2, 
-  Zap, 
-  Trophy,
-  HelpCircle,
+import React, { useState, useEffect, useMemo } from 'react';
+import {
+  Sparkles,
+  Zap,
+  Target,
+  AlertTriangle,
+  RotateCcw,
+  CheckCircle2,
+  Clock,
   BookOpen,
-  Filter
+  Filter,
+  Flame,
+  ArrowRight,
+  TrendingDown,
+  Layers,
 } from 'lucide-react';
-import { ALL_ENGLISH_LEVELS, LessonExercise } from '../data/courseContent';
-import type { EnglishCEFRLevel } from '../../../types';
+import { ExerciseRenderer, ExerciseData } from '../components/exercises/ExerciseRenderer';
+import { getAllLoadedCourseLessons } from '../services/courseService';
+import {
+  getAllSkillMastery,
+  recordSkillPracticeResult,
+  recordMistakeToNotebook,
+} from '../services/masteryService';
 import { db } from '../../../lib/db';
+import type { EnglishCEFRLevel } from '../../../types';
+import { Button } from '../../../components/ui/Button';
 
-interface PracticeItem extends LessonExercise {
-  level: EnglishCEFRLevel;
-  sourceLesson: string;
-}
+type PracticeMode = 'topics' | 'smart' | 'mistakes' | 'daily' | 'speed';
 
 export const EnglishPracticePage: React.FC = () => {
+  const [activeMode, setActiveMode] = useState<PracticeMode>('smart');
   const [selectedLevel, setSelectedLevel] = useState<EnglishCEFRLevel | 'ALL'>('ALL');
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [isAnswerChecked, setIsAnswerChecked] = useState(false);
-  const [score, setScore] = useState(0);
-  const [showUrdu, setShowUrdu] = useState(true);
-  const [completed, setCompleted] = useState(false);
+  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
 
-  // Extract all exercises from course content
-  const allExercises = useMemo<PracticeItem[]>(() => {
-    const list: PracticeItem[] = [];
-    ALL_ENGLISH_LEVELS.forEach(lvl => {
-      lvl.units.forEach(unit => {
-        unit.lessons.forEach(lesson => {
-          lesson.exercises.forEach(ex => {
+  // Active session state
+  const [sessionActive, setSessionActive] = useState(false);
+  const [sessionExercises, setSessionExercises] = useState<Array<ExerciseData & { level?: string; sourceTitle?: string }>>([]);
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [sessionScore, setSessionScore] = useState(0);
+  const [sessionFinished, setSessionFinished] = useState(false);
+
+  // Speed Round state (60s timer)
+  const [speedTimer, setSpeedTimer] = useState(60);
+  const [speedStreak, setSpeedStreak] = useState(0);
+
+  // Mistakes notebook cache
+  const [savedMistakes, setSavedMistakes] = useState<any[]>([]);
+
+  // 1. Gather all exercises across course lessons
+  const allLoadedLessons = getAllLoadedCourseLessons();
+
+  const allExercises = useMemo<Array<ExerciseData & { level: string; sourceTitle: string }>>(() => {
+    const list: Array<ExerciseData & { level: string; sourceTitle: string }> = [];
+    for (const lId in allLoadedLessons) {
+      const lesson = allLoadedLessons[lId];
+      const level = lesson.level || 'A1';
+      for (const sec of lesson.sections || []) {
+        if ((sec.type === 'practice' || sec.type === 'quiz') && Array.isArray(sec.exercises)) {
+          for (const ex of sec.exercises) {
             list.push({
               ...ex,
-              level: lvl.level,
-              sourceLesson: lesson.title,
+              level,
+              sourceTitle: lesson.title,
             });
-          });
-        });
-      });
-    });
-    return list;
-  }, []);
-
-  const filteredExercises = useMemo(() => {
-    if (selectedLevel === 'ALL') return allExercises;
-    return allExercises.filter(item => item.level === selectedLevel);
-  }, [allExercises, selectedLevel]);
-
-  const currentExercise = filteredExercises[currentIndex] || null;
-
-  const handleSelectOption = (option: string) => {
-    if (isAnswerChecked) return;
-    setSelectedAnswer(option);
-  };
-
-  const handleCheckAnswer = async () => {
-    if (!currentExercise || !selectedAnswer || isAnswerChecked) return;
-    setIsAnswerChecked(true);
-
-    const isCorrect = selectedAnswer.trim().toLowerCase() === currentExercise.correctAnswer.trim().toLowerCase();
-    if (isCorrect) {
-      setScore(prev => prev + 1);
-    }
-
-    try {
-      await db.lessonAttempts.add({
-        lessonId: `practice-${currentExercise.id}`,
-        courseId: 'english-practice',
-        track: 'english',
-        score: isCorrect ? 1 : 0,
-        totalQuestions: 1,
-        answers: {
-          [currentExercise.id]: {
-            userAnswer: selectedAnswer,
-            isCorrect,
           }
-        },
-        completedAt: new Date().toISOString(),
+        }
+      }
+    }
+    return list;
+  }, [allLoadedLessons]);
+
+  // Load mistakes from db
+  useEffect(() => {
+    async function loadMistakes() {
+      try {
+        const items = await db.mistakes.toArray();
+        setSavedMistakes(items);
+      } catch (err) {
+        console.warn('Failed to load mistakes:', err);
+      }
+    }
+    loadMistakes();
+  }, [sessionFinished]);
+
+  // Speed Round Timer
+  useEffect(() => {
+    let interval: any = null;
+    if (sessionActive && activeMode === 'speed' && !sessionFinished && speedTimer > 0) {
+      interval = setInterval(() => {
+        setSpeedTimer((t) => {
+          if (t <= 1) {
+            clearInterval(interval);
+            setSessionFinished(true);
+            return 0;
+          }
+          return t - 1;
+        });
+      }, 1000);
+    }
+    return () => clearInterval(interval);
+  }, [sessionActive, activeMode, sessionFinished, speedTimer]);
+
+  // Distinct topics & skill tags
+  const topicStats = useMemo(() => {
+    const map: Record<string, { count: number; level: string }> = {};
+    for (const ex of allExercises) {
+      const tag = ex.skillTag || 'general-grammar';
+      if (!map[tag]) map[tag] = { count: 0, level: ex.level };
+      map[tag].count += 1;
+    }
+    return map;
+  }, [allExercises]);
+
+  // Launch a practice session based on mode
+  const startSession = (mode: PracticeMode, topicFilter?: string) => {
+    let pool = [...allExercises];
+
+    if (selectedLevel !== 'ALL') {
+      pool = pool.filter((e) => e.level === selectedLevel);
+    }
+
+    if (mode === 'topics' && topicFilter) {
+      pool = pool.filter((e) => (e.skillTag || 'general-grammar') === topicFilter);
+    } else if (mode === 'smart') {
+      // Prioritize weakest skill tags from mastery store
+      const mastery = getAllSkillMastery();
+      pool.sort((a, b) => {
+        const scoreA = mastery[a.skillTag || '']?.masteryPercent ?? 50;
+        const scoreB = mastery[b.skillTag || '']?.masteryPercent ?? 50;
+        return scoreA - scoreB;
       });
-    } catch (err) {
-      console.warn('Could not record practice attempt:', err);
+      pool = pool.slice(0, 10);
+    } else if (mode === 'mistakes') {
+      // Pull items from mistakes
+      const mistakeIds = new Set(savedMistakes.map((m) => m.questionId));
+      pool = pool.filter((e) => mistakeIds.has(e.id));
+      if (pool.length === 0) {
+        // Fallback to random 5
+        pool = allExercises.slice(0, 5);
+      }
+    } else if (mode === 'daily') {
+      // 10-minute mixed session (10 questions across grammar, vocabulary)
+      pool = pool.sort(() => 0.5 - Math.random()).slice(0, 10);
+    } else if (mode === 'speed') {
+      // Timed speed round
+      pool = pool.sort(() => 0.5 - Math.random()).slice(0, 20);
+      setSpeedTimer(60);
+      setSpeedStreak(0);
     }
+
+    setSessionExercises(pool);
+    setCurrentIdx(0);
+    setSessionScore(0);
+    setSessionFinished(false);
+    setSessionActive(true);
   };
 
-  const handleNext = () => {
-    if (currentIndex + 1 < filteredExercises.length) {
-      setCurrentIndex(prev => prev + 1);
-      setSelectedAnswer(null);
-      setIsAnswerChecked(false);
+  const handleExerciseAnswer = async (isCorrect: boolean, response: any) => {
+    const ex = sessionExercises[currentIdx];
+    if (!ex) return;
+
+    if (isCorrect) {
+      setSessionScore((s) => s + 1);
+      if (activeMode === 'speed') setSpeedStreak((s) => s + 1);
     } else {
-      setCompleted(true);
+      if (activeMode === 'speed') setSpeedStreak(0);
+      // Record mistake
+      await recordMistakeToNotebook({
+        questionId: ex.id,
+        skillTag: ex.skillTag || 'grammar',
+        lessonTitle: ex.sourceTitle || 'English Practice',
+        prompt: ex.prompt,
+        userAnswer: typeof response === 'string' ? response : JSON.stringify(response),
+        correctAnswer: String(ex.correctAnswer || ex.correctOptionId || 'Answer'),
+        explanation: ex.explanation,
+      });
+    }
+
+    if (ex.skillTag) {
+      recordSkillPracticeResult(ex.skillTag, (ex.level as EnglishCEFRLevel) || 'A1', isCorrect ? 100 : 0);
     }
   };
 
-  const handleRestart = () => {
-    setCurrentIndex(0);
-    setSelectedAnswer(null);
-    setIsAnswerChecked(false);
-    setScore(0);
-    setCompleted(false);
-  };
-
-  const speak = (text: string) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.rate = 0.9;
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
+  const handleNextExercise = () => {
+    if (currentIdx < sessionExercises.length - 1) {
+      setCurrentIdx((prev) => prev + 1);
+    } else {
+      setSessionFinished(true);
     }
   };
+
+  const currentExercise = sessionExercises[currentIdx];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 space-y-6">
-      {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-200 dark:border-neutral-800 pb-5">
-        <div>
-          <div className="flex items-center gap-2 mb-1">
-            <span className="p-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-[#124F40] dark:text-emerald-400">
-              <Zap className="w-5 h-5" />
-            </span>
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#124F40] dark:text-emerald-400">
-              Interactive Arena
-            </span>
-          </div>
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-            English Practice & Exercises
-          </h1>
-          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Test your grammar, vocabulary, and sentence construction with instant feedback.
-          </p>
+    <div className="max-w-5xl mx-auto p-4 md:p-8 space-y-8 font-sans">
+      {/* Practice Hub Header */}
+      <div className="space-y-2">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-[#124F40] dark:text-[#5BB78D] text-xs font-semibold">
+          <Target className="w-3.5 h-3.5" />
+          <span>English Practice Arena</span>
         </div>
+        <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-gray-100 tracking-tight">
+          Adaptive English Practice Hub
+        </h1>
+        <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
+          Target your weak areas, review previous mistakes, or jump into high-speed fluency drills.
+        </p>
+      </div>
 
-        {/* Level Filter */}
-        <div className="flex items-center gap-2">
-          <Filter className="w-4 h-4 text-gray-500" />
-          <div className="flex flex-wrap gap-1 bg-gray-100 dark:bg-neutral-800 p-1 rounded-xl">
-            {(['ALL', 'A1', 'A2', 'B1', 'B2', 'C1'] as const).map(lvl => (
+      {/* Mode Tabs */}
+      {!sessionActive && (
+        <div className="space-y-6">
+          <div className="flex flex-wrap items-center gap-2 border-b border-gray-200 dark:border-gray-800 pb-3">
+            {[
+              { id: 'smart', label: 'Smart Practice', icon: Sparkles },
+              { id: 'topics', label: 'By Topic', icon: BookOpen },
+              { id: 'mistakes', label: `Mistakes (${savedMistakes.length})`, icon: AlertTriangle },
+              { id: 'daily', label: '10-Min Mixed', icon: Clock },
+              { id: 'speed', label: 'Speed Round (60s)', icon: Zap },
+            ].map((tab) => {
+              const Icon = tab.icon;
+              const isActive = activeMode === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  type="button"
+                  onClick={() => setActiveMode(tab.id as PracticeMode)}
+                  className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-sm ${
+                    isActive
+                      ? 'bg-[#124F40] text-white shadow-md'
+                      : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-gray-400'
+                  }`}
+                >
+                  <Icon className="w-4 h-4" />
+                  <span>{tab.label}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Level Filter */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 text-xs">
+            <span className="font-semibold text-gray-500 flex items-center gap-1 shrink-0">
+              <Filter className="w-3.5 h-3.5" /> Level:
+            </span>
+            {(['ALL', 'A1', 'A2', 'B1', 'B2', 'C1'] as const).map((lvl) => (
               <button
                 key={lvl}
-                onClick={() => {
-                  setSelectedLevel(lvl);
-                  handleRestart();
-                }}
-                className={`px-2.5 py-1 text-xs font-medium rounded-lg transition-all ${
+                type="button"
+                onClick={() => setSelectedLevel(lvl)}
+                className={`px-3 py-1 rounded-lg font-medium transition-all ${
                   selectedLevel === lvl
-                    ? 'bg-white dark:bg-neutral-700 text-[#124F40] dark:text-emerald-400 shadow-sm font-semibold'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+                    ? 'bg-emerald-600 text-white font-bold'
+                    : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200'
                 }`}
               >
                 {lvl}
               </button>
             ))}
           </div>
-        </div>
-      </div>
 
-      {/* Main Practice Container */}
-      {!completed && currentExercise ? (
-        <div className="bg-white dark:bg-neutral-900 rounded-2xl border border-gray-200 dark:border-neutral-800 p-6 md:p-8 shadow-sm space-y-6">
-          {/* Progress & Meta Bar */}
-          <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-            <span className="inline-flex items-center gap-1.5 font-medium px-2.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/50 text-[#124F40] dark:text-emerald-400 border border-emerald-200/50 dark:border-emerald-800/40">
-              Level {currentExercise.level}
-            </span>
-            <span>
-              Question {currentIndex + 1} of {filteredExercises.length}
-            </span>
-            <span className="font-semibold text-emerald-600 dark:text-emerald-400">
-              Score: {score}
-            </span>
-          </div>
-
-          <div className="w-full bg-gray-100 dark:bg-neutral-800 h-1.5 rounded-full overflow-hidden">
-            <div 
-              className="bg-[#5BB78D] h-full transition-all duration-300 rounded-full"
-              style={{ width: `${((currentIndex + 1) / filteredExercises.length) * 100}%` }}
-            />
-          </div>
-
-          {/* Prompt */}
-          <div className="space-y-3">
-            <div className="flex items-start justify-between gap-4">
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white leading-relaxed">
-                {currentExercise.prompt}
-              </h2>
-              <button
-                onClick={() => speak(currentExercise.prompt)}
-                className="p-2 rounded-xl text-gray-500 hover:text-[#124F40] hover:bg-emerald-50 dark:hover:bg-neutral-800 transition-colors"
-                title="Listen to question"
-                aria-label="Listen"
+          {/* Mode Card View */}
+          {activeMode === 'smart' && (
+            <div className="p-6 rounded-2xl border border-emerald-300 dark:border-emerald-800 bg-emerald-50/50 dark:bg-emerald-950/20 space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="p-3 rounded-xl bg-[#124F40] text-white shadow-sm">
+                  <Sparkles className="w-6 h-6 text-[#5BB78D]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                    AI-Driven Weakness Targeting
+                  </h3>
+                  <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
+                    Automatically pulls 10 questions focusing on your lowest accuracy skill tags.
+                  </p>
+                </div>
+              </div>
+              <Button
+                onClick={() => startSession('smart')}
+                className="bg-[#124F40] hover:bg-[#0e3f33] text-white gap-2 font-semibold px-6 py-2.5 rounded-xl shadow-sm"
               >
-                <Volume2 className="w-5 h-5" />
-              </button>
-            </div>
-            <p className="text-xs text-gray-500 dark:text-gray-400">
-              Source: {currentExercise.sourceLesson}
-            </p>
-          </div>
-
-          {/* Options */}
-          {currentExercise.options && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
-              {currentExercise.options.map((option, idx) => {
-                const isSelected = selectedAnswer === option;
-                const isCorrect = isAnswerChecked && option === currentExercise.correctAnswer;
-                const isWrong = isAnswerChecked && isSelected && option !== currentExercise.correctAnswer;
-
-                let btnStyles = 'border-gray-200 dark:border-neutral-800 hover:border-emerald-300 bg-white dark:bg-neutral-900 text-gray-800 dark:text-gray-200';
-
-                if (isSelected && !isAnswerChecked) {
-                  btnStyles = 'border-[#124F40] dark:border-emerald-400 bg-emerald-50/50 dark:bg-emerald-950/30 text-[#124F40] dark:text-emerald-300 font-medium ring-2 ring-emerald-500/20';
-                } else if (isCorrect) {
-                  btnStyles = 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-800 dark:text-emerald-300 font-semibold';
-                } else if (isWrong) {
-                  btnStyles = 'border-rose-400 bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300';
-                }
-
-                return (
-                  <button
-                    key={idx}
-                    onClick={() => handleSelectOption(option)}
-                    disabled={isAnswerChecked}
-                    className={`flex items-center justify-between p-4 rounded-xl border text-left text-sm md:text-base transition-all ${btnStyles}`}
-                  >
-                    <span>{option}</span>
-                    {isCorrect && <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 ml-2" />}
-                    {isWrong && <XCircle className="w-5 h-5 text-rose-600 flex-shrink-0 ml-2" />}
-                  </button>
-                );
-              })}
+                <span>Start Smart Practice</span>
+                <ArrowRight className="w-4 h-4" />
+              </Button>
             </div>
           )}
 
-          {/* Explanation Box */}
-          <AnimatePresence>
-            {isAnswerChecked && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
-                className="p-4 rounded-xl bg-gray-50 dark:bg-neutral-800/80 border border-gray-200 dark:border-neutral-700 space-y-2 text-sm"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1.5 font-semibold text-gray-900 dark:text-white">
-                    <HelpCircle className="w-4 h-4 text-emerald-600" />
-                    Explanation
-                  </div>
-                  {currentExercise.urduExplanation && (
-                    <button
-                      onClick={() => setShowUrdu(!showUrdu)}
-                      className="text-xs text-emerald-700 dark:text-emerald-400 hover:underline"
-                    >
-                      {showUrdu ? 'Hide Urdu' : 'Show Urdu'}
-                    </button>
-                  )}
+          {activeMode === 'topics' && (
+            <div className="space-y-4">
+              <div className="text-xs text-gray-500 dark:text-gray-400">
+                Select any grammar rule or vocabulary topic below to practice:
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                {Object.entries(topicStats).map(([topic, stat]) => (
+                  <button
+                    key={topic}
+                    type="button"
+                    onClick={() => startSession('topics', topic)}
+                    className="p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-[#124F40] dark:hover:border-[#5BB78D] text-left transition-all shadow-sm group"
+                  >
+                    <div className="flex items-center justify-between gap-2 mb-1">
+                      <span className="font-bold text-sm text-gray-900 dark:text-gray-100 group-hover:text-[#124F40] dark:group-hover:text-[#5BB78D]">
+                        {topic}
+                      </span>
+                      <span className="px-2 py-0.5 rounded text-[10px] bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-semibold uppercase">
+                        {stat.level}
+                      </span>
+                    </div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">
+                      {stat.count} exercises available
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {activeMode === 'mistakes' && (
+            <div className="p-6 rounded-2xl border border-amber-300 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/20 space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="p-3 rounded-xl bg-amber-600 text-white shadow-sm">
+                  <AlertTriangle className="w-6 h-6" />
                 </div>
-                <p className="text-gray-700 dark:text-gray-300">
-                  {currentExercise.explanation}
-                </p>
-                {showUrdu && currentExercise.urduExplanation && (
-                  <p className="text-right text-gray-600 dark:text-gray-400 font-serif pt-1 border-t border-gray-200 dark:border-neutral-700/60" dir="rtl">
-                    {currentExercise.urduExplanation}
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                    Mistakes Notebook Review ({savedMistakes.length})
+                  </h3>
+                  <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
+                    Review and conquer exercises you missed during previous practice and quizzes.
                   </p>
-                )}
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          {/* Action Bar */}
-          <div className="flex items-center justify-end gap-3 pt-4 border-t border-gray-100 dark:border-neutral-800">
-            {!isAnswerChecked ? (
-              <button
-                onClick={handleCheckAnswer}
-                disabled={!selectedAnswer}
-                className="px-6 py-2.5 rounded-xl bg-[#124F40] hover:bg-[#0d3b30] text-white text-sm font-semibold disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm"
+                </div>
+              </div>
+              <Button
+                onClick={() => startSession('mistakes')}
+                className="bg-[#124F40] hover:bg-[#0e3f33] text-white gap-2 font-semibold px-6 py-2.5 rounded-xl shadow-sm"
               >
-                Check Answer
-              </button>
-            ) : (
-              <button
-                onClick={handleNext}
-                className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-[#124F40] hover:bg-[#0d3b30] text-white text-sm font-semibold transition-all shadow-sm"
-              >
-                <span>{currentIndex + 1 < filteredExercises.length ? 'Next Question' : 'Finish Session'}</span>
+                <span>Practice Missed Exercises</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </Button>
+            </div>
+          )}
+
+          {activeMode === 'daily' && (
+            <div className="p-6 rounded-2xl border border-blue-300 dark:border-blue-800 bg-blue-50/50 dark:bg-blue-950/20 space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="p-3 rounded-xl bg-blue-600 text-white shadow-sm">
+                  <Clock className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                    Daily 10-Minute Mixed Session
+                  </h3>
+                  <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
+                    A balanced 10-question set mixing grammar, vocabulary, listening, and spelling to keep your streak alive.
+                  </p>
+                </div>
+              </div>
+              <Button
+                onClick={() => startSession('daily')}
+                className="bg-[#124F40] hover:bg-[#0e3f33] text-white gap-2 font-semibold px-6 py-2.5 rounded-xl shadow-sm"
+              >
+                <span>Start Daily Session</span>
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </div>
+          )}
+
+          {activeMode === 'speed' && (
+            <div className="p-6 rounded-2xl border border-rose-300 dark:border-rose-800 bg-rose-50/50 dark:bg-rose-950/20 space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="p-3 rounded-xl bg-rose-600 text-white shadow-sm">
+                  <Zap className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                    Timed 60-Second Speed Round
+                  </h3>
+                  <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
+                    Race against the clock! Answer as many questions as you can before 60 seconds run out.
+                  </p>
+                </div>
+              </div>
+              <Button
+                onClick={() => startSession('speed')}
+                className="bg-rose-600 hover:bg-rose-700 text-white gap-2 font-semibold px-6 py-2.5 rounded-xl shadow-sm"
+              >
+                <Zap className="w-4 h-4" />
+                <span>Begin 60s Speed Round</span>
+              </Button>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Active Practice Session Runner */}
+      {sessionActive && (
+        <div className="space-y-6">
+          {/* Active Session Status Bar */}
+          <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 flex items-center justify-between gap-4 shadow-sm">
+            <div className="flex items-center gap-3">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setSessionActive(false)}
+                className="text-xs"
+              >
+                Exit Session
+              </Button>
+              <span className="text-sm font-bold text-gray-900 dark:text-gray-100">
+                Question {currentIdx + 1} of {sessionExercises.length}
+              </span>
+            </div>
+
+            {activeMode === 'speed' && (
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-1 font-extrabold text-amber-600">
+                  <Flame className="w-5 h-5 fill-current" />
+                  <span>{speedStreak} Streak</span>
+                </div>
+                <div className="px-3 py-1 rounded-lg bg-rose-100 dark:bg-rose-950/60 font-mono font-bold text-rose-700 text-sm">
+                  ⏱️ {speedTimer}s
+                </div>
+              </div>
             )}
           </div>
-        </div>
-      ) : completed ? (
-        /* Completed State */
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="bg-white dark:bg-neutral-900 rounded-2xl border border-gray-200 dark:border-neutral-800 p-8 text-center space-y-6 shadow-sm"
-        >
-          <div className="w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center mx-auto text-[#124F40] dark:text-emerald-400">
-            <Trophy className="w-8 h-8" />
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Practice Session Completed!
-            </h2>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-              You scored <span className="font-bold text-emerald-600 dark:text-emerald-400">{score}</span> out of{' '}
-              <span className="font-bold">{filteredExercises.length}</span> ({Math.round((score / (filteredExercises.length || 1)) * 100)}%)
-            </p>
-          </div>
 
-          <div className="flex justify-center gap-3">
-            <button
-              onClick={handleRestart}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-gray-300 dark:border-neutral-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-neutral-800 text-sm font-semibold transition-colors"
-            >
-              <RotateCcw className="w-4 h-4" />
-              Try Again
-            </button>
-          </div>
-        </motion.div>
-      ) : (
-        <div className="text-center py-12 text-gray-500">
-          No practice exercises found for this level.
+          {!sessionFinished && currentExercise ? (
+            <div className="p-6 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm">
+              <ExerciseRenderer
+                key={currentExercise.id}
+                exercise={currentExercise}
+                onAnswer={handleExerciseAnswer}
+                onNext={handleNextExercise}
+              />
+            </div>
+          ) : (
+            /* Session Finished Screen */
+            <div className="p-8 rounded-2xl border border-emerald-300 dark:border-emerald-800 bg-emerald-50/70 dark:bg-emerald-950/30 text-center space-y-4">
+              <CheckCircle2 className="w-14 h-14 text-[#124F40] dark:text-[#5BB78D] mx-auto" />
+              <div className="space-y-1">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                  Practice Session Completed!
+                </h3>
+                <p className="text-base text-gray-700 dark:text-gray-300">
+                  You scored {sessionScore} out of {sessionExercises.length} (
+                  {sessionExercises.length > 0
+                    ? Math.round((sessionScore / sessionExercises.length) * 100)
+                    : 100}
+                  %)
+                </p>
+              </div>
+
+              <div className="flex justify-center gap-3 pt-2">
+                <Button
+                  onClick={() => setSessionActive(false)}
+                  className="bg-[#124F40] hover:bg-[#0e3f33] text-white px-6"
+                >
+                  Return to Practice Hub
+                </Button>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>
   );
 };
-export default EnglishPracticePage;

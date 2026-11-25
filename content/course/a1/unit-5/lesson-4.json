@@ -1,0 +1,639 @@
+{
+  "id": "eng-a1-u5-l4",
+  "level": "A1",
+  "unit": "unit-5",
+  "order": 4,
+  "title": "Meals of the Day & Traditional Dishes",
+  "description": "Discuss daily meal times, describe traditional dishes, and express flavours and tastes.",
+  "objectives": [
+    "Identify the four main eating occasions (breakfast, lunch, dinner, snack)",
+    "Use taste and texture adjectives (spicy, sweet, savoury, fresh, bitter)",
+    "Describe famous South Asian and international dishes in simple present sentences"
+  ],
+  "estimatedMinutes": 8,
+  "prerequisites": [
+    "eng-a1-u5-l3"
+  ],
+  "skillTags": [
+    "meals",
+    "vocabulary",
+    "taste-adjectives",
+    "culture"
+  ],
+  "vocabularyList": [
+    {
+      "word": "breakfast",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆbrekfÉ™st/",
+      "definition": "A meal eaten in the morning, the first of the day.",
+      "urduMeaning": "Ù†Ø§Ø´ØªÛ ",
+      "exampleSentence": "We have breakfast together at 7:30 AM."
+    },
+    {
+      "word": "lunch",
+      "partOfSpeech": "noun",
+      "phonetic": "/lÊŒntÊƒ/",
+      "definition": "A meal eaten in the middle of the day, typically one that is lighter than an evening meal.",
+      "urduMeaning": "Ø¯ÙˆÙ¾Û Ø± Ú©Ø§ Ú©Ú¾Ø§Ù†Ø§",
+      "exampleSentence": "I bring a homemade lunch to the office."
+    },
+    {
+      "word": "dinner",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆdÉªnÉ™r/",
+      "definition": "The main meal of the day, taken in the evening.",
+      "urduMeaning": "Ø±Ø§Øª Ú©Ø§ Ú©Ú¾Ø§Ù†Ø§",
+      "exampleSentence": "The whole family gathers for dinner at eight."
+    },
+    {
+      "word": "meal",
+      "partOfSpeech": "noun",
+      "phonetic": "/miË l/",
+      "definition": "Any of the regular occasions in a day when a reasonably large amount of food is eaten.",
+      "urduMeaning": "Ú©Ú¾Ø§Ù†Ø§ / ÙˆÙ‚ØªÙ  Ø·Ø¹Ø§Ù…",
+      "exampleSentence": "Breakfast is the most important meal of the day."
+    },
+    {
+      "word": "snack",
+      "partOfSpeech": "noun",
+      "phonetic": "/snÃ¦k/",
+      "definition": "A small amount of food eaten between meals.",
+      "urduMeaning": "Û Ù„Ú©Ø§ Ù¾ÚÚ¾Ù„Ú©Ø§ Ú©Ú¾Ø§Ù†Ø§ / Ø³Ù†ÛŒÚ©",
+      "exampleSentence": "He eats fresh almonds as an afternoon snack."
+    },
+    {
+      "word": "dessert",
+      "partOfSpeech": "noun",
+      "phonetic": "/dÉªËˆzÉœË t/",
+      "definition": "The sweet course eaten at the end of a meal.",
+      "urduMeaning": "Ù…ÛŒÙ¹Ú¾Ø§ / Ø³ÙˆØ¦ÛŒÙ¹ ÚˆØ´",
+      "exampleSentence": "Kheer is a traditional Pakistani dessert."
+    },
+    {
+      "word": "spicy",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ËˆspaÉªsi/",
+      "definition": "Flavoured with or fragrant with spice; pungent or hot.",
+      "urduMeaning": "Ù…Ø³Ø§Ù„Ø­Û’ Ø¯Ø§Ø± / Ú†Ù¹Ù¾Ù¹Ø§",
+      "exampleSentence": "Lahori street food is wonderfully spicy."
+    },
+    {
+      "word": "sweet",
+      "partOfSpeech": "adjective",
+      "phonetic": "/swiË t/",
+      "definition": "Having the pleasant taste characteristic of sugar or honey.",
+      "urduMeaning": "Ù…ÛŒÙ¹Ú¾Ø§",
+      "exampleSentence": "Pakistani mangoes are incredibly sweet."
+    },
+    {
+      "word": "fresh",
+      "partOfSpeech": "adjective",
+      "phonetic": "/freÊƒ/",
+      "definition": "Recently made or obtained; not canned, frozen, or stale.",
+      "urduMeaning": "ØªØ§Ø²Û ",
+      "exampleSentence": "We buy fresh vegetables from the local market."
+    },
+    {
+      "word": "hungry",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ËˆhÊŒÅ‹É¡ri/",
+      "definition": "Feeling or displaying the need for food.",
+      "urduMeaning": "Ø¨ÚÚ¾ÙˆÚ©Ø§",
+      "exampleSentence": "I am hungry after a long day at university."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u5-l4-1",
+      "type": "explain",
+      "title": "Daily Meals & Describing Flavours",
+      "content": "In English, we use specific verbs with meals:\n- **have breakfast / eat breakfast** (never *'drink breakfast'* or *'take breakfast'* in modern native English).\n- **have lunch / have dinner / have a snack**.\n\n### Flavour Adjectives\n- **spicy**: hot with chillies and spices (*spicy biryani*)\n- **sweet**: containing sugar or honey (*sweet halwa*)\n- **savoury**: salty and rich in flavour, not sweet (*savoury samosas*)\n- **sour**: sharp acidic taste (*sour lemon juice*)\n- **bitter**: harsh, non-sweet taste (*bitter black coffee*)",
+      "tables": [
+        {
+          "title": "Meal Times & Traditional Dishes",
+          "headers": [
+            "Meal Occasion",
+            "Typical Timing",
+            "Popular Traditional Dishes",
+            "Sample Sentence"
+          ],
+          "rows": [
+            [
+              "Breakfast",
+              "7:00 AM - 9:00 AM",
+              "Paratha, eggs, halwa puri, chai",
+              "I have a paratha and chai for breakfast."
+            ],
+            [
+              "Lunch",
+              "1:00 PM - 2:30 PM",
+              "Daal chawal, chicken karahi, roti",
+              "She eats daal chawal for lunch."
+            ],
+            [
+              "Afternoon Snack",
+              "4:30 PM - 5:30 PM",
+              "Samosas, biscuits, green tea",
+              "We enjoy savoury samosas with evening tea."
+            ],
+            [
+              "Dinner",
+              "8:00 PM - 9:30 PM",
+              "Biryani, kebabs, sajji, salad",
+              "They eat chicken biryani for dinner."
+            ]
+          ]
+        },
+        {
+          "title": "Taste & Texture Descriptors",
+          "headers": [
+            "Taste Adjective",
+            "Opposite",
+            "Typical Food",
+            "Urdu Meaning"
+          ],
+          "rows": [
+            [
+              "spicy",
+              "mild",
+              "nihari, chicken karahi",
+              "Ù…Ø³Ø§Ù„Ø­Û’ Ø¯Ø§Ø± / Û Ù„Ú©Ø§"
+            ],
+            [
+              "sweet",
+              "sour / bitter",
+              "gulab jamun, mangoes",
+              "Ù…ÛŒÙ¹Ú¾Ø§ / Ú©Ú¾Ù¹Ø§"
+            ],
+            [
+              "crisp / crunchy",
+              "soft",
+              "fresh chips, salad",
+              "Ú©Ø±Ú©Ø±Ø§ / Ù†Ø±Ù…"
+            ],
+            [
+              "hot",
+              "cold",
+              "fresh tea, soup",
+              "Ú¯Ø±Ù… / Ù¹Ú¾Ù†ÚˆØ§"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Have vs. Take",
+          "text": "In British and American English, native speakers say **have breakfast**, **have lunch**, or **have dinner**. Saying *'I take dinner'* sounds old-fashioned or unnatural."
+        },
+        {
+          "type": "warning",
+          "title": "Dessert vs. Desert",
+          "text": "**Dessert** (two s's, /dÉªËˆzÉœË t/) is sweet food! **Desert** (one s, /ËˆdezÉ™t/) is a dry, sandy region with little rain."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l4-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "We always have breakfast together before eight o'clock.",
+          "phonetic": "/wiË  ËˆÉ”Ë lweÉªz hÃ¦v ËˆbrekfÉ™st tÉ™ËˆÉ¡eÃ°É™r bÉªËˆfÉ”Ë r eÉªt É™ËˆklÉ’k/",
+          "urdu": "Û Ù… Û Ù…ÛŒØ´Û  ØµØ¨Ø­ Ø¢Ù¹Ú¾ Ø¨Ø¬Û’ Ø³Û’ Ù¾Û Ù„Û’ Ù…Ù„ Ú©Ø± Ù†Ø§Ø´ØªÛ  Ú©Ø±ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "We always have breakfast together before eight o'clock."
+        },
+        {
+          "english": "Chicken biryani is a famous and spicy South Asian dish.",
+          "phonetic": "/ËˆtÊƒÉªkÉªn ËŒbÉªriË ËˆÉ‘Ë ni Éªz É™ ËˆfeÉªmÉ™s Ã¦nd ËˆspaÉªsi saÊŠÎ¸ ËˆeÉªÊƒn dÉªÊƒ/",
+          "urdu": "Ú†Ú©Ù† Ø¨Ø±ÛŒØ§Ù†ÛŒ Ø¬Ù†ÙˆØ¨ÛŒ Ø§ÛŒØ´ÛŒØ§ Ú©Ø§ Ø§ÛŒÚ© Ù…Ø´Û ÙˆØ± Ø§ÙˆØ± Ù…Ø³Ø§Ù„Ø­Û’ Ø¯Ø§Ø± Ú©Ú¾Ø§Ù†Ø§ Û Û’Û”",
+          "audioText": "Chicken biryani is a famous and spicy South Asian dish."
+        },
+        {
+          "english": "I am feeling hungry because I skipped lunch today.",
+          "phonetic": "/aÉª Ã¦m ËˆfiË lÉªÅ‹ ËˆhÊŒÅ‹É¡ri bÉªËˆkÉ’z aÉª skÉªpt lÊŒntÊƒ tÉ™ËˆdeÉª/",
+          "urdu": "Ù…Ø¬Ú¾Û’ Ø¨ÚÚ¾ÙˆÚ© Ù„Ú¯ Ø±Û ÛŒ Û Û’ Ú©ÛŒÙˆÙ†Ú©Û  Ù…ÛŒÚº Ù†Û’ Ø¢Ø¬ Ø¯ÙˆÙ¾Û Ø± Ú©Ø§ Ú©Ú¾Ø§Ù†Ø§ Ù†Û ÛŒÚº Ú©Ú¾Ø§ÛŒØ§Û”",
+          "audioText": "I am feeling hungry because I skipped lunch today."
+        },
+        {
+          "english": "We ordered sweet kheer for dessert after our meal.",
+          "phonetic": "/wiË  ËˆÉ”Ë dÉ™d swiË t kÉªÉ™r fÉ”Ë r dÉªËˆzÉœË t ËˆÉ‘Ë ftÉ™r ËˆaÊŠÉ™r miË l/",
+          "urdu": "Û Ù… Ù†Û’ Ú©Ú¾Ø§Ù†Û’ Ú©Û’ Ø¨Ø¹Ø¯ Ù…ÛŒÙ¹Ú¾Û’ Ù…ÛŒÚº Ù…ÛŒÙ¹Ú¾ÛŒ Ú©Ú¾ÛŒØ± Ù…Ù†Ú¯ÙˆØ§Ø¦ÛŒÛ”",
+          "audioText": "We ordered sweet kheer for dessert after our meal."
+        },
+        {
+          "english": "Pakistani mangoes are sweet, juicy, and world-renowned.",
+          "phonetic": "/ËŒpÉ‘Ë kÉªËˆstÉ‘Ë ni ËˆmÃ¦Å‹É¡É™ÊŠz É‘Ë r swiË t ËˆdÊ’uË si Ã¦nd wÉœË ld rÉªËˆnaÊŠnd/",
+          "urdu": "Ù¾Ø§Ú©Ø³ØªØ§Ù†ÛŒ Ø¢Ù… Ù…ÛŒÙ¹Ú¾Û’ØŒ Ø±Ø³ Ø¨ÚÚ¾Ø±Û’ Ø§ÙˆØ± Ø¯Ù†ÛŒØ§ Ø¨ÚÚ¾Ø± Ù…ÛŒÚº Ù…Ø¹Ø±ÙˆÙ  Û ÛŒÚºÛ”",
+          "audioText": "Pakistani mangoes are sweet, juicy, and world-renowned."
+        },
+        {
+          "english": "Do you prefer spicy curries or mild vegetable dishes?",
+          "phonetic": "/duË  juË  prÉªËˆfÉœË  ËˆspaÉªsi ËˆkÊŒriz É”Ë r maÉªld ËˆvedÊ’tÉ™bl ËˆdÉªÊƒÉªz/",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ù…Ø³Ø§Ù„Ø­Û’ Ø¯Ø§Ø± Ø³Ø§Ù„Ù† Ù¾Ø³Ù†Ø¯ Ú©Ø±ØªÛ’ Û ÛŒÚº ÛŒØ§ Û Ù„Ú©ÛŒ Ø³Ø¨Ø²ÛŒØ§ÚºØŸ",
+          "audioText": "Do you prefer spicy curries or mild vegetable dishes?"
+        },
+        {
+          "english": "They have a light afternoon snack with biscuits and chai.",
+          "phonetic": "/Ã°eÉª hÃ¦v É™ laÉªt ËŒÉ‘Ë ftÉ™ËˆnuË n snÃ¦k wÉªÃ° ËˆbÉªskÉªts Ã¦nd tÊƒaÉª/",
+          "urdu": "ÙˆÛ  Ø³Û  Ù¾Û Ø± Ú©Ùˆ Ø¨Ø³Ú©Ù¹ Ø§ÙˆØ± Ú†Ø§Ø¦Û’ Ú©Û’ Ø³Ø§ØªÚ¾ Û Ù„Ú©Ø§ Ù¾ÚÚ¾Ù„Ú©Ø§ Ø³Ù†ÛŒÚ© Ú©Ú¾Ø§ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "They have a light afternoon snack with biscuits and chai."
+        },
+        {
+          "english": "Fresh cucumber and tomato salad is very healthy.",
+          "phonetic": "/freÊƒ ËˆkjuË kÊŒmbÉ™r Ã¦nd tÉ™ËˆmÉ‘Ë tÉ™ÊŠ ËˆsÃ¦lÉ™d Éªz Ëˆveri ËˆhelÎ¸i/",
+          "urdu": "ØªØ§Ø²Û  Ú©Ú¾ÛŒØ±Û’ Ø§ÙˆØ± Ù¹Ù…Ø§Ù¹Ø± Ú©Ø§ Ø³Ù„Ø§Ø¯ Ø¨Û Øª ØµØ­Øª Ø¨Ø®Ø´ Û ÙˆØªØ§ Û Û’Û”",
+          "audioText": "Fresh cucumber and tomato salad is very healthy."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l4-3",
+      "type": "dialogue",
+      "title": "Recommending Traditional Pakistani Food",
+      "dialogue": [
+        {
+          "speaker": "Tourist",
+          "avatar": "T",
+          "english": "What traditional dish should I try for dinner in Lahore?",
+          "urdu": "Ù„Ø§Û ÙˆØ± Ù…ÛŒÚº Ø±Ø§Øª Ú©Û’ Ú©Ú¾Ø§Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Ù…Ø¬Ú¾Û’ Ú©ÙˆÙ† Ø³Ø§ Ø±ÙˆØ§ÛŒØªÛŒ Ú©Ú¾Ø§Ù†Ø§ Ú©Ú¾Ø§Ù†Ø§ Ú†Ø§Û ÛŒÛ’ØŸ",
+          "audioText": "What traditional dish should I try for dinner in Lahore?"
+        },
+        {
+          "speaker": "Guide",
+          "avatar": "G",
+          "english": "You must try mutton karahi with fresh tandoori roti. It is rich and spicy.",
+          "urdu": "Ø¢Ù¾ Ú©Ùˆ ØªØ§Ø²Û  ØªÙ†Ø¯ÙˆØ±ÛŒ Ø±ÙˆÙ¹ÛŒ Ú©Û’ Ø³Ø§ØªÚ¾ Ù…Ù¹Ù† Ú©Ú‘Ø§Û ÛŒ Ø¶Ø±ÙˆØ± Ú©Ú¾Ø§Ù†ÛŒ Ú†Ø§Û ÛŒÛ’Û” ÛŒÛ  Ù„Ø°ÛŒØ° Ø§ÙˆØ± Ù…Ø³Ø§Ù„Ø­Û’ Ø¯Ø§Ø± Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "You must try mutton karahi with fresh tandoori roti. It is rich and spicy."
+        },
+        {
+          "speaker": "Tourist",
+          "avatar": "T",
+          "english": "Is there any dessert you recommend afterwards?",
+          "urdu": "Ú©ÛŒØ§ Ø§Ø³ Ú©Û’ Ø¨Ø¹Ø¯ Ú©ÙˆØ¦ÛŒ Ù…ÛŒÙ¹Ú¾Ø§ Ø¨Ú¾ÛŒ Ø¢Ù¾ ØªØ¬ÙˆÛŒØ² Ú©Ø±ÛŒÚº Ú¯Û’ØŸ",
+          "audioText": "Is there any dessert you recommend afterwards?"
+        },
+        {
+          "speaker": "Guide",
+          "avatar": "G",
+          "english": "Yes! Order warm gulab jamun or traditional kulfi. They are wonderfully sweet.",
+          "urdu": "Ø¬ÛŒ Û Ø§Úº! Ú¯Ø±Ù… Ú¯Ù„Ø§Ø¨ Ø¬Ø§Ù…Ù† ÛŒØ§ Ø±ÙˆØ§ÛŒØªÛŒ Ú©Ù„Ù ÛŒ Ù…Ù†Ú¯ÙˆØ§Ø¦ÛŒÚºÛ” ÙˆÛ  Ø¨Û Øª Ù…ÛŒÙ¹Ú¾Û’ Û ÙˆØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "Yes! Order warm gulab jamun or traditional kulfi. They are wonderfully sweet."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l4-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u5-l4-1",
+          "type": "mcq",
+          "skillTag": "meals",
+          "prompt": "What is the natural English verb collocation for the morning meal?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "drink breakfast"
+            },
+            {
+              "id": "opt-2",
+              "text": "do breakfast"
+            },
+            {
+              "id": "opt-3",
+              "text": "make breakfast eating"
+            },
+            {
+              "id": "opt-4",
+              "text": "have breakfast"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Native speakers use 'have breakfast' (or 'eat breakfast').",
+          "urduExplanation": "Ù†Ø§Ø´ØªÛ  Ú©Ø±Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ 'have breakfast' Ù„Ú©Ú¾Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l4-2",
+          "type": "mcq",
+          "skillTag": "taste-adjectives",
+          "prompt": "What adjective describes food with chillies and rich spices?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "spicy"
+            },
+            {
+              "id": "opt-2",
+              "text": "sweet"
+            },
+            {
+              "id": "opt-3",
+              "text": "bitter"
+            },
+            {
+              "id": "opt-4",
+              "text": "sour"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Spicy' describes food with hot spices and chillies.",
+          "urduExplanation": "Ù…Ø³Ø§Ù„Ø­Û’ Ø¯Ø§Ø± Ú©Ú¾Ø§Ù†Û’ Ú©Ùˆ 'spicy' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l4-3",
+          "type": "fill_blank",
+          "skillTag": "meals",
+          "prompt": "Complete: 'A sweet dish eaten at the end of a meal is called _____.'",
+          "correctAnswer": "dessert",
+          "explanation": "'Dessert' (with two s's) is the sweet course at the end of a meal.",
+          "urduExplanation": "Ú©Ú¾Ø§Ù†Û’ Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº Ù…ÛŒÙ¹Ú¾Û’ Ú©Ùˆ 'dessert' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l4-4",
+          "type": "fill_blank",
+          "skillTag": "taste-adjectives",
+          "prompt": "What is the opposite of sweet? 'Lemons are not sweet; they are _____.'",
+          "correctAnswer": "sour",
+          "explanation": "Lemons have a sour, acidic taste.",
+          "urduExplanation": "Ù„ÛŒÙ…ÙˆÚº Ú©Ú¾Ù¹Û’ (sour) Û ÙˆØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l4-5",
+          "type": "order_sentence",
+          "skillTag": "meals",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "We",
+            "have",
+            "dinner",
+            "at",
+            "eight",
+            "every",
+            "evening",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "Subject (We) + verb (have) + meal (dinner) + time phrase (at eight every evening).",
+          "urduExplanation": "We have dinner at eight every evening."
+        },
+        {
+          "id": "ex-a1-u5-l4-6",
+          "type": "order_sentence",
+          "skillTag": "taste-adjectives",
+          "prompt": "Rearrange the words into a correct statement:",
+          "sentenceTokens": [
+            "This",
+            "chicken",
+            "karahi",
+            "is",
+            "very",
+            "spicy",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (This chicken karahi) + verb (is) + adjective phrase (very spicy).",
+          "urduExplanation": "This chicken karahi is very spicy."
+        },
+        {
+          "id": "ex-a1-u5-l4-7",
+          "type": "match_pairs",
+          "skillTag": "meals",
+          "prompt": "Match the meal with its typical time of day:",
+          "pairs": [
+            {
+              "left": "Breakfast",
+              "right": "Morning (7:00 AM - 9:00 AM)"
+            },
+            {
+              "left": "Lunch",
+              "right": "Midday (1:00 PM - 2:00 PM)"
+            },
+            {
+              "left": "Snack",
+              "right": "Afternoon (4:30 PM - 5:30 PM)"
+            },
+            {
+              "left": "Dinner",
+              "right": "Evening (8:00 PM - 9:30 PM)"
+            }
+          ],
+          "explanation": "Meals matched to standard times.",
+          "urduExplanation": "Ú©Ú¾Ø§Ù†Û’ Ú©Ùˆ Ø§Ø³ Ú©Û’ Ù…Ù†Ø§Ø³Ø¨ ÙˆÙ‚Øª Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l4-8",
+          "type": "error_correction",
+          "skillTag": "meals",
+          "prompt": "Find and correct the mistake: 'I take breakfast at seven.'",
+          "correctAnswer": "I have breakfast at seven.",
+          "explanation": "Use natural collocation 'have breakfast', not 'take breakfast'.",
+          "urduExplanation": "Ù Ø·Ø±ÛŒ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº 'have breakfast' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l4-9",
+          "type": "error_correction",
+          "skillTag": "meals",
+          "prompt": "Find and correct the mistake: 'We ordered sweet desert after dinner.'",
+          "correctAnswer": "We ordered sweet dessert after dinner.",
+          "explanation": "'Dessert' (two s's) is sweet food; 'desert' (one s) is a dry arid land.",
+          "urduExplanation": "Ù…ÛŒÙ¹Ú¾Û’ Ú©Û’ Ù„ÛŒÛ’ 'dessert' (Ø¯Ùˆ s) Ù„Ú©Ú¾Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l4-10",
+          "type": "true_false",
+          "skillTag": "taste-adjectives",
+          "prompt": "Honey and ripe mangoes are classified as spicy foods. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. Honey and ripe mangoes are sweet, not spicy.",
+          "urduExplanation": "ØºÙ„Ø·Û” Ø´Û Ø¯ Ø§ÙˆØ± Ø¢Ù… Ù…ÛŒÙ¹Ú¾Û’ (sweet) Û ÙˆØªÛ’ Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l4-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u5-l4-1",
+          "type": "mcq",
+          "skillTag": "meals",
+          "prompt": "What do we call food eaten between meals when feeling slightly hungry?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Dinner"
+            },
+            {
+              "id": "opt-2",
+              "text": "A snack"
+            },
+            {
+              "id": "opt-3",
+              "text": "Breakfast"
+            },
+            {
+              "id": "opt-4",
+              "text": "A feast"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "A snack is a light amount of food eaten between primary meals.",
+          "urduExplanation": "Ú©Ú¾Ø§Ù†ÙˆÚº Ú©Û’ Ø¯Ø±Ù…ÛŒØ§Ù† Û Ù„Ú©ÛŒ Ù¾ÚÚ¾Ù„Ú©ÛŒ Ú†ÛŒØ² Ú©Ùˆ 'snack' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u5-l4-2",
+          "type": "mcq",
+          "skillTag": "taste-adjectives",
+          "prompt": "Which pair shows opposite taste flavours?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "sweet and sour"
+            },
+            {
+              "id": "opt-2",
+              "text": "hot and warm"
+            },
+            {
+              "id": "opt-3",
+              "text": "spicy and flavourful"
+            },
+            {
+              "id": "opt-4",
+              "text": "fresh and crisp"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Sweet' (sugary) and 'sour' (acidic) are contrasting taste flavours.",
+          "urduExplanation": "'sweet' (Ù…ÛŒÙ¹Ú¾Ø§) Ø§ÙˆØ± 'sour' (Ú©Ú¾Ù¹Ø§) Ù…Ø®Ø§Ù„Ù  Ø°Ø§Ø¦Ù‚Û’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u5-l4-3",
+          "type": "mcq",
+          "skillTag": "meals",
+          "prompt": "Complete the sentence: 'She is _____ so she ordered a full chicken biryani.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "early"
+            },
+            {
+              "id": "opt-2",
+              "text": "late"
+            },
+            {
+              "id": "opt-3",
+              "text": "hungry"
+            },
+            {
+              "id": "opt-4",
+              "text": "thirsty"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "A person needing food is 'hungry'.",
+          "urduExplanation": "Ú©Ú¾Ø§Ù†Û’ Ú©ÛŒ Ø·Ù„Ø¨ Ú©Û’ Ù„ÛŒÛ’ 'hungry' (Ø¨ÚÚ¾ÙˆÚ©Ø§) Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l4-4",
+          "type": "mcq",
+          "skillTag": "meals",
+          "prompt": "What is the correct spelling for the sweet dish served after dinner?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "dessert"
+            },
+            {
+              "id": "opt-2",
+              "text": "desert"
+            },
+            {
+              "id": "opt-3",
+              "text": "desertt"
+            },
+            {
+              "id": "opt-4",
+              "text": "desart"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Dessert' with double 's' refers to the sweet course.",
+          "urduExplanation": "Ù…ÛŒÙ¹Ú¾Û’ Ú©Û’ Ù„ÛŒÛ’ ØµØ­ÛŒØ­ Ø§Ù…Ù„Ø§ 'dessert' Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l4-5",
+          "type": "mcq",
+          "skillTag": "meals",
+          "prompt": "Which meal is eaten in the middle of the day around 1:30 PM?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Breakfast"
+            },
+            {
+              "id": "opt-2",
+              "text": "Lunch"
+            },
+            {
+              "id": "opt-3",
+              "text": "Dinner"
+            },
+            {
+              "id": "opt-4",
+              "text": "Supper"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Lunch is the midday meal.",
+          "urduExplanation": "Ø¯ÙˆÙ¾Û Ø± Ú©Û’ Ú©Ú¾Ø§Ù†Û’ Ú©Ùˆ 'Lunch' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l4-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Meals and food vocabulary takeaways:",
+      "summaryPoints": [
+        "Four meal occasions: breakfast (morning), lunch (midday), snack (light bite), dinner (evening).",
+        "Use the collocation 'have breakfast / have lunch / have dinner'.",
+        "Taste adjectives: spicy, sweet, savoury, sour, bitter.",
+        "Dessert (double s) = sweet course; Desert (single s) = sandy region.",
+        "Hungry = needs food; Thirsty = needs drink."
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l4-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… Ú©Û ØªÛ’ Û ÛŒÚº: 'Ù†Ø§Ø´ØªÛ  Ú©Ø±Ù†Ø§'ØŒ 'Ø¯ÙˆÙ¾Û Ø± Ú©Ø§ Ú©Ú¾Ø§Ù†Ø§ Ú©Ú¾Ø§Ù†Ø§'Û” Ø§Ø±Ø¯Ùˆ Ø¨ÙˆÙ„Ù†Û’ ÙˆØ§Ù„Û’ Ø§Ú©Ø«Ø± Ø§Ø³ Ú©Ø§ Ù„Ù Ø¸ÛŒ ØªØ±Ø¬Ù…Û  Ú©Ø± Ú©Û’ 'take breakfast' Ú©Û  Ø¯ÛŒØªÛ’ Û ÛŒÚºÛ”\n\n**Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ù Ø·Ø±ÛŒ Ø§Ù„Ù Ø§Ø¸ ÛŒÛ  Û ÛŒÚº:**\n- **have breakfast** (never 'take breakfast')\n- **have lunch**\n- **have dinner**\n\nØ§Ø³ Ú©Û’ Ø¹Ù„Ø§ÙˆÛ  **Dessert** (Ù…ÛŒÙ¹Ú¾Ø§ - Ø¯Ùˆ 's') Ø§ÙˆØ± **Desert** (ØµØ­Ø±Ø§ - Ø§ÛŒÚ© 's') Ú©Û’ Ø§Ù…Ù„Ø§ Ø§ÙˆØ± ØªÙ„Ù Ø¸ Ú©Ø§ Ù Ø±Ù‚ ÛŒØ§Ø¯ Ø±Ú©Ú¾Ù†Ø§ Ø§Ù…ØªØ­Ø§Ù†Ø§Øª Ú©Û’ Ù„ÛŒÛ’ Ø¨Û Øª Ø§Û Ù… Û Û’Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

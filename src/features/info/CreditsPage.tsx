@@ -91,13 +91,23 @@ export function CreditsPage() {
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Navigation & Header */}
         <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800">
-          <Link
-            to="/app/dictionary"
-            className="inline-flex items-center gap-2 text-sm font-medium text-emerald-600 dark:text-emerald-400 hover:underline"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Dictionary
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              to="/"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Home
+            </Link>
+            <span className="text-slate-300 dark:text-slate-700">|</span>
+            <Link
+              to="/app/dictionary"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600 dark:text-emerald-400 hover:underline"
+            >
+              <BookOpen className="w-4 h-4" />
+              Dictionary App
+            </Link>
+          </div>
           <Badge variant="outline" className="text-emerald-700 dark:text-emerald-300 border-emerald-500/30">
             Open Source & Free
           </Badge>

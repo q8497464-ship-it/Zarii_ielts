@@ -3,6 +3,7 @@ import type { AnnouncementType, FeedbackStatus } from '../types';
 
 export type AnnouncementFormat = 'banner' | 'modal';
 export type AnnouncementAudience = 'all' | 'new' | 'active';
+export type AnnouncementTrack = 'all' | 'ielts' | 'english';
 
 export interface AnnouncementItem {
   id: string;
@@ -11,6 +12,7 @@ export interface AnnouncementItem {
   type: AnnouncementType;
   format: AnnouncementFormat;
   audience: AnnouncementAudience;
+  target_track?: AnnouncementTrack;
   starts_at: string;
   expires_at?: string;
   is_active: boolean;

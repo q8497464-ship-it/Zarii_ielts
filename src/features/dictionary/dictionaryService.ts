@@ -22,6 +22,7 @@ import {
   type SearchIndexItem,
 } from './dictionaryClient';
 import { applyDictionaryPatch, type DictionaryPatch } from '../../types/dictionaryPatch';
+import { dictionaryAdminStore } from './dictionaryAdminStore';
 
 export interface DictionarySense {
   def: string;
@@ -326,10 +327,18 @@ export class OfflineDictionaryStore {
       isInflected = true;
     }
 
+    // 2.5 Check runtime admin patch for hidden words or overrides
+    const patch = dictionaryAdminStore.getPatchForWord(lookupWord, { forStudent: true });
+    if (patch?.action === 'hide') {
+      return { entry: null, isInflected: false, originalQuery: query };
+    }
+
     // Check entry cache for base lemma
     if (entryCache.has(lookupWord)) {
+      const cached = entryCache.get(lookupWord)!;
+      const patched = patch ? applyDictionaryPatch(cached, patch) : cached;
       return {
-        entry: entryCache.get(lookupWord)!,
+        entry: patched,
         isInflected,
         originalQuery: query,
         matchedForm: isInflected ? query : undefined,
@@ -345,31 +354,37 @@ export class OfflineDictionaryStore {
       shardKey = getBaseShardPrefix(lookupWord);
     }
 
+    let found: DictionaryEntry | undefined = undefined;
+
     if (shardKey) {
       const list = await this.getShard(shardKey);
-      const found = list.find(e => e.word.toLowerCase() === lookupWord);
-      if (found) {
-        return {
-          entry: found,
-          isInflected,
-          originalQuery: query,
-          matchedForm: isInflected ? query : undefined,
-        };
-      }
+      found = list.find(e => e.word.toLowerCase() === lookupWord);
     }
 
     // 4. Fallback: Check Essential Pack if available
-    if (!shardKey) {
+    if (!found && !shardKey) {
       const essList = await this.getEssentialPack();
-      const found = essList.find(e => e.word.toLowerCase() === lookupWord);
-      if (found) {
-        return {
-          entry: found,
-          isInflected,
-          originalQuery: query,
-          matchedForm: isInflected ? query : undefined,
-        };
-      }
+      found = essList.find(e => e.word.toLowerCase() === lookupWord);
+    }
+
+    if (found) {
+      const finalEntry = patch ? applyDictionaryPatch(found, patch) : found;
+      return {
+        entry: finalEntry,
+        isInflected,
+        originalQuery: query,
+        matchedForm: isInflected ? query : undefined,
+      };
+    }
+
+    // 5. If word was added purely via patch or fallback patch
+    if (patch && (patch.action === 'add' || patch.action === 'edit')) {
+      const custom = applyDictionaryPatch(null, patch);
+      return {
+        entry: custom,
+        isInflected: false,
+        originalQuery: query,
+      };
     }
 
     return { entry: null, isInflected: false, originalQuery: query };

@@ -1,0 +1,666 @@
+{
+  "id": "eng-a1-u3-l3",
+  "level": "A1",
+  "unit": "unit-3",
+  "order": 3,
+  "title": "Present Simple Negatives (Don't / Doesn't)",
+  "description": "Form negative statements in the present simple using do not (don't) and does not (doesn't).",
+  "objectives": [
+    "Use 'do not / don't' with I, you, we, and they + base verb",
+    "Use 'does not / doesn't' with he, she, and it + base verb (never adding -s to the main verb!)",
+    "Correct the common error of double-marking ('He doesn't works' -> 'He doesn't work')"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [
+    "eng-a1-u3-l2"
+  ],
+  "skillTags": [
+    "present-simple",
+    "negatives",
+    "auxiliary-verbs",
+    "grammar-tenses"
+  ],
+  "vocabularyList": [
+    {
+      "word": "know",
+      "partOfSpeech": "verb",
+      "phonetic": "/nÉ™ÊŠ/",
+      "definition": "To be aware of through observation, inquiry, or information.",
+      "urduMeaning": "Ø¬Ø§Ù†Ù†Ø§ / Ù…Ø¹Ù„ÙˆÙ… Û ÙˆÙ†Ø§",
+      "exampleSentence": "I do not know the answer to this question."
+    },
+    {
+      "word": "understand",
+      "partOfSpeech": "verb",
+      "phonetic": "/ËŒÊŒndÉ™ËˆstÃ¦nd/",
+      "definition": "To perceive the intended meaning of words or ideas.",
+      "urduMeaning": "Ø³Ù…Ø¬Ú¾Ù†Ø§",
+      "exampleSentence": "He does not understand French."
+    },
+    {
+      "word": "smoke",
+      "partOfSpeech": "verb",
+      "phonetic": "/smÉ™ÊŠk/",
+      "definition": "To inhale and exhale the smoke of tobacco or similar substances.",
+      "urduMeaning": "Ø³Ú¯Ø±ÛŒÙ¹ Ù¾ÛŒÙ†Ø§",
+      "exampleSentence": "Doctors do not smoke cigarettes."
+    },
+    {
+      "word": "drive",
+      "partOfSpeech": "verb",
+      "phonetic": "/draÉªv/",
+      "definition": "To operate and control the direction and speed of a motor vehicle.",
+      "urduMeaning": "Ú¯Ø§Ú‘ÛŒ Ú†Ù„Ø§Ù†Ø§",
+      "exampleSentence": "She does not drive at night."
+    },
+    {
+      "word": "travel",
+      "partOfSpeech": "verb",
+      "phonetic": "/ËˆtrÃ¦vl/",
+      "definition": "To make a journey, typically of some length.",
+      "urduMeaning": "Ø³Ù Ø± Ú©Ø±Ù†Ø§",
+      "exampleSentence": "They do not travel during winter."
+    },
+    {
+      "word": "like",
+      "partOfSpeech": "verb",
+      "phonetic": "/laÉªk/",
+      "definition": "To find agreeable, enjoyable, or satisfactory.",
+      "urduMeaning": "Ù¾Ø³Ù†Ø¯ Ú©Ø±Ù†Ø§",
+      "exampleSentence": "We do not like spicy food."
+    },
+    {
+      "word": "hate",
+      "partOfSpeech": "verb",
+      "phonetic": "/heÉªt/",
+      "definition": "To feel intense dislike for someone or something.",
+      "urduMeaning": "Ù†Ù Ø±Øª Ú©Ø±Ù†Ø§",
+      "exampleSentence": "He does not hate studying; he is just tired."
+    },
+    {
+      "word": "cook",
+      "partOfSpeech": "verb",
+      "phonetic": "/kÊŠk/",
+      "definition": "To prepare food, a dish, or a meal by combining and heating ingredients.",
+      "urduMeaning": "Ú©Ú¾Ø§Ù†Ø§ Ù¾Ú©Ø§Ù†Ø§",
+      "exampleSentence": "My brother does not cook on weekdays."
+    },
+    {
+      "word": "play",
+      "partOfSpeech": "verb",
+      "phonetic": "/pleÉª/",
+      "definition": "To engage in activity for enjoyment and recreation.",
+      "urduMeaning": "Ú©Ú¾ÛŒÙ„Ù†Ø§",
+      "exampleSentence": "I do not play computer games."
+    },
+    {
+      "word": "listen",
+      "partOfSpeech": "verb",
+      "phonetic": "/ËˆlÉªsn/",
+      "definition": "To give one's attention to a sound.",
+      "urduMeaning": "Ø³Ù†Ù†Ø§",
+      "exampleSentence": "She does not listen to loud music."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u3-l3-1",
+      "type": "explain",
+      "title": "Forming Negatives with Auxiliary 'Do' & 'Does'",
+      "content": "To make a present simple statement negative, English uses the **auxiliary verb (helping verb)** **do / does** combined with **not**.\n\n### The Golden Rule of Negatives\nWhen **does** or **doesn't** appears in a sentence, it carries the third-person marker. Therefore, the main verb **REVERTS TO ITS BARE BASE FORM (V1)**!\n- Affirmative: *He works.*\n- Negative: *He **does not work**.* (NEVER *'He doesn't works'*!).",
+      "tables": [
+        {
+          "title": "Present Simple Negative Matrix",
+          "headers": [
+            "Subject",
+            "Auxiliary + Not",
+            "Contraction",
+            "Main Verb (Base Form)",
+            "Example"
+          ],
+          "rows": [
+            [
+              "I",
+              "do not",
+              "don't",
+              "work",
+              "I don't work on Sundays."
+            ],
+            [
+              "You",
+              "do not",
+              "don't",
+              "know",
+              "You don't know the address."
+            ],
+            [
+              "He",
+              "does not",
+              "doesn't",
+              "smoke (no -s!)",
+              "He doesn't smoke."
+            ],
+            [
+              "She",
+              "does not",
+              "doesn't",
+              "drive (no -s!)",
+              "She doesn't drive to work."
+            ],
+            [
+              "It",
+              "does not",
+              "doesn't",
+              "matter",
+              "It doesn't matter at all."
+            ],
+            [
+              "We",
+              "do not",
+              "don't",
+              "like",
+              "We don't like cold weather."
+            ],
+            [
+              "They",
+              "do not",
+              "don't",
+              "travel",
+              "They don't travel by plane."
+            ]
+          ]
+        },
+        {
+          "title": "Form / Use / Signal Words / Common Mistakes",
+          "headers": [
+            "Aspect",
+            "Formula / Rule",
+            "Correct Example",
+            "Common Error to Avoid"
+          ],
+          "rows": [
+            [
+              "Form (I/You/We/They)",
+              "Subject + don't + Base Verb",
+              "They don't understand",
+              "Don't say: 'They not understand'."
+            ],
+            [
+              "Form (He/She/It)",
+              "Subject + doesn't + Base Verb",
+              "She doesn't live here",
+              "Fatal mistake: 'She doesn't lives here'."
+            ],
+            [
+              "Contractions",
+              "don't / doesn't standard in speech",
+              "I don't know / He doesn't go",
+              "Full form 'do not' used for formal writing."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "warning",
+          "title": "The S-Theft Rule",
+          "text": "Think of **doesn't** as a thief that steals the '-s' from the main verb! Once **doesn't** takes the -s, the main verb must remain bare: **He doesn't eat** (not eats)."
+        },
+        {
+          "type": "tip",
+          "title": "Never Use 'No' Before a Verb",
+          "text": "Urdu speakers sometimes say *'I no like'* or *'He no work'*. In English, you MUST use **don't** or **doesn't** before action verbs."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l3-2",
+      "type": "timeline",
+      "title": "Negative Habit Timeline",
+      "timeline": {
+        "title": "Absence of Habit Across Time",
+        "past": "Did not do in past",
+        "present": "He does not smoke (Ongoing non-action / habit)",
+        "future": "Will not do in future",
+        "activePoint": "present",
+        "explanation": "Present simple negative describes an ongoing refusal, habit absence, or state of untruth."
+      }
+    },
+    {
+      "id": "sec-a1-u3-l3-3",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "I don't drink sugary drinks with my meals.",
+          "phonetic": "/aÉª dÉ™ÊŠnt drÉªÅ‹k ËˆÊƒÊŠÉ¡É™ri drÉªÅ‹ks wÉªÃ° maÉª miË lz/",
+          "urdu": "Ù…ÛŒÚº Ú©Ú¾Ø§Ù†Û’ Ú©Û’ Ø³Ø§ØªÚ¾ Ù…ÛŒÙ¹Ú¾Û’ Ù…Ø´Ø±ÙˆØ¨Ø§Øª Ù†Û ÛŒÚº Ù¾ÛŒØªØ§Û”",
+          "audioText": "I don't drink sugary drinks with my meals."
+        },
+        {
+          "english": "She doesn't drive to work because the traffic is heavy.",
+          "phonetic": "/ÊƒiË  ËˆdÊŒznt draÉªv tuË  wÉœË k bÉªËˆkÉ’z Ã°É™ ËˆtrÃ¦fÉªk Éªz Ëˆhevi/",
+          "urdu": "ÙˆÛ  Ú¯Ø§Ú‘ÛŒ Ú†Ù„Ø§ Ú©Ø± Ú©Ø§Ù… Ù¾Ø± Ù†Û ÛŒÚº Ø¬Ø§ØªÛŒÚº Ú©ÛŒÙˆÙ†Ú©Û  Ù¹Ø±ÛŒÙ Ú© Ø¨Û Øª Ø²ÛŒØ§Ø¯Û  Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "She doesn't drive to work because the traffic is heavy."
+        },
+        {
+          "english": "My grandfather doesn't watch television at night.",
+          "phonetic": "/maÉª ËˆÉ¡rÃ¦nfÉ‘Ë Ã°É™r ËˆdÊŒznt wÉ’tÊƒ ËˆtelÉªvÉªÊ’n Ã¦t naÉªt/",
+          "urdu": "Ù…ÛŒØ±Û’ Ø¯Ø§Ø¯Ø§ Ø±Ø§Øª Ú©Ùˆ Ù¹ÛŒÙ„ÛŒ ÙˆÛŒÚ˜Ù† Ù†Û ÛŒÚº Ø¯ÛŒÚ©Ú¾ØªÛ’Û”",
+          "audioText": "My grandfather doesn't watch television at night."
+        },
+        {
+          "english": "They don't live in a big house; they live in a flat.",
+          "phonetic": "/Ã°eÉª dÉ™ÊŠnt lÉªv Éªn É™ bÉªÉ¡ haÊŠs Ã°eÉª lÉªv Éªn É™ flÃ¦t/",
+          "urdu": "ÙˆÛ  Ú©Ø³ÛŒ Ø¨Ú‘Û’ Ú¯Ú¾Ø± Ù…ÛŒÚº Ù†Û ÛŒÚº Ø±Û ØªÛ’ØŒ ÙˆÛ  Ø§ÛŒÚ© Ù Ù„ÛŒÙ¹ Ù…ÛŒÚº Ø±Û ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "They don't live in a big house; they live in a flat."
+        },
+        {
+          "english": "He doesn't smoke cigarettes or cigars.",
+          "phonetic": "/hiË  ËˆdÊŒznt smÉ™ÊŠk ËŒsÉªÉ¡É™Ëˆrets É”Ë r sÉªËˆÉ¡É‘Ë z/",
+          "urdu": "ÙˆÛ  Ø³Ú¯Ø±ÛŒÙ¹ ÛŒØ§ Ø³Ú¯Ø§Ø± Ù†Û ÛŒÚº Ù¾ÛŒØªØ§Û”",
+          "audioText": "He doesn't smoke cigarettes or cigars."
+        },
+        {
+          "english": "We don't understand this technical explanation.",
+          "phonetic": "/wiË  dÉ™ÊŠnt ËŒÊŒndÉ™ËˆstÃ¦nd Ã°Éªs ËˆteknÉªkl ËŒeksplÉ™ËˆneÉªÊƒn/",
+          "urdu": "Û Ù… ÛŒÛ  ØªÚ©Ù†ÛŒÚ©ÛŒ ÙˆØ¶Ø§Ø­Øª Ù†Û ÛŒÚº Ø³Ù…Ø¬Ú¾ØªÛ’Û”",
+          "audioText": "We don't understand this technical explanation."
+        },
+        {
+          "english": "Bilal doesn't eat fast food during the week.",
+          "phonetic": "/bÉªËˆlÉ‘Ë l ËˆdÊŒznt iË t fÉ‘Ë st fuË d ËˆdjÊŠÉ™rÉªÅ‹ Ã°É™ wiË k/",
+          "urdu": "Ø¨Ù„Ø§Ù„ Û Ù ØªÛ’ Ú©Û’ Ø¯ÙˆØ±Ø§Ù† Ù Ø§Ø³Ù¹ Ù ÙˆÚˆ Ù†Û ÛŒÚº Ú©Ú¾Ø§ØªØ§Û”",
+          "audioText": "Bilal doesn't eat fast food during the week."
+        },
+        {
+          "english": "It doesn't rain very often in this desert region.",
+          "phonetic": "/Éªt ËˆdÊŒznt reÉªn Ëˆveri ËˆÉ’fn Éªn Ã°Éªs ËˆdezÉ™t ËˆriË dÊ’É™n/",
+          "urdu": "Ø§Ø³ ØµØ­Ø±Ø§Ø¦ÛŒ Ø®Ø·Û’ Ù…ÛŒÚº Ø¨Ø§Ø±Ø´ Ø§Ú©Ø«Ø± Ù†Û ÛŒÚº Û ÙˆØªÛŒÛ”",
+          "audioText": "It doesn't rain very often in this desert region."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l3-4",
+      "type": "dialogue",
+      "title": "Comparing Food Preferences",
+      "dialogue": [
+        {
+          "speaker": "Kamran",
+          "avatar": "K",
+          "english": "Do you want to order spicy biryani, Tariq?",
+          "urdu": "Ø·Ø§Ø±Ù‚ØŒ Ú©ÛŒØ§ Ø¢Ù¾ Ù…Ø³Ø§Ù„Ø­Û’ Ø¯Ø§Ø± Ø¨Ø±ÛŒØ§Ù†ÛŒ Ù…Ù†Ú¯ÙˆØ§Ù†Ø§ Ú†Ø§Û ØªÛ’ Û ÛŒÚºØŸ",
+          "audioText": "Do you want to order spicy biryani, Tariq?"
+        },
+        {
+          "speaker": "Tariq",
+          "avatar": "T",
+          "english": "Actually, I don't eat very spicy food. It upsets my stomach.",
+          "urdu": "Ø¯Ø±Ø§ØµÙ„ Ù…ÛŒÚº Ø²ÛŒØ§Ø¯Û  Ù…Ø³Ø§Ù„Ø­Û’ Ø¯Ø§Ø± Ú©Ú¾Ø§Ù†Ø§ Ù†Û ÛŒÚº Ú©Ú¾Ø§ØªØ§Û” Ø§Ø³ Ø³Û’ Ù…ÛŒØ±Ø§ Ù…Ø¹Ø¯Û  Ø®Ø±Ø§Ø¨ Û Ùˆ Ø¬Ø§ØªØ§ Û Û’Û”",
+          "audioText": "Actually, I don't eat very spicy food. It upsets my stomach."
+        },
+        {
+          "speaker": "Kamran",
+          "avatar": "K",
+          "english": "Does your brother like chicken pulao?",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ú©Û’ Ø¨ÚÚ¾Ø§Ø¦ÛŒ Ú†Ú©Ù† Ù¾Ù„Ø§Ø¤ Ù¾Ø³Ù†Ø¯ Ú©Ø±ØªÛ’ Û ÛŒÚºØŸ",
+          "audioText": "Does your brother like chicken pulao?"
+        },
+        {
+          "speaker": "Tariq",
+          "avatar": "T",
+          "english": "Yes, he loves pulao. He doesn't like red meat at all.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºØŒ ÙˆÛ  Ù¾Ù„Ø§Ø¤ Ø¨Û Øª Ù¾Ø³Ù†Ø¯ Ú©Ø±ØªØ§ Û Û’Û” ÙˆÛ  Ø¨Ú‘Ø§ Ú¯ÙˆØ´Øª Ø¨Ø§Ù„Ú©Ù„ Ù†Û ÛŒÚº Ú©Ú¾Ø§ØªØ§Û”",
+          "audioText": "Yes, he loves pulao. He doesn't like red meat at all."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l3-5",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u3-l3-1",
+          "type": "mcq",
+          "skillTag": "negatives",
+          "prompt": "Choose the correct negative form: 'He _____ coffee in the evening.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "don't drink"
+            },
+            {
+              "id": "opt-2",
+              "text": "no drinks"
+            },
+            {
+              "id": "opt-3",
+              "text": "doesn't drink"
+            },
+            {
+              "id": "opt-4",
+              "text": "doesn't drinks"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'He' takes 'doesn't' followed strictly by the base verb 'drink' without -s.",
+          "urduExplanation": "'He' Ú©Û’ Ø³Ø§ØªÚ¾ 'doesn't' Ø§ÙˆØ± base verb 'drink' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l3-2",
+          "type": "mcq",
+          "skillTag": "negatives",
+          "prompt": "Choose the correct negative form: 'My parents _____ live in a noisy area.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "doesn't"
+            },
+            {
+              "id": "opt-2",
+              "text": "not"
+            },
+            {
+              "id": "opt-3",
+              "text": "is not"
+            },
+            {
+              "id": "opt-4",
+              "text": "don't"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'My parents' is plural (they), requiring the auxiliary contraction 'don't'.",
+          "urduExplanation": "Ø¬Ù…Ø¹ Ù Ø§Ø¹Ù„ (My parents) Ú©Û’ Ù„ÛŒÛ’ 'don't' Ù„Ú¯Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l3-3",
+          "type": "fill_blank",
+          "skillTag": "negatives",
+          "prompt": "Fill in the blank with 'don't' or 'doesn't': 'She _____ understand the technical terms.'",
+          "correctAnswer": "doesn't",
+          "explanation": "Third-person singular 'She' takes 'doesn't'.",
+          "urduExplanation": "'She' Ú©Û’ Ø³Ø§ØªÚ¾ 'doesn't' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l3-4",
+          "type": "fill_blank",
+          "skillTag": "negatives",
+          "prompt": "Fill in the blank: 'We _____ speak German.'",
+          "correctAnswer": "don't",
+          "explanation": "'We' takes the negative auxiliary 'don't'.",
+          "urduExplanation": "'We' Ú©Û’ Ø³Ø§ØªÚ¾ 'don't' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l3-5",
+          "type": "order_sentence",
+          "skillTag": "negatives",
+          "prompt": "Rearrange the words to form a correct negative statement:",
+          "sentenceTokens": [
+            "He",
+            "does",
+            "not",
+            "smoke",
+            "cigarettes",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Subject (He) + auxiliary (does not) + base verb (smoke) + object (cigarettes).",
+          "urduExplanation": "He does not smoke cigarettes."
+        },
+        {
+          "id": "ex-a1-u3-l3-6",
+          "type": "order_sentence",
+          "skillTag": "negatives",
+          "prompt": "Rearrange the words to make a correct negative sentence:",
+          "sentenceTokens": [
+            "They",
+            "don't",
+            "work",
+            "on",
+            "Saturdays",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Subject (They) + negative contraction (don't) + base verb (work) + time phrase (on Saturdays).",
+          "urduExplanation": "They don't work on Saturdays."
+        },
+        {
+          "id": "ex-a1-u3-l3-7",
+          "type": "match_pairs",
+          "skillTag": "negatives",
+          "prompt": "Match the subject pronoun with its correct negative auxiliary:",
+          "pairs": [
+            {
+              "left": "He",
+              "right": "doesn't"
+            },
+            {
+              "left": "They",
+              "right": "don't"
+            },
+            {
+              "left": "She",
+              "right": "doesn't"
+            },
+            {
+              "left": "I",
+              "right": "don't"
+            }
+          ],
+          "explanation": "Subject pronouns accurately paired with don't/doesn't.",
+          "urduExplanation": "Ù Ø§Ø¹Ù„ Ú©Ùˆ don't ÛŒØ§ doesn't Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l3-8",
+          "type": "error_correction",
+          "skillTag": "negatives",
+          "prompt": "Find and correct the mistake: 'She doesn't works at the clinic.'",
+          "correctAnswer": "She doesn't work at the clinic.",
+          "explanation": "After 'doesn't', the main verb must be in its base form 'work', without -s.",
+          "urduExplanation": "'doesn't' Ú©Û’ Ø¨Ø¹Ø¯ Ù Ø¹Ù„ Ù…ÛŒÚº -s Ù†Û ÛŒÚº Ù„Ú¯ØªØ§ØŒ 'work' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l3-9",
+          "type": "error_correction",
+          "skillTag": "negatives",
+          "prompt": "Find and correct the mistake: 'I no like bitter coffee.'",
+          "correctAnswer": "I don't like bitter coffee.",
+          "explanation": "Use 'don't' to negate present simple verbs, not 'no'.",
+          "urduExplanation": "Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº 'I no like' ØºÙ„Ø· Û Û’ØŒ 'I don't like' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l3-10",
+          "type": "true_false",
+          "skillTag": "negatives",
+          "prompt": "The sentence 'He doesn't drives' is grammatically correct. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. The main verb must be in base form: 'He doesn't drive'.",
+          "urduExplanation": "ØºÙ„Ø·Û” 'doesn't' Ú©Û’ Ø¨Ø¹Ø¯ base verb 'drive' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l3-6",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u3-l3-1",
+          "type": "mcq",
+          "skillTag": "negatives",
+          "prompt": "Which sentence correctly negates the statement 'She lives in Multan'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "She not live in Multan."
+            },
+            {
+              "id": "opt-2",
+              "text": "She doesn't lives in Multan."
+            },
+            {
+              "id": "opt-3",
+              "text": "She doesn't live in Multan."
+            },
+            {
+              "id": "opt-4",
+              "text": "She don't live in Multan."
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'She doesn't live in Multan' correctly uses 'doesn't' + base verb 'live'.",
+          "urduExplanation": "'She doesn't live in Multan' Ø¨Ø§Ù„Ú©Ù„ Ø¯Ø±Ø³Øª Ø¬Ù…Ù„Û  Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l3-2",
+          "type": "mcq",
+          "skillTag": "negatives",
+          "prompt": "Complete the sentence: 'We _____ have enough time to finish today.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "doesn't"
+            },
+            {
+              "id": "opt-2",
+              "text": "hasn't"
+            },
+            {
+              "id": "opt-3",
+              "text": "aren't"
+            },
+            {
+              "id": "opt-4",
+              "text": "don't"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Subject 'We' takes 'don't' before base verb 'have'.",
+          "urduExplanation": "'We' Ú©Û’ Ø³Ø§ØªÚ¾ 'don't' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l3-3",
+          "type": "mcq",
+          "skillTag": "negatives",
+          "prompt": "Why is 'He doesn't speaks English' grammatically wrong?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Because 'doesn't' already takes third-person marking, requiring a base verb"
+            },
+            {
+              "id": "opt-2",
+              "text": "Because the contraction 'doesn't' can only ever be paired with plural nouns"
+            },
+            {
+              "id": "opt-3",
+              "text": "Because the verb 'speaks' functions as an independent adjective in a clause"
+            },
+            {
+              "id": "opt-4",
+              "text": "Because negative clauses in English always require an apostrophe on the verb"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "The auxiliary 'doesn't' takes the third-person inflection, leaving the main verb in its bare base form.",
+          "urduExplanation": "چونکہ 'doesn't' میں third-person marker آ چکا ہے، اس لیے فعل base form (speak) میں ہونا چاہیے۔"
+        },
+        {
+          "id": "qz-a1-u3-l3-4",
+          "type": "mcq",
+          "skillTag": "negatives",
+          "prompt": "Select the sentence with INCORRECT grammar:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "They don't understand the rules."
+            },
+            {
+              "id": "opt-2",
+              "text": "My brother doesn't drives a motorcycle."
+            },
+            {
+              "id": "opt-3",
+              "text": "I don't know his phone number."
+            },
+            {
+              "id": "opt-4",
+              "text": "She doesn't drink cow's milk."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'doesn't drives' is incorrect; it must be 'doesn't drive'.",
+          "urduExplanation": "'doesn't drives' ØºÙ„Ø· Û Û’ØŒ ØµØ­ÛŒØ­ 'doesn't drive' Û ÙˆÚ¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u3-l3-5",
+          "type": "mcq",
+          "skillTag": "negatives",
+          "prompt": "Which pair shows affirmative and negative correctly matching?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "I like tea -> I not like tea"
+            },
+            {
+              "id": "opt-2",
+              "text": "He works here -> He doesn't works here"
+            },
+            {
+              "id": "opt-3",
+              "text": "She drives -> She doesn't drive"
+            },
+            {
+              "id": "opt-4",
+              "text": "They live here -> They doesn't live here"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'She drives -> She doesn't drive' accurately removes -s from the main verb after doesn't.",
+          "urduExplanation": "'She drives -> She doesn't drive' Ù…Ø«Ø¨Øª Ø³Û’ Ù…Ù†Ù ÛŒ Ú©ÛŒ Ø¨Ø§Ù„Ú©Ù„ ØµØ­ÛŒØ­ ØªØ¨Ø¯ÛŒÙ„ÛŒ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l3-7",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "What you learned about Present Simple negatives:",
+      "summaryPoints": [
+        "Use don't (do not) with I, you, we, they + base verb.",
+        "Use doesn't (does not) with he, she, it + base verb.",
+        "NEVER keep the -s on the main verb after doesn't (He doesn't work, NOT doesn't works).",
+        "Never say 'I no like' or 'He no work' in English.",
+        "Contractions (don't, doesn't) are standard in natural speaking."
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l3-8",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Ù…Ù†Ù ÛŒ Ø¬Ù…Ù„Û  Ø¨Ù†Ø§Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Û Ù… ØµØ±Ù  **'Ù†Û ÛŒÚº'** Ú©Ø§ Ù„Ù Ø¸ Ø´Ø§Ù…Ù„ Ú©Ø± Ø¯ÛŒØªÛ’ Û ÛŒÚº:\n- 'Ù…ÛŒÚº Ú©Ø§Ù… Ú©Ø±ØªØ§ Û ÙˆÚº' -> 'Ù…ÛŒÚº Ú©Ø§Ù… **Ù†Û ÛŒÚº** Ú©Ø±ØªØ§'\n- 'ÙˆÛ  Ú¯Ø§Ú‘ÛŒ Ú†Ù„Ø§ØªÛŒ Û Û’' -> 'ÙˆÛ  Ú¯Ø§Ú‘ÛŒ **Ù†Û ÛŒÚº** Ú†Ù„Ø§ØªÛŒ'\n\nÙ„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ØµØ±Ù  'not' Ù†Û ÛŒÚº Ù„Ú¯ Ø³Ú©ØªØ§ØŒ Ø¨Ù„Ú©Û  **do not (don't)** ÛŒØ§ **does not (doesn't)** Ù„Ú¯Ø§Ù†Ø§ Ù¾Ú‘ØªØ§ Û Û’Û”\n\n**Ø³Ø¨ Ø³Û’ Ø¨Ú‘ÛŒ ØºÙ„Ø·ÛŒ Ø¬Ø³ Ø³Û’ Ø¨Ú†Ù†Ø§ Û Û’:**\nØ¬Ø¨ **doesn't** Ø¢ Ø¬Ø§Ø¦Û’ ØªÙˆ Ù Ø¹Ù„ Ú©Ø§ **-s Ø®ØªÙ…** Û Ùˆ Ø¬Ø§ØªØ§ Û Û’Û” Ø§Ø±Ø¯Ùˆ Ø¨ÙˆÙ„Ù†Û’ ÙˆØ§Ù„Û’ Ø§Ú©Ø«Ø± 'He doesn't works' Ú©Û ØªÛ’ Û ÛŒÚº Ø¬Ùˆ Ú©Û  ØºÙ„Ø· Û Û’Û” ØµØ­ÛŒØ­ Ø¬Ù…Ù„Û  **'He doesn't work'** Û Û’Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

@@ -1,0 +1,627 @@
+{
+  "id": "eng-a1-u2-l5",
+  "level": "A1",
+  "unit": "unit-2",
+  "order": 5,
+  "title": "Colours & Common Sizes",
+  "description": "Describe everyday items by colour, size, and appearance with accurate English adjectives.",
+  "objectives": [
+    "Name primary and common secondary colours fluently",
+    "Use basic size adjectives (big, small, heavy, light, long, short)",
+    "Apply the crucial rule of English adjective word order: Adjective before Noun (never inflected for plural)"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u2-l4"
+  ],
+  "skillTags": [
+    "adjectives",
+    "colors",
+    "descriptive-grammar"
+  ],
+  "vocabularyList": [
+    {
+      "word": "red",
+      "partOfSpeech": "adjective",
+      "phonetic": "/red/",
+      "definition": "Of a colour at the end of the visible spectrum, like blood or a ripe ruby.",
+      "urduMeaning": "Ø³Ø±Ø® / Ù„Ø§Ù„",
+      "exampleSentence": "She bought a bright red coat."
+    },
+    {
+      "word": "blue",
+      "partOfSpeech": "adjective",
+      "phonetic": "/bluË /",
+      "definition": "Of a colour intermediate between green and violet, like a clear sky.",
+      "urduMeaning": "Ù†ÛŒÙ„Ø§",
+      "exampleSentence": "The sky is clear and blue today."
+    },
+    {
+      "word": "green",
+      "partOfSpeech": "adjective",
+      "phonetic": "/É¡riË n/",
+      "definition": "Of the colour between blue and yellow, like fresh grass or emeralds.",
+      "urduMeaning": "Ø³Ø¨Ø²",
+      "exampleSentence": "Pakistan's national flag is green and white."
+    },
+    {
+      "word": "yellow",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ËˆjelÉ™ÊŠ/",
+      "definition": "Of the colour between green and orange, like ripe lemons.",
+      "urduMeaning": "Ù¾ÛŒÙ„Ø§",
+      "exampleSentence": "He highlighted the rule with a yellow marker."
+    },
+    {
+      "word": "black",
+      "partOfSpeech": "adjective",
+      "phonetic": "/blÃ¦k/",
+      "definition": "Of the very darkest colour owing to the absence of light.",
+      "urduMeaning": "Ú©Ø§Ù„Ø§ / Ø³ÛŒØ§Û ",
+      "exampleSentence": "He wore smart black shoes to the interview."
+    },
+    {
+      "word": "white",
+      "partOfSpeech": "adjective",
+      "phonetic": "/waÉªt/",
+      "definition": "Of the colour of milk or fresh snow.",
+      "urduMeaning": "Ø³Ù ÛŒØ¯",
+      "exampleSentence": "The classroom has clean white walls."
+    },
+    {
+      "word": "big",
+      "partOfSpeech": "adjective",
+      "phonetic": "/bÉªÉ¡/",
+      "definition": "Of considerable size or extent; large.",
+      "urduMeaning": "Ø¨Ú‘Ø§",
+      "exampleSentence": "They live in a big house with a garden."
+    },
+    {
+      "word": "small",
+      "partOfSpeech": "adjective",
+      "phonetic": "/smÉ”Ë l/",
+      "definition": "Of a size that is less than normal or usual.",
+      "urduMeaning": "Ú†Ú¾ÙˆÙ¹Ø§",
+      "exampleSentence": "He lives in a small apartment."
+    },
+    {
+      "word": "heavy",
+      "partOfSpeech": "adjective",
+      "phonetic": "/Ëˆhevi/",
+      "definition": "Of great weight; difficult to lift or move.",
+      "urduMeaning": "Ø¨Ú¾Ø§Ø±ÛŒ / ÙˆØ²Ù†ÛŒ",
+      "exampleSentence": "This suitcase is too heavy for one person."
+    },
+    {
+      "word": "light",
+      "partOfSpeech": "adjective",
+      "phonetic": "/laÉªt/",
+      "definition": "Of little weight; not heavy.",
+      "urduMeaning": "Û Ù„Ú©Ø§",
+      "exampleSentence": "Modern laptops are very light to carry."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u2-l5-1",
+      "type": "explain",
+      "title": "Position and Invariance of English Adjectives",
+      "content": "An **adjective** describes a noun. In English, adjectives follow two vital structural rules:\n\n### 1. Position Before Noun or After 'To Be'\n- **Before the noun**: *a red car*, *a big room*, *heavy boxes*.\n- **After 'to be'**: *The car is red*, *The room is big*, *The boxes are heavy*.\n\n### 2. English Adjectives NEVER Have Plural Forms\nUnlike many languages, English adjectives never change for plural nouns! You say **big houses**, NEVER *'bigs houses'*.",
+      "tables": [
+        {
+          "title": "Colour & Size Pairs",
+          "headers": [
+            "Adjective",
+            "Opposite",
+            "Sample Phrase (Singular)",
+            "Sample Phrase (Plural)",
+            "Urdu Meaning"
+          ],
+          "rows": [
+            [
+              "big",
+              "small",
+              "a big city",
+              "big cities (no -s on big!)",
+              "Ø¨Ú‘Ø§ / Ú†Ú¾ÙˆÙ¹Ø§"
+            ],
+            [
+              "heavy",
+              "light",
+              "a heavy bag",
+              "heavy bags",
+              "Ø¨Ú¾Ø§Ø±ÛŒ / Û Ù„Ú©Ø§"
+            ],
+            [
+              "black",
+              "white",
+              "a black pen",
+              "black pens",
+              "Ú©Ø§Ù„Ø§ / Ø³Ù ÛŒØ¯"
+            ],
+            [
+              "long",
+              "short",
+              "a long ruler",
+              "long rulers",
+              "Ù„Ù…Ø¨Ø§ / Ú†Ú¾ÙˆÙ¹Ø§"
+            ]
+          ]
+        },
+        {
+          "title": "Two Syntactic Positions",
+          "headers": [
+            "Structure Pattern",
+            "Formula",
+            "Example Sentence",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "Attributive (Before Noun)",
+              "Article + Adjective + Noun",
+              "She has a blue backpack.",
+              "Ø§Ø³ Ú©Û’ Ù¾Ø§Ø³ Ù†ÛŒÙ„Ø§ Ø¨Ø³ØªÛ  Û Û’Û”"
+            ],
+            [
+              "Predicative (After Verb)",
+              "Subject + To Be + Adjective",
+              "Her backpack is blue.",
+              "Ø§Ø³ Ú©Ø§ Ø¨Ø³ØªÛ  Ù†ÛŒÙ„Ø§ Û Û’Û”"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Size Before Colour",
+          "text": "When using both size and colour together, size normally comes first: **a big red ball**, **a small green apple**."
+        },
+        {
+          "type": "warning",
+          "title": "No Plural Suffix on Adjectives",
+          "text": "Remember: nouns can be plural (*books*), but adjectives never can (*red books*, never *reds books*)."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l5-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "She bought a big blue umbrella for the walk.",
+          "phonetic": "/ÊƒiË  bÉ”Ë t É™ bÉªÉ¡ bluË  ÊŒmËˆbrelÉ™ fÉ”Ë r Ã°É™ wÉ”Ë k/",
+          "urdu": "Ø§Ø³ Ù†Û’ Ø³ÛŒØ± Ú©Û’ Ù„ÛŒÛ’ Ø§ÛŒÚ© Ø¨Ú‘ÛŒ Ù†ÛŒÙ„ÛŒ Ú†Ú¾ØªØ±ÛŒ Ø®Ø±ÛŒØ¯ÛŒÛ”",
+          "audioText": "She bought a big blue umbrella for the walk."
+        },
+        {
+          "english": "The national flag of Pakistan has a green background.",
+          "phonetic": "/Ã°É™ ËˆnÃ¦ÊƒnÉ™l flÃ¦É¡ É™v ËŒpÉ‘Ë kÉªËˆstÉ‘Ë n hÃ¦z É™ É¡riË n ËˆbÃ¦kÉ¡raÊŠnd/",
+          "urdu": "Ù¾Ø§Ú©Ø³ØªØ§Ù† Ú©Û’ Ù‚ÙˆÙ…ÛŒ Ù¾Ø±Ú†Ù… Ú©Ø§ Ù¾Ø³ Ù…Ù†Ø¸Ø± Ø³Ø¨Ø² Û Û’Û”",
+          "audioText": "The national flag of Pakistan has a green background."
+        },
+        {
+          "english": "These two heavy boxes contain new dictionaries.",
+          "phonetic": "/Ã°iË z tuË  Ëˆhevi ËˆbÉ’ksÉªz kÉ™nËˆteÉªn njuË  ËˆdÉªkÊƒÉ™nriz/",
+          "urdu": "Ø§Ù† Ø¯Ùˆ Ø¨Ú¾Ø§Ø±ÛŒ ÚˆØ¨ÙˆÚº Ù…ÛŒÚº Ù†Ø¦ÛŒ Ù„ØºØ§Øª Û ÛŒÚºÛ”",
+          "audioText": "These two heavy boxes contain new dictionaries."
+        },
+        {
+          "english": "His new mobile phone is remarkably light and fast.",
+          "phonetic": "/hÉªz njuË  ËˆmÉ™ÊŠbaÉªl fÉ™ÊŠn Éªz rÉªËˆmÉ‘Ë kÉ™bli laÉªt Ã¦nd fÉ‘Ë st/",
+          "urdu": "Ø§Ø³ Ú©Ø§ Ù†ÛŒØ§ Ù…ÙˆØ¨Ø§Ø¦Ù„ Ù ÙˆÙ† ØºÛŒØ± Ù…Ø¹Ù…ÙˆÙ„ÛŒ Ø·ÙˆØ± Ù¾Ø± Û Ù„Ú©Ø§ Ø§ÙˆØ± ØªÛŒØ² Û Û’Û”",
+          "audioText": "His new mobile phone is remarkably light and fast."
+        },
+        {
+          "english": "She wears a smart black coat in winter.",
+          "phonetic": "/ÊƒiË  weÉ™rz É™ smÉ‘Ë t blÃ¦k kÉ™ÊŠt Éªn ËˆwÉªntÉ™r/",
+          "urdu": "ÙˆÛ  Ø³Ø±Ø¯ÛŒÙˆÚº Ù…ÛŒÚº Ø§ÛŒÚ© Ø´Ø§Ù†Ø¯Ø§Ø± Ú©Ø§Ù„Ø§ Ú©ÙˆÙ¹ Ù¾Û Ù†ØªÛŒ Û Û’Û”",
+          "audioText": "She wears a smart black coat in winter."
+        },
+        {
+          "english": "The children play with a small yellow tennis ball.",
+          "phonetic": "/Ã°É™ ËˆtÊƒÉªldrÉ™n pleÉª wÉªÃ° É™ smÉ”Ë l ËˆjelÉ™ÊŠ ËˆtenÉªs bÉ”Ë l/",
+          "urdu": "Ø¨Ú†Û’ Ø§ÛŒÚ© Ú†Ú¾ÙˆÙ¹ÛŒ Ù¾ÛŒÙ„ÛŒ Ù¹ÛŒÙ†Ø³ Ø¨Ø§Ù„ Ø³Û’ Ú©Ú¾ÛŒÙ„ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "The children play with a small yellow tennis ball."
+        },
+        {
+          "english": "Lahore has many beautiful green parks.",
+          "phonetic": "/lÉ™ËˆhÉ”Ë r hÃ¦z Ëˆmeni ËˆbjuË tÉªfl É¡riË n pÉ‘Ë ks/",
+          "urdu": "Ù„Ø§Û ÙˆØ± Ù…ÛŒÚº Ú©Ø¦ÛŒ Ø®ÙˆØ¨ØµÙˆØ±Øª Ø³Ø¨Ø² Ù¾Ø§Ø±Ú© Û ÛŒÚºÛ”",
+          "audioText": "Lahore has many beautiful green parks."
+        },
+        {
+          "english": "Are those white sneakers easy to keep clean?",
+          "phonetic": "/É‘Ë r Ã°É™ÊŠz waÉªt ËˆsniË kÉ™rz ËˆiË zi tuË  kiË p kliË n/",
+          "urdu": "Ú©ÛŒØ§ ÙˆÛ  Ø³Ù ÛŒØ¯ Ø¬ÙˆØªÛ’ ØµØ§Ù  Ø±Ú©Ú¾Ù†Ø§ Ø¢Ø³Ø§Ù† Û Û’ØŸ",
+          "audioText": "Are those white sneakers easy to keep clean?"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l5-3",
+      "type": "dialogue",
+      "title": "Choosing a Backpack at the Store",
+      "dialogue": [
+        {
+          "speaker": "Customer",
+          "avatar": "C",
+          "english": "Hello! I am looking for a backpack for university.",
+          "urdu": "Û ÛŒÙ„Ùˆ! Ù…ÛŒÚº ÛŒÙˆÙ†ÛŒÙˆØ±Ø³Ù¹ÛŒ Ú©Û’ Ù„ÛŒÛ’ Ø§ÛŒÚ© Ø¨Ø³ØªÛ  ØªÙ„Ø§Ø´ Ú©Ø± Ø±Û Ø§ Û ÙˆÚºÛ”",
+          "audioText": "Hello! I am looking for a backpack for university."
+        },
+        {
+          "speaker": "Shopkeeper",
+          "avatar": "S",
+          "english": "Do you prefer a big backpack or a light, compact one?",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ø¨Ú‘Ø§ Ø¨Ø³ØªÛ  Ù¾Ø³Ù†Ø¯ Ú©Ø±ÛŒÚº Ú¯Û’ ÛŒØ§ Û Ù„Ú©Ø§ Ø§ÙˆØ± Ú†Ú¾ÙˆÙ¹Ø§ØŸ",
+          "audioText": "Do you prefer a big backpack or a light, compact one?"
+        },
+        {
+          "speaker": "Customer",
+          "avatar": "C",
+          "english": "I need a light one. What colours do you have?",
+          "urdu": "Ù…Ø¬Ú¾Û’ Û Ù„Ú©Ø§ Ú†Ø§Û ÛŒÛ’Û” Ø¢Ù¾ Ú©Û’ Ù¾Ø§Ø³ Ú©ÙˆÙ† Ø³Û’ Ø±Ù†Ú¯ Û ÛŒÚºØŸ",
+          "audioText": "I need a light one. What colours do you have?"
+        },
+        {
+          "speaker": "Shopkeeper",
+          "avatar": "S",
+          "english": "We have black, dark blue, and olive green.",
+          "urdu": "Û Ù…Ø§Ø±Û’ Ù¾Ø§Ø³ Ú©Ø§Ù„Ø§ØŒ Ú¯Û Ø±Ø§ Ù†ÛŒÙ„Ø§ Ø§ÙˆØ± Ø²ÛŒØªÙˆÙ†ÛŒ Ø³Ø¨Ø² Ø±Ù†Ú¯ Û Û’Û”",
+          "audioText": "We have black, dark blue, and olive green."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l5-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u2-l5-1",
+          "type": "mcq",
+          "skillTag": "adjectives",
+          "prompt": "Choose the correct phrase describing several large buildings:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "big buildings"
+            },
+            {
+              "id": "opt-2",
+              "text": "bigs buildings"
+            },
+            {
+              "id": "opt-3",
+              "text": "buildings big"
+            },
+            {
+              "id": "opt-4",
+              "text": "building bigs"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Adjectives come before the noun and NEVER take an '-s' for plural.",
+          "urduExplanation": "ØµÙ Øª (adjective) Ø§Ø³Ù… Ø³Û’ Ù¾Û Ù„Û’ Ø¢ØªÛŒ Û Û’ Ø§ÙˆØ± Ø§Ø³ Ù¾Ø± 's' Ù†Û ÛŒÚº Ù„Ú¯ØªØ§Û”"
+        },
+        {
+          "id": "ex-a1-u2-l5-2",
+          "type": "mcq",
+          "skillTag": "adjectives",
+          "prompt": "What is the natural order when combining size and colour?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "a red big apple"
+            },
+            {
+              "id": "opt-2",
+              "text": "a big red apple"
+            },
+            {
+              "id": "opt-3",
+              "text": "an apple big red"
+            },
+            {
+              "id": "opt-4",
+              "text": "an red big apple"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Size normally precedes colour in English: 'a big red apple'.",
+          "urduExplanation": "Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø¬Ø³Ø§Ù…Øª (Size) Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± Ø±Ù†Ú¯ (Colour) Ø³Û’ Ù¾Û Ù„Û’ Ø¢ØªÛŒ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l5-3",
+          "type": "fill_blank",
+          "skillTag": "colors",
+          "prompt": "Complete the sentence with the opposite colour: 'The board is white, but the ink is _____.'",
+          "correctAnswer": "black",
+          "explanation": "'Black' is the traditional opposite colour to white for marker text.",
+          "urduExplanation": "white Ú©Ø§ Ù…Ø®Ø§Ù„Ù  black Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l5-4",
+          "type": "fill_blank",
+          "skillTag": "adjectives",
+          "prompt": "Complete with the opposite of heavy: 'This feather is very _____.'",
+          "correctAnswer": "light",
+          "explanation": "'Light' is the direct antonym of heavy.",
+          "urduExplanation": "heavy (Ø¨Ú¾Ø§Ø±ÛŒ) Ú©Ø§ Ø§Ù„Ù¹ light (Û Ù„Ú©Ø§) Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u2-l5-5",
+          "type": "order_sentence",
+          "skillTag": "adjectives",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "She",
+            "has",
+            "a",
+            "small",
+            "blue",
+            "car",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (She) + verb (has) + article + size (small) + colour (blue) + noun (car).",
+          "urduExplanation": "She has a small blue car."
+        },
+        {
+          "id": "ex-a1-u2-l5-6",
+          "type": "order_sentence",
+          "skillTag": "adjectives",
+          "prompt": "Rearrange the words into a correct statement:",
+          "sentenceTokens": [
+            "These",
+            "heavy",
+            "books",
+            "are",
+            "expensive",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Demonstrative + adjective + plural noun + linking verb + predicate adjective.",
+          "urduExplanation": "These heavy books are expensive."
+        },
+        {
+          "id": "ex-a1-u2-l5-7",
+          "type": "match_pairs",
+          "skillTag": "adjectives",
+          "prompt": "Match each adjective with its opposite:",
+          "pairs": [
+            {
+              "left": "big",
+              "right": "small"
+            },
+            {
+              "left": "heavy",
+              "right": "light"
+            },
+            {
+              "left": "black",
+              "right": "white"
+            },
+            {
+              "left": "long",
+              "right": "short"
+            }
+          ],
+          "explanation": "Antonym pairs correctly matched.",
+          "urduExplanation": "Ù…ØªØ¶Ø§Ø¯ Ø§Ù„Ù Ø§Ø¸ Ú©Û’ Ø¬ÙˆÚ‘Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l5-8",
+          "type": "error_correction",
+          "skillTag": "adjectives",
+          "prompt": "Find and correct the mistake: 'They bought three reds chairs.'",
+          "correctAnswer": "They bought three red chairs.",
+          "explanation": "Adjectives cannot be pluralized; say 'red chairs', never 'reds chairs'.",
+          "urduExplanation": "Adjective Ù¾Ø± 's' Ù†Û ÛŒÚº Ù„Ú¯ØªØ§ØŒ 'red chairs' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u2-l5-9",
+          "type": "error_correction",
+          "skillTag": "adjectives",
+          "prompt": "Find and correct the mistake: 'She drives a car blue.'",
+          "correctAnswer": "She drives a blue car.",
+          "explanation": "In English, descriptive adjectives come before the noun: 'a blue car'.",
+          "urduExplanation": "Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ØµÙ Øª Ù¾Û Ù„Û’ Ø¢ØªÛŒ Û Û’: 'a blue car'Û”"
+        },
+        {
+          "id": "ex-a1-u2-l5-10",
+          "type": "true_false",
+          "skillTag": "adjectives",
+          "prompt": "In English, adjectives change their form depending on whether the noun is masculine or feminine. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. English adjectives are completely invariant; they never change for gender or number.",
+          "urduExplanation": "ØºÙ„Ø·Û” Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº adjectives Ù…Ø°Ú©Ø± ÛŒØ§ Ù…Ø¤Ù†Ø« Ú©Û’ Ù„Ø­Ø§Ø¸ Ø³Û’ Ù†Û ÛŒÚº Ø¨Ø¯Ù„ØªÛ’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l5-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u2-l5-1",
+          "type": "mcq",
+          "skillTag": "adjectives",
+          "prompt": "Which sentence has the correct adjective order and form?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "He has a big black dog."
+            },
+            {
+              "id": "opt-2",
+              "text": "He has a black big dog."
+            },
+            {
+              "id": "opt-3",
+              "text": "He has a bigs black dog."
+            },
+            {
+              "id": "opt-4",
+              "text": "He has a dog big black."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Size precedes colour (big before black), and the adjective is placed before the noun.",
+          "urduExplanation": "Size Ù¾Û Ù„Û’ Ø§ÙˆØ± colour Ø¨Ø¹Ø¯ Ù…ÛŒÚº: 'a big black dog'Û”"
+        },
+        {
+          "id": "qz-a1-u2-l5-2",
+          "type": "mcq",
+          "skillTag": "adjectives",
+          "prompt": "Select the sentence with INCORRECT grammar:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "The cars are fast."
+            },
+            {
+              "id": "opt-2",
+              "text": "These are fasts cars."
+            },
+            {
+              "id": "opt-3",
+              "text": "She bought a fast car."
+            },
+            {
+              "id": "opt-4",
+              "text": "Fast cars are exciting."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'These are fasts cars' is incorrect because adjectives can never take the plural '-s'.",
+          "urduExplanation": "'fasts cars' ØºÙ„Ø· Û Û’ Ú©ÛŒÙˆÙ†Ú©Û  adjective Ù¾Ø± 's' Ù†Û ÛŒÚº Ù„Ú¯ØªØ§Û”"
+        },
+        {
+          "id": "qz-a1-u2-l5-3",
+          "type": "mcq",
+          "skillTag": "colors",
+          "prompt": "What colour do you get by mixing blue and yellow?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "purple"
+            },
+            {
+              "id": "opt-2",
+              "text": "orange"
+            },
+            {
+              "id": "opt-3",
+              "text": "green"
+            },
+            {
+              "id": "opt-4",
+              "text": "red"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Mixing blue and yellow produces green.",
+          "urduExplanation": "Ù†ÛŒÙ„Ø§ Ø§ÙˆØ± Ù¾ÛŒÙ„Ø§ Ù…Ù„Ø§Ù†Û’ Ø³Û’ Ø³Ø¨Ø² (green) Ø±Ù†Ú¯ Ø¨Ù†ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u2-l5-4",
+          "type": "mcq",
+          "skillTag": "adjectives",
+          "prompt": "Which pair are antonyms (opposites)?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "big - large"
+            },
+            {
+              "id": "opt-2",
+              "text": "light - heavy"
+            },
+            {
+              "id": "opt-3",
+              "text": "blue - green"
+            },
+            {
+              "id": "opt-4",
+              "text": "small - tiny"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Light' and 'heavy' are direct opposites in weight.",
+          "urduExplanation": "'light' (Û Ù„Ú©Ø§) Ø§ÙˆØ± 'heavy' (Ø¨Ú¾Ø§Ø±ÛŒ) Ø§ÛŒÚ© Ø¯ÙˆØ³Ø±Û’ Ú©Û’ Ù…Ø®Ø§Ù„Ù  Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u2-l5-5",
+          "type": "mcq",
+          "skillTag": "adjectives",
+          "prompt": "Where does an adjective go in the sentence 'The tea is hot'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "After the verb 'to be'"
+            },
+            {
+              "id": "opt-2",
+              "text": "Before the subject noun"
+            },
+            {
+              "id": "opt-3",
+              "text": "At the beginning of the question"
+            },
+            {
+              "id": "opt-4",
+              "text": "Before the definite article"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "In predicative position, the adjective 'hot' follows the linking verb 'is'.",
+          "urduExplanation": "Ù Ø¹Ù„ 'is' Ú©Û’ Ø¨Ø¹Ø¯ adjective 'hot' Ø¢ÛŒØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l5-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "What you learned about colours, sizes, and adjectives:",
+      "summaryPoints": [
+        "English adjectives are placed BEFORE nouns (a blue pen) or AFTER the verb to be (The pen is blue).",
+        "Adjectives NEVER change for singular vs plural (red books, not reds books).",
+        "Adjectives do not change for gender in English.",
+        "Natural descriptive order: Size before Colour (a big green apple).",
+        "Master common opposites: big/small, heavy/light, black/white, long/short."
+      ]
+    },
+    {
+      "id": "sec-a1-u2-l5-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº ØµÙ Øª (Adjective) Ø§Ø³Ù… Ú©ÛŒ Ø¬Ù†Ø³ (Gender) Ø§ÙˆØ± ØªØ¹Ø¯Ø§Ø¯ (Number) Ú©Û’ Ù„Ø­Ø§Ø¸ Ø³Û’ Ø¨Ø¯Ù„ØªÛŒ Û Û’:\n- Ø¨Ú‘**Ø§** Ú¯Ú¾Ø± (Ù…Ø°Ú©Ø± ÙˆØ§Ø­Ø¯)\n- Ø¨Ú‘**ÛŒ** Ú¯Ø§Ú‘ÛŒ (Ù…Ø¤Ù†Ø« ÙˆØ§Ø­Ø¯)\n- Ø¨Ú‘**Û’** Ù…Ú©Ø§Ù†Ø§Øª (Ù…Ø°Ú©Ø± Ø¬Ù…¹)\n\n**Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ØµÙ Øª Ú©Ø¨Ú¾ÛŒ Ù†Û ÛŒÚº Ø¨Ø¯Ù„ØªÛŒ!**\n- a **big** house\n- a **big** car\n- **big** houses (Ú©Ø¨Ú¾ÛŒ 'bigs' Ù†Û ÛŒÚº Ú©Û Ù†Ø§)\nÛŒÛ  Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú©ÛŒ Ø§ÛŒÚ© Ø¨Û Øª Ø¨Ú‘ÛŒ Ø¢Ø³Ø§Ù†ÛŒ Û Û’ Ø¬Ø³ Ú©Ùˆ ÛŒØ§Ø¯ Ø±Ú©Ú¾Ù†Ø§ Ø¶Ø±ÙˆØ±ÛŒ Û Û’Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

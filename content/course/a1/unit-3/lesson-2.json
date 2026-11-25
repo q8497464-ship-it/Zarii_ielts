@@ -1,0 +1,649 @@
+{
+  "id": "eng-a1-u3-l2",
+  "level": "A1",
+  "unit": "unit-3",
+  "order": 2,
+  "title": "Third-Person -s / -es Spelling Rules",
+  "description": "Master the spelling rules for he/she/it verb forms: -s, -es, -ies, and irregulars.",
+  "objectives": [
+    "Add -es correctly to verbs ending in -ch, -sh, -ss, -x, -z, and -o",
+    "Apply the consonant + y -> -ies rule accurately in verbs like 'study' and 'carry'",
+    "Identify key irregular third-person verbs (have -> has, go -> goes, do -> does)"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u3-l1"
+  ],
+  "skillTags": [
+    "present-simple",
+    "spelling",
+    "verbs",
+    "third-person"
+  ],
+  "vocabularyList": [
+    {
+      "word": "watch",
+      "partOfSpeech": "verb",
+      "phonetic": "/wÉ’tÊƒ/",
+      "definition": "To look at or observe attentively over a period of time.",
+      "urduMeaning": "Ø¯ÛŒÚ©Ú¾Ù†Ø§",
+      "exampleSentence": "He watches the evening news every day."
+    },
+    {
+      "word": "teach",
+      "partOfSpeech": "verb",
+      "phonetic": "/tiË tÊƒ/",
+      "definition": "To impart knowledge to or instruct someone.",
+      "urduMeaning": "Ù¾Ú‘Ú¾Ø§Ù†Ø§ / ØªØ¹Ù„ÛŒÙ… Ø¯ÛŒÙ†Ø§",
+      "exampleSentence": "She teaches mathematics at college."
+    },
+    {
+      "word": "wash",
+      "partOfSpeech": "verb",
+      "phonetic": "/wÉ’Êƒ/",
+      "definition": "To clean with water and typically soap or detergent.",
+      "urduMeaning": "Ø¯Ú¾ÙˆÙ†Ø§",
+      "exampleSentence": "He washes his car on Saturdays."
+    },
+    {
+      "word": "fix",
+      "partOfSpeech": "verb",
+      "phonetic": "/fÉªks/",
+      "definition": "To repair or mend something that is broken.",
+      "urduMeaning": "Ù¹Ú¾ÛŒÚ© Ú©Ø±Ù†Ø§ / Ù…Ø±Ù…Øª Ú©Ø±Ù†Ø§",
+      "exampleSentence": "The technician fixes computers quickly."
+    },
+    {
+      "word": "go",
+      "partOfSpeech": "verb",
+      "phonetic": "/É¡É™ÊŠ/",
+      "definition": "To move from one place to another; travel.",
+      "urduMeaning": "Ø¬Ø§Ù†Ø§",
+      "exampleSentence": "She goes to the gym three times a week."
+    },
+    {
+      "word": "do",
+      "partOfSpeech": "verb",
+      "phonetic": "/duË /",
+      "definition": "To perform or carry out an action or task.",
+      "urduMeaning": "Ú©Ø±Ù†Ø§",
+      "exampleSentence": "He does his homework before dinner."
+    },
+    {
+      "word": "fly",
+      "partOfSpeech": "verb",
+      "phonetic": "/flaÉª/",
+      "definition": "To move through the air using wings or an aircraft.",
+      "urduMeaning": "Ø§Ú‘Ù†Ø§",
+      "exampleSentence": "The pilot flies international routes."
+    },
+    {
+      "word": "carry",
+      "partOfSpeech": "verb",
+      "phonetic": "/ËˆkÃ¦ri/",
+      "definition": "To support and move someone or something from one place to another.",
+      "urduMeaning": "Ø§Ù¹Ú¾Ø§Ù†Ø§ / Ù„Û’ Ø¬Ø§Ù†Ø§",
+      "exampleSentence": "She carries a heavy bag of books."
+    },
+    {
+      "word": "cry",
+      "partOfSpeech": "verb",
+      "phonetic": "/kraÉª/",
+      "definition": "To shed tears, typically as an expression of pain or sorrow.",
+      "urduMeaning": "Ø±ÙˆÙ†Ø§",
+      "exampleSentence": "The baby cries when he is hungry."
+    },
+    {
+      "word": "catch",
+      "partOfSpeech": "verb",
+      "phonetic": "/kÃ¦tÊƒ/",
+      "definition": "To intercept and hold something moving through the air.",
+      "urduMeaning": "Ù¾Ú©Ú‘Ù†Ø§",
+      "exampleSentence": "He catches the morning train at 8:00."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u3-l2-1",
+      "type": "explain",
+      "title": "Spelling Transformations for He, She, and It",
+      "content": "When the subject is **he**, **she**, or **it**, we must modify the verb. While most verbs simply add **-s**, English phonetic rules require special spelling endings.",
+      "tables": [
+        {
+          "title": "Spelling Rules Matrix",
+          "headers": [
+            "Verb Ending",
+            "Rule",
+            "Base Form",
+            "He/She/It Form",
+            "Pronunciation"
+          ],
+          "rows": [
+            [
+              "Most verbs",
+              "Add -s",
+              "speak, eat, read",
+              "speaks, eats, reads",
+              "/s/ or /z/"
+            ],
+            [
+              "-ch, -sh, -ss, -x, -z",
+              "Add -es",
+              "watch, wash, kiss, fix",
+              "watches, washes, kisses, fixes",
+              "Extra syllable /Éªz/"
+            ],
+            [
+              "-o",
+              "Add -es",
+              "go, do",
+              "goes, does",
+              "goes /É¡É™ÊŠz/, does /dÊŒz/"
+            ],
+            [
+              "Consonant + y",
+              "Change -y to -ies",
+              "study, fly, carry",
+              "studies, flies, carries",
+              "/aÉªz/ or /iz/"
+            ],
+            [
+              "Vowel + y",
+              "Just add -s",
+              "play, buy, pay",
+              "plays, buys, pays",
+              "Regular /z/ sound"
+            ],
+            [
+              "Irregular",
+              "Irregular change",
+              "have",
+              "has",
+              "/hÃ¦z/"
+            ]
+          ]
+        },
+        {
+          "title": "Crucial Form / Use / Common Mistakes",
+          "headers": [
+            "Aspect",
+            "Rule",
+            "Correct Example",
+            "Common Error"
+          ],
+          "rows": [
+            [
+              "Form",
+              "Apply exact rule according to spelling",
+              "He watches TV / She studies law",
+              "Don't write 'watchs' or 'studys'."
+            ],
+            [
+              "Pronunciation",
+              "Add syllable after sibilants (-ch, -sh, -x)",
+              "catch -> catches (2 syllables)",
+              "Don't swallow the /Éªz/ ending."
+            ],
+            [
+              "Irregular 'have'",
+              "Changes completely to 'has'",
+              "He has a sister",
+              "Never say 'he haves'."
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Vowel + Y Alert",
+          "text": "Remember: 'play' -> 'plays' (vowel a + y); 'study' -> 'studies' (consonant d + y). Only change the y when a consonant comes before it!"
+        },
+        {
+          "type": "warning",
+          "title": "Irregular 'Have'",
+          "text": "The verb 'have' becomes **has** with he/she/it: 'She **has** a car' (never 'She haves')."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l2-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "Mr. Ahmad teaches physics at the national academy.",
+          "phonetic": "/ËˆmÉªstÉ™r ËˆÉ‘Ë mÉ™d ËˆtiË tÊƒÉªz ËˆfÉªzÉªks Ã¦t Ã°É™ ËˆnÃ¦ÊƒnÉ™l É™ËˆkÃ¦dÉ™mi/",
+          "urdu": "Ù…Ø³Ù¹Ø± Ø§Ø­Ù…Ø¯ Ù‚ÙˆÙ…ÛŒ Ø§Ú©ÛŒÚˆÙ…ÛŒ Ù…ÛŒÚº Ù Ø²Ú©Ø³ Ù¾Ú‘Ú¾Ø§ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "Mr. Ahmad teaches physics at the national academy."
+        },
+        {
+          "english": "She watches educational documentaries in the evening.",
+          "phonetic": "/ÊƒiË  ËˆwÉ’tÊƒÉªz ËŒedÊ’uË ËˆkeÉªÊƒÉ™nl ËŒdÉ’kjuË Ëˆmentriz Éªn Ã°i ËˆiË vnÉªÅ‹/",
+          "urdu": "ÙˆÛ  Ø´Ø§Ù… Ú©Ùˆ ØªØ¹Ù„ÛŒÙ…ÛŒ ÚˆØ§Ú©ÛŒÙˆÙ…Ù†Ù¹Ø±ÛŒØ² Ø¯ÛŒÚ©Ú¾ØªÛŒ Û Û’Û”",
+          "audioText": "She watches educational documentaries in the evening."
+        },
+        {
+          "english": "He goes to the office by metro bus every morning.",
+          "phonetic": "/hiË  É¡É™ÊŠz tuË  Ã°i ËˆÉ’fÉªs baÉª ËˆmetrÉ™ÊŠ bÊŒs Ëˆevri ËˆmÉ”Ë rnÉªÅ‹/",
+          "urdu": "ÙˆÛ  Û Ø± ØµØ¨Ø­ Ù…ÛŒÙ¹Ø±Ùˆ Ø¨Ø³ Ú©Û’ Ø°Ø±ÛŒØ¹Û’ Ø¯Ù ØªØ± Ø¬Ø§ØªØ§ Û Û’Û”",
+          "audioText": "He goes to the office by metro bus every morning."
+        },
+        {
+          "english": "Zainab studies medicine at King Edward Medical University.",
+          "phonetic": "/ËˆzeÉªnÃ¦b ËˆstÊŒdiz Ëˆmedsn Ã¦t kÉªÅ‹ ËˆedwÉ™d ËˆmedÉªkl ËŒjuË nÉªËˆvÉœË sÉ™ti/",
+          "urdu": "Ø²ÛŒÙ†Ø¨ Ú©Ù†Ú¯ Ø§ÛŒÚˆÙˆØ±Úˆ Ù…ÛŒÚˆÛŒÚ©Ù„ ÛŒÙˆÙ†ÛŒÙˆØ±Ø³Ù¹ÛŒ Ù…ÛŒÚº Ø·Ø¨ Ú©ÛŒ ØªØ¹Ù„ÛŒÙ… Ø­Ø§ØµÙ„ Ú©Ø±ØªÛŒ Û Û’Û”",
+          "audioText": "Zainab studies medicine at King Edward Medical University."
+        },
+        {
+          "english": "The mechanic fixes complex engine problems with ease.",
+          "phonetic": "/Ã°É™ mÉªËˆkÃ¦nÉªk ËˆfÉªksÉªz ËˆkÉ’mpleks ËˆendÊ’Éªn ËˆprÉ’blÉ™mz wÉªÃ° iË z/",
+          "urdu": "Ù…ÛŒÚ©Ù†Ú© Ø§Ù†Ø¬Ù† Ú©Û’ Ù¾ÛŒÚ†ÛŒØ¯Û  Ù…Ø³Ø§Ø¦Ù„ Ø¢Ø³Ø§Ù†ÛŒ Ø³Û’ Ù¹Ú¾ÛŒÚ© Ú©Ø±ØªØ§ Û Û’Û”",
+          "audioText": "The mechanic fixes complex engine problems with ease."
+        },
+        {
+          "english": "He washes his hands thoroughly before every meal.",
+          "phonetic": "/hiË  ËˆwÉ’ÊƒÉªz hÉªz hÃ¦ndz ËˆÎ¸ÊŒrÉ™li bÉªËˆfÉ”Ë r Ëˆevri miË l/",
+          "urdu": "ÙˆÛ  Û Ø± Ú©Ú¾Ø§Ù†Û’ Ø³Û’ Ù¾Û Ù„Û’ Ø§Ù¾Ù†Û’ Û Ø§ØªÚ¾ Ø§Ú†Ú¾ÛŒ Ø·Ø±Ø­ Ø¯Ú¾ÙˆØªØ§ Û Û’Û”",
+          "audioText": "He washes his hands thoroughly before every meal."
+        },
+        {
+          "english": "The airline flies direct flights between Lahore and Dubai.",
+          "phonetic": "/Ã°i ËˆeÉ™laÉªn flaÉªz daÉªËˆrekt flaÉªts bÉªËˆtwiË n lÉ™ËˆhÉ”Ë r Ã¦nd duË ËˆbaÉª/",
+          "urdu": "Û ÙˆØ§Ø¦ÛŒ Ú©Ù…Ù¾Ù†ÛŒ Ù„Ø§Û ÙˆØ± Ø§ÙˆØ± Ø¯Ø¨Ø¦ÛŒ Ú©Û’ Ø¯Ø±Ù…ÛŒØ§Ù† Ø¨Ø±Ø§Û  Ø±Ø§Ø³Øª Ù¾Ø±ÙˆØ§Ø²ÛŒÚº Ú†Ù„Ø§ØªÛŒ Û Û’Û”",
+          "audioText": "The airline flies direct flights between Lahore and Dubai."
+        },
+        {
+          "english": "He does his daily exercises right after sunrise.",
+          "phonetic": "/hiË  dÊŒz hÉªz ËˆdeÉªli ËˆeksÉ™saÉªzÉªz raÉªt ËˆÉ‘Ë ftÉ™r ËˆsÊŒnraÉªz/",
+          "urdu": "ÙˆÛ  Ø·Ù„ÙˆØ¹Ù  Ø¢Ù ØªØ§Ø¨ Ú©Û’ Ù ÙˆØ±Ø§Ù‹ Ø¨Ø¹Ø¯ Ø§Ù¾Ù†ÛŒ Ø±ÙˆØ²Ù…Ø±Û  Ú©ÛŒ ÙˆØ±Ø²Ø´ Ú©Ø±ØªØ§ Û Û’Û”",
+          "audioText": "He does his daily exercises right after sunrise."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l2-3",
+      "type": "dialogue",
+      "title": "Talking About a Dedicated Colleague",
+      "dialogue": [
+        {
+          "speaker": "Rashid",
+          "avatar": "R",
+          "english": "How does Fatima manage her busy schedule?",
+          "urdu": "Ù Ø§Ø·Ù…Û  Ø§Ù¾Ù†Û’ Ù…ØµØ±ÙˆÙ  Ø§ÙˆÙ‚Ø§Øª Ú©ÛŒØ³Û’ Ø³Ù†Ø¨Ú¾Ø§Ù„ØªÛŒ Û ÛŒÚºØŸ",
+          "audioText": "How does Fatima manage her busy schedule?"
+        },
+        {
+          "speaker": "Hira",
+          "avatar": "H",
+          "english": "She teaches in the morning, and then she studies for her Master's degree.",
+          "urdu": "ÙˆÛ  ØµØ¨Ø­ Ù¾Ú‘Ú¾Ø§ØªÛŒ Û ÛŒÚºØŒ Ø§ÙˆØ± Ù¾Ú¾Ø± Ø§Ù¾Ù†ÛŒ Ù…Ø§Ø³Ù¹Ø±Ø² Ú©ÛŒ ÚˆÚ¯Ø±ÛŒ Ú©Û’ Ù„ÛŒÛ’ Ù¾Ú‘Ú¾ØªÛŒ Û ÛŒÚºÛ”",
+          "audioText": "She teaches in the morning, and then she studies for her Master's degree."
+        },
+        {
+          "speaker": "Rashid",
+          "avatar": "R",
+          "english": "Does she catch the bus to university?",
+          "urdu": "Ú©ÛŒØ§ ÙˆÛ  ÛŒÙˆÙ†ÛŒÙˆØ±Ø³Ù¹ÛŒ Ú©Û’ Ù„ÛŒÛ’ Ø¨Ø³ Ù¾Ú©Ú‘ØªÛŒ Û ÛŒÚºØŸ",
+          "audioText": "Does she catch the bus to university?"
+        },
+        {
+          "speaker": "Hira",
+          "avatar": "H",
+          "english": "Yes, she catches the express bus right outside her house.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºØŒ ÙˆÛ  Ø§Ù¾Ù†Û’ Ú¯Ú¾Ø± Ú©Û’ Ø¨Ø§Û Ø± Û ÛŒ Ø³Û’ Ø§ÛŒÚ©Ø³Ù¾Ø±ÛŒØ³ Ø¨Ø³ Ù¾Ú©Ú‘ØªÛŒ Û ÛŒÚºÛ”",
+          "audioText": "Yes, she catches the express bus right outside her house."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l2-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u3-l2-1",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "What is the correct third-person form of the verb 'watch'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "watches"
+            },
+            {
+              "id": "opt-2",
+              "text": "watchs"
+            },
+            {
+              "id": "opt-3",
+              "text": "watchies"
+            },
+            {
+              "id": "opt-4",
+              "text": "watching"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Verbs ending in -ch add '-es', producing 'watches'.",
+          "urduExplanation": "-ch Ù¾Ø± Ø®ØªÙ… Û ÙˆÙ†Û’ ÙˆØ§Ù„Û’ Ù Ø¹Ù„ Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº '-es' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l2-2",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "What is the correct third-person form of the verb 'study'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "studys"
+            },
+            {
+              "id": "opt-2",
+              "text": "studies"
+            },
+            {
+              "id": "opt-3",
+              "text": "studyes"
+            },
+            {
+              "id": "opt-4",
+              "text": "studyies"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Study' ends in consonant + y, so 'y' becomes 'ies': 'studies'.",
+          "urduExplanation": "consonant + y Ù¾Ø± Ø®ØªÙ… Û ÙˆÙ†Û’ ÙˆØ§Ù„Û’ Ù Ø¹Ù„ Ù…ÛŒÚº y Ú©Ùˆ Û Ù¹Ø§ Ú©Ø± 'ies' Ù„Ú¯Ø§ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l2-3",
+          "type": "fill_blank",
+          "skillTag": "spelling",
+          "prompt": "Fill in the blank with the correct form of 'go': 'He _____ to school by foot.'",
+          "correctAnswer": "goes",
+          "explanation": "The verb 'go' adds -es for third person, becoming 'goes'.",
+          "urduExplanation": "'go' Ù…ÛŒÚº -es Ù„Ú¯ Ú©Ø± 'goes' Ø¨Ù†ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l2-4",
+          "type": "fill_blank",
+          "skillTag": "spelling",
+          "prompt": "Fill in the blank with the correct form of 'have': 'She _____ a lovely garden.'",
+          "correctAnswer": "has",
+          "explanation": "'Have' is irregular and becomes 'has' with she.",
+          "urduExplanation": "'have' Ú©ÛŒ third-person singular Ø´Ú©Ù„ 'has' Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l2-5",
+          "type": "order_sentence",
+          "skillTag": "spelling",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "She",
+            "teaches",
+            "English",
+            "at",
+            "the",
+            "school",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (She) + verb (teaches) + object (English) + prepositional phrase (at the school).",
+          "urduExplanation": "She teaches English at the school."
+        },
+        {
+          "id": "ex-a1-u3-l2-6",
+          "type": "order_sentence",
+          "skillTag": "spelling",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "He",
+            "catches",
+            "the",
+            "early",
+            "train",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Subject (He) + verb (catches) + object (the early train).",
+          "urduExplanation": "He catches the early train."
+        },
+        {
+          "id": "ex-a1-u3-l2-7",
+          "type": "match_pairs",
+          "skillTag": "spelling",
+          "prompt": "Match the base verb with its correct third-person form:",
+          "pairs": [
+            {
+              "left": "fly",
+              "right": "flies"
+            },
+            {
+              "left": "wash",
+              "right": "washes"
+            },
+            {
+              "left": "fix",
+              "right": "fixes"
+            },
+            {
+              "left": "play",
+              "right": "plays"
+            }
+          ],
+          "explanation": "Spelling rules correctly matched.",
+          "urduExplanation": "Ù Ø¹Ù„ Ú©ÛŒ Ø§ØµÙ„ Ø´Ú©Ù„ Ú©Ùˆ third-person Ø´Ú©Ù„ Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l2-8",
+          "type": "error_correction",
+          "skillTag": "spelling",
+          "prompt": "Find and correct the mistake: 'He haves two brothers in Karachi.'",
+          "correctAnswer": "He has two brothers in Karachi.",
+          "explanation": "'Have' is irregular; say 'He has', never 'He haves'.",
+          "urduExplanation": "'He haves' ØºÙ„Ø· Û Û’ØŒ ØµØ­ÛŒØ­ 'He has' Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l2-9",
+          "type": "error_correction",
+          "skillTag": "spelling",
+          "prompt": "Find and correct the mistake: 'She plaies badminton on Sundays.'",
+          "correctAnswer": "She plays badminton on Sundays.",
+          "explanation": "'Play' ends in a vowel + y (a + y), so it simply adds -s: 'plays'.",
+          "urduExplanation": "'play' Ù…ÛŒÚº y Ø³Û’ Ù¾Û Ù„Û’ vowel (a) Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ ØµØ±Ù  -s Ù„Ú¯ØªØ§ Û Û’: 'plays'Û”"
+        },
+        {
+          "id": "ex-a1-u3-l2-10",
+          "type": "true_false",
+          "skillTag": "spelling",
+          "prompt": "The third-person form of 'do' is spelled 'dos'. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. 'Do' adds -es to become 'does' /dÊŒz/.",
+          "urduExplanation": "ØºÙ„Ø·Û” 'do' Ú©ÛŒ third-person Ø´Ú©Ù„ 'does' Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l2-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u3-l2-1",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "Which third-person verb form is spelled INCORRECTLY?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "goes"
+            },
+            {
+              "id": "opt-2",
+              "text": "cryes"
+            },
+            {
+              "id": "opt-3",
+              "text": "teaches"
+            },
+            {
+              "id": "opt-4",
+              "text": "carries"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Cry' ends in consonant + y, so it must be spelled 'cries', not 'cryes'.",
+          "urduExplanation": "'cry' Ú©ÛŒ ØµØ­ÛŒØ­ Ø§Ù…Ù„Ø§ 'cries' Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l2-2",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "What is the third-person form of the verb 'fix'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "fixs"
+            },
+            {
+              "id": "opt-2",
+              "text": "fixes"
+            },
+            {
+              "id": "opt-3",
+              "text": "fixies"
+            },
+            {
+              "id": "opt-4",
+              "text": "fixed"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Verbs ending in -x add -es, making 'fixes'.",
+          "urduExplanation": "-x Ù¾Ø± Ø®ØªÙ… Û ÙˆÙ†Û’ Ù¾Ø± '-es' Ù„Ú¯ Ú©Ø± 'fixes' Ø¨Ù†ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l2-3",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "Complete the sentence: 'Ali _____ football with his friends every evening.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "plaies"
+            },
+            {
+              "id": "opt-2",
+              "text": "play"
+            },
+            {
+              "id": "opt-3",
+              "text": "playing"
+            },
+            {
+              "id": "opt-4",
+              "text": "plays"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Vowel + y takes -s: 'plays'.",
+          "urduExplanation": "Vowel + y Ú©Û’ Ø¨Ø¹Ø¯ ØµØ±Ù  -s Ù„Ú¯ØªØ§ Û Û’: 'plays'Û”"
+        },
+        {
+          "id": "qz-a1-u3-l2-4",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "What happens to the verb 'have' when used with 'he' or 'she'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "It becomes 'has'"
+            },
+            {
+              "id": "opt-2",
+              "text": "It becomes 'haves'"
+            },
+            {
+              "id": "opt-3",
+              "text": "It stays 'have'"
+            },
+            {
+              "id": "opt-4",
+              "text": "It becomes 'having'"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Have' irregularly changes to 'has' for third-person singular.",
+          "urduExplanation": "'have' Ø¨Ø¯Ù„ Ú©Ø± 'has' Û Ùˆ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l2-5",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "Which verb adds an extra syllable when -es is added?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "goes"
+            },
+            {
+              "id": "opt-2",
+              "text": "washes"
+            },
+            {
+              "id": "opt-3",
+              "text": "plays"
+            },
+            {
+              "id": "opt-4",
+              "text": "drinks"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Wash' (1 syllable) becomes 'washes' (2 syllables, ending in /Éªz/).",
+          "urduExplanation": "'washes' Ù…ÛŒÚº Ø§Ø¶Ø§Ù ÛŒ syllable (/Éªz/) Ø¨ÙˆÙ„Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l2-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Core third-person spelling rules:",
+      "summaryPoints": [
+        "General rule: Add -s (eat -> eats, read -> reads).",
+        "Verbs ending in -ch, -sh, -ss, -x, -z: Add -es (watches, washes, kisses, fixes).",
+        "Verbs ending in -o: Add -es (goes, does).",
+        "Consonant + y: Change y to -ies (study -> studies, carry -> carries).",
+        "Vowel + y: Just add -s (play -> plays, buy -> buys).",
+        "Irregular: have -> has."
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l2-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Ø¨Ú¾ÛŒ ÙˆØ§Ø­Ø¯ ØºØ§Ø¦Ø¨ Ú©Û’ Ù„ÛŒÛ’ Ù Ø¹Ù„ Ú©ÛŒ Ø´Ú©Ù„ Ø¨Ø¯Ù„ØªÛŒ Û Û’ØŒ Ù„ÛŒÚ©Ù† Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Ù Ø¹Ù„ Ù…Ø°Ú©Ø± Ø§ÙˆØ± Ù…Ø¤Ù†Ø« Ú©Û’ Ù„Ø­Ø§Ø¸ Ø³Û’ Ù Ø±Ù‚ Ú©Ø±ØªØ§ Û Û’ (ÙˆÛ  Ú©Ø±ØªØ§ Û Û’ / ÙˆÛ  Ú©Ø±ØªÛŒ Û Û’)Û”\n\n**Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ù…Ø°Ú©Ø± Ø§ÙˆØ± Ù…Ø¤Ù†Ø« Ú©Û’ Ù„ÛŒÛ’ Ù Ø¹Ù„ Ù…ÛŒÚº Ú©ÙˆØ¦ÛŒ Ù Ø±Ù‚ Ù†Û ÛŒÚº Û ÙˆØªØ§!**\n- He **watches** / She **watches** (Ø¯ÙˆÙ†ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ Ø§ÛŒÚ© Û ÛŒ Ù„Ù Ø¸ Û Û’)\n- He **studies** / She **studies**\nØ§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº ØµØ±Ù  Ø§Ù…Ù„Ø§ (Spelling) Ú©Û’ Ù‚ÙˆØ§Ø¹Ø¯ Ø³Ù…Ø¬Ú¾Ù†Ø§ Ø¶Ø±ÙˆØ±ÛŒ Û ÛŒÚº Ú©Û  Ú©Û Ø§Úº -s Ù„Ú¯Û’ Ú¯Ø§ØŒ Ú©Û Ø§Úº -es Ø§ÙˆØ± Ú©Û Ø§Úº -iesÛ”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

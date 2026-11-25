@@ -1,0 +1,623 @@
+{
+  "id": "eng-a1-u5-l3",
+  "level": "A1",
+  "unit": "unit-5",
+  "order": 3,
+  "title": "Polite Requests: Can I have...? / I'd like...",
+  "description": "Learn how to order food and drink politely in a cafe or restaurant using standard formulas.",
+  "objectives": [
+    "Use 'Can I have...?' and 'Could I have...?' for courteous requests",
+    "Use 'I would like...' and its contraction 'I'd like...' naturally",
+    "Include polite markers ('please', 'thank you', 'excuse me') at appropriate stages of service"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u5-l2"
+  ],
+  "skillTags": [
+    "requests",
+    "dialogue",
+    "politeness",
+    "cafe-ordering"
+  ],
+  "vocabularyList": [
+    {
+      "word": "cup",
+      "partOfSpeech": "noun",
+      "phonetic": "/kÊŒp/",
+      "definition": "A small bowl-shaped container for drinking from, typically with a handle.",
+      "urduMeaning": "Ú©Ù¾ / Ù¾ÛŒØ§Ù„ÛŒ",
+      "exampleSentence": "Can I have a cup of black coffee, please?"
+    },
+    {
+      "word": "glass",
+      "partOfSpeech": "noun",
+      "phonetic": "/É¡lÉ‘Ë s/",
+      "definition": "A drinking container made of glass.",
+      "urduMeaning": "Ú¯Ù„Ø§Ø³",
+      "exampleSentence": "She ordered a tall glass of freshly squeezed orange juice."
+    },
+    {
+      "word": "bottle",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆbÉ’tl/",
+      "definition": "A glass or plastic container with a narrow neck, used for storing drinks.",
+      "urduMeaning": "Ø¨ÙˆØªÙ„",
+      "exampleSentence": "Please bring a bottle of still mineral water."
+    },
+    {
+      "word": "order",
+      "partOfSpeech": "verb",
+      "phonetic": "/ËˆÉ”Ë dÉ™r/",
+      "definition": "To request something to be made, supplied, or served.",
+      "urduMeaning": "Ø¢Ø±ÚˆØ± Ú©Ø±Ù†Ø§ / Ù…Ù†Ú¯ÙˆØ§Ù†Ø§",
+      "exampleSentence": "Are you ready to order your meal?"
+    },
+    {
+      "word": "menu",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆmenjuË /",
+      "definition": "A list of the food and drink options available in a restaurant.",
+      "urduMeaning": "Ù…ÛŒÙ†ÛŒÙˆ / Ú©Ú¾Ø§Ù†ÙˆÚº Ú©ÛŒ Ù Û Ø±Ø³Øª",
+      "exampleSentence": "Could we see the dessert menu, please?"
+    },
+    {
+      "word": "bill",
+      "partOfSpeech": "noun",
+      "phonetic": "/bÉªl/",
+      "definition": "A printed or written statement of the money owed for goods or services.",
+      "urduMeaning": "Ø¨Ù„ / Ø­Ø³Ø§Ø¨",
+      "exampleSentence": "Excuse me, can we have the bill, please?"
+    },
+    {
+      "word": "please",
+      "partOfSpeech": "adverb",
+      "phonetic": "/pliË z/",
+      "definition": "Used in polite requests or questions.",
+      "urduMeaning": "Ø¨Ø±Ø§Û  Ú©Ø±Ù… / Ù„Ø·Ù Ø§Ù‹",
+      "exampleSentence": "A bottle of water, please."
+    },
+    {
+      "word": "thank",
+      "partOfSpeech": "verb",
+      "phonetic": "/Î¸Ã¦Å‹k/",
+      "definition": "To express gratitude to someone.",
+      "urduMeaning": "Ø´Ú©Ø±ÛŒÛ  Ø§Ø¯Ø§ Ú©Ø±Ù†Ø§",
+      "exampleSentence": "Thank you for the excellent service."
+    },
+    {
+      "word": "delicious",
+      "partOfSpeech": "adjective",
+      "phonetic": "/dÉªËˆlÉªÊƒÉ™s/",
+      "definition": "Highly pleasant to the taste.",
+      "urduMeaning": "Ù„Ø°ÛŒØ° / Ù…Ø²Û’ Ø¯Ø§Ø±",
+      "exampleSentence": "The chicken karahi was absolutely delicious."
+    },
+    {
+      "word": "hot",
+      "partOfSpeech": "adjective",
+      "phonetic": "/hÉ’t/",
+      "definition": "Having a high degree of heat or a high temperature.",
+      "urduMeaning": "Ú¯Ø±Ù…",
+      "exampleSentence": "Be careful; the soup is very hot."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u5-l3-1",
+      "type": "explain",
+      "title": "Polite Cafe Ordering Formulas",
+      "content": "In English-speaking culture, asking for food bluntly (*'I want tea'*) sounds rude or demanding. Instead, use these **polite formulas**:\n\n### 1. 'Can I have...?' / 'Could I have...?'\n- *Can I have a cup of tea, please?*\n- *Could I have a bottle of water, please?* (Even more polite)\n\n### 2. 'I would like...' -> 'I'd like...'\n- *I'd like a chicken sandwich, please.*\n- *I'd like two coffees to take away.*\n\n### 3. Paying the Bill\n- *Can we have the bill, please?* (UK) / *Check, please.* (US)",
+      "tables": [
+        {
+          "title": "From Blunt to Courteous",
+          "headers": [
+            "Too Blunt / Rude",
+            "Polite Everyday English",
+            "Extra Courteous / Formal"
+          ],
+          "rows": [
+            [
+              "Give me tea.",
+              "Can I have a cup of tea, please?",
+              "Could I please have a cup of tea?"
+            ],
+            [
+              "I want a sandwich.",
+              "I'd like a chicken sandwich, please.",
+              "I would like a chicken sandwich, please."
+            ],
+            [
+              "Bring the bill.",
+              "Can we have the bill, please?",
+              "Could we get the bill when you have a moment?"
+            ]
+          ]
+        },
+        {
+          "title": "Crucial Service Interactions",
+          "headers": [
+            "Waiter Says",
+            "You Answer",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "Are you ready to order?",
+              "Yes, I'd like the biryani, please.",
+              "Ø¬ÛŒ Û Ø§ÚºØŒ Ù…ÛŒÚº Ø¨Ø±ÛŒØ§Ù†ÛŒ Ù„ÙˆÚº Ú¯Ø§Û”"
+            ],
+            [
+              "Anything to drink?",
+              "Just a glass of water, please.",
+              "Ø¨Ø±Ø§Û  Ú©Ø±Ù… ØµØ±Ù  Ø§ÛŒÚ© Ú¯Ù„Ø§Ø³ Ù¾Ø§Ù†ÛŒÛ”"
+            ],
+            [
+              "Still or sparkling water?",
+              "Still water, please.",
+              "Ø³Ø§Ø¯Û  Ù¾Ø§Ù†ÛŒØŒ Ø¨Ø±Ø§Û  Ú©Ø±Ù…Û”"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Always Include 'Please'",
+          "text": "In English service encounters, adding **please** at the end of every order is not just polite—it is expected social etiquette."
+        },
+        {
+          "type": "warning",
+          "title": "Avoid 'I Want'",
+          "text": "Never say 'I want' to a waiter. Say **I would like** or **Can I have**."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l3-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "Can I have a cup of hot English tea, please?",
+          "phonetic": "/kÃ¦n aÉª hÃ¦v É™ kÊŒp É™v hÉ’t ËˆÉªÅ‹É¡lÉªÊƒ tiË  pliË z/",
+          "urdu": "Ú©ÛŒØ§ Ù…Ø¬Ú¾Û’ Ø§ÛŒÚ© Ú©Ù¾ Ú¯Ø±Ù… Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú†Ø§Ø¦Û’ Ù…Ù„ Ø³Ú©ØªÛŒ Û Û’ØŒ Ø¨Ø±Ø§Û  Ú©Ø±Ù…ØŸ",
+          "audioText": "Can I have a cup of hot English tea, please?"
+        },
+        {
+          "english": "I'd like a chicken sandwich with extra cheese, please.",
+          "phonetic": "/aÉªd laÉªk É™ ËˆtÊƒÉªkÉªn ËˆsÃ¦nwÉªdÊ’ wÉªÃ° ËˆekstrÉ™ tÊƒiË z pliË z/",
+          "urdu": "Ù…ÛŒÚº Ø§Ø¶Ø§Ù ÛŒ Ú†ÛŒØ² Ú©Û’ Ø³Ø§ØªÚ¾ Ú†Ú©Ù† Ø³ÛŒÙ†ÚˆÙˆÚ† Ù¾Ø³Ù†Ø¯ Ú©Ø±ÙˆÚº Ú¯Ø§Û”",
+          "audioText": "I'd like a chicken sandwich with extra cheese, please."
+        },
+        {
+          "english": "Could we have the menu for drinks, please?",
+          "phonetic": "/kÊŠd wiË  hÃ¦v Ã°É™ ËˆmenjuË  fÉ”Ë r drÉªÅ‹ks pliË z/",
+          "urdu": "Ú©ÛŒØ§ Û Ù…ÛŒÚº Ù…Ø´Ø±ÙˆØ¨Ø§Øª Ú©Ø§ Ù…ÛŒÙ†ÛŒÙˆ Ù…Ù„ Ø³Ú©ØªØ§ Û Û’ØŸ",
+          "audioText": "Could we have the menu for drinks, please?"
+        },
+        {
+          "english": "Excuse me, can we have the bill when you have a moment?",
+          "phonetic": "/ÉªkËˆskjuË z miË  kÃ¦n wiË  hÃ¦v Ã°É™ bÉªl wen juË  hÃ¦v É™ ËˆmÉ™ÊŠmÉ™nt/",
+          "urdu": "Ù…Ø¹Ø§Ù  Ú©ÛŒØ¬Ø¦Û’ Ú¯Ø§ØŒ ÙˆÙ‚Øª Ù…Ù„Ù†Û’ Ù¾Ø± Ú©ÛŒØ§ Û Ù…ÛŒÚº Ø¨Ù„ Ù…Ù„ Ø³Ú©ØªØ§ Û Û’ØŸ",
+          "audioText": "Excuse me, can we have the bill when you have a moment?"
+        },
+        {
+          "english": "Would you like that for here or to take away?",
+          "phonetic": "/wÊŠd juË  laÉªk Ã°Ã¦t fÉ”Ë r hÉªÉ™r É”Ë r tuË  teÉªk É™ËˆweÉª/",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ ÛŒÛ Ø§Úº Ú©Ú¾Ø§Ø¦ÛŒÚº Ú¯Û’ ÛŒØ§ Ø³Ø§ØªÚ¾ Ù„Û’ Ú©Ø± Ø¬Ø§Ø¦ÛŒÚº Ú¯Û’ØŸ",
+          "audioText": "Would you like that for here or to take away?"
+        },
+        {
+          "english": "To take away, please. Thank you very much.",
+          "phonetic": "/tuË  teÉªk É™ËˆweÉª pliË z Î¸Ã¦Å‹k juË  Ëˆveri mÊŒtÊƒ/",
+          "urdu": "Ø³Ø§ØªÚ¾ Ù„Û’ Ø¬Ø§Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ØŒ Ø¨Ø±Ø§Û  Ú©Ø±Ù…Û” Ø¨Û Øª Ø´Ú©Ø±ÛŒÛ Û”",
+          "audioText": "To take away, please. Thank you very much."
+        },
+        {
+          "english": "The mutton biryani was truly delicious and flavourful.",
+          "phonetic": "/Ã°É™ ËˆmÊŒtn ËŒbÉªriË ËˆÉ‘Ë ni wÉ’z ËˆtruË li dÉªËˆlÉªÊƒÉ™s Ã¦nd ËˆfleÉªvÉ™fl/",
+          "urdu": "Ù…Ù¹Ù† Ø¨Ø±ÛŒØ§Ù†ÛŒ ÙˆØ§Ù‚Ø¹ÛŒ Ø¨Û Øª Ù„Ø°ÛŒØ° Ø§ÙˆØ± Ø°Ø§Ø¦Ù‚Û’ Ø¯Ø§Ø± ØªÚ¾ÛŒÛ”",
+          "audioText": "The mutton biryani was truly delicious and flavourful."
+        },
+        {
+          "english": "Could you bring two extra glasses of tap water?",
+          "phonetic": "/kÊŠd juË  brÉªÅ‹ tuË  ËˆekstrÉ™ ËˆÉ¡lÉ‘Ë sÉªz É™v tÃ¦p ËˆwÉ”Ë tÉ™r/",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ù†Ù„ Ú©Û’ Ù¾Ø§Ù†ÛŒ Ú©Û’ Ø¯Ùˆ Ø§Ø¶Ø§Ù ÛŒ Ú¯Ù„Ø§Ø³ Ù„Ø§ Ø³Ú©ØªÛ’ Û ÛŒÚºØŸ",
+          "audioText": "Could you bring two extra glasses of tap water?"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l3-3",
+      "type": "dialogue",
+      "title": "Ordering at a Coffee Shop",
+      "dialogue": [
+        {
+          "speaker": "Barista",
+          "avatar": "B",
+          "english": "Hi there! What can I get for you today?",
+          "urdu": "Û ÛŒÙ„Ùˆ! Ø¢Ø¬ Ù…ÛŒÚº Ø¢Ù¾ Ú©Û’ Ù„ÛŒÛ’ Ú©ÛŒØ§ Ù„Ø§Ø¤ÚºØŸ",
+          "audioText": "Hi there! What can I get for you today?"
+        },
+        {
+          "speaker": "Customer",
+          "avatar": "C",
+          "english": "Hello! Could I have a medium cappuccino and a chocolate muffin, please?",
+          "urdu": "Û ÛŒÙ„Ùˆ! Ú©ÛŒØ§ Ù…Ø¬Ú¾Û’ Ø§ÛŒÚ© Ø¯Ø±Ù…ÛŒØ§Ù†Ø§ Ú©ÛŒÙ¾ÙˆÚ†ÛŒÙ†Ùˆ Ø§ÙˆØ± Ú†Ø§Ú©Ù„ÛŒÙ¹ Ù…Ù Ù† Ù…Ù„ Ø³Ú©ØªØ§ Û Û’ØŸ",
+          "audioText": "Hello! Could I have a medium cappuccino and a chocolate muffin, please?"
+        },
+        {
+          "speaker": "Barista",
+          "avatar": "B",
+          "english": "Sure thing! Full fat milk or oat milk?",
+          "urdu": "Ø¨Ø§Ù„Ú©Ù„! Ø¹Ø§Ù… Ø¯ÙˆØ¯Ú¾ ÛŒØ§ Ø§ÙˆÙ¹ Ù…Ù„Ú©ØŸ",
+          "audioText": "Sure thing! Full fat milk or oat milk?"
+        },
+        {
+          "speaker": "Customer",
+          "avatar": "C",
+          "english": "Full fat milk, please. And for here, thank you.",
+          "urdu": "Ø¹Ø§Ù… Ø¯ÙˆØ¯Ú¾ØŒ Ø¨Ø±Ø§Û  Ú©Ø±Ù…Û” Ø§ÙˆØ± ÛŒÛ Ø§Úº Û ÛŒ Ø¨ÛŒÙ¹Ú¾ Ú©Ø± Ù¾ÛŒÙ†Ø§ Û Û’ØŒ Ø´Ú©Ø±ÛŒÛ Û”",
+          "audioText": "Full fat milk, please. And for here, thank you."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l3-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u5-l3-1",
+          "type": "mcq",
+          "skillTag": "requests",
+          "prompt": "What is the polite way to ask for a coffee?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Give me coffee."
+            },
+            {
+              "id": "opt-2",
+              "text": "Can I have a coffee, please?"
+            },
+            {
+              "id": "opt-3",
+              "text": "I want coffee now."
+            },
+            {
+              "id": "opt-4",
+              "text": "Coffee is my need."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Can I have a coffee, please?' is courteous, natural, and culturally standard.",
+          "urduExplanation": "'Can I have a coffee, please?' Ù…ÙˆØ¯Ø¨Ø§Ù†Û  Ø§ÙˆØ± Ø¨Ø§Ù„Ú©Ù„ Ø¯Ø±Ø³Øª Ø·Ø±ÛŒÙ‚Û  Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l3-2",
+          "type": "mcq",
+          "skillTag": "requests",
+          "prompt": "What contraction does 'I would like' become?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "I'll like"
+            },
+            {
+              "id": "opt-2",
+              "text": "I've like"
+            },
+            {
+              "id": "opt-3",
+              "text": "I'd like"
+            },
+            {
+              "id": "opt-4",
+              "text": "I'm like"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'I would like' contracts to 'I'd like'.",
+          "urduExplanation": "'I would like' Ù…Ø®ØªØµØ± Û Ùˆ Ú©Ø± 'I'd like' Ø¨Ù†ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l3-3",
+          "type": "fill_blank",
+          "skillTag": "requests",
+          "prompt": "Complete the polite request: '_____ I have the bill, please?'",
+          "correctAnswer": "Can",
+          "explanation": "'Can I have the bill, please?' is the standard polite formula.",
+          "urduExplanation": "'Can I have the bill, please?' Ø¨Ù„ Ù…Ø§Ù†Ú¯Ù†Û’ Ú©Ø§ Ù…ÙˆØ¯Ø¨Ø§Ù†Û  Ø·Ø±ÛŒÙ‚Û  Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u5-l3-4",
+          "type": "fill_blank",
+          "skillTag": "politeness",
+          "prompt": "What polite word should always be added when making an order? 'A bottle of water, _____.'",
+          "correctAnswer": "please",
+          "explanation": "'Please' is the essential courtesy marker.",
+          "urduExplanation": "Ø¢Ø±ÚˆØ± Ú©Û’ Ø³Ø§ØªÚ¾ Û Ù…ÛŒØ´Û  'please' (Ø¨Ø±Ø§Û  Ú©Ø±Ù…) Ù„Ú¯Ø§ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l3-5",
+          "type": "order_sentence",
+          "skillTag": "requests",
+          "prompt": "Rearrange the words to form a polite order:",
+          "sentenceTokens": [
+            "I'd",
+            "like",
+            "a",
+            "cup",
+            "of",
+            "tea",
+            ",",
+            "please",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "explanation": "I'd like + a cup of tea + , please.",
+          "urduExplanation": "I'd like a cup of tea, please."
+        },
+        {
+          "id": "ex-a1-u5-l3-6",
+          "type": "order_sentence",
+          "skillTag": "requests",
+          "prompt": "Rearrange the words to ask for the bill:",
+          "sentenceTokens": [
+            "Could",
+            "we",
+            "have",
+            "the",
+            "bill",
+            ",",
+            "please",
+            "?"
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "Could we have + the bill + , please?",
+          "urduExplanation": "Could we have the bill, please?"
+        },
+        {
+          "id": "ex-a1-u5-l3-7",
+          "type": "match_pairs",
+          "skillTag": "requests",
+          "prompt": "Match the request with the expected customer intention:",
+          "pairs": [
+            {
+              "left": "Can I have the menu?",
+              "right": "Wants to see the list of food"
+            },
+            {
+              "left": "I'd like to order now.",
+              "right": "Ready to tell waiter meal choices"
+            },
+            {
+              "left": "To take away, please.",
+              "right": "Wants to carry food outside"
+            },
+            {
+              "left": "Can we have the bill?",
+              "right": "Ready to pay for the meal"
+            }
+          ],
+          "explanation": "Restaurant phrases matched accurately to intentions.",
+          "urduExplanation": "Ø±ÛŒØ³Ù¹ÙˆØ±Ù†Ù¹ Ú©Û’ Ø¬Ù…Ù„ÙˆÚº Ú©Ùˆ Ø§Ù† Ú©Û’ Ù…Ù‚Ø§ØµØ¯ Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l3-8",
+          "type": "error_correction",
+          "skillTag": "requests",
+          "prompt": "Find and correct the mistake: 'I want a bottle of water please.'",
+          "correctAnswer": "Can I have a bottle of water, please?",
+          "explanation": "'I want' is too blunt in customer service. Use 'Can I have' or 'I'd like'.",
+          "urduExplanation": "'I want' Ú©ÛŒ Ø¬Ú¯Û  'Can I have a bottle of water, please?' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u5-l3-9",
+          "type": "error_correction",
+          "skillTag": "requests",
+          "prompt": "Find and correct the mistake: 'I would liking a coffee.'",
+          "correctAnswer": "I would like a coffee.",
+          "explanation": "After modal 'would', the base verb 'like' must be used: 'I would like'.",
+          "urduExplanation": "'would' Ú©Û’ Ø¨Ø¹Ø¯ base verb 'like' Ø¢ØªØ§ Û Û’: 'I would like'Û”"
+        },
+        {
+          "id": "ex-a1-u5-l3-10",
+          "type": "true_false",
+          "skillTag": "requests",
+          "prompt": "'Could I have...' is more polite and formal than 'Give me...'. (True or False)",
+          "correctAnswer": "True",
+          "explanation": "True. 'Could I have' is extremely courteous and appropriate.",
+          "urduExplanation": "Ø¯Ø±Ø³ØªÛ” 'Could I have' Ø§Ù†ØªÛ Ø§Ø¦ÛŒ Ù…ÙˆØ¯Ø¨Ø§Ù†Û  Ø·Ø±ÛŒÙ‚Û  Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l3-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u5-l3-1",
+          "type": "mcq",
+          "skillTag": "requests",
+          "prompt": "Which phrasing is the most polite way to order chicken biryani?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "I'd like the chicken biryani, please."
+            },
+            {
+              "id": "opt-2",
+              "text": "Bring me the chicken biryani."
+            },
+            {
+              "id": "opt-3",
+              "text": "Give me the chicken biryani."
+            },
+            {
+              "id": "opt-4",
+              "text": "I want the chicken biryani now."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'I'd like the chicken biryani, please' is respectful and courteous.",
+          "urduExplanation": "'I'd like... please' Ø¨Ø§Ù„Ú©Ù„ Ø´Ø§Ø¦Ø³ØªÛ  Ø§ÙˆØ± Ù…ÙˆØ¯Ø¨Ø§Ù†Û  Ø¬Ù…Ù„Û  Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l3-2",
+          "type": "mcq",
+          "skillTag": "requests",
+          "prompt": "What does a customer say when they want to eat at the restaurant?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "To take away"
+            },
+            {
+              "id": "opt-2",
+              "text": "For here"
+            },
+            {
+              "id": "opt-3",
+              "text": "On the road"
+            },
+            {
+              "id": "opt-4",
+              "text": "To go"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'For here' tells the staff you intend to sit and eat inside.",
+          "urduExplanation": "ÛŒÛ Ø§Úº Ø¨ÛŒÙ¹Ú¾ Ú©Ø± Ú©Ú¾Ø§Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ 'For here' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u5-l3-3",
+          "type": "mcq",
+          "skillTag": "requests",
+          "prompt": "What is the British English word for the payment slip at a restaurant?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "check"
+            },
+            {
+              "id": "opt-2",
+              "text": "coupon"
+            },
+            {
+              "id": "opt-3",
+              "text": "bill"
+            },
+            {
+              "id": "opt-4",
+              "text": "ticket"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "In British and Pakistani English, the document is called the 'bill'.",
+          "urduExplanation": "Ø±ÛŒØ³Ù¹ÙˆØ±Ù†Ù¹ Ù…ÛŒÚº Ø­Ø³Ø§Ø¨ Ú©Û’ Ù¾Ø±Ú†Û’ Ú©Ùˆ 'bill' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u5-l3-4",
+          "type": "mcq",
+          "skillTag": "requests",
+          "prompt": "Which modal verb makes requests softer and more polite?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Must"
+            },
+            {
+              "id": "opt-2",
+              "text": "Should"
+            },
+            {
+              "id": "opt-3",
+              "text": "Could"
+            },
+            {
+              "id": "opt-4",
+              "text": "Shall"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'Could' (e.g. Could I have...?) is recognized for politeness.",
+          "urduExplanation": "'Could' Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù…ÛŒÚº Ù†Ø±Ù…ÛŒ Ø§ÙˆØ± Ø§Ø¯Ø¨ Ù¾ÛŒØ¯Ø§ Ú©Ø±ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u5-l3-5",
+          "type": "mcq",
+          "skillTag": "requests",
+          "prompt": "What should you say if you need a waiter's attention politely?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Excuse me, please."
+            },
+            {
+              "id": "opt-2",
+              "text": "Hey you!"
+            },
+            {
+              "id": "opt-3",
+              "text": "Listen!"
+            },
+            {
+              "id": "opt-4",
+              "text": "Come here!"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Excuse me, please' is the universal polite way to gain attention.",
+          "urduExplanation": "ÙˆÛŒÙ¹Ø± Ú©Ùˆ Ù…ØªÙˆØ¬Û  Ú©Ø±Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ 'Excuse me, please' Ú©Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l3-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Cafe and restaurant polite ordering summary:",
+      "summaryPoints": [
+        "Use 'Can I have...?' or 'Could I have...?' for courteous requests.",
+        "Use 'I'd like...' (I would like) instead of 'I want'.",
+        "Always add 'please' to orders and 'thank you' when receiving items.",
+        "Know the options: 'For here' (eat in) vs 'To take away' (carry out).",
+        "Ask for the check/bill with: 'Can we have the bill, please?'."
+      ]
+    },
+    {
+      "id": "sec-a1-u5-l3-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± Ú©Û ØªÛ’ Û ÛŒÚº: 'Ø§ÛŒÚ© Ú†Ø§Ø¦Û’ Ù„Ø§Ù†Ø§' ÛŒØ§ 'Ø¨Ù„ Ù„Û’ Ø¢Ø¤'Û” Ù„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø³ÛŒØ¯Ú¾Ø§ Ø­Ú©Ù… Ø¯ÛŒÙ†Ø§ (Give me / Bring me) Ø¨Û Øª **ØºÛŒØ± Ù…Û Ø°Ø¨ (Rude)** Ø³Ù…Ø¬Ú¾Ø§ Ø¬Ø§ØªØ§ Û Û’Û”\n\n**Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Û Ù…ÛŒØ´Û  Ø³ÙˆØ§Ù„ÛŒÛ  ÛŒØ§ Ø®ÙˆØ§Û Ø´ Ú©Û’ Ø§Ù†Ø¯Ø§Ø² Ù…ÛŒÚº Ø¢Ø±ÚˆØ± Ú©ÛŒØ§ Ø¬Ø§ØªØ§ Û Û’:**\n- **'Can I have a cup of tea, please?'** (Ú©ÛŒØ§ Ù…Ø¬Ú¾Û’ Ø§ÛŒÚ© Ú©Ù¾ Ú†Ø§Ø¦Û’ Ù…Ù„ Ø³Ú©ØªÛŒ Û Û’ØŸ)\n- **'I'd like a chicken sandwich, please.'** (Ù…ÛŒÚº Ú†Ú©Ù† Ø³ÛŒÙ†ÚˆÙˆÚ† Ù¾Ø³Ù†Ø¯ Ú©Ø±ÙˆÚº Ú¯Ø§)\nØ§ÙˆØ± Ø¢Ø®Ø± Ù…ÛŒÚº **Please** Ø§ÙˆØ± **Thank you** Ú©Û Ù†Ø§ Ù†Û Ø§ÛŒØª Ø¶Ø±ÙˆØ±ÛŒ Û Û’Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

@@ -1,0 +1,647 @@
+{
+  "id": "eng-a1-u6-l5",
+  "level": "A1",
+  "unit": "unit-6",
+  "order": 5,
+  "title": "Seasons & Weather Expressions",
+  "description": "Describe the four seasons and current weather conditions using adjectives and 'It is...'.",
+  "objectives": [
+    "Name the four seasons (spring, summer, autumn/fall, winter)",
+    "Use dummy pronoun 'It' to describe weather (It is sunny, it is raining, it is windy)",
+    "Differentiate between weather nouns (rain, sun, wind) and adjectives (rainy, sunny, windy)"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u6-l4"
+  ],
+  "skillTags": [
+    "weather",
+    "seasons",
+    "adjectives",
+    "vocabulary"
+  ],
+  "vocabularyList": [
+    {
+      "word": "spring",
+      "partOfSpeech": "noun",
+      "phonetic": "/sprÉªÅ‹/",
+      "definition": "The season after winter and before summer, in which vegetation begins to grow.",
+      "urduMeaning": "Ù…ÙˆØ³Ù…Ù  Ø¨Û Ø§Ø±",
+      "exampleSentence": "Islamabad looks stunning in spring with blooming flowers."
+    },
+    {
+      "word": "summer",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆsÊŒmÉ™r/",
+      "definition": "The warmest season of the year, in the northern hemisphere from June to August.",
+      "urduMeaning": "Ù…ÙˆØ³Ù…Ù  Ú¯Ø±Ù…Ø§",
+      "exampleSentence": "We drink cool lemon water during the hot summer."
+    },
+    {
+      "word": "autumn",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆÉ”Ë tÉ™m/",
+      "definition": "The season after summer and before winter to which leaves turn golden; also called fall.",
+      "urduMeaning": "Ù…ÙˆØ³Ù…Ù  Ø®Ø²Ø§Úº",
+      "exampleSentence": "Leaves turn golden and drop in autumn."
+    },
+    {
+      "word": "winter",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆwÉªntÉ™r/",
+      "definition": "The coldest season of the year, in the northern hemisphere from December to February.",
+      "urduMeaning": "Ù…ÙˆØ³Ù…Ù  Ø³Ø±Ù…Ø§",
+      "exampleSentence": "Snow covers the mountains in winter."
+    },
+    {
+      "word": "sunny",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ËˆsÊŒni/",
+      "definition": "Bright with sunlight.",
+      "urduMeaning": "Ø¯Ú¾ÙˆÙ¾ ÙˆØ§Ù„Ø§ / Ø±ÙˆØ´Ù†",
+      "exampleSentence": "It is a pleasant and sunny afternoon."
+    },
+    {
+      "word": "rainy",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ËˆreÉªni/",
+      "definition": "Having a great deal of rainfall.",
+      "urduMeaning": "Ø¨Ø§Ø±Ø´ ÙˆØ§Ù„Ø§",
+      "exampleSentence": "Take an umbrella on rainy days."
+    },
+    {
+      "word": "cloudy",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ËˆklaÊŠdi/",
+      "definition": "Covered with or characterized by clouds.",
+      "urduMeaning": "Ø¨Ø§Ø¯Ù„ÙˆÚº ÙˆØ§Ù„Ø§ / Ø§Ø¨Ø± Ø¢Ù„ÙˆØ¯",
+      "exampleSentence": "The sky is dark and cloudy today."
+    },
+    {
+      "word": "windy",
+      "partOfSpeech": "adjective",
+      "phonetic": "/ËˆwÉªndi/",
+      "definition": "Marked by or exposed to strong winds.",
+      "urduMeaning": "ØªÛŒØ² Û ÙˆØ§ ÙˆØ§Ù„Ø§",
+      "exampleSentence": "It is too windy to play badminton outside."
+    },
+    {
+      "word": "cold",
+      "partOfSpeech": "adjective",
+      "phonetic": "/kÉ™ÊŠld/",
+      "definition": "Of or at a low or relatively low temperature.",
+      "urduMeaning": "Ù¹Ú¾Ù†ÚˆØ§ / Ø³Ø±Ø¯",
+      "exampleSentence": "The winter night is freezing cold."
+    },
+    {
+      "word": "warm",
+      "partOfSpeech": "adjective",
+      "phonetic": "/wÉ”Ë m/",
+      "definition": "Of or at a fairly or comfortably high temperature.",
+      "urduMeaning": "Ú¯Ø±Ù… / Ù…Ø¹ØªØ¯Ù„",
+      "exampleSentence": "The spring sunshine feels comfortably warm."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u6-l5-1",
+      "type": "explain",
+      "title": "Weather Grammar & The Dummy 'It'",
+      "content": "In English, we describe weather using the **dummy subject 'It'**:\n- *What's the weather like?*\n- *It is sunny.* / *It is cloudy.* / *It is hot.*\n\n### Noun vs. Adjective Patterns\n- **Noun (The weather feature)**: *sun, rain, cloud, wind, snow*.\n- **Adjective (-y suffix)**: *sunny, rainy, cloudy, windy, snowy*.\n- **Verb in continuous**: *It is raining*, *It is snowing*.",
+      "tables": [
+        {
+          "title": "Weather Nouns, Adjectives & Verb Forms",
+          "headers": [
+            "Weather Element",
+            "Noun Form",
+            "Adjective Form",
+            "Sentence with 'It is...'"
+          ],
+          "rows": [
+            [
+              "Sun",
+              "The sun is shining",
+              "sunny",
+              "It is sunny today."
+            ],
+            [
+              "Rain",
+              "There is rain",
+              "rainy",
+              "It is rainy / It is raining."
+            ],
+            [
+              "Cloud",
+              "There are clouds",
+              "cloudy",
+              "It is cloudy."
+            ],
+            [
+              "Wind",
+              "The wind is blowing",
+              "windy",
+              "It is very windy."
+            ],
+            [
+              "Snow",
+              "There is snow",
+              "snowy",
+              "It is snowy / It is snowing."
+            ]
+          ]
+        },
+        {
+          "title": "Four Seasons in Pakistan",
+          "headers": [
+            "Season",
+            "Months",
+            "Climate Traits",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "Spring",
+              "March, April",
+              "Mild, blooming flowers, pleasant",
+              "Ù…ÙˆØ³Ù…Ù  Ø¨Û Ø§Ø±"
+            ],
+            [
+              "Summer",
+              "May, June, July, August",
+              "Hot, monsoon rains, mango season",
+              "Ù…ÙˆØ³Ù…Ù  Ú¯Ø±Ù…Ø§"
+            ],
+            [
+              "Autumn / Fall",
+              "September, October, November",
+              "Dry, golden leaves, cool breezes",
+              "Ù…ÙˆØ³Ù…Ù  Ø®Ø²Ø§Úº"
+            ],
+            [
+              "Winter",
+              "December, January, February",
+              "Cold, foggy mornings, snowfall up north",
+              "Ù…ÙˆØ³Ù…Ù  Ø³Ø±Ù…Ø§"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Autumn vs. Fall",
+          "text": "**Autumn** is standard British and Pakistani English. In American English, the same season is widely called **fall** because leaves fall from the trees."
+        },
+        {
+          "type": "warning",
+          "title": "Always Include 'It is'",
+          "text": "Never say 'Today is rainy' alone; standard natural English requires the dummy pronoun: **It is rainy today**."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l5-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "What is the weather like today? It is sunny and warm.",
+          "phonetic": "/wÉ’t Éªz Ã°É™ ËˆweÃ°É™r laÉªk tÉ™ËˆdeÉª Éªt Éªz ËˆsÊŒni Ã¦nd wÉ”Ë m/",
+          "urdu": "Ø¢Ø¬ Ù…ÙˆØ³Ù… Ú©ÛŒØ³Ø§ Û Û’ØŸ Ø¯Ú¾ÙˆÙ¾ Ù†Ú©Ù„ÛŒ Û ÙˆØ¦ÛŒ Û Û’ Ø§ÙˆØ± Ù…ÙˆØ³Ù… Ù…Ø¹ØªØ¯Ù„ Û Û’Û”",
+          "audioText": "What is the weather like today? It is sunny and warm."
+        },
+        {
+          "english": "Take an umbrella because it is raining heavily outside.",
+          "phonetic": "/teÉªk É™n ÊŒmËˆbrelÉ™ bÉªËˆkÉ’z Éªt Éªz ËˆreÉªnÉªÅ‹ ËˆhevÉªli ËŒaÊŠtËˆsaÉªd/",
+          "urdu": "Ú†Ú¾ØªØ±ÛŒ Ù„Û’ Ù„ÛŒÚº Ú©ÛŒÙˆÙ†Ú©Û  Ø¨Ø§Û Ø± ØªÛŒØ² Ø¨Ø§Ø±Ø´ Û Ùˆ Ø±Û ÛŒ Û Û’Û”",
+          "audioText": "Take an umbrella because it is raining heavily outside."
+        },
+        {
+          "english": "Spring is my favourite season because everything looks green and fresh.",
+          "phonetic": "/sprÉªÅ‹ Éªz maÉª ËˆfeÉªvÉ™rÉªt ËˆsiË zn bÉªËˆkÉ’z ËˆevriÎ¸ÉªÅ‹ lÊŠks É¡riË n Ã¦nd freÊƒ/",
+          "urdu": "Ø¨Û Ø§Ø± Ù…ÛŒØ±Ø§ Ù¾Ø³Ù†Ø¯ÛŒØ¯Û  Ù…ÙˆØ³Ù… Û Û’ Ú©ÛŒÙˆÙ†Ú©Û  Û Ø± Ú†ÛŒØ² Ø³Ø¨Ø² Ø§ÙˆØ± ØªØ§Ø²Û  Ù†Ø¸Ø± Ø¢ØªÛŒ Û Û’Û”",
+          "audioText": "Spring is my favourite season because everything looks green and fresh."
+        },
+        {
+          "english": "It is freezing cold in Quetta during January and February.",
+          "phonetic": "/Éªt Éªz ËˆfriË zÉªÅ‹ kÉ™ÊŠld Éªn ËˆkwetÉ™ ËˆdjÊŠÉ™rÉªÅ‹ ËˆdÊ’Ã¦njuÉ™ri Ã¦nd ËˆfebruÉ™ri/",
+          "urdu": "Ø¬Ù†ÙˆØ±ÛŒ Ø§ÙˆØ± Ù Ø±ÙˆØ±ÛŒ Ù…ÛŒÚº Ú©ÙˆØ¦Ù¹Û  Ù…ÛŒÚº Ø¨Ø±Ù Ù„ÛŒ Ù¹Ú¾Ù†Úˆ Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "It is freezing cold in Quetta during January and February."
+        },
+        {
+          "english": "The sky is grey and cloudy, so it might rain later this evening.",
+          "phonetic": "/Ã°É™ skaÉª Éªz É¡reÉª Ã¦nd ËˆklaÊŠdi sÉ™ÊŠ Éªt maÉªt reÉªn ËˆleÉªtÉ™r Ã°Éªs ËˆiË vnÉªÅ‹/",
+          "urdu": "Ø¢Ø³Ù…Ø§Ù† Ø§Ø¨Ø± Ø¢Ù„ÙˆØ¯ Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ Ø´Ø§Ù… Ú©Ùˆ Ø¨Ø§Ø±Ø´ Û Ùˆ Ø³Ú©ØªÛŒ Û Û’Û”",
+          "audioText": "The sky is grey and cloudy, so it might rain later this evening."
+        },
+        {
+          "english": "It is too windy to set up our camping tent on the hill.",
+          "phonetic": "/Éªt Éªz tuË  ËˆwÉªndi tuË  set ÊŒp ËˆaÊŠÉ™r ËˆkÃ¦mpÉªÅ‹ tent É’n Ã°É™ hÉªl/",
+          "urdu": "Ù¾Û Ø§Ú‘ÛŒ Ù¾Ø± Û ÙˆØ§ Ø§ØªÙ†ÛŒ ØªÛŒØ² Û Û’ Ú©Û  Ø®ÛŒÙ…Û  Ù„Ú¯Ø§Ù†Ø§ Ù…Ø´Ú©Ù„ Û Û’Û”",
+          "audioText": "It is too windy to set up our camping tent on the hill."
+        },
+        {
+          "english": "In autumn, the golden leaves fall gently from the trees.",
+          "phonetic": "/Éªn ËˆÉ”Ë tÉ™m Ã°É™ ËˆÉ¡É™ÊŠldn liË vz fÉ”Ë l ËˆdÊ’entli frÉ™m Ã°É™ triË z/",
+          "urdu": "Ø®Ø²Ø§Úº Ù…ÛŒÚº Ø³Ù†Û Ø±ÛŒ Ù¾ØªÛ’ Ø¯Ø±Ø®ØªÙˆÚº Ø³Û’ Ø¢Û Ø³ØªÛ  Ø¢Û Ø³ØªÛ  Ú¯Ø±ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "In autumn, the golden leaves fall gently from the trees."
+        },
+        {
+          "english": "Children love making snowmen during winter in Murree.",
+          "phonetic": "/ËˆtÊƒÉªldrÉ™n lÊŒv ËˆmeÉªkÉªÅ‹ ËˆsnÉ™ÊŠmen ËˆdjÊŠÉ™rÉªÅ‹ ËˆwÉªntÉ™r Éªn ËˆmÊŒri/",
+          "urdu": "Ø³Ø±Ø¯ÛŒÙˆÚº Ù…ÛŒÚº Ù…Ø±ÛŒ Ù…ÛŒÚº Ø¨Ú†Û’ Ø¨Ø±Ù  Ú©Ø§ Ù¾ØªÙ„Ø§ Ø¨Ù†Ø§Ù†Ø§ Ù¾Ø³Ù†Ø¯ Ú©Ø±ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "Children love making snowmen during winter in Murree."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l5-3",
+      "type": "dialogue",
+      "title": "Checking the Weather Forecast",
+      "dialogue": [
+        {
+          "speaker": "Saima",
+          "avatar": "S",
+          "english": "Are you planning to go for a walk in the park today, Hira?",
+          "urdu": "Ø­Ø±Ø§ØŒ Ú©ÛŒØ§ Ø¢Ø¬ Ø¢Ù¾ Ù¾Ø§Ø±Ú© Ù…ÛŒÚº Ø³ÛŒØ± Ú©Û’ Ù„ÛŒÛ’ Ø¬Ø§Ù†Û’ Ú©Ø§ Ø§Ø±Ø§Ø¯Û  Ø±Ú©Ú¾ØªÛŒ Û ÛŒÚºØŸ",
+          "audioText": "Are you planning to go for a walk in the park today, Hira?"
+        },
+        {
+          "speaker": "Hira",
+          "avatar": "H",
+          "english": "I wanted to, but the weather forecast says it will be very windy and rainy.",
+          "urdu": "Ù…ÛŒØ±Ø§ Ø§Ø±Ø§Ø¯Û  ØªÚ¾Ø§ Ù„ÛŒÚ©Ù† Ù…ÙˆØ³Ù… Ú©ÛŒ Ù¾ÛŒØ´ Ú¯ÙˆØ¦ÛŒ Û Û’ Ú©Û  ØªÛŒØ² Û ÙˆØ§ Ø§ÙˆØ± Ø¨Ø§Ø±Ø´ Û ÙˆÚ¯ÛŒÛ”",
+          "audioText": "I wanted to, but the weather forecast says it will be very windy and rainy."
+        },
+        {
+          "speaker": "Saima",
+          "avatar": "S",
+          "english": "Yes, the sky looks very cloudy right now.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºØŒ Ø§Ø³ ÙˆÙ‚Øª Ø¨Ú¾ÛŒ Ø¢Ø³Ù…Ø§Ù† Ø¨Û Øª Ø§Ø¨Ø± Ø¢Ù„ÙˆØ¯ Ù†Ø¸Ø± Ø¢ Ø±Û Ø§ Û Û’Û”",
+          "audioText": "Yes, the sky looks very cloudy right now."
+        },
+        {
+          "speaker": "Hira",
+          "avatar": "H",
+          "english": "Let's stay home and have hot soup instead!",
+          "urdu": "Ú†Ù„ÛŒÚº Ú¯Ú¾Ø± Ù¾Ø± Û ÛŒ Ø±Û ØªÛ’ Û ÛŒÚº Ø§ÙˆØ± Ú¯Ø±Ù… Ø³ÙˆÙ¾ Ù¾ÛŒØªÛ’ Û ÛŒÚº!",
+          "audioText": "Let's stay home and have hot soup instead!"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l5-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u6-l5-1",
+          "type": "mcq",
+          "skillTag": "weather",
+          "prompt": "What is the natural English question to inquire about the weather?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "What is the weather like?"
+            },
+            {
+              "id": "opt-2",
+              "text": "How is the weather like?"
+            },
+            {
+              "id": "opt-3",
+              "text": "What weather is today happening?"
+            },
+            {
+              "id": "opt-4",
+              "text": "Which is the weather now?"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'What is the weather like?' (or 'How is the weather?') is standard.",
+          "urduExplanation": "Ù…ÙˆØ³Ù… Ú©Ø§ Ù¾ÙˆÚ†Ú¾Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ 'What is the weather like?' Ø¨ÙˆÙ„Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l5-2",
+          "type": "mcq",
+          "skillTag": "weather",
+          "prompt": "Complete the sentence with the adjective form: 'It is a _____ day; the sun is shining brightly.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "sun"
+            },
+            {
+              "id": "opt-2",
+              "text": "sunny"
+            },
+            {
+              "id": "opt-3",
+              "text": "sunned"
+            },
+            {
+              "id": "opt-4",
+              "text": "sunning"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Sunny' is the descriptive adjective derived from sun.",
+          "urduExplanation": "Ø¯Ú¾ÙˆÙ¾ ÙˆØ§Ù„Û’ Ø¯Ù† Ú©Û’ Ù„ÛŒÛ’ adjective 'sunny' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "ex-a1-u6-l5-3",
+          "type": "fill_blank",
+          "skillTag": "seasons",
+          "prompt": "What season follows winter and brings blooming flowers? '_____' (capitalize).",
+          "correctAnswer": "Spring",
+          "explanation": "Spring follows winter.",
+          "urduExplanation": "Ø³Ø±Ø¯ÛŒ Ú©Û’ Ø¨Ø¹Ø¯ Ù¾ÚÚ¾ÙˆÙ„ÙˆÚº Ú©Ø§ Ù…ÙˆØ³Ù… 'Spring' (Ø¨Û Ø§Ø±) Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l5-4",
+          "type": "fill_blank",
+          "skillTag": "weather",
+          "prompt": "Complete with the dummy pronoun: '_____ is raining heavily outside.'",
+          "correctAnswer": "It",
+          "explanation": "English uses dummy subject 'It' for weather.",
+          "urduExplanation": "Ù…ÙˆØ³Ù… Ú©Û’ Ø¬Ù…Ù„Û’ Ú©Û’ Ù„ÛŒÛ’ 'It' Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’: 'It is raining'Û”"
+        },
+        {
+          "id": "ex-a1-u6-l5-5",
+          "type": "order_sentence",
+          "skillTag": "weather",
+          "prompt": "Rearrange the words to form a correct weather sentence:",
+          "sentenceTokens": [
+            "It",
+            "is",
+            "very",
+            "windy",
+            "and",
+            "cold",
+            "today",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "It is + very windy and cold + today.",
+          "urduExplanation": "It is very windy and cold today."
+        },
+        {
+          "id": "ex-a1-u6-l5-6",
+          "type": "order_sentence",
+          "skillTag": "seasons",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "Leaves",
+            "fall",
+            "from",
+            "the",
+            "trees",
+            "in",
+            "autumn",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "Subject (Leaves) + verb (fall) + location (from the trees) + season (in autumn).",
+          "urduExplanation": "Leaves fall from the trees in autumn."
+        },
+        {
+          "id": "ex-a1-u6-l5-7",
+          "type": "match_pairs",
+          "skillTag": "weather",
+          "prompt": "Match the weather noun to its corresponding descriptive adjective:",
+          "pairs": [
+            {
+              "left": "rain",
+              "right": "rainy"
+            },
+            {
+              "left": "sun",
+              "right": "sunny"
+            },
+            {
+              "left": "wind",
+              "right": "windy"
+            },
+            {
+              "left": "cloud",
+              "right": "cloudy"
+            }
+          ],
+          "explanation": "Nouns matched to adjectives ending in -y.",
+          "urduExplanation": "Ø§Ø³Ù… Ú©Ùˆ ØµÙ Øª (adjective) Ø³Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l5-8",
+          "type": "error_correction",
+          "skillTag": "weather",
+          "prompt": "Find and correct the mistake: 'Today is raining.'",
+          "correctAnswer": "It is raining today.",
+          "explanation": "Use the dummy subject 'It': 'It is raining today'.",
+          "urduExplanation": "Ù…ÙˆØ³Ù… Ú©Û’ Ù„ÛŒÛ’ 'It is raining today' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l5-9",
+          "type": "error_correction",
+          "skillTag": "seasons",
+          "prompt": "Find and correct the mistake: 'The leaves fall in the fall season of spring.'",
+          "correctAnswer": "The leaves fall in autumn.",
+          "explanation": "Leaves fall in autumn (or fall), not in spring.",
+          "urduExplanation": "Ù¾ØªÛ’ Ø®Ø²Ø§Úº (autumn) Ù…ÛŒÚº Ú¯Ø±ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l5-10",
+          "type": "true_false",
+          "skillTag": "seasons",
+          "prompt": "'Fall' is another widely used name for the season of autumn. (True or False)",
+          "correctAnswer": "True",
+          "explanation": "True. 'Fall' is the common American English term for autumn.",
+          "urduExplanation": "Ø¯Ø±Ø³ØªÛ” Ø§Ù…Ø±ÛŒÚ©ÛŒ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº autumn Ú©Ùˆ 'fall' Ø¨Ú¾ÛŒ Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l5-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u6-l5-1",
+          "type": "mcq",
+          "skillTag": "seasons",
+          "prompt": "What is the American English word for autumn?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "drop"
+            },
+            {
+              "id": "opt-2",
+              "text": "winter"
+            },
+            {
+              "id": "opt-3",
+              "text": "breeze"
+            },
+            {
+              "id": "opt-4",
+              "text": "fall"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'Fall' is the American English synonym for autumn.",
+          "urduExplanation": "Ø§Ù…Ø±ÛŒÚ©ÛŒ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº autumn Ú©Ùˆ 'fall' Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        },
+        {
+          "id": "qz-a1-u6-l5-2",
+          "type": "mcq",
+          "skillTag": "weather",
+          "prompt": "Complete the sentence: 'Take a raincoat; it is _____ heavily outside.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "raining"
+            },
+            {
+              "id": "opt-2",
+              "text": "sunny"
+            },
+            {
+              "id": "opt-3",
+              "text": "wind"
+            },
+            {
+              "id": "opt-4",
+              "text": "clouds"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'It is raining' describes active precipitation.",
+          "urduExplanation": "Ø¨Ø§Ø±Ø´ Û ÙˆÙ†Û’ Ú©Û’ Ù„ÛŒÛ’ 'raining' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u6-l5-3",
+          "type": "mcq",
+          "skillTag": "seasons",
+          "prompt": "In which season do people enjoy fresh mangoes and cold drinks in Pakistan?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Winter"
+            },
+            {
+              "id": "opt-2",
+              "text": "Summer"
+            },
+            {
+              "id": "opt-3",
+              "text": "Autumn"
+            },
+            {
+              "id": "opt-4",
+              "text": "Spring"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Summer is the season for mangoes and hot sunny days.",
+          "urduExplanation": "Ø¢Ù… Ú¯Ø±Ù…ÛŒÙˆÚº (Summer) Ú©Ø§ Ù¾Ú¾Ù„ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l5-4",
+          "type": "mcq",
+          "skillTag": "weather",
+          "prompt": "Which dummy pronoun starts weather sentences in English?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "There"
+            },
+            {
+              "id": "opt-2",
+              "text": "This"
+            },
+            {
+              "id": "opt-3",
+              "text": "That"
+            },
+            {
+              "id": "opt-4",
+              "text": "It"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "English uses 'It' (e.g. It is sunny, it is cold).",
+          "urduExplanation": "Ù…ÙˆØ³Ù… Ú©Û’ Ø¬Ù…Ù„Û’ 'It' Ø³Û’ Ø´Ø±ÙˆØ¹ Û ÙˆØªÛ’ Û ÛŒÚº: 'It is sunny'Û”"
+        },
+        {
+          "id": "qz-a1-u6-l5-5",
+          "type": "mcq",
+          "skillTag": "weather",
+          "prompt": "What does 'cloudy' mean?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Strong winds blowing"
+            },
+            {
+              "id": "opt-2",
+              "text": "The sky is covered with clouds"
+            },
+            {
+              "id": "opt-3",
+              "text": "Heavy snowfall"
+            },
+            {
+              "id": "opt-4",
+              "text": "Bright direct sunshine"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Cloudy' means the sky is covered with grey or white clouds.",
+          "urduExplanation": "'cloudy' Ú©Ø§ Ù…Ø·Ù„Ø¨ Û Û’ Ú©Û  Ø¢Ø³Ù…Ø§Ù† Ù¾Ø± Ø¨Ø§Ø¯Ù„ Ú†ÚÚ¾Ø§Ø¦Û’ Û ÙˆØ¦Û’ Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l5-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Seasons and weather summary:",
+      "summaryPoints": [
+        "Four seasons: spring, summer, autumn (or fall), winter.",
+        "Use dummy pronoun 'It' for weather (It is sunny, it is raining, it is cold).",
+        "Weather adjectives end in -y: sunny, rainy, cloudy, windy, snowy.",
+        "Autumn is the British English term; Fall is the American English term.",
+        "Seasons take preposition IN (in summer, in winter)."
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l5-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Ù…ÙˆØ³Ù… Ú©Ø§ Ø­Ø§Ù„ Ø¨ØªØ§Ù†Û’ Ú©Û’ Ù„ÛŒÛ’ Û Ù… Ú©Û ØªÛ’ Û ÛŒÚº:\n- 'Ø¢Ø¬ Ø¯Ú¾ÙˆÙ¾ Û Û’'\n- 'Ø¨Ø§Ø±Ø´ Û Ùˆ Ø±Û ÛŒ Û Û’'\n- 'Ø¨Û Øª Ù¹Ú¾Ù†Úˆ Û Û’'\n\n**Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ù…ÙˆØ³Ù… Ú©Û’ Ù„ÛŒÛ’ Dummy Pronoun 'It' Ù„Ú¯Ø§Ù†Ø§ Ù„Ø§Ø²Ù…ÛŒ Û Û’:**\n- **It is sunny** (Ù†Û  Ú©Û  'Today is sunny' Ú©Û Ù†Ø§ Ø¬Ùˆ Ú©Û  ØºÛŒØ± Ù Ø·Ø±ÛŒ Û Û’)\n- **It is raining**\n- **It is cold**\n\nØ§Ø³ Ú©Û’ Ø¹Ù„Ø§ÙˆÛ  Ø§Ø³Ù… (Rain) Ø§ÙˆØ± ØµÙ Øª (Rainy) Ú©Ø§ Ù Ø±Ù‚ Ø³Ù…Ø¬Ú¾ÛŒÚº: 'a rainy day' Ø¨ÙˆÙ„Ø§ Ø¬Ø§ØªØ§ Û Û’Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

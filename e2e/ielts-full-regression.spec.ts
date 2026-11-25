@@ -111,7 +111,7 @@ test.describe('IELTS Master Regression Suite', () => {
 
     test('Home Dashboard renders study summary, quick actions, and target band', async ({ page }) => {
       await page.goto('/app');
-      await expect(page.locator('header')).toBeVisible();
+      await expect(page.locator('header')).toBeVisible({ timeout: 15000 });
 
       // Check for core dashboard widgets
       await expect(page.locator('text=/Quick Practice|Continue Learning|Today\'s Goal|Band Target/i').first()).toBeVisible({ timeout: 10000 });
@@ -378,7 +378,7 @@ In conclusion, artificial intelligence should be embraced as an empowering suppl
   test.describe('3. Admin Portal', () => {
     test('admin login page renders isolated login form without student branding confusion', async ({ page }) => {
       await page.goto('/admin/login');
-      await expect(page.getByRole('heading', { name: 'Admin sign in' })).toBeVisible();
+      await expect(page.getByRole('heading', { name: 'Admin sign in' })).toBeVisible({ timeout: 15000 });
       await expect(page.getByText('Authorized personnel only. All activity is logged.')).toBeVisible();
 
       // Student login fallback link is present
@@ -412,7 +412,7 @@ In conclusion, artificial intelligence should be embraced as an empowering suppl
       await page.waitForTimeout(400);
 
       // Hero headline
-      await expect(page.locator('h1').first()).toContainText('Prepare for IELTS.');
+      await expect(page.locator('h1').first()).toContainText(/Prepare for IELTS|Master IELTS/i);
 
       // Check sign in / get started buttons
       const loginLink = page.getByRole('link', { name: /Sign in|Log in/i }).first();

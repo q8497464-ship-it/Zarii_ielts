@@ -44,6 +44,8 @@ import { VocabManager } from '../components/content/VocabManager';
 import { GrammarEditor } from '../components/content/GrammarEditor';
 import { MediaLibrary } from '../components/content/MediaLibrary';
 import { ImportExportModal } from '../components/content/ImportExportModal';
+import { CourseManager } from '../components/content/CourseManager';
+import { DictionaryManager } from '../components/content/DictionaryManager';
 
 export function AdminContentPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -550,7 +552,9 @@ export function AdminContentPage() {
       {/* 2. Navigation Tabs */}
       <div className="flex items-center gap-1 border-b border-slate-200 dark:border-slate-800 overflow-x-auto">
         {[
-          { id: 'tests', label: `Tests & Mocks (${tests.length})`, icon: BookOpen },
+          { id: 'course', label: 'English Course & Lessons', icon: BookOpen },
+          { id: 'dictionary', label: 'Dictionary & Patches', icon: Sparkles },
+          { id: 'tests', label: `IELTS Tests & Mocks (${tests.length})`, icon: FileText },
           { id: 'writing', label: `Writing Prompts (${writingPrompts.length})`, icon: PenTool },
           { id: 'speaking', label: `Speaking Cards (${speakingCards.length})`, icon: Mic },
           { id: 'vocab', label: 'Vocabulary & AWL', icon: Sparkles },
@@ -577,6 +581,17 @@ export function AdminContentPage() {
       </div>
 
       {/* 3. Tab Views */}
+      {currentTab === 'course' && (
+        <CourseManager
+          onOpenTestEditor={(testId) => {
+            setActiveTestEditorId(testId);
+            setIsTestEditorOpen(true);
+          }}
+        />
+      )}
+
+      {currentTab === 'dictionary' && <DictionaryManager />}
+
       {currentTab === 'tests' && (
         <div className="space-y-6">
           <FilterBar

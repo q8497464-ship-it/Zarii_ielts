@@ -101,7 +101,10 @@ describe('Adaptive Study Plan Generator & Rescheduling', () => {
       },
     ];
 
-    const plan = generateStudyPlan(7.5, '2026-12-17', 60, weaknesses);
+    const futureDate = new Date();
+    futureDate.setDate(futureDate.getDate() + 30);
+    const targetDateStr = futureDate.toISOString().split('T')[0];
+    const plan = generateStudyPlan(7.5, targetDateStr, 60, weaknesses);
     expect(plan.length).toBeGreaterThanOrEqual(25);
 
     // Verify first non-rest day total task minutes equal dailyMinutes (60)

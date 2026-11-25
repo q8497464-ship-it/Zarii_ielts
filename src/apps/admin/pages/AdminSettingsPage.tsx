@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import {
   Settings,
   Sliders,
@@ -37,11 +38,19 @@ import {
 
 export function AdminSettingsPage() {
   const { addToast } = useAdminToast();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const tabFromUrl = searchParams.get('tab') as 'branding' | 'flags' | 'maintenance' | 'legal' | 'seo' | 'defaults' | null;
 
   // Active section tab
   const [activeTab, setActiveTab] = useState<
     'branding' | 'flags' | 'maintenance' | 'legal' | 'seo' | 'defaults'
-  >('branding');
+  >(() => tabFromUrl || 'branding');
+
+  useEffect(() => {
+    if (tabFromUrl && tabFromUrl !== activeTab) {
+      setActiveTab(tabFromUrl);
+    }
+  }, [tabFromUrl]);
 
   // Reactive store state
   const [state, setState] = useState(() => settingsStore.getSettings());
@@ -478,44 +487,76 @@ export function AdminSettingsPage() {
             {(
               [
                 {
+                  key: 'ielts_track_enabled' as const,
+                  name: 'IELTS Academic & General Track',
+                  desc: 'Enable full IELTS test prep track including Reading, Listening, Writing, Speaking, and Mocks.',
+                  badge: 'Track Switch',
+                },
+                {
+                  key: 'english_track_enabled' as const,
+                  name: 'General English Course Track',
+                  desc: 'Enable CEFR A1 to C1 general English track, lesson player, skills practice, and level maps.',
+                  badge: 'Track Switch',
+                },
+                {
+                  key: 'course_enabled' as const,
+                  name: 'English Course Engine & Curriculum',
+                  desc: 'Controls availability of the structured course player, unit reviews, and placement tests.',
+                  badge: 'Feature Flag',
+                },
+                {
+                  key: 'dictionary_enabled' as const,
+                  name: 'English Offline Dictionary & Word Bank',
+                  desc: 'Offline 144k headword dictionary, phonetic transcriptions, audio speech, and bookmarking.',
+                  badge: 'Feature Flag',
+                },
+                {
+                  key: 'tap_to_lookup_enabled' as const,
+                  name: 'Tap-to-Lookup Word Popover',
+                  desc: 'Allows candidates to double-click / tap any word in reading passages and lessons for instant lookup.',
+                  badge: 'Feature Flag',
+                },
+                {
+                  key: 'speaking_ai_feedback' as const,
+                  name: 'Speaking AI Voice Evaluation',
+                  desc: 'Automated speech scoring, fluency analysis, and criteria band estimates.',
+                  badge: 'Feature Flag',
+                },
+                {
+                  key: 'urdu_hints' as const,
+                  name: 'Urdu Vocabulary Hints & Bilingual Explanations',
+                  desc: 'Display Urdu translations, contrastive notes, and grammar explanations across exercises.',
+                  badge: 'Feature Flag',
+                },
+                {
                   key: 'listening' as const,
                   name: 'Listening Audio Test Module',
                   desc: 'Full 4-section listening mock tests with interactive audio player and timed questions.',
+                  badge: 'IELTS Module',
                 },
                 {
                   key: 'speaking' as const,
                   name: 'Speaking Interview & Recording Module',
-                  desc: 'Part 1, Part 2 cue cards, and Part 3 discussion prompts with audio recording and speech AI scoring.',
+                  desc: 'Part 1, Part 2 cue cards, and Part 3 discussion prompts with audio recording.',
+                  badge: 'IELTS Module',
                 },
                 {
                   key: 'gamification' as const,
                   name: 'Gamification System (Streaks, XP & Badges)',
-                  desc: 'Daily streak counters, weekly freeze shields, experience level bars, and 30 academic badges.',
+                  desc: 'Daily streak counters, weekly freeze shields, experience level bars, and academic badges.',
+                  badge: 'Engagement',
                 },
                 {
                   key: 'ai_feedback' as const,
-                  name: 'Automated AI Essay & Speech Evaluation',
+                  name: 'Automated AI Essay Evaluation',
                   desc: 'Instant LLM band scoring with verbatim quote citations. When disabled, defaults to model answers.',
-                },
-                {
-                  key: 'urdu_hints' as const,
-                  name: 'Urdu Vocabulary Hints & Bilingual Support',
-                  desc: 'Display Urdu translations, collocations, and contextual hints in vocabulary and flashcards.',
+                  badge: 'AI Feature',
                 },
                 {
                   key: 'signup' as const,
                   name: 'Public Candidate Self-Registration',
                   desc: 'Allow new students to create free accounts via /signup. When disabled, registration is closed.',
-                },
-                {
-                  key: 'english_course_enabled' as const,
-                  name: 'General English Course Track',
-                  desc: 'Enable the complete English language learning track alongside IELTS (A1 to C1 levels).',
-                },
-                {
-                  key: 'dictionary_enabled' as const,
-                  name: 'English Offline Dictionary & Word Lookup',
-                  desc: 'Enable the fast offline dictionary, phonetics, audio pronunciations, and vocabulary bookmarks.',
+                  badge: 'Security',
                 },
               ] as const
             ).map((flag) => {
@@ -523,9 +564,14 @@ export function AdminSettingsPage() {
               return (
                 <div key={flag.key} className="py-4 flex items-center justify-between gap-4">
                   <div className="space-y-0.5 max-w-xl">
-                    <span className="text-xs font-bold text-slate-900 dark:text-white block">
-                      {flag.name}
-                    </span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-bold text-slate-900 dark:text-white">
+                        {flag.name}
+                      </span>
+                      <span className="px-1.5 py-0.5 rounded text-[10px] font-mono font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+                        {flag.badge}
+                      </span>
+                    </div>
                     <p className="text-[11px] text-slate-500 dark:text-slate-400">{flag.desc}</p>
                   </div>
 

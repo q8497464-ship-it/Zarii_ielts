@@ -1,17 +1,19 @@
-# Zarii IELTS Architecture Documentation
+# Zarii Architecture & Technical Design
 
-This document describes the high-level architecture, module boundaries, data flows, and security isolation of the Zarii IELTS platform.
+This document details the software architecture, module boundaries, two-track learning engine, dictionary pipeline, data flows, and security model of Zarii.
 
 ---
 
 ## 1. System Overview
 
-Zarii IELTS is designed as an **offline-first, zero-cost-to-run web application** for IELTS Academic and General Training preparation. It is split into two isolated applications sharing a common core:
-
-1. **Student App (`/`)**: A fast, distraction-free learning environment that functions 100% offline via local IndexedDB (Dexie) and caches, with optional cloud sync when signed in.
-2. **Admin App (`/admin`)**: A comprehensive management back-office for tests, question building, analytics, AI examiner prompt tuning, user administration, announcements, feedback, and system health.
-3. **Shared Kernel (`src/shared`)**: Brand tokens, design system primitives, API client, Supabase client, and TypeScript domain types.
-4. **Backend (Supabase Free Tier)**: PostgreSQL database with Row Level Security (RLS) on every table, Edge Functions for encrypted AI key proxying, and Storage for media assets.
+Zarii is an **offline-first, zero-operating-cost web platform** designed to provide two complete learning paths:
+1. **General English Course Track (`/app/english/*`)**: A CEFR-aligned curriculum from A1 Beginner to C1 Advanced with structured units, lessons, practice screens, skills studios, and placement testing.
+2. **IELTS Preparation Track (`/app/ielts/*`)**: Authentic exam practice for Academic and General Training with full mock exams, scoring engines, diagnostic benchmarking, and band trend analysis.
+3. **Shared Foundation**:
+   - **Offline English Dictionary (`/app/dictionary`)**: 144,456 headwords, phonetic IPA, US/UK audio, inflections, safe mode, and tap-to-lookup.
+   - **Cross-Track Word Bank (`/app/word-bank`)**: Central vocabulary repository where saved words can be tagged by track and practiced via SM-2 flashcards.
+   - **Unified Settings & Storage (`/app/settings`)**: Offline pack management, database backups, and privacy controls.
+4. **Admin Console (`/admin/*`)**: Isolated management portal for Course Curriculum, Dictionary Patches, Test Content, User Analytics, and Maintenance Controls.
 
 ---
 
@@ -19,110 +21,115 @@ Zarii IELTS is designed as an **offline-first, zero-cost-to-run web application*
 
 ```mermaid
 graph TD
-    subgraph Browser ["Client Runtime (Browser)"]
-        subgraph StudentApp ["Student Application (src/apps/student)"]
-            SRoutes["Routes (src/routes.ts)"]
-            SNav["Sidebar & BottomNav"]
-            SFeatures["8 Core Modules:<br/>Reading, Listening, Writing, Speaking,<br/>Vocab, Mock, Dashboard, Plan"]
-            SStore["Zustand App Store"]
-            SLocalDB["Dexie IndexedDB<br/>(attempts, responses, vocab, profile)"]
+    subgraph Client ["Client Browser Runtime (Offline-First)"]
+        subgraph PublicArea ["Public Layer"]
+            Landing["Landing Page (/)"]
+            AuthPages["Login / Signup (/login, /signup)"]
+            LegalPages["Privacy, Terms, Credits, SEO Pages"]
         end
 
-        subgraph AdminApp ["Admin Application (src/apps/admin) [Lazy Loaded]"]
-            ARoutes["Admin Router (/admin/*)"]
-            ASidebar["Deep Green Admin Shell"]
-            ASections["Content CMS, Users, Analytics,<br/>AI Evaluator, Announcements, System"]
-            AStore["Admin Domain Stores"]
+        subgraph StudentApp ["Student Application (/app/*)"]
+            AppShell["App Shell & Sidebar Nav"]
+            TrackSwitcher["Track Switcher (English vs IELTS)"]
+            
+            subgraph EnglishTrack ["English Course Track (/app/english/*)"]
+                CourseCatalog["Course Map (A1 - C1)"]
+                LessonRunner["Focus Lesson Player"]
+                SkillsStudio["Skills Practice (Reading, Listening, Speaking, Writing)"]
+                PlacementTest["Placement Benchmark"]
+                EnglishProgress["Progress & CEFR Heatmap"]
+            end
+
+            subgraph IELTSTrack ["IELTS Track (/app/ielts/*)"]
+                IELTSPractice["4 Skills Practice (R, L, W, S)"]
+                MockExam["Full 2h45m Mock Center"]
+                Diagnostic["25m Diagnostic Test"]
+                IELTSDashboard["Band Trend & Score Gauge"]
+            end
+
+            subgraph SharedServices ["Shared Systems"]
+                DictEngine["144k Dictionary Engine & Prefix Trie"]
+                TapLookup["Tap-to-Lookup Popover Engine"]
+                WordBank["Unified Personal Word Bank"]
+                TrackMigrator["Track Data Migrator & Rollback"]
+            end
+
+            LocalDB["Dexie IndexedDB (ZariiIELTS_DB)"]
         end
 
-        subgraph SharedCore ["Shared Layer (src/shared)"]
-            Tokens["Brand Tokens (#124F40, #5BB78D)"]
-            DesignSystem["UI Primitives (Button, Modal, Card, Table)"]
-            APIClient["Supabase Client & Auth Helper"]
-            ErrorLog["Offline Telemetry Ring Buffer"]
+        subgraph AdminApp ["Admin Portal (/admin/*) [Lazy-Loaded]"]
+            AdminShell["Deep Green Admin Shell"]
+            CourseMgr["Course Manager & Lesson Editor"]
+            DictMgr["Dictionary Manager & Patch Release"]
+            ContentCMS["IELTS Test CMS"]
+            AnalyticsMgr["User Analytics & Drop-off Charts"]
+            SystemMgr["Maintenance & Feature Flags"]
         end
     end
 
-    subgraph Backend ["Cloud Infrastructure (Supabase Free Tier)"]
+    subgraph StaticStorage ["Static Asset Storage (CDN / Free Hosting)"]
+        ShardedDict["622 Sharded JSON Files (/data/dictionary/shards/)"]
+        IndexTrie["Headword Index Trie (/data/dictionary/index.json)"]
+        Inflections["Inflection Index (/data/dictionary/inflections.json)"]
+        AudioAssets["Public Audio & Visual Assets"]
+    end
+
+    subgraph CloudSync ["Cloud Backend (Supabase Free Tier - Optional)"]
         Auth["Supabase GoTrue Auth"]
-        PG["PostgreSQL Database + RLS"]
-        Storage["Storage Buckets (audio, images)"]
-        Edge["Edge Functions (AI Proxy with Secrets)"]
+        PG["PostgreSQL Database with RLS"]
+        PrivateNotes["Encrypted Private Notes"]
     end
 
-    subgraph ExternalAI ["External AI Providers (Free Tiers)"]
-        Gemini["Google Gemini Free Tier"]
-        Groq["Groq Free Tier"]
-    end
-
-    SRoutes --> SNav
-    SNav --> SFeatures
-    SFeatures --> SStore
-    SFeatures --> SLocalDB
-
-    ARoutes --> ASidebar
-    ASidebar --> ASections
-    ASections --> AStore
-
-    StudentApp --> SharedCore
-    AdminApp --> SharedCore
-
-    SharedCore --> Auth
-    SharedCore --> PG
-    SharedCore --> Storage
-    ASections --> Edge
-    Edge --> Gemini
-    Edge --> Groq
+    PublicArea --> StudentApp
+    StudentApp --> LocalDB
+    DictEngine --> ShardedDict
+    DictEngine --> IndexTrie
+    DictEngine --> Inflections
+    StudentApp -.-> CloudSync
+    AdminApp -.-> CloudSync
 ```
 
 ---
 
-## 3. Module & Folder Structure
+## 3. Data Flow & Migration Architecture
 
-Every module across the platform strictly follows a standard, predictable hierarchy:
+### Backward-Compatibility URL Routing
+To preserve old student bookmarks and external links, all legacy routes permanently redirect preserving query parameters and URL params:
+- `/practice/*` $\rightarrow$ `/app/ielts/practice/*`
+- `/mock/*` $\rightarrow$ `/app/ielts/mock/*`
+- `/vocab/*` $\rightarrow$ `/app/ielts/vocab/*`
+- `/dashboard` $\rightarrow$ `/app/progress`
+- `/lessons` $\rightarrow$ `/app/ielts/lessons`
+- `/settings` $\rightarrow$ `/app/settings`
 
-```
-src/features/<module>/
-├── components/          # Module-specific presentation and container components
-│   └── index.ts
-├── hooks/               # Custom lifecycle and state management hooks
-│   └── index.ts
-├── services/            # Business logic, content loaders, and calculations
-│   └── index.ts
-├── store/               # Zustand state stores for transient session state
-│   └── index.ts
-├── types.ts             # Domain-specific TypeScript models and interfaces
-├── index.ts             # Module public barrel export
-└── README.md            # Feature documentation and test guide
-```
-
-### The 8 Standardized Features:
-1. `src/features/reading`: Dual-pane text reader, interactive IELTS question formats, auto-marking, Academic/General band scales.
-2. `src/features/listening`: Sectional audio engine, speed controls, question timeline, transfer time runner.
-3. `src/features/writing`: Task 1 & Task 2 distraction-free editor, chart viewer, AI evaluation, and $0 rule-based evaluation fallback.
-4. `src/features/speaking`: Part 1-3 simulator, cue-card prep timer, Web Speech API speech-to-text, fluency heuristic engine.
-5. `src/features/vocab`: SuperMemo-2 (SM-2) spaced repetition engine, flashcards, word bank, IELTS topic collocations.
-6. `src/features/mock`: 3-hour exam pipeline (Listening -> Reading -> Writing -> Speaking) with official rounder.
-7. `src/features/dashboard`: Performance analytics, score progression, target band milestones, study streak tracking.
-8. `src/features/plan`: Algorithmic study schedule synthesis based on target band, exam date, and available study minutes.
+### Track Migration & Safe Rollback
+On initialization, `runTrackMigration()` detects existing user records:
+1. **Pre-Migration Snapshot**: Dumps complete IndexedDB state to `localStorage.setItem('zarii_track_migration_v1_backup', json)`.
+2. **Atomic Tagging**: Modifies `attempts`, `writingSubmissions`, `speakingSessions`, `vocabProgress`, `studyPlan`, and `mistakes` within a Dexie read-write transaction, setting `track = 'ielts'` on un-tagged records.
+3. **Idempotency**: Flags completion in `zarii_track_migration_v1_completed`.
+4. **1-Click Rollback**: `rollbackTrackMigration()` restores the pre-migration snapshot and clears the migration flag.
 
 ---
 
-## 4. Security & Role-Based Access Control (RBAC)
+## 4. Dictionary Pipeline & Sharding Architecture
 
-- **Student Isolation**: Admin routes (`/admin/*`) and components are dynamically code-split with `React.lazy()`. The student bundle contains zero admin navigation links.
-- **Database Row Level Security (RLS)**:
-  - `student`: Can read published tests and write to their own attempts/submissions.
-  - `editor`: Can create, edit, and preview tests, vocabulary, grammar lessons, and reply to feedback.
-  - `admin`: Full unrestricted access to users, system health, audit logs, AI provider secrets, and database backups.
-- **AI Key Security**: AI keys (Gemini, Groq) are never sent to or stored in client-side code for admin functions; they reside server-side in Supabase Vault / Edge Function secrets. For students using "bring your own API key", keys remain strictly inside their personal browser `localStorage`.
+To serve 144,456 comprehensive entries without loading large megabyte files in the browser:
+- **Build Pipeline (`scripts/dictionary/build.cjs`)**:
+  - Ingests Open English WordNet, CMU Pronouncing Dictionary, and word frequencies.
+  - Normalizes ARPAbet phonetics into standard IPA and plain-text respelling.
+  - Generates 622 static shard files grouped by prefix (e.g., `shard_aa.json`, `shard_ru.json`) with gzip sizes strictly under 100 KB.
+  - Generates `index.json` (prefix trie) and `inflections.json` (144k inflected forms mapped to root headwords).
+- **Client-Side Cache & Offline Mode**:
+  - Search requests dynamically fetch only the relevant prefix shard on demand (debounced 120ms).
+  - Downloaded shards are cached in IndexedDB.
+  - Users can download the *Essential 20,000 Words Pack* (~12 MB) to enable 100% offline lookup without network requests.
+- **Exam Mode Protection**:
+  - `useTapToLookup` subscribes to active test modes. When timed reading or mock exams are active, the popover listener is completely detached.
 
 ---
 
-## 5. Performance & Bundle Chunking Strategy
+## 5. Security & Isolation
 
-Configured in `vite.config.ts` to guarantee blazing-fast load times even on 3G cellular networks:
-- **`index.js` (~230 kB / 64 kB gzip)**: Core student runtime, routing, and shell.
-- **`AdminApp.js` (~355 kB)**: Lazy-loaded exclusively when visiting `/admin`.
-- **`charts.js` (~427 kB)**: Recharts bundle loaded on-demand for analytics and progress screens.
-- **Content Chunks**: Test datasets split by module (`content-reading`, `content-listening`, `content-vocab`, `content-subjective`), downloaded only when practicing that specific module.
+- **Client-Side Privacy**: Student data, attempts, and dictionary lookups remain 100% on the student's device. No analytics trackers or telemetry scripts exist in production builds.
+- **Admin Code Splitting**: All admin logic, course authoring tools, and dictionary patching systems are lazy-loaded exclusively within `/admin/*` chunks.
+- **Database RLS Policies**: Row Level Security ensures students can only read published content and cannot access admin settings, drafts, or other users' private records.

@@ -1,0 +1,672 @@
+{
+  "id": "eng-a1-u3-l1",
+  "level": "A1",
+  "unit": "unit-3",
+  "order": 1,
+  "title": "Present Simple: Positive Statements",
+  "description": "Express habits, universal truths, and daily repeated actions using affirmative present simple verbs.",
+  "objectives": [
+    "Identify the communicative purposes of the present simple tense (habits, routines, facts)",
+    "Form positive statements with pronouns (I, you, we, they + base verb; he, she, it + verb-s)",
+    "Interpret the tense timeline illustrating repeated regular actions across past, present, and future"
+  ],
+  "estimatedMinutes": 12,
+  "prerequisites": [
+    "eng-a1-u2-l5"
+  ],
+  "skillTags": [
+    "present-simple",
+    "verbs",
+    "routines",
+    "grammar-tenses"
+  ],
+  "vocabularyList": [
+    {
+      "word": "wake",
+      "partOfSpeech": "verb",
+      "phonetic": "/weÉªk/",
+      "definition": "To emerge or cause to emerge from sleep.",
+      "urduMeaning": "Ø¬Ø§Ú¯Ù†Ø§ / Ø¨ÛŒØ¯Ø§Ø± Û ÙˆÙ†Ø§",
+      "exampleSentence": "I wake up at six o'clock every morning."
+    },
+    {
+      "word": "sleep",
+      "partOfSpeech": "verb",
+      "phonetic": "/sliË p/",
+      "definition": "To rest in a natural periodic state of suspension of consciousness.",
+      "urduMeaning": "Ø³ÙˆÙ†Ø§",
+      "exampleSentence": "They sleep eight hours each night."
+    },
+    {
+      "word": "work",
+      "partOfSpeech": "verb",
+      "phonetic": "/wÉœË k/",
+      "definition": "To perform activity involving mental or physical effort.",
+      "urduMeaning": "Ú©Ø§Ù… Ú©Ø±Ù†Ø§",
+      "exampleSentence": "She works at a software company."
+    },
+    {
+      "word": "study",
+      "partOfSpeech": "verb",
+      "phonetic": "/ËˆstÊŒdi/",
+      "definition": "To apply the mind to the acquisition of knowledge.",
+      "urduMeaning": "Ù¾Ú‘Ú¾Ù†Ø§ / Ù…Ø·Ø§Ù„Ø¹Û  Ú©Ø±Ù†Ø§",
+      "exampleSentence": "We study English every evening."
+    },
+    {
+      "word": "live",
+      "partOfSpeech": "verb",
+      "phonetic": "/lÉªv/",
+      "definition": "To make one's home in a particular place.",
+      "urduMeaning": "Ø±Û Ù†Ø§ / Ø±Û Ø§Ø¦Ø´ Ø§Ø®ØªÛŒØ§Ø± Ú©Ø±Ù†Ø§",
+      "exampleSentence": "My family lives in Lahore."
+    },
+    {
+      "word": "drink",
+      "partOfSpeech": "verb",
+      "phonetic": "/drÉªÅ‹k/",
+      "definition": "To take a liquid into the mouth and swallow.",
+      "urduMeaning": "Ù¾ÛŒÙ†Ø§",
+      "exampleSentence": "He drinks a cup of green tea after lunch."
+    },
+    {
+      "word": "eat",
+      "partOfSpeech": "verb",
+      "phonetic": "/iË t/",
+      "definition": "To put food into the mouth and chew and swallow it.",
+      "urduMeaning": "Ú©Ú¾Ø§Ù†Ø§",
+      "exampleSentence": "They eat fresh fruit every day."
+    },
+    {
+      "word": "walk",
+      "partOfSpeech": "verb",
+      "phonetic": "/wÉ”Ë k/",
+      "definition": "To move at a regular pace by lifting and setting down each foot in turn.",
+      "urduMeaning": "Ù¾ÛŒØ¯Ù„ Ú†Ù„Ù†Ø§",
+      "exampleSentence": "I walk to the office every morning."
+    },
+    {
+      "word": "read",
+      "partOfSpeech": "verb",
+      "phonetic": "/riË d/",
+      "definition": "To look at and comprehend the meaning of written words.",
+      "urduMeaning": "Ù¾Ú‘Ú¾Ù†Ø§",
+      "exampleSentence": "She reads the morning newspaper daily."
+    },
+    {
+      "word": "speak",
+      "partOfSpeech": "verb",
+      "phonetic": "/spiË k/",
+      "definition": "To say something in order to convey information or feeling.",
+      "urduMeaning": "Ø¨ÙˆÙ„Ù†Ø§",
+      "exampleSentence": "They speak English and Urdu fluently."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u3-l1-1",
+      "type": "explain",
+      "title": "Mastering the Present Simple Tense",
+      "content": "We use the **Present Simple** tense to speak about things that happen **regularly**, **habitual actions**, or things that are **always true**.\n\nIt is not used for what is happening right this second; it describes your permanent life habits and universal realities.",
+      "tables": [
+        {
+          "title": "Form / Use / Signal Words / Common Mistakes",
+          "headers": [
+            "Aspect",
+            "Rule Details",
+            "Examples",
+            "Crucial Note"
+          ],
+          "rows": [
+            [
+              "Form (I, You, We, They)",
+              "Subject + Base Verb (V1)",
+              "I work / You study / They live in Lahore",
+              "No suffixes added to the verb."
+            ],
+            [
+              "Form (He, She, It)",
+              "Subject + Verb-s / -es",
+              "He works / She studies / It rains",
+              "Must add -s/-es for singular third person."
+            ],
+            [
+              "Use",
+              "Habits, general truths, scheduled routines",
+              "The sun rises in the east / I drink coffee",
+              "Expresses facts and permanent situations."
+            ],
+            [
+              "Signal Words",
+              "Every day, always, usually, often, on Mondays",
+              "I run every morning / She usually wakes early",
+              "Time phrases indicate frequency."
+            ],
+            [
+              "Common Mistakes",
+              "Dropping the -s on He/She/It",
+              "Incorrect: 'He live here' -> Correct: 'He lives here'",
+              "Subject-verb agreement is mandatory."
+            ]
+          ]
+        },
+        {
+          "title": "Conjugation Table: 'To Work'",
+          "headers": [
+            "Subject Pronoun",
+            "Verb Form",
+            "Example Sentence",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "I",
+              "work",
+              "I work at a bank.",
+              "Ù…ÛŒÚº Ø¨ÛŒÙ†Ú© Ù…ÛŒÚº Ú©Ø§Ù… Ú©Ø±ØªØ§ Û ÙˆÚºÛ”"
+            ],
+            [
+              "You",
+              "work",
+              "You work very hard.",
+              "Ø¢Ù¾ Ø¨Û Øª Ù…Ø­Ù†Øª Ø³Û’ Ú©Ø§Ù… Ú©Ø±ØªÛ’ Û ÛŒÚºÛ”"
+            ],
+            [
+              "He",
+              "works",
+              "He works in Karachi.",
+              "ÙˆÛ  Ú©Ø±Ø§Ú†ÛŒ Ù…ÛŒÚº Ú©Ø§Ù… Ú©Ø±ØªØ§ Û Û’Û”"
+            ],
+            [
+              "She",
+              "works",
+              "She works as a teacher.",
+              "ÙˆÛ  Ø¨Ø·ÙˆØ± Ø§Ø³ØªØ§Ù†ÛŒ Ú©Ø§Ù… Ú©Ø±ØªÛŒ Û ÛŒÚºÛ”"
+            ],
+            [
+              "It",
+              "works",
+              "It works smoothly.",
+              "ÛŒÛ  Ø±ÙˆØ§Ù†ÛŒ Ø³Û’ Ú©Ø§Ù… Ú©Ø±ØªØ§ Û Û’Û”"
+            ],
+            [
+              "We",
+              "work",
+              "We work from home.",
+              "Û Ù… Ú¯Ú¾Ø± Ø³Û’ Ú©Ø§Ù… Ú©Ø±ØªÛ’ Û ÛŒÚºÛ”"
+            ],
+            [
+              "They",
+              "work",
+              "They work at the hospital.",
+              "ÙˆÛ  Û Ø³Ù¾ØªØ§Ù„ Ù…ÛŒÚº Ú©Ø§Ù… Ú©Ø±ØªÛ’ Û ÛŒÚºÛ”"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Habit vs. Right Now",
+          "text": "Do not use Present Simple for an action happening at this exact second (that is Present Continuous). Say: 'I drink water every day' (habit) vs 'I am drinking water now'."
+        },
+        {
+          "type": "warning",
+          "title": "The SVO Order Rule",
+          "text": "English strictly follows Subject + Verb + Object. Say: 'I (S) drink (V) tea (O)', never 'I tea drink'."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l1-2",
+      "type": "timeline",
+      "title": "Present Simple Routine Timeline",
+      "timeline": {
+        "title": "Repeated Habit Across Time",
+        "past": "Habit in the past",
+        "present": "I drink tea every morning (Current repeating habit)",
+        "future": "Habit continues in future",
+        "activePoint": "present",
+        "explanation": "Present simple indicates regular repeating points over time, not a single momentary action."
+      }
+    },
+    {
+      "id": "sec-a1-u3-l1-3",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "I wake up at six o'clock every morning.",
+          "phonetic": "/aÉª weÉªk ÊŒp Ã¦t sÉªks É™ËˆklÉ’k Ëˆevri ËˆmÉ”Ë rnÉªÅ‹/",
+          "urdu": "Ù…ÛŒÚº Û Ø± ØµØ¨Ø­ Ú†Ú¾Û’ Ø¨Ø¬Û’ Ø¨ÛŒØ¯Ø§Ø± Û ÙˆØªØ§ Û ÙˆÚºÛ”",
+          "audioText": "I wake up at six o'clock every morning."
+        },
+        {
+          "english": "She speaks English and Urdu with her classmates.",
+          "phonetic": "/ÊƒiË  spiË ks ËˆÉªÅ‹É¡lÉªÊƒ Ã¦nd ËˆÊŠÉ™duË  wÉªÃ° hÉœË r ËˆklÉ‘Ë smeÉªts/",
+          "urdu": "ÙˆÛ  Ø§Ù¾Ù†Û’ Û Ù… Ø¬Ù…Ø§Ø¹ØªÙˆÚº Ú©Û’ Ø³Ø§ØªÚ¾ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ø§ÙˆØ± Ø§Ø±Ø¯Ùˆ Ø¨ÙˆÙ„ØªÛŒ Û Û’Û”",
+          "audioText": "She speaks English and Urdu with her classmates."
+        },
+        {
+          "english": "My parents live in a quiet neighbourhood in Rawalpindi.",
+          "phonetic": "/maÉª ËˆpeÉ™rÉ™nts lÉªv Éªn É™ ËˆkwaÉªÉ™t ËˆneÉªbÉ™hÊŠd Éªn rÉ‘Ë wÙ„ËˆpÉªndi/",
+          "urdu": "Ù…ÛŒØ±Û’ ÙˆØ§Ù„Ø¯ÛŒÙ† Ø±Ø§ÙˆÙ„Ù¾Ù†ÚˆÛŒ Ú©Û’ Ø§ÛŒÚ© Ù¾Ø±Ø³Ú©ÙˆÙ† Ù…Ø­Ù„Û’ Ù…ÛŒÚº Ø±Û ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "My parents live in a quiet neighbourhood in Rawalpindi."
+        },
+        {
+          "english": "He drinks a warm cup of tea after dinner.",
+          "phonetic": "/hiË  drÉªÅ‹ks É™ wÉ”Ë m kÊŒp É™v tiË  ËˆÉ‘Ë ftÉ™r ËˆdÉªnÉ™r/",
+          "urdu": "ÙˆÛ  Ø±Ø§Øª Ú©Û’ Ú©Ú¾Ø§Ù†Û’ Ú©Û’ Ø¨Ø¹Ø¯ Ú¯Ø±Ù… Ú†Ø§Ø¦Û’ Ú©Ø§ Ú©Ù¾ Ù¾ÛŒØªØ§ Û Û’Û”",
+          "audioText": "He drinks a warm cup of tea after dinner."
+        },
+        {
+          "english": "We study English grammar for thirty minutes every day.",
+          "phonetic": "/wiË  ËˆstÊŒdi ËˆÉªÅ‹É¡lÉªÊƒ ËˆÉ¡rÃ¦mÉ™r fÉ”Ë r ËˆÎ¸ÉœË ti ËˆmÉªnÉªts Ëˆevri deÉª/",
+          "urdu": "Û Ù… Û Ø± Ø±ÙˆØ² ØªÛŒØ³ Ù…Ù†Ù¹ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú¯Ø±Ø§Ù…Ø± Ù¾Ú‘Ú¾ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "We study English grammar for thirty minutes every day."
+        },
+        {
+          "english": "The sun rises in the east every day.",
+          "phonetic": "/Ã°É™ sÊŒn ËˆraÉªzÉªz Éªn Ã°i iË st Ëˆevri deÉª/",
+          "urdu": "Ø³ÙˆØ±Ø¬ Û Ø± Ø±ÙˆØ² Ù…Ø´Ø±Ù‚ Ø³Û’ Ù†Ú©Ù„ØªØ§ Û Û’Û”",
+          "audioText": "The sun rises in the east every day."
+        },
+        {
+          "english": "They walk in the park near their home every evening.",
+          "phonetic": "/Ã°eÉª wÉ”Ë k Éªn Ã°É™ pÉ‘Ë k nÉªÉ™r Ã°eÉ™r hÉ™ÊŠm Ëˆevri ËˆiË vnÉªÅ‹/",
+          "urdu": "ÙˆÛ  Û Ø± Ø´Ø§Ù… Ø§Ù¾Ù†Û’ Ú¯Ú¾Ø± Ú©Û’ Ù‚Ø±ÛŒØ¨ Ù¾Ø§Ø±Ú© Ù…ÛŒÚº Ù¾ÛŒØ¯Ù„ Ú†Ù„ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "They walk in the park near their home every evening."
+        },
+        {
+          "english": "Tariq works at an international trading firm.",
+          "phonetic": "/ËˆtÉ‘Ë rÉªk wÉœË ks Ã¦t É™n ËŒÉªntÉ™ËˆnÃ¦ÊƒnÉ™l ËˆtreÉªdÉªÅ‹ fÉœË m/",
+          "urdu": "Ø·Ø§Ø±Ù‚ Ø§ÛŒÚ© Ø¨ÛŒÙ† Ø§Ù„Ø§Ù‚ÙˆØ§Ù…ÛŒ ØªØ¬Ø§Ø±ØªÛŒ Ú©Ù…Ù¾Ù†ÛŒ Ù…ÛŒÚº Ú©Ø§Ù… Ú©Ø±ØªØ§ Û Û’Û”",
+          "audioText": "Tariq works at an international trading firm."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l1-4",
+      "type": "dialogue",
+      "title": "Discussing Daily Habits",
+      "dialogue": [
+        {
+          "speaker": "Usman",
+          "avatar": "U",
+          "english": "What time do you usually wake up, Bilal?",
+          "urdu": "Ø¨Ù„Ø§Ù„ØŒ Ø¢Ù¾ Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± Ú©Ø³ ÙˆÙ‚Øª Ø¨ÛŒØ¯Ø§Ø± Û ÙˆØªÛ’ Û ÛŒÚºØŸ",
+          "audioText": "What time do you usually wake up, Bilal?"
+        },
+        {
+          "speaker": "Bilal",
+          "avatar": "B",
+          "english": "I wake up at Fajr prayer, around five o'clock. Then I walk in the garden.",
+          "urdu": "Ù…ÛŒÚº Ù†Ù…Ø§Ø²Ù  Ù Ø¬Ø± Ú©Û’ ÙˆÙ‚Øª Ù¾Ø§Ù†Ú† Ø¨Ø¬Û’ Ø¨ÛŒØ¯Ø§Ø± Û ÙˆØªØ§ Û ÙˆÚºÛ” Ù¾Ú¾Ø± Ù…ÛŒÚº Ø¨Ø§Øº Ù…ÛŒÚº Ù¾ÛŒØ¯Ù„ Ú†Ù„ØªØ§ Û ÙˆÚºÛ”",
+          "audioText": "I wake up at Fajr prayer, around five o'clock. Then I walk in the garden."
+        },
+        {
+          "speaker": "Usman",
+          "avatar": "U",
+          "english": "That sounds healthy! Do you eat breakfast before work?",
+          "urdu": "ÛŒÛ  Ø¨Û Øª ØµØ­Øª Ù…Ù†Ø¯Ø§Ù†Û  Ø¹Ø§Ø¯Øª Û Û’! Ú©ÛŒØ§ Ø¢Ù¾ Ú©Ø§Ù… Ù¾Ø± Ø¬Ø§Ù†Û’ Ø³Û’ Ù¾Û Ù„Û’ Ù†Ø§Ø´ØªÛ  Ú©Ø±ØªÛ’ Û ÛŒÚºØŸ",
+          "audioText": "That sounds healthy! Do you eat breakfast before work?"
+        },
+        {
+          "speaker": "Bilal",
+          "avatar": "B",
+          "english": "Yes, I eat two eggs and drink tea with my family.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºØŒ Ù…ÛŒÚº Ø§Ù¾Ù†Û’ Ú¯Ú¾Ø± ÙˆØ§Ù„ÙˆÚº Ú©Û’ Ø³Ø§ØªÚ¾ Ø¯Ùˆ Ø§Ù†ÚˆÛ’ Ú©Ú¾Ø§ØªØ§ Û ÙˆÚº Ø§ÙˆØ± Ú†Ø§Ø¦Û’ Ù¾ÛŒØªØ§ Û ÙˆÚºÛ”",
+          "audioText": "Yes, I eat two eggs and drink tea with my family."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l1-5",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u3-l1-1",
+          "type": "mcq",
+          "skillTag": "present-simple",
+          "prompt": "Choose the correct verb form: 'My sister _____ in a hospital.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "working"
+            },
+            {
+              "id": "opt-2",
+              "text": "work"
+            },
+            {
+              "id": "opt-3",
+              "text": "works"
+            },
+            {
+              "id": "opt-4",
+              "text": "is work"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'My sister' is singular third-person (she), requiring the verb with -s: 'works'.",
+          "urduExplanation": "'My sister' ÙˆØ§Ø­Ø¯ ØºØ§Ø¦Ø¨ (she) Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ Ù Ø¹Ù„ Ú©Û’ Ø³Ø§ØªÚ¾ -s Ù„Ú¯ Ú©Ø± 'works' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "ex-a1-u3-l1-2",
+          "type": "mcq",
+          "skillTag": "present-simple",
+          "prompt": "Choose the correct verb form: 'They _____ English very well.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "speaks"
+            },
+            {
+              "id": "opt-2",
+              "text": "are speak"
+            },
+            {
+              "id": "opt-3",
+              "text": "speaking"
+            },
+            {
+              "id": "opt-4",
+              "text": "speak"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "With the plural subject 'They', the base verb 'speak' is used without any suffix.",
+          "urduExplanation": "Ø¬Ù…Ø¹ Ù Ø§Ø¹Ù„ 'They' Ú©Û’ Ø³Ø§ØªÚ¾ Ø¨ØºÛŒØ± Ú©Ø³ÛŒ Ø§Ø¶Ø§Ù Û’ Ú©Û’ 'speak' Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l1-3",
+          "type": "fill_blank",
+          "skillTag": "present-simple",
+          "prompt": "Complete the sentence with the correct form of 'live': 'We _____ in Multan.'",
+          "correctAnswer": "live",
+          "explanation": "'We' takes the base verb 'live' without -s.",
+          "urduExplanation": "'We' Ú©Û’ Ø³Ø§ØªÚ¾ base verb 'live' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l1-4",
+          "type": "fill_blank",
+          "skillTag": "present-simple",
+          "prompt": "Complete with the correct form of 'drink': 'He _____ a glass of milk before bed.'",
+          "correctAnswer": "drinks",
+          "explanation": "Third-person singular 'He' requires 'drinks' with -s.",
+          "urduExplanation": "'He' Ú©Û’ Ø³Ø§ØªÚ¾ Ù Ø¹Ù„ Ù…ÛŒÚº -s Ú©Ø§ Ø§Ø¶Ø§Ù Û  Û ÙˆÚ©Ø± 'drinks' Ø¨Ù†ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l1-5",
+          "type": "order_sentence",
+          "skillTag": "present-simple",
+          "prompt": "Rearrange the words to form a correct affirmative sentence:",
+          "sentenceTokens": [
+            "I",
+            "walk",
+            "to",
+            "work",
+            "every",
+            "morning",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "explanation": "Subject (I) + verb (walk) + prepositional phrase (to work) + frequency phrase (every morning).",
+          "urduExplanation": "I walk to work every morning."
+        },
+        {
+          "id": "ex-a1-u3-l1-6",
+          "type": "order_sentence",
+          "skillTag": "present-simple",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "She",
+            "reads",
+            "the",
+            "newspaper",
+            "daily",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "explanation": "Subject (She) + verb (reads) + object (the newspaper) + adverb (daily).",
+          "urduExplanation": "She reads the newspaper daily."
+        },
+        {
+          "id": "ex-a1-u3-l1-7",
+          "type": "match_pairs",
+          "skillTag": "present-simple",
+          "prompt": "Match each subject pronoun with its correct verb form of 'play':",
+          "pairs": [
+            {
+              "left": "He",
+              "right": "plays"
+            },
+            {
+              "left": "They",
+              "right": "play"
+            },
+            {
+              "left": "She",
+              "right": "plays"
+            },
+            {
+              "left": "We",
+              "right": "play"
+            }
+          ],
+          "explanation": "Third-person singular takes 'plays'; plural and I/you take 'play'.",
+          "urduExplanation": "Ù Ø§Ø¹Ù„ Ú©Û’ Ù„Ø­Ø§Ø¸ Ø³Û’ Ù Ø¹Ù„ Ú©Ø§ ØµØ­ÛŒØ­ Ø¬ÙˆÚ‘Ø§ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l1-8",
+          "type": "error_correction",
+          "skillTag": "present-simple",
+          "prompt": "Find and correct the mistake: 'My brother live in Peshawar.'",
+          "correctAnswer": "My brother lives in Peshawar.",
+          "explanation": "'My brother' is singular third-person, so the verb must be 'lives'.",
+          "urduExplanation": "'My brother' ÙˆØ§Ø­Ø¯ Û Û’ØŒ Ø§Ø³ Ù„ÛŒÛ’ 'lives' Ù„Ú©Ú¾Ù†Ø§ Ø¶Ø±ÙˆØ±ÛŒ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l1-9",
+          "type": "error_correction",
+          "skillTag": "present-simple",
+          "prompt": "Find and correct the mistake: 'They works at the local bank.'",
+          "correctAnswer": "They work at the local bank.",
+          "explanation": "'They' is a plural subject and takes the base verb 'work' without -s.",
+          "urduExplanation": "'They' Ú©Û’ Ø³Ø§ØªÚ¾ -s Ù†Û ÛŒÚº Ù„Ú¯ØªØ§ØŒ 'work' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l1-10",
+          "type": "true_false",
+          "skillTag": "present-simple",
+          "prompt": "Present simple is used to talk about actions happening right now at this second. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. Present Simple is for routines, habits, and permanent facts. Actions happening now use Present Continuous.",
+          "urduExplanation": "ØºÙ„Ø·Û” Ù…ÙˆØ¬ÙˆØ¯Û  Ù„Ù…Ø­Û’ Ù…ÛŒÚº Û ÙˆÙ†Û’ ÙˆØ§Ù„Û’ Ú©Ø§Ù… Ú©Û’ Ù„ÛŒÛ’ Present Continuous Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l1-6",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u3-l1-1",
+          "type": "mcq",
+          "skillTag": "present-simple",
+          "prompt": "Which sentence expresses a general fact using present simple correctly?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Water boils at 100 degrees Celsius."
+            },
+            {
+              "id": "opt-2",
+              "text": "Water is boil at 100 degrees Celsius."
+            },
+            {
+              "id": "opt-3",
+              "text": "Water boiling at 100 degrees Celsius."
+            },
+            {
+              "id": "opt-4",
+              "text": "Water boil at 100 degrees Celsius."
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Water' is an uncountable singular noun, so the verb takes -s: 'boils'.",
+          "urduExplanation": "'Water' ÙˆØ§Ø­Ø¯ Û Û’ Ø§Ø³ Ù„ÛŒÛ’ 'boils' ØµØ­ÛŒØ­ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l1-2",
+          "type": "mcq",
+          "skillTag": "present-simple",
+          "prompt": "Complete the sentence: 'Ali and Ahmed _____ cricket every Sunday.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "plays"
+            },
+            {
+              "id": "opt-2",
+              "text": "play"
+            },
+            {
+              "id": "opt-3",
+              "text": "playing"
+            },
+            {
+              "id": "opt-4",
+              "text": "are play"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Ali and Ahmed' form a plural subject (they), requiring the base form 'play'.",
+          "urduExplanation": "Ø¹Ù„ÛŒ Ø§ÙˆØ± Ø§Ø­Ù…Ø¯ Ù…Ù„ Ú©Ø± Ø¬Ù…Ø¹ Ù Ø§Ø¹Ù„ Ø¨Ù†ØªÛ’ Û ÛŒÚºØŒ Ø§Ø³ Ù„ÛŒÛ’ 'play' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u3-l1-3",
+          "type": "mcq",
+          "skillTag": "present-simple",
+          "prompt": "Which pronoun requires the verb to end in -s or -es in present simple?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "I"
+            },
+            {
+              "id": "opt-2",
+              "text": "We"
+            },
+            {
+              "id": "opt-3",
+              "text": "She"
+            },
+            {
+              "id": "opt-4",
+              "text": "They"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'She' is third-person singular and always requires the -s or -es suffix.",
+          "urduExplanation": "'She' Ú©Û’ Ø³Ø§ØªÚ¾ Ù Ø¹Ù„ Ù…ÛŒÚº -s/-es Ú©Ø§ Ø§Ø¶Ø§Ù Û  Ù„Ø§Ø²Ù…ÛŒ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l1-4",
+          "type": "mcq",
+          "skillTag": "present-simple",
+          "prompt": "Select the sentence with INCORRECT grammar:",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "He works late on Tuesdays."
+            },
+            {
+              "id": "opt-2",
+              "text": "I speak three languages."
+            },
+            {
+              "id": "opt-3",
+              "text": "She live in a new flat."
+            },
+            {
+              "id": "opt-4",
+              "text": "They drink green tea daily."
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "'She live' is incorrect because third-person singular requires 'lives'.",
+          "urduExplanation": "'She live' ØºÙ„Ø· Û Û’ØŒ ØµØ­ÛŒØ­ 'She lives' Û ÙˆÙ†Ø§ Ú†Ø§Û ÛŒÛ’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l1-5",
+          "type": "mcq",
+          "skillTag": "present-simple",
+          "prompt": "What does the sentence 'I wake up at 7 AM' express?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "A daily habit or routine"
+            },
+            {
+              "id": "opt-2",
+              "text": "An action completed yesterday"
+            },
+            {
+              "id": "opt-3",
+              "text": "A temporary plan for next month"
+            },
+            {
+              "id": "opt-4",
+              "text": "An action happening at this exact second"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "Present simple expresses regular daily habits and routines.",
+          "urduExplanation": "ÛŒÛ  Ø¬Ù…Ù„Û  Ø±ÙˆØ²Ù…Ø±Û  Ú©ÛŒ Ø¹Ø§Ø¯Øª ÛŒØ§ Ù…Ø¹Ù…ÙˆÙ„ Ú©Ùˆ Ø¸Ø§Û Ø± Ú©Ø±ØªØ§ Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l1-7",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Mastery points for Present Simple affirmative:",
+      "summaryPoints": [
+        "Use Present Simple for habits, routines, and universal truths.",
+        "I, You, We, They + Base Verb (I work, we study).",
+        "He, She, It + Verb-s / -es (He works, she studies).",
+        "Follow SVO word order: Subject + Verb + Object (I drink tea).",
+        "Signal words include: every day, always, usually, on Mondays."
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l1-8",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… Ø¹Ø§Ø¯Øª ÛŒØ§ Ø±ÙˆØ²Ù…Ø±Û  Ú©Û’ Ù…Ø¹Ù…ÙˆÙ„ Ú©Û’ Ù„ÛŒÛ’ Ù„Ù Ø¸ Ú©Û’ Ø³Ø§ØªÚ¾ **'ØªØ§ Û Û’ / ØªÛŒ Û Û’ / ØªÛ’ Û ÛŒÚº'** Ù„Ú¯Ø§ØªÛ’ Û ÛŒÚº:\n- 'Ù…ÛŒÚº Ú†Ø§Ø¦Û’ Ù¾ÛŒ**ØªØ§ Û ÙˆÚº**'\n- 'ÙˆÛ  Ø§Ø³Ú©ÙˆÙ„ Ø¬Ø§**ØªÛŒ Û Û’**'\n\nØ§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø¨Ú¾ÛŒ Ø¹Ø§Ø¯Øª Ú©Û’ Ù„ÛŒÛ’ Û ÛŒ Present Simple Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û” Ù„ÛŒÚ©Ù† Ø¯Ùˆ Ø§Û Ù… Ø¨Ø§ØªÛŒÚº ÛŒØ§Ø¯ Ø±Ú©Ú¾ÛŒÚº:\n1. **Ø¬Ù…Ù„Û’ Ú©ÛŒ ØªØ±ØªÛŒØ¨ (Word Order)**: Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Ù Ø¹Ù„ Ø¢Ø®Ø± Ù…ÛŒÚº Ø¢ØªØ§ Û Û’ (Ù…ÛŒÚº + Ú†Ø§Ø¦Û’ + Ù¾ÛŒØªØ§ Û ÙˆÚº = SOV)ØŒ Ø¬Ø¨Ú©Û  Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ù Ø¹Ù„ Ø¯Ø±Ù…ÛŒØ§Ù† Ù…ÛŒÚº Ø¢ØªØ§ Û Û’: **'I (S) drink (V) tea (O)'** (SVO)Û”\n2. **He/She/It Ú©Û’ Ø³Ø§ØªÚ¾ -s**: Ø¬Ø¨ Ù Ø§Ø¹Ù„ ÙˆØ§Ø­Ø¯ ØºØ§Ø¦Ø¨ Û Ùˆ ØªÙˆ Ù Ø¹Ù„ Ú©Û’ Ø³Ø§ØªÚ¾ **-s** Ù„Ú¯Ø§Ù†Ø§ Ù„Ø§Ø²Ù…ÛŒ Û Û’ØŒ Ø¬ÛŒØ³Û’: **'He works'** (He work Ú©Û Ù†Ø§ ØºÙ„Ø· Û Û’)Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

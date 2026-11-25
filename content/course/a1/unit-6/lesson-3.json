@@ -1,0 +1,658 @@
+{
+  "id": "eng-a1-u6-l3",
+  "level": "A1",
+  "unit": "unit-6",
+  "order": 3,
+  "title": "Ordinal Numbers (1st, 2nd, 3rd) & Birthdays",
+  "description": "Form and use ordinal numbers for sequence, dates, and answering 'When is your birthday?'.",
+  "objectives": [
+    "Distinguish between cardinal numbers (one, two, three) and ordinal numbers (first, second, third)",
+    "Form ordinal numbers up to 31st using suffixes (-st, -nd, -rd, -th)",
+    "State dates and birthdays accurately in spoken and written English"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u6-l2"
+  ],
+  "skillTags": [
+    "ordinals",
+    "dates",
+    "birthdays",
+    "calendar"
+  ],
+  "vocabularyList": [
+    {
+      "word": "first",
+      "partOfSpeech": "numeral",
+      "phonetic": "/fÉœË st/",
+      "definition": "Coming before all others in time or order; 1st.",
+      "urduMeaning": "Ù¾Û Ù„Ø§ / Ù¾Û Ù„ÛŒ",
+      "exampleSentence": "He won first prize in the speech contest."
+    },
+    {
+      "word": "second",
+      "partOfSpeech": "numeral",
+      "phonetic": "/ËˆsekÉ™nd/",
+      "definition": "Coming immediately after the first in order or time; 2nd.",
+      "urduMeaning": "Ø¯ÙˆØ³Ø±Ø§ / Ø¯ÙˆØ³Ø±ÛŒ",
+      "exampleSentence": "Our flat is on the second floor."
+    },
+    {
+      "word": "third",
+      "partOfSpeech": "numeral",
+      "phonetic": "/Î¸ÉœË d/",
+      "definition": "Constituting number three in a sequence; 3rd.",
+      "urduMeaning": "ØªÛŒØ³Ø±Ø§ / ØªÛŒØ³Ø±ÛŒ",
+      "exampleSentence": "The office is on the third floor."
+    },
+    {
+      "word": "fourth",
+      "partOfSpeech": "numeral",
+      "phonetic": "/fÉ”Ë Î¸/",
+      "definition": "Constituting number four in a sequence; 4th.",
+      "urduMeaning": "Ú†ÙˆØªÚ¾Ø§ / Ú†ÙˆØªÚ¾ÛŒ",
+      "exampleSentence": "Today is the fourth day of our training."
+    },
+    {
+      "word": "fifth",
+      "partOfSpeech": "numeral",
+      "phonetic": "/fÉªfÎ¸/",
+      "definition": "Constituting number five in a sequence; 5th (note spelling change from five).",
+      "urduMeaning": "Ù¾Ø§Ù†Ú†ÙˆØ§Úº",
+      "exampleSentence": "She finished in fifth position."
+    },
+    {
+      "word": "twentieth",
+      "partOfSpeech": "numeral",
+      "phonetic": "/ËˆtwentiÉ™Î¸/",
+      "definition": "Constituting number twenty in a sequence; 20th.",
+      "urduMeaning": "Ø¨ÛŒØ³ÙˆØ§Úº",
+      "exampleSentence": "They celebrated their twentieth anniversary."
+    },
+    {
+      "word": "birthday",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆbÉœË Î¸deÉª/",
+      "definition": "The anniversary of the day on which a person was born.",
+      "urduMeaning": "Ø³Ø§Ù„Ú¯Ø±Û ",
+      "exampleSentence": "When is your birthday? It is on the fifth of May."
+    },
+    {
+      "word": "date",
+      "partOfSpeech": "noun",
+      "phonetic": "/deÉªt/",
+      "definition": "The day of the month or year as specified by a number.",
+      "urduMeaning": "ØªØ§Ø±ÛŒØ®",
+      "exampleSentence": "What is today's date? Today is the 12th of October."
+    },
+    {
+      "word": "year",
+      "partOfSpeech": "noun",
+      "phonetic": "/jÉªÉ™r/",
+      "definition": "The time taken by the earth to make one revolution around the sun (365 or 366 days).",
+      "urduMeaning": "Ø³Ø§Ù„",
+      "exampleSentence": "He was born in the year 2002."
+    },
+    {
+      "word": "celebration",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËŒselÉªËˆbreÉªÊƒn/",
+      "definition": "The action of marking one's pleasure at an important event or occasion by engaging in enjoyable activity.",
+      "urduMeaning": "Ø¬Ø´Ù† / ØªÙ‚Ø±ÛŒØ¨",
+      "exampleSentence": "The Independence Day celebration was grand."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u6-l3-1",
+      "type": "explain",
+      "title": "Ordinal Numbers & Saying Dates",
+      "content": "While **cardinal numbers** tell *how many* (one, two, three), **ordinal numbers** tell *position or order* in a sequence (first, second, third).\n\n### Suffix Rules for Ordinals\n- Ends in 1 -> **-st** (1st = first, 21st = twenty-first, 31st = thirty-first)\n- Ends in 2 -> **-nd** (2nd = second, 22nd = twenty-second)\n- Ends in 3 -> **-rd** (3rd = third, 23rd = twenty-third)\n- All other numbers (4-20, 24-30) -> **-th** (4th = fourth, 10th = tenth, 11th = eleventh, 12th = twelfth)\n\n### Important Spelling Shifts\n- 5: five -> **fifth** (not fiveth!)\n- 8: eight -> **eighth** (only one 't')\n- 9: nine -> **ninth** (drops the 'e'!)\n- 12: twelve -> **twelfth** ('ve' becomes 'f')\n- 20: twenty -> **twentieth** ('y' becomes 'ie')",
+      "tables": [
+        {
+          "title": "Calendar Dates (1st to 31st)",
+          "headers": [
+            "Day Number",
+            "Written Number",
+            "Full Word Form",
+            "Spoken As"
+          ],
+          "rows": [
+            [
+              "1",
+              "1st",
+              "first",
+              "the first of..."
+            ],
+            [
+              "2",
+              "2nd",
+              "second",
+              "the second of..."
+            ],
+            [
+              "3",
+              "3rd",
+              "third",
+              "the third of..."
+            ],
+            [
+              "5",
+              "5th",
+              "fifth (spelling shift)",
+              "the fifth of..."
+            ],
+            [
+              "9",
+              "9th",
+              "ninth (drops 'e')",
+              "the ninth of..."
+            ],
+            [
+              "12",
+              "12th",
+              "twelfth ('f' sound)",
+              "the twelfth of..."
+            ],
+            [
+              "21",
+              "21st",
+              "twenty-first",
+              "the twenty-first of..."
+            ],
+            [
+              "31",
+              "31st",
+              "thirty-first",
+              "the thirty-first of..."
+            ]
+          ]
+        },
+        {
+          "title": "How to Say and Write Dates",
+          "headers": [
+            "Format",
+            "How It Is Written",
+            "How It Is Spoken",
+            "Preposition"
+          ],
+          "rows": [
+            [
+              "British Way (Day/Month)",
+              "14 August / 14th August",
+              "'the fourteenth of August'",
+              "ON the 14th of August"
+            ],
+            [
+              "American Way (Month/Day)",
+              "August 14 / August 14th",
+              "'August fourteenth'",
+              "ON August 14th"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Saying 'The' and 'Of' in Spoken Dates",
+          "text": "Even if written simply as *14 August*, native British English speakers say aloud: **'the fourteenth of August'**."
+        },
+        {
+          "type": "warning",
+          "title": "Preposition for Dates",
+          "text": "A specific date ALWAYS takes **ON**: *He was born **on** the 5th of May* (never 'in the 5th of May')."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l3-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "When is your birthday? My birthday is on the fifth of May.",
+          "phonetic": "/wen Éªz jÉ”Ë r ËˆbÉœË Î¸deÉª maÉª ËˆbÉœË Î¸deÉª Éªz É’n Ã°É™ fÉªfÎ¸ É™v meÉª/",
+          "urdu": "Ø¢Ù¾ Ú©ÛŒ Ø³Ø§Ù„Ú¯Ø±Û  Ú©Ø¨ Û Û’ØŸ Ù…ÛŒØ±ÛŒ Ø³Ø§Ù„Ú¯Ø±Û  Ù¾Ø§Ù†Ú† Ù…Ø¦ÛŒ Ú©Ùˆ Û Û’Û”",
+          "audioText": "When is your birthday? My birthday is on the fifth of May."
+        },
+        {
+          "english": "Pakistan gained independence on the fourteenth of August, 1947.",
+          "phonetic": "/ËŒpÉ‘Ë kÉªËˆstÉ‘Ë n É¡eÉªnd ËŒÉªndÉªËˆpendÉ™ns É’n Ã°É™ ËŒfÉ”Ë ËˆtiË nÎ¸ É™v ËˆÉ”Ë É¡É™st ËˆnaÉªnËˆtiË n ËˆfÉ”Ë ti Ëˆsevn/",
+          "urdu": "Ù¾Ø§Ú©Ø³ØªØ§Ù† Ù†Û’ 14 Ø§Ú¯Ø³Øª 1947 Ú©Ùˆ Ø¢Ø²Ø§Ø¯ÛŒ Ø­Ø§ØµÙ„ Ú©ÛŒÛ”",
+          "audioText": "Pakistan gained independence on the fourteenth of August, 1947."
+        },
+        {
+          "english": "Our new apartment is on the third floor of the building.",
+          "phonetic": "/ËˆaÊŠÉ™r njuË  É™ËˆpÉ‘Ë tmÉ™nt Éªz É’n Ã°É™ Î¸ÉœË d flÉ”Ë r É™v Ã°É™ ËˆbÉªldÉªÅ‹/",
+          "urdu": "Û Ù…Ø§Ø±Ø§ Ù†ÛŒØ§ Ù Ù„ÛŒÙ¹ Ø¹Ù…Ø§Ø±Øª Ú©ÛŒ ØªÛŒØ³Ø±ÛŒ Ù…Ù†Ø²Ù„ Ù¾Ø± Û Û’Û”",
+          "audioText": "Our new apartment is on the third floor of the building."
+        },
+        {
+          "english": "She achieved first place in the nationwide mathematics competition.",
+          "phonetic": "/ÊƒiË  É™ËˆtÊƒiË vd fÉœË st pleÉªs Éªn Ã°É™ ËŒneÉªÊƒnËˆwaÉªd ËŒmÃ¦Î¸É™ËˆmÃ¦tÉªks ËŒkÉ’mpÉ™ËˆtÉªÊƒn/",
+          "urdu": "Ø§Ø³ Ù†Û’ Ù…Ù„Ú©ÛŒ Ø³Ø·Ø­ Ú©Û’ Ø±ÛŒØ§Ø¶ÛŒ Ú©Û’ Ù…Ù‚Ø§Ø¨Ù„Û’ Ù…ÛŒÚº Ù¾Û Ù„ÛŒ Ù¾ÙˆØ²ÛŒØ´Ù† Ø­Ø§ØµÙ„ Ú©ÛŒÛ”",
+          "audioText": "She achieved first place in the nationwide mathematics competition."
+        },
+        {
+          "english": "The meeting is scheduled for the twenty-first of September.",
+          "phonetic": "/Ã°É™ ËˆmiË tÉªÅ‹ Éªz ËˆÊƒedjuË ld fÉ”Ë r Ã°É™ Ëˆtwenti fÉœË st É™v sepËˆtembÉ™r/",
+          "urdu": "Ù…ÛŒÙ¹Ù†Ú¯ 21 Ø³ØªÙ…Ø¨Ø± Ú©Û’ Ù„ÛŒÛ’ Ø·Û’ Û Û’Û”",
+          "audioText": "The meeting is scheduled for the twenty-first of September."
+        },
+        {
+          "english": "Today is the ninth of October, two thousand and twenty-six.",
+          "phonetic": "/tÉ™ËˆdeÉª Éªz Ã°É™ naÉªnÎ¸ É™v É’kËˆtÉ™ÊŠbÉ™r tuË  ËˆÎ¸aÊŠznd Ã¦nd Ëˆtwenti sÉªks/",
+          "urdu": "Ø¢Ø¬ 9 Ø§Ú©ØªÙˆØ¨Ø± 2026 Û Û’Û”",
+          "audioText": "Today is the ninth of October, two thousand and twenty-six."
+        },
+        {
+          "english": "December thirty-first is New Year's Eve across the globe.",
+          "phonetic": "/dÉªËˆsembÉ™r ËˆÎ¸ÉœË ti fÉœË st Éªz njuË  jÉªÉ™z iË v É™ËˆkrÉ’s Ã°É™ É¡lÉ™ÊŠb/",
+          "urdu": "31 Ø¯Ø³Ù…Ø¨Ø± Ø¯Ù†ÛŒØ§ Ø¨ÚÚ¾Ø± Ù…ÛŒÚº Ù†Ø¦Û’ Ø³Ø§Ù„ Ú©ÛŒ Ø´Ø§Ù… Û ÙˆØªÛŒ Û Û’Û”",
+          "audioText": "December thirty-first is New Year's Eve across the globe."
+        },
+        {
+          "english": "They celebrated their twelfth wedding anniversary in Murree.",
+          "phonetic": "/Ã°eÉª ËˆselÉªbreÉªtÉªd Ã°eÉ™r twelfÎ¸ ËˆwedÉªÅ‹ ËŒÃ¦nÉªËˆvÉœË sÉ™ri Éªn ËˆmÊŒri/",
+          "urdu": "Ø§Ù†Û ÙˆÚº Ù†Û’ Ù…Ø±ÛŒ Ù…ÛŒÚº Ø§Ù¾Ù†ÛŒ Ø¨Ø§Ø±Û ÙˆÛŒÚº Ø´Ø§Ø¯ÛŒ Ú©ÛŒ Ø³Ø§Ù„Ú¯Ø±Û  Ù…Ù†Ø§Ø¦ÛŒÛ”",
+          "audioText": "They celebrated their twelfth wedding anniversary in Murree."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l3-3",
+      "type": "dialogue",
+      "title": "Filling Out a Registration Form",
+      "dialogue": [
+        {
+          "speaker": "Registrar",
+          "avatar": "R",
+          "english": "Could you state your date of birth, please?",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Ø¨Ø±Ø§Û  Ú©Ø±Ù… Ø§Ù¾Ù†ÛŒ ØªØ§Ø±ÛŒØ®Ù  Ù¾ÛŒØ¯Ø§Ø¦Ø´ Ø¨ØªØ§ Ø³Ú©ØªÛ’ Û ÛŒÚºØŸ",
+          "audioText": "Could you state your date of birth, please?"
+        },
+        {
+          "speaker": "Applicant",
+          "avatar": "A",
+          "english": "I was born on the twenty-second of July, two thousand and three.",
+          "urdu": "Ù…ÛŒÚº 22 Ø¬ÙˆÙ„Ø§Ø¦ÛŒ 2003 Ú©Ùˆ Ù¾ÛŒØ¯Ø§ Û ÙˆØ§Û”",
+          "audioText": "I was born on the twenty-second of July, two thousand and three."
+        },
+        {
+          "speaker": "Registrar",
+          "avatar": "R",
+          "english": "And what is today's registration date?",
+          "urdu": "Ø§ÙˆØ± Ø¢Ø¬ Ø±Ø¬Ø³Ù¹Ø±ÛŒØ´Ù† Ú©ÛŒ Ú©ÛŒØ§ ØªØ§Ø±ÛŒØ® Û Û’ØŸ",
+          "audioText": "And what is today's registration date?"
+        },
+        {
+          "speaker": "Applicant",
+          "avatar": "A",
+          "english": "Today is the third of November.",
+          "urdu": "Ø¢Ø¬ 3 Ù†ÙˆÙ…Ø¨Ø± Û Û’Û”",
+          "audioText": "Today is the third of November."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l3-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u6-l3-1",
+          "type": "mcq",
+          "skillTag": "ordinals",
+          "prompt": "What is the ordinal number for 1?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "first (1st)"
+            },
+            {
+              "id": "opt-2",
+              "text": "one (1)"
+            },
+            {
+              "id": "opt-3",
+              "text": "once"
+            },
+            {
+              "id": "opt-4",
+              "text": "primary"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "The ordinal number for 1 is 'first' (1st).",
+          "urduExplanation": "1 Ú©Ø§ ordinal number 'first' (1st) Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l3-2",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "Which spelling of the 9th ordinal is correct?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "nineth"
+            },
+            {
+              "id": "opt-2",
+              "text": "ninth"
+            },
+            {
+              "id": "opt-3",
+              "text": "ninethe"
+            },
+            {
+              "id": "opt-4",
+              "text": "ninthe"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Ninth' drops the 'e' from nine: N-I-N-T-H.",
+          "urduExplanation": "'ninth' Ù…ÛŒÚº nine Ú©Ø§ 'e' Ú¯Ø± Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l3-3",
+          "type": "fill_blank",
+          "skillTag": "ordinals",
+          "prompt": "Complete the date suffix: 'Today is the 22_____ of March.'",
+          "correctAnswer": "nd",
+          "explanation": "Numbers ending in 2 take 'nd' (twenty-second).",
+          "urduExplanation": "22 Ú©Û’ Ø³Ø§ØªÚ¾ 'nd' (22nd) Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l3-4",
+          "type": "fill_blank",
+          "skillTag": "prepositions",
+          "prompt": "Complete the preposition: 'My sister was born _____ the 10th of May.'",
+          "correctAnswer": "on",
+          "explanation": "Specific calendar dates take 'on': 'on the 10th of May'.",
+          "urduExplanation": "Ù…Ø®ØµÙˆØµ ØªØ§Ø±ÛŒØ® Ú©Û’ Ù„ÛŒÛ’ 'on' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u6-l3-5",
+          "type": "order_sentence",
+          "skillTag": "dates",
+          "prompt": "Rearrange the words to form a correct sentence:",
+          "sentenceTokens": [
+            "My",
+            "birthday",
+            "is",
+            "on",
+            "the",
+            "fifth",
+            "of",
+            "May",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "explanation": "My birthday + is + on the fifth of May.",
+          "urduExplanation": "My birthday is on the fifth of May."
+        },
+        {
+          "id": "ex-a1-u6-l3-6",
+          "type": "order_sentence",
+          "skillTag": "dates",
+          "prompt": "Rearrange the words to form a correct statement:",
+          "sentenceTokens": [
+            "Pakistan",
+            "Day",
+            "is",
+            "on",
+            "the",
+            "twenty-third",
+            "of",
+            "March",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "explanation": "Pakistan Day + is + on the twenty-third of March.",
+          "urduExplanation": "Pakistan Day is on the twenty-third of March."
+        },
+        {
+          "id": "ex-a1-u6-l3-7",
+          "type": "match_pairs",
+          "skillTag": "ordinals",
+          "prompt": "Match the numeral with its correct ordinal word:",
+          "pairs": [
+            {
+              "left": "1st",
+              "right": "first"
+            },
+            {
+              "left": "2nd",
+              "right": "second"
+            },
+            {
+              "left": "3rd",
+              "right": "third"
+            },
+            {
+              "left": "5th",
+              "right": "fifth"
+            }
+          ],
+          "explanation": "Ordinals paired accurately.",
+          "urduExplanation": "Ordinal numbers Ú©Û’ ØµØ­ÛŒØ­ Ø¬ÙˆÚ‘Û’ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l3-8",
+          "type": "error_correction",
+          "skillTag": "spelling",
+          "prompt": "Find and correct the mistake: 'Today is the nineth of June.'",
+          "correctAnswer": "Today is the ninth of June.",
+          "explanation": "Spell 'ninth' without 'e': n-i-n-t-h.",
+          "urduExplanation": "'nineth' ØºÙ„Ø· Û Û’ØŒ 'ninth' Ù„Ú©Ú¾ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u6-l3-9",
+          "type": "error_correction",
+          "skillTag": "prepositions",
+          "prompt": "Find and correct the mistake: 'I was born in the 14th of August.'",
+          "correctAnswer": "I was born on the 14th of August.",
+          "explanation": "Dates take 'on', not 'in'.",
+          "urduExplanation": "ØªØ§Ø±ÛŒØ® Ú©Û’ Ø³Ø§ØªÚ¾ 'on' Ù„Ú¯ØªØ§ Û Û’: 'on the 14th of August'Û”"
+        },
+        {
+          "id": "ex-a1-u6-l3-10",
+          "type": "true_false",
+          "skillTag": "ordinals",
+          "prompt": "The ordinal form for 12 is spelled 'twelveth'. (True or False)",
+          "correctAnswer": "False",
+          "explanation": "False. It is spelled 'twelfth' (the 've' changes to 'f').",
+          "urduExplanation": "ØºÙ„Ø·Û” 12th Ú©ÛŒ ØµØ­ÛŒØ­ Ø§Ù…Ù„Ø§ 'twelfth' Û Û’Û”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l3-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u6-l3-1",
+          "type": "mcq",
+          "skillTag": "ordinals",
+          "prompt": "Which suffix is attached to the number 23 for calendar dates?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "23th"
+            },
+            {
+              "id": "opt-2",
+              "text": "23rd"
+            },
+            {
+              "id": "opt-3",
+              "text": "23st"
+            },
+            {
+              "id": "opt-4",
+              "text": "23nd"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Numbers ending in 3 take -rd: 23rd (twenty-third).",
+          "urduExplanation": "23 Ú©Û’ Ø³Ø§ØªÚ¾ -rd (23rd) Ù„Ú¯ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l3-2",
+          "type": "mcq",
+          "skillTag": "spelling",
+          "prompt": "What is the correct spelling for the 12th ordinal?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "twelveth"
+            },
+            {
+              "id": "opt-2",
+              "text": "twelfth"
+            },
+            {
+              "id": "opt-3",
+              "text": "twelth"
+            },
+            {
+              "id": "opt-4",
+              "text": "twelfeth"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Twelfth' changes 've' to 'f': T-W-E-L-F-T-H.",
+          "urduExplanation": "12th Ú©ÛŒ ØµØ­ÛŒØ­ Ø§Ù…Ù„Ø§ 'twelfth' Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l3-3",
+          "type": "mcq",
+          "skillTag": "dates",
+          "prompt": "How is '1st May' typically spoken in British English?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "First May"
+            },
+            {
+              "id": "opt-2",
+              "text": "The first of May"
+            },
+            {
+              "id": "opt-3",
+              "text": "May one"
+            },
+            {
+              "id": "opt-4",
+              "text": "One of May"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "In British English, 'the first of May' is the standard spoken formulation.",
+          "urduExplanation": "Ø¨Ø±Ø·Ø§Ù†ÙˆÛŒ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº 'the first of May' Ø¨ÙˆÙ„Ø§ Ø¬Ø§ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l3-4",
+          "type": "mcq",
+          "skillTag": "dates",
+          "prompt": "Which preposition correctly fills the blank: 'He was born _____ October 24th'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "at"
+            },
+            {
+              "id": "opt-2",
+              "text": "in"
+            },
+            {
+              "id": "opt-3",
+              "text": "on"
+            },
+            {
+              "id": "opt-4",
+              "text": "for"
+            }
+          ],
+          "correctOptionId": "opt-3",
+          "explanation": "Specific calendar dates take 'on': 'on October 24th'.",
+          "urduExplanation": "ØªØ§Ø±ÛŒØ® Ú©Û’ Ø³Ø§ØªÚ¾ 'on' Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u6-l3-5",
+          "type": "mcq",
+          "skillTag": "ordinals",
+          "prompt": "What is the ordinal number for 31?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "thirty-oneth"
+            },
+            {
+              "id": "opt-2",
+              "text": "thirty-first (31st)"
+            },
+            {
+              "id": "opt-3",
+              "text": "thirty-firth"
+            },
+            {
+              "id": "opt-4",
+              "text": "thirty-primary"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "31 is ordinal 'thirty-first' (31st).",
+          "urduExplanation": "31 Ú©Ùˆ 'thirty-first' (31st) Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l3-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Ordinal numbers and dates summary:",
+      "summaryPoints": [
+        "Cardinals tell how many (1, 2, 3); Ordinals tell order (1st, 2nd, 3rd).",
+        "Suffix rules: 1st, 2nd, 3rd; all others up to 20th take -th.",
+        "Spelling shifts to memorize: fifth (5th), eighth (8th), ninth (9th), twelfth (12th), twentieth (20th).",
+        "Speak dates as 'the [ordinal] of [month]' (the fourteenth of August).",
+        "Calendar dates take preposition ON (on the 5th of May)."
+      ]
+    },
+    {
+      "id": "sec-a1-u6-l3-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… ØªØ±ØªÛŒØ¨ Ú©Û’ Ù„ÛŒÛ’ **'Ù¾Û Ù„Ø§ØŒ Ø¯ÙˆØ³Ø±Ø§ØŒ ØªÛŒØ³Ø±Ø§ØŒ Ú†ÙˆØªÚ¾Ø§ØŒ Ù¾Ø§Ù†Ú†ÙˆØ§Úº'** Ø¨ÙˆÙ„ØªÛ’ Û ÛŒÚºÛ”\n\n**Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø¨Ú¾ÛŒ ÛŒÛ ÛŒ Ordinal Numbers Û ÙˆØªÛ’ Û ÛŒÚº:**\n- 1st = **first**\n- 2nd = **second**\n- 3rd = **third**\n- Ø¨Ø§Ù‚ÛŒ Ø³Ø¨ Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± **-th** Ø¢ØªØ§ Û Û’ (fourth, fifth, sixth...)\n\n**ØªØ§Ø±ÛŒØ® Ø¨ÙˆÙ„Ù†Û’ Ú©Ø§ Ø·Ø±ÛŒÙ‚Û :**\nØ§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… Ú©Û ØªÛ’ Û ÛŒÚº: '14 Ø§Ú¯Ø³Øª'Û” Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø§Ú¯Ø±Ú†Û  Ù„Ú©Ú¾Ø§ '14 August' Û ÙˆØªØ§ Û Û’ØŒ Ù„ÛŒÚ©Ù† Ø¨ÙˆÙ„ØªÛ’ ÙˆÙ‚Øª Ø¨Ø±Ø·Ø§Ù†ÙˆÛŒ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº **'the fourteenth of August'** Ø¨ÙˆÙ„Ø§ Ø¬Ø§ØªØ§ Û Û’ØŒ Ø§ÙˆØ± Ø§Ø³ Ú©Û’ Ø³Ø§ØªÚ¾ **ON** Ù„Ú¯ØªØ§ Û Û’ (on the 14th of August)Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

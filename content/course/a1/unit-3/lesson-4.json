@@ -1,0 +1,646 @@
+{
+  "id": "eng-a1-u3-l4",
+  "level": "A1",
+  "unit": "unit-3",
+  "order": 4,
+  "title": "Daily Morning & Evening Routines",
+  "description": "Describe your everyday schedule from dawn to night using adverbs of frequency and sequence words.",
+  "objectives": [
+    "Sequence daily activities using connectors (first, then, after that, finally)",
+    "Express frequency of habits using adverbs (always, usually, often, sometimes, never)",
+    "Position adverbs of frequency correctly before main verbs and after 'to be'"
+  ],
+  "estimatedMinutes": 10,
+  "prerequisites": [
+    "eng-a1-u3-l3"
+  ],
+  "skillTags": [
+    "routines",
+    "vocabulary",
+    "adverbs-frequency",
+    "communication"
+  ],
+  "vocabularyList": [
+    {
+      "word": "shower",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆÊƒaÊŠÉ™r/",
+      "definition": "A cubicle or bath in which a person stands under a spray of water to wash.",
+      "urduMeaning": "ØºØ³Ù„ / Ø´Ø§ÙˆØ±",
+      "exampleSentence": "I take a quick shower every morning."
+    },
+    {
+      "word": "breakfast",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆbrekfÉ™st/",
+      "definition": "The first meal of the day, typically eaten in the morning.",
+      "urduMeaning": "Ù†Ø§Ø´ØªÛ ",
+      "exampleSentence": "We have breakfast together at 7:30."
+    },
+    {
+      "word": "dinner",
+      "partOfSpeech": "noun",
+      "phonetic": "/ËˆdÉªnÉ™r/",
+      "definition": "The main meal of the day, taken either around midday or in the evening.",
+      "urduMeaning": "Ø±Ø§Øª Ú©Ø§ Ú©Ú¾Ø§Ù†Ø§",
+      "exampleSentence": "They eat dinner at eight o'clock."
+    },
+    {
+      "word": "brush",
+      "partOfSpeech": "verb",
+      "phonetic": "/brÊŒÊƒ/",
+      "definition": "To clean or smooth with a brush.",
+      "urduMeaning": "Ø¨Ø±Ø´ Ú©Ø±Ù†Ø§ / ØµØ§Ù  Ú©Ø±Ù†Ø§",
+      "exampleSentence": "Brush your teeth twice every day."
+    },
+    {
+      "word": "leave",
+      "partOfSpeech": "verb",
+      "phonetic": "/liË v/",
+      "definition": "To go away from a place.",
+      "urduMeaning": "Ø±ÙˆØ§Ù†Û  Û ÙˆÙ†Ø§ / Ú†Ú¾ÙˆÚ‘Ù†Ø§",
+      "exampleSentence": "He leaves home for work at 8:15."
+    },
+    {
+      "word": "arrive",
+      "partOfSpeech": "verb",
+      "phonetic": "/É™ËˆraÉªv/",
+      "definition": "To reach a destination.",
+      "urduMeaning": "Ù¾Û Ù†Ú†Ù†Ø§",
+      "exampleSentence": "We arrive at the academy before nine."
+    },
+    {
+      "word": "relax",
+      "partOfSpeech": "verb",
+      "phonetic": "/rÉªËˆlÃ¦ks/",
+      "definition": "To rest from work or engage in an enjoyable activity.",
+      "urduMeaning": "Ø³Ú©ÙˆÙ† Ú©Ø±Ù†Ø§ / Ø¢Ø±Ø§Ù… Ú©Ø±Ù†Ø§",
+      "exampleSentence": "I relax with a book in the evening."
+    },
+    {
+      "word": "exercise",
+      "partOfSpeech": "verb",
+      "phonetic": "/ËˆeksÉ™saÉªz/",
+      "definition": "To engage in physical activity to sustain or improve health.",
+      "urduMeaning": "ÙˆØ±Ø²Ø´ Ú©Ø±Ù†Ø§",
+      "exampleSentence": "She exercises for forty minutes daily."
+    },
+    {
+      "word": "pray",
+      "partOfSpeech": "verb",
+      "phonetic": "/preÉª/",
+      "definition": "To address a prayer to God.",
+      "urduMeaning": "Ù†Ù…Ø§Ø² Ù¾Ú‘Ú¾Ù†Ø§ / Ø¯Ø¹Ø§ Ú©Ø±Ù†Ø§",
+      "exampleSentence": "We pray Fajr early in the morning."
+    },
+    {
+      "word": "prepare",
+      "partOfSpeech": "verb",
+      "phonetic": "/prÉªËˆpeÉ™r/",
+      "definition": "To make something ready for use or consideration.",
+      "urduMeaning": "ØªÛŒØ§Ø± Ú©Ø±Ù†Ø§",
+      "exampleSentence": "He prepares his uniform the night before."
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-a1-u3-l4-1",
+      "type": "explain",
+      "title": "Connecting Actions & Expressing Frequency",
+      "content": "To describe your daily routine smoothly, you need two linguistic tools:\n1. **Adverbs of Frequency**: How often you do an action.\n2. **Sequence Words**: The chronological order of your actions.",
+      "tables": [
+        {
+          "title": "Scale of Frequency Adverbs",
+          "headers": [
+            "Adverb",
+            "Frequency Percentage",
+            "Position Rule",
+            "Example Sentence"
+          ],
+          "rows": [
+            [
+              "always",
+              "100%",
+              "Before main verb / After 'to be'",
+              "I always brush my teeth before bed."
+            ],
+            [
+              "usually",
+              "80-90%",
+              "Before main verb / After 'to be'",
+              "He usually wakes up early."
+            ],
+            [
+              "often",
+              "60-70%",
+              "Before main verb / After 'to be'",
+              "We often walk in the park."
+            ],
+            [
+              "sometimes",
+              "40-50%",
+              "Before main verb / Start of sentence",
+              "She sometimes drinks green tea."
+            ],
+            [
+              "never",
+              "0%",
+              "Before main verb (already negative!)",
+              "They never arrive late for class."
+            ]
+          ]
+        },
+        {
+          "title": "Daily Sequence Markers",
+          "headers": [
+            "Connector",
+            "Chronological Stage",
+            "Sample Usage",
+            "Urdu Translation"
+          ],
+          "rows": [
+            [
+              "First",
+              "Beginning of day",
+              "First, I wake up and pray.",
+              "Ù¾Û Ù„Û’Û”"
+            ],
+            [
+              "Then",
+              "Next step",
+              "Then, I take a shower.",
+              "Ù¾Ú¾Ø±Û”"
+            ],
+            [
+              "After that",
+              "Subsequent activity",
+              "After that, I have breakfast.",
+              "Ø§Ø³ Ú©Û’ Ø¨Ø¹Ø¯Û”"
+            ],
+            [
+              "Finally",
+              "Concluding activity",
+              "Finally, I go to bed at ten.",
+              "Ø¢Ø®Ø± Ú©Ø§Ø±Û”"
+            ]
+          ]
+        }
+      ],
+      "callouts": [
+        {
+          "type": "tip",
+          "title": "Word Order of Frequency Adverbs",
+          "text": "Put the frequency adverb **before normal action verbs** (*I **always** wake*), but **after the verb to be** (*He is **always** polite*)."
+        },
+        {
+          "type": "warning",
+          "title": "Never Use 'Never' with 'Don't'",
+          "text": "'Never' is already negative. Never say 'I don't never go'. Say: 'I **never** go'."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l4-2",
+      "type": "examples",
+      "title": "Model Sentences with Audio",
+      "examples": [
+        {
+          "english": "First, I wake up at 5:30 AM and pray Fajr.",
+          "phonetic": "/fÉœË st aÉª weÉªk ÊŒp Ã¦t faÉªv ËˆÎ¸ÉœË ti eÉª em Ã¦nd preÉª ËˆfÃ¦dÊ’É™r/",
+          "urdu": "Ù¾Û Ù„Û’ØŒ Ù…ÛŒÚº ØµØ¨Ø­ 5:30 Ø¨Ø¬Û’ Ø¨ÛŒØ¯Ø§Ø± Û ÙˆØªØ§ Û ÙˆÚº Ø§ÙˆØ± Ù†Ù…Ø§Ø²Ù  Ù Ø¬Ø± Ø§Ø¯Ø§ Ú©Ø±ØªØ§ Û ÙˆÚºÛ”",
+          "audioText": "First, I wake up at 5:30 AM and pray Fajr."
+        },
+        {
+          "english": "Then, I brush my teeth and take a quick shower.",
+          "phonetic": "/Ã°en aÉª brÊŒÊƒ maÉª tiË Î¸ Ã¦nd teÉªk É™ kwÉªk ËˆÊƒaÊŠÉ™r/",
+          "urdu": "Ù¾Ú¾Ø±ØŒ Ù…ÛŒÚº Ø¯Ø§Ù†Øª Ø¨Ø±Ø´ Ú©Ø±ØªØ§ Û ÙˆÚº Ø§ÙˆØ± Ø¬Ù„Ø¯ÛŒ Ø³Û’ ØºØ³Ù„ Ú©Ø±ØªØ§ Û ÙˆÚºÛ”",
+          "audioText": "Then, I brush my teeth and take a quick shower."
+        },
+        {
+          "english": "She always prepares a healthy breakfast for her children.",
+          "phonetic": "/ÊƒiË  ËˆÉ”Ë lweÉªz prÉªËˆpeÉ™rz É™ ËˆhelÎ¸i ËˆbrekfÉ™st fÉ”Ë r hÉœË r ËˆtÊƒÉªldrÉ™n/",
+          "urdu": "ÙˆÛ  Û Ù…ÛŒØ´Û  Ø§Ù¾Ù†Û’ Ø¨Ú†ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ ØµØ­Øª Ø¨Ø®Ø´ Ù†Ø§Ø´ØªÛ  ØªÛŒØ§Ø± Ú©Ø±ØªÛŒ Û Û’Û”",
+          "audioText": "She always prepares a healthy breakfast for her children."
+        },
+        {
+          "english": "He usually leaves home for the office around 8:00 AM.",
+          "phonetic": "/hiË  ËˆjuË Ê’uÉ™li liË vz hÉ™ÊŠm fÉ”Ë r Ã°i ËˆÉ’fÉªs É™ËˆraÊŠnd eÉªt eÉª em/",
+          "urdu": "ÙˆÛ  Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± ØµØ¨Ø­ 8:00 Ø¨Ø¬Û’ Ú©Û’ Ù‚Ø±ÛŒØ¨ Ø¯Ù ØªØ± Ú©Û’ Ù„ÛŒÛ’ Ú¯Ú¾Ø± Ø³Û’ Ù†Ú©Ù„ØªØ§ Û Û’Û”",
+          "audioText": "He usually leaves home for the office around 8:00 AM."
+        },
+        {
+          "english": "We often walk in the family park after dinner.",
+          "phonetic": "/wiË  ËˆÉ’fn wÉ”Ë k Éªn Ã°É™ ËˆfÃ¦mÉ™li pÉ‘Ë k ËˆÉ‘Ë ftÉ™r ËˆdÉªnÉ™r/",
+          "urdu": "Û Ù… Ø±Ø§Øª Ú©Û’ Ú©Ú¾Ø§Ù†Û’ Ú©Û’ Ø¨Ø¹Ø¯ Ø§Ú©Ø«Ø± Ù ÛŒÙ…Ù„ÛŒ Ù¾Ø§Ø±Ú© Ù…ÛŒÚº Ù¾ÛŒØ¯Ù„ Ú†Ù„ØªÛ’ Û ÛŒÚºÛ”",
+          "audioText": "We often walk in the family park after dinner."
+        },
+        {
+          "english": "I sometimes read an English book before going to sleep.",
+          "phonetic": "/aÉª ËˆsÊŒmtaÉªmz riË d É™n ËˆÉªÅ‹É¡lÉªÊƒ bÊŠk bÉªËˆfÉ”Ë r ËˆÉ¡É™ÊŠÉªÅ‹ tuË  sliË p/",
+          "urdu": "Ù…ÛŒÚº Ú©Ø¨Ú¾ÛŒ Ú©Ø¨Ú¾Ø§Ø± Ø³ÙˆÙ†Û’ Ø³Û’ Ù¾Û Ù„Û’ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ú©ØªØ§Ø¨ Ù¾Ú‘Ú¾ØªØ§ Û ÙˆÚºÛ”",
+          "audioText": "I sometimes read an English book before going to sleep."
+        },
+        {
+          "english": "He is never late for his morning classes.",
+          "phonetic": "/hiË  Éªz ËˆnevÉ™r leÉªt fÉ”Ë r hÉªz ËˆmÉ”Ë rnÉªÅ‹ ËˆklÉ‘Ë sÉªz/",
+          "urdu": "ÙˆÛ  ØµØ¨Ø­ Ú©ÛŒ Ú©Ù„Ø§Ø³ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ Ú©Ø¨Ú¾ÛŒ Ø¯ÛŒØ± Ù†Û ÛŒÚº Ú©Ø±ØªØ§Û”",
+          "audioText": "He is never late for his morning classes."
+        },
+        {
+          "english": "Finally, I turn off the study lamp and sleep at ten.",
+          "phonetic": "/ËˆfaÉªnÉ™li aÉª tÉœË n É’f Ã°É™ ËˆstÊŒdi lÃ¦mp Ã¦nd sliË p Ã¦t ten/",
+          "urdu": "Ø¢Ø®Ø± Ú©Ø§Ø±ØŒ Ù…ÛŒÚº Ù¾Ú‘Ú¾Ù†Û’ ÙˆØ§Ù„Ø§ Ù„ÛŒÙ…Ù¾ Ø¨Ù†Ø¯ Ú©Ø±ØªØ§ Û ÙˆÚº Ø§ÙˆØ± Ø¯Ø³ Ø¨Ø¬Û’ Ø³Ùˆ Ø¬Ø§ØªØ§ Û ÙˆÚºÛ”",
+          "audioText": "Finally, I turn off the study lamp and sleep at ten."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l4-3",
+      "type": "dialogue",
+      "title": "A Typical Sunday Routine",
+      "dialogue": [
+        {
+          "speaker": "Nida",
+          "avatar": "N",
+          "english": "What do you usually do on Sundays, Ayesha?",
+          "urdu": "Ø¹Ø§Ø¦Ø´Û ØŒ Ø¢Ù¾ Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± Ø§ØªÙˆØ§Ø± Ú©Ùˆ Ú©ÛŒØ§ Ú©Ø±ØªÛŒ Û ÛŒÚºØŸ",
+          "audioText": "What do you usually do on Sundays, Ayesha?"
+        },
+        {
+          "speaker": "Ayesha",
+          "avatar": "A",
+          "english": "I usually wake up late, around eight. Then I prepare a special breakfast for the family.",
+          "urdu": "Ù…ÛŒÚº Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø± Ø°Ø±Ø§ Ø¯ÛŒØ± Ø³Û’ Ø¢Ù¹Ú¾ Ø¨Ø¬Û’ Ø¨ÛŒØ¯Ø§Ø± Û ÙˆØªÛŒ Û ÙˆÚºÛ” Ù¾Ú¾Ø± Ú¯Ú¾Ø± ÙˆØ§Ù„ÙˆÚº Ú©Û’ Ù„ÛŒÛ’ Ø®Ø§Øµ Ù†Ø§Ø´ØªÛ  Ø¨Ù†Ø§ØªÛŒ Û ÙˆÚºÛ”",
+          "audioText": "I usually wake up late, around eight. Then I prepare a special breakfast for the family."
+        },
+        {
+          "speaker": "Nida",
+          "avatar": "N",
+          "english": "Do you exercise on the weekend?",
+          "urdu": "Ú©ÛŒØ§ Ø¢Ù¾ Û Ù ØªÛ’ Ú©Û’ Ø¢Ø®Ø± Ù…ÛŒÚº ÙˆØ±Ø²Ø´ Ú©Ø±ØªÛŒ Û ÛŒÚºØŸ",
+          "audioText": "Do you exercise on the weekend?"
+        },
+        {
+          "speaker": "Ayesha",
+          "avatar": "A",
+          "english": "Yes, I always go for a long walk in the afternoon, and then I relax.",
+          "urdu": "Ø¬ÛŒ Û Ø§ÚºØŒ Ù…ÛŒÚº Ø¯ÙˆÙ¾Û Ø± Ú©Ùˆ Û Ù…ÛŒØ´Û  Ù„Ù…Ø¨ÛŒ Ø³ÛŒØ± Ú©Û’ Ù„ÛŒÛ’ Ø¬Ø§ØªÛŒ Û ÙˆÚºØŒ Ø§ÙˆØ± Ù¾Ú¾Ø± Ø³Ú©ÙˆÙ† Ú©Ø±ØªÛŒ Û ÙˆÚºÛ”",
+          "audioText": "Yes, I always go for a long walk in the afternoon, and then I relax."
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l4-4",
+      "type": "practice",
+      "title": "Interactive Practice Exercises",
+      "exercises": [
+        {
+          "id": "ex-a1-u3-l4-1",
+          "type": "mcq",
+          "skillTag": "adverbs-frequency",
+          "prompt": "Where does the frequency adverb go: 'He (always / is / polite).'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "He always is polite."
+            },
+            {
+              "id": "opt-2",
+              "text": "He is always polite."
+            },
+            {
+              "id": "opt-3",
+              "text": "Always he is polite."
+            },
+            {
+              "id": "opt-4",
+              "text": "He is polite always."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Adverbs of frequency come AFTER the verb 'to be': 'He is always polite'.",
+          "urduExplanation": "Verb 'to be' (is) Ú©Û’ Ø¨Ø¹Ø¯ frequency adverb Ø¢ØªØ§ Û Û’: 'He is always polite'Û”"
+        },
+        {
+          "id": "ex-a1-u3-l4-2",
+          "type": "mcq",
+          "skillTag": "adverbs-frequency",
+          "prompt": "Which sentence has the correct word order with a regular verb?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "I drink usually tea in the morning."
+            },
+            {
+              "id": "opt-2",
+              "text": "I usually drink tea in the morning."
+            },
+            {
+              "id": "opt-3",
+              "text": "Usually I drink in the morning tea."
+            },
+            {
+              "id": "opt-4",
+              "text": "I drink tea usually in the morning."
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "Frequency adverbs precede normal action verbs: 'I usually drink'.",
+          "urduExplanation": "Ø¹Ø§Ù… Ù Ø¹Ù„ Ø³Û’ Ù¾Û Ù„Û’ frequency adverb Ø¢ØªØ§ Û Û’: 'I usually drink'Û”"
+        },
+        {
+          "id": "ex-a1-u3-l4-3",
+          "type": "fill_blank",
+          "skillTag": "routines",
+          "prompt": "Complete the morning sequence: 'First I pray. _____ I have breakfast.'",
+          "correctAnswer": "Then",
+          "explanation": "'Then' is the standard transition word for the immediate subsequent step.",
+          "urduExplanation": "'Then' (Ù¾Ú¾Ø±) Ø§Ú¯Ù„Û’ Ù…Ø±Ø­Ù„Û’ Ú©Ùˆ Ø¸Ø§Û Ø± Ú©Ø±ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l4-4",
+          "type": "fill_blank",
+          "skillTag": "adverbs-frequency",
+          "prompt": "Which adverb means 0% of the time? Complete: 'She _____ drinks soda; she hates it.'",
+          "correctAnswer": "never",
+          "explanation": "'Never' indicates zero percent occurrence.",
+          "urduExplanation": "0% Ù Ø±ÛŒÚ©ÙˆÙ†Ø³ÛŒ Ú©Û’ Ù„ÛŒÛ’ 'never' (Ú©Ø¨Ú¾ÛŒ Ù†Û ÛŒÚº) Ø¢ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l4-5",
+          "type": "order_sentence",
+          "skillTag": "routines",
+          "prompt": "Rearrange the words to form a correct routine sentence:",
+          "sentenceTokens": [
+            "I",
+            "always",
+            "brush",
+            "my",
+            "teeth",
+            "at",
+            "night",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "Subject (I) + adverb (always) + verb (brush) + object (my teeth) + time phrase (at night).",
+          "urduExplanation": "I always brush my teeth at night."
+        },
+        {
+          "id": "ex-a1-u3-l4-6",
+          "type": "order_sentence",
+          "skillTag": "routines",
+          "prompt": "Rearrange the words to form a correct sequence:",
+          "sentenceTokens": [
+            "First",
+            ",",
+            "I",
+            "take",
+            "a",
+            "quick",
+            "shower",
+            "."
+          ],
+          "correctOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "explanation": "Sequence marker (First,) + subject (I) + verb phrase (take a quick shower).",
+          "urduExplanation": "First, I take a quick shower."
+        },
+        {
+          "id": "ex-a1-u3-l4-7",
+          "type": "match_pairs",
+          "skillTag": "adverbs-frequency",
+          "prompt": "Match the adverb of frequency with its approximate percentage:",
+          "pairs": [
+            {
+              "left": "always",
+              "right": "100%"
+            },
+            {
+              "left": "usually",
+              "right": "80-90%"
+            },
+            {
+              "left": "sometimes",
+              "right": "40-50%"
+            },
+            {
+              "left": "never",
+              "right": "0%"
+            }
+          ],
+          "explanation": "Percentages accurately matched.",
+          "urduExplanation": "Ù Ø±ÛŒÚ©ÙˆÙ†Ø³ÛŒ Ú©Û’ ØµØ­ÛŒØ­ ØªÙ†Ø§Ø³Ø¨ Ù…Ù„Ø§Ø¦ÛŒÚºÛ”"
+        },
+        {
+          "id": "ex-a1-u3-l4-8",
+          "type": "error_correction",
+          "skillTag": "adverbs-frequency",
+          "prompt": "Find and correct the mistake: 'He doesn't never smoke.'",
+          "correctAnswer": "He never smokes.",
+          "explanation": "'Never' is already negative; double negation is incorrect in standard English. Say: 'He never smokes'.",
+          "urduExplanation": "'doesn't never' ØºÙ„Ø· Û Û’ØŒ ØµØ­ÛŒØ­ 'He never smokes' Û Û’Û”"
+        },
+        {
+          "id": "ex-a1-u3-l4-9",
+          "type": "error_correction",
+          "skillTag": "adverbs-frequency",
+          "prompt": "Find and correct the mistake: 'She always is happy.'",
+          "correctAnswer": "She is always happy.",
+          "explanation": "With the verb 'to be', the frequency adverb must follow the verb: 'is always'.",
+          "urduExplanation": "Verb 'to be' Ú©Û’ Ø¨Ø¹Ø¯ adverb Ø¢ØªØ§ Û Û’: 'is always'Û”"
+        },
+        {
+          "id": "ex-a1-u3-l4-10",
+          "type": "true_false",
+          "skillTag": "routines",
+          "prompt": "'First', 'then', and 'finally' are connectors used to show the time order of events. (True or False)",
+          "correctAnswer": "True",
+          "explanation": "True. These transition words sequence actions chronologically.",
+          "urduExplanation": "Ø¯Ø±Ø³ØªÛ” ÛŒÛ  Ø§Ù„Ù Ø§Ø¸ Ú©Ø§Ù…ÙˆÚº Ú©ÛŒ ØªØ±ØªÛŒØ¨ Ø¸Ø§Û Ø± Ú©Ø±ØªÛ’ Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l4-5",
+      "type": "quiz",
+      "title": "Lesson Mastery Quiz",
+      "exercises": [
+        {
+          "id": "qz-a1-u3-l4-1",
+          "type": "mcq",
+          "skillTag": "adverbs-frequency",
+          "prompt": "Which sentence shows the correct position of 'often'?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "We walk often in the park."
+            },
+            {
+              "id": "opt-2",
+              "text": "Often we walk in the park."
+            },
+            {
+              "id": "opt-3",
+              "text": "We walk in the park often."
+            },
+            {
+              "id": "opt-4",
+              "text": "We often walk in the park."
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "'We often walk' places the frequency adverb directly before the main action verb.",
+          "urduExplanation": "Ù Ø¹Ù„ 'walk' Ø³Û’ Ù¾Û Ù„Û’ 'often' Ø¢Ø¦Û’ Ú¯Ø§: 'We often walk'Û”"
+        },
+        {
+          "id": "qz-a1-u3-l4-2",
+          "type": "mcq",
+          "skillTag": "adverbs-frequency",
+          "prompt": "What does the sentence 'He never arrives late' mean?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "He is always on time"
+            },
+            {
+              "id": "opt-2",
+              "text": "He is late sometimes"
+            },
+            {
+              "id": "opt-3",
+              "text": "He is usually late"
+            },
+            {
+              "id": "opt-4",
+              "text": "He was late once yesterday"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "'Never late' means zero percent tardiness, indicating he is always punctual.",
+          "urduExplanation": "'Never late' Ú©Ø§ Ù…Ø·Ù„Ø¨ Û Û’ Ú©Û  ÙˆÛ  Û Ù…ÛŒØ´Û  ÙˆÙ‚Øª Ù¾Ø± Ù¾Û Ù†Ú†ØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l4-3",
+          "type": "mcq",
+          "skillTag": "routines",
+          "prompt": "Which connector is best to conclude a sequence of morning events?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "First"
+            },
+            {
+              "id": "opt-2",
+              "text": "Finally"
+            },
+            {
+              "id": "opt-3",
+              "text": "Next"
+            },
+            {
+              "id": "opt-4",
+              "text": "Then"
+            }
+          ],
+          "correctOptionId": "opt-2",
+          "explanation": "'Finally' signals the last action in a sequential routine.",
+          "urduExplanation": "Ø¢Ø®Ø±ÛŒ Ú©Ø§Ù… Ú©Û’ Ù„ÛŒÛ’ 'Finally' Ø§Ø³ØªØ¹Ù…Ø§Ù„ Û ÙˆØªØ§ Û Û’Û”"
+        },
+        {
+          "id": "qz-a1-u3-l4-4",
+          "type": "mcq",
+          "skillTag": "adverbs-frequency",
+          "prompt": "Complete the sentence: 'Tariq is _____ cheerful in the morning.'",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "always"
+            },
+            {
+              "id": "opt-2",
+              "text": "every day"
+            },
+            {
+              "id": "opt-3",
+              "text": "always is"
+            },
+            {
+              "id": "opt-4",
+              "text": "daily is"
+            }
+          ],
+          "correctOptionId": "opt-1",
+          "explanation": "After linking verb 'is', place the frequency adverb 'always': 'is always cheerful'.",
+          "urduExplanation": "'is' Ú©Û’ Ø¨Ø¹Ø¯ 'always' Ø¢Ø¦Û’ Ú¯Ø§Û”"
+        },
+        {
+          "id": "qz-a1-u3-l4-5",
+          "type": "mcq",
+          "skillTag": "routines",
+          "prompt": "What meal do people eat in the morning?",
+          "options": [
+            {
+              "id": "opt-1",
+              "text": "Dinner"
+            },
+            {
+              "id": "opt-2",
+              "text": "Supper"
+            },
+            {
+              "id": "opt-3",
+              "text": "Lunch"
+            },
+            {
+              "id": "opt-4",
+              "text": "Breakfast"
+            }
+          ],
+          "correctOptionId": "opt-4",
+          "explanation": "Breakfast is the traditional first meal eaten in the morning.",
+          "urduExplanation": "ØµØ¨Ø­ Ú©Û’ Ú©Ú¾Ø§Ù†Û’ Ú©Ùˆ 'Breakfast' (Ù†Ø§Ø´ØªÛ ) Ú©Û ØªÛ’ Û ÛŒÚºÛ”"
+        }
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l4-6",
+      "type": "summary",
+      "title": "Lesson Summary",
+      "content": "Routine description mastery:",
+      "summaryPoints": [
+        "Use frequency adverbs: always (100%), usually (80%), often (60%), sometimes (40%), never (0%).",
+        "Adverb position: BEFORE normal action verbs (I always pray); AFTER the verb to be (She is always kind).",
+        "Use sequence words to tell your day: First -> Then -> After that -> Finally.",
+        "Never double-negate with 'never' (say 'He never smokes', not 'doesn't never')."
+      ]
+    },
+    {
+      "id": "sec-a1-u3-l4-7",
+      "type": "urduNote",
+      "title": "Urdu Linguistic Comparison (Ø§Ø±Ø¯Ùˆ Ø³Û’ Ù…ÙˆØ§Ø²Ù†Û )",
+      "content": "Ø§Ø±Ø¯Ùˆ Ù…ÛŒÚº Û Ù… ØªÙˆØ§ØªØ± Ú©Û’ Ø§Ù„Ù Ø§Ø¸ (Û Ù…ÛŒØ´Û ØŒ Ø¹Ø§Ù… Ø·ÙˆØ± Ù¾Ø±ØŒ Ú©Ø¨Ú¾ÛŒ Ú©Ø¨Ú¾Ø§Ø±ØŒ Ú©Ø¨Ú¾ÛŒ Ù†Û ÛŒÚº) Ø¬Ù…Ù„Û’ Ù…ÛŒÚº Ú©Û ÛŒÚº Ø¨Ú¾ÛŒ Ø¢Ú¯Û’ Ù¾ÛŒÚ†Ú¾Û’ Ø±Ú©Ú¾ Ø³Ú©ØªÛ’ Û ÛŒÚº:\n- 'Ù…ÛŒÚº **Û Ù…ÛŒØ´Û ** ØµØ¨Ø­ Ø¬Ù„Ø¯ÛŒ Ø§Ù¹Ú¾ØªØ§ Û ÙˆÚº'\n- '**Û Ù…ÛŒØ´Û ** Ù…ÛŒÚº ØµØ¨Ø­ Ø¬Ù„Ø¯ÛŒ Ø§Ù¹Ú¾ØªØ§ Û ÙˆÚº'\n\nÙ„ÛŒÚ©Ù† Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ù…ÛŒÚº Ø§Ù† Ú©ÛŒ Ø¬Ú¯Û  **Ø¨Ø§Ù„Ú©Ù„ Ù…Ø®ØµÙˆØµ** Û Û’:\n1. Ø¹Ø§Ù… Ù Ø¹Ù„ Ø³Û’ **Ù¾Û Ù„Û’**: *I **always** wake up* (I wake up always Ú©Û Ù†Ø§ ØºÛŒØ± Ù Ø·Ø±ÛŒ Û Û’)\n2. Verb 'to be' Ú©Û’ **Ø¨Ø¹Ø¯**: *He is **always** on time*\nØ§Ø³ ØªØ±ØªÛŒØ¨ Ú©ÛŒ Ù…Ø´Ù‚ Ø§Ù†Ú¯Ø±ÛŒØ²ÛŒ Ø±ÙˆØ§Ù†ÛŒ Ú©Û’ Ù„ÛŒÛ’ Ù†Û Ø§ÛŒØª Ù…Ù ÛŒØ¯ Û Û’Û”",
+      "needsNativeReview": true,
+      "metadata": {
+        "needsNativeReview": true,
+        "reviewStatus": "pending_native_linguist"
+      }
+    }
+  ]
+}

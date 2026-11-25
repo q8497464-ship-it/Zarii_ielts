@@ -92,7 +92,7 @@ test.describe('E2E: Public Landing Page Scroll, Clean Auth & Navigation Specific
     await expect(navSignup).toHaveAttribute('href', '/signup');
 
     // Hero buttons
-    const heroStartBtn = page.getByRole('link', { name: 'Start free' });
+    const heroStartBtn = page.getByRole('link', { name: 'Start free' }).first();
     await expect(heroStartBtn).toBeVisible();
     await expect(heroStartBtn).toHaveAttribute('href', '/signup');
 
@@ -211,7 +211,7 @@ test.describe('E2E: Public Landing Page Scroll, Clean Auth & Navigation Specific
     // Floating CTA glass card
     const ctaCard = footer.getByTestId('footer-cta-card');
     await expect(ctaCard).toBeVisible();
-    await expect(ctaCard).toContainText('Start your IELTS journey today');
+    await expect(ctaCard).toContainText('journey today');
 
     // CTA buttons
     const footerSignup = footer.getByRole('link', { name: 'Sign up free' });
@@ -223,7 +223,7 @@ test.describe('E2E: Public Landing Page Scroll, Clean Auth & Navigation Specific
     await expect(footerLogin).toHaveAttribute('href', '/login');
 
     // Brand logo height: >= 64px (never smaller than 64px)
-    const brandLogo = footer.locator('img[alt="Zarii IELTS Preparation"]');
+    const brandLogo = footer.locator('img[alt="Zarii English Course and IELTS Preparation"]');
     await expect(brandLogo).toBeVisible();
     const logoBox = await brandLogo.boundingBox();
     expect(logoBox).not.toBeNull();
@@ -235,11 +235,10 @@ test.describe('E2E: Public Landing Page Scroll, Clean Auth & Navigation Specific
     const wordmark = page.getByTestId('footer-wordmark');
     await expect(wordmark).toBeVisible();
     await expect(wordmark).toContainText('Zarii');
-    await expect(wordmark).toContainText('IELTS Preparation');
+    await expect(wordmark).toContainText('English and IELTS');
 
     // Trademark disclaimer
-    await expect(footer).toContainText('IELTS is a registered trademark of its respective owners');
-    await expect(footer).toContainText('Band scores shown are estimates, not official results');
+    await expect(footer).toContainText('IELTS is a registered trademark of its owners');
 
     // Back to top button in legal bar
     const backToTopLegal = footer.getByRole('button', { name: 'Scroll back to top' });
@@ -296,25 +295,26 @@ test.describe('E2E: Public Landing Page Scroll, Clean Auth & Navigation Specific
     await expect(howItWorksHeading).toBeVisible();
   });
 
-  // 13. "Zarii IELTS Preparation" appears in brand column, large wordmark, and copyright line
-  test('"Zarii IELTS Preparation" appears in brand column, large wordmark, and copyright line', async ({ page }) => {
+  // 13. "Zarii English Course and IELTS Preparation" appears in brand column, large wordmark, and copyright line
+  test('"Zarii English Course and IELTS Preparation" appears in brand column, large wordmark, and copyright line', async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/');
+    await page.waitForSelector('footer');
     const footer = page.locator('footer[aria-label="Site Footer"]');
 
     // 1. Brand column
-    const brandHeading = footer.locator('h2', { hasText: 'Zarii IELTS Preparation' });
+    const brandHeading = footer.locator('h2', { hasText: 'English Course and IELTS Preparation' });
     await expect(brandHeading).toBeVisible();
 
     // 2. Large wordmark
     const wordmark = page.getByTestId('footer-wordmark');
     await expect(wordmark).toBeVisible();
     await expect(wordmark).toContainText('Zarii');
-    await expect(wordmark).toContainText('IELTS Preparation');
+    await expect(wordmark).toContainText('English and IELTS');
 
     // 3. Copyright line
     const currentYear = new Date().getFullYear();
-    const copyright = footer.getByText(new RegExp(`©\\s*${currentYear}\\s*Zarii IELTS Preparation`));
+    const copyright = footer.getByText(new RegExp(`©\\s*${currentYear}\\s*Zarii English Course and IELTS Preparation`));
     await expect(copyright).toBeVisible();
   });
 

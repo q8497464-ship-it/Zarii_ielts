@@ -1,10 +1,9 @@
-<<<<<<< HEAD
-# 🎓 Zarii — Free IELTS Preparation Web App (Academic & General Training)
+# 🎓 Zarii — English Course & IELTS Preparation Web App (A1 to C1 & Academic / General Training)
 
-**Zarii** is a 100% free, offline-first IELTS preparation platform built with modern web technologies. Designed for zero-cost hosting and operation, it empowers learners globally to practice Reading, Listening, Writing, and Speaking without subscriptions, paywalls, or credit cards.
+**Zarii** is a 100% free, offline-first learning platform built with modern web technologies. Designed for zero-cost hosting and operation, it empowers learners globally with two complete learning tracks: a comprehensive **General English Course (A1 to C1)** and authentic **IELTS Preparation (Academic & General Training)**, powered by a built-in 144,000-word offline dictionary.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)
-[![Tests: 267 Passing](https://img.shields.io/badge/Tests-267%20passing-emerald.svg)](package.json)
+[![Tests: Passing](https://img.shields.io/badge/Tests-Passing-emerald.svg)](package.json)
 [![PWA: Ready](https://img.shields.io/badge/PWA-Offline%20Ready-blue.svg)](public/manifest.json)
 [![Cost: $0](https://img.shields.io/badge/Cost-%240%20Free-brightgreen.svg)](#zero-cost-architecture)
 [![Architecture: Documented](https://img.shields.io/badge/Architecture-Documented-purple.svg)](ARCHITECTURE.md)
@@ -12,324 +11,80 @@
 
 ---
 
-## 🌟 Core Modules & Key Features
+## 🌟 Two Learning Tracks
 
-### 1. 📖 Reading Module
-- **Authentic original test papers** (Academic Tests 1 & 2, General Training Test 1) with 3 full passages and 40 questions per test.
-- Covers all 8 IELTS question types: True/False/Not Given, Yes/No/Not Given, Matching Headings, Matching Information, Multiple Choice, Sentence Completion, Summary Completion, and Short Answer.
-- Split-screen reading UI with passage evidence highlight, personal notes, exam timer, and auto-marking with band conversion.
+### Track 1: 📚 General English Course (A1 to C1)
+- **Structured Curriculum**: 8 to 12 units per level; 5 to 8 bite-sized lessons (8–15 minutes) per unit.
+- **Interactive Focus Lesson Player**: Step-by-step learning sections:
+  - *Rule Explanations*: Clear typography, accent chips, and callouts (*Rule, Tip, Careful*).
+  - *Timelines & Diagrams*: Accessible visual representations of grammatical tenses.
+  - *Model Sentences with Speech*: Native browser `speechSynthesis` audio playback.
+  - *Practice Exercises*: 6 interactive formats (Multiple Choice, Reorder Sentence, Fill in the Blanks, Categorize, Matching Pairs, and Error Correction) with instant feedback and retries.
+  - *Bilingual Urdu Support*: Optional right-to-left Urdu explanations (`اردو میں دیکھیں`) comparing English SVO vs Urdu SOV structure.
+  - *5-Question Checkpoint Quiz* & *Summary Box*.
+- **Unit Reviews & Unit Tests**: 20 questions covering unit objectives with a strict 70% passing threshold and daily retry cooling.
+- **Skills Practice Studio**:
+  - *Reading Library*: Original graded readers across A1–C1 with audio read-along and comprehension quizzes.
+  - *Listening Studio*: Dialogues and monologue talks with speed controls (0.75x, 1.0x, 1.25x), dictation drills, and post-answer transcript reveals.
+  - *Speaking & Pronunciation*: Shadowing drills, minimal-pair discrimination (*ship/sheep, v/w, th*), sentence stress, and role-play.
+  - *Writing Studio*: Guided sentence building, email drafting, paragraph architecture, and instant grammar rule checks.
+  - *Daily 15*: Guided multi-skill daily workout combining vocabulary, grammar, reading, and listening.
 
-### 2. 🎧 Listening Module
-- **Full original listening tests** (4 sections, 40 questions each) featuring authentic accents.
-- Browser `speechSynthesis` audio engine with distinct speaker voices and natural pauses, plus support for optional audio files.
-- Exam mode (strict single play with 10-minute transfer time) and Practice mode (speed control, pause, replay from specific transcript lines).
+### Track 2: 🎯 IELTS Preparation (Academic & General Training)
+- **Reading Module**: Full original test papers with dual-pane passage viewing, line highlighting, and all 8 IELTS question types.
+- **Listening Module**: 4 sections per test with authentic multi-speaker audio, question progress tracking, and exam/practice modes.
+- **Writing Module**: 10 Academic Task 1 prompts with Recharts visual graphs, 5 GT Task 1 letter prompts, and 15 Task 2 essay prompts with automated rubric-based evaluation.
+- **Speaking Simulator**: Part 1-3 simulator with live Web Speech recognition, cue card timers, and fluency/WPM metrics.
+- **Full Mock Exam Center**: Authentic 2h 45m timed mock exam with strict no-pause enforcement and printable official-style Test Report Form (TRF).
+- **Adaptive Diagnostic Assessment**: 25-minute benchmark diagnostic mapping weaknesses to tailored study tasks.
 
-### 3. ✍️ Writing Module
-- **10 Academic Task 1 prompts** (line graphs, bar charts, pie charts, tables, maps, processes) with interactive Recharts diagrams.
-- **5 General Training Task 1 letter prompts** (formal, semi-formal, informal).
-- **15 Task 2 discursive essay prompts** across opinion, discussion, problem-solution, advantages-disadvantages, and two-part questions.
-- Distraction-free text editor with live word counters, timing alarms, and IELTS 4-criterion evaluation (Task Achievement, Coherence & Cohesion, Lexical Resource, Grammatical Accuracy).
-- Free AI evaluation using Google Gemini or Groq free tier, browser "bring-your-own-key" storage, and a robust offline rule-based fallback.
+---
 
-### 4. 🗣️ Speaking Simulator
-- **30 Part 2 cue cards**, 90 linked Part 3 discussion questions, and 20 Part 1 topics (120 questions total).
-- Live examiner voice via `speechSynthesis` and voice transcription via the Web Speech API (with fallback text mode).
-- Voice metrics analysis: Words per minute (WPM), filler word detection (*um, uh, like, you know*), pause detection, and fluency heuristics.
+## 📖 Shared Built-in 144k English Dictionary
 
-### 5. 🧠 Vocabulary & Grammar
-- **200 academic words** across 10 IELTS topics with meanings, Urdu translations (`urduMeaning`), collocations, and synonyms.
-- **SuperMemo-2 (SM-2) Spaced Repetition Flashcards**: Again, Hard, Good, Easy intervals with daily due queue and streak counter.
-- **Academic Vocab Quiz**: 3 modes (Meaning Match, Fill in the Blank, Synonym Match) with 1-click mistake queueing.
-- **15 Grammar Masterclass Lessons** with Band 7+ examiner tips and 150 interactive exercises.
-- **Writing Phrase Bank**: 100+ Band 7.5–9.0 phrases for Academic Task 1, GT Letters, and Task 2 essays with 1-click clipboard copy.
-
-### 6. 🧭 Diagnostic Assessment & Adaptive Study Plan
-- 25-minute benchmark test (10 reading, 10 listening, 1 writing, 3 speaking questions) mapping baseline bands and question-type weaknesses.
-- **Rule-based Study Plan Generator**: Day-by-day curriculum linking directly to targeted practice exercises based on target band, exam countdown, and daily study minutes.
-- Auto-rescheduling algorithm that rolls forward uncompleted past tasks into upcoming sessions.
-
-### 7. 📊 Performance Dashboard
-- Skill-by-skill Band Trend line chart (Recharts).
-- Overall Estimated Band vs Official Target Band gauge.
-- Accuracy by Question Type bar chart.
-- Average time per question, 7-day practice hours, streak tracking, and recent attempts history.
-
-### 8. 🏆 Full Mock Examination Center
-- Complete 2h 45m exam simulation: Listening (40m) $\rightarrow$ Reading (60m) $\rightarrow$ Writing (60m) $\rightarrow$ Speaking (14m).
-- Strict timers, exam fullscreen mode, and no-pausing enforcement.
-- Official-style **Test Report Form (TRF)** with printable PDF export using `@media print` styling.
+Zarii includes an offline-first, client-side English dictionary containing over 144,000 headwords:
+- **No Giant Bundles**: Partitioned into 622 static sharded JSON files (~30–80 KB each).
+- **Fast Prefix Autocomplete**: High-performance client-side prefix trie indexing headwords and 144,386 inflections (*running $\rightarrow$ run*).
+- **Pronunciation & Audio**: ARPAbet phonetic respelling, standard IPA, and native browser speech synthesis (US/UK).
+- **Safe-Mode & CEFR Bands**: Offensive words hidden by default; estimated CEFR levels (A1 to C1) for all common words.
+- **Tap-to-Lookup Everywhere**: Tap or select any word inside lessons, reading passages, or questions to pop up definitions and save directly to your personal Word Bank.
+- **Exam Mode Protection**: Tap-to-lookup is strictly disabled during timed mock exams to preserve authentic testing conditions.
+- **Offline Storage Pack**: 1-click download of the Essential 20,000 Word Pack for 100% offline lookup.
 
 ---
 
 ## 🛠️ Technology Stack & Architecture
 
 - **Frontend**: React 18, Vite 6, TypeScript, React Router 6, Zustand.
-- **Styling**: Tailwind CSS, Lucide Icons, Inter & JetBrains Mono typography.
-- **Local Storage**: Dexie.js (IndexedDB) for persistent offline data.
-- **Data Visualization**: Recharts (Line Charts, Bar Charts, Radar Charts).
+- **Styling**: Tailwind CSS, Lucide Icons, Inter typography.
+- **Local Database**: Dexie.js (IndexedDB) with automatic migrations and pre-migration backup snapshots.
 - **Speech**: Web Speech API (`SpeechRecognition` & `SpeechSynthesis`).
-- **PWA**: Web App Manifest, Service Worker (`sw.js`) with cache-first static asset caching.
-- **Testing**: Vitest (50 automated unit, marking, and smoke tests).
+- **PWA**: Web App Manifest, Service Worker (`sw.js`) with cache-first asset caching.
+- **Validation & Quality**: Custom Node.js validation scripts ensuring 0 errors across 454 exercises and 144k dictionary entries.
 
 ---
 
-## 🚀 Free Deployment Guide ($0 Cost)
+## 🧪 Validation & Testing Commands
 
-Zarii is designed to deploy for free on leading edge platforms:
-
-### Option A: Cloudflare Pages (Recommended)
-1. Fork or push this repository to your GitHub account.
-2. Sign in to [Cloudflare Dashboard](https://dash.cloudflare.com/) and go to **Workers & Pages** > **Create application** > **Pages** > **Connect to Git**.
-3. Select the `zarii-ielts` repository.
-4. Configure Build Settings:
-   - **Framework preset**: `Vite`
-   - **Build command**: `npm run build`
-   - **Build output directory**: `dist`
-5. Click **Save and Deploy**. Your web app is live on a free `*.pages.dev` subdomain with unlimited free bandwidth and SSL.
-
-### Option B: Netlify
-1. Sign in to [Netlify](https://www.netlify.com/) and click **Add new site** > **Import an existing project**.
-2. Select your GitHub repository.
-3. Configure Build Settings:
-   - **Build command**: `npm run build`
-   - **Publish directory**: `dist`
-4. Click **Deploy Site**.
-
-### Option C: Vercel
-1. Sign in to [Vercel](https://vercel.com/) and click **Add New Project**.
-2. Import your GitHub repository.
-3. Set Framework Preset to **Vite** and Output Directory to `dist`.
-4. Click **Deploy**.
-
----
-
-## 🤖 Deploying the Free AI Evaluation Function (Optional)
-
-Zarii works completely offline with certified rule-based evaluation. For candidates wanting AI examiner feedback:
-
-1. **Get Free API Keys**:
-   - Google Gemini: [Google AI Studio](https://aistudio.google.com/) (Free Tier: 15 RPM).
-   - Groq: [Groq Console](https://console.groq.com/) (Free Tier: Fast Llama-3 inference).
-2. **Serverless Function Setup (Cloudflare Pages Functions or Netlify Functions)**:
-   - Create `functions/api/evaluate-writing.ts`:
-     ```ts
-     export async function onRequestPost({ request, env }) {
-       const { essayText, promptBody, taskType } = await request.json();
-       const apiKey = env.GEMINI_API_KEY;
-       // Call Gemini free endpoint and return structured IELTS rubric JSON
-     }
-     ```
-   - In Cloudflare Pages Settings > **Environment variables**, add:
-     - `GEMINI_API_KEY`: `your_gemini_key`
-     - `GROQ_API_KEY`: `your_groq_key`
-3. **Bring-Your-Own-Key in Browser**:
-   - Alternatively, candidates can enter their own API key in **Settings** (`/settings`). The key is saved strictly in browser `localStorage` and never leaves the client device.
+| Command | Purpose |
+|---|---|
+| `npm run test` | Run Vitest unit tests |
+| `npm run test:regression` | Run IELTS scoring regression tests & Playwright regression suite |
+| `npm run validate-course` | Validate all English Course JSON lessons against schema (0 errors required) |
+| `npm run validate-dictionary` | Validate 622 dictionary shard files, definitions, and inflections |
+| `npm run audit-mcq` | Audit answer position balance (25% across A/B/C/D) and verify 0 tells |
+| `npm run build` | Full production TypeScript check (`tsc -b`) and Vite production bundle |
 
 ---
 
 ## 🔒 Privacy & Data Ownership
 
-- **100% Client-Side Data**: All test attempts, writing essays, speech recordings, study plans, and vocabulary progress are stored strictly in your browser's IndexedDB.
-- **Zero Server Telemetry**: Zarii does not run a tracking database or harvest personal information.
-- **Export & Delete**: Navigate to **Settings** (`/settings`) at any time to:
-  - Export your complete preparation history as a portable `JSON` file.
-  - Delete all local data with 1-click.
+- **100% Client-Side Data**: All practice attempts, dictionary downloads, essays, speech sessions, and study plans are stored strictly in your browser's IndexedDB.
+- **Zero Third-Party Telemetry**: No Google Tag Manager, no Amplitude, no tracking cookies.
+- **Export & Delete**: Export your complete preparation history as a portable `JSON` file or wipe local data in 1-click via **Settings** (`/app/settings`).
 
 ---
 
 ## ⚖️ Disclaimer
 
-**Zarii is an independent educational tool.** Band scores and feedback provided are estimates to guide self-study and do not constitute official examination scores from Cambridge Assessment English, IDP: IELTS Australia, or the British Council.
-
----
-
----
-
-## 🗄️ Backend, Architecture & Roles (Supabase Free Tier)
-
-Zarii features a dual-app architecture within a unified codebase, completely isolating student users from administrative code:
-
-```
-src/
-├── apps/
-│   ├── student/        # The student preparation workspace (runs under /)
-│   └── admin/          # Admin management portal (lazy-loaded under /admin)
-└── shared/             # Shared kernel:
-    ├── api/            # Typed Supabase REST & offline Dexie API layer
-    ├── design-system/  # Shared UI components (ZariiLogo, Button, etc.)
-    ├── tokens/         # Brand design tokens (#124F40, #5BB78D, #F7FAF8)
-    ├── types/          # Database & auth TypeScript interfaces
-    └── utils/          # Formatting & utility helpers
-```
-
-### 1. Free Supabase Setup Guide
-1. **Create Free Project**:
-   - Go to [Supabase](https://supabase.com/) and create a free organization and project.
-2. **Execute Database Migrations**:
-   - Open your project's **SQL Editor** in the Supabase Dashboard.
-   - Run the files in `supabase/migrations/` in sequential order:
-     1. `20261118000001_initial_schema.sql`: Core tables, enums, indexes, and triggers.
-     2. `20261118000002_row_level_security.sql`: Row Level Security on all 19 tables.
-     3. `20261118000003_seed_data.sql`: Default settings and feature flags.
-3. **Configure Environment Variables**:
-   - Copy `.env.example` to `.env`:
-     ```bash
-     cp .env.example .env
-     ```
-   - In Supabase Dashboard, navigate to **Project Settings** > **API**.
-   - Copy the **Project URL** into `VITE_SUPABASE_URL`.
-   - Copy the **anon / public key** into `VITE_SUPABASE_ANON_KEY`.
-   - Copy the **service_role key** into `SUPABASE_SERVICE_ROLE_KEY` (for admin provisioning scripts only).
-
-### 2. Row Level Security & Role Permissions
-- **`student`**: Can read published exam content (`status = 'published'`) and read/write only their own attempts.
-- **`editor`**: Can create and edit tests, passages, questions, vocab, and grammar lessons.
-- **`admin`**: Full access to manage user roles, audit logs, feature flags, feedback, and settings.
-- **Secrets Isolation**: AI provider credentials and secret keys are stored in `public.ai_providers` with RLS rejecting all browser access (`USING (false)`), accessible exclusively by Edge Functions using the service role.
-
----
-
-## 👑 Create Your First Admin
-
-To access the administrator console at `/admin`, you must provision your first admin account.
-
-### Method A: Automated Seed Script (Recommended)
-Set `ADMIN_EMAIL` and run the seed script:
-
-```bash
-# Provision the first administrator
-ADMIN_EMAIL="admin@zarii.app" ADMIN_PASSWORD="YourSecurePassword123!" node scripts/seed-first-admin.js
-```
-
-The script connects to Supabase Auth via the service role key, provisions the user, and sets their role to `admin` in `public.profiles`.
-
-### Method B: Manual Promotion via Supabase SQL Editor
-If you already registered an account in the app or Supabase Auth console:
-1. Open **Supabase Dashboard** > **SQL Editor**.
-2. Run the following query with your email:
-   ```sql
-   UPDATE public.profiles
-   SET role = 'admin', status = 'active'
-   WHERE id IN (
-     SELECT id FROM auth.users WHERE email = 'your-email@example.com'
-   );
-   ```
-3. Sign in at `http://localhost:5173/admin/login` to access the console. Students never see any link to `/admin`.
-
----
-
-## 💻 Local Development & Content Tools
-
-```bash
-# Install dependencies
-npm install
-
-# Start local development server
-npm run dev
-
-# Run content validator (checks all reading, listening, writing, vocab JSONs)
-npm run validate-content
-
-# Run all 267 automated tests
-npm run test
-
-# Build for production with optimized code-splitting
-npm run build
-```
-
----
-
-## 📚 Documentation & Guides
-
-- [System Architecture & Data Flow](ARCHITECTURE.md)
-- [Administrator & Editor Guide](ADMIN_GUIDE.md)
-- [Content Schema & Test Writing Guide](content/SCHEMA.md)
-- [Contributing Guidelines](CONTRIBUTING.md)
-
----
-
-## 💌 Private Surprise Mode (Easter Egg)
-
-The student portal features an optional, tasteful surprise easter egg located next to the theme toggle in the student top bar.
-
-### Privacy Overview
-By default, the letter content is configured in `src/features/surprise/loveNote.ts`. Anyone inspecting the compiled client-side JavaScript bundle could potentially view the static text. 
-
-For maximum privacy, **Private Surprise Mode** can be enabled so that the letter content is never included in the client bundle. Instead, it is fetched dynamically from a Supabase PostgreSQL table protected by **Row Level Security (RLS)**, ensuring that only the authenticated recipient can access and read it.
-
-### Step 1: Create Supabase Table & RLS Policy
-Run the following SQL migration in your Supabase SQL Editor:
-
-```sql
--- 1. Create the private notes table
-create table public.private_notes (
-  id uuid primary key default gen_random_uuid(),
-  recipient_email text not null,
-  sender_name text not null,
-  recipient_name text not null,
-  headline_prefix text not null default 'Qamar loves you sooo much,',
-  greeting text not null default 'My dearest Zarmeen,',
-  paragraphs jsonb not null,
-  closing text not null default 'Always and only yours,',
-  signature text not null default 'Qamar',
-  footer_line text not null default 'P.S. Band 8 is going to be yours, I just know it.',
-  created_at timestamp with time zone default timezone('utc'::text, now()) not null
-);
-
--- 2. Enable Row Level Security (RLS)
-alter table public.private_notes enable row level security;
-
--- 3. Policy: Only authenticated user matching recipient_email can SELECT
-create policy "Recipient can read own private note"
-  on public.private_notes
-  for select
-  using (
-    auth.role() = 'authenticated' and
-    lower(auth.jwt() ->> 'email') = lower(recipient_email)
-  );
-
--- 4. Insert the letter for the recipient
-insert into public.private_notes (
-  recipient_email,
-  sender_name,
-  recipient_name,
-  headline_prefix,
-  greeting,
-  paragraphs,
-  closing,
-  signature,
-  footer_line
-) values (
-  'zarmeen@example.com',
-  'Qamar',
-  'Zarmeen',
-  'Qamar loves you sooo much,',
-  'My dearest Zarmeen,',
-  '[
-    "I am completely mesmerized by your eyes. They are deep and calm like a lake, and every time I look into them, time slows down and I happily lose myself in them.",
-    "When you smile, my whole world lights up. Your laughter is the cure for my every tiredness, and your name is the first word in all of my prayers.",
-    "I know preparing for IELTS is not easy. Some nights you will be tired, some days you will feel anxious, and sometimes it will feel like it is too much. In those moments, please remember how hardworking you are, how smart you are, and that you can achieve anything you set your heart on.",
-    "I made this little app just for you, with the hope that every lesson, every practice test and every band score brings you one step closer to your dream. All the effort you put in will never go to waste.",
-    "When you feel worn out, take a deep breath, smile a little, and remember that there is someone standing beside you at every step, your biggest fan.",
-    "Just keep trying, my love. I will keep you in my prayers, and I believe in you more than you know."
-  ]'::jsonb,
-  'Always and only yours,',
-  'Qamar',
-  'P.S. Band 8 is going to be yours, I just know it.'
-);
-```
-
-### Step 2: Configure `surpriseConfig.ts`
-In `src/features/surprise/surpriseConfig.ts`, update:
-
-```ts
-export const surpriseConfig = {
-  enabled: true,
-  recipientName: 'Zarmeen',
-  senderName: 'Qamar',
-  visibleForEmails: ['zarmeen@example.com'], // Restrict visibility to authenticated recipient
-  autoShowOnDate: '', // Optional date lock (e.g. "2026-12-25")
-  useSupabasePrivateNotes: true, // Fetch securely via RLS
-};
-```
-
+*IELTS is a registered trademark of its owners. Zarii is independent and not affiliated with or endorsed by IELTS partners. Course levels and certificates are for self-study purposes and are not official qualifications.*
